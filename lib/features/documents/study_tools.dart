@@ -193,3 +193,4 @@ class _StudyToolsState extends State<StudyTools> {
                     ),
                   ),
                   Expanded(
+                    child: ClipRRect(
