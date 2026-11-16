@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-              padding: const EdgeInsets.all(8),
               child: ListTile(
                 leading: Icon(
                   deck['kind'] == 'flashcards'
