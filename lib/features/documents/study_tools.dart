@@ -141,3 +141,4 @@ class _StudyToolsState extends State<StudyTools> {
                             }),
                       icon: const Icon(Icons.offline_pin_outlined),
                       label: const Text('Keep offline'),
+                    ),
