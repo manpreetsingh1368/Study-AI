@@ -68,3 +68,4 @@ export function registerNotebookRoutes(
         )
           fail(409, "Note identifier already used.");
         return { ok: true, notebook: notebookState(sid, get, all) };
+      }
