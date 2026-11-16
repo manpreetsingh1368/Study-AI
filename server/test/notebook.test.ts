@@ -118,3 +118,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
       await call("POST", `/notebooks/${set.id}/ask`, a.token, {
         ...request,
         prompt: "Changed question",
+      })
