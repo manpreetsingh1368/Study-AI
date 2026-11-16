@@ -367,4 +367,5 @@ class _SetDetailState extends State<SetDetail> {
           action: report != null
               ? IconButton(
                   tooltip: 'Back to chat',
+                  onPressed: () => setState(() => report = null),
 }
