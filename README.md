@@ -71,6 +71,7 @@ While signed in, enter your current password in Settings and choose **Create a o
 
 ```sh
 flutter analyze
+flutter test
 
 ## Android, iOS and macOS
 
