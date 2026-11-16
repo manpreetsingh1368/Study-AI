@@ -233,3 +233,4 @@ export function registerNotebookRoutes(
           "Daily AI allowance reached. Chat and Studio use the same AI allowance as quiz generation.",
         );
       run(
+        "INSERT INTO generation_usage(id,user_id,day,status,created_at,request_hash,request_config) VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET day=excluded.day,status=excluded.status,created_at=excluded.created_at",
