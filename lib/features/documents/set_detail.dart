@@ -393,4 +393,5 @@ class _SetDetailState extends State<SetDetail> {
                                 () => c.loadEarlierNotebook(widget.set['id']),
                               ),
                         child: const Text('Load earlier responses'),
+                      ),
 }
