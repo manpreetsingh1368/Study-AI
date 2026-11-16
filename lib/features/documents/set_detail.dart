@@ -460,6 +460,7 @@ class _SetDetailState extends State<SetDetail> {
                                       Expanded(
                                         child: Text(
                                           source['document'] == null
+                                              ? 'Lecture notes'
                   ),
                 ),
             ],
