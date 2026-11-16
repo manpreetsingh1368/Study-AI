@@ -514,4 +514,5 @@ class _SetDetailState extends State<SetDetail> {
                   const SizedBox(width: 12),
                   const Icon(Icons.north_west_rounded, size: 16),
                 ],
+              ),
 }
