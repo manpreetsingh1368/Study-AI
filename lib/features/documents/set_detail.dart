@@ -17,6 +17,7 @@ class SetDetail extends StatefulWidget {
 class _SetDetailState extends State<SetDetail> {
   final composer = TextEditingController(),
       sourceSearch = TextEditingController();
+  final composerFocus = FocusNode();
   String? error;
   bool busy = false;
   int mobileTab = 1;
