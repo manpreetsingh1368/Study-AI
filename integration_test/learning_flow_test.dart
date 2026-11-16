@@ -186,6 +186,7 @@ void main() {
         await tester.pumpAndSettle();
         expect(find.text('How does ATP help a cell?'), findsOneWidget);
         await tester.ensureVisible(find.text('1 · Notes'));
+        await tester.tap(find.text('1 · Notes'));
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
