@@ -167,6 +167,7 @@ void main() {
             'sets': remote == null || remote!['deleted'] == 1 ? [] : [remote],
           };
         }
+        if (req.uri.path == '/sync/learning') {
           body = {'changes': [], 'cursor': 0, 'hasMore': false};
         }
         if (req.uri.path == '/analytics') body = {'completed': 0};
