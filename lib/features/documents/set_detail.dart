@@ -723,4 +723,5 @@ class _SetDetailState extends State<SetDetail> {
               'Turn sources into understanding',
               style: TextStyle(
                 fontSize: 11,
+                color: Theme.of(context).colorScheme.onSurfaceVariant,
 }
