@@ -83,3 +83,4 @@ export function registerNotebookRoutes(
           b.entryId,
           sid,
         );
+        if (!original) fail(404, "Original answer not found.");
