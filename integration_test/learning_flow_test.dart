@@ -131,3 +131,4 @@ void main() {
         final material = c.sets.single;
         final quiz = (material['collections'] as List).firstWhere(
           (d) => d['kind'] == 'quiz',
+        );
