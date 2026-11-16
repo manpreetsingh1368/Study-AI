@@ -102,6 +102,7 @@ class _AdminPageState extends State<AdminPage> {
                                       ),
                                       if (detail['subscription'] != null)
                                         Text(
+                                          'Pro: ${DateTime.fromMillisecondsSinceEpoch(detail['subscription']['starts_at'])} to ${DateTime.fromMillisecondsSinceEpoch(detail['subscription']['expires_at'])}',
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
