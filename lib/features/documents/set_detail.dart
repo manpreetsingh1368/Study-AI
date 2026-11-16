@@ -178,6 +178,7 @@ class _SetDetailState extends State<SetDetail> {
     text.dispose();
   }
 
+  Future<void> previewSource(Map<String, dynamic> source) async {
                         ),
                       ),
                     ),
