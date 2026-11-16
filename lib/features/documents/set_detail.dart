@@ -861,4 +861,5 @@ class _SetDetailState extends State<SetDetail> {
                   style: const TextStyle(fontSize: 11),
                 ),
                 subtitle: Text(
+                  DateTime.fromMillisecondsSinceEpoch(entry['created_at'])
 }
