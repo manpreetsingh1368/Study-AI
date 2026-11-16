@@ -88,6 +88,7 @@ void main() {
     await tester.pumpWidget(const SizedBox());
     controller.dispose();
   });
+  for (final width in [390.0, 1200.0]) {
 }
 
 class WidgetMemoryStore extends LocalStore {
