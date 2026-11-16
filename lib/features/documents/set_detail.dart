@@ -406,6 +406,7 @@ class _SetDetailState extends State<SetDetail> {
                         : Colors.transparent,
                     borderRadius: BorderRadius.circular(12),
                     child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                   ),
                 ),
             ],
