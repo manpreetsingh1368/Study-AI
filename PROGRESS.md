@@ -4,7 +4,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Implemented
 
-- Existing native Flutter project retained; Material 3 light/dark application, adaptive sidebar/bottom navigation, reusable study components, GoRouter navigation, Riverpod dependency injection.
 - Registration/login, Argon2id, hashed expiring bearer sessions, revocation, secure client token storage, profile/password change, account deletion.
 - Fastify TypeScript API, SQLite WAL/foreign keys/indexes, initial idempotent SQL migration. Drizzle account queries and typed normalized schemas; other domain operations currently use prepared SQL through the same SQLite connection.
 - Saved notes, title editing, deletion tombstones, authenticated private PDF upload/download endpoints, per-user size/storage constraints, PDF MIME/signature checks.
