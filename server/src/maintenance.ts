@@ -29,3 +29,4 @@ try {
     sqlite.prepare("DELETE FROM recovery_codes WHERE expires_at<=?").run(now);
     sqlite
       .prepare(
+        "UPDATE generation_usage SET status='failed' WHERE status='pending' AND created_at<?",
