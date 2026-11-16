@@ -138,3 +138,4 @@ void main() {
         GoRouter.of(tester.element(find.byType(Scaffold).first))
             .go('/quiz/${set['id']}?collection=${quiz['id']}');
         await tester.pumpAndSettle();
+        await tester.ensureVisible(find.text('A.  Energy'));
