@@ -274,3 +274,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
           {
             heading: "Bad",
             text: "Bad",
+            citations: [
