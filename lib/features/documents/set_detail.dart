@@ -178,6 +178,7 @@ class _SetDetailState extends State<SetDetail> {
                     ),
                     if (!wide)
                       IconButton(
+                        tooltip: 'Study tools',
                   ),
                 ),
               ],
