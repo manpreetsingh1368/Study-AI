@@ -318,3 +318,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
             {
               chunkId: input.chunks.find((c) => c.page === 2)!.id,
               quote: "ATP transfers chemical energy.",
+            },
