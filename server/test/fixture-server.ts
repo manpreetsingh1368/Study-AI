@@ -6,3 +6,4 @@ const app = createApp({
   dataDir: `${directory}/data`,
   uploadDir: `${directory}/uploads`,
   generate: async (input) => ({
+    questions:
