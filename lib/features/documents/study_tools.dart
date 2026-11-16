@@ -48,3 +48,4 @@ class _StudyToolsState extends State<StudyTools> {
           Text(s['folder'], style: const TextStyle(color: accent)),
         if (s['pending'] == true)
           const Text('Saved on this device · waiting to synchronize'),
+        const SizedBox(height: 16),
