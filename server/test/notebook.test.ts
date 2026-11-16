@@ -142,3 +142,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   assert.equal(
     library.notebook.notes[0].citations[0].quote,
     "ATP transfers chemical energy.",
+  );
