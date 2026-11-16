@@ -190,6 +190,7 @@ void main() {
         controller.dispose();
       },
     );
+  }
 }
 
 class WidgetMemoryStore extends LocalStore {
