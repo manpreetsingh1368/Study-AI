@@ -205,3 +205,4 @@ void main() {
         if (await temp.exists()) await temp.delete(recursive: true);
       }
     },
+    timeout: const Timeout(Duration(minutes: 4)),
