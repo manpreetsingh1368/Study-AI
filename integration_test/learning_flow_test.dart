@@ -128,3 +128,4 @@ void main() {
         await c.upload(set['id'], 'lecture.pdf', validPdf());
         await c.generate(set['id'], 'quiz', 1, 'easy');
         await c.generate(set['id'], 'flashcards', 1, 'easy');
+        final material = c.sets.single;
