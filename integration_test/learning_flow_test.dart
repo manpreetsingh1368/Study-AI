@@ -103,7 +103,6 @@ void main() {
       try {
         await c.initialize();
         await tester.pumpWidget(
-          ProviderScope(
             overrides: [studyProvider.overrideWithValue(c)],
             child: const StudyAIApp(),
           ),
