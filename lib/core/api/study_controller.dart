@@ -706,6 +706,7 @@ class StudyController extends ChangeNotifier {
       'prompt': prompt,
       'sourceIds': sourceIds,
     });
+    await store.write(account, 'notebookRequest:$notebookId', null);
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
