@@ -17,3 +17,4 @@ export const responseSchema = z.object({
   blocks: z
     .array(
       z.object({
+        heading: z.string().max(150),
