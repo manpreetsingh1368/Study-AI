@@ -557,6 +557,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
     ),
   );
   Widget notebookCard(Map<String, dynamic> set) {
+    final books = set['notebook'] as Map? ?? {};
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
