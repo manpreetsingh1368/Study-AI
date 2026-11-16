@@ -176,3 +176,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
         text: "A false answer",
         citations: [
           {
+            chunkId: input.chunks[0].id,
