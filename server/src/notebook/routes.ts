@@ -141,3 +141,4 @@ export function registerNotebookRoutes(
       .object({
         id: z.uuid(),
         kind: z.enum(["chat", "summary", "guide", "faq"]),
+        prompt: z.string().trim().min(1).max(3000),
