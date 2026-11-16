@@ -107,7 +107,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                 Expanded(
                   child: Column(
                     children: [
-                              icon: const Icon(Icons.menu_open_rounded),
                             ),
                           ],
                         ),
