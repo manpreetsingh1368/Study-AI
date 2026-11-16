@@ -564,6 +564,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       child: InkWell(
         onTap: () => context.go('/set/${set['id']}'),
         child: SizedBox(
+          height: 244,
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
