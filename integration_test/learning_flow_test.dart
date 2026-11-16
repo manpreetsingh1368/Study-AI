@@ -108,6 +108,7 @@ void main() {
             child: ProviderScope(
               overrides: [studyProvider.overrideWithValue(c)],
               child: const StudyAIApp(),
+            ),
           ),
         );
         await tester.pumpAndSettle();
