@@ -326,6 +326,7 @@ class _SetDetailState extends State<SetDetail> {
     padding: const EdgeInsets.fromLTRB(18, 20, 12, 16),
     child: Row(
       children: [
+        Icon(icon, size: 18, color: accent),
                   ),
                 ),
             ],
