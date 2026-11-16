@@ -75,6 +75,7 @@ class _SetDetailState extends State<SetDetail> {
         builder: (_, _) => StudyTools(
           set:
               c.sets.where((s) => s['id'] == widget.set['id']).firstOrNull ??
+              widget.set,
         ),
       ),
     ),
