@@ -66,3 +66,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     );
     assert.equal(
       (
+        sqlite
