@@ -135,3 +135,4 @@ void main() {
         final cards = (material['collections'] as List).firstWhere(
           (d) => d['kind'] == 'flashcards',
         );
+        GoRouter.of(tester.element(find.byType(Scaffold).first))
