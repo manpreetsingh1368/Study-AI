@@ -560,4 +560,5 @@ class _SetDetailState extends State<SetDetail> {
                       contentPadding: EdgeInsets.symmetric(vertical: 10),
                     ),
                   ),
+                ),
 }
