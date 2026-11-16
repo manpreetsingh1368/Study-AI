@@ -613,4 +613,5 @@ class _SetDetailState extends State<SetDetail> {
                 icon: const Icon(Icons.bookmark_add_outlined, size: 18),
               ),
             if (blocks.isNotEmpty)
+              IconButton(
 }
