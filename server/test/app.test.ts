@@ -670,3 +670,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
     await call("POST", "/sets", a.token, { title: "Replay-safe", notes: "ATP" })
   ).body.set.id;
   const operation = {
+    id: randomUUID(),
