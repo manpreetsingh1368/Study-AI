@@ -92,3 +92,4 @@ class _StudyToolsState extends State<StudyTools> {
                       );
                       if (yes == true) {
                         await action(() async {
+                          await c.deleteSet(s);
