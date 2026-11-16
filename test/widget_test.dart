@@ -132,6 +132,7 @@ void main() {
               {
                 'id': 'card1',
                 'collection_id': 'cards-one',
+                'front': 'ATP',
 }
 
 class WidgetMemoryStore extends LocalStore {
