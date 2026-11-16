@@ -77,3 +77,4 @@ void main() {
       process.stderr.transform(utf8.decoder).listen(stderr.add);
       addTearDown(() async {
         process.kill();
+        await process.exitCode.timeout(const Duration(seconds: 10));
