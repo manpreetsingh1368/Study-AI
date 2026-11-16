@@ -273,3 +273,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
         blocks: [
           {
             heading: "Bad",
+            text: "Bad",
