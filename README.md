@@ -79,6 +79,7 @@ Only checked source material and prior conversation turns confined to those same
 
 The most recent 80 responses are cached per notebook, with an earlier-response loader for history; up to 100 saved notes are supported per notebook. Deleting a source does not automatically remove excerpts already saved into a different notebook. Account deletion still removes all owned records. Retention maintenance purges content belonging to deleted notebooks while preserving sync tombstones.
 
+Live Gemini notebook output remains an acceptance requirement when you configure your server key/model. Tests use dependency-injected fixtures confined to `server/test`, never a production fallback. Native acceptance also checks chat citations, saved notes, cross-device downloads and offline note capture. Optional `SCREENSHOT_DIR` on the native test writes desktop light/dark and mobile render captures.
 
 ## Recovery codes
 
