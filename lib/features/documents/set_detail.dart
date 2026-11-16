@@ -160,6 +160,7 @@ class _SetDetailState extends State<SetDetail> {
         );
         if (file == null) return;
         if ((await file.length() ?? 10485761) > 10485760) {
+          throw ApiException(413, 'Choose a PDF smaller than 10 MB.');
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
