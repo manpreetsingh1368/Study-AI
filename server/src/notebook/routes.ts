@@ -121,3 +121,4 @@ export function registerNotebookRoutes(
     return { ok: true, notebook: notebookState(sid, get, all) };
   });
   app.delete("/notebooks/:id/notes/:noteId", async (req) => {
+    const u = user(req),
