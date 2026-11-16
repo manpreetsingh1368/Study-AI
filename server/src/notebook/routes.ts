@@ -146,3 +146,4 @@ export function registerNotebookRoutes(
       })
       .parse(req.body);
     owned(u.id, sid);
+    const sourceIds = [...new Set(b.sourceIds)].sort();
