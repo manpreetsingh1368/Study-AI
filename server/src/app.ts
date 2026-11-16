@@ -495,6 +495,7 @@ export function createApp(
         difficulty: b.difficulty,
       }),
     );
+    const previousUsage = get(
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
