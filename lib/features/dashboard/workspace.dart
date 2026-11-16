@@ -616,6 +616,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                             RegExp(r'\s+'),
                             ' ',
                           ),
+                    maxLines: 2,
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
