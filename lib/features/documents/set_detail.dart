@@ -188,6 +188,7 @@ class _SetDetailState extends State<SetDetail> {
         height: MediaQuery.sizeOf(context).height * .85,
         child: DefaultTabController(
           length: source['document'] != null ? 2 : 1,
+          child: Column(
                         ),
                       ),
                     ),
