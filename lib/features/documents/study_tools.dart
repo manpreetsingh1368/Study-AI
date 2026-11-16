@@ -308,3 +308,4 @@ class _StudyToolsState extends State<StudyTools> {
                     label: const Text('Difficulty'),
                     onSelected: busy ? null : (v) => setState(() => level = v!),
                     dropdownMenuEntries: [
+                      const DropdownMenuEntry(value: 'easy', label: 'Easy'),
