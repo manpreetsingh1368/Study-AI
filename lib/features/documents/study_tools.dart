@@ -328,3 +328,4 @@ class _StudyToolsState extends State<StudyTools> {
                           value: n,
                           label: '$n',
                           enabled:
+                              n <=
