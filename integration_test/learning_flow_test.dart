@@ -49,3 +49,4 @@ Uint8List validPdf() {
   }
   final xref = text.length;
   text += 'xref\n0 6\n0000000000 65535 f \n';
+  for (final offset in offsets.skip(1)) {
