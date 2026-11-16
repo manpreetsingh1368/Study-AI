@@ -995,4 +995,5 @@ class _SetDetailState extends State<SetDetail> {
     sourceSearch.dispose();
     composerFocus.dispose();
     chatScroll.dispose();
+    super.dispose();
 }
