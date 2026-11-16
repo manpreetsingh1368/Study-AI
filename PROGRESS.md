@@ -93,7 +93,6 @@ Created implementation/documentation files:
 
 Flutter regenerated native plugin integration files:
 
-- `ios/Runner/GeneratedPluginRegistrant.h`
 - `ios/Runner/GeneratedPluginRegistrant.m`
 - `linux/flutter/generated_plugin_registrant.cc`
 - `linux/flutter/generated_plugin_registrant.h`
