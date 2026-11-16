@@ -282,6 +282,7 @@ export function createApp(
       expiresAt = now() + 365 * 86400000;
     run(
       "INSERT INTO recovery_codes VALUES(?,?,?,?) ON CONFLICT(user_id) DO UPDATE SET code_hash=excluded.code_hash,expires_at=excluded.expires_at,created_at=excluded.created_at",
+      u.id,
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
