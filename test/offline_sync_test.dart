@@ -13,7 +13,6 @@ void main() {
     'cached material survives offline study, operations replay and accounts stay isolated',
     () => HttpOverrides.runWithHttpOverrides(() async {
       sqfliteFfiInit();
-      final db = await databaseFactoryFfi.openDatabase(inMemoryDatabasePath,options:OpenDatabaseOptions(singleInstance:false));
       await db.execute(
         'CREATE TABLE cache(account TEXT,key TEXT,value TEXT,PRIMARY KEY(account,key))',
       );
