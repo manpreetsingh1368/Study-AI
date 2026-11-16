@@ -257,3 +257,4 @@ class _StudyToolsState extends State<StudyTools> {
                     ),
                   ],
                 ),
+                onTap: () => context.go(
