@@ -175,3 +175,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
         heading: "Unsupported",
         text: "A false answer",
         citations: [
+          {
