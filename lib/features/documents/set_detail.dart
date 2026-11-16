@@ -455,4 +455,5 @@ class _SetDetailState extends State<SetDetail> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: 30),
+        Container(
 }
