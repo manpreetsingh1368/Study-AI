@@ -159,3 +159,4 @@ void main() {
         await tester.pumpAndSettle();
         expect(find.text('An energy carrier'), findsOneWidget);
         await tester.ensureVisible(find.text('I know this'));
+        await tester.tap(find.text('I know this'));
