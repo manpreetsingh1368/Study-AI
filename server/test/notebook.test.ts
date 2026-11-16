@@ -33,3 +33,4 @@ async function setup(t: any, generate = supported) {
   const dir = mkdtempSync(join(tmpdir(), "notebook-"));
   const app = createApp({
     dataDir: dir,
+    uploadDir: join(dir, "uploads"),
