@@ -93,6 +93,7 @@ class LocalStore {
     String path,
     Map<String, dynamic> body,
     List<Map<String, dynamic>> sets,
+  ) async {
   }
 
   Future<void> queueMutation(
