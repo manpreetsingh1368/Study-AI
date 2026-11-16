@@ -187,6 +187,7 @@ class _SetDetailState extends State<SetDetail> {
                         onPressed: showTools,
                         icon: const Icon(Icons.tune_rounded, size: 17),
                         label: const Text('Study tools'),
+                      ),
                   ),
                 ),
               ],
