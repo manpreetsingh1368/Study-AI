@@ -8,3 +8,4 @@ Group=study-ai
 WorkingDirectory=/opt/study-ai/server
 EnvironmentFile=/etc/study-ai.env
 ExecStart=/usr/bin/npm run maintenance
+UMask=0077
