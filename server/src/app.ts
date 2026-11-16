@@ -292,6 +292,7 @@ export function createApp(
   app.post(
     "/auth/recover",
     { config: { rateLimit: { max: 5, timeWindow: 60000 } } },
+    async (req) => {
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
