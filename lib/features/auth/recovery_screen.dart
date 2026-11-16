@@ -80,3 +80,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   obscureText: true,
                   decoration: const InputDecoration(labelText: 'Recovery code'),
                 ),
+                const SizedBox(height: 12),
