@@ -54,6 +54,7 @@ class _AdminPageState extends State<AdminPage> {
         children: [
           for (final metric in [
             ('Students', stats['students'] ?? 0),
+            ('Private documents', stats['documents'] ?? 0),
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
