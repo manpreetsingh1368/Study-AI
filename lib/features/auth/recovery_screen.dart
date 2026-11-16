@@ -63,3 +63,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 Text(
                   'Use your recovery code',
                   style: Theme.of(context).textTheme.headlineSmall,
+                ),
