@@ -265,3 +265,4 @@ export function registerNotebookRoutes(
         kind: b.kind,
         prompt: b.prompt,
         chunks,
+        history,
