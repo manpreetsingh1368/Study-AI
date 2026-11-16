@@ -5,3 +5,4 @@ import { join } from "node:path";
 import {
   notebookGenerate,
   pdfPages,
+  splitSource,
