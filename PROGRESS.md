@@ -17,6 +17,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Verification
 
+- `flutter analyze`: clean.
 
 ## Configuration and remaining release work
 
