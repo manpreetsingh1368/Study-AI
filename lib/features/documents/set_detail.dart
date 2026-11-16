@@ -147,6 +147,7 @@ class _SetDetailState extends State<SetDetail> {
     );
     if (choice == null || !mounted) return;
     if (validSelection.length >= 8) {
+      setState(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
