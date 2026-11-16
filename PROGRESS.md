@@ -66,6 +66,7 @@ Created implementation/documentation files:
 - `lib/core/storage/local_store.dart`
 - `lib/features/admin/admin_page.dart`
 - `lib/features/auth/auth_screen.dart`
+- `lib/features/auth/recovery_screen.dart`
 - `lib/features/dashboard/workspace.dart`
 - `lib/features/documents/notes_editor.dart`
 - `lib/features/documents/pdf_screen.dart`
