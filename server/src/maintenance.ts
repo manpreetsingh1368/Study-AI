@@ -15,3 +15,4 @@ try {
     )
     .all(now - retention * 86400000) as { id: string }[];
   // Clear private blobs before metadata: if interrupted, retrying unlink is safe.
+  for (const file of files)
