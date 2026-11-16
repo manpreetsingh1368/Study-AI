@@ -91,6 +91,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                       if (widget.page == 'set')
                         IconButton(
                           tooltip: c.syncLabel,
+                          onPressed: () => unawaited(c.sync()),
                       IconButton(
                         onPressed: () => context.go('/create'),
                         icon: const Icon(Icons.add),
