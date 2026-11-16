@@ -63,6 +63,7 @@ void main() {
         overrides: [studyProvider.overrideWithValue(controller)],
         child: const StudyAIApp(),
       ),
+    );
 }
 
 class WidgetMemoryStore extends LocalStore {
