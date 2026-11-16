@@ -153,6 +153,7 @@ class _SetDetailState extends State<SetDetail> {
       return;
     }
     if (choice == 'pdf') {
+      await task(() async {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
