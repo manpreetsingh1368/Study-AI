@@ -409,4 +409,5 @@ class _SetDetailState extends State<SetDetail> {
                               topLeft: Radius.circular(18),
                               topRight: Radius.circular(18),
                               bottomLeft: Radius.circular(18),
+                              bottomRight: Radius.circular(5),
 }
