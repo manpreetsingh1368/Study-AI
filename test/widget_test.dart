@@ -139,6 +139,7 @@ void main() {
               },
             ],
             'document': null,
+          },
 }
 
 class WidgetMemoryStore extends LocalStore {
