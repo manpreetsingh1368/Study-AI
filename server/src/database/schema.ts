@@ -185,3 +185,4 @@ export const learningChanges = sqliteTable("learning_changes", {
   recordId: text("record_id").notNull(),
 });
 
+export const recoveryCodes = sqliteTable("recovery_codes", {
