@@ -420,6 +420,7 @@ class _SetDetailState extends State<SetDetail> {
         children: [
           Padding(
             padding: EdgeInsets.fromLTRB(
+              wide ? 24 : 16,
                         ),
                       ),
                     ),
