@@ -26,3 +26,4 @@ export const responseSchema = z.object({
               quote: z.string().min(12).max(700),
             }),
           )
+          .min(1)
