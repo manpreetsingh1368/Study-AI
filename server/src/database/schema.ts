@@ -187,3 +187,4 @@ export const learningChanges = sqliteTable("learning_changes", {
 
 export const recoveryCodes = sqliteTable("recovery_codes", {
   userId: text("user_id")
+    .primaryKey()
