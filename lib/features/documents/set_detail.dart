@@ -807,4 +807,5 @@ class _SetDetailState extends State<SetDetail> {
               children: [
                 const Expanded(
                   child: Text(
+                    'Your learning collections',
 }
