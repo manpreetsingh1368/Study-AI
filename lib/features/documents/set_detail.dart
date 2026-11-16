@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-        Wrap(
           spacing: 12,
           runSpacing: 12,
           children: [
