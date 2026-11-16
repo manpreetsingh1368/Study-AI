@@ -46,3 +46,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
       leading: IconButton(
         onPressed: () => context.go('/login'),
         icon: const Icon(Icons.arrow_back),
+      ),
