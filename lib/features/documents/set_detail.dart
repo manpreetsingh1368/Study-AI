@@ -340,6 +340,7 @@ class _SetDetailState extends State<SetDetail> {
   );
   Widget sources() {
     final filtered = c.sets
+        .where(
                   ),
                 ),
             ],
