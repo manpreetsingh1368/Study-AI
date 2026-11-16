@@ -240,3 +240,4 @@ export function registerNotebookRoutes(
         "pending",
         now(),
         hash,
+        hash,
