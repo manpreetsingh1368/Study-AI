@@ -74,6 +74,7 @@ void main() {
     await tester.ensureVisible(find.text('Open my workspace'));
     await tester.tap(find.text('Open my workspace'));
     await tester.runAsync(
+      () => Future<void>.delayed(const Duration(milliseconds: 100)),
 }
 
 class WidgetMemoryStore extends LocalStore {
