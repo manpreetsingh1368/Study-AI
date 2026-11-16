@@ -13,6 +13,7 @@ class PdfScreen extends StatefulWidget {
     super.key,
     required this.controller,
     required this.document,
+    this.initialPageNumber = 1,
   });
   @override
   State<PdfScreen> createState() => _PdfScreenState();
