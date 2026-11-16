@@ -113,3 +113,4 @@ void main() {
           register: true,
           email: 'native-test@example.com',
           password: 'native-test-password',
+          name: 'Native Test',
