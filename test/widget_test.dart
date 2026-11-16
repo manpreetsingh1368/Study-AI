@@ -92,6 +92,7 @@ void main() {
     testWidgets(
       'Saved collections, quiz feedback and settings render at $width',
       (tester) async {
+        tester.view.physicalSize = Size(width, 900);
 }
 
 class WidgetMemoryStore extends LocalStore {
