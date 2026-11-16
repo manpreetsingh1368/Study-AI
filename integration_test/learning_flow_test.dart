@@ -194,3 +194,4 @@ void main() {
         await other.saveSet('Offline addition', 'A genuinely offline note.');
         expect((await otherStore.pending(other.account)).length, 1);
         expect(tester.takeException(), isNull);
+      } finally {
