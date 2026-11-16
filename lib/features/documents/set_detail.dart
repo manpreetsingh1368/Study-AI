@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                          content: const Text(
                             'This deletion will synchronize across your devices.',
                           ),
                           actions: [
