@@ -185,3 +185,4 @@ export function registerNotebookRoutes(
         for (let i = 0; i < pages.length; i++) {
           total += pages[i].length;
           chunks.push(
+            ...splitSource(
