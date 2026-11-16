@@ -12,6 +12,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Private authenticated PDF endpoints, MIME/signature checks, isolated structural parsing with time/heap/page limits, per-user storage limits, atomic replacement and safe temporary files. Uploads have stable document IDs and durable retry queues. PDFs are cached in account-isolated SQLite when opened or explicitly kept offline.
 - Real server-only Gemini integration with structured JSON, schema validation, bounded retries/timeouts, quota errors and no fabricated fallback. Immutable quiz/card/exam collections permit repeated generation without losing old questions/results. Generation IDs prevent replay from consuming quota or adding another collection.
 - Quiz selection/navigation, immediate explanations, optional persistent timers, offline drafts, results and incorrect-only review. Exam sessions have server deadlines and late-submission enforcement. Historical attempt questions and answers synchronize for later review.
+- Flashcard reviews, doubling known-card intervals (up to 180 days), next-day relearning, due-only queues and cross-device review-state download.
 
 ## Verification
 
