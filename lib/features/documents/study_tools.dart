@@ -117,3 +117,4 @@ class _StudyToolsState extends State<StudyTools> {
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 Wrap(
+                  spacing: 12,
