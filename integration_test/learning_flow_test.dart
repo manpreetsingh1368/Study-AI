@@ -196,6 +196,7 @@ void main() {
         await other.saveNotebookNote(
           set['id'],
           'Offline thought',
+          'ATP powers cellular work.',
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
