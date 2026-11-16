@@ -162,6 +162,7 @@ void main() {
             'hasMore': false,
           };
         }
+        if (req.uri.path == '/sets') {
           body = {
             'sets': remote == null || remote!['deleted'] == 1 ? [] : [remote],
           };
