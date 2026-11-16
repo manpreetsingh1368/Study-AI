@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-        const SizedBox(height: 16),
         Wrap(
           spacing: 12,
           runSpacing: 12,
