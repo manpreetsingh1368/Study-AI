@@ -25,3 +25,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         'code': code.text.trim(),
         'password': password.text,
       });
+      if (mounted) {
