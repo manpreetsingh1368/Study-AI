@@ -45,7 +45,6 @@ No administrator password is generated or hardcoded. Refresh/sign in again to sh
 
 Set `GEMINI_API_KEY` and `GEMINI_MODEL` in `server/.env`. Select a currently supported `generateContent` model available to your Google account. There is no default model guess and no client-side API key. Notes and PDFs selected for generation are sent to Google Gemini; review Google's terms/data handling before public deployment.
 
-Implementation follows Google's [generateContent API](https://ai.google.dev/api/generate-content) and [structured output documentation](https://ai.google.dev/gemini-api/docs/structured-output). Requests have a 60-second provider timeout, one retry for server failures, JSON Schema output and Zod validation. Quota errors and malformed responses never produce fabricated fallback materials. PDFs are limited to 10 MiB by default and checked for MIME/signature, not comprehensively scanned or parsed.
 
 ## Data, offline use and synchronization
 
