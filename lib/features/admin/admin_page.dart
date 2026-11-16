@@ -94,6 +94,7 @@ class _AdminPageState extends State<AdminPage> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text('Role: ${detail['user']['role']}'),
+                                      Text(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
