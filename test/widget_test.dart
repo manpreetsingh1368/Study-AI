@@ -105,6 +105,7 @@ void main() {
           {
             'id': 'sample',
             'title': 'Cell biology',
+            'notes': 'ATP carries chemical energy.',
 }
 
 class WidgetMemoryStore extends LocalStore {
