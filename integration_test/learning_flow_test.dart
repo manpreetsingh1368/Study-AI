@@ -72,3 +72,4 @@ void main() {
         const String.fromEnvironment('NODE_BINARY', defaultValue: 'node'),
         ['--import', 'tsx', 'test/fixture-server.ts', temp.path],
         workingDirectory: '$project/server',
+      );
