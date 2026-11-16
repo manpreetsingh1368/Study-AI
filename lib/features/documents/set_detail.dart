@@ -180,6 +180,7 @@ class _SetDetailState extends State<SetDetail> {
                       IconButton(
                         tooltip: 'Study tools',
                         onPressed: showTools,
+                        icon: const Icon(Icons.tune_rounded, size: 20),
                   ),
                 ),
               ],
