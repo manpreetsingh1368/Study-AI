@@ -15,7 +15,6 @@ class SetDetail extends StatefulWidget {
 }
 
 class _SetDetailState extends State<SetDetail> {
-  bool busy = false, sideBySide = false;
   double split = .5;
   String? error;
   bool busy = false;
