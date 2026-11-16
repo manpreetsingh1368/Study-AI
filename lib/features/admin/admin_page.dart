@@ -35,6 +35,7 @@ class _AdminPageState extends State<AdminPage> {
           users = append ? [...users, ...data['users']] : data['users'];
           hasMore = data['hasMore'];
           offset = data['nextOffset'];
+          total = data['total'];
           stats = Map<String, dynamic>.from(s);
           error = null;
         });
