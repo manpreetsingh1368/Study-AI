@@ -365,6 +365,7 @@ class _SetDetailState extends State<SetDetail> {
           child: OutlinedButton.icon(
             onPressed: busy ? null : addSource,
             icon: const Icon(Icons.add, size: 18),
+            label: const Text('Add source'),
                   ),
                 ),
             ],
