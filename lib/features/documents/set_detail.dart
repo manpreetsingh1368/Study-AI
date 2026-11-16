@@ -612,4 +612,5 @@ class _SetDetailState extends State<SetDetail> {
                 onPressed: busy ? null : () => pin(entry),
                 icon: const Icon(Icons.bookmark_add_outlined, size: 18),
               ),
+            if (blocks.isNotEmpty)
 }
