@@ -45,6 +45,7 @@ class _SetDetailState extends State<SetDetail> {
         validSelection,
       );
       if (!mounted) return;
+      setState(() {
         ),
       ),
     ),
