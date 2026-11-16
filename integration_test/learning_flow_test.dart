@@ -202,6 +202,7 @@ void main() {
         expect((await otherStore.pending(other.account)).length, 2);
         expect(
           other.sets
+              .firstWhere((s) => s['id'] == set['id'])['notebook']['notes']
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
