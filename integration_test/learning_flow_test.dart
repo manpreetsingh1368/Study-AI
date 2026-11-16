@@ -106,3 +106,4 @@ void main() {
           ProviderScope(
             overrides: [studyProvider.overrideWithValue(c)],
             child: const StudyAIApp(),
+          ),
