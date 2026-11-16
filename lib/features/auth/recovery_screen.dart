@@ -79,3 +79,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   controller: code,
                   obscureText: true,
                   decoration: const InputDecoration(labelText: 'Recovery code'),
+                ),
