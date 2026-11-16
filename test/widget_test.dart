@@ -85,6 +85,7 @@ void main() {
       Theme.of(tester.element(find.byType(Scaffold).first)).brightness,
       Brightness.dark,
     );
+    await tester.pumpWidget(const SizedBox());
 }
 
 class WidgetMemoryStore extends LocalStore {
