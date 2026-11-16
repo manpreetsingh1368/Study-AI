@@ -39,3 +39,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
       .prepare("INSERT INTO quiz_attempts VALUES(?,?,?,?,?,?)")
       .run("attempt", "u", "s", 1, 1, 1);
     old
+      .prepare("INSERT INTO quiz_answers VALUES(?,?,?)")
