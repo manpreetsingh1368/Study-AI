@@ -38,3 +38,4 @@ async function setup(t: any, generate = supported) {
   });
   await app.ready();
   t.after(async () => {
+    await app.close();
