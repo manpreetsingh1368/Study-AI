@@ -188,6 +188,7 @@ class _SetDetailState extends State<SetDetail> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(child: ErrorState(message: error!)),
+                  IconButton(
                   ),
                 ],
               ),
