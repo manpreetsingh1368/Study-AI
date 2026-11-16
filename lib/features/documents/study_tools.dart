@@ -80,3 +80,4 @@ class _StudyToolsState extends State<StudyTools> {
                           ),
                           actions: [
                             TextButton(
+                              onPressed: () => Navigator.pop(ctx, false),
