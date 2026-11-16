@@ -618,4 +618,5 @@ class _SetDetailState extends State<SetDetail> {
                 onPressed: () => Clipboard.setData(
                   ClipboardData(
                     text: blocks
+                        .map((b) => '${b['heading']}\n${b['text']}')
 }
