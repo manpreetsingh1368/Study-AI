@@ -483,6 +483,7 @@ export function createApp(
         sid,
         kind: b.kind,
         count: b.count,
+        difficulty: b.difficulty,
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
