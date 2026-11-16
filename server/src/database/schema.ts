@@ -221,3 +221,4 @@ export const notebookNotes = sqliteTable("notebook_notes", {
   citations: text("citations").notNull(),
   createdAt: integer("created_at").notNull(),
   deleted: integer("deleted").notNull().default(0),
+});
