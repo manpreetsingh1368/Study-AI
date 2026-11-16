@@ -197,3 +197,4 @@ class _StudyToolsState extends State<StudyTools> {
                       borderRadius: BorderRadius.circular(16),
                       child: PdfScreen(
                         controller: c,
+                        document: Map<String, dynamic>.from(s['document']),
