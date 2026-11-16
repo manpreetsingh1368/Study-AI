@@ -717,4 +717,5 @@ class _SetDetailState extends State<SetDetail> {
       panelTitle('Studio', Icons.auto_awesome_outlined),
       Expanded(
         child: ListView(
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
 }
