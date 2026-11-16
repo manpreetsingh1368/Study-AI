@@ -12,3 +12,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     old.pragma("foreign_keys=ON");
     old.exec(
       readFileSync(
+        new URL("../migrations/001_initial.sql", import.meta.url),
