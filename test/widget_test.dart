@@ -110,6 +110,7 @@ void main() {
             'version': 1,
             'collections': [
               {'id': 'quiz-one', 'kind': 'quiz', 'title': 'Biology quiz'},
+              {
 }
 
 class WidgetMemoryStore extends LocalStore {
