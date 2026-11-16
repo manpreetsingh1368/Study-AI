@@ -103,3 +103,4 @@ void main() {
       try {
         await c.initialize();
         await tester.pumpWidget(
+          ProviderScope(
