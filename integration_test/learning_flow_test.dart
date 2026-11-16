@@ -31,3 +31,4 @@ Future<LocalStore> testStore() async {
   await store.write('_device', 'onboarded', true);
   return store;
 }
+
