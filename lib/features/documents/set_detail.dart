@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                icon: Icons.auto_awesome,
                 onPressed: busy || c.offline
                     ? null
                     : () =>
