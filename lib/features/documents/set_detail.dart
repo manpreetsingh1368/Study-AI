@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-              ),
               const SizedBox(height: 24),
               PrimaryActionButton(
                 label: busy ? 'Creating with Gemini…' : 'Generate with AI',
