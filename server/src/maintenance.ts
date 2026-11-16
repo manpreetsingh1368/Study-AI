@@ -34,6 +34,7 @@ try {
         .prepare(
           `DELETE FROM ${table} WHERE notebook_id IN (SELECT id FROM study_sets WHERE deleted=1 AND updated_at<?)`,
         )
+        .run(now - retention * 86400000);
     sqlite.prepare("DELETE FROM sessions WHERE expires_at<=?").run(now);
     sqlite.prepare("DELETE FROM recovery_codes WHERE expires_at<=?").run(now);
     sqlite
