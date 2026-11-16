@@ -62,3 +62,4 @@ export function registerNotebookRoutes(
       const existing = get("SELECT * FROM notebook_notes WHERE id=?", b.id);
       if (existing) {
         if (
+          existing.notebook_id !== sid ||
