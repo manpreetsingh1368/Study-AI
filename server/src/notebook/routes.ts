@@ -325,3 +325,4 @@ export function notebookState(sid: string, get: any, all: any) {
       sid,
     ).map((n: any) => ({ ...n, citations: JSON.parse(n.citations) })),
     sourceIds: JSON.parse(
+      get(
