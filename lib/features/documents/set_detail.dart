@@ -466,4 +466,5 @@ class _SetDetailState extends State<SetDetail> {
             Icons.auto_awesome_rounded,
             color: accent,
             size: 29,
+          ),
 }
