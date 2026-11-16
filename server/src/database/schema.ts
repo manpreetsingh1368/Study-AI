@@ -214,3 +214,4 @@ export const notebookEntries = sqliteTable("notebook_entries", {
 export const notebookNotes = sqliteTable("notebook_notes", {
   id: text("id").primaryKey(),
   notebookId: text("notebook_id")
+    .notNull()
