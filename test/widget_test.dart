@@ -184,6 +184,7 @@ void main() {
         GoRouter.of(tester.element(find.byType(Scaffold).first))
             .go('/settings');
         await tester.pumpAndSettle();
+        expect(find.text('Make yourself at home.'), findsOneWidget);
 }
 
 class WidgetMemoryStore extends LocalStore {
