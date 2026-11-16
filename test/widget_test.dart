@@ -57,6 +57,7 @@ void main() {
     final store = WidgetMemoryStore();
     final controller = StudyController(store)
       ..loading = false
+      ..onboarded = false;
 }
 
 class WidgetMemoryStore extends LocalStore {
