@@ -91,6 +91,7 @@ void main() {
   for (final width in [390.0, 1200.0]) {
     testWidgets(
       'Saved collections, quiz feedback and settings render at $width',
+      (tester) async {
 }
 
 class WidgetMemoryStore extends LocalStore {
