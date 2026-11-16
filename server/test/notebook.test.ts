@@ -374,3 +374,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       id: randomUUID(),
       kind: "chat",
       prompt: "What does ATP do?",
+      sourceIds: [set.id],
