@@ -118,6 +118,7 @@ void main() {
             ],
             'questions': [
               {
+                'id': 'q1',
 }
 
 class WidgetMemoryStore extends LocalStore {
