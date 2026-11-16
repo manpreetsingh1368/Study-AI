@@ -108,3 +108,4 @@ void main() {
             child: const StudyAIApp(),
           ),
         );
+        await tester.pumpAndSettle();
