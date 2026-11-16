@@ -237,3 +237,4 @@ test("source selection excludes previous conversations about unchecked sources; 
       200,
     );
   }
+  assert.equal(inputs[1].history.length, 0);
