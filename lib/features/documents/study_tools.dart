@@ -120,3 +120,4 @@ class _StudyToolsState extends State<StudyTools> {
                   spacing: 12,
                   children: [
                     TextButton.icon(
+                      onPressed: () => context.go('/pdf/${s['id']}'),
