@@ -389,6 +389,7 @@ class _SetDetailState extends State<SetDetail> {
           widget.set['id'],
           title.text.trim(),
           text.text.trim(),
+        );
                         ),
                       ),
                     ),
