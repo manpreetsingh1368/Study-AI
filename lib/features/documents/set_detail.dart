@@ -760,4 +760,5 @@ class _SetDetailState extends State<SetDetail> {
                             item.$1,
                             'Create a ${item.$2.toLowerCase()} using only the selected sources.',
                           ),
+                    child: Padding(
 }
