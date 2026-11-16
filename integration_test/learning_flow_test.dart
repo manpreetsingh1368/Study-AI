@@ -148,3 +148,4 @@ void main() {
           i < 40 && find.text('Session complete.').evaluate().isEmpty;
           i++
         ) {
+          await tester.pump(const Duration(milliseconds: 250));
