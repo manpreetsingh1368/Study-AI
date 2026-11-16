@@ -591,4 +591,5 @@ class _SetDetailState extends State<SetDetail> {
     final content = entry['content'];
     final blocks = content['blocks'] as List;
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
 }
