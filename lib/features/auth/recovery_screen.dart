@@ -15,3 +15,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
   final email = TextEditingController(),
       code = TextEditingController(),
       password = TextEditingController();
+  bool busy = false;
