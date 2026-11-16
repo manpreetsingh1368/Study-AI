@@ -148,6 +148,7 @@ class StudyController extends ChangeNotifier {
           .toList();
   Future<void> _loadCache() async {
     catalog = Map<String, dynamic>.from(
+      await store.read(account, 'catalog') ?? {},
     failedOperations = await _readList('failures');
     uploadIssues = await _readList('uploadIssues');
     sets = await _readList('sets');
