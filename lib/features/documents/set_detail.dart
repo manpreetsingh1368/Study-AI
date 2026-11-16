@@ -565,4 +565,5 @@ class _SetDetailState extends State<SetDetail> {
                 IconButton.filled(
                   tooltip: 'Send question · Ctrl/Command+Enter',
                   onPressed: busy || c.offline || validSelection.isEmpty
+                      ? null
 }
