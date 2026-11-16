@@ -138,6 +138,7 @@ void main() {
                 'difficulty': 'easy',
               },
             ],
+            'document': null,
 }
 
 class WidgetMemoryStore extends LocalStore {
