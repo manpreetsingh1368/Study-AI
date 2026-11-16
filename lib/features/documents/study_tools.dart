@@ -160,3 +160,4 @@ class _StudyToolsState extends State<StudyTools> {
           const SizedBox(height: 20),
         ],
         if (sideBySide && s['document'] != null)
+          SizedBox(
