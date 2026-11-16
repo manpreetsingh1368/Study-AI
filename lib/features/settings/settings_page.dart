@@ -142,6 +142,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                 'This code replaces any older recovery code. It can reset your password once and expires in one year. It will not be shown again.',
                               ),
                               const SizedBox(height: 20),
+                              SelectableText(result['code']),
             OutlinedButton(
               onPressed: busy
                   ? null
