@@ -424,4 +424,5 @@ class _SetDetailState extends State<SetDetail> {
                     if (busy)
                       const Padding(
                         padding: EdgeInsets.all(16),
+                        child: Row(
 }
