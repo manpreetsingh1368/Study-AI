@@ -487,4 +487,5 @@ class _SetDetailState extends State<SetDetail> {
         for (final prompt in [
           'What are the most important ideas?',
           'Explain the main concepts in plain language.',
+          'What connections exist between these sources?',
 }
