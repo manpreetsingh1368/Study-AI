@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-      children: [
         Text(s['title'], style: Theme.of(context).textTheme.headlineLarge),
         if ((s['folder'] ?? '').isNotEmpty)
           Text(s['folder'], style: const TextStyle(color: accent)),
