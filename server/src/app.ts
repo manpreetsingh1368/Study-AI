@@ -304,6 +304,7 @@ export function createApp(
         })
         .parse(req.body);
       const passwordHash = await hash(b.password, { type: argon2id });
+      db.transaction(() => {
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
