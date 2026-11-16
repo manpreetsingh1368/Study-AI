@@ -625,6 +625,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                 runSpacing: 16,
                 children: [
                   for (final set in filtered)
+                    SizedBox(width: width, child: notebookCard(set)),
       ],
     );
   }
