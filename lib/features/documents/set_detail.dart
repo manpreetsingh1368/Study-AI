@@ -161,6 +161,7 @@ class _SetDetailState extends State<SetDetail> {
         ],
       ),
     );
+    if (value == true && mounted) {
                         ),
                       ),
                     ),
