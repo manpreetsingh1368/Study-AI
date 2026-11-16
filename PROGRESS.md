@@ -37,6 +37,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 - Answers contain clickable quotations validated against selected text chunks, including verified PDF page numbers. Citation previews identify changed source snapshots and open the matching PDF page. Invalid references are rejected; explicit insufficient-evidence output is supported.
 - Studio source overviews, study guides and FAQs; pinned answers, offline personal notes, saved conversations, earlier-history loading, follow-up questions, clipboard copy and Markdown export.
 - Notebook requests share the existing atomic plan allowance and use stable request IDs. Selected-source history filtering prevents unchecked materials leaking into model context.
+- Migration 004 adds normalized notebook records and source preferences; child-record updates participate in incremental sync. Queued notes merge with incoming snapshots; acknowledgement/cache writes are atomic.
 
 ## Configuration and remaining release work
 
