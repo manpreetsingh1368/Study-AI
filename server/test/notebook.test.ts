@@ -310,3 +310,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
     uploadDir: join(directory, "uploads"),
     notebookGenerate: async (input) => ({
       insufficientEvidence: false,
+      blocks: [
