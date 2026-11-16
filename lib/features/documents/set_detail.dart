@@ -453,6 +453,7 @@ class _SetDetailState extends State<SetDetail> {
                                         source['document'] == null
                                             ? Icons.notes_rounded
                                             : Icons.picture_as_pdf_outlined,
+                                        size: 12,
                   ),
                 ),
             ],
