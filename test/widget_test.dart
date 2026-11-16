@@ -136,6 +136,7 @@ void main() {
                 'back': 'An energy carrier',
                 'topic': 'Biology',
                 'difficulty': 'easy',
+              },
 }
 
 class WidgetMemoryStore extends LocalStore {
