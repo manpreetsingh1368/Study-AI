@@ -640,6 +640,7 @@ class StudyController extends ChangeNotifier {
       'count': count,
       'difficulty': difficulty,
     });
+    await store.write(account, 'generation:$sid', null);
     await sync();
   }
 
