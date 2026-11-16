@@ -2,6 +2,7 @@
 
 Updated: 2026-11-16. This is an incremental development build, not a production release candidate.
 
+## Implemented application
 
 - Flutter Material 3 with Riverpod and GoRouter; onboarding, registration, login, dashboard, library, notes/PDF editing, generation controls, quizzes, timed exams, results, collections, flashcard sessions, analytics, history, Free/Pro, profile/settings, conflicts and administration.
 - Adaptive desktop/mobile navigation, light/dark/system appearance persisted locally, translucent sidebar, global search (Ctrl/Command+K), new-set shortcut, folder filters, drag/drop PDF upload, PDF viewer, resizable notes/PDF reading panel, keyboard/swipe/flip study controls and reduced-motion handling for flashcards.
