@@ -747,4 +747,5 @@ class _SetDetailState extends State<SetDetail> {
                 Icons.question_answer_outlined,
               ),
             ])
+              Padding(
 }
