@@ -266,3 +266,4 @@ class _StudyToolsState extends State<StudyTools> {
         const SizedBox(height: 24),
         StudyCard(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
