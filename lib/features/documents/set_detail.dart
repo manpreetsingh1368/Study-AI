@@ -489,4 +489,5 @@ class _SetDetailState extends State<SetDetail> {
           'Explain the main concepts in plain language.',
           'What connections exist between these sources?',
         ])
+          Padding(
 }
