@@ -736,4 +736,5 @@ class _SetDetailState extends State<SetDetail> {
               ),
               (
                 'guide',
+                'Study guide',
 }
