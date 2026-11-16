@@ -259,3 +259,4 @@ class _StudyToolsState extends State<StudyTools> {
                 ),
                 onTap: () => context.go(
                   '/${deck['kind'] == 'flashcards' ? 'cards' : 'quiz'}/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}',
+                ),
