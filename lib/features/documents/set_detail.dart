@@ -251,6 +251,7 @@ class _SetDetailState extends State<SetDetail> {
       context: context,
       builder: (ctx) => AlertDialog(
         title: Row(
+          children: [
                         ),
                       ),
                     ),
