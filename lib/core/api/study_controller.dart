@@ -647,7 +647,6 @@ class StudyController extends ChangeNotifier {
     await store.enqueue(account, path, body);
     if (path == '/attempts') {
       final set = sets.where((s) => s['id'] == body['setId']).firstOrNull;
-      if (set != null) {
         final questions = (set['questions'] as List)
             .where(
               (q) =>
