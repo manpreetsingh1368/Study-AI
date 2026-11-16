@@ -223,3 +223,4 @@ export const notebookNotes = sqliteTable("notebook_notes", {
   deleted: integer("deleted").notNull().default(0),
 });
 export const notebookPreferences = sqliteTable("notebook_preferences", {
+  notebookId: text("notebook_id")
