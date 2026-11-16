@@ -278,3 +278,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
               { chunkId: "invented", quote: "ATP transfers chemical energy." },
             ],
           },
+        ],
