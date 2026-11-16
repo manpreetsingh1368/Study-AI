@@ -117,6 +117,7 @@ class _SetDetailState extends State<SetDetail> {
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 16),
+                TextField(
                 ),
               ],
             ),
