@@ -231,3 +231,4 @@ test("source selection excludes previous conversations about unchecked sources; 
           id: randomUUID(),
           kind,
           prompt: "Help me study",
+          sourceIds: sources,
