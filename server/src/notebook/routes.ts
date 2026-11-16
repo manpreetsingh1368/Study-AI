@@ -81,3 +81,4 @@ export function registerNotebookRoutes(
         const original = get(
           "SELECT * FROM notebook_entries WHERE id=? AND notebook_id=?",
           b.entryId,
+          sid,
