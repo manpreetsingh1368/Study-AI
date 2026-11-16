@@ -34,6 +34,7 @@ class _SetDetailState extends State<SetDetail> {
   }
 
   Future<void> task(Future<void> Function() work) async {
+    if (busy) return;
     setState(() {
       busy = true;
       error = null;
