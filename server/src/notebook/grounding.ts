@@ -185,3 +185,4 @@ export async function notebookGenerate(
         new Error("AI returned an invalid notebook response."),
         { statusCode: 502 },
       );
+    }
