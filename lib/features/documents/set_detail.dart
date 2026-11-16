@@ -532,4 +532,5 @@ class _SetDetailState extends State<SetDetail> {
             border: Border.all(color: accent.withValues(alpha: .25)),
           ),
           child: CallbackShortcuts(
+            bindings: {
 }
