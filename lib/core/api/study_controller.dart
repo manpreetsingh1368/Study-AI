@@ -400,6 +400,7 @@ class StudyController extends ChangeNotifier {
       final notes = List<dynamic>.from(book['notes'] ?? []);
       if (match.group(2) == 'notes') {
         notes.removeWhere((n) => n['id'] == body['id']);
+        notes.add({
     }
   }
 
