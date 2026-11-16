@@ -103,6 +103,7 @@ void main() {
           ..offline = true;
         controller.sets = [
           {
+            'id': 'sample',
 }
 
 class WidgetMemoryStore extends LocalStore {
