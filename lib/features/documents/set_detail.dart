@@ -245,6 +245,7 @@ class _SetDetailState extends State<SetDetail> {
                           selected: {mobileTab},
                           onSelectionChanged: (v) =>
                               setState(() => mobileTab = v.first),
+                        ),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
