@@ -12,3 +12,4 @@ try {
   const files = sqlite
     .prepare(
       "SELECT d.id FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.deleted=1 AND s.updated_at<?",
+    )
