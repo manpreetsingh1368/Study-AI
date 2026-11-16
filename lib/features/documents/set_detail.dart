@@ -379,6 +379,7 @@ class _SetDetailState extends State<SetDetail> {
               prefixIcon: Icon(Icons.search, size: 18),
               isDense: true,
             ),
+          ),
                   ),
                 ),
             ],
