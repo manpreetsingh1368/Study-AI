@@ -356,6 +356,7 @@ class _SetDetailState extends State<SetDetail> {
             message: 'Add a source',
             child: IconButton(
               onPressed: busy ? null : addSource,
+              icon: const Icon(Icons.add_circle_outline, size: 20),
                   ),
                 ),
             ],
