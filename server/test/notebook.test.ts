@@ -220,3 +220,4 @@ test("source selection excludes previous conversations about unchecked sources; 
     two = (
       await call("POST", "/sets", a.token, { title: "Two", notes: sourceText })
     ).body.set;
+  for (const [kind, sources] of [
