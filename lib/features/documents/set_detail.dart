@@ -20,6 +20,7 @@ class _SetDetailState extends State<SetDetail> {
   bool busy = false, sideBySide = false;
   double split = .5;
   String? error;
+  bool busy = false;
   StudyController get c => widget.controller;
   Map<String, dynamic> get notebook =>
       Map<String, dynamic>.from(widget.set['notebook'] ?? {});
