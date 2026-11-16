@@ -211,3 +211,4 @@ class _StudyToolsState extends State<StudyTools> {
         Text(
           'Your learning collections',
           style: Theme.of(context).textTheme.titleLarge,
+        ),
