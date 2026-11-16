@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-                  deck['kind'] == 'flashcards'
                       ? Icons.style_outlined
                       : deck['kind'] == 'exam'
                       ? Icons.timer_outlined
