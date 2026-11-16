@@ -687,4 +687,5 @@ class _SetDetailState extends State<SetDetail> {
           Text(
             'Keep exploring',
             style: TextStyle(
+              fontSize: 10,
 }
