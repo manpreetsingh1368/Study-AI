@@ -187,3 +187,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
     set = (
       await call("POST", "/sets", a.token, {
         title: "Lecture",
+        notes: sourceText,
