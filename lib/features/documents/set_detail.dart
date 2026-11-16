@@ -919,4 +919,5 @@ class _SetDetailState extends State<SetDetail> {
                         fontSize: 11,
                         fontWeight: FontWeight.w600,
                       ),
+                    ),
 }
