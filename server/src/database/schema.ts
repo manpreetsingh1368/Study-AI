@@ -126,6 +126,7 @@ export const generationUsage = sqliteTable("generation_usage", {
   status: text("status").notNull(),
   requestHash: text("request_hash"),
   requestConfig: text("request_config"),
+  collectionId: text("collection_id").references(() => collections.id, {
   createdAt: integer("created_at").notNull(),
 });
 export const syncChanges = sqliteTable("sync_changes", {
