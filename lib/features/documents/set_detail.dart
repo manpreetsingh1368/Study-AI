@@ -552,4 +552,5 @@ class _SetDetailState extends State<SetDetail> {
                     minLines: 1,
                     maxLines: 5,
                     decoration: const InputDecoration(
+                      hintText: 'Ask your sources…',
 }
