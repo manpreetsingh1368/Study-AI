@@ -202,6 +202,7 @@ class _SetDetailState extends State<SetDetail> {
                 Text(
                   '${validSelection.length} selected ${validSelection.length == 1 ? 'source' : 'sources'}  ·  ${entries.length} saved ${entries.length == 1 ? 'response' : 'responses'}  ·  ${savedNotes.length} ${savedNotes.length == 1 ? 'note' : 'notes'}',
                   style: TextStyle(
+                    fontSize: 12,
                   ),
                 ),
               ],
