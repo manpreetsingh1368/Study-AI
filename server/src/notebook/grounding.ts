@@ -132,3 +132,4 @@ export async function notebookGenerate(
 ): Promise<NotebookOutput> {
   const key = process.env.GEMINI_API_KEY,
     model = process.env.GEMINI_MODEL;
+  if (!key || !model)
