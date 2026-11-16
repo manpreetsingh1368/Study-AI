@@ -99,6 +99,7 @@ Application, backend, tests, deployment and documentation files created or updat
 - `server/test/fixture-server.ts`
 - `server/test/gemini.test.ts`
 - `server/test/migration.test.ts`
+- `server/test/notebook.test.ts`
 - `server/tsconfig.json`
 - `test/offline_sync_test.dart`
 - `test/widget_test.dart`
