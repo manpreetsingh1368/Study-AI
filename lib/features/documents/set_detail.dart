@@ -623,4 +623,5 @@ class _SetDetailState extends State<SetDetail> {
                   ),
                 ),
                 icon: const Icon(Icons.copy_outlined, size: 16),
+              ),
 }
