@@ -116,7 +116,6 @@ class _SetDetailState extends State<SetDetail> {
                   s['document']['filename'],
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
-                      onPressed: busy
                           ? null
                           : () => action(() async {
                               await c.documentBytes(s['document']['id']);
