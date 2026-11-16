@@ -175,6 +175,7 @@ void main() {
           response['content']['blocks'][0]['citations'][0]['quote'],
           contains('ATP transfers chemical energy.'),
         );
+        await c.saveNotebookNote(
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
