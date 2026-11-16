@@ -179,6 +179,7 @@ class _SetDetailState extends State<SetDetail> {
         title: const Text('Add a text source'),
         content: SizedBox(
           width: 560,
+          child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
