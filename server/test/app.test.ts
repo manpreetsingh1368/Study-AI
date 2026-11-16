@@ -687,3 +687,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
   assert.equal(replay.body.set.collections.length, 1);
   assert.equal(replay.body.plan.used, 1);
   assert.equal(
+    (
