@@ -2,3 +2,4 @@
 Description=Hourly Study AI maintenance
 [Timer]
 OnBootSec=15min
+OnUnitActiveSec=1h
