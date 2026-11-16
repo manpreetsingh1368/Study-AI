@@ -17,7 +17,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Verification
 
-- Linux executable: 12-second Xvfb launch smoke test, no Dart crash observed; process deliberately stopped by timeout. This is not a full native acceptance test.
 - Android debug APK: passed (`flutter build apk --debug`), output `build/app/outputs/flutter-apk/app-debug.apk`. First build installed the required Android SDK platforms/NDK/CMake through the existing toolchain. No Android device/emulator runtime acceptance test was performed.
 - iOS/macOS: not built/tested on Ubuntu.
 - Live Gemini generation: unverified; no API credentials configured. Test fixtures are test-only and never a production fallback.
