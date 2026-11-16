@@ -2,3 +2,4 @@
 Description=Private consistent Study AI backup
 [Service]
 Type=oneshot
+ExecStart=/bin/bash /opt/study-ai/server/deploy/backup.sh
