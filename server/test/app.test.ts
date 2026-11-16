@@ -671,3 +671,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
   ).body.set.id;
   const operation = {
     id: randomUUID(),
+    kind: "quiz",
