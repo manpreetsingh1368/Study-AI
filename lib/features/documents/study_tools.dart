@@ -148,3 +148,4 @@ class _StudyToolsState extends State<StudyTools> {
                             setState(() => sideBySide = !sideBySide),
                         child: Text(
                           sideBySide
+                              ? 'Close reading panel'
