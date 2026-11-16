@@ -112,3 +112,4 @@ void main() {
         await c.authenticate(
           register: true,
           email: 'native-test@example.com',
+          password: 'native-test-password',
