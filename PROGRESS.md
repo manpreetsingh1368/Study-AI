@@ -14,6 +14,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Quiz selection/navigation, immediate explanations, optional persistent timers, offline drafts, results and incorrect-only review. Exam sessions have server deadlines and late-submission enforcement. Historical attempt questions and answers synchronize for later review.
 - Flashcard reviews, doubling known-card intervals (up to 180 days), next-day relearning, due-only queues and cross-device review-state download.
 - Real dashboard totals, performance charts, daily study activity, history and weak topics. Pro topic-mastery analytics are protected server-side.
+- Configurable Free/Pro limits and atomic generation reservations, manually granted activation/expiration dates, cross-device entitlement refresh, current usage display and environment-driven plan descriptions. No payment processing.
 
 ## Verification
 
