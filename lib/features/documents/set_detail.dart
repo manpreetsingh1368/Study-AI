@@ -118,6 +118,7 @@ class _SetDetailState extends State<SetDetail> {
     final choice = await showModalBottomSheet<String>(
       context: context,
       showDragHandle: true,
+      builder: (ctx) => SafeArea(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
