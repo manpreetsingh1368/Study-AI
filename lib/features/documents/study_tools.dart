@@ -241,3 +241,4 @@ class _StudyToolsState extends State<StudyTools> {
                       ),
                 trailing: Wrap(
                   children: [
+                    if (deck['kind'] == 'flashcards')
