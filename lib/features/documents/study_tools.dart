@@ -322,3 +322,4 @@ class _StudyToolsState extends State<StudyTools> {
                     initialSelection: count,
                     label: const Text('Items'),
                     onSelected: busy ? null : (v) => setState(() => count = v!),
+                    dropdownMenuEntries: [
