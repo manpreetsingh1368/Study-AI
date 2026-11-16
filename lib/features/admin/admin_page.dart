@@ -87,6 +87,7 @@ class _AdminPageState extends State<AdminPage> {
                               title: Text(u['email']),
                               content: SizedBox(
                                 width: 500,
+                                child: SingleChildScrollView(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
