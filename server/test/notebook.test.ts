@@ -152,3 +152,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     (await call("GET", "/sets", a.token)).body.sets[0].notebook.notes.length,
     0,
   );
+  assert.equal(
