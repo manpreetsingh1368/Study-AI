@@ -297,3 +297,4 @@ export function registerNotebookRoutes(
         change(sid, u.id);
       })();
       return {
+        entry: entry(get("SELECT * FROM notebook_entries WHERE id=?", b.id)),
