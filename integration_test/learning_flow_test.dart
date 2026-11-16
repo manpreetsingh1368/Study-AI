@@ -166,3 +166,4 @@ void main() {
         await c.sync();
         expect(c.reviews.length, 1);
         await other.initialize();
+        expect(other.sets.single['title'], 'Cell biology');
