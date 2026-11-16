@@ -231,3 +231,4 @@ class _StudyToolsState extends State<StudyTools> {
                       : Icons.quiz_outlined,
                   color: accent,
                 ),
+                title: Text(deck['title']),
