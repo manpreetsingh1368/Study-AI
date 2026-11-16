@@ -879,4 +879,5 @@ class _SetDetailState extends State<SetDetail> {
               children: [
                 Expanded(
                   child: Text(
+                    'Saved notes · ${savedNotes.length}',
 }
