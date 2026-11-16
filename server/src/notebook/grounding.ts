@@ -156,3 +156,4 @@ export async function notebookGenerate(
             maxOutputTokens: Number(process.env.GEMINI_MAX_TOKENS || 12000),
           },
         }),
+      },
