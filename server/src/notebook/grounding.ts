@@ -152,3 +152,4 @@ export async function notebookGenerate(
           ],
           generationConfig: {
             responseMimeType: "application/json",
+            responseJsonSchema: z.toJSONSchema(responseSchema),
