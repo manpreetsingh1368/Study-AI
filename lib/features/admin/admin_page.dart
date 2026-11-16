@@ -32,7 +32,6 @@ class _AdminPageState extends State<AdminPage> {
       final s = await widget.controller.request('GET', '/admin/stats');
       if (mounted) {
         setState(() {
-          users = data['users'];
           stats = Map<String, dynamic>.from(s);
           error = null;
         });
