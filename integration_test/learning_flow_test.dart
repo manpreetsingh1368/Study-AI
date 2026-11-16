@@ -218,6 +218,7 @@ void main() {
             await File('$screenshotDirectory/notebook-$variant.png')
                 .writeAsBytes(png!.buffer.asUint8List());
             captured.dispose();
+          }
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
