@@ -142,6 +142,7 @@ void main() {
           },
         ];
         await tester.pumpWidget(
+          ProviderScope(
 }
 
 class WidgetMemoryStore extends LocalStore {
