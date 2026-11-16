@@ -26,3 +26,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         'password': password.text,
       });
       if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
