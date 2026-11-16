@@ -665,3 +665,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
 });
 test("generation replay does not consume quota twice or duplicate a collection", async (t) => {
   const { call, register } = await setup(t);
+  const a = await register();
