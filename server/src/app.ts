@@ -759,6 +759,7 @@ export function createApp(
       subscription:
         get("SELECT * FROM subscriptions WHERE user_id=?", uid) || null,
       sets: get(
+        "SELECT count(*) n FROM study_sets WHERE user_id=? AND deleted=0",
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
