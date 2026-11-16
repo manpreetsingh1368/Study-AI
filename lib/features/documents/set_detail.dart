@@ -116,7 +116,6 @@ class _SetDetailState extends State<SetDetail> {
                   s['document']['filename'],
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
-                      label: const Text('Keep offline'),
                     ),
                     if (MediaQuery.sizeOf(context).width > 1000)
                       TextButton(
