@@ -148,6 +148,7 @@ class ModernToolbar extends StatelessWidget {
                 ? OutlinedButton.icon(
                     onPressed: onOpenSearch,
                     icon: const Icon(Icons.search, size: 18),
+                    label: const Text('Search library · ⌘/Ctrl K'),
           ),
         const SizedBox(width: 12),
         Tooltip(
