@@ -968,4 +968,5 @@ class _SetDetailState extends State<SetDetail> {
                               );
                             },
                             child: const Text('Delete note'),
+                          ),
 }
