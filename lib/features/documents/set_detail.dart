@@ -319,6 +319,7 @@ class _SetDetailState extends State<SetDetail> {
     await task(() async {
       await c.saveNotebookNote(
         widget.set['id'],
+        entry['kind'] == 'chat'
                         ),
                       ),
                     ),
