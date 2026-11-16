@@ -73,6 +73,7 @@ Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses thr
 - Save an answer to Studio notes, write a personal note, copy an answer, export reports/notes as Markdown, and reopen older conversations. Notes queue safely offline; saved answers/reports remain available from the local cache.
 - Quizzes, flashcards and exams remain available under **Study tools** and the Studio collection list.
 
+The backend extracts PDF text using the open-source `pdftotext` command from `poppler-utils` (`PDFTOTEXT_BIN` may specify an alternate executable). Source extraction has a timeout/output bound; selected text is limited to 100,000 characters in total. Oversized selections are rejected explicitly. Scanned PDFs without selectable text require pasted notes or a transcript.
 
 ## Recovery codes
 
