@@ -14,3 +14,4 @@ try {
       "SELECT d.id FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.deleted=1 AND s.updated_at<?",
     )
     .all(now - retention * 86400000) as { id: string }[];
+  // Clear private blobs before metadata: if interrupted, retrying unlink is safe.
