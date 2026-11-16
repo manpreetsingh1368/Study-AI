@@ -54,3 +54,4 @@ void main() {
 }
 
 class WidgetMemoryStore extends LocalStore {
+  final values = <String, dynamic>{};
