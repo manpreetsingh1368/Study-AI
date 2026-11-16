@@ -377,4 +377,5 @@ class _SetDetailState extends State<SetDetail> {
           child: report != null
               ? SingleChildScrollView(
                   padding: const EdgeInsets.all(22),
+                  child: answer(report!, isReport: true),
 }
