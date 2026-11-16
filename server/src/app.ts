@@ -517,6 +517,7 @@ export function createApp(
         return { set: full(s), plan: plan(u.id), collectionId: collection.id };
       }
       if (previousUsage.request_hash !== requestHash)
+        fail(409, "Generation identifier reused with different material.");
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
