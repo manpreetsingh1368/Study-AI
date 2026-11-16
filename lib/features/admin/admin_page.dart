@@ -49,6 +49,7 @@ class _AdminPageState extends State<AdminPage> {
       Text('Administration', style: Theme.of(context).textTheme.headlineLarge),
       const SizedBox(height: 24),
       Wrap(
+        spacing: 16,
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
