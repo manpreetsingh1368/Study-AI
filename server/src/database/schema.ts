@@ -215,3 +215,4 @@ export const notebookNotes = sqliteTable("notebook_notes", {
   id: text("id").primaryKey(),
   notebookId: text("notebook_id")
     .notNull()
+    .references(() => studySets.id, { onDelete: "cascade" }),
