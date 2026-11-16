@@ -221,6 +221,7 @@ class _SetDetailState extends State<SetDetail> {
                       padding: const EdgeInsets.all(24),
                       child: SelectableText(
                         (source['notes'] as String).isEmpty
+                            ? 'This source contains a PDF. Open its PDF tab to read it.'
                         ),
                       ),
                     ),
