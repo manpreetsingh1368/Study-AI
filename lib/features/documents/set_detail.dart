@@ -868,4 +868,5 @@ class _SetDetailState extends State<SetDetail> {
                       .first,
                   style: const TextStyle(fontSize: 9),
                 ),
+                trailing: const Icon(Icons.chevron_right, size: 17),
 }
