@@ -461,6 +461,7 @@ class _SetDetailState extends State<SetDetail> {
                                         child: Text(
                                           source['document'] == null
                                               ? 'Lecture notes'
+                                              : 'PDF + notes',
                   ),
                 ),
             ],
