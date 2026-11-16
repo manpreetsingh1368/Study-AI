@@ -25,3 +25,4 @@ class _StudyToolsState extends State<StudyTools> {
     setState(() {
       busy = true;
       error = null;
+    });
