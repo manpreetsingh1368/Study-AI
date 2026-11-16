@@ -113,3 +113,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
       .used,
     1,
   );
+  assert.equal(
