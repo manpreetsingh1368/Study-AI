@@ -648,4 +648,5 @@ class _SetDetailState extends State<SetDetail> {
           ),
         for (final block in blocks) ...[
           if ((block['heading'] as String).isNotEmpty) ...[
+            Text(
 }
