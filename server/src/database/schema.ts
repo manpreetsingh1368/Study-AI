@@ -219,3 +219,4 @@ export const notebookNotes = sqliteTable("notebook_notes", {
   title: text("title").notNull(),
   text: text("text").notNull(),
   citations: text("citations").notNull(),
+  createdAt: integer("created_at").notNull(),
