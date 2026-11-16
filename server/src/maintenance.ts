@@ -41,3 +41,4 @@ try {
       )
         unlinkSync(join(uploads, file));
   console.log(
+    `Maintenance completed: ${files.length} expired private files removed; tombstones retained.`,
