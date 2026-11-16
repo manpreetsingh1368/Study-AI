@@ -101,3 +101,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     `/notebooks/${set.id}/ask`,
     a.token,
     request,
+  );
