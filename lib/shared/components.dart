@@ -125,6 +125,7 @@ class GlassSidebar extends StatelessWidget {
 
 class ModernToolbar extends StatelessWidget {
   final String title, status;
+  final VoidCallback? onOpenSearch;
   final VoidCallback onSync;
   final ValueChanged<String> onSearch;
   const ModernToolbar({
