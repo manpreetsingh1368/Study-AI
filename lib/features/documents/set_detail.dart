@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-                      : Icons.quiz_outlined,
                   color: accent,
                 ),
                 title: Text(deck['title']),
