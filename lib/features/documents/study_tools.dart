@@ -170,3 +170,4 @@ class _StudyToolsState extends State<StudyTools> {
                     child: SingleChildScrollView(
                       child: StudyCard(
                         child: SelectableText(
+                          (s['notes'] as String).isEmpty
