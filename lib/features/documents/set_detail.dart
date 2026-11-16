@@ -550,4 +550,5 @@ class _SetDetailState extends State<SetDetail> {
                     focusNode: composerFocus,
                     enabled: !busy,
                     minLines: 1,
+                    maxLines: 5,
 }
