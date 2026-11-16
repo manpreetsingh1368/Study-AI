@@ -26,3 +26,4 @@ const app = createApp({
             topic: "Cell biology",
             difficulty: input.difficulty,
           })),
+  }),
