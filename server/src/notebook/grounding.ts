@@ -12,3 +12,4 @@ export type SourceChunk = {
 };
 const normalize = (text: string) =>
   text.normalize("NFKC").replace(/\s+/gu, " ").trim();
+export const responseSchema = z.object({
