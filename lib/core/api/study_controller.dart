@@ -731,6 +731,7 @@ class StudyController extends ChangeNotifier {
               .toList();
     notebook['notes'] = [
       ...notebook['notes'] ?? [],
+      {
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
