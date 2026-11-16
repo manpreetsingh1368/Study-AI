@@ -158,6 +158,7 @@ void main() {
           await tester.tap(studio.first);
           await tester.pumpAndSettle();
         }
+        await tester.drag(
         expect(find.text('Your learning collections'), findsOneWidget);
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
