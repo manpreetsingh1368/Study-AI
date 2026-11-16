@@ -203,6 +203,7 @@ void main() {
           for (final variant in ['light', 'dark', 'mobile']) {
             final appearance = variant == 'dark' ? 'dark' : 'light';
             if (variant == 'mobile') {
+              tester.view.physicalSize = const Size(390, 900);
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
