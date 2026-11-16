@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-              label: const Text('Edit notes / PDF'),
             ),
             OutlinedButton.icon(
               onPressed: busy
