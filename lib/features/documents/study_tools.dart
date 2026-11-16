@@ -209,3 +209,4 @@ class _StudyToolsState extends State<StudyTools> {
           StudyCard(child: SelectableText(s['notes'])),
         const SizedBox(height: 28),
         Text(
+          'Your learning collections',
