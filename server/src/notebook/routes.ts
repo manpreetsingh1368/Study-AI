@@ -154,3 +154,4 @@ export function registerNotebookRoutes(
         fail(409, "Request identifier reused with different data.");
       return { entry: entry(previous), plan: plan(u.id) };
     }
+    const allowance = plan(u.id);
