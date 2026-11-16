@@ -88,3 +88,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                     labelText: 'New password · 12+ characters',
                   ),
                 ),
+                const SizedBox(height: 20),
