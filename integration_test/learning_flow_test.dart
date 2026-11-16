@@ -98,3 +98,4 @@ void main() {
       final c = StudyController(store, baseUrl: 'http://127.0.0.1:$port');
       final other = StudyController(
         otherStore,
+        baseUrl: 'http://127.0.0.1:$port',
