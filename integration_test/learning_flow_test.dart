@@ -68,3 +68,4 @@ void main() {
         );
       }
       final temp = await Directory.systemTemp.createTemp('study-native-test-');
+      final process = await Process.start(
