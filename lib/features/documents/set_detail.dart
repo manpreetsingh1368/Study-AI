@@ -962,4 +962,5 @@ class _SetDetailState extends State<SetDetail> {
                               Navigator.pop(ctx);
                               task(
                                 () => c.deleteNotebookNote(
+                                  widget.set['id'],
 }
