@@ -350,6 +350,7 @@ class _SetDetailState extends State<SetDetail> {
               children: [
                 TextField(
                   controller: title,
+                  maxLength: 150,
                         ),
                       ),
                     ),
