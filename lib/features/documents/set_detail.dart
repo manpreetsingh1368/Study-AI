@@ -131,6 +131,7 @@ class _SetDetailState extends State<SetDetail> {
                   'A lecture, reading excerpt, or your own notes',
                 ),
                 onTap: () => Navigator.pop(ctx, 'text'),
+              ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
