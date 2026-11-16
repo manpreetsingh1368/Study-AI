@@ -246,6 +246,7 @@ class _SetDetailState extends State<SetDetail> {
                           child: panel(switch (mobileTab) {
                             0 => sources(),
                             2 => studio(),
+                            _ => chat(),
                         ),
                       ),
                     ],
