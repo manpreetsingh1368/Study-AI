@@ -21,3 +21,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
       text: "ATP transfers energy for cellular processes.",
       citations: [
         {
+          chunkId: input.chunks[0].id,
