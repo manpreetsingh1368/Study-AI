@@ -31,3 +31,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
         "Question",
         '["A","B","C","D"]',
         0,
+        "Explanation",
