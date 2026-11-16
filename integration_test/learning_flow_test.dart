@@ -64,3 +64,4 @@ void main() {
       final project = const String.fromEnvironment('PROJECT_ROOT');
       if (project.isEmpty) {
         throw StateError(
+          'Pass --dart-define=PROJECT_ROOT=/absolute/project/path',
