@@ -398,6 +398,7 @@ class StudyController extends ChangeNotifier {
       );
       final book = Map<String, dynamic>.from(material['notebook'] ?? {});
       final notes = List<dynamic>.from(book['notes'] ?? []);
+      if (match.group(2) == 'notes') {
     }
   }
 
