@@ -73,3 +73,4 @@ class _StudyToolsState extends State<StudyTools> {
                   : () async {
                       final yes = await showDialog<bool>(
                         context: context,
+                        builder: (ctx) => AlertDialog(
