@@ -940,4 +940,5 @@ class _SetDetailState extends State<SetDetail> {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 SelectableText(note['text']),
+                                const SizedBox(height: 16),
 }
