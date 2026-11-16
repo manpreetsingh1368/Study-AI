@@ -70,3 +70,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
         if (
           !chunk ||
           !normalize(chunk.text).includes(normalize(citation.quote))
+        )
