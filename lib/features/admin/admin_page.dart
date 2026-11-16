@@ -94,7 +94,6 @@ class _AdminPageState extends State<AdminPage> {
                               '/admin/users/${u['id']}/pro',
                               {
                                 'enabled': true,
-                                'expiresAt': date.millisecondsSinceEpoch,
                               },
                             );
                             await load();
