@@ -207,6 +207,7 @@ class _SetDetailState extends State<SetDetail> {
           Expanded(
             child: wide
                 ? Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
