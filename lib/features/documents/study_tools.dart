@@ -345,3 +345,4 @@ class _StudyToolsState extends State<StudyTools> {
                     ? null
                     : () =>
                           action(() => c.generate(s['id'], kind, count, level)),
+              ),
