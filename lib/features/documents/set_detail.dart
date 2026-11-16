@@ -422,6 +422,7 @@ class _SetDetailState extends State<SetDetail> {
                                   setState(() {
                                     if (v == true) {
                                       selected.add(source['id']);
+                                    } else {
                   ),
                 ),
             ],
