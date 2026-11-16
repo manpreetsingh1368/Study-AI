@@ -19,3 +19,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
   String? message;
   Future<void> submit() async {
     setState(() => busy = true);
+    try {
