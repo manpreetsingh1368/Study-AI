@@ -97,3 +97,4 @@ Manual procedure:
 3. Restore while the service is stopped: first preserve the current database, WAL/SHM sidecars and upload tree in a separate recovery directory, then copy the snapshot DB into the empty data directory and restore uploads.
 4. Restore ownership/mode 700 directories and 600 private files; start the service and verify accounts, authenticated downloads and synchronization.
 
+Never copy an active database file without its WAL or the backup API.
