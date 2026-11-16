@@ -620,6 +620,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontSize: 11,
+                      height: 1.6,
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
