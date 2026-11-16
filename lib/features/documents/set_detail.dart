@@ -972,4 +972,5 @@ class _SetDetailState extends State<SetDetail> {
                           TextButton(
                             onPressed: () =>
                                 export(note['title'], note['text']),
+                            child: const Text('Export'),
 }
