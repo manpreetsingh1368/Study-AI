@@ -299,3 +299,4 @@ class _StudyToolsState extends State<StudyTools> {
                       DropdownMenuEntry(
                         value: 'exam',
                         label: 'Practice exam · Pro',
+                        enabled: pro,
