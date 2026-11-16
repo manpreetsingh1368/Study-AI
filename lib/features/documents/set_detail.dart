@@ -132,6 +132,7 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 onTap: () => Navigator.pop(ctx, 'text'),
               ),
+              ListTile(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
