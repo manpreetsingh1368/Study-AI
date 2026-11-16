@@ -963,6 +963,7 @@ export function createApp(
     app,
     { db, user, owned, get, all, run, plan, change, now, fail, uploads },
     options.notebookGenerate,
+  );
   registerLearningRoutes(app, {
     db,
     user,
