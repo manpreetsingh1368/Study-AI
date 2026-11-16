@@ -60,6 +60,7 @@ void main() {
       ..onboarded = false;
     await tester.pumpWidget(
       ProviderScope(
+        overrides: [studyProvider.overrideWithValue(controller)],
 }
 
 class WidgetMemoryStore extends LocalStore {
