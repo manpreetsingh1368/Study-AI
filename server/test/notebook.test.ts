@@ -263,3 +263,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
     validatedEvidence(
       supported({ kind: "chat", prompt: "", history: [], chunks }),
       chunks,
+    ).blocks.length,
