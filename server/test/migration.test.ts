@@ -8,3 +8,4 @@ import { openDatabase } from "../src/database/db.js";
 test("v1 migration retains accounts, material, questions, attempts and emits a fresh sync snapshot", () => {
   const dir = mkdtempSync(join(tmpdir(), "study-upgrade-"));
   try {
+    const old = new Database(join(dir, "study.sqlite"));
