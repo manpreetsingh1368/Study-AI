@@ -7,3 +7,4 @@ const app = createApp({
   uploadDir: `${directory}/uploads`,
   generate: async (input) => ({
     questions:
+      input.kind === "flashcards"
