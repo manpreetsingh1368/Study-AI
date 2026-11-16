@@ -716,4 +716,5 @@ class _SetDetailState extends State<SetDetail> {
     children: [
       panelTitle('Studio', Icons.auto_awesome_outlined),
       Expanded(
+        child: ListView(
 }
