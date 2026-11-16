@@ -490,6 +490,7 @@ export function createApp(
       JSON.stringify({
         sid,
         version: s.version,
+        kind: b.kind,
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
