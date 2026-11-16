@@ -885,6 +885,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       SubscriptionCard(
         name: 'Pro',
         description:
+            '${c.catalog['pro']?['generations'] ?? 30} AI generations a day\nUp to ${c.catalog['pro']?['cards'] ?? 50} flashcards per generation\n${c.catalog['pro']?['sets'] ?? 200} saved study sets\nPractice exams and advanced difficulty',
         action: const Text(
           'Pro is activated manually by your administrator.\nPayments are not available in this version.',
         ),
