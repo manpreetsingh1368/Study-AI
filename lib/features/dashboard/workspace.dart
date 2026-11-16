@@ -611,6 +611,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                 Expanded(
                   child: Text(
                     (set['notes'] as String).trim().isEmpty
+                        ? 'Explore your PDF with a source-grounded conversation.'
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
