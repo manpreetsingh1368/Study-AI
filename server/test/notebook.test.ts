@@ -72,3 +72,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     })
   ).body.set;
   const other = (
+    await call("POST", "/sets", b.token, {
