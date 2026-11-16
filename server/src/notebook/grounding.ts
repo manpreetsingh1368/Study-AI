@@ -98,3 +98,4 @@ export function splitSource(
   // Overlap preserves sentences crossing chunk boundaries. Total selected text
   // is capped by the route, so no source is silently excluded or truncated.
   const normalized = normalize(text);
+  for (let offset = 0; offset < normalized.length; offset += 2400) {
