@@ -360,4 +360,5 @@ class _SetDetailState extends State<SetDetail> {
         .reversed
         .toList();
     return Column(
+      children: [
 }
