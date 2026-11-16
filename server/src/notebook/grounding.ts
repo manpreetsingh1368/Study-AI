@@ -89,3 +89,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
       }),
     })),
   };
+}
