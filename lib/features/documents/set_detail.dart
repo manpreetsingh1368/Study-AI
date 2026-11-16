@@ -605,4 +605,5 @@ class _SetDetailState extends State<SetDetail> {
                 letterSpacing: 1.3,
               ),
             ),
+            const Spacer(),
 }
