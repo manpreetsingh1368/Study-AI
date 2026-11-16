@@ -26,3 +26,4 @@ class _StudyToolsState extends State<StudyTools> {
       busy = true;
       error = null;
     });
+    try {
