@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                      child: PdfScreen(
                         controller: c,
                         document: Map<String, dynamic>.from(s['document']),
                       ),
