@@ -205,6 +205,7 @@ void main() {
             if (variant == 'mobile') {
               tester.view.physicalSize = const Size(390, 900);
               await tester.pumpAndSettle();
+            }
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
