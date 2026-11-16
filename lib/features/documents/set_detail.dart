@@ -126,6 +126,7 @@ class _SetDetailState extends State<SetDetail> {
             children: [
               ListTile(
                 leading: const Icon(Icons.notes_rounded),
+                title: const Text('Paste text'),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
