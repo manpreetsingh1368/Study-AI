@@ -168,6 +168,7 @@ void main() {
           };
         if (req.uri.path == '/sync/learning')
           body = {'changes': [], 'cursor': 0, 'hasMore': false};
+        }
         if (req.uri.path == '/analytics') body = {'completed': 0};
         if (req.uri.path == '/exams/active') body = {'sessions': []};
         req.response.write(jsonEncode(body));
