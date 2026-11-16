@@ -912,4 +912,5 @@ class _SetDetailState extends State<SetDetail> {
                     contentPadding: const EdgeInsets.symmetric(horizontal: 12),
                     dense: true,
                     title: Text(
+                      note['title'],
 }
