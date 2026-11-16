@@ -54,3 +54,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         padding: const EdgeInsets.all(24),
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 460),
+          child: StudyCard(
