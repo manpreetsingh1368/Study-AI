@@ -162,3 +162,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
         "GET",
         `/notebooks/${set.id}/entries?offset=0&limit=1`,
         a.token,
+      )
