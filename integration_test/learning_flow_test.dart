@@ -162,3 +162,4 @@ void main() {
         await tester.tap(find.text('I know this'));
         for (var i = 0; i < 40 && c.reviews.isEmpty; i++) {
           await tester.pump(const Duration(milliseconds: 250));
+        }
