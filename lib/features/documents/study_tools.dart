@@ -233,3 +233,4 @@ class _StudyToolsState extends State<StudyTools> {
                 ),
                 title: Text(deck['title']),
                 subtitle: deck['kind'] == 'flashcards'
+                    ? Text(
