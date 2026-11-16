@@ -328,3 +328,4 @@ export function notebookState(sid: string, get: any, all: any) {
       get(
         "SELECT source_ids FROM notebook_preferences WHERE notebook_id=?",
         sid,
+      )?.source_ids || JSON.stringify([sid]),
