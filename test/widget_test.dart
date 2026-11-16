@@ -129,6 +129,7 @@ void main() {
               },
             ],
             'flashcards': [
+              {
 }
 
 class WidgetMemoryStore extends LocalStore {
