@@ -306,6 +306,7 @@ class _SetDetailState extends State<SetDetail> {
               child: const Text('Open source'),
             ),
         ],
+      ),
                         ),
                       ),
                     ),
