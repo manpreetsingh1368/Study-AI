@@ -325,6 +325,7 @@ class _SetDetailState extends State<SetDetail> {
   Widget panelTitle(String title, IconData icon, {Widget? action}) => Padding(
     padding: const EdgeInsets.fromLTRB(18, 20, 12, 16),
     child: Row(
+      children: [
                   ),
                 ),
             ],
