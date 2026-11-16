@@ -134,3 +134,4 @@ export function registerNotebookRoutes(
     })();
     return { ok: true };
   });
+  app.post("/notebooks/:id/ask", async (req) => {
