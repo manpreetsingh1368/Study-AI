@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                                  ? (c.plan['cards'] ?? 5)
                                   : (pro ? 50 : 10)),
                         ),
                     ],
