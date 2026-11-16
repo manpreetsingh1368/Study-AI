@@ -61,6 +61,7 @@ Each generation creates a separate immutable collection within its study set. Ol
 
 Sign-out clears private cached data when no work remains. Otherwise the pending work is isolated under its original account and resumes only after that account logs in. Expired/revoked credentials clear active state. Account deletion removes server data and the current device's cache. Other offline devices cannot be remotely wiped; their credentials fail when they reconnect.
 
+
 ## Android, iOS and macOS
 
 ```sh
