@@ -16,3 +16,4 @@ export function registerNotebookRoutes(
   c: any,
   generate: (
     input: NotebookInput,
+  ) => Promise<NotebookOutput> = notebookGenerate,
