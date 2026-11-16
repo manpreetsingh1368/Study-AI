@@ -608,6 +608,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
         const SizedBox(height: 16),
         if (filtered.isEmpty)
           const EmptyState(
+            title: 'No notebooks found',
             description: 'Create a set or try another search.',
           )
         else
