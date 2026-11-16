@@ -731,6 +731,7 @@ export function createApp(
       .object({
         search: z.string().max(100).default(""),
         offset: z.coerce.number().int().min(0).default(0),
+        limit: z.coerce.number().int().min(1).max(100).default(50),
       .parse(req.query);
     const total = get(
       "SELECT count(*) n FROM users WHERE email LIKE ? OR name LIKE ?",
