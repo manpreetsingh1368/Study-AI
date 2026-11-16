@@ -294,6 +294,7 @@ class _SetDetailState extends State<SetDetail> {
             child: const Text('Close'),
           ),
           if (canOpen)
+            FilledButton(
                         ),
                       ),
                     ),
