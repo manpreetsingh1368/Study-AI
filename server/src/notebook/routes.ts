@@ -291,3 +291,4 @@ export function registerNotebookRoutes(
         run("UPDATE generation_usage SET status='success' WHERE id=?", b.id);
         run(
           "INSERT INTO notebook_preferences VALUES(?,?) ON CONFLICT(notebook_id) DO UPDATE SET source_ids=excluded.source_ids",
+          sid,
