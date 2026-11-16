@@ -50,6 +50,7 @@ export function createApp(
     uploadDir?: string;
     generate?: (i: GenerationInput) => Promise<Generated>;
     now?: () => number;
+    notebookGenerate?: (input: NotebookInput) => Promise<NotebookOutput>;
   } = {},
 ) {
   const { sqlite: db, orm } = openDatabase(
