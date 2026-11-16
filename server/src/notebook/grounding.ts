@@ -45,3 +45,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
   try {
     parsed = responseSchema.parse(output);
   } catch {
+    throw Object.assign(
