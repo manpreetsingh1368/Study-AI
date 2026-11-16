@@ -145,3 +145,4 @@ class _StudyToolsState extends State<StudyTools> {
                     if (MediaQuery.sizeOf(context).width > 1000)
                       TextButton(
                         onPressed: () =>
+                            setState(() => sideBySide = !sideBySide),
