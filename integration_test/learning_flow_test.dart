@@ -104,6 +104,7 @@ void main() {
         await c.initialize();
         await tester.pumpWidget(
           RepaintBoundary(
+            key: captureKey,
           ),
         );
         await tester.pumpAndSettle();
