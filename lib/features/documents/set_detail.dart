@@ -506,4 +506,5 @@ class _SetDetailState extends State<SetDetail> {
                   borderRadius: BorderRadius.circular(14),
                 ),
               ),
+              child: Row(
 }
