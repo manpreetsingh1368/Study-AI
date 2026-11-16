@@ -56,3 +56,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
         sqlite
           .prepare("SELECT collection_id FROM questions WHERE id=?")
           .get("q") as any
+      ).collection_id,
