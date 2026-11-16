@@ -233,6 +233,7 @@ class StudyController extends ChangeNotifier {
               );
             }
           }
+          await store.acknowledgeRecord(uid, operation['id'] as String, sets);
         } on ApiException catch (e) {
           if (operation['path'] == '/sync/mutate' &&
               [400, 403, 404, 409].contains(e.status)) {
