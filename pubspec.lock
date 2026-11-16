@@ -209,6 +209,7 @@ packages:
   flutter_driver:
     dependency: transitive
     description: flutter
+    source: sdk
   flutter_lints:
     dependency: "direct dev"
     description:
