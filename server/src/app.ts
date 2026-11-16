@@ -756,6 +756,7 @@ export function createApp(
     return {
       user: u,
       plan: plan(uid),
+      subscription:
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
