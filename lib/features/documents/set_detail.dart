@@ -327,6 +327,7 @@ class _SetDetailState extends State<SetDetail> {
             : label(entry['kind']),
         text,
         entryId: entry['id'],
+      );
                         ),
                       ),
                     ),
