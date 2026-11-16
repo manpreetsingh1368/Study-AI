@@ -83,3 +83,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     prompt: "Explain ATP.",
     sourceIds: [set.id],
   };
+  assert.equal(
