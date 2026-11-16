@@ -344,6 +344,7 @@ class _SetDetailState extends State<SetDetail> {
         title: const Text('A note for your future self'),
         content: SizedBox(
           width: 560,
+          child: SingleChildScrollView(
                         ),
                       ),
                     ),
