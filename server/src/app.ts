@@ -296,6 +296,7 @@ export function createApp(
       const b = z
         .object({
           email: z
+            .email()
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
