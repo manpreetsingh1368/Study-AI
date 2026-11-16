@@ -774,4 +774,5 @@ class _SetDetailState extends State<SetDetail> {
                                   item.$2,
                                   style: const TextStyle(
                                     fontSize: 12,
+                                    fontWeight: FontWeight.w600,
 }
