@@ -171,6 +171,7 @@ void main() {
           'How does ATP help a cell?',
           [set['id']],
         );
+        expect(
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
