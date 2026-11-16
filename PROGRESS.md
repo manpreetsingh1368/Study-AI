@@ -95,6 +95,7 @@ Application, backend, tests, deployment and documentation files created or updat
 - `server/src/index.ts`
 - `server/src/maintenance.ts`
 - `server/src/notebook/grounding.ts`
+- `server/src/notebook/routes.ts`
 - `server/src/routes/learning.ts`
 - `server/test/app.test.ts`
 - `server/test/fixture-server.ts`
