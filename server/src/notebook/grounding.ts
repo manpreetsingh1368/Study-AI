@@ -121,3 +121,4 @@ export async function pdfPages(path: string): Promise<string[]> {
   } catch {
     throw Object.assign(
       new Error(
+        "Could not extract PDF text. Install poppler-utils on the backend; use text-based PDFs or paste a transcript for scanned material.",
