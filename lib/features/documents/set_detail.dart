@@ -938,4 +938,5 @@ class _SetDetailState extends State<SetDetail> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisSize: MainAxisSize.min,
+                              children: [
 }
