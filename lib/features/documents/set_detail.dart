@@ -317,6 +317,7 @@ class _SetDetailState extends State<SetDetail> {
       borderRadius: BorderRadius.circular(20),
       border: Border.all(
         color: Theme.of(context).colorScheme.outlineVariant
+            .withValues(alpha: .6),
                   ),
                 ),
             ],
