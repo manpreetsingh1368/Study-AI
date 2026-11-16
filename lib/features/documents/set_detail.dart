@@ -554,4 +554,5 @@ class _SetDetailState extends State<SetDetail> {
                     decoration: const InputDecoration(
                       hintText: 'Ask your sources…',
                       border: InputBorder.none,
+                      enabledBorder: InputBorder.none,
 }
