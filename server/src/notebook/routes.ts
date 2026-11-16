@@ -144,3 +144,4 @@ export function registerNotebookRoutes(
         prompt: z.string().trim().min(1).max(3000),
         sourceIds: z.array(z.uuid()).min(1).max(8),
       })
+      .parse(req.body);
