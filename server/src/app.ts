@@ -762,6 +762,7 @@ export function createApp(
         "SELECT count(*) n FROM study_sets WHERE user_id=? AND deleted=0",
         uid,
       ).n,
+      attempts: get("SELECT count(*) n FROM quiz_attempts WHERE user_id=?", uid)
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
