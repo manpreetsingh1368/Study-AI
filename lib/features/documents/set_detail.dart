@@ -439,6 +439,7 @@ class _SetDetailState extends State<SetDetail> {
                                 children: [
                                   Text(
                                     source['title'],
+                                    maxLines: 2,
                   ),
                 ),
             ],
