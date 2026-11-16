@@ -100,3 +100,4 @@ export function splitSource(
   const normalized = normalize(text);
   for (let offset = 0; offset < normalized.length; offset += 2400) {
     const part = normalized.slice(offset, offset + 2800);
+    if (part.trim())
