@@ -407,6 +407,7 @@ class _SetDetailState extends State<SetDetail> {
       await FilePicker.saveFile(
         fileName:
             '${title.replaceAll(RegExp(r'[^a-zA-Z0-9 _-]'), '').trim()}.md',
+        bytes: Uint8List.fromList(utf8.encode(text)),
                         ),
                       ),
                     ),
