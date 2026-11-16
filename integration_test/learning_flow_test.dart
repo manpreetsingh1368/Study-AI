@@ -142,3 +142,4 @@ void main() {
         await tester.tap(find.text('A.  Energy'));
         await tester.pumpAndSettle();
         await tester.ensureVisible(find.text('Finish quiz'));
+        await tester.tap(find.text('Finish quiz'));
