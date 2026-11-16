@@ -105,6 +105,7 @@ void main() {
         await tester.pumpWidget(
           RepaintBoundary(
             key: captureKey,
+            child: ProviderScope(
           ),
         );
         await tester.pumpAndSettle();
