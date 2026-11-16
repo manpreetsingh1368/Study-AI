@@ -276,3 +276,4 @@ class _StudyToolsState extends State<StudyTools> {
               const Text(
                 'Gemini uses your notes and PDF. Review generated content for accuracy. Each generation keeps your older collections and results.',
               ),
+              const SizedBox(height: 22),
