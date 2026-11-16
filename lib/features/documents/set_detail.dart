@@ -581,4 +581,5 @@ class _SetDetailState extends State<SetDetail> {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 9,
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
 }
