@@ -113,3 +113,4 @@ export function splitSource(
 export async function pdfPages(path: string): Promise<string[]> {
   try {
     const { stdout } = await promisify(execFile)(
+      process.env.PDFTOTEXT_BIN || "pdftotext",
