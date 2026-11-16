@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-              child: ListTile(
                 leading: Icon(
                   deck['kind'] == 'flashcards'
                       ? Icons.style_outlined
