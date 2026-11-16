@@ -36,3 +36,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
     } catch (e) {
       if (mounted) setState(() => message = e.toString());
     } finally {
+      if (mounted) setState(() => busy = false);
