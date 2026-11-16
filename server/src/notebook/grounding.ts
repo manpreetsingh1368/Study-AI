@@ -69,3 +69,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
         const chunk = chunks.find((c) => c.id === citation.chunkId);
         if (
           !chunk ||
+          !normalize(chunk.text).includes(normalize(citation.quote))
