@@ -336,6 +336,7 @@ class _SetDetailState extends State<SetDetail> {
     });
   }
 
+  Future<void> newNote() async {
                         ),
                       ),
                     ),
