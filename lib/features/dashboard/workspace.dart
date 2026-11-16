@@ -562,6 +562,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
     return Card(
       clipBehavior: Clip.antiAlias,
       child: InkWell(
+        onTap: () => context.go('/set/${set['id']}'),
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
