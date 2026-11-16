@@ -171,3 +171,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
   const { call, register } = await setup(t, (input) => ({
     ...supported(input),
     blocks: [
+      {
