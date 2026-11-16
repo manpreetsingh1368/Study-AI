@@ -48,7 +48,6 @@ The directory did not contain a Git repository, so no commit/diff was created. B
 Modified existing files:
 
 - `.gitignore`
-- `test/widget_test.dart`
 - `README.md`
 - `integration_test/learning_flow_test.dart`
 - `lib/app/app.dart`
