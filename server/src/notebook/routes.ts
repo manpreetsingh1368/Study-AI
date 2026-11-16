@@ -12,3 +12,4 @@ import {
   type SourceChunk,
 } from "./grounding.js";
 export function registerNotebookRoutes(
+  app: FastifyInstance,
