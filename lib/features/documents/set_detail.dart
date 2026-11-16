@@ -440,6 +440,7 @@ class _SetDetailState extends State<SetDetail> {
                       message: 'Edit notebook source',
                       child: IconButton(
                         onPressed: busy ? null : editSource,
+                        icon: const Icon(
                         ),
                       ),
                     ),
