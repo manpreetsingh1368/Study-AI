@@ -333,6 +333,7 @@ class _SetDetailState extends State<SetDetail> {
             title,
             style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
           ),
+        ),
                   ),
                 ),
             ],
