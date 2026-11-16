@@ -85,6 +85,7 @@ A native Linux acceptance test starts an isolated Fastify fixture server, uses r
 xvfb-run -a flutter test integration_test/learning_flow_test.dart -d linux \
   --dart-define=PROJECT_ROOT="$PWD" \
   --dart-define=NODE_BINARY="$(command -v node)"
+```
 
 ## Android, iOS and macOS
 
