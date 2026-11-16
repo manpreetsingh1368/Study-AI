@@ -34,3 +34,4 @@ try {
       .run(now - 600000);
   })();
   if (existsSync(uploads))
+    for (const file of readdirSync(uploads))
