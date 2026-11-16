@@ -384,6 +384,7 @@ class _SetDetailState extends State<SetDetail> {
       await task(() async {
         if (title.text.trim().isEmpty || text.text.trim().isEmpty) {
           throw ApiException(400, 'Add a title and note text.');
+        }
                         ),
                       ),
                     ),
