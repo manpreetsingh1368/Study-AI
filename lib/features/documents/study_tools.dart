@@ -23,3 +23,4 @@ class _StudyToolsState extends State<StudyTools> {
   StudyController get c => widget.controller;
   Future<void> action(Future<void> Function() task) async {
     setState(() {
+      busy = true;
