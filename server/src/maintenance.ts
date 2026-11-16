@@ -45,3 +45,4 @@ try {
   );
 } finally {
   sqlite.close();
+}
