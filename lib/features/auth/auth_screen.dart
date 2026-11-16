@@ -133,6 +133,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     ),
                   ),
                   if (!register)
+                    TextButton(
                   const SizedBox(height: 12),
                   const Text(
                     'Your materials, in your own workspace.\nAI generation requires an internet connection.',
