@@ -355,6 +355,7 @@ class _SetDetailState extends State<SetDetail> {
           action: Tooltip(
             message: 'Add a source',
             child: IconButton(
+              onPressed: busy ? null : addSource,
                   ),
                 ),
             ],
