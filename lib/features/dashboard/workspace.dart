@@ -618,6 +618,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                   ? 3
                   : size.maxWidth >= 650
                   ? 2
+                  : 1;
       ],
     );
   }
