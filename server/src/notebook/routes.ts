@@ -300,3 +300,4 @@ export function registerNotebookRoutes(
         entry: entry(get("SELECT * FROM notebook_entries WHERE id=?", b.id)),
         plan: plan(u.id),
       };
+    } catch (e) {
