@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                    dropdownMenuEntries: [
                       for (final n in [5, 10, 20, 50])
                         DropdownMenuEntry(
                           value: n,
