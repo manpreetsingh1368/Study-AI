@@ -298,3 +298,4 @@ export function registerNotebookRoutes(
       })();
       return {
         entry: entry(get("SELECT * FROM notebook_entries WHERE id=?", b.id)),
+        plan: plan(u.id),
