@@ -240,3 +240,4 @@ class _StudyToolsState extends State<StudyTools> {
                         '${(s['questions'] as List).where((q) => q['collection_id'] == deck['id']).length} questions',
                       ),
                 trailing: Wrap(
+                  children: [
