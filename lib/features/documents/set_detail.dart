@@ -290,6 +290,7 @@ class _SetDetailState extends State<SetDetail> {
         ),
         actions: [
           TextButton(
+            onPressed: () => Navigator.pop(ctx),
                         ),
                       ),
                     ),
