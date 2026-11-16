@@ -147,3 +147,4 @@ class _StudyToolsState extends State<StudyTools> {
                         onPressed: () =>
                             setState(() => sideBySide = !sideBySide),
                         child: Text(
+                          sideBySide
