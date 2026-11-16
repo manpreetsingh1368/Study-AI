@@ -880,4 +880,5 @@ class _SetDetailState extends State<SetDetail> {
                 Expanded(
                   child: Text(
                     'Saved notes · ${savedNotes.length}',
+                    style: const TextStyle(
 }
