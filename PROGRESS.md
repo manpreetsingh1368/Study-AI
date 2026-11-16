@@ -4,7 +4,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Implemented
 
-- Backend integration tests and Flutter responsive/auth/offline tests. Verification results are recorded below.
 
 ## Verification
 
