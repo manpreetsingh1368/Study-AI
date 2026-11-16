@@ -75,7 +75,6 @@ class _AdminPageState extends State<AdminPage> {
                   children: [
                     TextButton(
                       onPressed: () async {
-                        final date = await showDatePicker(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
