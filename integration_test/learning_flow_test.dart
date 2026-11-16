@@ -184,3 +184,4 @@ void main() {
         image.dispose();
         await pdf.dispose();
         process.kill();
+        await process.exitCode.timeout(const Duration(seconds: 10));
