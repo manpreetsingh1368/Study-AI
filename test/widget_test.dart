@@ -162,6 +162,7 @@ void main() {
         expect(find.text('What does ATP carry?'), findsOneWidget);
         await tester.tap(find.byType(SwitchListTile));
         await tester.pumpAndSettle();
+        await tester.ensureVisible(find.text('A.  Energy'));
 }
 
 class WidgetMemoryStore extends LocalStore {
