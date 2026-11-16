@@ -295,3 +295,4 @@ export function registerNotebookRoutes(
           JSON.stringify(sourceIds),
         );
         change(sid, u.id);
+      })();
