@@ -566,4 +566,5 @@ class _SetDetailState extends State<SetDetail> {
                   tooltip: 'Send question · Ctrl/Command+Enter',
                   onPressed: busy || c.offline || validSelection.isEmpty
                       ? null
+                      : () => ask('chat', composer.text),
 }
