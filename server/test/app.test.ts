@@ -490,6 +490,7 @@ test("offline mutation receipts, version conflicts, folders and no resurrection"
     (await call("POST", "/sync/mutate", a.token, op)).body.set,
     null,
   );
+  assert.equal(
     (await call("POST", "/sync/mutate", a.token, { ...op, id: randomUUID() }))
       .status,
     409,
