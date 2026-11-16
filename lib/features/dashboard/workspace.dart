@@ -629,6 +629,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                 ],
               );
             },
+          ),
       ],
     );
   }
