@@ -51,3 +51,4 @@ Uint8List validPdf() {
   text += 'xref\n0 6\n0000000000 65535 f \n';
   for (final offset in offsets.skip(1)) {
     text += '${offset.toString().padLeft(10, '0')} 00000 n \n';
+  }
