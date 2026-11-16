@@ -172,3 +172,4 @@ class _StudyToolsState extends State<StudyTools> {
                         child: SelectableText(
                           (s['notes'] as String).isEmpty
                               ? 'No notes yet.'
+                              : s['notes'],
