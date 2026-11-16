@@ -158,3 +158,4 @@ export function registerNotebookRoutes(
     if (allowance.used >= allowance.generations)
       fail(
         429,
+        "Daily AI allowance reached. Chat and Studio use the same allowance as quiz generation.",
