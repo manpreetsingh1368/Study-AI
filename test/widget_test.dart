@@ -186,6 +186,7 @@ void main() {
         await tester.pumpAndSettle();
         expect(find.text('Make yourself at home.'), findsOneWidget);
         expect(tester.takeException(), isNull);
+        await tester.pumpWidget(const SizedBox());
 }
 
 class WidgetMemoryStore extends LocalStore {
