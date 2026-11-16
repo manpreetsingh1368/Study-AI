@@ -120,6 +120,7 @@ void main() {
               {
                 'id': 'q1',
                 'collection_id': 'quiz-one',
+                'question': 'What does ATP carry?',
 }
 
 class WidgetMemoryStore extends LocalStore {
