@@ -531,4 +531,5 @@ class _SetDetailState extends State<SetDetail> {
             borderRadius: BorderRadius.circular(18),
             border: Border.all(color: accent.withValues(alpha: .25)),
           ),
+          child: CallbackShortcuts(
 }
