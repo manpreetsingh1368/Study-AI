@@ -683,4 +683,5 @@ class _SetDetailState extends State<SetDetail> {
           ),
           const SizedBox(height: 22),
         ],
+        if ((content['followUps'] as List).isNotEmpty) ...[
 }
