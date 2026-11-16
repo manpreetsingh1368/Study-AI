@@ -435,6 +435,7 @@ class _SetDetailState extends State<SetDetail> {
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(0, 12, 10, 12),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                   ),
                 ),
             ],
