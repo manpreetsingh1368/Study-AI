@@ -687,6 +687,7 @@ class StudyController extends ChangeNotifier {
       throw ApiException(409, 'Finish syncing the selected sources first.');
     }
     final configuration = jsonEncode({
+      'kind': kind,
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
