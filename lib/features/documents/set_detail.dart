@@ -296,6 +296,7 @@ class _SetDetailState extends State<SetDetail> {
           if (canOpen)
             FilledButton(
               onPressed: () {
+                Navigator.pop(ctx);
                         ),
                       ),
                     ),
