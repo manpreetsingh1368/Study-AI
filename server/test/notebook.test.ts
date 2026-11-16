@@ -98,3 +98,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   );
   const answer = await call(
     "POST",
+    `/notebooks/${set.id}/ask`,
