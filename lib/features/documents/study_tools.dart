@@ -301,3 +301,4 @@ class _StudyToolsState extends State<StudyTools> {
                         label: 'Practice exam · Pro',
                         enabled: pro,
                       ),
+                    ],
