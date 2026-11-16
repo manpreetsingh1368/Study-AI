@@ -60,3 +60,4 @@ void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
   testWidgets(
     'native Linux learning flow, real HTTP/SQLite, second device and PDF rendering',
+    (tester) async {
