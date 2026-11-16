@@ -758,4 +758,5 @@ class _SetDetailState extends State<SetDetail> {
                         ? null
                         : () => ask(
                             item.$1,
+                            'Create a ${item.$2.toLowerCase()} using only the selected sources.',
 }
