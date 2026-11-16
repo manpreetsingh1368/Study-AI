@@ -412,4 +412,5 @@ class _SetDetailState extends State<SetDetail> {
                               bottomRight: Radius.circular(5),
                             ),
                           ),
+                          child: SelectableText(
 }
