@@ -419,6 +419,7 @@ class _SetDetailState extends State<SetDetail> {
                                     );
                                     return;
                                   }
+                                  setState(() {
                   ),
                 ),
             ],
