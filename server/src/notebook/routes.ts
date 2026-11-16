@@ -58,3 +58,4 @@ export function registerNotebookRoutes(
         })
         .parse(req.body);
     owned(u.id, sid);
+    return db.transaction(() => {
