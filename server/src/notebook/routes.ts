@@ -11,3 +11,4 @@ import {
   type NotebookOutput,
   type SourceChunk,
 } from "./grounding.js";
+export function registerNotebookRoutes(
