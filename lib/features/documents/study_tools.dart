@@ -282,3 +282,4 @@ class _StudyToolsState extends State<StudyTools> {
                 runSpacing: 16,
                 children: [
                   DropdownMenu<String>(
+                    initialSelection: kind,
