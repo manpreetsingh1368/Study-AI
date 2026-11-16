@@ -939,4 +939,5 @@ class _SetDetailState extends State<SetDetail> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisSize: MainAxisSize.min,
                               children: [
+                                SelectableText(note['text']),
 }
