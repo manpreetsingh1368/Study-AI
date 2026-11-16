@@ -458,4 +458,5 @@ class _SetDetailState extends State<SetDetail> {
         Container(
           width: 58,
           height: 58,
+          decoration: BoxDecoration(
 }
