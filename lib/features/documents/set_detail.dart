@@ -280,6 +280,7 @@ class _SetDetailState extends State<SetDetail> {
                 const SizedBox(height: 20),
                 Text(
                   changed
+                      ? 'This is the excerpt verified when the answer was generated. The original source has since changed or been removed.'
                         ),
                       ),
                     ),
