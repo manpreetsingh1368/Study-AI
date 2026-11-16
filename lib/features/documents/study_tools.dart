@@ -191,3 +191,4 @@ class _StudyToolsState extends State<StudyTools> {
                         child: VerticalDivider(),
                       ),
                     ),
+                  ),
