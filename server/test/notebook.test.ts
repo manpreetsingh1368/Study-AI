@@ -55,3 +55,4 @@ async function setup(t: any, generate = supported) {
       await call("POST", "/auth/register", undefined, {
         name: "Student",
         email,
+        password: "notebook-test-password",
