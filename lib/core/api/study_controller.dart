@@ -401,6 +401,7 @@ class StudyController extends ChangeNotifier {
       if (match.group(2) == 'notes') {
         notes.removeWhere((n) => n['id'] == body['id']);
         notes.add({
+          ...body,
     }
   }
 
