@@ -362,6 +362,7 @@ class _SetDetailState extends State<SetDetail> {
                   decoration: const InputDecoration(
                     labelText: 'Your note',
                     alignLabelWithHint: true,
+                  ),
                         ),
                       ),
                     ),
