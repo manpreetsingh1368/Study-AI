@@ -610,3 +610,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
   const { call, register, advance } = await setup(t);
   const a = await register();
   assert.equal(
+    (await call("POST", "/me/recovery", a.token, { password: "wrong" })).status,
