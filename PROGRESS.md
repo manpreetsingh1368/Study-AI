@@ -72,6 +72,7 @@ Created implementation/documentation files:
 - `lib/features/quizzes/study_sessions.dart`
 - `lib/features/settings/settings_page.dart`
 - `lib/shared/components.dart`
+- `pubspec.lock`
 - `server/.env.example`
 - `server/deploy/Caddyfile`
 - `server/deploy/backup.sh`
