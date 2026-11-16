@@ -64,6 +64,7 @@ class _SetDetailState extends State<SetDetail> {
     });
   }
 
+  void showTools() => showModalBottomSheet(
         ),
       ),
     ),
