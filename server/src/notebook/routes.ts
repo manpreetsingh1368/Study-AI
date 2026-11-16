@@ -95,3 +95,4 @@ export function registerNotebookRoutes(
         b.title,
         b.text,
         JSON.stringify(citations),
+        now(),
