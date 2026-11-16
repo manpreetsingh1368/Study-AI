@@ -441,6 +441,7 @@ class _SetDetailState extends State<SetDetail> {
                       child: IconButton(
                         onPressed: busy ? null : editSource,
                         icon: const Icon(
+                          Icons.drive_file_rename_outline,
                         ),
                       ),
                     ),
