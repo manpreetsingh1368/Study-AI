@@ -88,6 +88,7 @@ class _AdminPageState extends State<AdminPage> {
                               content: SizedBox(
                                 width: 500,
                                 child: SingleChildScrollView(
+                                  child: Column(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
