@@ -495,4 +495,5 @@ class _SetDetailState extends State<SetDetail> {
               onPressed: () {
                 composer.text = prompt;
                 composerFocus.requestFocus();
+              },
 }
