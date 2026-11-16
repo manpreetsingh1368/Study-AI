@@ -78,3 +78,4 @@ void main() {
       addTearDown(() async {
         process.kill();
         await process.exitCode.timeout(const Duration(seconds: 10));
+        if (await temp.exists()) await temp.delete(recursive: true);
