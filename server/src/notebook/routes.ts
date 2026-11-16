@@ -27,3 +27,4 @@ export function registerNotebookRoutes(
     sourceIds: JSON.parse(r.source_ids),
     content: JSON.parse(r.content),
   });
+  app.get("/notebooks/:id/entries", async (req) => {
