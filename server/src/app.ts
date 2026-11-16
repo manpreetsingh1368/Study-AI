@@ -772,6 +772,7 @@ export function createApp(
         "SELECT day,status,count(*) count FROM generation_usage WHERE user_id=? GROUP BY day,status ORDER BY day DESC LIMIT 60",
         uid,
       ),
+    };
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
