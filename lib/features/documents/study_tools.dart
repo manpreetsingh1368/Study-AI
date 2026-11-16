@@ -49,3 +49,4 @@ class _StudyToolsState extends State<StudyTools> {
         if (s['pending'] == true)
           const Text('Saved on this device · waiting to synchronize'),
         const SizedBox(height: 16),
+        Wrap(
