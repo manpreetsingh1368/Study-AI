@@ -77,6 +77,7 @@ The backend extracts PDF text using the open-source `pdftotext` command from `po
 
 Only checked source material and prior conversation turns confined to those same sources are sent for notebook requests. Responses use structured JSON. Every citation must reference a supplied chunk and contain a quotation found in that chunk after whitespace/Unicode normalization. Unsupported citations are rejected and failed application quota reservations are released. A verified quotation proves the excerpt exists, not that every AI interpretation is correct: inspect sources for important claims. Insufficient-evidence responses are shown explicitly.
 
+
 ## Recovery codes
 
 While signed in, enter your current password in Settings and choose **Create a one-time recovery code**. Store it privately; generating another invalidates the old code. Only its SHA-256 digest is retained on the server. The 256-bit code expires after one year and can reset the password once through **Use a recovery code** on the login screen. Resetting the password consumes the code and revokes all sessions. Changing the password also invalidates recovery codes. There is no email verification, email reset delivery or fake recovery email.
