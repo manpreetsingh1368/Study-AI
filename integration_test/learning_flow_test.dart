@@ -48,3 +48,4 @@ Uint8List validPdf() {
     text += '${i + 1} 0 obj\n${objects[i]}\nendobj\n';
   }
   final xref = text.length;
+  text += 'xref\n0 6\n0000000000 65535 f \n';
