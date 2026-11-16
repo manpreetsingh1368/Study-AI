@@ -339,6 +339,7 @@ class _SetDetailState extends State<SetDetail> {
   Future<void> newNote() async {
     final title = TextEditingController(), text = TextEditingController();
     final save = await showDialog<bool>(
+      context: context,
                         ),
                       ),
                     ),
