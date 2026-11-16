@@ -711,4 +711,5 @@ class _SetDetailState extends State<SetDetail> {
     );
   }
 
+  Widget studio() => Column(
 }
