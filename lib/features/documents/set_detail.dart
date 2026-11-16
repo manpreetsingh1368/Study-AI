@@ -116,6 +116,7 @@ class _SetDetailState extends State<SetDetail> {
                   controller: title,
                   autofocus: true,
                   maxLength: 200,
+                  decoration: const InputDecoration(labelText: 'Source title'),
                 ),
                 const SizedBox(height: 16),
                 TextField(
