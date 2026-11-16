@@ -162,6 +162,7 @@ class _SetDetailState extends State<SetDetail> {
         if ((await file.length() ?? 10485761) > 10485760) {
           throw ApiException(413, 'Choose a PDF smaller than 10 MB.');
         }
+        final source = await c.saveSet(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
