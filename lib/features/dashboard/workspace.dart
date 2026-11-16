@@ -102,6 +102,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                 ? null
                 : AdaptiveNavigation(page: widget.page),
             body: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 if (desktop && !collapsed) GlassSidebar(child: sidebar()),
                 Expanded(
