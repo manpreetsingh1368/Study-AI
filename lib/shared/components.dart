@@ -133,6 +133,7 @@ class ModernToolbar extends StatelessWidget {
     required this.status,
     required this.onSync,
     required this.onSearch,
+    this.onOpenSearch,
   });
   @override
   Widget build(BuildContext context) => Padding(
