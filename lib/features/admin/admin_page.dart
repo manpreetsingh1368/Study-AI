@@ -96,6 +96,7 @@ class _AdminPageState extends State<AdminPage> {
                                 'enabled': true,
                                 'startsAt': date.start.millisecondsSinceEpoch,
                                 'expiresAt': date.end
+                                    .add(const Duration(days: 1))
                               },
                             );
                             await load();
