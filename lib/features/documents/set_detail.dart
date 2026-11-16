@@ -406,6 +406,7 @@ class _SetDetailState extends State<SetDetail> {
     await task(() async {
       await FilePicker.saveFile(
         fileName:
+            '${title.replaceAll(RegExp(r'[^a-zA-Z0-9 _-]'), '').trim()}.md',
                         ),
                       ),
                     ),
