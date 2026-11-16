@@ -236,6 +236,7 @@ class _SetDetailState extends State<SetDetail> {
                               label: Text('Chat'),
                               icon: Icon(Icons.forum_outlined, size: 17),
                             ),
+                            ButtonSegment(
                       ),
                       const SizedBox(height: 12),
                       Expanded(
