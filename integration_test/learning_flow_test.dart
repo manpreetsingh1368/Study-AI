@@ -160,3 +160,4 @@ void main() {
         expect(find.text('An energy carrier'), findsOneWidget);
         await tester.ensureVisible(find.text('I know this'));
         await tester.tap(find.text('I know this'));
+        for (var i = 0; i < 40 && c.reviews.isEmpty; i++) {
