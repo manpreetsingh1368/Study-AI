@@ -134,3 +134,4 @@ export async function notebookGenerate(
     model = process.env.GEMINI_MODEL;
   if (!key || !model)
     throw Object.assign(
+      new Error("Configure GEMINI_API_KEY and GEMINI_MODEL on the backend."),
