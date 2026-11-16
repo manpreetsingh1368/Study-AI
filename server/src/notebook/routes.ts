@@ -155,3 +155,4 @@ export function registerNotebookRoutes(
       return { entry: entry(previous), plan: plan(u.id) };
     }
     const allowance = plan(u.id);
+    if (allowance.used >= allowance.generations)
