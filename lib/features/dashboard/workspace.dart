@@ -122,6 +122,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                                 title: title,
                                 onOpenSearch: openSearch,
                                 status: c.syncLabel,
+                                onSync: () => unawaited(c.sync()),
                             ),
                           ],
                         ),
