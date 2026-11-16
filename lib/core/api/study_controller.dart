@@ -640,6 +640,7 @@ class StudyController extends ChangeNotifier {
     final operationId = saved != null && saved['configuration'] == configuration
         ? saved['id']
         : const Uuid().v4();
+    await store.write(account, 'generation:$sid', {
     await request('POST', '/sets/$sid/generate', {
       'id': operationId,
       'kind': kind,
