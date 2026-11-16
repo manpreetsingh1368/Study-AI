@@ -140,3 +140,4 @@ export function registerNotebookRoutes(
     const b = z
       .object({
         id: z.uuid(),
+        kind: z.enum(["chat", "summary", "guide", "faq"]),
