@@ -157,6 +157,7 @@ class ModernToolbar extends StatelessWidget {
                       prefixIcon: Icon(Icons.search, size: 19),
                       isDense: true,
                     ),
+                  ),
           ),
         const SizedBox(width: 12),
         Tooltip(
