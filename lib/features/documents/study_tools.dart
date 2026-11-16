@@ -331,3 +331,4 @@ class _StudyToolsState extends State<StudyTools> {
                               n <=
                               (kind == 'flashcards'
                                   ? (c.plan['cards'] ?? 5)
+                                  : (pro ? 50 : 10)),
