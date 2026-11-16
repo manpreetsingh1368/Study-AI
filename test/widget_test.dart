@@ -82,6 +82,7 @@ void main() {
     await controller.setAppearance('dark');
     await tester.pumpAndSettle();
     expect(
+      Theme.of(tester.element(find.byType(Scaffold).first)).brightness,
 }
 
 class WidgetMemoryStore extends LocalStore {
