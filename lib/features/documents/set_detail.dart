@@ -475,6 +475,7 @@ class _SetDetailState extends State<SetDetail> {
                                   if (source['pending'] == true)
                                     const Text(
                                       'Waiting to sync',
+                                      style: TextStyle(
                   ),
                 ),
             ],
