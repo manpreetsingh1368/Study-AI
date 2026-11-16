@@ -376,3 +376,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       prompt: "What does ATP do?",
       sourceIds: [set.id],
     },
+  });
