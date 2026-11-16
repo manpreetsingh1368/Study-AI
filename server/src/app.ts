@@ -477,6 +477,7 @@ export function createApp(
       fail(403, "Question count exceeds your plan.");
     const doc = get("SELECT * FROM documents WHERE set_id=?", sid);
     if (!s.notes.trim() && !doc) fail(400, "Add notes or a PDF first.");
+    const usage = b.id || id();
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
