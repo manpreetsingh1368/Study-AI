@@ -49,6 +49,7 @@ class _SetDetailState extends State<SetDetail> {
         report = kind == 'chat' ? null : result;
         composer.clear();
         mobileTab = 1;
+      });
         ),
       ),
     ),
