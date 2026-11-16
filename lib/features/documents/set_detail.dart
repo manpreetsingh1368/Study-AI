@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-        Text(
           'Your learning collections',
           style: Theme.of(context).textTheme.titleLarge,
         ),
