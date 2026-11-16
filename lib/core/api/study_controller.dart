@@ -224,6 +224,7 @@ class StudyController extends ChangeNotifier {
             if (material != null) {
               material['notebook'] = Map<String, dynamic>.from(
                 result['notebook'],
+              );
         } on ApiException catch (e) {
           if (operation['path'] == '/sync/mutate' &&
               [400, 403, 404, 409].contains(e.status)) {
