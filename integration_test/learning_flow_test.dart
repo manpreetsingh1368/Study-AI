@@ -174,6 +174,7 @@ void main() {
         expect(
           response['content']['blocks'][0]['citations'][0]['quote'],
           contains('ATP transfers chemical energy.'),
+        );
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
