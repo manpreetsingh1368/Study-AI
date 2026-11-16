@@ -670,4 +670,5 @@ class _SetDetailState extends State<SetDetail> {
                     Icons.format_quote,
                     size: 12,
                     color: accent,
+                  ),
 }
