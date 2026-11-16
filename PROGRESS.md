@@ -35,6 +35,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Install normal Ubuntu build dependencies (`libsecret-1-dev` etc.) from README. This host used extracted development packages under `/tmp/study-ai-build-deps` and the matching `PKG_CONFIG_PATH`; Flutter was not reinstalled.
 - Deploy your always-online backend with TLS, persistent owner-controlled storage, monitoring and a documented privacy/retention policy. A local development server is not worldwide hosting.
 - Adapt/install/enable the supplied backup/maintenance systemd units and conduct a host-level disaster-recovery drill. Units were created, not installed into the host.
+- Complete Apple-platform builds and Keychain/signing QA on macOS; configure production Android signing and store distribution. The debug APK is not a store release.
 
 ## Commit policy requested by owner
 
