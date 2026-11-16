@@ -534,4 +534,5 @@ class _SetDetailState extends State<SetDetail> {
           child: CallbackShortcuts(
             bindings: {
               const SingleActivator(
+                LogicalKeyboardKey.enter,
 }
