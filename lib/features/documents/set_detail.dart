@@ -741,4 +741,5 @@ class _SetDetailState extends State<SetDetail> {
                 Icons.menu_book_outlined,
               ),
               (
+                'faq',
 }
