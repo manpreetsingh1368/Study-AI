@@ -630,3 +630,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
     200,
   );
   assert.equal((await call("GET", "/me", a.token)).status, 401);
+  assert.equal(
