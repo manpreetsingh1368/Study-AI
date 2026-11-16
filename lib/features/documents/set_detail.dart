@@ -512,4 +512,5 @@ class _SetDetailState extends State<SetDetail> {
                     child: Text(prompt, style: const TextStyle(fontSize: 12)),
                   ),
                   const SizedBox(width: 12),
+                  const Icon(Icons.north_west_rounded, size: 16),
 }
