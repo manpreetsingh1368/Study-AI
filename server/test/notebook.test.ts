@@ -342,3 +342,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
     })
   ).json();
   const set = (
+    await app.inject({
