@@ -63,3 +63,4 @@ class _StudyToolsState extends State<StudyTools> {
                         height: MediaQuery.sizeOf(context).height * .85,
                         child: NotesEditor(controller: c, existing: s),
                       ),
+                    ),
