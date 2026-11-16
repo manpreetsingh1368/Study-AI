@@ -354,6 +354,7 @@ class _SetDetailState extends State<SetDetail> {
                   decoration: const InputDecoration(labelText: 'Title'),
                 ),
                 const SizedBox(height: 12),
+                TextField(
                         ),
                       ),
                     ),
