@@ -192,6 +192,7 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 const SizedBox(height: 10),
                 Text(
+                  widget.set['title'],
                   ),
                 ),
               ],
