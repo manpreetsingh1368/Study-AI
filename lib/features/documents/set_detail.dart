@@ -138,6 +138,7 @@ class _SetDetailState extends State<SetDetail> {
                 subtitle: const Text(
                   'Private storage with selectable source text',
                 ),
+                onTap: () => Navigator.pop(ctx, 'pdf'),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
