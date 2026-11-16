@@ -33,3 +33,4 @@ export function registerNotebookRoutes(
     owned(u.id, sid);
     const q = z
       .object({
+        offset: z.coerce.number().int().min(0).default(0),
