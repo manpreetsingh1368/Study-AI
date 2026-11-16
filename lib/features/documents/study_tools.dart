@@ -174,3 +174,4 @@ class _StudyToolsState extends State<StudyTools> {
                               ? 'No notes yet.'
                               : s['notes'],
                         ),
+                      ),
