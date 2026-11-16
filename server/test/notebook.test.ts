@@ -8,3 +8,4 @@ import { createApp } from "../src/app.js";
 import {
   splitSource,
   validatedEvidence,
+  type NotebookInput,
