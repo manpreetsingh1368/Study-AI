@@ -463,4 +463,5 @@ class _SetDetailState extends State<SetDetail> {
             borderRadius: BorderRadius.circular(18),
           ),
           child: const Icon(
+            Icons.auto_awesome_rounded,
 }
