@@ -143,3 +143,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     library.notebook.notes[0].citations[0].quote,
     "ATP transfers chemical energy.",
   );
+  const sync = (await call("GET", "/sync?cursor=0", a.token)).body;
