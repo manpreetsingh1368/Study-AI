@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-            child: StudyCard(
               padding: const EdgeInsets.all(8),
               child: ListTile(
                 leading: Icon(
