@@ -246,3 +246,4 @@ class _StudyToolsState extends State<StudyTools> {
                         onPressed: () => context.go(
                           '/cards/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}&due=true',
                         ),
+                        child: const Text('Review due'),
