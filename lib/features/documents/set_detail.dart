@@ -222,6 +222,7 @@ class _SetDetailState extends State<SetDetail> {
                 : Column(
                     children: [
                       Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 16),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
