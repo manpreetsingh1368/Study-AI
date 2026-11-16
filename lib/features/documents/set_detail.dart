@@ -140,6 +140,7 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 onTap: () => Navigator.pop(ctx, 'pdf'),
               ),
+            ],
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
