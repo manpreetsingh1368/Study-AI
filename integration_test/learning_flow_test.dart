@@ -177,3 +177,4 @@ void main() {
           bytes,
           sourceName: 'native-acceptance',
         );
+        expect(pdf.pages.length, 1);
