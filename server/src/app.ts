@@ -521,6 +521,7 @@ export function createApp(
       if (previousUsage.status === "pending")
         fail(
           409,
+          "This generation is still in progress. Refresh the study set shortly.",
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
