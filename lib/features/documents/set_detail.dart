@@ -219,6 +219,7 @@ class _SetDetailState extends State<SetDetail> {
                   children: [
                     SingleChildScrollView(
                       padding: const EdgeInsets.all(24),
+                      child: SelectableText(
                         ),
                       ),
                     ),
