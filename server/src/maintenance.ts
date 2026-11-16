@@ -30,3 +30,4 @@ try {
     sqlite
       .prepare(
         "UPDATE generation_usage SET status='failed' WHERE status='pending' AND created_at<?",
+      )
