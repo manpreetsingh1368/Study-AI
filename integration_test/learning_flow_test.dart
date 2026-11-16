@@ -93,3 +93,4 @@ void main() {
       final port = jsonDecode(line)['port'];
       FlutterSecureStorage.setMockInitialValues(
         {},
+      ); // Test-only credentials; never touches the user's keyring.
