@@ -98,3 +98,4 @@ Manual procedure:
 4. Restore ownership/mode 700 directories and 600 private files; start the service and verify accounts, authenticated downloads and synchronization.
 
 Never copy an active database file without its WAL or the backup API.
+
