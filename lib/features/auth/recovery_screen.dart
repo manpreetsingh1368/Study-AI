@@ -38,3 +38,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
     } finally {
       if (mounted) setState(() => busy = false);
     }
+  }
