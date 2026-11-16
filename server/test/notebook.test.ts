@@ -202,3 +202,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
     502,
   );
   assert.equal((await call("GET", "/me", a.token)).body.plan.used, 0);
+  assert.equal(
