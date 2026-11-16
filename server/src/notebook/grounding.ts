@@ -163,3 +163,4 @@ export async function notebookGenerate(
       continue;
     }
     if (!response.ok)
+      throw Object.assign(
