@@ -200,6 +200,7 @@ void main() {
           tester.view.devicePixelRatio = 1;
           await tester.pumpAndSettle();
           await Directory(screenshotDirectory).create(recursive: true);
+          for (final variant in ['light', 'dark', 'mobile']) {
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
