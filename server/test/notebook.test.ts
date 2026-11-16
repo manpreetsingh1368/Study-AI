@@ -377,3 +377,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       sourceIds: [set.id],
     },
   });
+  assert.equal(answer.statusCode, 200);
