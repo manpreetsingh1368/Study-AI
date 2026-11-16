@@ -370,4 +370,5 @@ class _SetDetailState extends State<SetDetail> {
                   onPressed: () => setState(() => report = null),
                   icon: const Icon(Icons.close, size: 19),
                 )
+              : null,
 }
