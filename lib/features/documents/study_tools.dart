@@ -269,3 +269,4 @@ class _StudyToolsState extends State<StudyTools> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
+                'Create a new learning collection',
