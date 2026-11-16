@@ -61,6 +61,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
           u.id,
         );
         return {
+          set: current && !current.deleted ? full(current) : null,
       }
       if (b.kind === "create") {
         if (
