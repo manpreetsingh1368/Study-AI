@@ -198,3 +198,4 @@ export const recoveryCodes = sqliteTable("recovery_codes", {
   expiresAt: integer("expires_at").notNull(),
   createdAt: integer("created_at").notNull(),
 });
+
