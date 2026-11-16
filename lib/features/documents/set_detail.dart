@@ -302,6 +302,7 @@ class _SetDetailState extends State<SetDetail> {
                 } else {
                   previewSource(source);
                 }
+              },
                         ),
                       ),
                     ),
