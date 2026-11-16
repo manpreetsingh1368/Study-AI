@@ -22,3 +22,4 @@ export const responseSchema = z.object({
         citations: z
           .array(
             z.object({
+              chunkId: z.string().max(120),
