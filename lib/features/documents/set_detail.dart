@@ -67,6 +67,7 @@ class _SetDetailState extends State<SetDetail> {
   void showTools() => showModalBottomSheet(
     context: context,
     isScrollControlled: true,
+    useSafeArea: true,
         ),
       ),
     ),
