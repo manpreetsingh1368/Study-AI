@@ -190,3 +190,4 @@ export async function notebookGenerate(
   throw Object.assign(new Error("Notebook AI is temporarily unavailable."), {
     statusCode: 502,
   });
+}
