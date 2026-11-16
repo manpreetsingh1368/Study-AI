@@ -13,3 +13,4 @@ class RecoveryScreen extends StatefulWidget {
 
 class _RecoveryScreenState extends State<RecoveryScreen> {
   final email = TextEditingController(),
+      code = TextEditingController(),
