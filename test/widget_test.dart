@@ -135,6 +135,7 @@ void main() {
                 'front': 'ATP',
                 'back': 'An energy carrier',
                 'topic': 'Biology',
+                'difficulty': 'easy',
 }
 
 class WidgetMemoryStore extends LocalStore {
