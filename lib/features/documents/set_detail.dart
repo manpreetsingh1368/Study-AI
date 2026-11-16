@@ -652,4 +652,5 @@ class _SetDetailState extends State<SetDetail> {
               block['heading'],
               style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
             ),
+            const SizedBox(height: 8),
 }
