@@ -65,6 +65,7 @@ class _AdminPageState extends State<AdminPage> {
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   Text(metric.$1),
+                ],
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
