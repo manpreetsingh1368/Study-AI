@@ -59,6 +59,7 @@ class _AdminPageState extends State<AdminPage> {
       const SizedBox(height: 12),
       OutlinedButton(onPressed: load, child: const Text('Refresh')),
       if (error != null) ErrorState(message: error!),
+      Text('$total matching accounts'),
       for (final u in users)
         Padding(
           padding: const EdgeInsets.only(top: 12),
