@@ -76,6 +76,7 @@ class _AdminPageState extends State<AdminPage> {
                     TextButton(
                       onPressed: () async {
                         try {
+                          final detail = await widget.controller.request(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
