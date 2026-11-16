@@ -101,6 +101,7 @@ class LocalStore {
         'path': path,
         'body': jsonEncode(body),
       }, conflictAlgorithm: ConflictAlgorithm.ignore);
+      await txn.insert('cache', {
   }
 
   Future<void> queueMutation(
