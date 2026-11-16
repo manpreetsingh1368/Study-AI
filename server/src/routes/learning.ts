@@ -105,6 +105,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
         u.id,
         b.id,
         fingerprint,
+        JSON.stringify({ setId: b.setId }),
       );
       return response;
     })();
