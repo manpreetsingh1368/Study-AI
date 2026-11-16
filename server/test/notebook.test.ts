@@ -312,3 +312,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       insufficientEvidence: false,
       blocks: [
         {
+          heading: "From the PDF",
