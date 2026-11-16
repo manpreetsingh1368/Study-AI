@@ -141,6 +141,7 @@ void main() {
             'document': null,
           },
         ];
+        await tester.pumpWidget(
 }
 
 class WidgetMemoryStore extends LocalStore {
