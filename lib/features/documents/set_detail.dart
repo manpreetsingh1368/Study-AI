@@ -646,4 +646,5 @@ class _SetDetailState extends State<SetDetail> {
             'I couldn’t find enough evidence in the selected sources to answer this. Try a more specific question or add another source.',
             style: TextStyle(height: 1.8),
           ),
+        for (final block in blocks) ...[
 }
