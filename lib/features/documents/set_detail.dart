@@ -199,6 +199,7 @@ class _SetDetailState extends State<SetDetail> {
                         source['title'],
                         style: Theme.of(context).textTheme.titleLarge,
                       ),
+                    ),
                         ),
                       ),
                     ),
