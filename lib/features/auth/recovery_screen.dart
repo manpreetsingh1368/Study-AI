@@ -66,3 +66,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 ),
                 const SizedBox(height: 12),
                 const Text(
+                  'Enter the private code you saved from Settings. No recovery email is sent. A successful reset consumes the code and signs out every device.',
