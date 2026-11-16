@@ -362,4 +362,5 @@ class _SetDetailState extends State<SetDetail> {
     return Column(
       children: [
         panelTitle(
+          report == null ? 'Source conversation' : label(report!['kind']),
 }
