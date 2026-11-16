@@ -93,3 +93,4 @@ Created implementation/documentation files:
 
 Flutter regenerated native plugin integration files:
 
+Build outputs: `build/linux/x64/release/bundle/` and `build/app/outputs/flutter-apk/app-debug.apk`.
