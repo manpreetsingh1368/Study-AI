@@ -153,6 +153,7 @@ void main() {
         await tester.pumpAndSettle();
         expect(find.text('Your learning collections'), findsOneWidget);
         expect(tester.takeException(), isNull);
+        GoRouter.of(tester.element(find.byType(Scaffold).first))
 }
 
 class WidgetMemoryStore extends LocalStore {
