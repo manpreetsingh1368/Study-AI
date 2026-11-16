@@ -147,6 +147,7 @@ class ModernToolbar extends StatelessWidget {
             child: onOpenSearch != null
                 ? OutlinedButton.icon(
                     onPressed: onOpenSearch,
+                    icon: const Icon(Icons.search, size: 18),
           ),
         const SizedBox(width: 12),
         Tooltip(
