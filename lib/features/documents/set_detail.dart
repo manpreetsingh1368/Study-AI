@@ -40,6 +40,7 @@ class _SetDetailState extends State<SetDetail> {
     await task(() async {
       final result = await c.askNotebook(
         widget.set['id'],
+        kind,
         ),
       ),
     ),
