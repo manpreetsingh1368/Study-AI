@@ -414,4 +414,5 @@ class _SetDetailState extends State<SetDetail> {
                           ),
                           child: SelectableText(
                             raw['prompt'],
+                            style: const TextStyle(fontSize: 13),
 }
