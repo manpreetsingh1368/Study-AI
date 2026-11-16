@@ -433,6 +433,7 @@ class _SetDetailState extends State<SetDetail> {
                     TextButton.icon(
                       onPressed: () => context.go('/library'),
                       icon: const Icon(Icons.arrow_back_rounded, size: 16),
+                      label: const Text('Library'),
                         ),
                       ),
                     ),
