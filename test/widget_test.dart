@@ -94,6 +94,7 @@ void main() {
       (tester) async {
         tester.view.physicalSize = Size(width, 900);
         tester.view.devicePixelRatio = 1;
+        addTearDown(tester.view.resetPhysicalSize);
 }
 
 class WidgetMemoryStore extends LocalStore {
