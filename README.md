@@ -55,6 +55,7 @@ Study sets have stable IDs and monotonically increasing versions. Edits/deletes 
 
 Quiz attempts and flashcard review actions are queued locally with stable operation IDs, then replayed after reconnect. The server recomputes scores and makes replay idempotent. A deleted source discards its now-unapplicable pending operation on 404. Other failures retain the queue and show a sync error. Local scoring is provisional offline. Draft quiz answers persist per study set; timers do not persist through restart. Explicit sign-out clears that account's cache if no queued work remains; pending records remain isolated until the same account signs in again. Expired/revoked credentials clear active local state while keeping any queued records isolated for a later authenticated login. Account deletion clears the server and current cache. Local SQLite content is not encrypted; use operating-system account/disk protection.
 
+Material and learning-history feeds have independent paginated cursors. Cache/cursor writes are atomic. Login and the toolbar trigger sync; an open app retries every 30 seconds after reconnect. Server-side scores always come from saved questions and submitted answers. Local offline scores are marked pending. Attempts and flashcard reviews use stable IDs for idempotent replay. Review state and due dates download to other devices. Due-only study queues use the latest review; a known card's interval doubles up to 180 days, and a card needing review returns the next day.
 
 ## Android, iOS and macOS
 
