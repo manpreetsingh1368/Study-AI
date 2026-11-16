@@ -311,3 +311,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
     notebookGenerate: async (input) => ({
       insufficientEvidence: false,
       blocks: [
+        {
