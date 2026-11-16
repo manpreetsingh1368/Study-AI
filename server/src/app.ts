@@ -122,6 +122,7 @@ export function createApp(
   function full(s: any) {
     return {
       ...s,
+      notebook: notebookState(s.id, get, all),
       collections: all(
         "SELECT * FROM collections WHERE set_id=? ORDER BY created_at DESC",
         s.id,
