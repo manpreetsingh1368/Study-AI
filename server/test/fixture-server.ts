@@ -6,6 +6,7 @@ const app = createApp({
   dataDir: `${directory}/data`,
   uploadDir: `${directory}/uploads`,
   notebookGenerate: async (input) => ({
+    insufficientEvidence: false,
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
