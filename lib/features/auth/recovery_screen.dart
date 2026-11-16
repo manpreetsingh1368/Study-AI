@@ -44,3 +44,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
       leading: IconButton(
+        onPressed: () => context.go('/login'),
