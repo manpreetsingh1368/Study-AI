@@ -908,4 +908,5 @@ class _SetDetailState extends State<SetDetail> {
                 child: Material(
                   color: Theme.of(context).colorScheme.surfaceContainerLow,
                   borderRadius: BorderRadius.circular(12),
+                  child: ListTile(
 }
