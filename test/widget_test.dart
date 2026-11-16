@@ -66,6 +66,7 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(find.text('A workspace for your next idea.'), findsOneWidget);
+    for (var i = 0; i < 2; i++) {
 }
 
 class WidgetMemoryStore extends LocalStore {
