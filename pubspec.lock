@@ -288,6 +288,7 @@ packages:
   fuchsia_remote_debug_protocol:
     dependency: transitive
     description: flutter
+    source: sdk
   glob:
     dependency: transitive
     description:
