@@ -123,6 +123,7 @@ class _SetDetailState extends State<SetDetail> {
           padding: const EdgeInsets.all(20),
           child: Column(
             mainAxisSize: MainAxisSize.min,
+            children: [
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
