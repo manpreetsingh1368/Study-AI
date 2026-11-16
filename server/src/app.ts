@@ -279,6 +279,7 @@ export function createApp(
     if (!(await verify(u.password_hash, b.password)))
       fail(401, "Password is incorrect.");
     const code = randomBytes(32).toString("base64url"),
+      expiresAt = now() + 365 * 86400000;
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
