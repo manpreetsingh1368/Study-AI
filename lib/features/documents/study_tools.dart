@@ -290,3 +290,4 @@ class _StudyToolsState extends State<StudyTools> {
                             kind = v!;
                             count = 5;
                           }),
+                    dropdownMenuEntries: [
