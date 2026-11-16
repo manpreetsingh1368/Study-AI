@@ -733,6 +733,7 @@ export function createApp(
     return {
       total,
       hasMore: q.offset + q.limit < total,
+      nextOffset: q.offset + q.limit,
       users: all(
         "SELECT id,email,name,role,created_at FROM users WHERE email LIKE ? OR name LIKE ? ORDER BY created_at DESC,id LIMIT ? OFFSET ?",
         `%${q.search}%`,
