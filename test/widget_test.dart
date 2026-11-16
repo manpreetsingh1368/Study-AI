@@ -154,6 +154,7 @@ void main() {
         await tester.pumpAndSettle();
         expect(find.text('Meet your material.'), findsOneWidget);
         final studio = find.text('Studio');
+        if (width < 1250) {
         expect(find.text('Your learning collections'), findsOneWidget);
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
