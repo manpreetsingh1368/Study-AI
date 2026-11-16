@@ -165,3 +165,4 @@ class _StudyToolsState extends State<StudyTools> {
             child: LayoutBuilder(
               builder: (context, size) => Row(
                 children: [
+                  SizedBox(
