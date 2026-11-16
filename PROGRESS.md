@@ -30,6 +30,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 - `npm audit --omit=dev`: zero reported vulnerabilities.
 - iOS/macOS were not built/tested on Ubuntu. Android runtime/device acceptance was not performed.
 
+## Notebook UI/UX refinement
 
 ## Configuration and remaining release work
 
