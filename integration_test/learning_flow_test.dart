@@ -199,3 +199,4 @@ void main() {
         c.dispose();
         other.dispose();
         await store.db.close();
+        await otherStore.db.close();
