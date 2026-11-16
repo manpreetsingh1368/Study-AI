@@ -403,4 +403,5 @@ class _SetDetailState extends State<SetDetail> {
                             horizontal: 18,
                             vertical: 13,
                           ),
+                          decoration: BoxDecoration(
 }
