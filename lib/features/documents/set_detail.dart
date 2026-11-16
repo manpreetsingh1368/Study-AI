@@ -847,4 +847,5 @@ class _SetDetailState extends State<SetDetail> {
                   '/${collection['kind'] == 'flashcards' ? 'cards' : 'quiz'}/${widget.set['id']}?collection=${Uri.encodeQueryComponent(collection['id'])}',
                 ),
               ),
+            for (final entry in entries.where((e) => e['kind'] != 'chat'))
 }
