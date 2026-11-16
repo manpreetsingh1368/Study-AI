@@ -402,6 +402,7 @@ class StudyController extends ChangeNotifier {
         notes.removeWhere((n) => n['id'] == body['id']);
         notes.add({
           ...body,
+          'citations': [],
     }
   }
 
