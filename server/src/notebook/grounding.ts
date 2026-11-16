@@ -84,3 +84,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
           title: chunk.title,
           version: chunk.version,
           page: chunk.page,
+          quote: citation.quote,
