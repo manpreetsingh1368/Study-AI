@@ -265,6 +265,7 @@ class StudyController extends ChangeNotifier {
         final page = await request('GET', '/sync?cursor=$cursor');
         if (!valid()) return;
         final pendingRecords = await store.pending(uid);
+        final pending = pendingRecords
             .where((op) => op['path'] == '/sync/mutate')
             .map((op) => jsonDecode(op['body'] as String)['setId'])
             .toSet();
