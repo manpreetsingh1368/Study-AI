@@ -360,6 +360,7 @@ class _SetDetailState extends State<SetDetail> {
                   maxLines: 12,
                   maxLength: 30000,
                   decoration: const InputDecoration(
+                    labelText: 'Your note',
                         ),
                       ),
                     ),
