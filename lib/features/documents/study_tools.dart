@@ -321,3 +321,4 @@ class _StudyToolsState extends State<StudyTools> {
                     key: ValueKey(kind),
                     initialSelection: count,
                     label: const Text('Items'),
+                    onSelected: busy ? null : (v) => setState(() => count = v!),
