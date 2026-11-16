@@ -313,6 +313,7 @@ export function createApp(
         );
         if (!recovery)
           fail(401, "Email or recovery code is invalid or expired.");
+        run(
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
