@@ -114,6 +114,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                               IconButton(
                                 tooltip: 'Toggle sidebar',
                                 onPressed: () =>
+                                    setState(() => collapsed = !collapsed),
                             ),
                           ],
                         ),
