@@ -198,3 +198,4 @@ void main() {
         await tester.pumpWidget(const SizedBox());
         c.dispose();
         other.dispose();
+        await store.db.close();
