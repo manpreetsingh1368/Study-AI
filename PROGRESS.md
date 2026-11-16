@@ -4,7 +4,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Implemented
 
-- Real Gemini REST integration with server-only credentials, structured JSON schema, Zod validation, timeout, bounded server-error retry, quota errors. No fallback generated content.
 - Server-side atomic plan quota reservation, Free/Pro limits, manual grants/expiry, role-protected admin UI/API, audit records and sanitized application error records.
 - Quizzes, answer selection/navigation, optional timer, results/explanations, server scoring, locally persisted draft answers. AI flashcards, flip/swipe/keyboard navigation, known/review decisions, increasing review intervals.
 - Real dashboard totals, quiz trends/history, weak-topic analysis.
