@@ -130,3 +130,4 @@ export async function pdfPages(path: string): Promise<string[]> {
 export async function notebookGenerate(
   input: NotebookInput,
 ): Promise<NotebookOutput> {
+  const key = process.env.GEMINI_API_KEY,
