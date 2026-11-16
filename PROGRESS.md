@@ -32,6 +32,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 
 ## Notebook UI/UX refinement
 
+
 ## Configuration and remaining release work
 
 - Supply backend `GEMINI_API_KEY` and a supported `GEMINI_MODEL`, then perform live-provider acceptance using genuine materials. No production API key was available here.
