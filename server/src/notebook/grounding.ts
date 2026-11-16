@@ -172,3 +172,4 @@ export async function notebookGenerate(
         { statusCode: response.status === 429 ? 429 : 502 },
       );
     const data: any = await response.json();
+    try {
