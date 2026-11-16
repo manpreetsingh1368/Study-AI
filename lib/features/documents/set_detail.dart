@@ -594,4 +594,5 @@ class _SetDetailState extends State<SetDetail> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
+          children: [
 }
