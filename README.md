@@ -87,6 +87,7 @@ xvfb-run -a flutter test integration_test/learning_flow_test.dart -d linux \
   --dart-define=NODE_BINARY="$(command -v node)"
 ```
 
+If a Swiftly clang shim shadows the system compiler, run Flutter commands with a PATH that resolves `/usr/bin/clang` first. Do not change or reinstall Flutter. On this host, missing libsecret development packages were extracted under `/tmp/study-ai-build-deps`; normal installations should install `libsecret-1-dev` using the dependency instructions above.
 
 ## Android, iOS and macOS
 
