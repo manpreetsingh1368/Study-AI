@@ -42,3 +42,4 @@ export function registerNotebookRoutes(
         "SELECT * FROM notebook_entries WHERE notebook_id=? ORDER BY created_at DESC,id DESC LIMIT ? OFFSET ?",
         sid,
         q.limit,
+        q.offset,
