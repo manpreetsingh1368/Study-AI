@@ -71,6 +71,7 @@ class _SetDetailState extends State<SetDetail> {
     builder: (_) => SizedBox(
       height: MediaQuery.sizeOf(context).height * .88,
       child: ListenableBuilder(
+        listenable: c,
         ),
       ),
     ),
