@@ -318,6 +318,7 @@ class _SetDetailState extends State<SetDetail> {
       border: Border.all(
         color: Theme.of(context).colorScheme.outlineVariant
             .withValues(alpha: .6),
+      ),
                   ),
                 ),
             ],
