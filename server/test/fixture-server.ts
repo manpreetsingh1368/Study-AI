@@ -22,3 +22,4 @@ const app = createApp({
         ? []
         : Array.from({ length: input.count }, () => ({
             front: "ATP",
+            back: "An energy carrier",
