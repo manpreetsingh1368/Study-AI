@@ -65,6 +65,7 @@ The app includes first-run onboarding, saved appearance, folders, desktop PDF dr
 
 ## Recovery codes
 
+
 ## Android, iOS and macOS
 
 ```sh
