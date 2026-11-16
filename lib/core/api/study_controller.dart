@@ -394,6 +394,7 @@ class StudyController extends ChangeNotifier {
           .firstMatch(pendingRecord['path'] as String);
       if (match == null || match.group(1) != material['id']) continue;
       final body = Map<String, dynamic>.from(
+        jsonDecode(pendingRecord['body'] as String),
     }
   }
 
