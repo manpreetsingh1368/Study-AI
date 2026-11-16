@@ -39,6 +39,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 - Notebook requests share the existing atomic plan allowance and use stable request IDs. Selected-source history filtering prevents unchecked materials leaking into model context.
 - Migration 004 adds normalized notebook records and source preferences; child-record updates participate in incremental sync. Queued notes merge with incoming snapshots; acknowledgement/cache writes are atomic.
 - Fixed a stale mutation-receipt replay edge case: replay now returns the current record/tombstone, never a deleted historical snapshot. Receipts no longer retain private snapshots. Retention also purges deleted notebooks' saved content.
+- Existing quiz, flashcard, exam, edit/PDF and delete controls are preserved under Study tools and Studio collections.
 
 ## Configuration and remaining release work
 
