@@ -19,3 +19,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     old
       .prepare("INSERT INTO users VALUES(?,?,?,?,?,?)")
       .run("u", "u@example.com", "Student", "test-hash", "student", 1);
+    old
