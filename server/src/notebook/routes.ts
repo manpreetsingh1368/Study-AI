@@ -32,3 +32,4 @@ export function registerNotebookRoutes(
       sid = (req.params as any).id;
     owned(u.id, sid);
     const q = z
+      .object({
