@@ -302,3 +302,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
   const pdf = await PDFDocument.create();
   pdf.addPage().drawText("Introduction to cell biology.");
   pdf.addPage().drawText("ATP transfers chemical energy.");
+  const bytes = Buffer.from(await pdf.save());
