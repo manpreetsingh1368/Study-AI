@@ -94,3 +94,4 @@ void main() {
       FlutterSecureStorage.setMockInitialValues(
         {},
       ); // Test-only credentials; never touches the user's keyring.
+      final store = await testStore(), otherStore = await testStore();
