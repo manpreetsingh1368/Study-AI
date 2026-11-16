@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-          ),
         for (final deck in decks)
           Padding(
             padding: const EdgeInsets.only(bottom: 12),
