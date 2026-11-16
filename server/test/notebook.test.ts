@@ -210,3 +210,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
 test("source selection excludes previous conversations about unchecked sources; all modes share quota", async (t) => {
   const inputs: NotebookInput[] = [];
   const { call, register } = await setup(t, (input) => {
+    inputs.push(input);
