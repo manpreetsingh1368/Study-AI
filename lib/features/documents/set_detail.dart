@@ -921,4 +921,5 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                     subtitle: Text(
+                      note['pending'] == true
 }
