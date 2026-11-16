@@ -735,4 +735,5 @@ class _SetDetailState extends State<SetDetail> {
                 Icons.subject_rounded,
               ),
               (
+                'guide',
 }
