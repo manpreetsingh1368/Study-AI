@@ -889,4 +889,5 @@ class _SetDetailState extends State<SetDetail> {
                 IconButton(
                   tooltip: 'Write a note',
                   onPressed: busy ? null : newNote,
+                  icon: const Icon(Icons.add, size: 18),
 }
