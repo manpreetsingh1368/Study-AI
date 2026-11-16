@@ -115,3 +115,4 @@ void main() {
           password: 'native-test-password',
           name: 'Native Test',
         );
+        await tester.pumpAndSettle();
