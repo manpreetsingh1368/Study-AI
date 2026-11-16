@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                    cursor: SystemMouseCursors.resizeLeftRight,
                     child: GestureDetector(
                       behavior: HitTestBehavior.opaque,
                       onHorizontalDragUpdate: (d) => setState(
