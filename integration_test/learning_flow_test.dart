@@ -132,3 +132,4 @@ void main() {
         final quiz = (material['collections'] as List).firstWhere(
           (d) => d['kind'] == 'quiz',
         );
+        final cards = (material['collections'] as List).firstWhere(
