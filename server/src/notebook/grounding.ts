@@ -11,3 +11,4 @@ export type SourceChunk = {
   text: string;
 };
 const normalize = (text: string) =>
+  text.normalize("NFKC").replace(/\s+/gu, " ").trim();
