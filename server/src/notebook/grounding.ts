@@ -5,3 +5,4 @@ export type SourceChunk = {
   id: string;
   setId: string;
   sourceId: string;
+  title: string;
