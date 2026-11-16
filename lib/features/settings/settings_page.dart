@@ -134,6 +134,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           title: const Text(
                             'Save this recovery code privately',
                           ),
+                          content: Column(
             OutlinedButton(
               onPressed: busy
                   ? null
