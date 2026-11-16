@@ -402,6 +402,7 @@ class _SetDetailState extends State<SetDetail> {
                   padding: const EdgeInsets.only(bottom: 6),
                   child: Material(
                     color: selected.contains(source['id'])
+                        ? accent.withValues(alpha: .08)
                   ),
                 ),
             ],
