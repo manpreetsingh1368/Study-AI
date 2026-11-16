@@ -950,4 +950,5 @@ class _SetDetailState extends State<SetDetail> {
                                       Icons.format_quote,
                                       size: 16,
                                     ),
+                                    label: Text(cite['title']),
 }
