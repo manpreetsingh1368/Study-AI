@@ -454,6 +454,7 @@ class _SetDetailState extends State<SetDetail> {
                                             ? Icons.notes_rounded
                                             : Icons.picture_as_pdf_outlined,
                                         size: 12,
+                                        color: accent,
                   ),
                 ),
             ],
