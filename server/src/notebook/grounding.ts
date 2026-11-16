@@ -95,3 +95,4 @@ export function splitSource(
   text: string,
 ): SourceChunk[] {
   const result: SourceChunk[] = [];
+  // Overlap preserves sentences crossing chunk boundaries. Total selected text
