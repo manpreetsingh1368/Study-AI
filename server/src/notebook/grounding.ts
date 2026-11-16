@@ -143,3 +143,4 @@ export async function notebookGenerate(
       `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
       {
         method: "POST",
+        headers: { "Content-Type": "application/json", "x-goog-api-key": key },
