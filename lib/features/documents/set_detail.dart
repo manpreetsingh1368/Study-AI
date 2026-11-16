@@ -671,4 +671,5 @@ class _SetDetailState extends State<SetDetail> {
                     size: 12,
                     color: accent,
                   ),
+                  label: Text(
 }
