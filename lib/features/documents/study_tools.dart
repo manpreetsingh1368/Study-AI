@@ -343,3 +343,4 @@ class _StudyToolsState extends State<StudyTools> {
                 icon: Icons.auto_awesome,
                 onPressed: busy || c.offline
                     ? null
+                    : () =>
