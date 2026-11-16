@@ -190,6 +190,7 @@ class _SetDetailState extends State<SetDetail> {
           length: source['document'] != null ? 2 : 1,
           child: Column(
             children: [
+              Padding(
                         ),
                       ),
                     ),
