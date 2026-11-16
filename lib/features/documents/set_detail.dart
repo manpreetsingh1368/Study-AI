@@ -246,6 +246,7 @@ class _SetDetailState extends State<SetDetail> {
     final isPdf = cite['page'] != null;
     final canOpen =
         source != null &&
+        (!isPdf || source['document']?['id'] == cite['sourceId']);
                         ),
                       ),
                     ),
