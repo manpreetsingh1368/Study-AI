@@ -20,6 +20,7 @@ const app = createApp({
       },
     ],
     followUps: [
+      "How do cells use ATP?",
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
