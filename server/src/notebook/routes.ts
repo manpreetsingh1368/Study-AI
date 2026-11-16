@@ -238,3 +238,4 @@ export function registerNotebookRoutes(
         u.id,
         new Date(now()).toISOString().slice(0, 10),
         "pending",
+        now(),
