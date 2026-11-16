@@ -368,6 +368,7 @@ class _SetDetailState extends State<SetDetail> {
             label: const Text('Add source'),
           ),
         ),
+        const SizedBox(height: 12),
                   ),
                 ),
             ],
