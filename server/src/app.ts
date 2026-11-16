@@ -285,6 +285,7 @@ export function createApp(
       u.id,
       digest(code),
       expiresAt,
+      now(),
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
