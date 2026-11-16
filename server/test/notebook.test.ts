@@ -93,3 +93,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
         ...request,
         sourceIds: [other.id],
       })
+    ).status,
