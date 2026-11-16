@@ -389,4 +389,5 @@ class _SetDetailState extends State<SetDetail> {
                       TextButton(
                         onPressed: busy
                             ? null
+                            : () => task(
 }
