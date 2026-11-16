@@ -545,4 +545,5 @@ class _SetDetailState extends State<SetDetail> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Expanded(
+                  child: TextField(
 }
