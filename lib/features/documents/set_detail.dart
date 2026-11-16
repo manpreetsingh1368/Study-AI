@@ -757,4 +757,5 @@ class _SetDetailState extends State<SetDetail> {
                     onTap: busy || c.offline || validSelection.isEmpty
                         ? null
                         : () => ask(
+                            item.$1,
 }
