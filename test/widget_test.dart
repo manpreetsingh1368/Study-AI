@@ -145,6 +145,7 @@ void main() {
           ProviderScope(
             overrides: [studyProvider.overrideWithValue(controller)],
             child: const StudyAIApp(),
+          ),
 }
 
 class WidgetMemoryStore extends LocalStore {
