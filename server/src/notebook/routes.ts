@@ -65,3 +65,4 @@ export function registerNotebookRoutes(
           existing.notebook_id !== sid ||
           existing.title !== b.title ||
           existing.text !== b.text
+        )
