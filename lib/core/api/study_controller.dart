@@ -286,7 +286,6 @@ class StudyController extends ChangeNotifier {
       }
       for (final upload in await store.pendingUploads(uid)) {
         if (!valid()) return;
-        if (conflicts.any((c) => c['local']['setId'] == upload['set_id'])) {
           continue;
         }
         try {
