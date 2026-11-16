@@ -60,3 +60,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
               children: [
                 const Icon(Icons.key_outlined, color: accent, size: 40),
                 const SizedBox(height: 20),
+                Text(
