@@ -145,3 +145,4 @@ export function registerNotebookRoutes(
         sourceIds: z.array(z.uuid()).min(1).max(8),
       })
       .parse(req.body);
+    owned(u.id, sid);
