@@ -913,4 +913,5 @@ class _SetDetailState extends State<SetDetail> {
                     dense: true,
                     title: Text(
                       note['title'],
+                      maxLines: 2,
 }
