@@ -341,6 +341,7 @@ class _SetDetailState extends State<SetDetail> {
     final save = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
+        title: const Text('A note for your future self'),
                         ),
                       ),
                     ),
