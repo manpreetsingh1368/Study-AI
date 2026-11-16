@@ -527,6 +527,7 @@ class StudyController extends ChangeNotifier {
         404,
         'The study set was deleted. Save the PDF to disk before discarding this upload.',
       );
+    }
     await store.db.update(
       'uploads',
       {'version': current['version']},
