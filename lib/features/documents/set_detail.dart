@@ -734,4 +734,5 @@ class _SetDetailState extends State<SetDetail> {
                 'The essentials, connected',
                 Icons.subject_rounded,
               ),
+              (
 }
