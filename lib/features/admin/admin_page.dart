@@ -107,6 +107,7 @@ class _AdminPageState extends State<AdminPage> {
                                       const SizedBox(height: 16),
                                       for (final usage in detail['usage'])
                                         Text(
+                                          '${usage['day']} · ${usage['status']} · ${usage['count']}',
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
