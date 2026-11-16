@@ -857,4 +857,5 @@ class _SetDetailState extends State<SetDetail> {
                   size: 18,
                 ),
                 title: Text(
+                  label(entry['kind']),
 }
