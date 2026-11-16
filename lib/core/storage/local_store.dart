@@ -181,6 +181,7 @@ class LocalStore {
     whereArgs: [account],
     orderBy: 'rowid',
   );
+  Future<void> acknowledgeRecord(
   Future<void> remove(String id) async {
     await db.delete('outbox', where: 'id=?', whereArgs: [id]);
   }
