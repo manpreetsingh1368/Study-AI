@@ -404,4 +404,5 @@ class _SetDetailState extends State<SetDetail> {
                             vertical: 13,
                           ),
                           decoration: BoxDecoration(
+                            color: accent.withValues(alpha: .11),
 }
