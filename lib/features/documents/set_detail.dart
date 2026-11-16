@@ -432,4 +432,5 @@ class _SetDetailState extends State<SetDetail> {
                               child: CircularProgressIndicator(strokeWidth: 2),
                             ),
                             SizedBox(width: 12),
+                            Expanded(
 }
