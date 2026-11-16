@@ -36,6 +36,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Deploy your always-online backend with TLS, persistent owner-controlled storage, monitoring and a documented privacy/retention policy. A local development server is not worldwide hosting.
 - Adapt/install/enable the supplied backup/maintenance systemd units and conduct a host-level disaster-recovery drill. Units were created, not installed into the host.
 - Complete Apple-platform builds and Keychain/signing QA on macOS; configure production Android signing and store distribution. The debug APK is not a store release.
+- Complete independent security, load and accessibility/native visual audits. PDF structural validation is not antivirus scanning. Local cached content is protected by operating-system access/disk security rather than database encryption.
 
 ## Commit policy requested by owner
 
