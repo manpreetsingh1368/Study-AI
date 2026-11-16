@@ -283,6 +283,7 @@ class _SetDetailState extends State<SetDetail> {
                       ? 'This is the excerpt verified when the answer was generated. The original source has since changed or been removed.'
                       : 'This excerpt was checked against the text of your selected source.',
                   style: const TextStyle(fontSize: 12),
+                ),
                         ),
                       ),
                     ),
