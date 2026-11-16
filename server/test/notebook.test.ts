@@ -213,3 +213,4 @@ test("source selection excludes previous conversations about unchecked sources; 
     inputs.push(input);
     return supported(input);
   });
+  const a = await register("a@example.com");
