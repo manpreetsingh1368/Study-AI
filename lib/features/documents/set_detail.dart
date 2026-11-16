@@ -413,6 +413,7 @@ class _SetDetailState extends State<SetDetail> {
   }
 
   @override
+  Widget build(BuildContext context) => LayoutBuilder(
                         ),
                       ),
                     ),
