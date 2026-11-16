@@ -2,6 +2,7 @@ import 'package:material_ui/material_ui.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/api/study_controller.dart';
+import '../../shared/components.dart';
 import 'notes_editor.dart';
 import 'pdf_screen.dart';
 import 'study_tools.dart';
