@@ -652,3 +652,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
     })
   ).body;
   advance(366 * 86400000);
+  assert.equal(
