@@ -128,3 +128,4 @@ class _StudyToolsState extends State<StudyTools> {
                       onPressed: busy
                           ? null
                           : () => action(() async {
+                              await c.documentBytes(s['document']['id']);
