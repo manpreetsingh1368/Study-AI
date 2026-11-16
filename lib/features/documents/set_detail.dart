@@ -701,4 +701,5 @@ class _SetDetailState extends State<SetDetail> {
               ),
               onPressed: () {
                 setState(() => report = null);
+                composer.text = follow;
 }
