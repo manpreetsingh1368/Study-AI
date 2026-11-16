@@ -929,4 +929,5 @@ class _SetDetailState extends State<SetDetail> {
                       style: const TextStyle(fontSize: 10),
                     ),
                     onTap: () => showDialog(
+                      context: context,
 }
