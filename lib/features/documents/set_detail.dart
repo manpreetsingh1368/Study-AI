@@ -443,6 +443,7 @@ class _SetDetailState extends State<SetDetail> {
                                     overflow: TextOverflow.ellipsis,
                                     style: const TextStyle(
                                       fontSize: 12,
+                                      fontWeight: FontWeight.w600,
                   ),
                 ),
             ],
