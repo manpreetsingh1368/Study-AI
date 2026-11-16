@@ -960,6 +960,7 @@ export function createApp(
     };
   });
   registerNotebookRoutes(
+    app,
   registerLearningRoutes(app, {
     db,
     user,
