@@ -291,6 +291,7 @@ class _SetDetailState extends State<SetDetail> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
+            child: const Text('Close'),
                         ),
                       ),
                     ),
