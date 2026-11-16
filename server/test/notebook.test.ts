@@ -148,3 +148,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   const deletion = { id: randomUUID(), noteId: note.id };
   await call("POST", `/notebooks/${set.id}/delete-note`, a.token, deletion);
   await call("POST", `/notebooks/${set.id}/delete-note`, a.token, deletion);
+  assert.equal(
