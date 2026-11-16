@@ -26,6 +26,7 @@ class _SetDetailState extends State<SetDetail> {
   List<dynamic> get entries => notebook['entries'] as List? ?? [];
   List<dynamic> get savedNotes => notebook['notes'] as List? ?? [];
   List<String> get validSelection =>
+      selected.where((id) => c.sets.any((s) => s['id'] == id)).toList();
     setState(() {
       busy = true;
       error = null;
