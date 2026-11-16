@@ -213,6 +213,7 @@ class _SetDetailState extends State<SetDetail> {
                       children: [
                         SizedBox(width: 218, child: panel(sources())),
                         const SizedBox(width: 14),
+                        Expanded(child: panel(chat(), chatPanel: true)),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
