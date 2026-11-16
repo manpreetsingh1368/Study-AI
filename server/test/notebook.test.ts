@@ -349,3 +349,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       payload: { title: "PDF only", notes: "" },
     })
   ).json().set;
+  const boundary = "grounded-pdf";
