@@ -179,3 +179,4 @@ void main() {
         );
         expect(pdf.pages.length, 1);
         final image = await pdf.pages.first.render();
+        expect(image, isNotNull);
