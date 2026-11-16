@@ -62,3 +62,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 const SizedBox(height: 20),
                 Text(
                   'Use your recovery code',
+                  style: Theme.of(context).textTheme.headlineSmall,
