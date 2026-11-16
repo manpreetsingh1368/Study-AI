@@ -756,4 +756,5 @@ class _SetDetailState extends State<SetDetail> {
                     borderRadius: BorderRadius.circular(14),
                     onTap: busy || c.offline || validSelection.isEmpty
                         ? null
+                        : () => ask(
 }
