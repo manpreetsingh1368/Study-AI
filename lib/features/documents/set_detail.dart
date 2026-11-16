@@ -125,6 +125,7 @@ class _SetDetailState extends State<SetDetail> {
                   decoration: const InputDecoration(
                     labelText: 'Paste your source text',
                     alignLabelWithHint: true,
+                  ),
                 ),
               ],
             ),
