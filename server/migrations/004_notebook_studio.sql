@@ -5,3 +5,4 @@ CREATE INDEX notebook_notes_recent ON notebook_notes(notebook_id,deleted,created
 CREATE TABLE notebook_preferences(notebook_id TEXT PRIMARY KEY REFERENCES study_sets(id) ON DELETE CASCADE,source_ids TEXT NOT NULL);
 -- Existing clients need a fresh material snapshot to receive notebook metadata.
 INSERT INTO sync_changes(user_id,set_id,version,deleted) SELECT user_id,id,version,deleted FROM study_sets;
+
