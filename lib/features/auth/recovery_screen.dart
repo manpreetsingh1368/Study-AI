@@ -42,3 +42,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
+    appBar: AppBar(
