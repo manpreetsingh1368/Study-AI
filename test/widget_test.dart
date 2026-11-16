@@ -130,6 +130,7 @@ void main() {
             ],
             'flashcards': [
               {
+                'id': 'card1',
 }
 
 class WidgetMemoryStore extends LocalStore {
