@@ -840,4 +840,5 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 title: Text(
                   collection['title'],
+                  style: const TextStyle(fontSize: 11),
 }
