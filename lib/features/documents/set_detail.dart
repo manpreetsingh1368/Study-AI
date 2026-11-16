@@ -364,6 +364,7 @@ class _SetDetailState extends State<SetDetail> {
                     alignLabelWithHint: true,
                   ),
                 ),
+              ],
                         ),
                       ),
                     ),
