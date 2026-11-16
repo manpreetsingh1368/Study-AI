@@ -628,6 +628,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                 const SizedBox(height: 12),
                 Row(
                   children: [
+                    Expanded(
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
