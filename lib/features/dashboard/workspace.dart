@@ -616,6 +616,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
             builder: (context, size) {
               final columns = size.maxWidth >= 1050
                   ? 3
+                  : size.maxWidth >= 650
       ],
     );
   }
