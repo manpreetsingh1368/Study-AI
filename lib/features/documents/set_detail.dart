@@ -568,4 +568,5 @@ class _SetDetailState extends State<SetDetail> {
                       ? null
                       : () => ask('chat', composer.text),
                   icon: const Icon(Icons.arrow_upward_rounded, size: 20),
+                ),
 }
