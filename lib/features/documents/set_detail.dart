@@ -233,6 +233,7 @@ class _SetDetailState extends State<SetDetail> {
                             ),
                             ButtonSegment(
                               value: 1,
+                              label: Text('Chat'),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
