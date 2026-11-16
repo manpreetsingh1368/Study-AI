@@ -205,6 +205,7 @@ class _SetDetailState extends State<SetDetail> {
                       onPressed: () => Navigator.pop(context),
                       icon: const Icon(Icons.close),
                     ),
+                  ],
                         ),
                       ),
                     ),
