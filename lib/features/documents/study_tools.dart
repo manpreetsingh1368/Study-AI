@@ -198,3 +198,4 @@ class _StudyToolsState extends State<StudyTools> {
                       child: PdfScreen(
                         controller: c,
                         document: Map<String, dynamic>.from(s['document']),
+                      ),
