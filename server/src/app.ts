@@ -297,6 +297,7 @@ export function createApp(
     db.transaction(() => {
       run("UPDATE users SET password_hash=? WHERE id=?", h, u.id);
       run("DELETE FROM sessions WHERE user_id=?", u.id);
+      run("DELETE FROM recovery_codes WHERE user_id=?", u.id);
     })();
     return { ok: true };
   });
