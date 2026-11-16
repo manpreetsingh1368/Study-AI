@@ -28,6 +28,7 @@ try {
     for (const table of [
       "notebook_entries",
       "notebook_notes",
+      "notebook_preferences",
     sqlite.prepare("DELETE FROM sessions WHERE expires_at<=?").run(now);
     sqlite.prepare("DELETE FROM recovery_codes WHERE expires_at<=?").run(now);
     sqlite
