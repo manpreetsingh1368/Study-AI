@@ -178,6 +178,7 @@ class _SetDetailState extends State<SetDetail> {
       builder: (ctx) => AlertDialog(
         title: const Text('Add a text source'),
         content: SizedBox(
+          width: 560,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
