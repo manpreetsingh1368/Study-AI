@@ -77,3 +77,4 @@ class _StudyToolsState extends State<StudyTools> {
                           title: const Text('Delete this study set?'),
                           content: const Text(
                             'This removes the notebook, its saved material and conversations from your library on every device.',
+                          ),
