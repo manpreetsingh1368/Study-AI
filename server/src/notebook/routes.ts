@@ -191,3 +191,4 @@ export function registerNotebookRoutes(
                 sourceId: document.id,
                 title: document.filename,
                 version: source.version,
+                page: i + 1,
