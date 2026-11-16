@@ -106,3 +106,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   assert.equal(answer.body.entry.content.blocks[0].citations[0].setId, set.id);
   assert.equal(
     answer.body.entry.content.blocks[0].citations[0].quote,
+    "ATP transfers chemical energy.",
