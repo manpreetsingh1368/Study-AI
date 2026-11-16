@@ -961,4 +961,5 @@ class _SetDetailState extends State<SetDetail> {
                             onPressed: () {
                               Navigator.pop(ctx);
                               task(
+                                () => c.deleteNotebookNote(
 }
