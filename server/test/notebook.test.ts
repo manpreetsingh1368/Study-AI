@@ -7,3 +7,4 @@ import { tmpdir } from "node:os";
 import { createApp } from "../src/app.js";
 import {
   splitSource,
+  validatedEvidence,
