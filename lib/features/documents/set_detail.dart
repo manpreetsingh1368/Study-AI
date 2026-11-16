@@ -383,4 +383,5 @@ class _SetDetailState extends State<SetDetail> {
               ? emptyChat()
               : ListView(
                   controller: chatScroll,
+                  padding: const EdgeInsets.all(20),
 }
