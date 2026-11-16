@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                    key: ValueKey(kind),
                     initialSelection: count,
                     label: const Text('Items'),
                     onSelected: busy ? null : (v) => setState(() => count = v!),
