@@ -107,7 +107,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                 Expanded(
                   child: Column(
                     children: [
-                      Row(
                         children: [
                           if (desktop)
                             IconButton(
