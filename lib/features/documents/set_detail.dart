@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                          action(() => c.generate(s['id'], kind, count, level)),
               ),
             ],
           ),
