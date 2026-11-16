@@ -118,3 +118,4 @@ void main() {
         await tester.pumpAndSettle();
         expect(
           find.text('Your next breakthrough\nstarts here.'),
+          findsOneWidget,
