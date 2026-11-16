@@ -211,3 +211,4 @@ export const notebookEntries = sqliteTable("notebook_entries", {
   content: text("content").notNull(),
   createdAt: integer("created_at").notNull(),
 });
+export const notebookNotes = sqliteTable("notebook_notes", {
