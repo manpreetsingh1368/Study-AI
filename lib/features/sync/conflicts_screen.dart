@@ -92,7 +92,6 @@ class ConflictsScreen extends StatelessWidget {
                           try {
                             await controller.retryUpload(issue['id']);
                           } catch (e) {
-                            if (context.mounted)
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(content: Text(e.toString())),
                               );
