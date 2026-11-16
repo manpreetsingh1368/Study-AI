@@ -855,4 +855,5 @@ class _SetDetailState extends State<SetDetail> {
                   Icons.description_outlined,
                   color: accent,
                   size: 18,
+                ),
 }
