@@ -267,3 +267,4 @@ class _StudyToolsState extends State<StudyTools> {
         StudyCard(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
