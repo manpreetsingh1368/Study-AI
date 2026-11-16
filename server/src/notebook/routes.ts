@@ -195,3 +195,4 @@ export function registerNotebookRoutes(
               },
               pages[i],
             ),
+          );
