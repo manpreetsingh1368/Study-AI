@@ -288,3 +288,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
       { insufficientEvidence: true, blocks: [], followUps: [] },
       chunks,
     ).insufficientEvidence,
+    true,
