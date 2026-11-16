@@ -53,3 +53,4 @@ void main() {
   }
 }
 
+class WidgetMemoryStore extends LocalStore {
