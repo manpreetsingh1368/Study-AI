@@ -95,6 +95,7 @@ class LocalStore {
     List<Map<String, dynamic>> sets,
   ) async {
     await db.transaction((txn) async {
+      await txn.insert('outbox', {
   }
 
   Future<void> queueMutation(
