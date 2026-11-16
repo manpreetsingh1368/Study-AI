@@ -16,3 +16,4 @@ const sourceText =
 const supported = (input: NotebookInput): NotebookOutput => ({
   insufficientEvidence: false,
   blocks: [
+    {
