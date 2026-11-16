@@ -236,3 +236,4 @@ class _StudyToolsState extends State<StudyTools> {
                     ? Text(
                         '${(s['flashcards'] as List).where((q) => q['collection_id'] == deck['id'] && c.isDue(q['id'])).length} cards due',
                       )
+                    : Text(
