@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-                subtitle: deck['kind'] == 'flashcards'
                     ? Text(
                         '${(s['flashcards'] as List).where((q) => q['collection_id'] == deck['id'] && c.isDue(q['id'])).length} cards due',
                       )
