@@ -237,6 +237,7 @@ class _SetDetailState extends State<SetDetail> {
                               icon: Icon(Icons.forum_outlined, size: 17),
                             ),
                             ButtonSegment(
+                              value: 2,
                       ),
                       const SizedBox(height: 12),
                       Expanded(
