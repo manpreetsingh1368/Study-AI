@@ -68,6 +68,7 @@ Created implementation/documentation files:
 - `lib/features/auth/auth_screen.dart`
 - `lib/features/dashboard/workspace.dart`
 - `lib/features/documents/notes_editor.dart`
+- `lib/features/documents/pdf_screen.dart`
 - `lib/features/documents/set_detail.dart`
 - `lib/features/onboarding/onboarding_screen.dart`
 - `lib/features/quizzes/study_sessions.dart`
