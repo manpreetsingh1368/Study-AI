@@ -151,6 +151,7 @@ class _SetDetailState extends State<SetDetail> {
         () => error = 'Select up to 8 sources at a time. Uncheck one before adding another.',
       );
       return;
+    }
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
