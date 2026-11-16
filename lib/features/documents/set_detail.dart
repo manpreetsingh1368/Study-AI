@@ -157,6 +157,7 @@ class _SetDetailState extends State<SetDetail> {
         final file = await FilePicker.pickFile(
           type: FileType.custom,
           allowedExtensions: ['pdf'],
+        );
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
