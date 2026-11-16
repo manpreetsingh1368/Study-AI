@@ -316,3 +316,4 @@ export function notebookState(sid: string, get: any, all: any) {
       sourceIds: JSON.parse(r.source_ids),
       content: JSON.parse(r.content),
     })),
+    total: get(
