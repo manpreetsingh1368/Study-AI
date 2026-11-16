@@ -329,6 +329,7 @@ class _SetDetailState extends State<SetDetail> {
         entryId: entry['id'],
       );
       if (mounted) {
+        ScaffoldMessenger.of(
                         ),
                       ),
                     ),
