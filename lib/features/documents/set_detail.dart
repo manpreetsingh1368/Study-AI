@@ -180,6 +180,7 @@ class _SetDetailState extends State<SetDetail> {
 
   Future<void> previewSource(Map<String, dynamic> source) async {
     await showModalBottomSheet(
+      context: context,
                         ),
                       ),
                     ),
