@@ -350,3 +350,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
     })
   ).json().set;
   const boundary = "grounded-pdf";
+  const upload = await app.inject({
