@@ -456,6 +456,7 @@ class _SetDetailState extends State<SetDetail> {
                                         size: 12,
                                         color: accent,
                                       ),
+                                      const SizedBox(width: 4),
                   ),
                 ),
             ],
