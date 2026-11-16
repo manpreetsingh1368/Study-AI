@@ -6,3 +6,4 @@ export type SourceChunk = {
   setId: string;
   sourceId: string;
   title: string;
+  version: number;
