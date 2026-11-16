@@ -125,6 +125,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       final result = await widget.controller.request(
                         'POST',
                         '/me/recovery',
+                        {'password': current.text},
             OutlinedButton(
               onPressed: busy
                   ? null
