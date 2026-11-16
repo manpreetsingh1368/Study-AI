@@ -327,3 +327,4 @@ class _StudyToolsState extends State<StudyTools> {
                         DropdownMenuEntry(
                           value: n,
                           label: '$n',
+                          enabled:
