@@ -500,4 +500,5 @@ class _SetDetailState extends State<SetDetail> {
                 padding: const EdgeInsets.all(16),
                 alignment: Alignment.centerLeft,
                 side: BorderSide(
+                  color: Theme.of(context).colorScheme.outlineVariant,
 }
