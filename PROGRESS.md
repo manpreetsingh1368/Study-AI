@@ -4,7 +4,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Implemented
 
-- Fastify TypeScript API, SQLite WAL/foreign keys/indexes, initial idempotent SQL migration. Drizzle account queries and typed normalized schemas; other domain operations currently use prepared SQL through the same SQLite connection.
 - Saved notes, title editing, deletion tombstones, authenticated private PDF upload/download endpoints, per-user size/storage constraints, PDF MIME/signature checks.
 - Real Gemini REST integration with server-only credentials, structured JSON schema, Zod validation, timeout, bounded server-error retry, quota errors. No fallback generated content.
 - Server-side atomic plan quota reservation, Free/Pro limits, manual grants/expiry, role-protected admin UI/API, audit records and sanitized application error records.
