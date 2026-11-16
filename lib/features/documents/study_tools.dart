@@ -17,3 +17,4 @@ class StudyTools extends StatefulWidget {
 class _StudyToolsState extends State<StudyTools> {
   String kind = 'quiz', level = 'medium';
   int count = 5;
+  bool busy = false, sideBySide = false;
