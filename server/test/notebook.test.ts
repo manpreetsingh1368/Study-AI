@@ -259,3 +259,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
     { setId: "s", sourceId: "s:notes", title: "Notes", version: 1, page: null },
     "ATP transfers\n chemical energy.",
   );
+  assert.equal(
