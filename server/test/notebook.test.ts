@@ -379,3 +379,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
   });
   assert.equal(answer.statusCode, 200);
   assert.equal(answer.json().entry.content.blocks[0].citations[0].page, 2);
+});
