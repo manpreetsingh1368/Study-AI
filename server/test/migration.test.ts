@@ -41,3 +41,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     old
       .prepare("INSERT INTO quiz_answers VALUES(?,?,?)")
       .run("attempt", "q", 0);
+    old.pragma("user_version=1");
