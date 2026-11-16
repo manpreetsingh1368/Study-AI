@@ -898,4 +898,5 @@ class _SetDetailState extends State<SetDetail> {
                 'Save an answer or write a thought you don’t want to lose.',
                 style: TextStyle(
                   fontSize: 11,
+                  height: 1.7,
 }
