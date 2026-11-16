@@ -402,6 +402,7 @@ class _SetDetailState extends State<SetDetail> {
     'faq' => 'Questions & answers',
     _ => 'Source conversation',
   };
+  Future<void> export(String title, String text) async {
                         ),
                       ),
                     ),
