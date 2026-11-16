@@ -157,3 +157,4 @@ export function registerNotebookRoutes(
     const allowance = plan(u.id);
     if (allowance.used >= allowance.generations)
       fail(
+        429,
