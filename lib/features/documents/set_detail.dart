@@ -836,4 +836,5 @@ class _SetDetailState extends State<SetDetail> {
                       ? Icons.style_outlined
                       : Icons.quiz_outlined,
                   color: accent,
+                  size: 18,
 }
