@@ -427,4 +427,5 @@ class _SetDetailState extends State<SetDetail> {
                         child: Row(
                           children: [
                             SizedBox(
+                              width: 16,
 }
