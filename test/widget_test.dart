@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:study_ai/app/app.dart';
 import 'package:study_ai/core/api/study_controller.dart';
 import 'package:study_ai/core/storage/local_store.dart';
+import 'package:go_router/go_router.dart';
 
 void main() {
   testWidgets('Registration switch and password validation', (tester) async {
