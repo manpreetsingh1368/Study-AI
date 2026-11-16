@@ -309,6 +309,7 @@ export function createApp(
           "SELECT r.user_id FROM recovery_codes r JOIN users u ON u.id=r.user_id WHERE u.email=? AND r.code_hash=? AND r.expires_at>?",
           b.email,
           digest(b.code),
+          now(),
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
