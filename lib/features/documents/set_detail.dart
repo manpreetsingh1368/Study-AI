@@ -937,4 +937,5 @@ class _SetDetailState extends State<SetDetail> {
                           child: SingleChildScrollView(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.min,
 }
