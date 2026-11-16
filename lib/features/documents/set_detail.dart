@@ -331,6 +331,7 @@ class _SetDetailState extends State<SetDetail> {
       if (mounted) {
         ScaffoldMessenger.of(
           context,
+        ).showSnackBar(const SnackBar(content: Text('Saved to Studio notes.')));
                         ),
                       ),
                     ),
