@@ -123,6 +123,7 @@ void main() {
                 'question': 'What does ATP carry?',
                 'choices': ['Energy', 'Oxygen', 'Water', 'DNA'],
                 'answer': 0,
+                'explanation': 'ATP stores and transfers chemical energy.',
 }
 
 class WidgetMemoryStore extends LocalStore {
