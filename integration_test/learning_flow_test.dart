@@ -153,3 +153,4 @@ void main() {
         expect(find.text('Session complete.'), findsOneWidget);
         expect(c.attempts.single['score'], 1);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
+            .go('/cards/${set['id']}?collection=${cards['id']}&due=true');
