@@ -387,6 +387,7 @@ class _SetDetailState extends State<SetDetail> {
         }
         await c.saveNotebookNote(
           widget.set['id'],
+          title.text.trim(),
                         ),
                       ),
                     ),
