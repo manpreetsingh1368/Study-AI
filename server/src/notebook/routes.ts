@@ -111,3 +111,4 @@ export function registerNotebookRoutes(
         "SELECT * FROM notebook_notes WHERE id=? AND notebook_id=?",
         b.noteId,
         sid,
+      );
