@@ -119,3 +119,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
         ...request,
         prompt: "Changed question",
       })
+    ).status,
