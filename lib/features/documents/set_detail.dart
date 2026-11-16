@@ -393,6 +393,7 @@ class _SetDetailState extends State<SetDetail> {
       });
     }
     title.dispose();
+    text.dispose();
                         ),
                       ),
                     ),
