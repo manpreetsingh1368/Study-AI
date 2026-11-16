@@ -306,6 +306,7 @@ export function createApp(
       const passwordHash = await hash(b.password, { type: argon2id });
       db.transaction(() => {
         const recovery = get(
+          "SELECT r.user_id FROM recovery_codes r JOIN users u ON u.id=r.user_id WHERE u.email=? AND r.code_hash=? AND r.expires_at>?",
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
