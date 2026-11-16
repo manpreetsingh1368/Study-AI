@@ -129,6 +129,7 @@ class _SetDetailState extends State<SetDetail> {
                 title: const Text('Paste text'),
                 subtitle: const Text(
                   'A lecture, reading excerpt, or your own notes',
+                ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
