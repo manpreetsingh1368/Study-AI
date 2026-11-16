@@ -301,6 +301,7 @@ class _SetDetailState extends State<SetDetail> {
                   context.go('/pdf/${source['id']}?page=${cite['page']}');
                 } else {
                   previewSource(source);
+                }
                         ),
                       ),
                     ),
