@@ -20,3 +20,4 @@ export function registerNotebookRoutes(
 ) {
   const { db, user, owned, get, all, run, plan, change, now, fail, uploads } =
     c;
+  const digest = (input: unknown) =>
