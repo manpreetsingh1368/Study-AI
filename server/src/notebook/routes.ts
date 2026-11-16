@@ -26,3 +26,4 @@ export function registerNotebookRoutes(
     ...r,
     sourceIds: JSON.parse(r.source_ids),
     content: JSON.parse(r.content),
+  });
