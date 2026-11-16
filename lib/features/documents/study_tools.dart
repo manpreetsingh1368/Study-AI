@@ -15,3 +15,4 @@ class StudyTools extends StatefulWidget {
 }
 
 class _StudyToolsState extends State<StudyTools> {
+  String kind = 'quiz', level = 'medium';
