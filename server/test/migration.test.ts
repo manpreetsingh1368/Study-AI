@@ -27,3 +27,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
       .run(
         "q",
         "s",
+        0,
