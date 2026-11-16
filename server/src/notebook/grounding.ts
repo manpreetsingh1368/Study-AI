@@ -175,3 +175,4 @@ export async function notebookGenerate(
     try {
       return responseSchema.parse(
         JSON.parse(
+          data.candidates?.[0]?.content?.parts
