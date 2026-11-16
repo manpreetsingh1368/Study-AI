@@ -353,6 +353,7 @@ class _SetDetailState extends State<SetDetail> {
           'Sources',
           Icons.source_outlined,
           action: Tooltip(
+            message: 'Add a source',
                   ),
                 ),
             ],
