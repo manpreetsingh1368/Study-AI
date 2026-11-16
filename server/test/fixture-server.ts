@@ -16,6 +16,7 @@ const app = createApp({
             chunkId: input.chunks[0].id,
             quote: input.chunks[0].text.slice(0, 70),
           },
+        ],
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
