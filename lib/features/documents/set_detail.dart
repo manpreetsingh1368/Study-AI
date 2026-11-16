@@ -125,6 +125,7 @@ class _SetDetailState extends State<SetDetail> {
             mainAxisSize: MainAxisSize.min,
             children: [
               ListTile(
+                leading: const Icon(Icons.notes_rounded),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
