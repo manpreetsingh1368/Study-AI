@@ -184,3 +184,4 @@ export async function notebookGenerate(
       throw Object.assign(
         new Error("AI returned an invalid notebook response."),
         { statusCode: 502 },
+      );
