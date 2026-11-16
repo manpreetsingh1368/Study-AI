@@ -73,3 +73,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   controller: email,
                   keyboardType: TextInputType.emailAddress,
                   decoration: const InputDecoration(labelText: 'Account email'),
+                ),
