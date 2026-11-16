@@ -183,6 +183,7 @@ class _SetDetailState extends State<SetDetail> {
           ),
           if (error != null)
             Padding(
+              padding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
                   ),
                 ],
               ),
