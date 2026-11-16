@@ -164,3 +164,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
         a.token,
       )
     ).body.entries.length,
+    1,
