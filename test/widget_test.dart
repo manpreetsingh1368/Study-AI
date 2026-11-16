@@ -187,6 +187,7 @@ void main() {
         expect(find.text('Make yourself at home.'), findsOneWidget);
         expect(tester.takeException(), isNull);
         await tester.pumpWidget(const SizedBox());
+        controller.dispose();
 }
 
 class WidgetMemoryStore extends LocalStore {
