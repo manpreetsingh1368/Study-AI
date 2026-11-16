@@ -8,6 +8,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Adaptive desktop/mobile navigation, light/dark/system appearance persisted locally, translucent sidebar, global search (Ctrl/Command+K), new-set shortcut, folder filters, drag/drop PDF upload, PDF viewer, resizable notes/PDF reading panel, keyboard/swipe/flip study controls and reduced-motion handling for flashcards.
 - Self-hosted Fastify/TypeScript/SQLite with Drizzle schema mappings, prepared domain queries, WAL, foreign keys, indexes and three ordered transactional migrations. Upgrades retain old questions/attempts and backfill collections and sync events.
 - Argon2id, hashed revocable/expiring sessions, secure client token storage, password/profile changes, account deletion, login/API rate limits and owner-operated administrator bootstrap with audit records.
+- Real one-time recovery codes generated after password verification: 256-bit random secrets stored only as hashes, one-year expiry, one-use password reset and full session revocation. No email delivery or third-party authentication.
 
 ## Verification
 
