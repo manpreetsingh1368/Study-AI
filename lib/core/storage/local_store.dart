@@ -100,6 +100,7 @@ class LocalStore {
         'account': account,
         'path': path,
         'body': jsonEncode(body),
+      }, conflictAlgorithm: ConflictAlgorithm.ignore);
   }
 
   Future<void> queueMutation(
