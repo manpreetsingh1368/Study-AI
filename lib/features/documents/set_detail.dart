@@ -493,4 +493,5 @@ class _SetDetailState extends State<SetDetail> {
             padding: const EdgeInsets.only(bottom: 10),
             child: OutlinedButton(
               onPressed: () {
+                composer.text = prompt;
 }
