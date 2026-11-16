@@ -767,4 +767,5 @@ class _SetDetailState extends State<SetDetail> {
                           Icon(item.$4, color: accent, size: 22),
                           const SizedBox(width: 12),
                           Expanded(
+                            child: Column(
 }
