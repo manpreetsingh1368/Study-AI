@@ -846,4 +846,5 @@ class _SetDetailState extends State<SetDetail> {
                 onTap: () => context.go(
                   '/${collection['kind'] == 'flashcards' ? 'cards' : 'quiz'}/${widget.set['id']}?collection=${Uri.encodeQueryComponent(collection['id'])}',
                 ),
+              ),
 }
