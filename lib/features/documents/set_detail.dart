@@ -173,6 +173,7 @@ class _SetDetailState extends State<SetDetail> {
       return;
     }
     final title = TextEditingController(), text = TextEditingController();
+    final value = await showDialog<bool>(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
