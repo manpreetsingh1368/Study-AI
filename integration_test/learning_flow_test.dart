@@ -74,3 +74,4 @@ void main() {
         workingDirectory: '$project/server',
       );
       final stderr = <String>[];
+      process.stderr.transform(utf8.decoder).listen(stderr.add);
