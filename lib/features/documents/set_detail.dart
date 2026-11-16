@@ -700,4 +700,5 @@ class _SetDetailState extends State<SetDetail> {
                 padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 0),
               ),
               onPressed: () {
+                setState(() => report = null);
 }
