@@ -783,6 +783,7 @@ export function createApp(
     return {
       students: get("SELECT count(*) n FROM users WHERE role='student'").n,
       storage: get("SELECT coalesce(sum(bytes),0) n FROM documents").n,
+      documents: get("SELECT count(*) n FROM documents").n,
       usage: all(
         "SELECT day,status,count(*) count FROM generation_usage GROUP BY day,status ORDER BY day DESC LIMIT 60",
       ),
