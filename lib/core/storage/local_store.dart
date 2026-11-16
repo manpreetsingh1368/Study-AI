@@ -90,6 +90,7 @@ class LocalStore {
 
   Future<void> queueNotebookRecord(
     String account,
+    String path,
   }
 
   Future<void> queueMutation(
