@@ -148,3 +148,4 @@ export async function notebookGenerate(
         body: JSON.stringify({
           systemInstruction: { parts: [{ text: instruction }] },
           contents: [
+            { role: "user", parts: [{ text: JSON.stringify(input) }] },
