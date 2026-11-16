@@ -322,6 +322,7 @@ class _SetDetailState extends State<SetDetail> {
         entry['kind'] == 'chat'
             ? (entry['prompt'] as String).substring(
                 0,
+                (entry['prompt'] as String).length.clamp(0, 150),
                         ),
                       ),
                     ),
