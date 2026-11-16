@@ -244,3 +244,4 @@ class _StudyToolsState extends State<StudyTools> {
                     if (deck['kind'] == 'flashcards')
                       TextButton(
                         onPressed: () => context.go(
+                          '/cards/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}&due=true',
