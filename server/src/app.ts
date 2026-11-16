@@ -300,6 +300,7 @@ export function createApp(
             .max(254)
             .transform((s) => s.toLowerCase()),
           code: z.string().min(30).max(100),
+          password: z.string().min(12).max(128),
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
