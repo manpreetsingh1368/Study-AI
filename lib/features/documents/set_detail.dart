@@ -159,7 +159,6 @@ class _SetDetailState extends State<SetDetail> {
           ),
           const SizedBox(height: 20),
         ],
-                    child: SingleChildScrollView(
                       child: StudyCard(
                         child: SelectableText(
                           (s['notes'] as String).isEmpty
