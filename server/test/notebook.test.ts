@@ -262,3 +262,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
   assert.equal(
     validatedEvidence(
       supported({ kind: "chat", prompt: "", history: [], chunks }),
+      chunks,
