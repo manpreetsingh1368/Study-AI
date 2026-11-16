@@ -69,3 +69,4 @@ class _StudyToolsState extends State<StudyTools> {
             ),
             OutlinedButton.icon(
               onPressed: busy
+                  ? null
