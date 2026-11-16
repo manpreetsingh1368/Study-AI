@@ -55,3 +55,4 @@ class _StudyToolsState extends State<StudyTools> {
           children: [
             OutlinedButton.icon(
               onPressed: busy
+                  ? null
