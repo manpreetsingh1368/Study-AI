@@ -149,3 +149,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   await call("POST", `/notebooks/${set.id}/delete-note`, a.token, deletion);
   await call("POST", `/notebooks/${set.id}/delete-note`, a.token, deletion);
   assert.equal(
+    (await call("GET", "/sets", a.token)).body.sets[0].notebook.notes.length,
