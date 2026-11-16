@@ -89,6 +89,7 @@ void main() {
     controller.dispose();
   });
   for (final width in [390.0, 1200.0]) {
+    testWidgets(
 }
 
 class WidgetMemoryStore extends LocalStore {
