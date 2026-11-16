@@ -51,3 +51,4 @@ export function registerNotebookRoutes(
       sid = (req.params as any).id,
       b = z
         .object({
+          id: z.uuid(),
