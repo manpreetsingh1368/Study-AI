@@ -1,3 +1,4 @@
 [Unit]
 Description=Private consistent Study AI backup
 [Service]
+Type=oneshot
