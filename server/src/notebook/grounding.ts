@@ -129,3 +129,4 @@ export async function pdfPages(path: string): Promise<string[]> {
 }
 export async function notebookGenerate(
   input: NotebookInput,
+): Promise<NotebookOutput> {
