@@ -337,6 +337,7 @@ class _SetDetailState extends State<SetDetail> {
   }
 
   Future<void> newNote() async {
+    final title = TextEditingController(), text = TextEditingController();
                         ),
                       ),
                     ),
