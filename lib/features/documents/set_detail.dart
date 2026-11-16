@@ -396,6 +396,7 @@ class _SetDetailState extends State<SetDetail> {
         Expanded(
           child: ListView(
             padding: const EdgeInsets.symmetric(horizontal: 8),
+            children: [
                   ),
                 ),
             ],
