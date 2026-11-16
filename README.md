@@ -39,7 +39,6 @@ cd server
 npm run admin -- your-registered-email@example.com
 ```
 
-No administrator password is generated or hardcoded. Refresh/sign in again to show Administration. Administrators choose expiration dates for Pro access; this build has no payment processing. Limits are configurable in the backend environment and enforced there. Daily quotas use UTC dates. In-flight and successful generations reserve quota atomically; failed calls release the application quota. Provider-side charges may still apply. After a process crash, pending reservations remain conservative for that UTC day.
 
 ## Gemini
 
