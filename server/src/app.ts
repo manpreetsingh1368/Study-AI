@@ -223,6 +223,7 @@ export function createApp(
           : error.message,
     });
   });
+  app.get("/plans", async () => ({
   app.get("/health", async () => ({ status: "ok" }));
   app.post(
     "/auth/register",
