@@ -763,4 +763,5 @@ class _SetDetailState extends State<SetDetail> {
                     child: Padding(
                       padding: const EdgeInsets.all(14),
                       child: Row(
+                        children: [
 }
