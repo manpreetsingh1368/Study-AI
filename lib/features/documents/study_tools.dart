@@ -68,3 +68,4 @@ class _StudyToolsState extends State<StudyTools> {
               label: const Text('Edit notes / PDF'),
             ),
             OutlinedButton.icon(
+              onPressed: busy
