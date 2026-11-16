@@ -189,6 +189,7 @@ class _SetDetailState extends State<SetDetail> {
         child: DefaultTabController(
           length: source['document'] != null ? 2 : 1,
           child: Column(
+            children: [
                         ),
                       ),
                     ),
