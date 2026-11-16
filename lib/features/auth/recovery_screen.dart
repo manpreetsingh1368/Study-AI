@@ -47,3 +47,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         onPressed: () => context.go('/login'),
         icon: const Icon(Icons.arrow_back),
       ),
+      title: const Text('Account recovery'),
