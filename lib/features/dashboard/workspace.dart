@@ -591,6 +591,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                           set['folder'],
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
+                          style: const TextStyle(fontSize: 10, color: accent),
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
