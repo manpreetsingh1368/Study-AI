@@ -11,6 +11,7 @@ export function openDatabase(directory: string) {
   sqlite.pragma("busy_timeout = 5000");
   const migrations = [
     "001_initial.sql",
+    "002_learning_sync.sql",
   const version = sqlite.pragma("user_version", { simple: true }) as number;
   if (version > migrations.length) {
     sqlite.close();
