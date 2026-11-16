@@ -131,3 +131,4 @@ export function registerNotebookRoutes(
         sid,
       );
       change(sid, u.id);
+    })();
