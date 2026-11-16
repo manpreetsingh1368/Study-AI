@@ -133,3 +133,4 @@ class _StudyToolsState extends State<StudyTools> {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   const SnackBar(
                                     content: Text(
+                                      'PDF saved for offline reading.',
