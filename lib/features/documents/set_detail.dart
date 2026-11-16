@@ -903,4 +903,5 @@ class _SetDetailState extends State<SetDetail> {
                 ),
               ),
             for (final note in savedNotes)
+              Padding(
 }
