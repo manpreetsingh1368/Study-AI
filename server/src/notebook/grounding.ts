@@ -162,3 +162,4 @@ export async function notebookGenerate(
       await response.body?.cancel();
       continue;
     }
+    if (!response.ok)
