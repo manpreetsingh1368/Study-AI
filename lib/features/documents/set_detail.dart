@@ -247,6 +247,7 @@ class _SetDetailState extends State<SetDetail> {
                             0 => sources(),
                             2 => studio(),
                             _ => chat(),
+                          }, chatPanel: mobileTab == 1),
                         ),
                       ),
                     ],
