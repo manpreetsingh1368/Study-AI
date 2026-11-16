@@ -147,3 +147,4 @@ export function registerNotebookRoutes(
       .parse(req.body);
     owned(u.id, sid);
     const sourceIds = [...new Set(b.sourceIds)].sort();
+    const hash = digest({ sid, kind: b.kind, prompt: b.prompt, sourceIds });
