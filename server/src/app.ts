@@ -317,6 +317,7 @@ export function createApp(
           "UPDATE users SET password_hash=? WHERE id=?",
           passwordHash,
           recovery.user_id,
+        );
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
