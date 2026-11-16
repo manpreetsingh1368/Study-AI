@@ -47,3 +47,4 @@ Uint8List validPdf() {
     offsets.add(text.length);
     text += '${i + 1} 0 obj\n${objects[i]}\nendobj\n';
   }
+  final xref = text.length;
