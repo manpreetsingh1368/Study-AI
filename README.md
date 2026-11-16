@@ -83,6 +83,7 @@ A native Linux acceptance test starts an isolated Fastify fixture server, uses r
 ```sh
 # From the project root. NODE_BINARY must match the Node used for npm ci.
 xvfb-run -a flutter test integration_test/learning_flow_test.dart -d linux \
+  --dart-define=PROJECT_ROOT="$PWD" \
 
 ## Android, iOS and macOS
 
