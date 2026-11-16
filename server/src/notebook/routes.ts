@@ -278,3 +278,4 @@ export function registerNotebookRoutes(
             );
         }
         run(
+          "INSERT INTO notebook_entries VALUES(?,?,?,?,?,?,?,?)",
