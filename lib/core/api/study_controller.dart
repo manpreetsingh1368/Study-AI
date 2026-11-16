@@ -635,6 +635,7 @@ class StudyController extends ChangeNotifier {
         'Finish syncing this study set before generating.',
       );
     }
+    final configuration = '$kind:$count:$difficulty';
     await request('POST', '/sets/$sid/generate', {
       'id': operationId,
       'kind': kind,
