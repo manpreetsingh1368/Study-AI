@@ -126,6 +126,7 @@ class _AdminPageState extends State<AdminPage> {
                         }
                       },
                       child: const Text('Account details'),
+                    ),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
