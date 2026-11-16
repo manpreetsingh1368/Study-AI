@@ -72,3 +72,4 @@ class _StudyToolsState extends State<StudyTools> {
                   ? null
                   : () async {
                       final yes = await showDialog<bool>(
+                        context: context,
