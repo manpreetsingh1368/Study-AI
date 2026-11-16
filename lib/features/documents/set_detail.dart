@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-          children: [
             OutlinedButton.icon(
               onPressed: busy
                   ? null
