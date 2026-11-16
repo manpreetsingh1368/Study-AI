@@ -113,6 +113,7 @@ class ConflictsScreen extends StatelessWidget {
                               allowedExtensions: ['pdf'],
                             );
                           } catch (e) {
+                            if (context.mounted) {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(content: Text(e.toString())),
                               );
