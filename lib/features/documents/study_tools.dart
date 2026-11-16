@@ -114,3 +114,4 @@ class _StudyToolsState extends State<StudyTools> {
               children: [
                 Text(
                   s['document']['filename'],
+                  style: const TextStyle(fontWeight: FontWeight.w600),
