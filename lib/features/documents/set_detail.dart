@@ -404,6 +404,7 @@ class _SetDetailState extends State<SetDetail> {
                     color: selected.contains(source['id'])
                         ? accent.withValues(alpha: .08)
                         : Colors.transparent,
+                    borderRadius: BorderRadius.circular(12),
                   ),
                 ),
             ],
