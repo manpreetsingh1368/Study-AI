@@ -73,6 +73,7 @@ void main() {
     }
     await tester.ensureVisible(find.text('Open my workspace'));
     await tester.tap(find.text('Open my workspace'));
+    await tester.runAsync(
 }
 
 class WidgetMemoryStore extends LocalStore {
