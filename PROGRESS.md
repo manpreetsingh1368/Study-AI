@@ -24,6 +24,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Native Linux acceptance test: passed using real Fastify HTTP/SQLite and native PDF rendering. Registered a temporary account, saved notes/uploaded a real PDF, generated test-only quiz/cards, completed learning flows, downloaded records from a second client, and verified cached PDF/offline editing after stopping the fixture server. Credentials were mocked only within the test; the user's keyring was not changed. No Gemini call was made by the fixture.
 - Final Linux release build and Android debug APK build: passed.
 - `npm audit --omit=dev`: zero reported vulnerabilities.
+- iOS/macOS were not built/tested on Ubuntu. Android runtime/device acceptance was not performed.
 
 ## Configuration and remaining release work
 
