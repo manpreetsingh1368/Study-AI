@@ -151,6 +151,7 @@ class ModernToolbar extends StatelessWidget {
                     label: const Text('Search library · ⌘/Ctrl K'),
                   )
                 : TextField(
+                    onChanged: onSearch,
           ),
         const SizedBox(width: 12),
         Tooltip(
