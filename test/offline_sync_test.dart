@@ -166,6 +166,7 @@ void main() {
           body = {
             'sets': remote == null || remote!['deleted'] == 1 ? [] : [remote],
           };
+        }
           body = {'changes': [], 'cursor': 0, 'hasMore': false};
         }
         if (req.uri.path == '/analytics') body = {'completed': 0};
