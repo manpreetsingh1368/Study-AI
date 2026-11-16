@@ -65,3 +65,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
                 const SizedBox(height: 12),
+                const Text(
