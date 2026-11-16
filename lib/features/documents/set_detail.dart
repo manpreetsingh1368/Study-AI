@@ -353,6 +353,7 @@ class _SetDetailState extends State<SetDetail> {
           padding: const EdgeInsets.all(16),
           child: Text(
             'Only checked sources are sent for notebook answers. PDFs need selectable text.',
+            style: TextStyle(
           ),
         ),
       ],
