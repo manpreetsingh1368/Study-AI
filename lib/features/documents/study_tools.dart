@@ -82,3 +82,4 @@ class _StudyToolsState extends State<StudyTools> {
                             TextButton(
                               onPressed: () => Navigator.pop(ctx, false),
                               child: const Text('Cancel'),
+                            ),
