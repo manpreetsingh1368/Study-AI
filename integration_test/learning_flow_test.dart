@@ -179,6 +179,7 @@ void main() {
           set['id'],
           'Energy essentials',
           'ATP transfers chemical energy.',
+          entryId: response['id'],
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
