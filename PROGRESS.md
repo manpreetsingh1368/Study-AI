@@ -32,6 +32,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 ## Remaining before production
 
 - Supply backend `GEMINI_API_KEY` and a supported `GEMINI_MODEL`, then perform live-provider acceptance using genuine materials. No production API key was available here.
+- Install normal Ubuntu build dependencies (`libsecret-1-dev` etc.) from README. This host used extracted development packages under `/tmp/study-ai-build-deps` and the matching `PKG_CONFIG_PATH`; Flutter was not reinstalled.
 
 ## Commit policy requested by owner
 
