@@ -227,6 +227,7 @@ class _SetDetailState extends State<SetDetail> {
                           showSelectedIcon: false,
                           segments: const [
                             ButtonSegment(
+                              value: 0,
                       ),
                       const SizedBox(height: 12),
                       Expanded(
