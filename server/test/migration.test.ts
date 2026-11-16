@@ -10,3 +10,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
   try {
     const old = new Database(join(dir, "study.sqlite"));
     old.pragma("foreign_keys=ON");
+    old.exec(
