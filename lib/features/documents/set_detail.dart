@@ -696,4 +696,5 @@ class _SetDetailState extends State<SetDetail> {
           for (final follow in content['followUps'])
             TextButton(
               style: TextButton.styleFrom(
+                alignment: Alignment.centerLeft,
 }
