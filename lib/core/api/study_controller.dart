@@ -404,6 +404,7 @@ class StudyController extends ChangeNotifier {
           ...body,
           'citations': [],
           'created_at': DateTime.now().millisecondsSinceEpoch,
+          'pending': true,
     }
   }
 
