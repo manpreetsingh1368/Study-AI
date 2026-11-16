@@ -357,6 +357,7 @@ class _SetDetailState extends State<SetDetail> {
                 TextField(
                   controller: text,
                   minLines: 6,
+                  maxLines: 12,
                         ),
                       ),
                     ),
