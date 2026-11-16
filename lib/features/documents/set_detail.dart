@@ -198,6 +198,7 @@ class _SetDetailState extends State<SetDetail> {
                   style: Theme.of(context).textTheme.headlineSmall
                       ?.copyWith(fontSize: wide ? 28 : 24),
                 ),
+                const SizedBox(height: 6),
                   ),
                 ),
               ],
