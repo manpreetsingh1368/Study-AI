@@ -195,6 +195,7 @@ class _SetDetailState extends State<SetDetail> {
                   widget.set['title'],
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.headlineSmall
                   ),
                 ),
               ],
