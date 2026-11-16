@@ -31,7 +31,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Remaining before production
 
-- Drag/drop upload, resizable panels, global search shortcut, onboarding tour, persistent appearance preference, complete accessibility/reduced-motion audits and native visual QA.
 - Timed exam persistence/enforcement, immediate question feedback mode, detailed historical attempt answer review, daily activity charts, distinct advanced analytics entitlement/UI.
 - Document folder organization, generation into additional decks per set, PDF replacement UI and comprehensive study-set create/upload rollback behavior.
 - Migration upgrades beyond the versioned transactional initial schema, broader Drizzle query adoption, cursor retention/compaction, crash-recovery policy for pending generations, filesystem garbage collection after soft deletion.
