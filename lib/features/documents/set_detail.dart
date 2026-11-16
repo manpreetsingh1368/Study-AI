@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-      padding: const EdgeInsets.all(28),
       children: [
         Text(s['title'], style: Theme.of(context).textTheme.headlineLarge),
         if ((s['folder'] ?? '').isNotEmpty)
