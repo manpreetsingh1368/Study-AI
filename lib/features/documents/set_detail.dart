@@ -434,6 +434,7 @@ class _SetDetailState extends State<SetDetail> {
                             onTap: () => previewSource(source),
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(0, 12, 10, 12),
+                              child: Column(
                   ),
                 ),
             ],
