@@ -224,6 +224,7 @@ class _SetDetailState extends State<SetDetail> {
                             ? 'This source contains a PDF. Open its PDF tab to read it.'
                             : source['notes'],
                       ),
+                    ),
                         ),
                       ),
                     ),
