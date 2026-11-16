@@ -4,6 +4,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Implemented
 
+- Flutter Material 3 with Riverpod and GoRouter; onboarding, registration, login, dashboard, library, notes/PDF editing, generation controls, quizzes, timed exams, results, collections, flashcard sessions, analytics, history, Free/Pro, profile/settings, conflicts and administration.
 
 ## Verification
 
