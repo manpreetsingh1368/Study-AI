@@ -407,6 +407,7 @@ class _SetDetailState extends State<SetDetail> {
                     borderRadius: BorderRadius.circular(12),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
                   ),
                 ),
             ],
