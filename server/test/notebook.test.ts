@@ -243,3 +243,4 @@ test("source selection excludes previous conversations about unchecked sources; 
     true,
   );
   assert.equal(
+    (
