@@ -90,3 +90,4 @@ void main() {
               'Fixture startup failed: ${stderr.join()} ($e)',
             ),
           );
+      final port = jsonDecode(line)['port'];
