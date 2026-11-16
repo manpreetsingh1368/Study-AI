@@ -261,3 +261,4 @@ export function registerNotebookRoutes(
             .blocks.map((block: any) => block.text)
             .join("\n"),
         }));
+      const output = await generate({
