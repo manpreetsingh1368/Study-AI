@@ -879,7 +879,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       ),
       SubscriptionCard(
         name: 'Free',
-        description: '3 AI generations a day\n5 flashcards per generation\n5 saved study sets\nQuizzes and basic insights',
       ),
       const SizedBox(height: 20),
       SubscriptionCard(
