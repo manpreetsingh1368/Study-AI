@@ -283,3 +283,4 @@ export function registerNotebookRoutes(
           sid,
           b.kind,
           b.prompt,
+          JSON.stringify(sourceIds),
