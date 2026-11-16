@@ -128,6 +128,7 @@ class _AdminPageState extends State<AdminPage> {
                       child: const Text('Account details'),
                     ),
 
+                    TextButton(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
