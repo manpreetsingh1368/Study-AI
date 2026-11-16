@@ -94,3 +94,4 @@ export function splitSource(
   source: Omit<SourceChunk, "id" | "text">,
   text: string,
 ): SourceChunk[] {
+  const result: SourceChunk[] = [];
