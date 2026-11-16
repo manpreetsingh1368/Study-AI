@@ -80,6 +80,7 @@ void main() {
     expect(controller.onboarded, true);
     expect(await store.read('_device', 'onboarded'), true);
     await controller.setAppearance('dark');
+    await tester.pumpAndSettle();
 }
 
 class WidgetMemoryStore extends LocalStore {
