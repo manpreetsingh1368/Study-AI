@@ -376,6 +376,7 @@ class _SetDetailState extends State<SetDetail> {
             onChanged: (_) => setState(() {}),
             decoration: const InputDecoration(
               hintText: 'Find materials',
+              prefixIcon: Icon(Icons.search, size: 18),
                   ),
                 ),
             ],
