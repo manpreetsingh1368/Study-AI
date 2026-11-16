@@ -110,6 +110,7 @@ class _AdminPageState extends State<AdminPage> {
                                           '${usage['day']} · ${usage['status']} · ${usage['count']}',
                                         ),
                                     ],
+                                  ),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
