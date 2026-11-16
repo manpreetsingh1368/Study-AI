@@ -514,6 +514,7 @@ export function createApp(
         );
         if (!collection)
           fail(409, "Generation identifier belongs to another study set.");
+        return { set: full(s), plan: plan(u.id), collectionId: collection.id };
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
