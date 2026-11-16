@@ -178,6 +178,7 @@ class StudyController extends ChangeNotifier {
       final me = await request('GET', '/me');
       if (!valid()) return;
       plan = Map<String, dynamic>.from(me['plan']);
+      catalog = Map<String, dynamic>.from(await request('GET', '/plans'));
       user = Map<String, dynamic>.from(me['user']);
       await secure.write(key: 'profile', value: jsonEncode(user));
       final blocked = <String>{};
