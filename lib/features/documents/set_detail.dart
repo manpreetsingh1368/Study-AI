@@ -168,6 +168,7 @@ class _SetDetailState extends State<SetDetail> {
         }
         final source = await c.saveSet(
           title.text.trim(),
+          text.text.trim(),
                         ),
                       ),
                     ),
