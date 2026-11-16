@@ -268,3 +268,4 @@ export function registerNotebookRoutes(
         history,
       });
       const verified = validatedEvidence(output, chunks);
+      db.transaction(() => {
