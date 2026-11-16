@@ -149,3 +149,4 @@ export function registerNotebookRoutes(
     const sourceIds = [...new Set(b.sourceIds)].sort();
     const hash = digest({ sid, kind: b.kind, prompt: b.prompt, sourceIds });
     const previous = get("SELECT * FROM notebook_entries WHERE id=?", b.id);
+    if (previous) {
