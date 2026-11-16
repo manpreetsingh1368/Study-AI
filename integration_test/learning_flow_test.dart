@@ -85,3 +85,4 @@ void main() {
           .transform(const LineSplitter())
           .first
           .timeout(const Duration(seconds: 15))
+          .catchError(
