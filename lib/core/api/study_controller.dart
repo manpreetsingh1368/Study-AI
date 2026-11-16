@@ -383,6 +383,7 @@ class StudyController extends ChangeNotifier {
       syncing = false;
       notifyListeners();
     }
+    }
   }
 
   Future<void> logout({bool remote = true, bool eraseCache = false}) async {
