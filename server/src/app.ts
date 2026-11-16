@@ -736,6 +736,7 @@ export function createApp(
         `%${q.search}%`,
         `%${q.search}%`,
         q.limit,
+        q.offset,
       ).map((u) => ({
         ...u,
         plan: plan(u.id),
