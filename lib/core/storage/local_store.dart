@@ -87,6 +87,7 @@ class LocalStore {
   Future<void> removeUpload(String id) async {
     await db.delete('uploads', where: 'id=?', whereArgs: [id]);
   }
+
   }
 
   Future<void> queueMutation(
