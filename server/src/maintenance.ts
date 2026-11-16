@@ -10,3 +10,4 @@ if (!Number.isFinite(retention) || retention < 1)
   throw new Error("Retention must be at least one day.");
 try {
   const files = sqlite
+    .prepare(
