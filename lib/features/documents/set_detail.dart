@@ -299,6 +299,7 @@ class _SetDetailState extends State<SetDetail> {
                 Navigator.pop(ctx);
                 if (isPdf) {
                   context.go('/pdf/${source['id']}?page=${cite['page']}');
+                } else {
                         ),
                       ),
                     ),
