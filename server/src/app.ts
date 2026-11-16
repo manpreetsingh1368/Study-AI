@@ -500,6 +500,7 @@ export function createApp(
       usage,
     );
     if (previousUsage) {
+      if (previousUsage.user_id !== u.id)
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
