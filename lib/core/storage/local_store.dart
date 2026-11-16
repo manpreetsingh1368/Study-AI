@@ -96,6 +96,7 @@ class LocalStore {
   ) async {
     await db.transaction((txn) async {
       await txn.insert('outbox', {
+        'id': body['id'],
   }
 
   Future<void> queueMutation(
