@@ -598,4 +598,5 @@ class _SetDetailState extends State<SetDetail> {
             const Icon(Icons.auto_awesome_rounded, size: 16, color: accent),
             const SizedBox(width: 8),
             const Text(
+              'STUDY AI',
 }
