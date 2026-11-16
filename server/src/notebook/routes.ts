@@ -74,3 +74,4 @@ export function registerNotebookRoutes(
           "SELECT count(*) n FROM notebook_notes WHERE notebook_id=? AND deleted=0",
           sid,
         ).n >= 100
+      )
