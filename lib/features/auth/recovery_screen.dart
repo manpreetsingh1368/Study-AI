@@ -84,3 +84,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 TextField(
                   controller: password,
                   obscureText: true,
+                  decoration: const InputDecoration(
