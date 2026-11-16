@@ -150,3 +150,4 @@ class _StudyToolsState extends State<StudyTools> {
                           sideBySide
                               ? 'Close reading panel'
                               : 'Read beside notes',
+                        ),
