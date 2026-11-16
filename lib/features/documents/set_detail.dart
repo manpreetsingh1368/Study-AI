@@ -231,6 +231,7 @@ class _SetDetailState extends State<SetDetail> {
                         document: Map<String, dynamic>.from(source['document']),
                       ),
                   ],
+                ),
                         ),
                       ),
                     ),
