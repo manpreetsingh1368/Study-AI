@@ -379,4 +379,5 @@ class _SetDetailState extends State<SetDetail> {
                   padding: const EdgeInsets.all(22),
                   child: answer(report!, isReport: true),
                 )
+              : conversation.isEmpty && !busy
 }
