@@ -116,3 +116,4 @@ class _StudyToolsState extends State<StudyTools> {
                   s['document']['filename'],
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
+                Wrap(
