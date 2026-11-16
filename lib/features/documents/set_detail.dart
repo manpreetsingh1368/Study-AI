@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                  DropdownMenu<int>(
                     key: ValueKey(kind),
                     initialSelection: count,
                     label: const Text('Items'),
