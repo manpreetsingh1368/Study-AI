@@ -37,3 +37,4 @@ export function registerNotebookRoutes(
         limit: z.coerce.number().int().min(1).max(100).default(30),
       })
       .parse(req.query);
+    return {
