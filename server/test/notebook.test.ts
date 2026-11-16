@@ -57,3 +57,4 @@ async function setup(t: any, generate = supported) {
         email,
         password: "notebook-test-password",
       })
+    ).body;
