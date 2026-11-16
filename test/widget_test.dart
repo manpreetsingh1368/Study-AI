@@ -52,6 +52,7 @@ void main() {
     });
   }
   testWidgets('Onboarding persists completion and appearance preferences', (
+    tester,
 }
 
 class WidgetMemoryStore extends LocalStore {
