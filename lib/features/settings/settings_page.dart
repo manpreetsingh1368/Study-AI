@@ -151,6 +151,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                 icon: const Icon(Icons.copy_outlined),
                                 label: const Text('Copy code'),
                               ),
+                            ],
             OutlinedButton(
               onPressed: busy
                   ? null
