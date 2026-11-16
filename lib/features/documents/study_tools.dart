@@ -285,3 +285,4 @@ class _StudyToolsState extends State<StudyTools> {
                     initialSelection: kind,
                     label: const Text('Create'),
                     onSelected: busy
+                        ? null
