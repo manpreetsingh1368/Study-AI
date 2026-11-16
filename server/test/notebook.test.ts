@@ -331,3 +331,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
     rmSync(directory, { recursive: true, force: true });
   });
   const auth = (
+    await app.inject({
