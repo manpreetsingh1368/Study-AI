@@ -102,3 +102,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     a.token,
     request,
   );
+  assert.equal(answer.status, 200);
