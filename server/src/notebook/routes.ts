@@ -13,3 +13,4 @@ import {
 } from "./grounding.js";
 export function registerNotebookRoutes(
   app: FastifyInstance,
+  c: any,
