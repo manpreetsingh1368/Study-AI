@@ -91,3 +91,4 @@ class _StudyToolsState extends State<StudyTools> {
                         ),
                       );
                       if (yes == true) {
+                        await action(() async {
