@@ -258,3 +258,4 @@ export function registerNotebookRoutes(
         .map((r: any) => ({
           prompt: r.prompt,
           answer: JSON.parse(r.content)
+            .blocks.map((block: any) => block.text)
