@@ -10,3 +10,4 @@ const app = createApp({
       input.kind === "flashcards"
         ? []
         : Array.from({ length: input.count }, (_, index) => ({
+            question: `What does ATP carry? (${index + 1})`,
