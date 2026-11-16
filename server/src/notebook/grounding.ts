@@ -34,3 +34,4 @@ export const responseSchema = z.object({
   followUps: z.array(z.string().min(1).max(200)).max(3),
 });
 export type NotebookOutput = z.infer<typeof responseSchema>;
+export type NotebookInput = {
