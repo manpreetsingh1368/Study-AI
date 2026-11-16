@@ -55,7 +55,6 @@ Study sets have stable IDs and monotonically increasing versions. Edits/deletes 
 
 Quiz attempts and flashcard review actions are queued locally with stable operation IDs, then replayed after reconnect. The server recomputes scores and makes replay idempotent. A deleted source discards its now-unapplicable pending operation on 404. Other failures retain the queue and show a sync error. Local scoring is provisional offline. Draft quiz answers persist per study set; timers do not persist through restart. Explicit sign-out clears that account's cache if no queued work remains; pending records remain isolated until the same account signs in again. Expired/revoked credentials clear active local state while keeping any queued records isolated for a later authenticated login. Account deletion clears the server and current cache. Local SQLite content is not encrypted; use operating-system account/disk protection.
 
-Offline study-set editing/creation, complete per-card due-state download, due-only study queues, and richer conflict resolution remain incomplete. Generated question/card collections are append-once per type per set to preserve existing attempt/review history; create another study set for a new generation.
 
 ## Android, iOS and macOS
 
