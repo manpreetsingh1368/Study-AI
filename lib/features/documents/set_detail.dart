@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-          const Text(
             'Generate a quiz, flashcards, or an exam from this material.',
           ),
         for (final deck in decks)
