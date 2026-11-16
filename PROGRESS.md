@@ -17,7 +17,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Verification
 
-- iOS/macOS: not built/tested on Ubuntu.
 - Live Gemini generation: unverified; no API credentials configured. Test fixtures are test-only and never a production fallback.
 
 ## Configuration and remaining release work
