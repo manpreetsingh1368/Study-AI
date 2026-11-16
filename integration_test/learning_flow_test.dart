@@ -196,6 +196,7 @@ void main() {
           'SCREENSHOT_DIR',
         );
         if (screenshotDirectory.isNotEmpty) {
+          tester.view.physicalSize = const Size(1600, 1000);
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
