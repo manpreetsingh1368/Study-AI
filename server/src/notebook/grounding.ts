@@ -18,3 +18,4 @@ export const responseSchema = z.object({
     .array(
       z.object({
         heading: z.string().max(150),
+        text: z.string().min(1).max(2200),
