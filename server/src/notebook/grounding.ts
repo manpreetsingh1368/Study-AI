@@ -181,3 +181,4 @@ export async function notebookGenerate(
         ),
       );
     } catch {
+      throw Object.assign(
