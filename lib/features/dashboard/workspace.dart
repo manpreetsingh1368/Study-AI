@@ -563,6 +563,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: () => context.go('/set/${set['id']}'),
+        child: SizedBox(
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
