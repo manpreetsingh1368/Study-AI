@@ -370,6 +370,7 @@ class _SetDetailState extends State<SetDetail> {
         ),
         const SizedBox(height: 12),
         Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 14),
                   ),
                 ),
             ],
