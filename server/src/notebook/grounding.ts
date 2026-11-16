@@ -96,3 +96,4 @@ export function splitSource(
 ): SourceChunk[] {
   const result: SourceChunk[] = [];
   // Overlap preserves sentences crossing chunk boundaries. Total selected text
+  // is capped by the route, so no source is silently excluded or truncated.
