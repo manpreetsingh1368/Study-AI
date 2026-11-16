@@ -52,3 +52,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
     body: Center(
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
+        child: ConstrainedBox(
