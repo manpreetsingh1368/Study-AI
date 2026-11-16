@@ -312,6 +312,7 @@ class _SetDetailState extends State<SetDetail> {
     clipBehavior: Clip.antiAlias,
     decoration: BoxDecoration(
       color: chatPanel
+          ? Theme.of(context).colorScheme.surfaceContainerLow
                   ),
                 ),
             ],
