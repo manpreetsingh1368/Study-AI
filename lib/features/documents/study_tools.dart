@@ -38,3 +38,4 @@ class _StudyToolsState extends State<StudyTools> {
   @override
   Widget build(BuildContext context) {
     final s = widget.set;
+    final pro = c.plan['pro'] == true;
