@@ -151,3 +151,4 @@ class _StudyToolsState extends State<StudyTools> {
                               ? 'Close reading panel'
                               : 'Read beside notes',
                         ),
+                      ),
