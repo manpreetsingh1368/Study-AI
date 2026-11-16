@@ -650,3 +650,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
     await call("POST", "/me/recovery", login.token, {
       password: "replacement-password",
     })
+  ).body;
