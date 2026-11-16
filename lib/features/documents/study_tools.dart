@@ -107,3 +107,4 @@ class _StudyToolsState extends State<StudyTools> {
           ErrorState(message: error!),
           const SizedBox(height: 16),
         ],
+        if (s['document'] != null) ...[
