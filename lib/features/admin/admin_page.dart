@@ -33,6 +33,7 @@ class _AdminPageState extends State<AdminPage> {
       if (mounted) {
         setState(() {
           users = append ? [...users, ...data['users']] : data['users'];
+          hasMore = data['hasMore'];
           stats = Map<String, dynamic>.from(s);
           error = null;
         });
