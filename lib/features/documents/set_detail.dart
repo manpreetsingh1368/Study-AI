@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                        child: NotesEditor(controller: c, existing: s),
                       ),
                     ),
               icon: const Icon(Icons.edit_outlined, size: 18),
