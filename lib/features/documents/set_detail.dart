@@ -577,4 +577,5 @@ class _SetDetailState extends State<SetDetail> {
         Text(
           c.offline
               ? 'Offline · saved conversations remain available'
+              : '${validSelection.length} ${validSelection.length == 1 ? 'source' : 'sources'} selected · 1 AI credit per request · verify important claims',
 }
