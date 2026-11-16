@@ -182,6 +182,7 @@ class _SetDetailState extends State<SetDetail> {
     await showModalBottomSheet(
       context: context,
       isScrollControlled: true,
+      useSafeArea: true,
                         ),
                       ),
                     ),
