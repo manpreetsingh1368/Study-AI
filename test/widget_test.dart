@@ -149,6 +149,7 @@ void main() {
         );
         await tester.pumpAndSettle();
         final ctx = tester.element(find.byType(Scaffold).first);
+        GoRouter.of(ctx).go('/set/sample');
 }
 
 class WidgetMemoryStore extends LocalStore {
