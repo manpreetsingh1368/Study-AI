@@ -167,6 +167,7 @@ class _SetDetailState extends State<SetDetail> {
           '',
           folder: widget.set['folder'] ?? '',
         );
+        await c.upload(source['id'], file.name, await file.readAsBytes());
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
