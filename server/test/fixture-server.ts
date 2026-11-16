@@ -13,3 +13,4 @@ const app = createApp({
             question: `What does ATP carry? (${index + 1})`,
             choices: ["Energy", "Oxygen", "Water", "DNA"],
             answer: 0,
+            explanation: "ATP transfers chemical energy.",
