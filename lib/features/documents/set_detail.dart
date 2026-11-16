@@ -110,7 +110,6 @@ class _SetDetailState extends State<SetDetail> {
         if (s['document'] != null) ...[
           StudyCard(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TextField(
                   controller: title,
