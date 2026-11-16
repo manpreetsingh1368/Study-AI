@@ -23,3 +23,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
         {
           chunkId: input.chunks[0].id,
           quote: "ATP transfers chemical energy.",
+        },
