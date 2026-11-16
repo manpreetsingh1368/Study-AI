@@ -32,6 +32,7 @@ class _SetDetailState extends State<SetDetail> {
     super.initState();
     selected = Set<String>.from(notebook['sourceIds'] ?? [widget.set['id']]);
   }
+
     setState(() {
       busy = true;
       error = null;
