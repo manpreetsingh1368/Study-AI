@@ -8,6 +8,7 @@ const app = createApp({
   notebookGenerate: async (input) => ({
     insufficientEvidence: false,
     blocks: [
+      {
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
