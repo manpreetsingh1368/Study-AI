@@ -509,6 +509,7 @@ export function createApp(
       if (previousUsage.status === "success" && previousUsage.collection_id) {
         const collection = get(
           "SELECT * FROM collections WHERE id=? AND set_id=?",
+          previousUsage.collection_id,
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
