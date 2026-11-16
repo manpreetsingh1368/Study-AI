@@ -693,6 +693,7 @@ class StudyController extends ChangeNotifier {
     });
     final previous = await store.read(account, 'notebookRequest:$notebookId');
     final requestId =
+        previous != null && previous['configuration'] == configuration
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
