@@ -246,7 +246,6 @@ class _SetDetailState extends State<SetDetail> {
                         onPressed: () => context.go(
                           '/cards/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}&due=true',
                         ),
-                'Gemini uses your notes and PDF. Review generated content for accuracy. Each generation keeps your older collections and results.',
               ),
               const SizedBox(height: 22),
               Wrap(
