@@ -203,3 +203,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
   );
   assert.equal((await call("GET", "/me", a.token)).body.plan.used, 0);
   assert.equal(
+    (await call("GET", "/sets", a.token)).body.sets[0].notebook.entries.length,
