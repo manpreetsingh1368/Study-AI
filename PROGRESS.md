@@ -30,6 +30,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 - `npm audit --omit=dev`: zero reported vulnerabilities.
 - iOS/macOS were not built/tested on Ubuntu. Android runtime/device acceptance was not performed.
 
+
 ## Configuration and remaining release work
 
 - Supply backend `GEMINI_API_KEY` and a supported `GEMINI_MODEL`, then perform live-provider acceptance using genuine materials. No production API key was available here.
