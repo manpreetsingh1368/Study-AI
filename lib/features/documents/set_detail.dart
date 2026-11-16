@@ -211,6 +211,7 @@ class _SetDetailState extends State<SetDetail> {
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
+                        SizedBox(width: 218, child: panel(sources())),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
