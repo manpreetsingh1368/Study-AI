@@ -781,6 +781,7 @@ export function createApp(
   app.get("/admin/stats", async (req) => {
     admin(req);
     return {
+      students: get("SELECT count(*) n FROM users WHERE role='student'").n,
       usage: all(
         "SELECT day,status,count(*) count FROM generation_usage GROUP BY day,status ORDER BY day DESC LIMIT 60",
       ),
