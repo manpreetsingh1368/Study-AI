@@ -340,6 +340,7 @@ class _SetDetailState extends State<SetDetail> {
     final title = TextEditingController(), text = TextEditingController();
     final save = await showDialog<bool>(
       context: context,
+      builder: (ctx) => AlertDialog(
                         ),
                       ),
                     ),
