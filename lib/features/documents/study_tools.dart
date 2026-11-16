@@ -219,3 +219,4 @@ class _StudyToolsState extends State<StudyTools> {
           ),
         for (final deck in decks)
           Padding(
+            padding: const EdgeInsets.only(bottom: 12),
