@@ -94,6 +94,7 @@ class LocalStore {
     Map<String, dynamic> body,
     List<Map<String, dynamic>> sets,
   ) async {
+    await db.transaction((txn) async {
   }
 
   Future<void> queueMutation(
