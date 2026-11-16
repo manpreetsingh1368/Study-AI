@@ -91,6 +91,7 @@ class _AdminPageState extends State<AdminPage> {
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
                                     crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
