@@ -34,3 +34,4 @@ Future<LocalStore> testStore() async {
 
 Uint8List validPdf() {
   const stream = 'BT /F1 18 Tf 20 100 Td (Study AI native PDF test) Tj ET';
+  final objects = [
