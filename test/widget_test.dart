@@ -147,6 +147,7 @@ void main() {
             child: const StudyAIApp(),
           ),
         );
+        await tester.pumpAndSettle();
 }
 
 class WidgetMemoryStore extends LocalStore {
