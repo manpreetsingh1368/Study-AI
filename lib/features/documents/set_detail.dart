@@ -827,4 +827,5 @@ class _SetDetailState extends State<SetDetail> {
                   style: TextStyle(fontSize: 11),
                 ),
               ),
+            for (final collection in widget.set['collections'] ?? [])
 }
