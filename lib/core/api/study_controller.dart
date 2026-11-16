@@ -390,6 +390,7 @@ class StudyController extends ChangeNotifier {
     List<Map<String, Object?>> pendingRecords,
   ) {
     for (final pendingRecord in pendingRecords) {
+      final match = RegExp(r'^/notebooks/([^/]+)/(notes|delete-note)$')
     }
   }
 
