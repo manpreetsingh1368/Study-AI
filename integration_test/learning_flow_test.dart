@@ -103,7 +103,6 @@ void main() {
       try {
         await c.initialize();
         await tester.pumpWidget(
-            child: const StudyAIApp(),
           ),
         );
         await tester.pumpAndSettle();
