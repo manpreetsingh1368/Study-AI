@@ -30,3 +30,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
           const SnackBar(
             content: Text('Password replaced. Sign in with your new password.'),
           ),
+        );
