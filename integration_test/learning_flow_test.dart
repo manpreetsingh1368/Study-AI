@@ -32,3 +32,4 @@ Future<LocalStore> testStore() async {
   return store;
 }
 
+Uint8List validPdf() {
