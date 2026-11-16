@@ -109,6 +109,7 @@ class _SetDetailState extends State<SetDetail> {
     context: context,
     isScrollControlled: true,
     useSafeArea: true,
+    builder: (_) => SizedBox(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
