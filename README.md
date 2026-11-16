@@ -88,6 +88,7 @@ SQLite is intended for one initial server process on local persistent disk. Do n
 
 ## Backups and restore
 
+`server/src/backup.ts` uses SQLite's online backup API, but the API must be stopped while copying the uploads so files and DB form a consistent snapshot. `server/deploy/backup.sh` is a concrete maintenance-window script to adapt and schedule using a root cron/systemd timer (for example daily at 03:00 UTC). It restarts the API even if backup fails. Nothing is scheduled or installed automatically by this repository. Store backups privately on owner-controlled storage; encrypt off-machine copies and implement retention. Concrete `study-ai-backup.service`/`.timer` units are provided for a daily 03:00 UTC snapshot; copy/adapt them and enable the timer on your host. No host services have been installed or enabled by this development session.
 
 Manual procedure:
 
