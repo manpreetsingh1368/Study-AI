@@ -55,6 +55,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
       if (receipt) {
         if (receipt.payload_hash !== fingerprint)
           fail(409, "Operation identifier reused with different data.");
+        const current = get(
       }
       if (b.kind === "create") {
         if (
