@@ -176,3 +176,4 @@ export function registerNotebookRoutes(
               page: null,
             },
             source.notes,
+          ),
