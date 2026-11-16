@@ -619,3 +619,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
     })
   ).body;
   assert.equal(typeof recovery.code, "string");
+  assert.equal(
