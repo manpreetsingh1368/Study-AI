@@ -9,3 +9,4 @@ import {
   validatedEvidence,
   type NotebookInput,
   type NotebookOutput,
+  type SourceChunk,
