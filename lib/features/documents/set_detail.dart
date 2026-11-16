@@ -451,6 +451,7 @@ class _SetDetailState extends State<SetDetail> {
                                     children: [
                                       Icon(
                                         source['document'] == null
+                                            ? Icons.notes_rounded
                   ),
                 ),
             ],
