@@ -178,6 +178,7 @@ void main() {
         await tester.pumpAndSettle();
         expect(find.text('ATP'), findsOneWidget);
         await tester.tap(find.text('ATP'));
+        await tester.pumpAndSettle();
 }
 
 class WidgetMemoryStore extends LocalStore {
