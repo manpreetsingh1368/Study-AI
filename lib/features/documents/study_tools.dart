@@ -304,3 +304,4 @@ class _StudyToolsState extends State<StudyTools> {
                     ],
                   ),
                   DropdownMenu<String>(
+                    initialSelection: level,
