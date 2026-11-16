@@ -37,3 +37,4 @@ try {
     for (const file of readdirSync(uploads))
       if (
         file.endsWith(".pending") &&
+        statSync(join(uploads, file)).mtimeMs < now - 86400000
