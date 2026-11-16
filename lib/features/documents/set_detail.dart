@@ -124,6 +124,7 @@ class _SetDetailState extends State<SetDetail> {
                   maxLength: 100000,
                   decoration: const InputDecoration(
                     labelText: 'Paste your source text',
+                    alignLabelWithHint: true,
                 ),
               ],
             ),
