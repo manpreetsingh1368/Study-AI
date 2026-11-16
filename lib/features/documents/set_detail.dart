@@ -878,4 +878,5 @@ class _SetDetailState extends State<SetDetail> {
             Row(
               children: [
                 Expanded(
+                  child: Text(
 }
