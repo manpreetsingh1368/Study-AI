@@ -398,6 +398,7 @@ class _SetDetailState extends State<SetDetail> {
 
   static String label(String kind) => switch (kind) {
     'summary' => 'Source overview',
+    'guide' => 'Study guide',
                         ),
                       ),
                     ),
