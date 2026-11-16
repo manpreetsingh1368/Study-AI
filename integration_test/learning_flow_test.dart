@@ -189,6 +189,7 @@ void main() {
         await tester.tap(find.text('1 · Notes'));
         await tester.pumpAndSettle();
         expect(find.text('“ATP transfers chemical energy.”'), findsOneWidget);
+        await tester.tap(find.text('Close'));
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
