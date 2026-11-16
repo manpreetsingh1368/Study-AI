@@ -56,6 +56,7 @@ class _SetDetailState extends State<SetDetail> {
             chatScroll.position.maxScrollExtent,
             duration: MediaQuery.disableAnimationsOf(context)
                 ? Duration.zero
+                : const Duration(milliseconds: 250),
         ),
       ),
     ),
