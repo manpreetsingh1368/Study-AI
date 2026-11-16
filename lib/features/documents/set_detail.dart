@@ -430,6 +430,7 @@ class _SetDetailState extends State<SetDetail> {
               children: [
                 Row(
                   children: [
+                    TextButton.icon(
                         ),
                       ),
                     ),
