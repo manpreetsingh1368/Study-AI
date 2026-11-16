@@ -169,6 +169,7 @@ void main() {
           find.text('ATP stores and transfers chemical energy.'),
           findsOneWidget,
         );
+        expect(tester.takeException(), isNull);
 }
 
 class WidgetMemoryStore extends LocalStore {
