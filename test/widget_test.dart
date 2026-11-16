@@ -61,6 +61,7 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [studyProvider.overrideWithValue(controller)],
+        child: const StudyAIApp(),
 }
 
 class WidgetMemoryStore extends LocalStore {
