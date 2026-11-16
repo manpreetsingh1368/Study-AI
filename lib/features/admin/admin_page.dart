@@ -18,6 +18,7 @@ class _AdminPageState extends State<AdminPage> {
   String? error;
   String query = '';
   bool hasMore = false, loading = false;
+  int offset = 0, total = 0;
   @override
   void initState() {
     super.initState();
