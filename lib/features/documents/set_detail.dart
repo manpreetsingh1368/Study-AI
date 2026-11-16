@@ -993,4 +993,5 @@ class _SetDetailState extends State<SetDetail> {
   void dispose() {
     composer.dispose();
     sourceSearch.dispose();
+    composerFocus.dispose();
 }
