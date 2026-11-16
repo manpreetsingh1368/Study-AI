@@ -104,6 +104,7 @@ class LocalStore {
       await txn.insert('cache', {
         'account': account,
         'key': 'sets',
+        'value': jsonEncode(sets),
   }
 
   Future<void> queueMutation(
