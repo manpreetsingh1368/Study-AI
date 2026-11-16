@@ -294,3 +294,4 @@ export function registerNotebookRoutes(
           sid,
           JSON.stringify(sourceIds),
         );
+        change(sid, u.id);
