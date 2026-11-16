@@ -159,7 +159,6 @@ class _SetDetailState extends State<SetDetail> {
           ),
           const SizedBox(height: 20),
         ],
-              builder: (context, size) => Row(
                 children: [
                   SizedBox(
                     width: (size.maxWidth - 14) * split,
