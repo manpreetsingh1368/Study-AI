@@ -71,6 +71,7 @@ Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses thr
 - Ask a question in Chat; Ctrl/Command+Enter sends it. Answers carry clickable source excerpts. PDF references open at their cited page when the original document is still available. Changed sources are clearly identified as older snapshots.
 - Studio generates source overviews, structured study guides and FAQs. Each request uses **one** unit of the existing Free/Pro AI allowance, just like a quiz generation. No additional paid provider is involved.
 - Save an answer to Studio notes, write a personal note, copy an answer, export reports/notes as Markdown, and reopen older conversations. Notes queue safely offline; saved answers/reports remain available from the local cache.
+- Quizzes, flashcards and exams remain available under **Study tools** and the Studio collection list.
 
 ## Recovery codes
 
