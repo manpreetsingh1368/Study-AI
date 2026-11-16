@@ -358,6 +358,7 @@ class _SetDetailState extends State<SetDetail> {
               onPressed: busy ? null : addSource,
               icon: const Icon(Icons.add_circle_outline, size: 20),
             ),
+          ),
                   ),
                 ),
             ],
