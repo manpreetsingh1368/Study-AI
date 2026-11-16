@@ -25,6 +25,7 @@ class _SetDetailState extends State<SetDetail> {
       Map<String, dynamic>.from(widget.set['notebook'] ?? {});
   List<dynamic> get entries => notebook['entries'] as List? ?? [];
   List<dynamic> get savedNotes => notebook['notes'] as List? ?? [];
+  List<String> get validSelection =>
     setState(() {
       busy = true;
       error = null;
