@@ -208,3 +208,4 @@ export function registerNotebookRoutes(
       fail(
         422,
         "No readable source text was found. Paste notes or use a PDF with selectable text.",
+      );
