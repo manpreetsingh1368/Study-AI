@@ -849,4 +849,5 @@ class _SetDetailState extends State<SetDetail> {
               ),
             for (final entry in entries.where((e) => e['kind'] != 'chat'))
               ListTile(
+                contentPadding: EdgeInsets.zero,
 }
