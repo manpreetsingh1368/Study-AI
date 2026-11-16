@@ -92,3 +92,4 @@ export function registerNotebookRoutes(
         "INSERT INTO notebook_notes VALUES(?,?,?,?,?,?,0)",
         b.id,
         sid,
+        b.title,
