@@ -355,3 +355,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
     url: `/sets/${set.id}/pdf`,
     headers: {
       authorization: `Bearer ${auth.token}`,
+      "content-type": `multipart/form-data; boundary=${boundary}`,
