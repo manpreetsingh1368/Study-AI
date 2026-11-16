@@ -225,6 +225,7 @@ class _SetDetailState extends State<SetDetail> {
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         child: SegmentedButton<int>(
                           showSelectedIcon: false,
+                          segments: const [
                       ),
                       const SizedBox(height: 12),
                       Expanded(
