@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                        () => split = (split + d.delta.dx / size.maxWidth)
                             .clamp(.25, .75),
                       ),
                       child: const SizedBox(
