@@ -477,4 +477,5 @@ class _SetDetailState extends State<SetDetail> {
         const SizedBox(height: 12),
         Text(
           'Ask a question. Find a connection.\nFollow the evidence back to your sources.',
+          style: TextStyle(
 }
