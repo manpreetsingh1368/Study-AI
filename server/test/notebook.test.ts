@@ -59,3 +59,4 @@ async function setup(t: any, generate = supported) {
       })
     ).body;
   }
+  return { call, register };
