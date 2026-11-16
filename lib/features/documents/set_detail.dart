@@ -416,4 +416,5 @@ class _SetDetailState extends State<SetDetail> {
                             raw['prompt'],
                             style: const TextStyle(fontSize: 13),
                           ),
+                        ),
 }
