@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-        ),
         const SizedBox(height: 16),
         if (decks.isEmpty)
           const Text(
