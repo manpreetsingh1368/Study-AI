@@ -303,6 +303,7 @@ class _SetDetailState extends State<SetDetail> {
                   previewSource(source);
                 }
               },
+              child: const Text('Open source'),
                         ),
                       ),
                     ),
