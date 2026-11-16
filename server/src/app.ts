@@ -750,6 +750,7 @@ export function createApp(
     const uid = (req.params as any).id,
       u = get(
         "SELECT id,email,name,role,created_at FROM users WHERE id=?",
+        uid,
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
