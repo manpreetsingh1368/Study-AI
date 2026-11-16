@@ -152,6 +152,7 @@ class _SetDetailState extends State<SetDetail> {
       );
       return;
     }
+    if (choice == 'pdf') {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
