@@ -369,4 +369,5 @@ class _SetDetailState extends State<SetDetail> {
                   tooltip: 'Back to chat',
                   onPressed: () => setState(() => report = null),
                   icon: const Icon(Icons.close, size: 19),
+                )
 }
