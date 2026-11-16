@@ -47,3 +47,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     assert.equal(sqlite.pragma("user_version", { simple: true }), 3);
     const material = sqlite
       .prepare("SELECT * FROM study_sets WHERE id=?")
+      .get("s") as any;
