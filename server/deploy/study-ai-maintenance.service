@@ -11,3 +11,4 @@ ExecStart=/usr/bin/npm run maintenance
 UMask=0077
 NoNewPrivileges=true
 ProtectSystem=strict
+ProtectHome=true
