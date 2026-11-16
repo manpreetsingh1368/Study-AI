@@ -225,3 +225,4 @@ class _StudyToolsState extends State<StudyTools> {
               child: ListTile(
                 leading: Icon(
                   deck['kind'] == 'flashcards'
+                      ? Icons.style_outlined
