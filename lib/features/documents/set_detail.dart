@@ -241,6 +241,7 @@ class _SetDetailState extends State<SetDetail> {
                               label: Text('Studio'),
                               icon: Icon(Icons.auto_awesome_outlined, size: 17),
                             ),
+                          ],
                       ),
                       const SizedBox(height: 12),
                       Expanded(
