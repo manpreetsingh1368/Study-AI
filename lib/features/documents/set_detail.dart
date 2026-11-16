@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                      borderRadius: BorderRadius.circular(16),
                       child: PdfScreen(
                         controller: c,
                         document: Map<String, dynamic>.from(s['document']),
