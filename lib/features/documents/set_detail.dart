@@ -403,6 +403,7 @@ class _SetDetailState extends State<SetDetail> {
                   child: Material(
                     color: selected.contains(source['id'])
                         ? accent.withValues(alpha: .08)
+                        : Colors.transparent,
                   ),
                 ),
             ],
