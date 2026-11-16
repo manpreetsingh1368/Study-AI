@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 
 import 'notes_editor.dart';
 import 'pdf_screen.dart';
+import 'study_tools.dart';
 
 class SetDetail extends StatefulWidget {
   final Map<String, dynamic> set;
