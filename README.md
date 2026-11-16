@@ -76,6 +76,7 @@ cd server
 npm run check
 npm test
 npm audit --omit=dev
+```
 
 ## Android, iOS and macOS
 
