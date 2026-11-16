@@ -57,6 +57,7 @@ class _AdminPageState extends State<AdminPage> {
             ('Private documents', stats['documents'] ?? 0),
             ('Storage bytes', stats['storage'] ?? 0),
           ])
+            StudyCard(
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
