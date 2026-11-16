@@ -275,6 +275,7 @@ class _SetDetailState extends State<SetDetail> {
                 const SizedBox(height: 16),
                 SelectableText(
                   '“${cite['quote']}”',
+                  style: const TextStyle(height: 1.8),
                         ),
                       ),
                     ),
