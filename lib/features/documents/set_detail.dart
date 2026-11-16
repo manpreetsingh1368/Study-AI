@@ -329,6 +329,7 @@ class _SetDetailState extends State<SetDetail> {
         Icon(icon, size: 18, color: accent),
         const SizedBox(width: 9),
         Expanded(
+          child: Text(
                   ),
                 ),
             ],
