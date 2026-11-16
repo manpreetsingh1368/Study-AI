@@ -212,3 +212,4 @@ class _StudyToolsState extends State<StudyTools> {
           'Your learning collections',
           style: Theme.of(context).textTheme.titleLarge,
         ),
+        const SizedBox(height: 16),
