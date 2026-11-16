@@ -330,6 +330,7 @@ class _SetDetailState extends State<SetDetail> {
       );
       if (mounted) {
         ScaffoldMessenger.of(
+          context,
                         ),
                       ),
                     ),
