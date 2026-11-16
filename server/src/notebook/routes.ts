@@ -85,3 +85,4 @@ export function registerNotebookRoutes(
         );
         if (!original) fail(404, "Original answer not found.");
         citations = JSON.parse(original.content).blocks.flatMap(
+          (block: any) => block.citations,
