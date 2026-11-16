@@ -69,6 +69,7 @@ Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses thr
 
 - Check up to eight saved materials as sources. Add another text source or PDF directly from the source panel, or open a source to read its notes/PDF.
 - Ask a question in Chat; Ctrl/Command+Enter sends it. Answers carry clickable source excerpts. PDF references open at their cited page when the original document is still available. Changed sources are clearly identified as older snapshots.
+- Studio generates source overviews, structured study guides and FAQs. Each request uses **one** unit of the existing Free/Pro AI allowance, just like a quiz generation. No additional paid provider is involved.
 
 ## Recovery codes
 
