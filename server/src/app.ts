@@ -319,6 +319,7 @@ export function createApp(
           recovery.user_id,
         );
         run("DELETE FROM recovery_codes WHERE user_id=?", recovery.user_id);
+        run("DELETE FROM sessions WHERE user_id=?", recovery.user_id);
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
