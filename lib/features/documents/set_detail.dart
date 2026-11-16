@@ -808,4 +808,5 @@ class _SetDetailState extends State<SetDetail> {
                 const Expanded(
                   child: Text(
                     'Your learning collections',
+                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
 }
