@@ -358,6 +358,7 @@ class _SetDetailState extends State<SetDetail> {
                   controller: text,
                   minLines: 6,
                   maxLines: 12,
+                  maxLength: 30000,
                         ),
                       ),
                     ),
