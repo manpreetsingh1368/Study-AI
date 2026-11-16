@@ -188,3 +188,4 @@ class _StudyToolsState extends State<StudyTools> {
                       child: const SizedBox(
                         width: 14,
                         height: 540,
+                        child: VerticalDivider(),
