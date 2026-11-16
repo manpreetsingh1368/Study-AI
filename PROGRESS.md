@@ -47,6 +47,7 @@ The directory did not contain a Git repository, so no commit/diff was created. B
 
 ## Source inventory
 
+
 - `.gitignore`
 - `PROGRESS.md`
 - `README.md`
