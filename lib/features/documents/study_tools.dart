@@ -270,3 +270,4 @@ class _StudyToolsState extends State<StudyTools> {
             children: [
               Text(
                 'Create a new learning collection',
+                style: Theme.of(context).textTheme.titleLarge,
