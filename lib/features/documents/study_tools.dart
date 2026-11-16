@@ -122,3 +122,4 @@ class _StudyToolsState extends State<StudyTools> {
                     TextButton.icon(
                       onPressed: () => context.go('/pdf/${s['id']}'),
                       icon: const Icon(Icons.picture_as_pdf_outlined),
+                      label: const Text('Open PDF'),
