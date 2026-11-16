@@ -865,4 +865,5 @@ class _SetDetailState extends State<SetDetail> {
                       .toLocal()
                       .toString()
                       .split('.')
+                      .first,
 }
