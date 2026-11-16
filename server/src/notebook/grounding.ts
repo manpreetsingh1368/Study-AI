@@ -10,3 +10,4 @@ export type SourceChunk = {
   page: number | null;
   text: string;
 };
+const normalize = (text: string) =>
