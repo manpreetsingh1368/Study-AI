@@ -915,4 +915,5 @@ class _SetDetailState extends State<SetDetail> {
                       note['title'],
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
 }
