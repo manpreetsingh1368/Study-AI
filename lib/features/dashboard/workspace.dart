@@ -628,6 +628,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                     SizedBox(width: width, child: notebookCard(set)),
                 ],
               );
+            },
       ],
     );
   }
