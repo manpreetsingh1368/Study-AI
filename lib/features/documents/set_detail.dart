@@ -943,4 +943,5 @@ class _SetDetailState extends State<SetDetail> {
                                 const SizedBox(height: 16),
                                 for (final cite in note['citations'] ?? [])
                                   TextButton.icon(
+                                    onPressed: () => citation(
 }
