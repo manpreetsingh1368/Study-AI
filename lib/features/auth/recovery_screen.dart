@@ -92,3 +92,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 if (message != null) ...[
                   ErrorState(message: message!),
                   const SizedBox(height: 16),
+                ],
