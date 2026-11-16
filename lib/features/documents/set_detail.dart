@@ -51,6 +51,7 @@ class _SetDetailState extends State<SetDetail> {
         mobileTab = 1;
       });
       WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (chatScroll.hasClients) {
         ),
       ),
     ),
