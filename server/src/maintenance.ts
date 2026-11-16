@@ -23,3 +23,4 @@ try {
     sqlite
       .prepare(
         "UPDATE study_sets SET notes='',title='Deleted study set',folder='' WHERE deleted=1 AND updated_at<?",
+      )
