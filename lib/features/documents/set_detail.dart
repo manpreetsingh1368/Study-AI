@@ -726,4 +726,5 @@ class _SetDetailState extends State<SetDetail> {
                 color: Theme.of(context).colorScheme.onSurfaceVariant,
               ),
             ),
+            const SizedBox(height: 16),
 }
