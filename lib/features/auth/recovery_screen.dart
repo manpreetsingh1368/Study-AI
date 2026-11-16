@@ -24,3 +24,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         'email': email.text.trim(),
         'code': code.text.trim(),
         'password': password.text,
+      });
