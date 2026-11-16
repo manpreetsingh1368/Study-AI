@@ -660,3 +660,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
         password: "replacement-again",
       })
     ).status,
+    401,
