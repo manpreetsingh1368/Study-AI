@@ -375,6 +375,7 @@ class _SetDetailState extends State<SetDetail> {
             controller: sourceSearch,
             onChanged: (_) => setState(() {}),
             decoration: const InputDecoration(
+              hintText: 'Find materials',
                   ),
                 ),
             ],
