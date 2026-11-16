@@ -248,6 +248,7 @@ Future<LocalStore> memoryStore() async {
   final db = await databaseFactoryFfi.openDatabase(
     inMemoryDatabasePath,
     options: OpenDatabaseOptions(singleInstance: false),
+  );
   await db.execute(
     'CREATE TABLE cache(account TEXT,key TEXT,value TEXT,PRIMARY KEY(account,key))',
   );
