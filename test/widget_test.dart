@@ -99,6 +99,7 @@ void main() {
         final store = WidgetMemoryStore();
         final controller = StudyController(store)
           ..loading = false
+          ..user = {'id': 'student', 'name': 'Student', 'role': 'student'}
 }
 
 class WidgetMemoryStore extends LocalStore {
