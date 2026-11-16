@@ -313,3 +313,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       blocks: [
         {
           heading: "From the PDF",
+          text: "ATP is an energy carrier.",
