@@ -350,6 +350,7 @@ class _SetDetailState extends State<SetDetail> {
           ),
         ),
         Padding(
+          padding: const EdgeInsets.all(16),
           ),
         ),
       ],
