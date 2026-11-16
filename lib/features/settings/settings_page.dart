@@ -135,6 +135,7 @@ class _SettingsPageState extends State<SettingsPage> {
                             'Save this recovery code privately',
                           ),
                           content: Column(
+                            mainAxisSize: MainAxisSize.min,
             OutlinedButton(
               onPressed: busy
                   ? null
