@@ -192,6 +192,7 @@ class _SetDetailState extends State<SetDetail> {
             children: [
               Padding(
                 padding: const EdgeInsets.all(20),
+                child: Row(
                         ),
                       ),
                     ),
