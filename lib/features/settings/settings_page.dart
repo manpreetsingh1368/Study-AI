@@ -128,6 +128,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         {'password': current.text},
                       );
                       if (!context.mounted) return;
+                      await showDialog<void>(
             OutlinedButton(
               onPressed: busy
                   ? null
