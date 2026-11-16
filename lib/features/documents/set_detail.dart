@@ -721,4 +721,5 @@ class _SetDetailState extends State<SetDetail> {
           children: [
             Text(
               'Turn sources into understanding',
+              style: TextStyle(
 }
