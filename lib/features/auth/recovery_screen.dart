@@ -82,3 +82,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 ),
                 const SizedBox(height: 12),
                 TextField(
+                  controller: password,
