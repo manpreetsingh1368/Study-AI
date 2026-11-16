@@ -313,6 +313,7 @@ class _SetDetailState extends State<SetDetail> {
     decoration: BoxDecoration(
       color: chatPanel
           ? Theme.of(context).colorScheme.surfaceContainerLow
+          : Theme.of(context).colorScheme.surface,
                   ),
                 ),
             ],
