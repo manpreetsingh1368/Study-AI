@@ -288,3 +288,4 @@ export function registerNotebookRoutes(
           JSON.stringify(verified),
           now(),
         );
+        run("UPDATE generation_usage SET status='success' WHERE id=?", b.id);
