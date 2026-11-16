@@ -683,3 +683,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
     a.token,
     operation,
   );
+  assert.equal(replay.status, 200);
