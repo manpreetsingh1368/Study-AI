@@ -977,4 +977,5 @@ class _SetDetailState extends State<SetDetail> {
                           FilledButton(
                             onPressed: () => Navigator.pop(ctx),
                             child: const Text('Done'),
+                          ),
 }
