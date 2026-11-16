@@ -71,3 +71,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
       notes: sourceText,
     })
   ).body.set;
+  const other = (
