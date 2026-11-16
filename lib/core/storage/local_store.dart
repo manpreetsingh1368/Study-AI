@@ -185,6 +185,7 @@ class LocalStore {
     String account,
     String id,
     List<Map<String, dynamic>> sets,
+  ) async {
   Future<void> remove(String id) async {
     await db.delete('outbox', where: 'id=?', whereArgs: [id]);
   }
