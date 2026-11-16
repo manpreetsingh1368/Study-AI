@@ -503,4 +503,5 @@ class _SetDetailState extends State<SetDetail> {
                   color: Theme.of(context).colorScheme.outlineVariant,
                 ),
                 shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(14),
 }
