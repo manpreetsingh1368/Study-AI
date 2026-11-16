@@ -315,6 +315,7 @@ class _SetDetailState extends State<SetDetail> {
     final text = blocks
         .map((b) => '${b['heading']}\n${b['text']}')
         .join('\n\n');
+    if (text.isEmpty) return;
                         ),
                       ),
                     ),
