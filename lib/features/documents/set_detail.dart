@@ -186,6 +186,7 @@ class _SetDetailState extends State<SetDetail> {
       showDragHandle: true,
       builder: (_) => SizedBox(
         height: MediaQuery.sizeOf(context).height * .85,
+        child: DefaultTabController(
                         ),
                       ),
                     ),
