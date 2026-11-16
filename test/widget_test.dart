@@ -69,6 +69,7 @@ void main() {
     for (var i = 0; i < 2; i++) {
       await tester.ensureVisible(find.text('Continue'));
       await tester.tap(find.text('Continue'));
+      await tester.pumpAndSettle();
 }
 
 class WidgetMemoryStore extends LocalStore {
