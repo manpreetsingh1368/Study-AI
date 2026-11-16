@@ -189,6 +189,7 @@ class LocalStore {
     await db.transaction((txn) async {
       await txn.delete(
         'outbox',
+        where: 'id=? AND account=?',
   Future<void> remove(String id) async {
     await db.delete('outbox', where: 'id=?', whereArgs: [id]);
   }
