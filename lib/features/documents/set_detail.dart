@@ -321,6 +321,7 @@ class _SetDetailState extends State<SetDetail> {
       ),
     ),
     child: Material(type: MaterialType.transparency, child: child),
+  );
                   ),
                 ),
             ],
