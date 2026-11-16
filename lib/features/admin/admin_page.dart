@@ -48,6 +48,7 @@ class _AdminPageState extends State<AdminPage> {
     children: [
       Text('Administration', style: Theme.of(context).textTheme.headlineLarge),
       const SizedBox(height: 24),
+      const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
           labelText: 'Search students',
