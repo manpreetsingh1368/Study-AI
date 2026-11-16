@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                        ),
                       );
                       if (yes == true) {
                         await action(() async {
