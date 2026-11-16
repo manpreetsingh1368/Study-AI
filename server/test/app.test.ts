@@ -645,3 +645,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
       email: "student@example.com",
       password: "replacement-password",
     })
+  ).body;
