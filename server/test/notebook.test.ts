@@ -195,3 +195,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
       await call("POST", `/notebooks/${set.id}/ask`, a.token, {
         id: randomUUID(),
         kind: "summary",
+        prompt: "Overview",
