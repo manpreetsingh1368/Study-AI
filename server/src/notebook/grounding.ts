@@ -41,3 +41,4 @@ export type NotebookInput = {
   history: { prompt: string; answer: string }[];
 };
 export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
+  let parsed: NotebookOutput;
