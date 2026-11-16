@@ -751,4 +751,5 @@ class _SetDetailState extends State<SetDetail> {
                 padding: const EdgeInsets.only(bottom: 10),
                 child: Material(
                   color: accent.withValues(alpha: .045),
+                  borderRadius: BorderRadius.circular(14),
 }
