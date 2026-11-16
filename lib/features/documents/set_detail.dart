@@ -421,6 +421,7 @@ class _SetDetailState extends State<SetDetail> {
           Padding(
             padding: EdgeInsets.fromLTRB(
               wide ? 24 : 16,
+              14,
                         ),
                       ),
                     ),
