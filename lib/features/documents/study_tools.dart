@@ -10,3 +10,4 @@ class StudyTools extends StatefulWidget {
   final Map<String, dynamic> set;
   final StudyController controller;
   const StudyTools({super.key, required this.set, required this.controller});
+  @override
