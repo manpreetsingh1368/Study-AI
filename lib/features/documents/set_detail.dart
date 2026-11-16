@@ -826,4 +826,5 @@ class _SetDetailState extends State<SetDetail> {
                   'Create quizzes & cards',
                   style: TextStyle(fontSize: 11),
                 ),
+              ),
 }
