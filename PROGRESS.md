@@ -47,6 +47,7 @@ The directory did not contain a Git repository, so no commit/diff was created. B
 
 ## Source inventory
 
+Application, backend, tests, deployment and documentation files created or updated across this development work:
 
 - `.gitignore`
 - `PROGRESS.md`
