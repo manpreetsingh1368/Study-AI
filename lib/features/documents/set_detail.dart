@@ -719,4 +719,5 @@ class _SetDetailState extends State<SetDetail> {
         child: ListView(
           padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
           children: [
+            Text(
 }
