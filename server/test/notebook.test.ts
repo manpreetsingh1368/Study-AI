@@ -42,3 +42,4 @@ async function setup(t: any, generate = supported) {
     rmSync(dir, { recursive: true, force: true });
   });
   async function call(method: any, url: string, token?: string, payload?: any) {
+    const r = await app.inject({
