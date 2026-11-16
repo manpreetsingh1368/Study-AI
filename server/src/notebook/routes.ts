@@ -231,3 +231,4 @@ export function registerNotebookRoutes(
         fail(
           429,
           "Daily AI allowance reached. Chat and Studio use the same AI allowance as quiz generation.",
+        );
