@@ -345,6 +345,7 @@ class _SetDetailState extends State<SetDetail> {
             sourceSearch.text.toLowerCase(),
           ),
         )
+        .toList();
                   ),
                 ),
             ],
