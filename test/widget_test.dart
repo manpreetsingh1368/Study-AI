@@ -55,6 +55,7 @@ void main() {
     tester,
   ) async {
     final store = WidgetMemoryStore();
+    final controller = StudyController(store)
 }
 
 class WidgetMemoryStore extends LocalStore {
