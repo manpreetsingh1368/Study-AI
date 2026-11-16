@@ -103,3 +103,4 @@ export function registerNotebookRoutes(
   });
   app.post("/notebooks/:id/delete-note", async (req) => {
     const u = user(req),
+      sid = (req.params as any).id,
