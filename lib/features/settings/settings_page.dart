@@ -152,6 +152,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                 label: const Text('Copy code'),
                               ),
                             ],
+                          ),
             OutlinedButton(
               onPressed: busy
                   ? null
