@@ -641,3 +641,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
     401,
   );
   const login = (
+    await call("POST", "/auth/login", undefined, {
