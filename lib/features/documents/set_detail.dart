@@ -378,6 +378,7 @@ class _SetDetailState extends State<SetDetail> {
               hintText: 'Find materials',
               prefixIcon: Icon(Icons.search, size: 18),
               isDense: true,
+            ),
                   ),
                 ),
             ],
