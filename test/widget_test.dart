@@ -170,6 +170,7 @@ void main() {
           findsOneWidget,
         );
         expect(tester.takeException(), isNull);
+        GoRouter.of(tester.element(find.byType(Scaffold).first))
 }
 
 class WidgetMemoryStore extends LocalStore {
