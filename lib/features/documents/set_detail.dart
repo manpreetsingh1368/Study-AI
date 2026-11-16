@@ -824,4 +824,5 @@ class _SetDetailState extends State<SetDetail> {
                 icon: const Icon(Icons.quiz_outlined, size: 17),
                 label: const Text(
                   'Create quizzes & cards',
+                  style: TextStyle(fontSize: 11),
 }
