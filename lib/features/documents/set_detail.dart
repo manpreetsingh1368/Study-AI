@@ -882,4 +882,5 @@ class _SetDetailState extends State<SetDetail> {
                     'Saved notes · ${savedNotes.length}',
                     style: const TextStyle(
                       fontSize: 12,
+                      fontWeight: FontWeight.w700,
 }
