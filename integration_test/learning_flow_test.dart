@@ -57,3 +57,4 @@ Uint8List validPdf() {
 }
 
 void main() {
+  IntegrationTestWidgetsFlutterBinding.ensureInitialized();
