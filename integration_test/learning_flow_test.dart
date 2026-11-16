@@ -56,3 +56,4 @@ Uint8List validPdf() {
   return Uint8List.fromList(utf8.encode(text));
 }
 
+void main() {
