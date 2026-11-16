@@ -274,3 +274,4 @@ export function registerNotebookRoutes(
           if (owned(u.id, source.id).version !== source.version)
             fail(
               409,
+              "A source changed during generation. The response was not saved. Please retry.",
