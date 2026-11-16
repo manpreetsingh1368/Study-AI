@@ -24,3 +24,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
       .run("s", "u", "Lecture", "Important notes", 1, 0, 1, 1);
     old
       .prepare("INSERT INTO questions VALUES(?,?,?,?,?,?,?,?,?)")
+      .run(
