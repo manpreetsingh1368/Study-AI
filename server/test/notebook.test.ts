@@ -232,3 +232,4 @@ test("source selection excludes previous conversations about unchecked sources; 
           kind,
           prompt: "Help me study",
           sourceIds: sources,
+        })
