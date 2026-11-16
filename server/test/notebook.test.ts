@@ -215,3 +215,4 @@ test("source selection excludes previous conversations about unchecked sources; 
   });
   const a = await register("a@example.com");
   const one = (
+      await call("POST", "/sets", a.token, { title: "One", notes: sourceText })
