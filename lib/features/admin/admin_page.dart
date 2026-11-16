@@ -122,6 +122,7 @@ class _AdminPageState extends State<AdminPage> {
                             ),
                           );
                         } catch (e) {
+                          if (mounted) setState(() => error = e.toString());
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
