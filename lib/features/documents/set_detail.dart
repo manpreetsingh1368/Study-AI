@@ -418,6 +418,7 @@ class _SetDetailState extends State<SetDetail> {
       final wide = size.maxWidth >= 960;
       return Column(
         children: [
+          Padding(
                         ),
                       ),
                     ),
