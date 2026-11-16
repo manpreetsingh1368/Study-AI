@@ -127,6 +127,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         '/me/recovery',
                         {'password': current.text},
                       );
+                      if (!context.mounted) return;
             OutlinedButton(
               onPressed: busy
                   ? null
