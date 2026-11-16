@@ -320,6 +320,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                             GoRouterState.of(context)
                                     .uri
                                     .queryParameters['page'] ??
+                                '1',
             );
     }
     if (widget.page == 'attempt') {
