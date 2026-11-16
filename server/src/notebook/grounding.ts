@@ -150,3 +150,4 @@ export async function notebookGenerate(
           contents: [
             { role: "user", parts: [{ text: JSON.stringify(input) }] },
           ],
+          generationConfig: {
