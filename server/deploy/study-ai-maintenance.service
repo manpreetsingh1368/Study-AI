@@ -1,3 +1,4 @@
 [Unit]
 Description=Study AI private data retention maintenance
 After=study-ai.service
+[Service]
