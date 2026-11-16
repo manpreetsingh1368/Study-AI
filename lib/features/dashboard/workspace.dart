@@ -565,6 +565,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
         onTap: () => context.go('/set/${set['id']}'),
         child: SizedBox(
           height: 244,
+          child: Padding(
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
