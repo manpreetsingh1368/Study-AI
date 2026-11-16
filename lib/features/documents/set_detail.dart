@@ -29,6 +29,7 @@ class _SetDetailState extends State<SetDetail> {
       selected.where((id) => c.sets.any((s) => s['id'] == id)).toList();
   @override
   void initState() {
+    super.initState();
     setState(() {
       busy = true;
       error = null;
