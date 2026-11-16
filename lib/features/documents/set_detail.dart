@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                        height: MediaQuery.sizeOf(context).height * .85,
                         child: NotesEditor(controller: c, existing: s),
                       ),
                     ),
