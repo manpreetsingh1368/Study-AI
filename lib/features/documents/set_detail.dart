@@ -650,4 +650,5 @@ class _SetDetailState extends State<SetDetail> {
           if ((block['heading'] as String).isNotEmpty) ...[
             Text(
               block['heading'],
+              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700),
 }
