@@ -173,3 +173,4 @@ void main() {
           other.sets.single['document']['id'],
         );
         await pdfrxFlutterInitialize();
+        final pdf = await PdfDocument.openData(
