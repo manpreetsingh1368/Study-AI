@@ -246,7 +246,6 @@ class _SetDetailState extends State<SetDetail> {
                         onPressed: () => context.go(
                           '/cards/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}&due=true',
                         ),
-              ),
               const SizedBox(height: 22),
               Wrap(
                 spacing: 16,
