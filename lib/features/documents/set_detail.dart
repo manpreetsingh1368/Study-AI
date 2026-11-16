@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                    label: const Text('Items'),
                     onSelected: busy ? null : (v) => setState(() => count = v!),
                     dropdownMenuEntries: [
                       for (final n in [5, 10, 20, 50])
