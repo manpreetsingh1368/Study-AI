@@ -815,4 +815,5 @@ class _SetDetailState extends State<SetDetail> {
                   tooltip: 'Create quizzes, cards or exams',
                   onPressed: showTools,
                   icon: const Icon(Icons.add, size: 18),
+                ),
 }
