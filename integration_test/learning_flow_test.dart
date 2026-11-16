@@ -147,3 +147,4 @@ void main() {
           var i = 0;
           i < 40 && find.text('Session complete.').evaluate().isEmpty;
           i++
+        ) {
