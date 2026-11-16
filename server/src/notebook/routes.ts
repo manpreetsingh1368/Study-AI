@@ -277,3 +277,4 @@ export function registerNotebookRoutes(
               "A source changed during generation. The response was not saved. Please retry.",
             );
         }
+        run(
