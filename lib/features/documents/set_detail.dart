@@ -159,7 +159,6 @@ class _SetDetailState extends State<SetDetail> {
           ),
           const SizedBox(height: 20),
         ],
-          SizedBox(
             height: 540,
             child: LayoutBuilder(
               builder: (context, size) => Row(
