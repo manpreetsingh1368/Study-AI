@@ -49,3 +49,4 @@ export function registerNotebookRoutes(
   app.post("/notebooks/:id/notes", async (req) => {
     const u = user(req),
       sid = (req.params as any).id,
+      b = z
