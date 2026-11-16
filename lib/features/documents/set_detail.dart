@@ -403,6 +403,7 @@ class _SetDetailState extends State<SetDetail> {
     _ => 'Source conversation',
   };
   Future<void> export(String title, String text) async {
+    await task(() async {
                         ),
                       ),
                     ),
