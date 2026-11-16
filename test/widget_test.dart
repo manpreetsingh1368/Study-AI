@@ -59,6 +59,7 @@ void main() {
       ..loading = false
       ..onboarded = false;
     await tester.pumpWidget(
+      ProviderScope(
 }
 
 class WidgetMemoryStore extends LocalStore {
