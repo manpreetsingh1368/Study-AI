@@ -31,3 +31,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
             content: Text('Password replaced. Sign in with your new password.'),
           ),
         );
+        context.go('/login');
