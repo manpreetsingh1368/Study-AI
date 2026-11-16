@@ -195,6 +195,7 @@ void main() {
         final screenshotDirectory = const String.fromEnvironment(
           'SCREENSHOT_DIR',
         );
+        if (screenshotDirectory.isNotEmpty) {
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
