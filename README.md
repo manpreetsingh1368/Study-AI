@@ -67,6 +67,7 @@ The app includes first-run onboarding, saved appearance, folders, desktop PDF dr
 
 While signed in, enter your current password in Settings and choose **Create a one-time recovery code**. Store it privately; generating another invalidates the old code. Only its SHA-256 digest is retained on the server. The 256-bit code expires after one year and can reset the password once through **Use a recovery code** on the login screen. Resetting the password consumes the code and revokes all sessions. Changing the password also invalidates recovery codes. There is no email verification, email reset delivery or fake recovery email.
 
+
 ## Android, iOS and macOS
 
 ```sh
