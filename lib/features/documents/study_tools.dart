@@ -341,3 +341,4 @@ class _StudyToolsState extends State<StudyTools> {
               PrimaryActionButton(
                 label: busy ? 'Creating with Gemini…' : 'Generate with AI',
                 icon: Icons.auto_awesome,
+                onPressed: busy || c.offline
