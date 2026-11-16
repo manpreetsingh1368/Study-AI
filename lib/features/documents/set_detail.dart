@@ -270,6 +270,7 @@ class _SetDetailState extends State<SetDetail> {
                     style: const TextStyle(
                       color: accent,
                       fontWeight: FontWeight.w600,
+                    ),
                         ),
                       ),
                     ),
