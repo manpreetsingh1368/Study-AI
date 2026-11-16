@@ -397,6 +397,7 @@ class StudyController extends ChangeNotifier {
         jsonDecode(pendingRecord['body'] as String),
       );
       final book = Map<String, dynamic>.from(material['notebook'] ?? {});
+      final notes = List<dynamic>.from(book['notes'] ?? []);
     }
   }
 
