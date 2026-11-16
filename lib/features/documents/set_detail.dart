@@ -699,4 +699,5 @@ class _SetDetailState extends State<SetDetail> {
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 0),
               ),
+              onPressed: () {
 }
