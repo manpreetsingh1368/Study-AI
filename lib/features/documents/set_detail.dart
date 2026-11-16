@@ -465,4 +465,5 @@ class _SetDetailState extends State<SetDetail> {
           child: const Icon(
             Icons.auto_awesome_rounded,
             color: accent,
+            size: 29,
 }
