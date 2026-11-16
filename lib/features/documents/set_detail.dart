@@ -546,4 +546,5 @@ class _SetDetailState extends State<SetDetail> {
               children: [
                 Expanded(
                   child: TextField(
+                    controller: composer,
 }
