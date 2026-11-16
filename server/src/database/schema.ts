@@ -212,3 +212,4 @@ export const notebookEntries = sqliteTable("notebook_entries", {
   createdAt: integer("created_at").notNull(),
 });
 export const notebookNotes = sqliteTable("notebook_notes", {
+  id: text("id").primaryKey(),
