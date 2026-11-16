@@ -698,4 +698,5 @@ class _SetDetailState extends State<SetDetail> {
               style: TextButton.styleFrom(
                 alignment: Alignment.centerLeft,
                 padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 0),
+              ),
 }
