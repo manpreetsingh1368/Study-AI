@@ -189,3 +189,4 @@ void main() {
         expect(other.offline, true);
         expect(
           await other.documentBytes(other.sets.single['document']['id']),
+          bytes,
