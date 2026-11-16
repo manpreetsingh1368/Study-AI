@@ -31,7 +31,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Remaining before production
 
-- Password recovery/email delivery intentionally absent. There is no configured delivery system. No payments or external subscription service.
 
 ## Commit policy requested by owner
 
