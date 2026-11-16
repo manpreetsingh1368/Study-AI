@@ -843,4 +843,5 @@ class _SetDetailState extends State<SetDetail> {
                   style: const TextStyle(fontSize: 11),
                 ),
                 trailing: const Icon(Icons.play_arrow_rounded, size: 18),
+                onTap: () => context.go(
 }
