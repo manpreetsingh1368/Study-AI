@@ -863,4 +863,5 @@ class _SetDetailState extends State<SetDetail> {
                 subtitle: Text(
                   DateTime.fromMillisecondsSinceEpoch(entry['created_at'])
                       .toLocal()
+                      .toString()
 }
