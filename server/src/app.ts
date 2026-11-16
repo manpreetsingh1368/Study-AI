@@ -289,6 +289,7 @@ export function createApp(
     );
     return { code, expiresAt };
   });
+  app.post(
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
