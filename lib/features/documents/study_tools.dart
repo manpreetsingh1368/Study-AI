@@ -135,3 +135,4 @@ class _StudyToolsState extends State<StudyTools> {
                                     content: Text(
                                       'PDF saved for offline reading.',
                                     ),
+                                  ),
