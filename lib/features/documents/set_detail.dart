@@ -172,6 +172,7 @@ class _SetDetailState extends State<SetDetail> {
       });
       return;
     }
+    final title = TextEditingController(), text = TextEditingController();
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
