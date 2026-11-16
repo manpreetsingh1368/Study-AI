@@ -917,4 +917,5 @@ class _SetDetailState extends State<SetDetail> {
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
                         fontSize: 11,
+                        fontWeight: FontWeight.w600,
 }
