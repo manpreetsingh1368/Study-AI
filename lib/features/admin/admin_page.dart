@@ -113,6 +113,7 @@ class _AdminPageState extends State<AdminPage> {
                                   ),
                                 ),
                               ),
+                              actions: [
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
