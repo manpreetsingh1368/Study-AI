@@ -93,3 +93,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
 export function splitSource(
   source: Omit<SourceChunk, "id" | "text">,
   text: string,
+): SourceChunk[] {
