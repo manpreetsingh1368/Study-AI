@@ -86,6 +86,7 @@ class _AdminPageState extends State<AdminPage> {
                             builder: (ctx) => AlertDialog(
                               title: Text(u['email']),
                               content: SizedBox(
+                                width: 500,
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
