@@ -629,4 +629,5 @@ class _SetDetailState extends State<SetDetail> {
                 tooltip: 'Export Markdown',
                 onPressed: () => export(
                   label(entry['kind']),
+                  blocks
 }
