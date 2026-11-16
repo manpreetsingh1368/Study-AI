@@ -16,3 +16,4 @@ export const responseSchema = z.object({
   insufficientEvidence: z.boolean(),
   blocks: z
     .array(
+      z.object({
