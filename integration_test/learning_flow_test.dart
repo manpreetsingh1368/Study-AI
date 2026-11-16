@@ -203,6 +203,7 @@ void main() {
         expect(
           other.sets
               .firstWhere((s) => s['id'] == set['id'])['notebook']['notes']
+              .length,
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
