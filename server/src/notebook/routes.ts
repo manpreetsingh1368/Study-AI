@@ -236,3 +236,4 @@ export function registerNotebookRoutes(
         "INSERT INTO generation_usage(id,user_id,day,status,created_at,request_hash,request_config) VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET day=excluded.day,status=excluded.status,created_at=excluded.created_at",
         b.id,
         u.id,
+        new Date(now()).toISOString().slice(0, 10),
