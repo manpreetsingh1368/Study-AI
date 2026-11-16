@@ -201,3 +201,4 @@ void main() {
         await store.db.close();
         await otherStore.db.close();
         process.kill();
+        await process.exitCode.timeout(const Duration(seconds: 10));
