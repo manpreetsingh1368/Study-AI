@@ -187,3 +187,4 @@ export function registerNotebookRoutes(
           chunks.push(
             ...splitSource(
               {
+                setId: source.id,
