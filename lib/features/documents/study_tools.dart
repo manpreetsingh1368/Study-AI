@@ -129,3 +129,4 @@ class _StudyToolsState extends State<StudyTools> {
                           ? null
                           : () => action(() async {
                               await c.documentBytes(s['document']['id']);
+                              if (context.mounted) {
