@@ -481,6 +481,7 @@ export function createApp(
     const requestConfig = digest(
       JSON.stringify({
         sid,
+        kind: b.kind,
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
