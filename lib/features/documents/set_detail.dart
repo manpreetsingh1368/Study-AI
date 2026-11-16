@@ -643,4 +643,5 @@ class _SetDetailState extends State<SetDetail> {
         const SizedBox(height: 12),
         if (content['insufficientEvidence'] == true)
           const Text(
+            'I couldn’t find enough evidence in the selected sources to answer this. Try a more specific question or add another source.',
 }
