@@ -153,3 +153,4 @@ export async function notebookGenerate(
           generationConfig: {
             responseMimeType: "application/json",
             responseJsonSchema: z.toJSONSchema(responseSchema),
+            maxOutputTokens: Number(process.env.GEMINI_MAX_TOKENS || 12000),
