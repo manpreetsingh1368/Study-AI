@@ -27,3 +27,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
       });
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
