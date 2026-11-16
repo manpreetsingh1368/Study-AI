@@ -951,4 +951,5 @@ class _SetDetailState extends State<SetDetail> {
                                       size: 16,
                                     ),
                                     label: Text(cite['title']),
+                                  ),
 }
