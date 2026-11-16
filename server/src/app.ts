@@ -479,6 +479,7 @@ export function createApp(
     if (!s.notes.trim() && !doc) fail(400, "Add notes or a PDF first.");
     const usage = b.id || id();
     const requestConfig = digest(
+      JSON.stringify({
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
