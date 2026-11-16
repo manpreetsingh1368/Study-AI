@@ -94,3 +94,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   const SizedBox(height: 16),
                 ],
                 PrimaryActionButton(
+                  label: busy ? 'Recovering…' : 'Replace password',
