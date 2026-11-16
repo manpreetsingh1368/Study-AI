@@ -604,6 +604,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                   style: const TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 17,
+                    letterSpacing: -.3,
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
