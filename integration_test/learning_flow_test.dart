@@ -205,6 +205,7 @@ void main() {
               .firstWhere((s) => s['id'] == set['id'])['notebook']['notes']
               .length,
           2,
+        );
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
