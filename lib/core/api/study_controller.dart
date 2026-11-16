@@ -385,6 +385,7 @@ class StudyController extends ChangeNotifier {
     }
   }
 
+  void _overlayNotebookOperations(
     }
   }
 
