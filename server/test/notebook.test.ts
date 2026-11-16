@@ -53,3 +53,4 @@ async function setup(t: any, generate = supported) {
   async function register(email: string) {
     return (
       await call("POST", "/auth/register", undefined, {
+        name: "Student",
