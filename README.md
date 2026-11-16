@@ -65,6 +65,7 @@ The app includes first-run onboarding, saved appearance, folders, desktop PDF dr
 
 ## Notebook workspace and Studio
 
+Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses three panels; mobile uses focused tabs with less navigation chrome. The library now presents notebook cards with collection/note counts and recent updates.
 
 ## Recovery codes
 
