@@ -854,4 +854,5 @@ class _SetDetailState extends State<SetDetail> {
                 leading: const Icon(
                   Icons.description_outlined,
                   color: accent,
+                  size: 18,
 }
