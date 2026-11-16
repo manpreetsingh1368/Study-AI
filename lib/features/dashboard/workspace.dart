@@ -880,6 +880,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       SubscriptionCard(
         name: 'Free',
         description:
+            '${c.catalog['free']?['generations'] ?? 3} AI generations a day\n${c.catalog['free']?['cards'] ?? 5} flashcards per generation\n${c.catalog['free']?['sets'] ?? 5} saved study sets\nQuizzes and basic insights',
       ),
       const SizedBox(height: 20),
       SubscriptionCard(
