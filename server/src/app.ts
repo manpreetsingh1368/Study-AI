@@ -226,6 +226,7 @@ export function createApp(
   app.get("/plans", async () => ({
     free: {
       generations: Number(process.env.FREE_GENERATIONS || 3),
+      cards: Number(process.env.FREE_CARDS || 5),
   app.get("/health", async () => ({ status: "ok" }));
   app.post(
     "/auth/register",
