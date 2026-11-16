@@ -130,3 +130,4 @@ export function registerNotebookRoutes(
         noteId,
         sid,
       );
+      change(sid, u.id);
