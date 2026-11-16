@@ -226,3 +226,4 @@ class _StudyToolsState extends State<StudyTools> {
                 leading: Icon(
                   deck['kind'] == 'flashcards'
                       ? Icons.style_outlined
+                      : deck['kind'] == 'exam'
