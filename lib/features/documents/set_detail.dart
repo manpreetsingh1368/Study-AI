@@ -832,4 +832,5 @@ class _SetDetailState extends State<SetDetail> {
                 contentPadding: EdgeInsets.zero,
                 dense: true,
                 leading: Icon(
+                  collection['kind'] == 'flashcards'
 }
