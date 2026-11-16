@@ -39,3 +39,4 @@ class _StudyToolsState extends State<StudyTools> {
   Widget build(BuildContext context) {
     final s = widget.set;
     final pro = c.plan['pro'] == true;
+    final decks = s['collections'] as List? ?? [];
