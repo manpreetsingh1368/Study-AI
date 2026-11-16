@@ -389,6 +389,7 @@ class StudyController extends ChangeNotifier {
     Map<String, dynamic> material,
     List<Map<String, Object?>> pendingRecords,
   ) {
+    for (final pendingRecord in pendingRecords) {
     }
   }
 
