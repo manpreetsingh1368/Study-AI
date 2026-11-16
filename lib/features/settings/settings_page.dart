@@ -131,6 +131,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       await showDialog<void>(
                         context: context,
                         builder: (ctx) => AlertDialog(
+                          title: const Text(
             OutlinedButton(
               onPressed: busy
                   ? null
