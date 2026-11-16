@@ -130,6 +130,7 @@ class _SetDetailState extends State<SetDetail> {
                 subtitle: const Text(
                   'A lecture, reading excerpt, or your own notes',
                 ),
+                onTap: () => Navigator.pop(ctx, 'text'),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
