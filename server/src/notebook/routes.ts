@@ -242,3 +242,4 @@ export function registerNotebookRoutes(
         hash,
         hash,
       );
+    })();
