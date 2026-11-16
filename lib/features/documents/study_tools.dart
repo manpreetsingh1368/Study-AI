@@ -324,3 +324,4 @@ class _StudyToolsState extends State<StudyTools> {
                     onSelected: busy ? null : (v) => setState(() => count = v!),
                     dropdownMenuEntries: [
                       for (final n in [5, 10, 20, 50])
+                        DropdownMenuEntry(
