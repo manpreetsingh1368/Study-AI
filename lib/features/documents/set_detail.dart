@@ -320,6 +320,7 @@ class _SetDetailState extends State<SetDetail> {
             .withValues(alpha: .6),
       ),
     ),
+    child: Material(type: MaterialType.transparency, child: child),
                   ),
                 ),
             ],
