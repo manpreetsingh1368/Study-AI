@@ -390,4 +390,5 @@ class _SetDetailState extends State<SetDetail> {
                         onPressed: busy
                             ? null
                             : () => task(
+                                () => c.loadEarlierNotebook(widget.set['id']),
 }
