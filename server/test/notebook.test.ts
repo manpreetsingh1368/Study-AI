@@ -287,3 +287,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
     validatedEvidence(
       { insufficientEvidence: true, blocks: [], followUps: [] },
       chunks,
+    ).insufficientEvidence,
