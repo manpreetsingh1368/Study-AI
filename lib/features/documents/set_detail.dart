@@ -218,6 +218,7 @@ class _SetDetailState extends State<SetDetail> {
                 child: TabBarView(
                   children: [
                     SingleChildScrollView(
+                      padding: const EdgeInsets.all(24),
                         ),
                       ),
                     ),
