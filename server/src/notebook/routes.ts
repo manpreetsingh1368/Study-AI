@@ -112,3 +112,4 @@ export function registerNotebookRoutes(
         b.noteId,
         sid,
       );
+      if (!note) fail(404, "Note not found.");
