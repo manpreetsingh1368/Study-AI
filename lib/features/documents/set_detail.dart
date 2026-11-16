@@ -909,4 +909,5 @@ class _SetDetailState extends State<SetDetail> {
                   color: Theme.of(context).colorScheme.surfaceContainerLow,
                   borderRadius: BorderRadius.circular(12),
                   child: ListTile(
+                    contentPadding: const EdgeInsets.symmetric(horizontal: 12),
 }
