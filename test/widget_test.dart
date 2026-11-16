@@ -58,3 +58,4 @@ class WidgetMemoryStore extends LocalStore {
   @override
   Future<dynamic> read(String account, String key) async =>
       values['$account:$key'];
+  @override
