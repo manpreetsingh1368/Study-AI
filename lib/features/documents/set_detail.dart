@@ -133,6 +133,7 @@ class _SetDetailState extends State<SetDetail> {
                 onTap: () => Navigator.pop(ctx, 'text'),
               ),
               ListTile(
+                leading: const Icon(Icons.picture_as_pdf_outlined),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
