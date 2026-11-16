@@ -318,3 +318,4 @@ class _StudyToolsState extends State<StudyTools> {
                     ],
                   ),
                   DropdownMenu<int>(
+                    key: ValueKey(kind),
