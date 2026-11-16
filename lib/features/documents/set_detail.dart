@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                      }
                     },
               icon: const Icon(Icons.delete_outline, size: 18),
               label: const Text('Delete'),
