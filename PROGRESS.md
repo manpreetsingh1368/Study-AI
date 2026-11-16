@@ -1,5 +1,6 @@
 # Study AI implementation progress
 
+Updated 2026-11-16. Application flows are implemented; public production deployment and live-provider acceptance remain outstanding.
 
 ## Implemented application
 
