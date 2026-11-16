@@ -20,3 +20,4 @@ try {
   sqlite.transaction(() => {
     for (const file of files)
       sqlite.prepare("DELETE FROM documents WHERE id=?").run(file.id);
+    sqlite
