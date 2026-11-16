@@ -53,3 +53,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 460),
