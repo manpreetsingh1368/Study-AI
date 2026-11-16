@@ -663,3 +663,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
     401,
   );
 });
+test("generation replay does not consume quota twice or duplicate a collection", async (t) => {
