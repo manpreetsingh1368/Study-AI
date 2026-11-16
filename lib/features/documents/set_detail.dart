@@ -41,6 +41,7 @@ class _SetDetailState extends State<SetDetail> {
       final result = await c.askNotebook(
         widget.set['id'],
         kind,
+        prompt.trim(),
         ),
       ),
     ),
