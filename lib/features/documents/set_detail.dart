@@ -144,6 +144,7 @@ class _SetDetailState extends State<SetDetail> {
           ),
         ),
       ),
+    );
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
