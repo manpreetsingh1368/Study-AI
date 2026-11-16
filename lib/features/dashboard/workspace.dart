@@ -884,6 +884,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       const SizedBox(height: 20),
       SubscriptionCard(
         name: 'Pro',
+        description:
         action: const Text(
           'Pro is activated manually by your administrator.\nPayments are not available in this version.',
         ),
