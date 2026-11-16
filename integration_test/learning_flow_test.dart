@@ -188,3 +188,4 @@ void main() {
         await other.sync();
         expect(other.offline, true);
         expect(
+          await other.documentBytes(other.sets.single['document']['id']),
