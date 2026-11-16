@@ -56,3 +56,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
         statusCode: 502,
       });
     return { ...parsed, blocks: [] };
+  }
