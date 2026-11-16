@@ -851,4 +851,5 @@ class _SetDetailState extends State<SetDetail> {
               ListTile(
                 contentPadding: EdgeInsets.zero,
                 dense: true,
+                leading: const Icon(
 }
