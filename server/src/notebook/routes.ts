@@ -213,3 +213,4 @@ export function registerNotebookRoutes(
       owned(u.id, sid);
       for (const source of sources) {
         if (owned(u.id, source.id).version !== source.version)
+          fail(409, "A source changed while loading. Refresh and try again.");
