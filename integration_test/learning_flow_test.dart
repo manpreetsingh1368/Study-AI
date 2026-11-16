@@ -144,3 +144,4 @@ void main() {
         await tester.ensureVisible(find.text('Finish quiz'));
         await tester.tap(find.text('Finish quiz'));
         for (
+          var i = 0;
