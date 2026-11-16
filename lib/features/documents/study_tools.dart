@@ -8,3 +8,4 @@ import '../../shared/components.dart';
 
 class StudyTools extends StatefulWidget {
   final Map<String, dynamic> set;
+  final StudyController controller;
