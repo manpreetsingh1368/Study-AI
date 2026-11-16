@@ -249,3 +249,4 @@ export function registerNotebookRoutes(
         sid,
       )
         .filter((r: any) =>
+          (JSON.parse(r.source_ids) as string[]).every((id) =>
