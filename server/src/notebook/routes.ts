@@ -271,3 +271,4 @@ export function registerNotebookRoutes(
       db.transaction(() => {
         owned(u.id, sid);
         for (const source of sources) {
+          if (owned(u.id, source.id).version !== source.version)
