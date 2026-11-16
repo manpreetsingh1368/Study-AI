@@ -449,4 +449,5 @@ class _SetDetailState extends State<SetDetail> {
     );
   }
 
+  Widget emptyChat() => SingleChildScrollView(
 }
