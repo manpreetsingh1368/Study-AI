@@ -730,4 +730,5 @@ class _SetDetailState extends State<SetDetail> {
             for (final item in [
               (
                 'summary',
+                'Source overview',
 }
