@@ -149,3 +149,4 @@ class _StudyToolsState extends State<StudyTools> {
                         child: Text(
                           sideBySide
                               ? 'Close reading panel'
+                              : 'Read beside notes',
