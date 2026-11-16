@@ -290,6 +290,7 @@ export function createApp(
     return { code, expiresAt };
   });
   app.post(
+    "/auth/recover",
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
