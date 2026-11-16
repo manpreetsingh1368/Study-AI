@@ -676,4 +676,5 @@ class _SetDetailState extends State<SetDetail> {
                     style: const TextStyle(fontSize: 10, color: accent),
                   ),
                   onPressed: () => citation(
+                    Map<String, dynamic>.from(block['citations'][i]),
 }
