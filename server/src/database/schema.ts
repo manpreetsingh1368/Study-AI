@@ -209,3 +209,4 @@ export const notebookEntries = sqliteTable("notebook_entries", {
   sourceIds: text("source_ids").notNull(),
   requestHash: text("request_hash").notNull(),
   content: text("content").notNull(),
+  createdAt: integer("created_at").notNull(),
