@@ -210,6 +210,7 @@ void main() {
             await tester.pumpAndSettle();
             final boundary =
                 captureKey.currentContext!.findRenderObject()!
+                    as RenderRepaintBoundary;
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
