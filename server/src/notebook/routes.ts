@@ -192,3 +192,4 @@ export function registerNotebookRoutes(
                 title: document.filename,
                 version: source.version,
                 page: i + 1,
+              },
