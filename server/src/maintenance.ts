@@ -44,3 +44,4 @@ try {
     `Maintenance completed: ${files.length} expired private files removed; tombstones retained.`,
   );
 } finally {
+  sqlite.close();
