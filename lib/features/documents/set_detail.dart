@@ -638,4 +638,5 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 icon: const Icon(Icons.file_download_outlined, size: 18),
               ),
+          ],
 }
