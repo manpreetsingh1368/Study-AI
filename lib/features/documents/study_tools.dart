@@ -51,3 +51,4 @@ class _StudyToolsState extends State<StudyTools> {
         const SizedBox(height: 16),
         Wrap(
           spacing: 12,
+          runSpacing: 12,
