@@ -59,6 +59,7 @@ Material and learning-history feeds have independent paginated cursors. Cache/cu
 
 Each generation creates a separate immutable collection within its study set. Old question IDs remain available for historical answer review. Quiz drafts are stored per collection. Optional timers persist as wall-clock deadlines; immediate explanations and an incorrect-answer filter are supported. Practice exams require Pro and an online start/submission: their deadline is set by the backend, persists across app restarts, and submissions more than ten seconds late score zero. Exam timing is a learning aid, not an anti-cheating certification mechanism.
 
+
 ## Android, iOS and macOS
 
 ```sh
