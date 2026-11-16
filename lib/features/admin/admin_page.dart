@@ -60,6 +60,7 @@ class _AdminPageState extends State<AdminPage> {
             StudyCard(
               child: Column(
                 children: [
+                  Text(
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
