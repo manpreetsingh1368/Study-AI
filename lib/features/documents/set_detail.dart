@@ -246,7 +246,6 @@ class _SetDetailState extends State<SetDetail> {
                         onPressed: () => context.go(
                           '/cards/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}&due=true',
                         ),
-                spacing: 16,
                 runSpacing: 16,
                 children: [
                   DropdownMenu<String>(
