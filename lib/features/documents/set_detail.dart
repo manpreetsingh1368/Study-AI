@@ -387,4 +387,5 @@ class _SetDetailState extends State<SetDetail> {
                   children: [
                     if ((notebook['total'] ?? 0) > entries.length)
                       TextButton(
+                        onPressed: busy
 }
