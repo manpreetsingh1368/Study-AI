@@ -386,4 +386,5 @@ class _SetDetailState extends State<SetDetail> {
                   padding: const EdgeInsets.all(20),
                   children: [
                     if ((notebook['total'] ?? 0) > entries.length)
+                      TextButton(
 }
