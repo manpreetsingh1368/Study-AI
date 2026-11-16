@@ -29,7 +29,6 @@ class _StudyAIAppState extends ConsumerState<StudyAIApp> {
         if (!c.onboarded) {
           return state.uri.path == '/welcome' ? null : '/welcome';
         }
-        if (c.user == null) return state.uri.path == '/login' ? null : '/login';
         if (state.uri.path == '/login' ||
             state.uri.path == '/splash' ||
             state.uri.path == '/welcome') {
