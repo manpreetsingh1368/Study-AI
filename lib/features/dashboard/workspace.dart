@@ -647,6 +647,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                     style: TextStyle(
                       fontSize: 9,
                       color: Theme.of(context).colorScheme.onSurfaceVariant,
+                    ),
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
