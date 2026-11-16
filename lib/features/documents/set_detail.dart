@@ -411,4 +411,5 @@ class _SetDetailState extends State<SetDetail> {
                               bottomLeft: Radius.circular(18),
                               bottomRight: Radius.circular(5),
                             ),
+                          ),
 }
