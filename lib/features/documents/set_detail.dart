@@ -464,6 +464,7 @@ class _SetDetailState extends State<SetDetail> {
                                               : 'PDF + notes',
                                           style: TextStyle(
                                             fontSize: 10,
+                                            color: Theme.of(context)
                   ),
                 ),
             ],
