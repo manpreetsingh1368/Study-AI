@@ -229,3 +229,4 @@ class _StudyToolsState extends State<StudyTools> {
                       : deck['kind'] == 'exam'
                       ? Icons.timer_outlined
                       : Icons.quiz_outlined,
+                  color: accent,
