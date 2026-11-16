@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                      child: const SizedBox(
                         width: 14,
                         height: 540,
                         child: VerticalDivider(),
