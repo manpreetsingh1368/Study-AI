@@ -189,6 +189,7 @@ class _SetDetailState extends State<SetDetail> {
                 children: [
                   Expanded(child: ErrorState(message: error!)),
                   IconButton(
+                    tooltip: 'Dismiss error',
                   ),
                 ],
               ),
