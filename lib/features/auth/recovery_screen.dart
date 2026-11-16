@@ -8,3 +8,4 @@ class RecoveryScreen extends StatefulWidget {
   final StudyController controller;
   const RecoveryScreen({super.key, required this.controller});
   @override
+  State<RecoveryScreen> createState() => _RecoveryScreenState();
