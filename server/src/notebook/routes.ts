@@ -39,3 +39,4 @@ export function registerNotebookRoutes(
       .parse(req.query);
     return {
       entries: all(
+        "SELECT * FROM notebook_entries WHERE notebook_id=? ORDER BY created_at DESC,id DESC LIMIT ? OFFSET ?",
