@@ -349,6 +349,7 @@ class _SetDetailState extends State<SetDetail> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        panelTitle(
                   ),
                 ),
             ],
