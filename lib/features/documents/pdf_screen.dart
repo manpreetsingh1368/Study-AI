@@ -60,6 +60,7 @@ class _PdfScreenState extends State<PdfScreen> {
             }
             return PdfViewer.data(
               snapshot.data!,
+              initialPageNumber: widget.initialPageNumber,
               sourceName:
                   '${widget.controller.account}/${widget.document['id']}',
             );
