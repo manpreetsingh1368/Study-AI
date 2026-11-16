@@ -71,6 +71,7 @@ Created implementation/documentation files:
 - `lib/features/documents/set_detail.dart`
 - `lib/features/quizzes/study_sessions.dart`
 - `lib/features/settings/settings_page.dart`
+- `lib/features/sync/conflicts_screen.dart`
 - `lib/shared/components.dart`
 - `pubspec.lock`
 - `pubspec.yaml`
