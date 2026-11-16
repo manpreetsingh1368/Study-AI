@@ -268,6 +268,7 @@ class _SetDetailState extends State<SetDetail> {
                   Text(
                     'Page ${cite['page']}',
                     style: const TextStyle(
+                      color: accent,
                         ),
                       ),
                     ),
