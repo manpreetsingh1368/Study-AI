@@ -152,6 +152,7 @@ class ModernToolbar extends StatelessWidget {
                   )
                 : TextField(
                     onChanged: onSearch,
+                    decoration: const InputDecoration(
           ),
         const SizedBox(width: 12),
         Tooltip(
