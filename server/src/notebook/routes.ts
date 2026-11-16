@@ -76,3 +76,4 @@ export function registerNotebookRoutes(
         ).n >= 100
       )
         fail(403, "This notebook supports up to 100 saved notes.");
+      let citations: object[] = [];
