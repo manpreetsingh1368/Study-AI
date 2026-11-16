@@ -47,3 +47,4 @@ async function setup(t: any, generate = supported) {
       url,
       headers: token ? { authorization: `Bearer ${token}` } : {},
       payload,
+    });
