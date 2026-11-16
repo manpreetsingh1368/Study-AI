@@ -230,6 +230,7 @@ export function createApp(
       sets: Number(process.env.FREE_SETS || 5),
     },
     pro: {
+      generations: Number(process.env.PRO_GENERATIONS || 30),
   app.get("/health", async () => ({ status: "ok" }));
   app.post(
     "/auth/register",
