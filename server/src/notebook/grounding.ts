@@ -159,3 +159,4 @@ export async function notebookGenerate(
       },
     );
     if (response.status >= 500 && attempt === 0) {
+      await response.body?.cancel();
