@@ -390,6 +390,7 @@ class _SetDetailState extends State<SetDetail> {
           title.text.trim(),
           text.text.trim(),
         );
+      });
                         ),
                       ),
                     ),
