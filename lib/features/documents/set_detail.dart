@@ -609,4 +609,5 @@ class _SetDetailState extends State<SetDetail> {
             if (blocks.isNotEmpty)
               IconButton(
                 tooltip: 'Save answer to Studio notes',
+                onPressed: busy ? null : () => pin(entry),
 }
