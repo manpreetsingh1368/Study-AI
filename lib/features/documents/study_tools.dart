@@ -313,3 +313,4 @@ class _StudyToolsState extends State<StudyTools> {
                       DropdownMenuEntry(
                         value: 'hard',
                         label: 'Hard · Pro',
+                        enabled: pro,
