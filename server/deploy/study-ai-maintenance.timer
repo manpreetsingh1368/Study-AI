@@ -1,3 +1,4 @@
 [Unit]
 Description=Hourly Study AI maintenance
 [Timer]
+OnBootSec=15min
