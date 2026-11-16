@@ -684,6 +684,7 @@ class StudyController extends ChangeNotifier {
           op['path'] == '/sync/mutate' &&
           sourceIds.contains(jsonDecode(op['body'] as String)['setId']),
     )) {
+      throw ApiException(409, 'Finish syncing the selected sources first.');
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
