@@ -86,3 +86,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     reopened.sqlite.close();
   } finally {
     rmSync(dir, { recursive: true, force: true });
+  }
