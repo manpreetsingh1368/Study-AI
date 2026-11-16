@@ -111,6 +111,7 @@ class _SetDetailState extends State<SetDetail> {
     useSafeArea: true,
     builder: (_) => SizedBox(
       height: MediaQuery.sizeOf(context).height * .88,
+      child: NotesEditor(controller: c, existing: widget.set),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
