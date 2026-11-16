@@ -782,4 +782,5 @@ class _SetDetailState extends State<SetDetail> {
                                   item.$3,
                                   style: TextStyle(
                                     fontSize: 10,
+                                    color: Theme.of(context)
 }
