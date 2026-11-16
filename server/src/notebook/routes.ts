@@ -267,3 +267,4 @@ export function registerNotebookRoutes(
         chunks,
         history,
       });
+      const verified = validatedEvidence(output, chunks);
