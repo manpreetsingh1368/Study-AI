@@ -405,4 +405,5 @@ class _SetDetailState extends State<SetDetail> {
                           ),
                           decoration: BoxDecoration(
                             color: accent.withValues(alpha: .11),
+                            borderRadius: const BorderRadius.only(
 }
