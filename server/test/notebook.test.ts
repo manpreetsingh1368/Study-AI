@@ -358,3 +358,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       "content-type": `multipart/form-data; boundary=${boundary}`,
     },
     payload: Buffer.concat([
+      Buffer.from(
