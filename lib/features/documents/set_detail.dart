@@ -159,6 +159,7 @@ class _SetDetailState extends State<SetDetail> {
           allowedExtensions: ['pdf'],
         );
         if (file == null) return;
+        if ((await file.length() ?? 10485761) > 10485760) {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
