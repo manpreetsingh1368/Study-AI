@@ -139,3 +139,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   const library = (await call("GET", "/sets", a.token)).body.sets[0];
   assert.equal(library.notebook.entries.length, 1);
   assert.equal(library.notebook.notes.length, 1);
+  assert.equal(
