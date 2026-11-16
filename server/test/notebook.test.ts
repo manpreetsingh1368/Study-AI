@@ -79,3 +79,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   ).body.set;
   const request = {
     id: randomUUID(),
+    kind: "chat",
