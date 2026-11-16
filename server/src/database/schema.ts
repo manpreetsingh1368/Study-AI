@@ -1,4 +1,9 @@
-import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
+import {
+  sqliteTable,
+  text,
+  integer,
+  primaryKey,
+} from "drizzle-orm/sqlite-core";
 export const users = sqliteTable("users", {
   id: text("id").primaryKey(),
   email: text("email").notNull().unique(),
@@ -14,6 +19,7 @@ export const studySets = sqliteTable("study_sets", {
     .references(() => users.id, { onDelete: "cascade" }),
   title: text("title").notNull(),
   notes: text("notes").notNull(),
+  folder: text("folder").notNull().default(""),
   version: integer("version").notNull().default(1),
   deleted: integer("deleted").notNull().default(0),
   createdAt: integer("created_at").notNull(),
@@ -35,6 +41,15 @@ export const documents = sqliteTable("documents", {
   filename: text("filename").notNull(),
   bytes: integer("bytes").notNull(),
 });
+export const collections = sqliteTable("collections", {
+  id: text("id").primaryKey(),
+  setId: text("set_id")
+    .notNull()
+    .references(() => studySets.id, { onDelete: "cascade" }),
+  kind: text("kind").notNull(),
+  title: text("title").notNull(),
+  createdAt: integer("created_at").notNull(),
+});
 export const questions = sqliteTable("questions", {
   id: text("id").primaryKey(),
   setId: text("set_id")
@@ -47,6 +62,7 @@ export const questions = sqliteTable("questions", {
   explanation: text("explanation").notNull(),
   difficulty: text("difficulty").notNull(),
   topic: text("topic").notNull(),
+  collectionId: text("collection_id").references(() => collections.id),
 });
 export const flashcards = sqliteTable("flashcards", {
   id: text("id").primaryKey(),
@@ -57,6 +73,7 @@ export const flashcards = sqliteTable("flashcards", {
   back: text("back").notNull(),
   topic: text("topic").notNull(),
   difficulty: text("difficulty").notNull(),
+  collectionId: text("collection_id").references(() => collections.id),
 });
 export const flashcardReviews = sqliteTable("flashcard_reviews", {
   id: text("id").primaryKey(),
@@ -82,6 +99,7 @@ export const quizAttempts = sqliteTable("quiz_attempts", {
   score: integer("score").notNull(),
   total: integer("total").notNull(),
   createdAt: integer("created_at").notNull(),
+  collectionId: text("collection_id").references(() => collections.id),
 });
 export const quizAnswers = sqliteTable("quiz_answers", {
   attemptId: text("attempt_id")
@@ -130,4 +148,39 @@ export const applicationErrors = sqliteTable("application_errors", {
   id: text("id").primaryKey(),
   code: text("code").notNull(),
   createdAt: integer("created_at").notNull(),
+});
+
+export const mutationReceipts = sqliteTable(
+  "mutation_receipts",
+  {
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    operationId: text("operation_id").notNull(),
+    payloadHash: text("payload_hash").notNull(),
+    response: text("response").notNull(),
+  },
+  (table) => [primaryKey({ columns: [table.userId, table.operationId] })],
+);
+export const quizSessions = sqliteTable("quiz_sessions", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  setId: text("set_id")
+    .notNull()
+    .references(() => studySets.id, { onDelete: "cascade" }),
+  collectionId: text("collection_id").references(() => collections.id),
+  questionIds: text("question_ids").notNull(),
+  startedAt: integer("started_at").notNull(),
+  deadline: integer("deadline").notNull(),
+  attemptId: text("attempt_id").unique(),
+});
+export const learningChanges = sqliteTable("learning_changes", {
+  seq: integer("seq").primaryKey({ autoIncrement: true }),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  kind: text("kind").notNull(),
+  recordId: text("record_id").notNull(),
 });

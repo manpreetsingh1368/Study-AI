@@ -21,6 +21,7 @@ void main() {
         'CREATE TABLE outbox(id TEXT PRIMARY KEY,account TEXT,path TEXT,body TEXT)',
       );
       final store = LocalStore()..db = db;
+      await store.createDocumentTables(db);
       await store.write('account-a', 'sets', [
         {'id': 'set-a', 'title': 'Cached notes'},
       ]);

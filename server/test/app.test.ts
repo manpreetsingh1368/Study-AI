@@ -409,3 +409,190 @@ test("restart persists accounts/materials; password change revokes every device 
     200,
   );
 });
+test("offline mutation receipts, version conflicts, folders and no resurrection", async (t) => {
+  const { call, register } = await setup(t);
+  const a = await register(),
+    b = await register("other@example.com");
+  const sid = randomUUID(),
+    op = {
+      id: randomUUID(),
+      kind: "create",
+      setId: sid,
+      baseVersion: 0,
+      title: "Offline notes",
+      notes: "Original",
+      folder: "Biology",
+    };
+  const created = await call("POST", "/sync/mutate", a.token, op);
+  assert.equal(created.status, 200);
+  assert.equal(created.body.set.folder, "Biology");
+  assert.equal(
+    (await call("POST", "/sync/mutate", a.token, op)).body.set.version,
+    1,
+  );
+  assert.equal(
+    (await call("POST", "/sync/mutate", a.token, { ...op, title: "Different" }))
+      .status,
+    409,
+  );
+  assert.equal(
+    (
+      await call("POST", "/sync/mutate", b.token, {
+        ...op,
+        id: randomUUID(),
+        kind: "update",
+        baseVersion: 1,
+      })
+    ).status,
+    404,
+  );
+  const update = {
+    ...op,
+    id: randomUUID(),
+    kind: "update",
+    baseVersion: 1,
+    notes: "Device B",
+  };
+  assert.equal(
+    (await call("POST", "/sync/mutate", a.token, update)).body.set.version,
+    2,
+  );
+  assert.equal(
+    (
+      await call("POST", "/sync/mutate", a.token, {
+        ...update,
+        id: randomUUID(),
+        notes: "Stale edit",
+      })
+    ).status,
+    409,
+  );
+  const deletion = { ...op, id: randomUUID(), kind: "delete", baseVersion: 2 };
+  assert.equal(
+    (await call("POST", "/sync/mutate", a.token, deletion)).body.set,
+    null,
+  );
+  assert.equal(
+    (await call("POST", "/sync/mutate", a.token, deletion)).status,
+    200,
+  );
+  assert.equal(
+    (await call("POST", "/sync/mutate", a.token, { ...op, id: randomUUID() }))
+      .status,
+    409,
+  );
+});
+test("immutable collections, historical review, learning deltas and timed exam enforcement", async (t) => {
+  const { call, register, dir, advance } = await setup(t);
+  const a = await register(),
+    b = await register("other@example.com");
+  const db = new Database(join(dir, "study.sqlite"));
+  db.prepare("INSERT INTO subscriptions VALUES(?,?,?)").run(
+    a.user.id,
+    Date.now() - 1000,
+    Date.now() + 86400000,
+  );
+  db.close();
+  const sid = (
+    await call("POST", "/sets", a.token, {
+      title: "Many collections",
+      notes: "ATP",
+    })
+  ).body.set.id;
+  let set = (
+    await call("POST", `/sets/${sid}/generate`, a.token, {
+      kind: "quiz",
+      count: 1,
+      difficulty: "medium",
+    })
+  ).body.set;
+  const first = set.collections[0];
+  const q = set.questions[0];
+  const attemptId = randomUUID();
+  assert.equal(
+    (
+      await call("POST", "/attempts", a.token, {
+        id: attemptId,
+        setId: sid,
+        collectionId: first.id,
+        answers: { [q.id]: 0 },
+      })
+    ).body.attempt.score,
+    1,
+  );
+  set = (
+    await call("POST", `/sets/${sid}/generate`, a.token, {
+      kind: "quiz",
+      count: 1,
+      difficulty: "medium",
+    })
+  ).body.set;
+  assert.equal(set.collections.length, 2);
+  const history = (await call("GET", `/attempts/${attemptId}`, a.token)).body
+    .attempt;
+  assert.equal(history.questions.length, 1);
+  assert.equal(history.questions[0].selected, 0);
+  assert.equal(
+    (await call("GET", `/attempts/${attemptId}`, b.token)).status,
+    404,
+  );
+  const delta = (await call("GET", "/sync/learning?cursor=0&limit=1", a.token))
+    .body;
+  assert.equal(delta.changes[0].record.id, attemptId);
+  assert.equal(delta.changes[0].record.questions.length, 1);
+  set = (
+    await call("POST", `/sets/${sid}/generate`, a.token, {
+      kind: "exam",
+      count: 1,
+      difficulty: "medium",
+    })
+  ).body.set;
+  const exam = set.collections.find((d: any) => d.kind === "exam");
+  const eq = set.questions.find((q: any) => q.collection_id === exam.id);
+  assert.equal(
+    (
+      await call("POST", "/exams/start", b.token, {
+        id: randomUUID(),
+        setId: sid,
+        collectionId: exam.id,
+      })
+    ).status,
+    403,
+  );
+  const session = (
+    await call("POST", "/exams/start", a.token, {
+      id: randomUUID(),
+      setId: sid,
+      collectionId: exam.id,
+    })
+  ).body.session;
+  assert.equal(
+    (
+      await call("POST", "/attempts", a.token, {
+        id: randomUUID(),
+        setId: sid,
+        collectionId: exam.id,
+        answers: { [eq.id]: 0 },
+      })
+    ).status,
+    403,
+  );
+  advance(71000);
+  const late = await call("POST", "/attempts", a.token, {
+    id: randomUUID(),
+    setId: sid,
+    collectionId: exam.id,
+    sessionId: session.id,
+    answers: { [eq.id]: 0 },
+  });
+  assert.equal(late.body.attempt.score, 0);
+  assert.equal(
+    (await call("GET", "/exams/active", a.token)).body.sessions.length,
+    0,
+  );
+  assert.equal((await call("GET", "/analytics/advanced", b.token)).status, 403);
+  assert.equal(
+    (await call("GET", "/analytics/advanced", a.token)).body.topics.length,
+    1,
+  );
+});
