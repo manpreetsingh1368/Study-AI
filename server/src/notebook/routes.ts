@@ -312,3 +312,4 @@ export function notebookState(sid: string, get: any, all: any) {
       "SELECT * FROM notebook_entries WHERE notebook_id=? ORDER BY created_at DESC,id DESC LIMIT 80",
       sid,
     ).map((r: any) => ({
+      ...r,
