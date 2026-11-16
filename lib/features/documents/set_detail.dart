@@ -176,6 +176,7 @@ class _SetDetailState extends State<SetDetail> {
     final value = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
+        title: const Text('Add a text source'),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
