@@ -136,6 +136,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     TextButton(
                       onPressed: busy ? null : () => context.go('/recovery'),
                       child: const Text('Use a recovery code'),
+                    ),
                   const SizedBox(height: 12),
                   const Text(
                     'Your materials, in your own workspace.\nAI generation requires an internet connection.',
