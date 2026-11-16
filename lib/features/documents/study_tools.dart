@@ -57,3 +57,4 @@ class _StudyToolsState extends State<StudyTools> {
               onPressed: busy
                   ? null
                   : () => showModalBottomSheet(
+                      context: context,
