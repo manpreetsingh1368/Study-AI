@@ -278,3 +278,4 @@ class _StudyToolsState extends State<StudyTools> {
               ),
               const SizedBox(height: 22),
               Wrap(
+                spacing: 16,
