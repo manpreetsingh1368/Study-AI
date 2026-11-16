@@ -187,3 +187,4 @@ void main() {
         await process.exitCode.timeout(const Duration(seconds: 10));
         await other.sync();
         expect(other.offline, true);
+        expect(
