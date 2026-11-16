@@ -98,6 +98,7 @@ class LocalStore {
       await txn.insert('outbox', {
         'id': body['id'],
         'account': account,
+        'path': path,
   }
 
   Future<void> queueMutation(
