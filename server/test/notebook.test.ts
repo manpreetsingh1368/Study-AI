@@ -373,3 +373,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
     payload: {
       id: randomUUID(),
       kind: "chat",
+      prompt: "What does ATP do?",
