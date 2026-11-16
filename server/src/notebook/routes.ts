@@ -164,3 +164,4 @@ export function registerNotebookRoutes(
     const chunks: SourceChunk[] = [];
     let total = 0;
     for (const source of sources) {
+      if (source.notes.trim()) {
