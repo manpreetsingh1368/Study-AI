@@ -84,3 +84,4 @@ void main() {
           .transform(utf8.decoder)
           .transform(const LineSplitter())
           .first
+          .timeout(const Duration(seconds: 15))
