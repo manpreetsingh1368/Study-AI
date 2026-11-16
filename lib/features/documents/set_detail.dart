@@ -200,6 +200,7 @@ class _SetDetailState extends State<SetDetail> {
                         style: Theme.of(context).textTheme.titleLarge,
                       ),
                     ),
+                    IconButton(
                         ),
                       ),
                     ),
