@@ -4,3 +4,4 @@ import { promisify } from "node:util";
 export type SourceChunk = {
   id: string;
   setId: string;
+  sourceId: string;
