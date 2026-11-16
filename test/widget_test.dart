@@ -121,6 +121,7 @@ void main() {
                 'id': 'q1',
                 'collection_id': 'quiz-one',
                 'question': 'What does ATP carry?',
+                'choices': ['Energy', 'Oxygen', 'Water', 'DNA'],
 }
 
 class WidgetMemoryStore extends LocalStore {
