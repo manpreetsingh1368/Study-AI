@@ -129,6 +129,7 @@ class _AdminPageState extends State<AdminPage> {
       if (hasMore)
         Padding(
           padding: const EdgeInsets.only(top: 20),
+          child: OutlinedButton(
       const SizedBox(height: 28),
       Text('Generation usage', style: Theme.of(context).textTheme.titleLarge),
       for (final u in stats['usage'] ?? [])
