@@ -580,6 +580,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
           onChanged: (v) => setState(() => search = v),
           decoration: const InputDecoration(
             prefixIcon: Icon(Icons.search),
+            hintText: 'Search notebooks, notes, or topics',
           ),
         ),
         const SizedBox(height: 24),
