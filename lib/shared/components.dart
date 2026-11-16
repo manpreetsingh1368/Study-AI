@@ -154,6 +154,7 @@ class ModernToolbar extends StatelessWidget {
                     onChanged: onSearch,
                     decoration: const InputDecoration(
                       hintText: 'Search your library',
+                      prefixIcon: Icon(Icons.search, size: 19),
           ),
         const SizedBox(width: 12),
         Tooltip(
