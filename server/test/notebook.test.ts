@@ -156,3 +156,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     (await call("GET", `/notebooks/${set.id}/entries`, b.token)).status,
     404,
   );
+  assert.equal(
