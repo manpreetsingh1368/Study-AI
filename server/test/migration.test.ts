@@ -9,3 +9,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
   const dir = mkdtempSync(join(tmpdir(), "study-upgrade-"));
   try {
     const old = new Database(join(dir, "study.sqlite"));
+    old.pragma("foreign_keys=ON");
