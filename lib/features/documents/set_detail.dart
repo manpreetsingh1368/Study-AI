@@ -120,6 +120,7 @@ class _SetDetailState extends State<SetDetail> {
       showDragHandle: true,
       builder: (ctx) => SafeArea(
         child: Padding(
+          padding: const EdgeInsets.all(20),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
