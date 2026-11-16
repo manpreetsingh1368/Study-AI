@@ -148,6 +148,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                 onPressed: () => Clipboard.setData(
                                   ClipboardData(text: result['code']),
                                 ),
+                                icon: const Icon(Icons.copy_outlined),
             OutlinedButton(
               onPressed: busy
                   ? null
