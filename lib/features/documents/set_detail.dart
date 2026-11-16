@@ -658,4 +658,5 @@ class _SetDetailState extends State<SetDetail> {
             block['text'],
             style: const TextStyle(fontSize: 13, height: 1.85),
           ),
+          const SizedBox(height: 12),
 }
