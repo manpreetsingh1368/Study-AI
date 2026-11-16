@@ -38,6 +38,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Complete Apple-platform builds and Keychain/signing QA on macOS; configure production Android signing and store distribution. The debug APK is not a store release.
 - Complete independent security, load and accessibility/native visual audits. PDF structural validation is not antivirus scanning. Local cached content is protected by operating-system access/disk security rather than database encryption.
 - Regular quizzes/cards/notes work offline. Practice exams require online start/submission and are learning tools rather than anti-cheating certification.
+- There is no permanent demo login, hardcoded administrator password, payment processor or email verification/reset service. Register through the app; recovery uses a code the account owner previously generated and saved.
 
 ## Commit policy requested by owner
 
