@@ -14,3 +14,4 @@ import {
 export function registerNotebookRoutes(
   app: FastifyInstance,
   c: any,
+  generate: (
