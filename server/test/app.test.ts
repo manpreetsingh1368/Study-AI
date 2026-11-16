@@ -637,3 +637,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
         code: recovery.code,
         password: "second-replacement",
       })
+    ).status,
