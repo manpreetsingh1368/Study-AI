@@ -53,6 +53,7 @@ void main() {
   }
   testWidgets('Onboarding persists completion and appearance preferences', (
     tester,
+  ) async {
 }
 
 class WidgetMemoryStore extends LocalStore {
