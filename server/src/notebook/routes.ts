@@ -102,3 +102,4 @@ export function registerNotebookRoutes(
     })();
   });
   app.post("/notebooks/:id/delete-note", async (req) => {
+    const u = user(req),
