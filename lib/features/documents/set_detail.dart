@@ -44,6 +44,7 @@ class _SetDetailState extends State<SetDetail> {
         prompt.trim(),
         validSelection,
       );
+      if (!mounted) return;
         ),
       ),
     ),
