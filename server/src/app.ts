@@ -234,6 +234,7 @@ export function createApp(
       cards: Number(process.env.PRO_CARDS || 50),
       sets: Number(process.env.PRO_SETS || 200),
     },
+  }));
   app.get("/health", async () => ({ status: "ok" }));
   app.post(
     "/auth/register",
