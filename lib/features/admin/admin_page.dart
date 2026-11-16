@@ -108,6 +108,7 @@ class _AdminPageState extends State<AdminPage> {
                                       for (final usage in detail['usage'])
                                         Text(
                                           '${usage['day']} · ${usage['status']} · ${usage['count']}',
+                                        ),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
