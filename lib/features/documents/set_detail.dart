@@ -416,6 +416,7 @@ class _SetDetailState extends State<SetDetail> {
   Widget build(BuildContext context) => LayoutBuilder(
     builder: (context, size) {
       final wide = size.maxWidth >= 960;
+      return Column(
                         ),
                       ),
                     ),
