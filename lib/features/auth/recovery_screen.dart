@@ -71,3 +71,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 const SizedBox(height: 24),
                 TextField(
                   controller: email,
+                  keyboardType: TextInputType.emailAddress,
