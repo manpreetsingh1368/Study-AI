@@ -228,6 +228,7 @@ class _SetDetailState extends State<SetDetail> {
                           segments: const [
                             ButtonSegment(
                               value: 0,
+                              label: Text('Sources'),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
