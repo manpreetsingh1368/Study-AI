@@ -99,6 +99,7 @@ class _AdminPageState extends State<AdminPage> {
                                       ),
                                       Text(
                                         'Private storage: ${detail['storage']} bytes',
+                                      ),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
