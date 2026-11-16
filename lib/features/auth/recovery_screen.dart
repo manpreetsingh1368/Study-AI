@@ -87,3 +87,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   decoration: const InputDecoration(
                     labelText: 'New password · 12+ characters',
                   ),
+                ),
