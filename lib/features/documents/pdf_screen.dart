@@ -9,6 +9,7 @@ import '../../shared/components.dart';
 class PdfScreen extends StatefulWidget {
   final StudyController controller;
   final Map<String, dynamic> document;
+  final int initialPageNumber;
   const PdfScreen({
     super.key,
     required this.controller,
