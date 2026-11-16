@@ -185,6 +185,7 @@ class _SetDetailState extends State<SetDetail> {
                     else
                       OutlinedButton.icon(
                         onPressed: showTools,
+                        icon: const Icon(Icons.tune_rounded, size: 17),
                   ),
                 ),
               ],
