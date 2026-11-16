@@ -13,6 +13,7 @@ export function openDatabase(directory: string) {
     "001_initial.sql",
     "002_learning_sync.sql",
     "003_recovery_and_generation.sql",
+    "004_notebook_studio.sql",
   ];
   const version = sqlite.pragma("user_version", { simple: true }) as number;
   if (version > migrations.length) {
