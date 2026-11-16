@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                              onPressed: () => Navigator.pop(ctx, false),
                               child: const Text('Cancel'),
                             ),
                             FilledButton(
