@@ -88,6 +88,7 @@ Created implementation/documentation files:
 - `server/src/index.ts`
 - `server/test/app.test.ts`
 - `server/test/gemini.test.ts`
+- `server/test/migration.test.ts`
 - `server/tsconfig.json`
 - `test/offline_sync_test.dart`
 - `test/widget_test.dart`
