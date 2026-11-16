@@ -811,4 +811,5 @@ class _SetDetailState extends State<SetDetail> {
                     style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
                   ),
                 ),
+                IconButton(
 }
