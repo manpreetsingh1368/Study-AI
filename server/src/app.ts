@@ -1,4 +1,5 @@
 import Fastify from "fastify";
+import { registerNotebookRoutes, notebookState } from "./notebook/routes.js";
 import rateLimit from "@fastify/rate-limit";
 import multipart from "@fastify/multipart";
 import helmet from "@fastify/helmet";
