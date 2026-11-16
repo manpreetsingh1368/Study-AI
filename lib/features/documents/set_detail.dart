@@ -630,4 +630,5 @@ class _SetDetailState extends State<SetDetail> {
                 onPressed: () => export(
                   label(entry['kind']),
                   blocks
+                      .map(
 }
