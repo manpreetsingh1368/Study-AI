@@ -7,3 +7,4 @@ export type SourceChunk = {
   sourceId: string;
   title: string;
   version: number;
+  page: number | null;
