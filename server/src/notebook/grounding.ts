@@ -146,3 +146,4 @@ export async function notebookGenerate(
         headers: { "Content-Type": "application/json", "x-goog-api-key": key },
         signal: AbortSignal.timeout(60000),
         body: JSON.stringify({
+          systemInstruction: { parts: [{ text: instruction }] },
