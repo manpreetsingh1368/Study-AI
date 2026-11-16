@@ -177,3 +177,4 @@ export async function notebookGenerate(
         JSON.parse(
           data.candidates?.[0]?.content?.parts
             ?.map((p: any) => p.text || "")
+            .join("") || "{}",
