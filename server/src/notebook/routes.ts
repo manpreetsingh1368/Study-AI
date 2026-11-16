@@ -88,3 +88,4 @@ export function registerNotebookRoutes(
           (block: any) => block.citations,
         );
       }
+      run(
