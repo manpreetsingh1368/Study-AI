@@ -46,3 +46,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
     parsed = responseSchema.parse(output);
   } catch {
     throw Object.assign(
+      new Error("AI returned an invalid notebook response."),
