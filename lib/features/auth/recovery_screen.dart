@@ -33,3 +33,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         );
         context.go('/login');
       }
+    } catch (e) {
