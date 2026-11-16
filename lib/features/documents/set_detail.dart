@@ -257,6 +257,7 @@ class _SetDetailState extends State<SetDetail> {
             Expanded(child: Text(cite['title'])),
           ],
         ),
+        content: SizedBox(
                         ),
                       ),
                     ),
