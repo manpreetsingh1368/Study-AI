@@ -128,6 +128,7 @@ class _SetDetailState extends State<SetDetail> {
                 leading: const Icon(Icons.notes_rounded),
                 title: const Text('Paste text'),
                 subtitle: const Text(
+                  'A lecture, reading excerpt, or your own notes',
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
