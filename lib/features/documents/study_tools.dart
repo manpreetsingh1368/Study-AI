@@ -283,3 +283,4 @@ class _StudyToolsState extends State<StudyTools> {
                 children: [
                   DropdownMenu<String>(
                     initialSelection: kind,
+                    label: const Text('Create'),
