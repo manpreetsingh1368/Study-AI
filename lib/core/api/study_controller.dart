@@ -272,6 +272,7 @@ class StudyController extends ChangeNotifier {
           if (pending.contains(change['set_id'])) continue;
           sets.removeWhere((s) => s['id'] == change['set_id']);
           if (change['set'] != null) {
+            final incoming = Map<String, dynamic>.from(change['set']);
           }
         }
         cursor = page['cursor'];
