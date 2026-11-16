@@ -253,3 +253,4 @@ export function registerNotebookRoutes(
             sourceIds.includes(id),
           ),
         )
+        .slice(0, 4)
