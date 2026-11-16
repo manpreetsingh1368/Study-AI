@@ -56,3 +56,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
           constraints: const BoxConstraints(maxWidth: 460),
           child: StudyCard(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
