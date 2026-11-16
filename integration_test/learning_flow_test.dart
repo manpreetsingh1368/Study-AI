@@ -42,3 +42,4 @@ Uint8List validPdf() {
     '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>',
   ];
   var text = '%PDF-1.4\n';
+  final offsets = <int>[0];
