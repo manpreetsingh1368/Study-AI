@@ -251,3 +251,4 @@ class _StudyToolsState extends State<StudyTools> {
                     IconButton(
                       tooltip: 'Open collection',
                       onPressed: () => context.go(
+                        '/${deck['kind'] == 'flashcards' ? 'cards' : 'quiz'}/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}',
