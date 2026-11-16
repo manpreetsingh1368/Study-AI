@@ -122,6 +122,7 @@ class _SetDetailState extends State<SetDetail> {
                   minLines: 7,
                   maxLines: 12,
                   maxLength: 100000,
+                  decoration: const InputDecoration(
                 ),
               ],
             ),
