@@ -361,3 +361,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       Buffer.from(
         `--${boundary}\r\nContent-Disposition: form-data; name="file"; filename="lecture.pdf"\r\nContent-Type: application/pdf\r\n\r\n`,
       ),
+      bytes,
