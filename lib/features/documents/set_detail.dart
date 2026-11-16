@@ -352,6 +352,7 @@ class _SetDetailState extends State<SetDetail> {
                   controller: title,
                   maxLength: 150,
                   decoration: const InputDecoration(labelText: 'Title'),
+                ),
                         ),
                       ),
                     ),
