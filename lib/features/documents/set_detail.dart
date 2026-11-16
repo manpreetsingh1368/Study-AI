@@ -424,6 +424,7 @@ class _SetDetailState extends State<SetDetail> {
                                       selected.add(source['id']);
                                     } else {
                                       selected.remove(source['id']);
+                                    }
                   ),
                 ),
             ],
