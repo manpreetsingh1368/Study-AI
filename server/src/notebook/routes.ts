@@ -38,3 +38,4 @@ export function registerNotebookRoutes(
       })
       .parse(req.query);
     return {
+      entries: all(
