@@ -8,3 +8,4 @@ const uploads = process.env.UPLOAD_DIR || "./uploads",
 const retention = Number(process.env.DELETED_FILE_RETENTION_DAYS || 30);
 if (!Number.isFinite(retention) || retention < 1)
   throw new Error("Retention must be at least one day.");
+try {
