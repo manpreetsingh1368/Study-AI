@@ -911,4 +911,5 @@ class _SetDetailState extends State<SetDetail> {
                   child: ListTile(
                     contentPadding: const EdgeInsets.symmetric(horizontal: 12),
                     dense: true,
+                    title: Text(
 }
