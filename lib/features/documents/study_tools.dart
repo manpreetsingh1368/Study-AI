@@ -79,3 +79,4 @@ class _StudyToolsState extends State<StudyTools> {
                             'This removes the notebook, its saved material and conversations from your library on every device.',
                           ),
                           actions: [
+                            TextButton(
