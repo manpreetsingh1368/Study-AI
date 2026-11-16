@@ -115,3 +115,4 @@ export function registerNotebookRoutes(
       if (!note) fail(404, "Note not found.");
       if (!note.deleted) {
         run("UPDATE notebook_notes SET deleted=1 WHERE id=?", b.noteId);
+        change(sid, u.id);
