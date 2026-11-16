@@ -167,3 +167,4 @@ export function registerNotebookRoutes(
       if (source.notes.trim()) {
         total += source.notes.length;
         chunks.push(
+          ...splitSource(
