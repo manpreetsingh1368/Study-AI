@@ -216,3 +216,4 @@ export function registerNotebookRoutes(
           fail(409, "A source changed while loading. Refresh and try again.");
       }
       const previousUsage = get(
+        "SELECT * FROM generation_usage WHERE id=?",
