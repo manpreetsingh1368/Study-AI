@@ -101,6 +101,7 @@ void main() {
           ..loading = false
           ..user = {'id': 'student', 'name': 'Student', 'role': 'student'}
           ..offline = true;
+        controller.sets = [
 }
 
 class WidgetMemoryStore extends LocalStore {
