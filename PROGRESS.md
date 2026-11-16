@@ -73,6 +73,7 @@ Created implementation/documentation files:
 - `lib/features/settings/settings_page.dart`
 - `lib/shared/components.dart`
 - `pubspec.lock`
+- `pubspec.yaml`
 - `server/.env.example`
 - `server/deploy/Caddyfile`
 - `server/deploy/backup.sh`
