@@ -21,3 +21,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
     setState(() => busy = true);
     try {
       await widget.controller.request('POST', '/auth/recover', {
+        'email': email.text.trim(),
