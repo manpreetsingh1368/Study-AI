@@ -59,3 +59,4 @@ export function registerNotebookRoutes(
         .parse(req.body);
     owned(u.id, sid);
     return db.transaction(() => {
+      const existing = get("SELECT * FROM notebook_notes WHERE id=?", b.id);
