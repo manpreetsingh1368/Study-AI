@@ -29,3 +29,4 @@ export function registerNotebookRoutes(
   });
   app.get("/notebooks/:id/entries", async (req) => {
     const u = user(req),
+      sid = (req.params as any).id;
