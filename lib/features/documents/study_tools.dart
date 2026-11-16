@@ -143,3 +143,4 @@ class _StudyToolsState extends State<StudyTools> {
                       label: const Text('Keep offline'),
                     ),
                     if (MediaQuery.sizeOf(context).width > 1000)
+                      TextButton(
