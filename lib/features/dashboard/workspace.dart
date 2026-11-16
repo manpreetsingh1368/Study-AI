@@ -578,6 +578,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                         color: accent.withValues(alpha: .1),
                         borderRadius: BorderRadius.circular(12),
                       ),
+                      child: const Icon(
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
