@@ -155,6 +155,7 @@ void main() {
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
             .go('/quiz/sample?collection=quiz-one');
+        await tester.runAsync(
 }
 
 class WidgetMemoryStore extends LocalStore {
