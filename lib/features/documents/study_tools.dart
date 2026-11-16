@@ -42,3 +42,4 @@ class _StudyToolsState extends State<StudyTools> {
     final decks = s['collections'] as List? ?? [];
     return ListView(
       padding: const EdgeInsets.all(28),
+      children: [
