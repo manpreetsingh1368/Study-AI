@@ -216,3 +216,4 @@ class _StudyToolsState extends State<StudyTools> {
         if (decks.isEmpty)
           const Text(
             'Generate a quiz, flashcards, or an exam from this material.',
+          ),
