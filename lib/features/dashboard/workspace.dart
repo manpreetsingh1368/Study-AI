@@ -319,6 +319,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                   (int.tryParse(
                             GoRouterState.of(context)
                                     .uri
+                                    .queryParameters['page'] ??
             );
     }
     if (widget.page == 'attempt') {
