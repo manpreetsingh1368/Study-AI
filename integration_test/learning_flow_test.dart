@@ -197,3 +197,4 @@ void main() {
       } finally {
         await tester.pumpWidget(const SizedBox());
         c.dispose();
+        other.dispose();
