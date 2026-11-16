@@ -479,4 +479,5 @@ class _SetDetailState extends State<SetDetail> {
           'Ask a question. Find a connection.\nFollow the evidence back to your sources.',
           style: TextStyle(
             height: 1.8,
+            fontSize: 13,
 }
