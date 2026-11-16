@@ -155,3 +155,4 @@ void main() {
         GoRouter.of(tester.element(find.byType(Scaffold).first))
             .go('/cards/${set['id']}?collection=${cards['id']}&due=true');
         await tester.pumpAndSettle();
+        await tester.tap(find.text('ATP'));
