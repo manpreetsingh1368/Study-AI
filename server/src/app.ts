@@ -735,6 +735,7 @@ export function createApp(
         "SELECT id,email,name,role,created_at FROM users WHERE email LIKE ? OR name LIKE ? ORDER BY created_at DESC LIMIT 100",
         `%${q.search}%`,
         `%${q.search}%`,
+        q.limit,
       ).map((u) => ({
         ...u,
         plan: plan(u.id),
