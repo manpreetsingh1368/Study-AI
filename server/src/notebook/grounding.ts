@@ -67,3 +67,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
       ...block,
       citations: block.citations.map((citation) => {
         const chunk = chunks.find((c) => c.id === citation.chunkId);
+        if (
