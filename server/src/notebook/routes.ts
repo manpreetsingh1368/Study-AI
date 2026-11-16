@@ -52,3 +52,4 @@ export function registerNotebookRoutes(
       b = z
         .object({
           id: z.uuid(),
+          title: z.string().trim().min(1).max(150),
