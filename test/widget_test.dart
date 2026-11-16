@@ -60,3 +60,4 @@ class WidgetMemoryStore extends LocalStore {
       values['$account:$key'];
   @override
   Future<void> write(String account, String key, dynamic value) async {
+    values['$account:$key'] = value;
