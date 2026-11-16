@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-    final s = widget.set;
     final pro = c.plan['pro'] == true;
     final decks = s['collections'] as List? ?? [];
     return ListView(
