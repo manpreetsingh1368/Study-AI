@@ -48,3 +48,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         icon: const Icon(Icons.arrow_back),
       ),
       title: const Text('Account recovery'),
+    ),
