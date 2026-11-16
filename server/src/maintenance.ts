@@ -36,3 +36,4 @@ try {
   if (existsSync(uploads))
     for (const file of readdirSync(uploads))
       if (
+        file.endsWith(".pending") &&
