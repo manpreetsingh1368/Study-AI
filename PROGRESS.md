@@ -77,6 +77,7 @@ Created implementation/documentation files:
 - `server/deploy/backup.sh`
 - `server/deploy/study-ai.service`
 - `server/migrations/001_initial.sql`
+- `server/migrations/002_learning_sync.sql`
 - `server/package-lock.json`
 - `server/package.json`
 - `server/src/admin.ts`
