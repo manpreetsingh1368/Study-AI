@@ -25,3 +25,4 @@ export function registerNotebookRoutes(
   const entry = (r: any) => ({
     ...r,
     sourceIds: JSON.parse(r.source_ids),
+    content: JSON.parse(r.content),
