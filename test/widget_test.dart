@@ -188,6 +188,7 @@ void main() {
         expect(tester.takeException(), isNull);
         await tester.pumpWidget(const SizedBox());
         controller.dispose();
+      },
 }
 
 class WidgetMemoryStore extends LocalStore {
