@@ -724,6 +724,7 @@ class StudyController extends ChangeNotifier {
     final original = (notebook['entries'] as List? ?? [])
         .where((e) => e['id'] == entryId)
         .firstOrNull;
+    final citations = original == null
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
