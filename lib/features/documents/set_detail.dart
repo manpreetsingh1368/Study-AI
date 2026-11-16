@@ -944,4 +944,5 @@ class _SetDetailState extends State<SetDetail> {
                                 for (final cite in note['citations'] ?? [])
                                   TextButton.icon(
                                     onPressed: () => citation(
+                                      Map<String, dynamic>.from(cite),
 }
