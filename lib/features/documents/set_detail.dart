@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                          enabled:
                               n <=
                               (kind == 'flashcards'
                                   ? (c.plan['cards'] ?? 5)
