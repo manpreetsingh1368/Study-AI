@@ -169,6 +169,7 @@ class _SetDetailState extends State<SetDetail> {
         );
         await c.upload(source['id'], file.name, await file.readAsBytes());
         if (mounted) setState(() => selected.add(source['id']));
+      });
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
