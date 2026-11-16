@@ -93,3 +93,4 @@ class _StudyToolsState extends State<StudyTools> {
                       if (yes == true) {
                         await action(() async {
                           await c.deleteSet(s);
+                          if (context.mounted) context.go('/library');
