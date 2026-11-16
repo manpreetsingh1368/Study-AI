@@ -170,6 +170,7 @@ void main() {
         expect(other.attempts.single['score'], 1);
         expect(other.reviews.length, 1);
         expect(other.sets.single['notebook']['notes'].length, 1);
+        expect(other.sets.single['notebook']['entries'].length, 1);
         final bytes = await other.documentBytes(
           other.sets.single['document']['id'],
         );
