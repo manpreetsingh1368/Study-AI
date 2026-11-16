@@ -26,3 +26,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
         },
       ],
     },
+  ],
