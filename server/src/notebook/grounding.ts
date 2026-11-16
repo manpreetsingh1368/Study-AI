@@ -87,3 +87,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
           quote: citation.quote,
         };
       }),
+    })),
