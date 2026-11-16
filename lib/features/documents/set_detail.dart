@@ -359,6 +359,7 @@ class _SetDetailState extends State<SetDetail> {
               icon: const Icon(Icons.add_circle_outline, size: 20),
             ),
           ),
+        ),
                   ),
                 ),
             ],
