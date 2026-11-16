@@ -9,6 +9,7 @@ const app = createApp({
     insufficientEvidence: false,
     blocks: [
       {
+        heading: "Energy for cellular work",
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
