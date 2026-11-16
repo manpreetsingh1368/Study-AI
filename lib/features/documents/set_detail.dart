@@ -780,4 +780,5 @@ class _SetDetailState extends State<SetDetail> {
                                 const SizedBox(height: 3),
                                 Text(
                                   item.$3,
+                                  style: TextStyle(
 }
