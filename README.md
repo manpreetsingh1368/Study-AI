@@ -21,7 +21,6 @@ npm run dev
 
 If npm 12 reports blocked lifecycle scripts, review and enable the required native build scripts with `npm install-scripts approve argon2 better-sqlite3 esbuild`, then `npm rebuild`. An unlocked Secret Service (for example GNOME Keyring) is required for persistent secure login on Linux. Passwords are never cached by Flutter.
 
-The first server startup applies the initial idempotent migration in `server/migrations/001_initial.sql`, enables foreign keys and WAL, and creates private directories. Do not run migrations against a database without a backup. The initial migration is transactional and recorded in SQLite `user_version`; later schema versions must ship additional ordered migrations.
 
 In another terminal from the project root:
 
