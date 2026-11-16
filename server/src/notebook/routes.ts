@@ -304,3 +304,4 @@ export function registerNotebookRoutes(
       run("UPDATE generation_usage SET status='failed' WHERE id=?", b.id);
       throw e;
     }
+  });
