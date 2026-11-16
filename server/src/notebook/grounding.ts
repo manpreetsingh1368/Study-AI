@@ -126,3 +126,4 @@ export async function pdfPages(path: string): Promise<string[]> {
       { statusCode: 422 },
     );
   }
+}
