@@ -318,6 +318,7 @@ class _SetDetailState extends State<SetDetail> {
     if (text.isEmpty) return;
     await task(() async {
       await c.saveNotebookNote(
+        widget.set['id'],
                         ),
                       ),
                     ),
