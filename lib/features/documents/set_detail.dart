@@ -628,4 +628,5 @@ class _SetDetailState extends State<SetDetail> {
               IconButton(
                 tooltip: 'Export Markdown',
                 onPressed: () => export(
+                  label(entry['kind']),
 }
