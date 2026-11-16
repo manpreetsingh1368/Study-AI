@@ -118,6 +118,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                                 icon: const Icon(Icons.menu_open_rounded),
                               ),
                             Expanded(
+                              child: ModernToolbar(
                             ),
                           ],
                         ),
