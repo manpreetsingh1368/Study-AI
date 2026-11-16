@@ -182,6 +182,7 @@ void main() {
         expect(find.text('An energy carrier'), findsOneWidget);
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
+            .go('/settings');
 }
 
 class WidgetMemoryStore extends LocalStore {
