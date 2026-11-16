@@ -112,6 +112,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                           children: [
                             if (desktop)
                               IconButton(
+                                tooltip: 'Toggle sidebar',
                             ),
                           ],
                         ),
