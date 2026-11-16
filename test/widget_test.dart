@@ -113,6 +113,7 @@ void main() {
               {
                 'id': 'cards-one',
                 'kind': 'flashcards',
+                'title': 'Biology cards',
 }
 
 class WidgetMemoryStore extends LocalStore {
