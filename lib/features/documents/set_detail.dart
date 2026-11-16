@@ -386,6 +386,7 @@ class _SetDetailState extends State<SetDetail> {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
             'Use up to 8 sources',
+            style: TextStyle(
                   ),
                 ),
             ],
