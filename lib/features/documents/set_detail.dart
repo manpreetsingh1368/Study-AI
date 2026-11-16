@@ -116,7 +116,6 @@ class _SetDetailState extends State<SetDetail> {
                   s['document']['filename'],
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
-                  spacing: 12,
                   children: [
                     TextButton.icon(
                       onPressed: () => context.go('/pdf/${s['id']}'),
