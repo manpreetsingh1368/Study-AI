@@ -436,4 +436,5 @@ class _SetDetailState extends State<SetDetail> {
                               child: Text(
                                 'Reading your selected sources…',
                                 style: TextStyle(fontSize: 12),
+                              ),
 }
