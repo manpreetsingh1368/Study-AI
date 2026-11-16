@@ -91,6 +91,5 @@ Created implementation/documentation files:
 - `server/tsconfig.json`
 - `test/offline_sync_test.dart`
 
-Flutter regenerated native plugin integration files:
 
 Build outputs: `build/linux/x64/release/bundle/` and `build/app/outputs/flutter-apk/app-debug.apk`.
