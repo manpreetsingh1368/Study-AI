@@ -65,3 +65,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
     ...parsed,
     blocks: parsed.blocks.map((block) => ({
       ...block,
+      citations: block.citations.map((citation) => {
