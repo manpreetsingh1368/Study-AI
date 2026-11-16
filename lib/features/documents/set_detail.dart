@@ -484,4 +484,5 @@ class _SetDetailState extends State<SetDetail> {
           ),
         ),
         const SizedBox(height: 26),
+        for (final prompt in [
 }
