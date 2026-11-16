@@ -688,4 +688,5 @@ class _SetDetailState extends State<SetDetail> {
             'Keep exploring',
             style: TextStyle(
               fontSize: 10,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
 }
