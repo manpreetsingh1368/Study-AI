@@ -109,7 +109,6 @@ class ConflictsScreen extends StatelessWidget {
                             await FilePicker.saveFile(
                               fileName: issue['name'],
                               bytes: bytes,
-                              type: FileType.custom,
                               allowedExtensions: ['pdf'],
                             );
                           } catch (e) {
