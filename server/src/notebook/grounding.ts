@@ -116,3 +116,4 @@ export async function pdfPages(path: string): Promise<string[]> {
       process.env.PDFTOTEXT_BIN || "pdftotext",
       ["-enc", "UTF-8", "-layout", path, "-"],
       { timeout: 15000, maxBuffer: 1200000, encoding: "utf8" },
+    );
