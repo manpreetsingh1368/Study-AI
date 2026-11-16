@@ -65,3 +65,4 @@ void main() {
       if (project.isEmpty) {
         throw StateError(
           'Pass --dart-define=PROJECT_ROOT=/absolute/project/path',
+        );
