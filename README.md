@@ -99,3 +99,4 @@ Manual procedure:
 
 Never copy an active database file without its WAL or the backup API.
 
+`npm run maintenance` removes expired sessions/recovery codes, releases abandoned generation reservations, removes stale temporary uploads, and purges original PDFs/notes for sets deleted more than `DELETED_FILE_RETENTION_DAYS` (30 by default). Tombstones and historical learning records remain. Adapt the supplied hourly maintenance service/timer to the host; review retention before enabling it. This command intentionally deletes expired private blobs, so use backups and the documented retention setting.
