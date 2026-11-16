@@ -43,6 +43,7 @@ class _SetDetailState extends State<SetDetail> {
         kind,
         prompt.trim(),
         validSelection,
+      );
         ),
       ),
     ),
