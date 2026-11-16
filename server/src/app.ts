@@ -730,6 +730,7 @@ export function createApp(
     const q = z
       .object({ search: z.string().max(100).default("") })
       .parse(req.query);
+    const total = get(
     return {
       total,
       hasMore: q.offset + q.limit < total,
