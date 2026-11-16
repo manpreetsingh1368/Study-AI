@@ -200,3 +200,4 @@ export function registerNotebookRoutes(
       }
       if (total > 100000)
         fail(
+          413,
