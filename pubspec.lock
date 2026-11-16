@@ -869,6 +869,7 @@ packages:
   webdriver:
     dependency: transitive
     description:
+      name: webdriver
   win32:
     dependency: transitive
     description:
