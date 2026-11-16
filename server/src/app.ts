@@ -507,6 +507,7 @@ export function createApp(
       if (previousUsage.request_config !== requestConfig)
         fail(409, "Generation identifier reused with different options.");
       if (previousUsage.status === "success" && previousUsage.collection_id) {
+        const collection = get(
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
