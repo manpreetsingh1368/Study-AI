@@ -167,6 +167,7 @@ class _SetDetailState extends State<SetDetail> {
           throw ApiException(400, 'Give this source a title and some text.');
         }
         final source = await c.saveSet(
+          title.text.trim(),
                         ),
                       ),
                     ),
