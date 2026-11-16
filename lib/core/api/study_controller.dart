@@ -1,0 +1,601 @@
+import 'dart:async';
+import 'dart:convert';
+import 'dart:io';
+import 'dart:typed_data';
+
+import 'package:flutter/foundation.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:http/http.dart' as http;
+import 'package:uuid/uuid.dart';
+
+import '../storage/local_store.dart';
+
+final studyProvider = Provider<StudyController>(
+  (ref) => throw UnimplementedError('Override at startup'),
+);
+
+class ApiException implements Exception {
+  final int status;
+  final String message;
+  ApiException(this.status, this.message);
+  @override
+  String toString() => message;
+}
+
+class StudyController extends ChangeNotifier {
+  final LocalStore store;
+  final FlutterSecureStorage secure;
+  final String baseUrl;
+  StudyController(
+    this.store, {
+    this.secure = const FlutterSecureStorage(
+      mOptions: MacOsOptions(usesDataProtectionKeychain: false),
+    ),
+    this.baseUrl = const String.fromEnvironment(
+      'API_URL',
+      defaultValue: 'http://127.0.0.1:3000',
+    ),
+  });
+  String? token, error;
+  Map<String, dynamic>? user;
+  Map<String, dynamic> plan = {}, analytics = {}, advanced = {};
+  List<Map<String, dynamic>> sets = [],
+      attempts = [],
+      reviews = [],
+      conflicts = [],
+      activeExams = [];
+  bool loading = true, offline = false, syncing = false, onboarded = true;
+  String syncLabel = 'Connecting', appearance = 'system';
+  Timer? _timer;
+  int _sessionVersion = 0;
+  Future<void>? _syncTask;
+  String get account => user!['id'] as String;
+  Future<void> initialize() async {
+    try {
+      appearance = await store.read('_device', 'appearance') ?? 'system';
+      onboarded = await store.read('_device', 'onboarded') ?? false;
+      token = await secure.read(key: 'session');
+      final saved = await secure.read(key: 'profile');
+      if (token != null && saved != null) {
+        user = Map<String, dynamic>.from(jsonDecode(saved));
+        await _loadCache();
+        await sync();
+      }
+    } catch (e) {
+      error = 'Could not open local credentials or storage: $e';
+    }
+    loading = false;
+    notifyListeners();
+    _timer = Timer.periodic(const Duration(seconds: 30), (_) {
+      if (user != null) unawaited(sync());
+    });
+  }
+
+  Future<void> completeOnboarding() async {
+    await store.write('_device', 'onboarded', true);
+    onboarded = true;
+    notifyListeners();
+  }
+
+  Future<void> setAppearance(String value) async {
+    await store.write('_device', 'appearance', value);
+    appearance = value;
+    notifyListeners();
+  }
+
+  Future<dynamic> request(
+    String method,
+    String path, [
+    Map<String, dynamic>? body,
+  ]) async {
+    final req = http.Request(method, Uri.parse('$baseUrl$path'));
+    req.headers['Content-Type'] = 'application/json';
+    if (token != null) req.headers['Authorization'] = 'Bearer $token';
+    if (body != null) req.body = jsonEncode(body);
+    final response = await req
+        .send()
+        .then(http.Response.fromStream)
+        .timeout(Duration(seconds: path.endsWith('/generate') ? 75 : 12));
+    final dynamic data;
+    try {
+      data = jsonDecode(response.body);
+    } catch (_) {
+      throw const FormatException('The backend returned an invalid response.');
+    }
+    if (response.statusCode >= 400)
+      throw ApiException(
+        response.statusCode,
+        data['message'] ?? 'Request failed.',
+      );
+    return data;
+  }
+
+  Future<void> authenticate({
+    required bool register,
+    required String email,
+    required String password,
+    String name = '',
+  }) async {
+    _sessionVersion++;
+    final data = await request(
+      'POST',
+      register ? '/auth/register' : '/auth/login',
+      {'email': email, 'password': password, if (register) 'name': name},
+    );
+    await secure.write(key: 'session', value: data['token']);
+    await secure.write(key: 'profile', value: jsonEncode(data['user']));
+    token = data['token'];
+    user = Map<String, dynamic>.from(data['user']);
+    sets = [];
+    attempts = [];
+    reviews = [];
+    conflicts = [];
+    analytics = {};
+    plan = {};
+    error = null;
+    await _loadCache();
+    await sync();
+    notifyListeners();
+  }
+
+  Future<List<Map<String, dynamic>>> _readList(String key) async =>
+      ((await store.read(account, key)) as List? ?? [])
+          .map((e) => Map<String, dynamic>.from(e))
+          .toList();
+  Future<void> _loadCache() async {
+    sets = await _readList('sets');
+    attempts = await _readList('attempts');
+    reviews = await _readList('reviews');
+    conflicts = await _readList('conflicts');
+    activeExams = await _readList('exams');
+    analytics = Map<String, dynamic>.from(
+      await store.read(account, 'analytics') ?? {},
+    );
+    plan = Map<String, dynamic>.from(await store.read(account, 'plan') ?? {});
+    advanced = Map<String, dynamic>.from(
+      await store.read(account, 'advanced') ?? {},
+    );
+  }
+
+  Future<void> sync() {
+    if (user == null) return Future.value();
+    return _syncTask ??= _synchronize().whenComplete(() => _syncTask = null);
+  }
+
+  Future<void> _synchronize() async {
+    final epoch = _sessionVersion, uid = account;
+    syncing = true;
+    syncLabel = 'Syncing';
+    notifyListeners();
+    bool valid() => epoch == _sessionVersion && user != null;
+    try {
+      final me = await request('GET', '/me');
+      if (!valid()) return;
+      plan = Map<String, dynamic>.from(me['plan']);
+      user = Map<String, dynamic>.from(me['user']);
+      await secure.write(key: 'profile', value: jsonEncode(user));
+      final blocked = <String>{};
+      for (final operation in await store.pending(uid)) {
+        if (!valid()) return;
+        final body = Map<String, dynamic>.from(
+          jsonDecode(operation['body'] as String),
+        );
+        if (blocked.contains(body['setId'])) continue;
+        try {
+          final result = await request(
+            'POST',
+            operation['path'] as String,
+            body,
+          );
+          if (!valid()) return;
+          await store.remove(operation['id'] as String);
+          if (operation['path'] == '/sync/mutate') {
+            final remaining = await store.pending(uid);
+            final later = remaining.any(
+              (op) =>
+                  op['path'] == '/sync/mutate' &&
+                  jsonDecode(op['body'] as String)['setId'] == body['setId'],
+            );
+            if (!later) {
+              sets.removeWhere((s) => s['id'] == body['setId']);
+              if (result['set'] != null)
+                sets.add(Map<String, dynamic>.from(result['set']));
+            }
+          }
+        } on ApiException catch (e) {
+          if (operation['path'] == '/sync/mutate' &&
+              [400, 403, 404, 409].contains(e.status)) {
+            final related = (await store.pending(uid))
+                .where(
+                  (op) =>
+                      op['path'] == '/sync/mutate' &&
+                      jsonDecode(op['body'] as String)['setId'] ==
+                          body['setId'],
+                )
+                .toList();
+            final latest = related.isEmpty
+                ? body
+                : Map<String, dynamic>.from(
+                    jsonDecode(related.last['body'] as String),
+                  );
+            conflicts.removeWhere((c) => c['local']['setId'] == body['setId']);
+            conflicts.add({
+              'id': body['id'],
+              'local': latest,
+              'message': e.message,
+            });
+            // Persist the local copy before dropping its rejected operation(s).
+            await store.write(uid, 'conflicts', conflicts);
+            for (final op in related) {
+              await store.remove(op['id'] as String);
+            }
+            blocked.add(body['setId']);
+            sets.removeWhere((s) => s['id'] == body['setId']);
+          } else if (e.status == 404) {
+            await store.remove(operation['id'] as String);
+          } else {
+            rethrow;
+          }
+        }
+      }
+      var cursor = await store.read(uid, 'cursor') as int? ?? 0;
+      bool more;
+      do {
+        final page = await request('GET', '/sync?cursor=$cursor');
+        if (!valid()) return;
+        final pending = (await store.pending(uid))
+            .where((op) => op['path'] == '/sync/mutate')
+            .map((op) => jsonDecode(op['body'] as String)['setId'])
+            .toSet();
+        for (final change in page['changes']) {
+          if (pending.contains(change['set_id'])) continue;
+          sets.removeWhere((s) => s['id'] == change['set_id']);
+          if (change['set'] != null)
+            sets.add(Map<String, dynamic>.from(change['set']));
+        }
+        cursor = page['cursor'];
+        more = page['hasMore'];
+        await store.writeSyncPage(uid, sets, cursor);
+      } while (more);
+      // If a conflict occurred without a new remote event, recover its current snapshot.
+      if (blocked.isNotEmpty) {
+        final remote = await request('GET', '/sets');
+        if (!valid()) return;
+        for (final s in remote['sets']) {
+          if (blocked.contains(s['id'])) {
+            sets.removeWhere((v) => v['id'] == s['id']);
+            sets.add(Map<String, dynamic>.from(s));
+          }
+        }
+      }
+      for (final upload in await store.pendingUploads(uid)) {
+        if (!valid()) return;
+        if (conflicts.any((c) => c['local']['setId'] == upload['set_id']))
+          continue;
+        final response = await _sendUpload(upload);
+        if (!valid()) return;
+        await store.removeUpload(upload['id'] as String);
+        sets.removeWhere((s) => s['id'] == upload['set_id']);
+        sets.add(Map<String, dynamic>.from(response['set']));
+      }
+      var learningCursor = await store.read(uid, 'learningCursor') as int? ?? 0;
+      do {
+        final page = await request(
+          'GET',
+          '/sync/learning?cursor=$learningCursor',
+        );
+        if (!valid()) return;
+        for (final change in page['changes'] ?? []) {
+          final list = change['kind'] == 'attempt' ? attempts : reviews;
+          list.removeWhere((r) => r['id'] == change['record_id']);
+          if (change['record'] != null)
+            list.add(Map<String, dynamic>.from(change['record']));
+        }
+        learningCursor = page['cursor'] ?? learningCursor;
+        more = page['hasMore'] ?? false;
+        await store.writeLearningPage(uid, attempts, reviews, learningCursor);
+      } while (more);
+      final data = await request('GET', '/analytics');
+      if (!valid()) return;
+      analytics = Map<String, dynamic>.from(data);
+      final exams = await request('GET', '/exams/active');
+      if (!valid()) return;
+      activeExams = ((exams['sessions'] as List?) ?? [])
+          .map((e) => Map<String, dynamic>.from(e))
+          .toList();
+      if (plan['pro'] == true) {
+        advanced = Map<String, dynamic>.from(
+          await request('GET', '/analytics/advanced'),
+        );
+      } else {
+        advanced = {};
+      }
+      if (!valid()) return;
+      sets.sort(
+        (a, b) => (b['updated_at'] as int? ?? 0).compareTo(
+          a['updated_at'] as int? ?? 0,
+        ),
+      );
+      for (final e in {
+        'sets': sets,
+        'plan': plan,
+        'analytics': analytics,
+        'advanced': advanced,
+        'exams': activeExams,
+      }.entries) {
+        await store.write(uid, e.key, e.value);
+      }
+      offline = false;
+      error = null;
+      syncLabel = conflicts.isEmpty
+          ? 'Up to date'
+          : '${conflicts.length} edit conflicts to resolve';
+    } on ApiException catch (e) {
+      if (!valid()) return;
+      error = e.message;
+      syncLabel = 'Sync needs attention';
+      if (e.status == 401) await logout(remote: false);
+    } catch (_) {
+      if (!valid()) return;
+      offline = true;
+      syncLabel = 'Offline · changes saved on this device';
+    } finally {
+      syncing = false;
+      notifyListeners();
+    }
+  }
+
+  Future<void> logout({bool remote = true, bool eraseCache = false}) async {
+    _sessionVersion++;
+    if (remote && token != null) {
+      try {
+        await request('POST', '/auth/logout');
+      } on ApiException catch (e) {
+        if (e.status != 401) rethrow;
+      } on IOException catch (_) {
+        /* Local sign-out remains available offline. */
+      } on TimeoutException catch (_) {}
+    }
+    await secure.delete(key: 'session');
+    await secure.delete(key: 'profile');
+    if (user != null) {
+      final pending =
+          (await store.pending(account)).isNotEmpty ||
+          (await store.pendingUploads(account)).isNotEmpty ||
+          conflicts.isNotEmpty;
+      if (eraseCache || !pending) await store.clear(account);
+    }
+    token = null;
+    user = null;
+    sets = [];
+    reviews = [];
+    attempts = [];
+    conflicts = [];
+    activeExams = [];
+    plan = {};
+    analytics = {};
+    advanced = {};
+    notifyListeners();
+  }
+
+  Future<Map<String, dynamic>> saveSet(
+    String title,
+    String notes, {
+    Map<String, dynamic>? existing,
+    String folder = '',
+  }) async {
+    final sid = existing?['id'] ?? const Uuid().v4();
+    final timestamp = DateTime.now().millisecondsSinceEpoch;
+    final local = <String, dynamic>{
+      ...?existing,
+      'id': sid,
+      'title': title,
+      'notes': notes,
+      'folder': folder,
+      'version': existing == null ? 1 : (existing['version'] as int) + 1,
+      'created_at': existing?['created_at'] ?? timestamp,
+      'updated_at': timestamp,
+      'questions': existing?['questions'] ?? [],
+      'flashcards': existing?['flashcards'] ?? [],
+      'collections': existing?['collections'] ?? [],
+      'document': existing?['document'],
+      'pending': true,
+    };
+    final operation = {
+      'id': const Uuid().v4(),
+      'kind': existing == null ? 'create' : 'update',
+      'setId': sid,
+      'baseVersion': existing?['version'] ?? 0,
+      'title': title,
+      'notes': notes,
+      'folder': folder,
+    };
+    final next = [...sets.where((s) => s['id'] != sid), local];
+    await store.queueMutation(account, operation, next);
+    sets = next;
+    notifyListeners();
+    await sync();
+    return sets.where((s) => s['id'] == sid).firstOrNull ?? local;
+  }
+
+  Future<void> deleteSet(Map<String, dynamic> set) async {
+    final operation = {
+      'id': const Uuid().v4(),
+      'kind': 'delete',
+      'setId': set['id'],
+      'baseVersion': set['version'],
+      'title': set['title'],
+      'notes': set['notes'],
+      'folder': set['folder'] ?? '',
+    };
+    final next = sets.where((s) => s['id'] != set['id']).toList();
+    await store.queueMutation(account, operation, next);
+    sets = next;
+    notifyListeners();
+    await sync();
+  }
+
+  Future<void> resolveConflict(
+    Map<String, dynamic> conflict, {
+    required String resolution,
+    String? title,
+    String? notes,
+  }) async {
+    final local = Map<String, dynamic>.from(conflict['local']);
+    if (resolution == 'copy')
+      await saveSet(
+        title ?? '${local['title']} (local copy)',
+        notes ?? local['notes'] ?? '',
+        folder: local['folder'] ?? '',
+      );
+    if (resolution == 'merge') {
+      final current = sets.where((s) => s['id'] == local['setId']).firstOrNull;
+      if (current == null)
+        throw ApiException(
+          409,
+          'The server copy was deleted. Save a separate copy instead.',
+        );
+      await saveSet(
+        title ?? local['title'],
+        notes ?? local['notes'] ?? '',
+        folder: local['folder'] ?? '',
+        existing: current,
+      );
+    }
+    conflicts.removeWhere((c) => c['id'] == conflict['id']);
+    await store.write(account, 'conflicts', conflicts);
+    notifyListeners();
+  }
+
+  Future<dynamic> _sendUpload(Map<String, Object?> upload) async {
+    final req = http.MultipartRequest(
+      'POST',
+      Uri.parse('$baseUrl/sets/${upload['set_id']}/pdf'),
+    );
+    req.headers.addAll({
+      'Authorization': 'Bearer $token',
+      'x-document-id': upload['id'] as String,
+      'x-set-version': '${upload['version']}',
+    });
+    req.files.add(
+      http.MultipartFile.fromBytes(
+        'file',
+        upload['bytes'] as Uint8List,
+        filename: upload['name'] as String,
+        contentType: http.MediaType('application', 'pdf'),
+      ),
+    );
+    final response = await req
+        .send()
+        .then(http.Response.fromStream)
+        .timeout(const Duration(seconds: 60));
+    final result = jsonDecode(response.body);
+    if (response.statusCode >= 400)
+      throw ApiException(response.statusCode, result['message']);
+    return result;
+  }
+
+  Future<void> upload(String setId, String name, List<int> bytes) async {
+    final set = sets.where((s) => s['id'] == setId).first;
+    final id = const Uuid().v4();
+    await store.queueUpload(account, id, setId, name, bytes, set['version']);
+    set['document'] = {
+      'id': id,
+      'filename': name,
+      'bytes': bytes.length,
+      'pending': true,
+    };
+    await store.write(account, 'sets', sets);
+    notifyListeners();
+    await sync();
+  }
+
+  Future<Uint8List> documentBytes(String id) async {
+    final uid = account, cached = await store.pdf(account, id);
+    if (cached != null) return cached;
+    final response = await http
+        .get(
+          Uri.parse('$baseUrl/documents/$id'),
+          headers: {'Authorization': 'Bearer $token'},
+        )
+        .timeout(const Duration(seconds: 45));
+    if (response.statusCode >= 400)
+      throw ApiException(response.statusCode, 'Could not download this PDF.');
+    if (uid != user?['id']) throw ApiException(401, 'Account changed.');
+    await store.cachePdf(uid, id, response.bodyBytes);
+    return response.bodyBytes;
+  }
+
+  Future<void> generate(
+    String sid,
+    String kind,
+    int count,
+    String difficulty,
+  ) async {
+    await sync();
+    if (offline)
+      throw ApiException(
+        503,
+        'Connect to the backend to generate learning material.',
+      );
+    if ((await store.pending(account)).any(
+      (op) =>
+          op['path'] == '/sync/mutate' &&
+          jsonDecode(op['body'] as String)['setId'] == sid,
+    ))
+      throw ApiException(
+        409,
+        'Finish syncing this study set before generating.',
+      );
+    await request('POST', '/sets/$sid/generate', {
+      'kind': kind,
+      'count': count,
+      'difficulty': difficulty,
+    });
+    await sync();
+  }
+
+  Future<void> record(String path, Map<String, dynamic> body) async {
+    await store.enqueue(account, path, body);
+    if (path == '/reviews') {
+      final previous = reviewFor(body['cardId']);
+      final days = body['known'] == true
+          ? (previous?['known'] == 1
+                    ? (previous!['interval_days'] as int) * 2
+                    : 1)
+                .clamp(1, 180)
+          : 1;
+      reviews.add({
+        ...body,
+        'card_id': body['cardId'],
+        'known': body['known'] == true ? 1 : 0,
+        'reviewed_at': DateTime.now().millisecondsSinceEpoch,
+        'due_at': DateTime.now()
+            .add(Duration(days: days))
+            .millisecondsSinceEpoch,
+        'interval_days': days,
+      });
+      await store.write(account, 'reviews', reviews);
+    }
+    notifyListeners();
+    await sync();
+  }
+
+  Map<String, dynamic>? reviewFor(String cardId) {
+    final list = reviews.where((r) => r['card_id'] == cardId).toList()
+      ..sort(
+        (a, b) => (b['reviewed_at'] as int).compareTo(a['reviewed_at'] as int),
+      );
+    return list.firstOrNull;
+  }
+
+  bool isDue(String cardId) =>
+      (reviewFor(cardId)?['due_at'] as int? ?? 0) <=
+      DateTime.now().millisecondsSinceEpoch;
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+}

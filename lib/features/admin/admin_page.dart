@@ -1,0 +1,148 @@
+import 'package:material_ui/material_ui.dart';
+
+import 'dart:async';
+
+import '../../core/api/study_controller.dart';
+import '../../shared/components.dart';
+
+class AdminPage extends StatefulWidget {
+  final StudyController controller;
+  const AdminPage({super.key, required this.controller});
+  @override
+  State<AdminPage> createState() => _AdminPageState();
+}
+
+class _AdminPageState extends State<AdminPage> {
+  List<dynamic> users = [];
+  Map<String, dynamic> stats = {};
+  String? error;
+  String query = '';
+  @override
+  void initState() {
+    super.initState();
+    unawaited(load());
+  }
+
+  Future<void> load() async {
+    try {
+      final data = await widget.controller.request(
+        'GET',
+        '/admin/users?search=${Uri.encodeQueryComponent(query)}',
+      );
+      final s = await widget.controller.request('GET', '/admin/stats');
+      if (mounted) {
+        setState(() {
+          users = data['users'];
+          stats = Map<String, dynamic>.from(s);
+          error = null;
+        });
+      }
+    } catch (e) {
+      if (mounted) setState(() => error = e.toString());
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) => ListView(
+    padding: const EdgeInsets.all(28),
+    children: [
+      Text('Administration', style: Theme.of(context).textTheme.headlineLarge),
+      const SizedBox(height: 24),
+      TextField(
+        decoration: const InputDecoration(
+          labelText: 'Search students',
+          suffixIcon: Icon(Icons.search),
+        ),
+        onChanged: (v) => query = v,
+        onSubmitted: (_) => unawaited(load()),
+      ),
+      const SizedBox(height: 12),
+      OutlinedButton(onPressed: load, child: const Text('Refresh')),
+      if (error != null) ErrorState(message: error!),
+      for (final u in users)
+        Padding(
+          padding: const EdgeInsets.only(top: 12),
+          child: StudyCard(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('${u['name']} · ${u['email']}'),
+                Text(
+                  '${u['plan']['name']} · ${u['storage']} bytes stored · ${u['plan']['used']} generations today',
+                ),
+                Wrap(
+                  spacing: 12,
+                  children: [
+                    TextButton(
+                      onPressed: () async {
+                        final date = await showDatePicker(
+                          context: context,
+                          firstDate: DateTime.now().add(
+                            const Duration(days: 1),
+                          ),
+                          lastDate: DateTime.now().add(
+                            const Duration(days: 3650),
+                          ),
+                          initialDate: DateTime.now().add(
+                            const Duration(days: 30),
+                          ),
+                        );
+                        if (date != null) {
+                          try {
+                            await widget.controller.request(
+                              'PUT',
+                              '/admin/users/${u['id']}/pro',
+                              {
+                                'enabled': true,
+                                'expiresAt': date.millisecondsSinceEpoch,
+                              },
+                            );
+                            await load();
+                          } catch (e) {
+                            if (mounted) setState(() => error = e.toString());
+                          }
+                        }
+                      },
+                      child: const Text('Grant Pro / set expiry'),
+                    ),
+                    TextButton(
+                      onPressed: () async {
+                        try {
+                          await widget.controller.request(
+                            'PUT',
+                            '/admin/users/${u['id']}/pro',
+                            {'enabled': false},
+                          );
+                          await load();
+                        } catch (e) {
+                          if (mounted) setState(() => error = e.toString());
+                        }
+                      },
+                      child: const Text('Revoke Pro'),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      const SizedBox(height: 28),
+      Text('Generation usage', style: Theme.of(context).textTheme.titleLarge),
+      for (final u in stats['usage'] ?? [])
+        Text('${u['day']} · ${u['status']} · ${u['count']}'),
+      const SizedBox(height: 24),
+      Text(
+        'Administrative audit',
+        style: Theme.of(context).textTheme.titleLarge,
+      ),
+      for (final log in stats['audit'] ?? [])
+        Text('${log['action']} · ${log['target_id']}'),
+      const SizedBox(height: 24),
+      Text('Application errors', style: Theme.of(context).textTheme.titleLarge),
+      for (final e in stats['errors'] ?? [])
+        Text(
+          '${e['code']} · ${DateTime.fromMillisecondsSinceEpoch(e['created_at'])}',
+        ),
+    ],
+  );
+}

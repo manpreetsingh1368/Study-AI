@@ -1,0 +1,22 @@
+ALTER TABLE study_sets ADD COLUMN folder TEXT NOT NULL DEFAULT '';
+CREATE TABLE mutation_receipts(user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,operation_id TEXT NOT NULL,payload_hash TEXT NOT NULL,response TEXT NOT NULL,PRIMARY KEY(user_id,operation_id));
+CREATE TABLE collections(id TEXT PRIMARY KEY,set_id TEXT NOT NULL REFERENCES study_sets(id) ON DELETE CASCADE,kind TEXT NOT NULL CHECK(kind IN ('quiz','flashcards','exam')),title TEXT NOT NULL,created_at INTEGER NOT NULL);
+CREATE INDEX collections_set ON collections(set_id,created_at);
+ALTER TABLE questions ADD COLUMN collection_id TEXT REFERENCES collections(id);
+ALTER TABLE flashcards ADD COLUMN collection_id TEXT REFERENCES collections(id);
+INSERT INTO collections SELECT id||':quiz',id,'quiz','Saved quiz',created_at FROM study_sets WHERE EXISTS(SELECT 1 FROM questions WHERE set_id=study_sets.id);
+INSERT INTO collections SELECT id||':cards',id,'flashcards','Saved flashcards',created_at FROM study_sets WHERE EXISTS(SELECT 1 FROM flashcards WHERE set_id=study_sets.id);
+UPDATE questions SET collection_id=set_id||':quiz';
+UPDATE flashcards SET collection_id=set_id||':cards';
+ALTER TABLE quiz_attempts ADD COLUMN collection_id TEXT REFERENCES collections(id);
+CREATE TABLE quiz_sessions(id TEXT PRIMARY KEY,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,set_id TEXT NOT NULL REFERENCES study_sets(id) ON DELETE CASCADE,collection_id TEXT REFERENCES collections(id),question_ids TEXT NOT NULL,started_at INTEGER NOT NULL,deadline INTEGER NOT NULL,attempt_id TEXT UNIQUE);
+CREATE INDEX quiz_sessions_user ON quiz_sessions(user_id);
+CREATE TABLE learning_changes(seq INTEGER PRIMARY KEY AUTOINCREMENT,user_id TEXT NOT NULL REFERENCES users(id) ON DELETE CASCADE,kind TEXT NOT NULL,record_id TEXT NOT NULL);
+CREATE INDEX learning_user ON learning_changes(user_id,seq);
+INSERT INTO learning_changes(user_id,kind,record_id) SELECT user_id,'attempt',id FROM quiz_attempts ORDER BY created_at;
+INSERT INTO learning_changes(user_id,kind,record_id) SELECT user_id,'review',id FROM flashcard_reviews ORDER BY reviewed_at;
+CREATE TRIGGER attempt_sync AFTER INSERT ON quiz_attempts BEGIN INSERT INTO learning_changes(user_id,kind,record_id) VALUES(new.user_id,'attempt',new.id); END;
+CREATE TRIGGER review_sync AFTER INSERT ON flashcard_reviews BEGIN INSERT INTO learning_changes(user_id,kind,record_id) VALUES(new.user_id,'review',new.id); END;
+
+UPDATE study_sets SET version=version+1;
+INSERT INTO sync_changes(user_id,set_id,version,deleted) SELECT user_id,id,version,deleted FROM study_sets;

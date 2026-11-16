@@ -1,0 +1,133 @@
+import { sqliteTable, text, integer } from "drizzle-orm/sqlite-core";
+export const users = sqliteTable("users", {
+  id: text("id").primaryKey(),
+  email: text("email").notNull().unique(),
+  name: text("name").notNull(),
+  passwordHash: text("password_hash").notNull(),
+  role: text("role").notNull().default("student"),
+  createdAt: integer("created_at").notNull(),
+});
+export const studySets = sqliteTable("study_sets", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  title: text("title").notNull(),
+  notes: text("notes").notNull(),
+  version: integer("version").notNull().default(1),
+  deleted: integer("deleted").notNull().default(0),
+  createdAt: integer("created_at").notNull(),
+  updatedAt: integer("updated_at").notNull(),
+});
+export const sessions = sqliteTable("sessions", {
+  tokenHash: text("token_hash").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  expiresAt: integer("expires_at").notNull(),
+});
+export const documents = sqliteTable("documents", {
+  id: text("id").primaryKey(),
+  setId: text("set_id")
+    .notNull()
+    .unique()
+    .references(() => studySets.id, { onDelete: "cascade" }),
+  filename: text("filename").notNull(),
+  bytes: integer("bytes").notNull(),
+});
+export const questions = sqliteTable("questions", {
+  id: text("id").primaryKey(),
+  setId: text("set_id")
+    .notNull()
+    .references(() => studySets.id, { onDelete: "cascade" }),
+  position: integer("position").notNull(),
+  question: text("question").notNull(),
+  choices: text("choices").notNull(),
+  answer: integer("answer").notNull(),
+  explanation: text("explanation").notNull(),
+  difficulty: text("difficulty").notNull(),
+  topic: text("topic").notNull(),
+});
+export const flashcards = sqliteTable("flashcards", {
+  id: text("id").primaryKey(),
+  setId: text("set_id")
+    .notNull()
+    .references(() => studySets.id, { onDelete: "cascade" }),
+  front: text("front").notNull(),
+  back: text("back").notNull(),
+  topic: text("topic").notNull(),
+  difficulty: text("difficulty").notNull(),
+});
+export const flashcardReviews = sqliteTable("flashcard_reviews", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  cardId: text("card_id")
+    .notNull()
+    .references(() => flashcards.id, { onDelete: "cascade" }),
+  known: integer("known").notNull(),
+  reviewedAt: integer("reviewed_at").notNull(),
+  dueAt: integer("due_at").notNull(),
+  intervalDays: integer("interval_days").notNull(),
+});
+export const quizAttempts = sqliteTable("quiz_attempts", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  setId: text("set_id")
+    .notNull()
+    .references(() => studySets.id, { onDelete: "cascade" }),
+  score: integer("score").notNull(),
+  total: integer("total").notNull(),
+  createdAt: integer("created_at").notNull(),
+});
+export const quizAnswers = sqliteTable("quiz_answers", {
+  attemptId: text("attempt_id")
+    .notNull()
+    .references(() => quizAttempts.id, { onDelete: "cascade" }),
+  questionId: text("question_id")
+    .notNull()
+    .references(() => questions.id, { onDelete: "cascade" }),
+  answer: integer("answer").notNull(),
+});
+export const subscriptions = sqliteTable("subscriptions", {
+  userId: text("user_id")
+    .primaryKey()
+    .references(() => users.id, { onDelete: "cascade" }),
+  startsAt: integer("starts_at").notNull(),
+  expiresAt: integer("expires_at").notNull(),
+});
+export const generationUsage = sqliteTable("generation_usage", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  day: text("day").notNull(),
+  status: text("status").notNull(),
+  createdAt: integer("created_at").notNull(),
+});
+export const syncChanges = sqliteTable("sync_changes", {
+  seq: integer("seq").primaryKey({ autoIncrement: true }),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  setId: text("set_id").notNull(),
+  version: integer("version").notNull(),
+  deleted: integer("deleted").notNull(),
+});
+export const adminAuditLogs = sqliteTable("admin_audit_logs", {
+  id: text("id").primaryKey(),
+  adminId: text("admin_id").references(() => users.id, {
+    onDelete: "set null",
+  }),
+  targetId: text("target_id"),
+  action: text("action").notNull(),
+  createdAt: integer("created_at").notNull(),
+});
+export const applicationErrors = sqliteTable("application_errors", {
+  id: text("id").primaryKey(),
+  code: text("code").notNull(),
+  createdAt: integer("created_at").notNull(),
+});
