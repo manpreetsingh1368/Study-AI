@@ -93,3 +93,4 @@ export function registerNotebookRoutes(
         b.id,
         sid,
         b.title,
+        b.text,
