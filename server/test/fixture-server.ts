@@ -36,3 +36,4 @@ console.log(JSON.stringify({ port: address.port }));
 for (const signal of ["SIGTERM", "SIGINT"])
   process.on(signal, () => {
     void app.close().then(() => process.exit(0));
+  });
