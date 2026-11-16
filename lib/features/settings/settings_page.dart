@@ -118,6 +118,7 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Change password and revoke all sessions'),
             ),
             const SizedBox(height: 12),
+            OutlinedButton.icon(
             OutlinedButton(
               onPressed: busy
                   ? null
