@@ -4,3 +4,4 @@ import { existsSync, readdirSync, statSync, unlinkSync } from "node:fs";
 import { join } from "node:path";
 const { sqlite } = openDatabase(process.env.DATA_DIR || "./data");
 const uploads = process.env.UPLOAD_DIR || "./uploads",
+  now = Date.now();
