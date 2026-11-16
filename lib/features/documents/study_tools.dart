@@ -96,3 +96,4 @@ class _StudyToolsState extends State<StudyTools> {
                           if (context.mounted) context.go('/library');
                         });
                       }
+                    },
