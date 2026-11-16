@@ -932,4 +932,5 @@ class _SetDetailState extends State<SetDetail> {
                       context: context,
                       builder: (ctx) => AlertDialog(
                         title: Text(note['title']),
+                        content: SizedBox(
 }
