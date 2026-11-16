@@ -230,6 +230,7 @@ class StudyController extends ChangeNotifier {
                 (await store.pending(uid))
                     .where((op) => op['id'] != operation['id'])
                     .toList(),
+              );
         } on ApiException catch (e) {
           if (operation['path'] == '/sync/mutate' &&
               [400, 403, 404, 409].contains(e.status)) {
