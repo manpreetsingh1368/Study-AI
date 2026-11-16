@@ -196,3 +196,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
         id: randomUUID(),
         kind: "summary",
         prompt: "Overview",
+        sourceIds: [set.id],
