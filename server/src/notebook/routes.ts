@@ -201,3 +201,4 @@ export function registerNotebookRoutes(
       if (total > 100000)
         fail(
           413,
+          "Selected sources exceed 100,000 characters of extracted text. Select fewer sources or a shorter document.",
