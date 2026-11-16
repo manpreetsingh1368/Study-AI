@@ -657,4 +657,5 @@ class _SetDetailState extends State<SetDetail> {
           SelectableText(
             block['text'],
             style: const TextStyle(fontSize: 13, height: 1.85),
+          ),
 }
