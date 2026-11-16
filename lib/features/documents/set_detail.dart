@@ -338,6 +338,7 @@ class _SetDetailState extends State<SetDetail> {
       ],
     ),
   );
+  Widget sources() {
                   ),
                 ),
             ],
