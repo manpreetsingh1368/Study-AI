@@ -115,6 +115,7 @@ void main() {
             'user': {'id': 'owner', 'name': 'Learner'},
             'plan': {'name': 'Free', 'pro': false, 'sets': 5},
           };
+        }
         if (req.uri.path == '/sync/mutate') {
           final op = Map<String, dynamic>.from(
             jsonDecode(await utf8.decoder.bind(req).join()),
