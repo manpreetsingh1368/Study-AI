@@ -238,6 +238,7 @@ class _SetDetailState extends State<SetDetail> {
                             ),
                             ButtonSegment(
                               value: 2,
+                              label: Text('Studio'),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
