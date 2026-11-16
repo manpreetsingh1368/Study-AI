@@ -507,4 +507,5 @@ class _SetDetailState extends State<SetDetail> {
                 ),
               ),
               child: Row(
+                children: [
 }
