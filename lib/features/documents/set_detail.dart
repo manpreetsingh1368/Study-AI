@@ -401,4 +401,5 @@ class _SetDetailState extends State<SetDetail> {
                           margin: const EdgeInsets.only(left: 32, bottom: 18),
                           padding: const EdgeInsets.symmetric(
                             horizontal: 18,
+                            vertical: 13,
 }
