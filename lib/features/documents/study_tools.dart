@@ -315,3 +315,4 @@ class _StudyToolsState extends State<StudyTools> {
                         label: 'Hard · Pro',
                         enabled: pro,
                       ),
+                    ],
