@@ -530,4 +530,5 @@ class _SetDetailState extends State<SetDetail> {
             color: Theme.of(context).colorScheme.surface,
             borderRadius: BorderRadius.circular(18),
             border: Border.all(color: accent.withValues(alpha: .25)),
+          ),
 }
