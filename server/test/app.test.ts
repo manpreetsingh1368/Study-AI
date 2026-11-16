@@ -614,3 +614,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
     401,
   );
   const recovery = (
+    await call("POST", "/me/recovery", a.token, {
