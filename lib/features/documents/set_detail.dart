@@ -70,6 +70,7 @@ class _SetDetailState extends State<SetDetail> {
     useSafeArea: true,
     builder: (_) => SizedBox(
       height: MediaQuery.sizeOf(context).height * .88,
+      child: ListenableBuilder(
         ),
       ),
     ),
