@@ -57,6 +57,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
           fail(409, "Operation identifier reused with different data.");
         const current = get(
           "SELECT * FROM study_sets WHERE id=? AND user_id=?",
+          b.setId,
       }
       if (b.kind === "create") {
         if (
