@@ -124,3 +124,4 @@ class _StudyToolsState extends State<StudyTools> {
                       icon: const Icon(Icons.picture_as_pdf_outlined),
                       label: const Text('Open PDF'),
                     ),
+                    TextButton.icon(
