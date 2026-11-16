@@ -225,6 +225,7 @@ class _SetDetailState extends State<SetDetail> {
                             : source['notes'],
                       ),
                     ),
+                    if (source['document'] != null)
                         ),
                       ),
                     ),
