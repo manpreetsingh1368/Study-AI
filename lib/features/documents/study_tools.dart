@@ -31,3 +31,4 @@ class _StudyToolsState extends State<StudyTools> {
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
+      if (mounted) setState(() => busy = false);
