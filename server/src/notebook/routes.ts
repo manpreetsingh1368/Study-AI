@@ -222,3 +222,4 @@ export function registerNotebookRoutes(
       if (
         previousUsage &&
         (previousUsage.user_id !== u.id || previousUsage.request_hash !== hash)
+      )
