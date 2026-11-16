@@ -290,3 +290,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
     ).insufficientEvidence,
     true,
   );
+  assert.throws(() =>
