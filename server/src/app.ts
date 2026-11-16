@@ -489,6 +489,7 @@ export function createApp(
         new Date(now()).toISOString().slice(0, 10),
         "pending",
         now(),
+        requestHash,
       );
     })();
     try {
