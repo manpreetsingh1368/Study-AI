@@ -830,4 +830,5 @@ class _SetDetailState extends State<SetDetail> {
             for (final collection in widget.set['collections'] ?? [])
               ListTile(
                 contentPadding: EdgeInsets.zero,
+                dense: true,
 }
