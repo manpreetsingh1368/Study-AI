@@ -21,3 +21,4 @@ class _StudyToolsState extends State<StudyTools> {
   double split = .5;
   String? error;
   StudyController get c => widget.controller;
+  Future<void> action(Future<void> Function() task) async {
