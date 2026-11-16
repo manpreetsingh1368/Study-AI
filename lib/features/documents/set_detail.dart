@@ -223,6 +223,7 @@ class _SetDetailState extends State<SetDetail> {
                         (source['notes'] as String).isEmpty
                             ? 'This source contains a PDF. Open its PDF tab to read it.'
                             : source['notes'],
+                      ),
                         ),
                       ),
                     ),
