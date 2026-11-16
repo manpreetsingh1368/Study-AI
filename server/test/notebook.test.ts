@@ -344,3 +344,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
   const set = (
     await app.inject({
       method: "POST",
+      url: "/sets",
