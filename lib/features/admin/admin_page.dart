@@ -61,6 +61,7 @@ class _AdminPageState extends State<AdminPage> {
               child: Column(
                 children: [
                   Text(
+                    '${metric.$2}',
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
