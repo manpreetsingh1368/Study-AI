@@ -734,6 +734,7 @@ export function createApp(
       "SELECT count(*) n FROM users WHERE email LIKE ? OR name LIKE ?",
       `%${q.search}%`,
       `%${q.search}%`,
+    ).n;
     return {
       total,
       hasMore: q.offset + q.limit < total,
