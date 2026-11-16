@@ -50,3 +50,4 @@ class _StudyToolsState extends State<StudyTools> {
           const Text('Saved on this device · waiting to synchronize'),
         const SizedBox(height: 16),
         Wrap(
+          spacing: 12,
