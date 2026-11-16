@@ -245,6 +245,7 @@ class _SetDetailState extends State<SetDetail> {
     final changed = source == null || source['version'] != cite['version'];
     final isPdf = cite['page'] != null;
     final canOpen =
+        source != null &&
                         ),
                       ),
                     ),
