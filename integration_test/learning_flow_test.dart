@@ -125,3 +125,4 @@ void main() {
           'ATP transfers chemical energy.',
           folder: 'Biology',
         );
+        await c.upload(set['id'], 'lecture.pdf', validPdf());
