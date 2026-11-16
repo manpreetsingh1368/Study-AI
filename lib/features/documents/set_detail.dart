@@ -601,4 +601,5 @@ class _SetDetailState extends State<SetDetail> {
               'STUDY AI',
               style: TextStyle(
                 fontSize: 10,
+                fontWeight: FontWeight.w700,
 }
