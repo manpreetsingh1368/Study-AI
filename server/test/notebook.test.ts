@@ -17,3 +17,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
   insufficientEvidence: false,
   blocks: [
     {
+      heading: "Key concept",
