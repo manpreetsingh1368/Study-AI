@@ -331,6 +331,7 @@ class _SetDetailState extends State<SetDetail> {
         Expanded(
           child: Text(
             title,
+            style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 14),
                   ),
                 ),
             ],
