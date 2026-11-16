@@ -185,3 +185,4 @@ class _StudyToolsState extends State<StudyTools> {
                         () => split = (split + d.delta.dx / size.maxWidth)
                             .clamp(.25, .75),
                       ),
+                      child: const SizedBox(
