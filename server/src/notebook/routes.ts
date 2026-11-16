@@ -244,3 +244,4 @@ export function registerNotebookRoutes(
       );
     })();
     try {
+      const history = all(
