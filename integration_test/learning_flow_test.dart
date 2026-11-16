@@ -63,3 +63,4 @@ void main() {
     (tester) async {
       final project = const String.fromEnvironment('PROJECT_ROOT');
       if (project.isEmpty) {
+        throw StateError(
