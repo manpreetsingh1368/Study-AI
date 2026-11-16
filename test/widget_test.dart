@@ -179,6 +179,7 @@ void main() {
         expect(find.text('ATP'), findsOneWidget);
         await tester.tap(find.text('ATP'));
         await tester.pumpAndSettle();
+        expect(find.text('An energy carrier'), findsOneWidget);
 }
 
 class WidgetMemoryStore extends LocalStore {
