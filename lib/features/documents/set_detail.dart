@@ -253,6 +253,7 @@ class _SetDetailState extends State<SetDetail> {
         title: Row(
           children: [
             const Icon(Icons.format_quote, color: accent),
+            const SizedBox(width: 12),
                         ),
                       ),
                     ),
