@@ -463,6 +463,7 @@ class _SetDetailState extends State<SetDetail> {
                                               ? 'Lecture notes'
                                               : 'PDF + notes',
                                           style: TextStyle(
+                                            fontSize: 10,
                   ),
                 ),
             ],
