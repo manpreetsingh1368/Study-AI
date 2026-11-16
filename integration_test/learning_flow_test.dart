@@ -172,6 +172,7 @@ void main() {
           [set['id']],
         );
         expect(
+          response['content']['blocks'][0]['citations'][0]['quote'],
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
