@@ -19,3 +19,4 @@ try {
     if (existsSync(join(uploads, file.id))) unlinkSync(join(uploads, file.id));
   sqlite.transaction(() => {
     for (const file of files)
+      sqlite.prepare("DELETE FROM documents WHERE id=?").run(file.id);
