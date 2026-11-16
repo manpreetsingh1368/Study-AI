@@ -494,4 +494,5 @@ class _SetDetailState extends State<SetDetail> {
             child: OutlinedButton(
               onPressed: () {
                 composer.text = prompt;
+                composerFocus.requestFocus();
 }
