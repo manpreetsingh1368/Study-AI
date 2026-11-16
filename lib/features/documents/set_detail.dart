@@ -437,6 +437,7 @@ class _SetDetailState extends State<SetDetail> {
                     ),
                     const Spacer(),
                     Tooltip(
+                      message: 'Edit notebook source',
                         ),
                       ),
                     ),
