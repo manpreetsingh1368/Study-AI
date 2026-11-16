@@ -169,3 +169,4 @@ class _StudyToolsState extends State<StudyTools> {
                     width: (size.maxWidth - 14) * split,
                     child: SingleChildScrollView(
                       child: StudyCard(
+                        child: SelectableText(
