@@ -439,6 +439,7 @@ class _SetDetailState extends State<SetDetail> {
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
+                        onPressed: busy ? null : editSource,
                         ),
                       ),
                     ),
