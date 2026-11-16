@@ -901,4 +901,5 @@ class _SetDetailState extends State<SetDetail> {
                   height: 1.7,
                   color: Theme.of(context).colorScheme.onSurfaceVariant,
                 ),
+              ),
 }
