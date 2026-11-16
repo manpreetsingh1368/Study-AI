@@ -218,3 +218,4 @@ export function registerNotebookRoutes(
       const previousUsage = get(
         "SELECT * FROM generation_usage WHERE id=?",
         b.id,
+      );
