@@ -173,3 +173,4 @@ export async function notebookGenerate(
       );
     const data: any = await response.json();
     try {
+      return responseSchema.parse(
