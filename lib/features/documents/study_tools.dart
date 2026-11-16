@@ -243,3 +243,4 @@ class _StudyToolsState extends State<StudyTools> {
                   children: [
                     if (deck['kind'] == 'flashcards')
                       TextButton(
+                        onPressed: () => context.go(
