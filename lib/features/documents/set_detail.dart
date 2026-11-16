@@ -361,4 +361,5 @@ class _SetDetailState extends State<SetDetail> {
         .toList();
     return Column(
       children: [
+        panelTitle(
 }
