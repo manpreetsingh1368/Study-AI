@@ -316,3 +316,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
           text: "ATP is an energy carrier.",
           citations: [
             {
+              chunkId: input.chunks.find((c) => c.page === 2)!.id,
