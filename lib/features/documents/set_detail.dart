@@ -72,6 +72,7 @@ class _SetDetailState extends State<SetDetail> {
       height: MediaQuery.sizeOf(context).height * .88,
       child: ListenableBuilder(
         listenable: c,
+        builder: (_, _) => StudyTools(
         ),
       ),
     ),
