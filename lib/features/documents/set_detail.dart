@@ -535,4 +535,5 @@ class _SetDetailState extends State<SetDetail> {
             bindings: {
               const SingleActivator(
                 LogicalKeyboardKey.enter,
+                control: true,
 }
