@@ -223,3 +223,4 @@ test("source selection excludes previous conversations about unchecked sources; 
   for (const [kind, sources] of [
     ["chat", [one.id]],
     ["guide", [two.id]],
+    ["faq", [two.id]],
