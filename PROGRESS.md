@@ -9,6 +9,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Self-hosted Fastify/TypeScript/SQLite with Drizzle schema mappings, prepared domain queries, WAL, foreign keys, indexes and three ordered transactional migrations. Upgrades retain old questions/attempts and backfill collections and sync events.
 - Argon2id, hashed revocable/expiring sessions, secure client token storage, password/profile changes, account deletion, login/API rate limits and owner-operated administrator bootstrap with audit records.
 - Real one-time recovery codes generated after password verification: 256-bit random secrets stored only as hashes, one-year expiry, one-use password reset and full session revocation. No email delivery or third-party authentication.
+- Private authenticated PDF endpoints, MIME/signature checks, isolated structural parsing with time/heap/page limits, per-user storage limits, atomic replacement and safe temporary files. Uploads have stable document IDs and durable retry queues. PDFs are cached in account-isolated SQLite when opened or explicitly kept offline.
 
 ## Verification
 
