@@ -63,3 +63,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
       (sqlite.prepare("SELECT count(*) n FROM learning_changes").get() as any)
         .n,
       1,
+    );
