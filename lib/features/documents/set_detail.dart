@@ -426,6 +426,7 @@ class _SetDetailState extends State<SetDetail> {
                                       selected.remove(source['id']);
                                     }
                                   });
+                                },
                   ),
                 ),
             ],
