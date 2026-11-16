@@ -172,3 +172,4 @@ void main() {
         final bytes = await other.documentBytes(
           other.sets.single['document']['id'],
         );
+        await pdfrxFlutterInitialize();
