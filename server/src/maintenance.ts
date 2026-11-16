@@ -17,3 +17,4 @@ try {
   // Clear private blobs before metadata: if interrupted, retrying unlink is safe.
   for (const file of files)
     if (existsSync(join(uploads, file.id))) unlinkSync(join(uploads, file.id));
+  sqlite.transaction(() => {
