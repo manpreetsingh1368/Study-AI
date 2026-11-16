@@ -57,3 +57,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
       });
     return { ...parsed, blocks: [] };
   }
+  if (!parsed.blocks.length)
