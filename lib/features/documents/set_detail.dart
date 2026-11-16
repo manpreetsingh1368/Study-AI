@@ -36,6 +36,7 @@ class _SetDetailState extends State<SetDetail> {
   }
 
   Future<void> ask(String kind, String prompt) async {
+    if (prompt.trim().isEmpty) return;
         ),
       ),
     ),
