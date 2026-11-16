@@ -773,6 +773,7 @@ export function createApp(
         uid,
       ),
     };
+  });
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
