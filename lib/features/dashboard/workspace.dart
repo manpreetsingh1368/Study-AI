@@ -116,7 +116,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                                   setState(() => collapsed = !collapsed),
                               icon: const Icon(Icons.menu_open_rounded),
                             ),
-                              onSearch: (v) => setState(() => search = v),
                             ),
                           ),
                         ],
