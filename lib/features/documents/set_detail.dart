@@ -410,6 +410,7 @@ class _SetDetailState extends State<SetDetail> {
         bytes: Uint8List.fromList(utf8.encode(text)),
       );
     });
+  }
                         ),
                       ),
                     ),
