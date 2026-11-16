@@ -43,3 +43,4 @@ try {
   console.log(
     `Maintenance completed: ${files.length} expired private files removed; tombstones retained.`,
   );
+} finally {
