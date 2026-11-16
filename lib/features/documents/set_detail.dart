@@ -491,4 +491,5 @@ class _SetDetailState extends State<SetDetail> {
         ])
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
+            child: OutlinedButton(
 }
