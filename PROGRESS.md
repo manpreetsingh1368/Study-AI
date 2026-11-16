@@ -53,7 +53,6 @@ Modified existing files:
 - `lib/main.dart`
 - `test/widget_test.dart`
 - `README.md`
-- `macos/Runner/DebugProfile.entitlements`
 - `macos/Runner/Release.entitlements`
 
 Created implementation/documentation files:
