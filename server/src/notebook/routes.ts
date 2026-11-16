@@ -281,3 +281,4 @@ export function registerNotebookRoutes(
           "INSERT INTO notebook_entries VALUES(?,?,?,?,?,?,?,?)",
           b.id,
           sid,
+          b.kind,
