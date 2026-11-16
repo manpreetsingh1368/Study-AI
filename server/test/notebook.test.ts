@@ -49,3 +49,4 @@ async function setup(t: any, generate = supported) {
       payload,
     });
     return { status: r.statusCode, body: r.json() };
+  }
