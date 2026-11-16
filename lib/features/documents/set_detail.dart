@@ -669,4 +669,5 @@ class _SetDetailState extends State<SetDetail> {
                   avatar: const Icon(
                     Icons.format_quote,
                     size: 12,
+                    color: accent,
 }
