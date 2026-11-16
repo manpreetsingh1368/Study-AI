@@ -67,3 +67,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     assert.equal(
       (
         sqlite
+          .prepare("SELECT version FROM sync_changes WHERE set_id=?")
