@@ -183,6 +183,7 @@ class _SetDetailState extends State<SetDetail> {
       context: context,
       isScrollControlled: true,
       useSafeArea: true,
+      showDragHandle: true,
                         ),
                       ),
                     ),
