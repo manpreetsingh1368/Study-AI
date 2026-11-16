@@ -483,6 +483,7 @@ export function createApp(
       if (current.used >= current.generations)
         fail(429, "Daily AI generation limit reached.");
       run(
+        "INSERT INTO generation_usage(id,user_id,day,status,created_at,request_hash,request_config) VALUES(?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET day=excluded.day,status=excluded.status,created_at=excluded.created_at",
         usage,
         u.id,
         new Date(now()).toISOString().slice(0, 10),
