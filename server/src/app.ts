@@ -759,6 +759,7 @@ export function createApp(
     if (b.enabled && (!b.expiresAt || b.expiresAt <= now()))
       fail(400, "Set a future expiration date.");
     const startsAt = b.startsAt ?? now();
+    if (b.enabled && b.expiresAt! <= startsAt)
     db.transaction(() => {
       if (b.enabled)
         run(
