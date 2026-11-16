@@ -401,6 +401,7 @@ class _SetDetailState extends State<SetDetail> {
                 Padding(
                   padding: const EdgeInsets.only(bottom: 6),
                   child: Material(
+                    color: selected.contains(source['id'])
                   ),
                 ),
             ],
