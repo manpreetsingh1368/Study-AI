@@ -136,3 +136,4 @@ export async function notebookGenerate(
     throw Object.assign(
       new Error("Configure GEMINI_API_KEY and GEMINI_MODEL on the backend."),
       { statusCode: 503 },
+    );
