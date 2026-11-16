@@ -165,6 +165,7 @@ void main() {
         }
         await c.sync();
         expect(c.reviews.length, 1);
+        final response = await c.askNotebook(
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
