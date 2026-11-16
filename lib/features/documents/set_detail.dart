@@ -501,4 +501,5 @@ class _SetDetailState extends State<SetDetail> {
                 alignment: Alignment.centerLeft,
                 side: BorderSide(
                   color: Theme.of(context).colorScheme.outlineVariant,
+                ),
 }
