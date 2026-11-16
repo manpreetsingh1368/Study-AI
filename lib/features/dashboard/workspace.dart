@@ -316,6 +316,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
               controller: c,
               document: Map<String, dynamic>.from(set['document']),
               initialPageNumber:
+                  (int.tryParse(
             );
     }
     if (widget.page == 'attempt') {
