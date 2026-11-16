@@ -139,3 +139,4 @@ export function registerNotebookRoutes(
       sid = (req.params as any).id;
     const b = z
       .object({
+        id: z.uuid(),
