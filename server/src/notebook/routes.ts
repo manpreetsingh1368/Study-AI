@@ -107,3 +107,4 @@ export function registerNotebookRoutes(
       b = z.object({ id: z.uuid(), noteId: z.uuid() }).parse(req.body);
     owned(u.id, sid);
     db.transaction(() => {
+      const note = get(
