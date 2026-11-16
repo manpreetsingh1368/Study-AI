@@ -195,6 +195,7 @@ class LocalStore {
       await txn.insert('cache', {
         'account': account,
         'key': 'sets',
+        'value': jsonEncode(sets),
   Future<void> remove(String id) async {
     await db.delete('outbox', where: 'id=?', whereArgs: [id]);
   }
