@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-              onPressed: busy
                   ? null
                   : () => showModalBottomSheet(
                       context: context,
