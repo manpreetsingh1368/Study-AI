@@ -73,6 +73,7 @@ While signed in, enter your current password in Settings and choose **Create a o
 flutter analyze
 flutter test
 cd server
+npm run check
 
 ## Android, iOS and macOS
 
