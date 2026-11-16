@@ -260,6 +260,7 @@ class _SetDetailState extends State<SetDetail> {
         content: SizedBox(
           width: 560,
           child: SingleChildScrollView(
+            child: Column(
                         ),
                       ),
                     ),
