@@ -411,6 +411,7 @@ class _SetDetailState extends State<SetDetail> {
                         Checkbox(
                           value: selected.contains(source['id']),
                           onChanged: busy
+                              ? null
                   ),
                 ),
             ],
