@@ -133,3 +133,4 @@ export async function notebookGenerate(
   const key = process.env.GEMINI_API_KEY,
     model = process.env.GEMINI_MODEL;
   if (!key || !model)
+    throw Object.assign(
