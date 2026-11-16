@@ -52,6 +52,7 @@ class _SetDetailState extends State<SetDetail> {
       });
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (chatScroll.hasClients) {
+          chatScroll.animateTo(
         ),
       ),
     ),
