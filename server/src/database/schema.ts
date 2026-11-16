@@ -192,3 +192,4 @@ export const recoveryCodes = sqliteTable("recovery_codes", {
   codeHash: text("code_hash").notNull().unique(),
   expiresAt: integer("expires_at").notNull(),
   createdAt: integer("created_at").notNull(),
+});
