@@ -315,3 +315,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
           heading: "From the PDF",
           text: "ATP is an energy carrier.",
           citations: [
+            {
