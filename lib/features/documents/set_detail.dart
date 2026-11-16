@@ -119,6 +119,7 @@ class _SetDetailState extends State<SetDetail> {
                 const SizedBox(height: 16),
                 TextField(
                   controller: text,
+                  minLines: 7,
                 ),
               ],
             ),
