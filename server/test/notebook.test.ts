@@ -307,3 +307,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
   const directory = mkdtempSync(join(tmpdir(), "pdf-grounding-"));
   const app = createApp({
     dataDir: directory,
+    uploadDir: join(directory, "uploads"),
