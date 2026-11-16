@@ -639,3 +639,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
       })
     ).status,
     401,
+  );
