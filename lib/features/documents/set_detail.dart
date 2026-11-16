@@ -267,6 +267,7 @@ class _SetDetailState extends State<SetDetail> {
                 if (isPdf)
                   Text(
                     'Page ${cite['page']}',
+                    style: const TextStyle(
                         ),
                       ),
                     ),
