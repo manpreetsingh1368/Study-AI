@@ -49,7 +49,6 @@ Implementation follows Google's [generateContent API](https://ai.google.dev/api/
 
 ## Data, offline use and synchronization
 
-The backend is authoritative. Each account owns its sets, questions, cards, attempts and reviews. The client stores notes/questions/cards and server analytics in local SQLite under the platform application-support directory. Tokens use platform secure storage. Original PDF bytes are not cached offline yet.
 
 Creating, editing and deleting study sets works offline. Local changes and their stable operation IDs are saved atomically before any network call. The backend checks record versions and stores operation receipts in the same transaction as the mutation, so a dropped HTTP response can be retried without duplicating work. PDFs also have a durable upload queue and stable document IDs. Edits to folders synchronize with the study set.
 
