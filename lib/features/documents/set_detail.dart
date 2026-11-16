@@ -674,4 +674,5 @@ class _SetDetailState extends State<SetDetail> {
                   label: Text(
                     '${i + 1} · ${block['citations'][i]['page'] == null ? 'Notes' : 'p. ${block['citations'][i]['page']}'}',
                     style: const TextStyle(fontSize: 10, color: accent),
+                  ),
 }
