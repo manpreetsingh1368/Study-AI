@@ -27,3 +27,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
       ],
     },
   ],
+  followUps: ["How do cells use this energy?"],
