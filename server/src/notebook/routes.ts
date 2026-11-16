@@ -308,3 +308,4 @@ export function registerNotebookRoutes(
 }
 export function notebookState(sid: string, get: any, all: any) {
   return {
+    entries: all(
