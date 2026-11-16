@@ -755,6 +755,7 @@ export function createApp(
     if (!u) fail(404, "Student not found.");
     return {
       user: u,
+      plan: plan(uid),
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
