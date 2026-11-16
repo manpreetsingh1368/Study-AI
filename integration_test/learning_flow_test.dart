@@ -111,3 +111,4 @@ void main() {
         await tester.pumpAndSettle();
         await c.authenticate(
           register: true,
+          email: 'native-test@example.com',
