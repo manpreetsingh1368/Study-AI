@@ -201,6 +201,7 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                     IconButton(
+                      tooltip: 'Close source',
                         ),
                       ),
                     ),
