@@ -204,3 +204,4 @@ export function registerNotebookRoutes(
           "Selected sources exceed 100,000 characters of extracted text. Select fewer sources or a shorter document.",
         );
     }
+    if (!chunks.length)
