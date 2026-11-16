@@ -224,3 +224,4 @@ test("source selection excludes previous conversations about unchecked sources; 
     ["chat", [one.id]],
     ["guide", [two.id]],
     ["faq", [two.id]],
+  ] as const) {
