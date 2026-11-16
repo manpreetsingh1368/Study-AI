@@ -60,6 +60,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
           b.setId,
           u.id,
         );
+        return {
       }
       if (b.kind === "create") {
         if (
