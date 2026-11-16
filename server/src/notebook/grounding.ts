@@ -9,3 +9,4 @@ export type SourceChunk = {
   version: number;
   page: number | null;
   text: string;
+};
