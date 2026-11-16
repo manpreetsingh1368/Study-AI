@@ -380,6 +380,7 @@ class _SetDetailState extends State<SetDetail> {
         ],
       ),
     );
+    if (save == true && mounted) {
                         ),
                       ),
                     ),
