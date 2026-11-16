@@ -150,3 +150,4 @@ export function registerNotebookRoutes(
     const hash = digest({ sid, kind: b.kind, prompt: b.prompt, sourceIds });
     const previous = get("SELECT * FROM notebook_entries WHERE id=?", b.id);
     if (previous) {
+      if (previous.notebook_id !== sid || previous.request_hash !== hash)
