@@ -612,7 +612,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
             description: 'Create a set or try another search.',
           )
         else
-          ...filtered.map(setTile),
       ],
     );
   }
