@@ -879,6 +879,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       ),
       SubscriptionCard(
         name: 'Free',
+        description:
       ),
       const SizedBox(height: 20),
       SubscriptionCard(
