@@ -39,3 +39,4 @@ export type NotebookInput = {
   prompt: string;
   chunks: SourceChunk[];
   history: { prompt: string; answer: string }[];
+};
