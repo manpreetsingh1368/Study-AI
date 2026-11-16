@@ -373,4 +373,5 @@ class _SetDetailState extends State<SetDetail> {
               : null,
         ),
         const Divider(height: 1),
+        Expanded(
 }
