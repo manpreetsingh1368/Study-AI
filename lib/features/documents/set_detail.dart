@@ -810,4 +810,5 @@ class _SetDetailState extends State<SetDetail> {
                     'Your learning collections',
                     style: TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
                   ),
+                ),
 }
