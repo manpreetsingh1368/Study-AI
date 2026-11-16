@@ -9,6 +9,7 @@
     "test": "tsx --test test/*.test.ts",
     "admin": "tsx src/admin.ts",
     "backup": "tsx src/backup.ts",
+    "maintenance": "tsx src/maintenance.ts"
   },
   "dependencies": {
     "@fastify/helmet": "^13.0.0",
