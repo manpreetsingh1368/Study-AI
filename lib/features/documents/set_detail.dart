@@ -175,6 +175,7 @@ class _SetDetailState extends State<SetDetail> {
     final title = TextEditingController(), text = TextEditingController();
     final value = await showDialog<bool>(
       context: context,
+      builder: (ctx) => AlertDialog(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
