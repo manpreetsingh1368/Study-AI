@@ -272,3 +272,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
         ...supported({ kind: "chat", prompt: "", history: [], chunks }),
         blocks: [
           {
+            heading: "Bad",
