@@ -108,3 +108,4 @@ export function registerNotebookRoutes(
     owned(u.id, sid);
     db.transaction(() => {
       const note = get(
+        "SELECT * FROM notebook_notes WHERE id=? AND notebook_id=?",
