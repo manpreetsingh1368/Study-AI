@@ -511,6 +511,7 @@ export function createApp(
           "SELECT * FROM collections WHERE id=? AND set_id=?",
           previousUsage.collection_id,
           sid,
+        );
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
