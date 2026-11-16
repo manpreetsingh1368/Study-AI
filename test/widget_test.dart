@@ -166,6 +166,7 @@ void main() {
         await tester.tap(find.text('A.  Energy'));
         await tester.pumpAndSettle();
         expect(
+          find.text('ATP stores and transfers chemical energy.'),
 }
 
 class WidgetMemoryStore extends LocalStore {
