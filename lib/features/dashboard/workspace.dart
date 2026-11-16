@@ -571,6 +571,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
+                  children: [
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
