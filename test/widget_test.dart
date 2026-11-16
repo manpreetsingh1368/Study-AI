@@ -183,6 +183,7 @@ void main() {
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
             .go('/settings');
+        await tester.pumpAndSettle();
 }
 
 class WidgetMemoryStore extends LocalStore {
