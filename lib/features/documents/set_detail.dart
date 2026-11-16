@@ -825,4 +825,5 @@ class _SetDetailState extends State<SetDetail> {
                 label: const Text(
                   'Create quizzes & cards',
                   style: TextStyle(fontSize: 11),
+                ),
 }
