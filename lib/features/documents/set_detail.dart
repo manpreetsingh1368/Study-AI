@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-          style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height: 16),
         if (decks.isEmpty)
