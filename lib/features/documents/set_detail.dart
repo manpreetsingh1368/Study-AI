@@ -385,4 +385,5 @@ class _SetDetailState extends State<SetDetail> {
                   controller: chatScroll,
                   padding: const EdgeInsets.all(20),
                   children: [
+                    if ((notebook['total'] ?? 0) > entries.length)
 }
