@@ -92,3 +92,4 @@ void main() {
           );
       final port = jsonDecode(line)['port'];
       FlutterSecureStorage.setMockInitialValues(
+        {},
