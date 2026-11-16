@@ -22,6 +22,7 @@ class _SetDetailState extends State<SetDetail> {
   String? error;
   StudyController get c => widget.controller;
   Map<String, dynamic> get notebook =>
+      Map<String, dynamic>.from(widget.set['notebook'] ?? {});
     setState(() {
       busy = true;
       error = null;
