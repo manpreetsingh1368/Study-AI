@@ -400,6 +400,7 @@ class _SetDetailState extends State<SetDetail> {
               for (final source in filtered)
                 Padding(
                   padding: const EdgeInsets.only(bottom: 6),
+                  child: Material(
                   ),
                 ),
             ],
