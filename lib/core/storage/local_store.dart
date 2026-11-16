@@ -102,6 +102,7 @@ class LocalStore {
         'body': jsonEncode(body),
       }, conflictAlgorithm: ConflictAlgorithm.ignore);
       await txn.insert('cache', {
+        'account': account,
   }
 
   Future<void> queueMutation(
