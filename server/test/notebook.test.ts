@@ -123,3 +123,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     409,
   );
   const note = {
+    id: randomUUID(),
