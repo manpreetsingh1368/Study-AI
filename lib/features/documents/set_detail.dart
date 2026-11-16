@@ -113,6 +113,7 @@ class _SetDetailState extends State<SetDetail> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 TextField(
+                  controller: title,
                 ),
                 const SizedBox(height: 16),
                 TextField(
