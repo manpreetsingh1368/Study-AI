@@ -79,6 +79,7 @@ Only checked source material and prior conversation turns confined to those same
 
 The most recent 80 responses are cached per notebook, with an earlier-response loader for history; up to 100 saved notes are supported per notebook. Deleting a source does not automatically remove excerpts already saved into a different notebook. Account deletion still removes all owned records. Retention maintenance purges content belonging to deleted notebooks while preserving sync tombstones.
 
+
 ## Recovery codes
 
 While signed in, enter your current password in Settings and choose **Create a one-time recovery code**. Store it privately; generating another invalidates the old code. Only its SHA-256 digest is retained on the server. The 256-bit code expires after one year and can reset the password once through **Use a recovery code** on the login screen. Resetting the password consumes the code and revokes all sessions. Changing the password also invalidates recovery codes. There is no email verification, email reset delivery or fake recovery email.
