@@ -204,6 +204,7 @@ class _SetDetailState extends State<SetDetail> {
                       tooltip: 'Close source',
                       onPressed: () => Navigator.pop(context),
                       icon: const Icon(Icons.close),
+                    ),
                         ),
                       ),
                     ),
