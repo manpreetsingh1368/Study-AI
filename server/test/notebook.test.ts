@@ -82,3 +82,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     kind: "chat",
     prompt: "Explain ATP.",
     sourceIds: [set.id],
+  };
