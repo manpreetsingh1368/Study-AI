@@ -240,6 +240,7 @@ class _SetDetailState extends State<SetDetail> {
     );
   }
 
+  Future<void> citation(Map<String, dynamic> cite) async {
                         ),
                       ),
                     ),
