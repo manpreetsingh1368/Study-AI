@@ -106,6 +106,7 @@ void main() {
           RepaintBoundary(
             key: captureKey,
             child: ProviderScope(
+              overrides: [studyProvider.overrideWithValue(c)],
           ),
         );
         await tester.pumpAndSettle();
