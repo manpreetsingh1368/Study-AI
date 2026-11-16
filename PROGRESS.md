@@ -63,6 +63,7 @@ Application, backend, tests, deployment and documentation files created or updat
 - `lib/features/documents/notes_editor.dart`
 - `lib/features/documents/pdf_screen.dart`
 - `lib/features/documents/set_detail.dart`
+- `lib/features/documents/study_tools.dart`
 - `lib/features/onboarding/onboarding_screen.dart`
 - `lib/features/quizzes/study_sessions.dart`
 - `lib/features/settings/settings_page.dart`
