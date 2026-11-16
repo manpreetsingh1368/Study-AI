@@ -978,4 +978,5 @@ class _SetDetailState extends State<SetDetail> {
                             onPressed: () => Navigator.pop(ctx),
                             child: const Text('Done'),
                           ),
+                        ],
 }
