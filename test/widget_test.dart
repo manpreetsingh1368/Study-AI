@@ -152,6 +152,7 @@ void main() {
         GoRouter.of(ctx).go('/set/sample');
         await tester.pumpAndSettle();
         expect(find.text('Your learning collections'), findsOneWidget);
+        expect(tester.takeException(), isNull);
 }
 
 class WidgetMemoryStore extends LocalStore {
