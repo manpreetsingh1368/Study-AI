@@ -212,6 +212,7 @@ void main() {
                 captureKey.currentContext!.findRenderObject()!
                     as RenderRepaintBoundary;
             final captured = await boundary.toImage(pixelRatio: 1.5);
+            final png = await captured.toByteData(
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
