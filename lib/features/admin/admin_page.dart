@@ -125,6 +125,7 @@ class _AdminPageState extends State<AdminPage> {
                           if (mounted) setState(() => error = e.toString());
                         }
                       },
+                      child: const Text('Account details'),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
