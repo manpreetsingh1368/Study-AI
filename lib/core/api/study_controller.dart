@@ -204,6 +204,7 @@ class StudyController extends ChangeNotifier {
           if (operation['path'] == '/sync/mutate') {
             final remaining = (await store.pending(uid))
                 .where((op) => op['id'] != operation['id'])
+                .toList();
             final later = remaining.any(
               (op) =>
                   op['path'] == '/sync/mutate' &&
