@@ -677,4 +677,5 @@ class _SetDetailState extends State<SetDetail> {
                   ),
                   onPressed: () => citation(
                     Map<String, dynamic>.from(block['citations'][i]),
+                  ),
 }
