@@ -72,6 +72,7 @@ While signed in, enter your current password in Settings and choose **Create a o
 ```sh
 flutter analyze
 flutter test
+cd server
 
 ## Android, iOS and macOS
 
