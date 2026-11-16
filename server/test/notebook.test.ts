@@ -248,3 +248,4 @@ test("source selection excludes previous conversations about unchecked sources; 
         id: randomUUID(),
         kind: "summary",
         prompt: "Overview",
+        sourceIds: [one.id],
