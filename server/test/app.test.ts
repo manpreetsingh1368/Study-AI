@@ -651,3 +651,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
       password: "replacement-password",
     })
   ).body;
+  advance(366 * 86400000);
