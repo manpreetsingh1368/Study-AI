@@ -68,3 +68,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   const set = (
     await call("POST", "/sets", a.token, {
       title: "Cell biology",
+      notes: sourceText,
