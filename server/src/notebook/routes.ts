@@ -289,3 +289,4 @@ export function registerNotebookRoutes(
           now(),
         );
         run("UPDATE generation_usage SET status='success' WHERE id=?", b.id);
+        run(
