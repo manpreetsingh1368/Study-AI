@@ -113,3 +113,4 @@ export function registerNotebookRoutes(
         sid,
       );
       if (!note) fail(404, "Note not found.");
+      if (!note.deleted) {
