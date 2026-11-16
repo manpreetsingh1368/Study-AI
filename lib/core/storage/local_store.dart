@@ -105,6 +105,7 @@ class LocalStore {
         'account': account,
         'key': 'sets',
         'value': jsonEncode(sets),
+      }, conflictAlgorithm: ConflictAlgorithm.replace);
   }
 
   Future<void> queueMutation(
