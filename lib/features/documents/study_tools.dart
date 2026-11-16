@@ -333,3 +333,4 @@ class _StudyToolsState extends State<StudyTools> {
                                   ? (c.plan['cards'] ?? 5)
                                   : (pro ? 50 : 10)),
                         ),
+                    ],
