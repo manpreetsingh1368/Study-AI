@@ -480,6 +480,7 @@ export function createApp(
     const usage = b.id || id();
     const requestConfig = digest(
       JSON.stringify({
+        sid,
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
