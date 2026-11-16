@@ -227,3 +227,4 @@ export const notebookPreferences = sqliteTable("notebook_preferences", {
     .primaryKey()
     .references(() => studySets.id, { onDelete: "cascade" }),
   sourceIds: text("source_ids").notNull(),
+});
