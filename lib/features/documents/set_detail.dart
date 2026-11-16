@@ -303,7 +303,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                    label: const Text('Difficulty'),
                     onSelected: busy ? null : (v) => setState(() => level = v!),
                     dropdownMenuEntries: [
                       const DropdownMenuEntry(value: 'easy', label: 'Easy'),
