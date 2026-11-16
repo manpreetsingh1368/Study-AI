@@ -41,3 +41,4 @@ Uint8List validPdf() {
     '<< /Length ${stream.length} >>\nstream\n$stream\nendstream',
     '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>',
   ];
+  var text = '%PDF-1.4\n';
