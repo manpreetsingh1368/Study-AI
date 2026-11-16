@@ -78,6 +78,7 @@ Created implementation/documentation files:
 - `server/deploy/study-ai-backup.service`
 - `server/deploy/study-ai-backup.timer`
 - `server/deploy/study-ai-maintenance.service`
+- `server/deploy/study-ai-maintenance.timer`
 - `server/deploy/study-ai.service`
 - `server/migrations/001_initial.sql`
 - `server/migrations/002_learning_sync.sql`
