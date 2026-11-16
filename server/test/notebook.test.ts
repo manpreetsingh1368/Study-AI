@@ -19,3 +19,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
     {
       heading: "Key concept",
       text: "ATP transfers energy for cellular processes.",
+      citations: [
