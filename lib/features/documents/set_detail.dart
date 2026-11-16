@@ -504,4 +504,5 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
+                ),
 }
