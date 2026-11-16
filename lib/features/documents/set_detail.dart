@@ -621,4 +621,5 @@ class _SetDetailState extends State<SetDetail> {
                         .map((b) => '${b['heading']}\n${b['text']}')
                         .join('\n\n'),
                   ),
+                ),
 }
