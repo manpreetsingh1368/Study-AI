@@ -129,6 +129,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       );
                       if (!context.mounted) return;
                       await showDialog<void>(
+                        context: context,
             OutlinedButton(
               onPressed: busy
                   ? null
