@@ -63,6 +63,7 @@ Sign-out clears private cached data when no work remains. Otherwise the pending 
 
 The app includes first-run onboarding, saved appearance, folders, desktop PDF drag/drop, a resizable PDF/notes reading panel, and global search with Ctrl/Command+K. Ctrl/Command+N creates a set; quiz answers support keys 1–4, flashcards support Space and arrow keys.
 
+## Notebook workspace and Studio
 
 ## Recovery codes
 
