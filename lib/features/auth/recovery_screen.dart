@@ -111,3 +111,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
     code.dispose();
     password.dispose();
     super.dispose();
+  }
