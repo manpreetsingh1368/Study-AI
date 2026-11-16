@@ -200,3 +200,4 @@ void main() {
         other.dispose();
         await store.db.close();
         await otherStore.db.close();
+        process.kill();
