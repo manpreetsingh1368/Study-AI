@@ -19,6 +19,7 @@ class _SetDetailState extends State<SetDetail> {
       sourceSearch = TextEditingController();
   final composerFocus = FocusNode();
   final chatScroll = ScrollController();
+  late Set<String> selected;
   String? error;
   bool busy = false;
   int mobileTab = 1;
