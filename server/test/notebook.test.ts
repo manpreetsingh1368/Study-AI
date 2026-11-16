@@ -346,3 +346,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       method: "POST",
       url: "/sets",
       headers: { authorization: `Bearer ${auth.token}` },
+      payload: { title: "PDF only", notes: "" },
