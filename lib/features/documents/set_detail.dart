@@ -321,6 +321,7 @@ class _SetDetailState extends State<SetDetail> {
         widget.set['id'],
         entry['kind'] == 'chat'
             ? (entry['prompt'] as String).substring(
+                0,
                         ),
                       ),
                     ),
