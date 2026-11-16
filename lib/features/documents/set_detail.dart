@@ -243,6 +243,7 @@ class _SetDetailState extends State<SetDetail> {
                       Expanded(
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(12, 0, 12, 12),
+                          child: panel(switch (mobileTab) {
                         ),
                       ),
                     ],
