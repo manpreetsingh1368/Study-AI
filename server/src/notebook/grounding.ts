@@ -166,3 +166,4 @@ export async function notebookGenerate(
       throw Object.assign(
         new Error(
           response.status === 429
+            ? "AI quota exceeded. Try again later."
