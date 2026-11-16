@@ -203,6 +203,7 @@ class _SetDetailState extends State<SetDetail> {
                     IconButton(
                       tooltip: 'Close source',
                       onPressed: () => Navigator.pop(context),
+                      icon: const Icon(Icons.close),
                         ),
                       ),
                     ),
