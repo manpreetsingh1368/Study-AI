@@ -158,6 +158,7 @@ class _SetDetailState extends State<SetDetail> {
           type: FileType.custom,
           allowedExtensions: ['pdf'],
         );
+        if (file == null) return;
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
