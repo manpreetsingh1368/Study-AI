@@ -162,3 +162,4 @@ class _StudyToolsState extends State<StudyTools> {
         if (sideBySide && s['document'] != null)
           SizedBox(
             height: 540,
+            child: LayoutBuilder(
