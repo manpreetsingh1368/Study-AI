@@ -5,6 +5,7 @@ if (!directory) throw new Error("Provide a temporary test data directory.");
 const app = createApp({
   dataDir: `${directory}/data`,
   uploadDir: `${directory}/uploads`,
+  notebookGenerate: async (input) => ({
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
