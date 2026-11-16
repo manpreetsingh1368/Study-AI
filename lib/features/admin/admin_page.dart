@@ -85,6 +85,7 @@ class _AdminPageState extends State<AdminPage> {
                           ),
                           initialDateRange: DateTimeRange(
                             start: DateTime.now(),
+                            end: DateTime.now().add(const Duration(days: 30)),
                           ),
                         );
                         if (date != null) {
