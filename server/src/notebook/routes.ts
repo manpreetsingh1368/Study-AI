@@ -254,3 +254,4 @@ export function registerNotebookRoutes(
           ),
         )
         .slice(0, 4)
+        .reverse()
