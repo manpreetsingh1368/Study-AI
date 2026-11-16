@@ -181,3 +181,4 @@ class _StudyToolsState extends State<StudyTools> {
                     cursor: SystemMouseCursors.resizeLeftRight,
                     child: GestureDetector(
                       behavior: HitTestBehavior.opaque,
+                      onHorizontalDragUpdate: (d) => setState(
