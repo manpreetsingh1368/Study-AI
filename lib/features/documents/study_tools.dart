@@ -296,3 +296,4 @@ class _StudyToolsState extends State<StudyTools> {
                         value: 'flashcards',
                         label: 'Flashcards',
                       ),
+                      DropdownMenuEntry(
