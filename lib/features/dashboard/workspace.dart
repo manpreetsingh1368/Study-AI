@@ -322,6 +322,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                                     .queryParameters['page'] ??
                                 '1',
                           ) ??
+                          1)
             );
     }
     if (widget.page == 'attempt') {
