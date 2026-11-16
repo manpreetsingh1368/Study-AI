@@ -81,3 +81,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
           chunkId: chunk.id,
           setId: chunk.setId,
           sourceId: chunk.sourceId,
+          title: chunk.title,
