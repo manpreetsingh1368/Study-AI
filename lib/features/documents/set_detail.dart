@@ -521,4 +521,5 @@ class _SetDetailState extends State<SetDetail> {
     ),
   );
   Widget composerBox() => Padding(
+    padding: const EdgeInsets.fromLTRB(16, 8, 16, 14),
 }
