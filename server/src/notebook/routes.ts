@@ -17,3 +17,4 @@ export function registerNotebookRoutes(
   generate: (
     input: NotebookInput,
   ) => Promise<NotebookOutput> = notebookGenerate,
+) {
