@@ -121,6 +121,7 @@ class _AdminPageState extends State<AdminPage> {
                               ],
                             ),
                           );
+                        } catch (e) {
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
