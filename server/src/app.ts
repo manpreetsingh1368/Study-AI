@@ -520,6 +520,7 @@ export function createApp(
         fail(409, "Generation identifier reused with different material.");
       if (previousUsage.status === "pending")
         fail(
+          409,
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
