@@ -556,4 +556,5 @@ class _SetDetailState extends State<SetDetail> {
                       border: InputBorder.none,
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
+                      filled: false,
 }
