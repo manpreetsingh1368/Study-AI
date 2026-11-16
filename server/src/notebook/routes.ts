@@ -320,3 +320,4 @@ export function notebookState(sid: string, get: any, all: any) {
       "SELECT count(*) n FROM notebook_entries WHERE notebook_id=?",
       sid,
     ).n,
+    notes: all(
