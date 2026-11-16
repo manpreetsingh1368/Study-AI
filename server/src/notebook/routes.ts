@@ -227,3 +227,4 @@ export function registerNotebookRoutes(
       if (previousUsage?.status === "pending")
         fail(409, "This notebook request is still running. Refresh shortly.");
       const p = plan(u.id);
+      if (p.used >= p.generations)
