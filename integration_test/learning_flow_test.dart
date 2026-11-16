@@ -192,6 +192,7 @@ void main() {
         await tester.tap(find.text('Close'));
         await tester.pumpAndSettle();
 
+        final screenshotDirectory = const String.fromEnvironment(
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
