@@ -540,4 +540,5 @@ class _SetDetailState extends State<SetDetail> {
                   ask('chat', composer.text),
               const SingleActivator(LogicalKeyboardKey.enter, meta: true): () =>
                   ask('chat', composer.text),
+            },
 }
