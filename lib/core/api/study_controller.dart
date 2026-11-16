@@ -407,6 +407,7 @@ class StudyController extends ChangeNotifier {
           'pending': true,
         });
       } else {
+        notes.removeWhere((n) => n['id'] == body['noteId']);
     }
   }
 
