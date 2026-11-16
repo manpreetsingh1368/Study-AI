@@ -11,3 +11,4 @@ const app = createApp({
         ? []
         : Array.from({ length: input.count }, (_, index) => ({
             question: `What does ATP carry? (${index + 1})`,
+            choices: ["Energy", "Oxygen", "Water", "DNA"],
