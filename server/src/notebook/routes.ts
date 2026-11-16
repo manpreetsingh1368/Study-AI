@@ -125,3 +125,4 @@ export function registerNotebookRoutes(
       { id: sid, noteId } = req.params as any;
     owned(u.id, sid);
     db.transaction(() => {
+      run(
