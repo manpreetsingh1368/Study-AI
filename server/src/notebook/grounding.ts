@@ -53,3 +53,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
   if (parsed.insufficientEvidence) {
     if (parsed.blocks.length)
       throw Object.assign(new Error("Inconsistent evidence response."), {
+        statusCode: 502,
