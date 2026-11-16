@@ -895,4 +895,5 @@ class _SetDetailState extends State<SetDetail> {
             ),
             if (savedNotes.isEmpty)
               Text(
+                'Save an answer or write a thought you don’t want to lose.',
 }
