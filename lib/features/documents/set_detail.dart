@@ -108,6 +108,7 @@ class _SetDetailState extends State<SetDetail> {
   void editSource() => showModalBottomSheet(
     context: context,
     isScrollControlled: true,
+    useSafeArea: true,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
