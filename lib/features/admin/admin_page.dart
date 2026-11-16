@@ -17,6 +17,7 @@ class _AdminPageState extends State<AdminPage> {
   Map<String, dynamic> stats = {};
   String? error;
   String query = '';
+  bool hasMore = false, loading = false;
   @override
   void initState() {
     super.initState();
