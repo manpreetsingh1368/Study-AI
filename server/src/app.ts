@@ -303,6 +303,7 @@ export function createApp(
           password: z.string().min(12).max(128),
         })
         .parse(req.body);
+      const passwordHash = await hash(b.password, { type: argon2id });
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
