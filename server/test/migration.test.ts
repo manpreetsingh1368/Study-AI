@@ -14,3 +14,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
       readFileSync(
         new URL("../migrations/001_initial.sql", import.meta.url),
         "utf8",
+      ),
