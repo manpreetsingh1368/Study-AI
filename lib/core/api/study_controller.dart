@@ -99,6 +99,7 @@ class StudyController extends ChangeNotifier {
     final response = await req
         .send()
         .then(http.Response.fromStream)
+        .timeout(
     final dynamic data;
     try {
       data = jsonDecode(response.body);
