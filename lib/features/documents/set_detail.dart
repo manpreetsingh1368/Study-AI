@@ -398,4 +398,5 @@ class _SetDetailState extends State<SetDetail> {
                       Align(
                         alignment: Alignment.centerRight,
                         child: Container(
+                          margin: const EdgeInsets.only(left: 32, bottom: 18),
 }
