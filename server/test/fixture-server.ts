@@ -9,3 +9,4 @@ const app = createApp({
     questions:
       input.kind === "flashcards"
         ? []
+        : Array.from({ length: input.count }, (_, index) => ({
