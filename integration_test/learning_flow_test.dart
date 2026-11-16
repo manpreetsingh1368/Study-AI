@@ -199,6 +199,7 @@ void main() {
           'ATP powers cellular work.',
           entryId: response['id'],
         );
+        expect((await otherStore.pending(other.account)).length, 2);
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
