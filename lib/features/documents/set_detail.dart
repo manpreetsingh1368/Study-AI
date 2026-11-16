@@ -116,7 +116,6 @@ class _SetDetailState extends State<SetDetail> {
                   s['document']['filename'],
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
-                    TextButton.icon(
                       onPressed: () => context.go('/pdf/${s['id']}'),
                       icon: const Icon(Icons.picture_as_pdf_outlined),
                       label: const Text('Open PDF'),
