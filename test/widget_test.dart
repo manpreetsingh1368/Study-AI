@@ -128,6 +128,7 @@ void main() {
                 'difficulty': 'easy',
               },
             ],
+            'flashcards': [
 }
 
 class WidgetMemoryStore extends LocalStore {
