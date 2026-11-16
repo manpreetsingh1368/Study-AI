@@ -772,4 +772,5 @@ class _SetDetailState extends State<SetDetail> {
                               children: [
                                 Text(
                                   item.$2,
+                                  style: const TextStyle(
 }
