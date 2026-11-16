@@ -26,3 +26,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
       .prepare("INSERT INTO questions VALUES(?,?,?,?,?,?,?,?,?)")
       .run(
         "q",
+        "s",
