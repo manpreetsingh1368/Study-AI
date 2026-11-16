@@ -249,6 +249,7 @@ class _SetDetailState extends State<SetDetail> {
         (!isPdf || source['document']?['id'] == cite['sourceId']);
     await showDialog<void>(
       context: context,
+      builder: (ctx) => AlertDialog(
                         ),
                       ),
                     ),
