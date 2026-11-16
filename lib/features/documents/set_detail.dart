@@ -473,4 +473,5 @@ class _SetDetailState extends State<SetDetail> {
           'Meet your material.',
           style: Theme.of(context).textTheme.headlineSmall
               ?.copyWith(fontSize: 28),
+        ),
 }
