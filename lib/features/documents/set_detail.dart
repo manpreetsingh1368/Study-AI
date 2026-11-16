@@ -184,6 +184,7 @@ class _SetDetailState extends State<SetDetail> {
       isScrollControlled: true,
       useSafeArea: true,
       showDragHandle: true,
+      builder: (_) => SizedBox(
                         ),
                       ),
                     ),
