@@ -169,6 +169,7 @@ void main() {
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
         expect(other.reviews.length, 1);
+        expect(other.sets.single['notebook']['notes'].length, 1);
         final bytes = await other.documentBytes(
           other.sets.single['document']['id'],
         );
