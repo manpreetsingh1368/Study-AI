@@ -216,6 +216,7 @@ class StudyController extends ChangeNotifier {
             }
           }
           if (result['notebook'] != null) {
+            final match = RegExp(r'^/notebooks/([^/]+)/')
         } on ApiException catch (e) {
           if (operation['path'] == '/sync/mutate' &&
               [400, 403, 404, 409].contains(e.status)) {
