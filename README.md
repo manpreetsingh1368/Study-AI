@@ -49,6 +49,7 @@ Implementation follows Google's [generateContent API](https://ai.google.dev/api/
 
 ## Data, offline use and synchronization
 
+The backend is authoritative. Notes, PDFs, learning collections, attempt details and review records are cached per account in local SQLite. Opening a PDF or selecting **Keep offline** saves its bytes locally. Tokens use platform secure storage. Local SQLite is not encrypted; protect the operating-system account and disk.
 
 Creating, editing and deleting study sets works offline. Local changes and their stable operation IDs are saved atomically before any network call. The backend checks record versions and stores operation receipts in the same transaction as the mutation, so a dropped HTTP response can be retried without duplicating work. PDFs also have a durable upload queue and stable document IDs. Edits to folders synchronize with the study set.
 
