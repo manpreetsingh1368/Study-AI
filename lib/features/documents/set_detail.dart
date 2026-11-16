@@ -217,6 +217,7 @@ class _SetDetailState extends State<SetDetail> {
                         const SizedBox(width: 14),
                         SizedBox(width: 276, child: panel(studio())),
                       ],
+                    ),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
