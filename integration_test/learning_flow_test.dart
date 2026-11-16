@@ -69,3 +69,4 @@ void main() {
       }
       final temp = await Directory.systemTemp.createTemp('study-native-test-');
       final process = await Process.start(
+        const String.fromEnvironment('NODE_BINARY', defaultValue: 'node'),
