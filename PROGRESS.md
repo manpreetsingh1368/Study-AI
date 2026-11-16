@@ -4,7 +4,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Implemented
 
-- Server-side atomic plan quota reservation, Free/Pro limits, manual grants/expiry, role-protected admin UI/API, audit records and sanitized application error records.
 - Quizzes, answer selection/navigation, optional timer, results/explanations, server scoring, locally persisted draft answers. AI flashcards, flip/swipe/keyboard navigation, known/review decisions, increasing review intervals.
 - Real dashboard totals, quiz trends/history, weak-topic analysis.
 - Account-isolated local SQLite JSON cache; paginated incremental material sync; periodic reconnect polling; durable quiz/review outbox with stable IDs and idempotent replay. Stale note edits/deletions receive HTTP 409; refresh and manually reapply rather than overwrite another device.
