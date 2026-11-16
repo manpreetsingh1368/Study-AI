@@ -48,3 +48,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     const material = sqlite
       .prepare("SELECT * FROM study_sets WHERE id=?")
       .get("s") as any;
+    assert.equal(material.notes, "Important notes");
