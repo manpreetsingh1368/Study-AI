@@ -145,6 +145,7 @@ class _SetDetailState extends State<SetDetail> {
         ),
       ),
     );
+    if (choice == null || !mounted) return;
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
