@@ -292,3 +292,4 @@ export function registerNotebookRoutes(
         run(
           "INSERT INTO notebook_preferences VALUES(?,?) ON CONFLICT(notebook_id) DO UPDATE SET source_ids=excluded.source_ids",
           sid,
+          JSON.stringify(sourceIds),
