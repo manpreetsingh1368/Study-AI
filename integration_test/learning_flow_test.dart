@@ -119,3 +119,4 @@ void main() {
         expect(
           find.text('Your next breakthrough\nstarts here.'),
           findsOneWidget,
+        );
