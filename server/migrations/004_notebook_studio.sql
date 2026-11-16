@@ -6,3 +6,4 @@ CREATE TABLE notebook_preferences(notebook_id TEXT PRIMARY KEY REFERENCES study_
 -- Existing clients need a fresh material snapshot to receive notebook metadata.
 INSERT INTO sync_changes(user_id,set_id,version,deleted) SELECT user_id,id,version,deleted FROM study_sets;
 
+-- Receipts acknowledge operations; they must not retain private historical snapshots.
