@@ -123,3 +123,4 @@ export async function pdfPages(path: string): Promise<string[]> {
       new Error(
         "Could not extract PDF text. Install poppler-utils on the backend; use text-based PDFs or paste a transcript for scanned material.",
       ),
+      { statusCode: 422 },
