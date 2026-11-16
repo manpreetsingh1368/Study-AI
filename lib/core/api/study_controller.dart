@@ -350,6 +350,7 @@ class StudyController extends ChangeNotifier {
       for (final e in {
         'sets': sets,
         'plan': plan,
+        'catalog': catalog,
         'analytics': analytics,
         'advanced': advanced,
         'exams': activeExams,
