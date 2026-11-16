@@ -642,6 +642,7 @@ class StudyController extends ChangeNotifier {
         : const Uuid().v4();
     await store.write(account, 'generation:$sid', {
       'id': operationId,
+      'configuration': configuration,
     await request('POST', '/sets/$sid/generate', {
       'id': operationId,
       'kind': kind,
