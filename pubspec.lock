@@ -334,6 +334,7 @@ packages:
     source: hosted
     version: "4.13.1"
   integration_test:
+    dependency: "direct dev"
   intl:
     dependency: transitive
     description:
