@@ -7,6 +7,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Flutter Material 3 with Riverpod and GoRouter; onboarding, registration, login, dashboard, library, notes/PDF editing, generation controls, quizzes, timed exams, results, collections, flashcard sessions, analytics, history, Free/Pro, profile/settings, conflicts and administration.
 - Adaptive desktop/mobile navigation, light/dark/system appearance persisted locally, translucent sidebar, global search (Ctrl/Command+K), new-set shortcut, folder filters, drag/drop PDF upload, PDF viewer, resizable notes/PDF reading panel, keyboard/swipe/flip study controls and reduced-motion handling for flashcards.
 - Self-hosted Fastify/TypeScript/SQLite with Drizzle schema mappings, prepared domain queries, WAL, foreign keys, indexes and three ordered transactional migrations. Upgrades retain old questions/attempts and backfill collections and sync events.
+- Argon2id, hashed revocable/expiring sessions, secure client token storage, password/profile changes, account deletion, login/API rate limits and owner-operated administrator bootstrap with audit records.
 
 ## Verification
 
