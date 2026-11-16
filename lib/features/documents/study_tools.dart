@@ -230,3 +230,4 @@ class _StudyToolsState extends State<StudyTools> {
                       ? Icons.timer_outlined
                       : Icons.quiz_outlined,
                   color: accent,
+                ),
