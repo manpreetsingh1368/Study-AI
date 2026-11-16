@@ -761,4 +761,5 @@ class _SetDetailState extends State<SetDetail> {
                             'Create a ${item.$2.toLowerCase()} using only the selected sources.',
                           ),
                     child: Padding(
+                      padding: const EdgeInsets.all(14),
 }
