@@ -806,4 +806,5 @@ class _SetDetailState extends State<SetDetail> {
             Row(
               children: [
                 const Expanded(
+                  child: Text(
 }
