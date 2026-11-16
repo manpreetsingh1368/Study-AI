@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                  : () => showModalBottomSheet(
                       context: context,
                       isScrollControlled: true,
                       builder: (_) => SizedBox(
