@@ -193,3 +193,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
   assert.equal(
     (
       await call("POST", `/notebooks/${set.id}/ask`, a.token, {
+        id: randomUUID(),
