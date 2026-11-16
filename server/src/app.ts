@@ -310,6 +310,7 @@ export function createApp(
           b.email,
           digest(b.code),
           now(),
+        );
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
