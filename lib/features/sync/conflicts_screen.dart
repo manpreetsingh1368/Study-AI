@@ -96,6 +96,7 @@ class ConflictsScreen extends StatelessWidget {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 SnackBar(content: Text(e.toString())),
                               );
+                            }
                           }
                         },
                         child: const Text('Retry against current version'),
