@@ -71,3 +71,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
           .get("s") as any
       ).version,
       2,
+    );
