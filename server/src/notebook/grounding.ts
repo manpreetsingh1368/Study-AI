@@ -63,3 +63,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
     });
   return {
     ...parsed,
+    blocks: parsed.blocks.map((block) => ({
