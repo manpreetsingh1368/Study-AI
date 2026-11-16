@@ -11,3 +11,4 @@ class RecoveryScreen extends StatefulWidget {
   State<RecoveryScreen> createState() => _RecoveryScreenState();
 }
 
+class _RecoveryScreenState extends State<RecoveryScreen> {
