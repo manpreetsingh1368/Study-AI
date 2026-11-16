@@ -88,3 +88,4 @@ void main() {
           .catchError(
             (Object e) => throw StateError(
               'Fixture startup failed: ${stderr.join()} ($e)',
+            ),
