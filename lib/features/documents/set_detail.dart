@@ -422,4 +422,5 @@ class _SetDetailState extends State<SetDetail> {
                       const SizedBox(height: 30),
                     ],
                     if (busy)
+                      const Padding(
 }
