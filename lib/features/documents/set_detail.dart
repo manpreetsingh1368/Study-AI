@@ -382,4 +382,5 @@ class _SetDetailState extends State<SetDetail> {
               : conversation.isEmpty && !busy
               ? emptyChat()
               : ListView(
+                  controller: chatScroll,
 }
