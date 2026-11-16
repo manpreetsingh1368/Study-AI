@@ -174,6 +174,7 @@ class _SetDetailState extends State<SetDetail> {
         if (mounted) setState(() => selected.add(source['id']));
       });
     }
+    title.dispose();
                         ),
                       ),
                     ),
