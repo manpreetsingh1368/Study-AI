@@ -39,3 +39,4 @@ Uint8List validPdf() {
     '<< /Type /Pages /Kids [3 0 R] /Count 1 >>',
     '<< /Type /Page /Parent 2 0 R /MediaBox [0 0 300 200] /Resources << /Font << /F1 5 0 R >> >> /Contents 4 0 R >>',
     '<< /Length ${stream.length} >>\nstream\n$stream\nendstream',
+    '<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>',
