@@ -343,6 +343,7 @@ class _SetDetailState extends State<SetDetail> {
         .where(
           (s) => '${s['title']} ${s['folder']}'.toLowerCase().contains(
             sourceSearch.text.toLowerCase(),
+          ),
                   ),
                 ),
             ],
