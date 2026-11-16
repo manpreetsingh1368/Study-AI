@@ -853,4 +853,5 @@ class _SetDetailState extends State<SetDetail> {
                 dense: true,
                 leading: const Icon(
                   Icons.description_outlined,
+                  color: accent,
 }
