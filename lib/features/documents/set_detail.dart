@@ -549,4 +549,5 @@ class _SetDetailState extends State<SetDetail> {
                     controller: composer,
                     focusNode: composerFocus,
                     enabled: !busy,
+                    minLines: 1,
 }
