@@ -91,6 +91,7 @@ class LocalStore {
   Future<void> queueNotebookRecord(
     String account,
     String path,
+    Map<String, dynamic> body,
   }
 
   Future<void> queueMutation(
