@@ -286,3 +286,4 @@ class _StudyToolsState extends State<StudyTools> {
                     label: const Text('Create'),
                     onSelected: busy
                         ? null
+                        : (v) => setState(() {
