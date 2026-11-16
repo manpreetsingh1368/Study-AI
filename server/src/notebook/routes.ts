@@ -31,3 +31,4 @@ export function registerNotebookRoutes(
     const u = user(req),
       sid = (req.params as any).id;
     owned(u.id, sid);
+    const q = z
