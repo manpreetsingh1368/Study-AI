@@ -431,6 +431,7 @@ class _SetDetailState extends State<SetDetail> {
                 Row(
                   children: [
                     TextButton.icon(
+                      onPressed: () => context.go('/library'),
                         ),
                       ),
                     ),
