@@ -57,3 +57,4 @@ export function registerNotebookRoutes(
           entryId: z.uuid().optional(),
         })
         .parse(req.body);
+    owned(u.id, sid);
