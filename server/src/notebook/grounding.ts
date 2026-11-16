@@ -118,3 +118,4 @@ export async function pdfPages(path: string): Promise<string[]> {
       { timeout: 15000, maxBuffer: 1200000, encoding: "utf8" },
     );
     return stdout.split("\f");
+  } catch {
