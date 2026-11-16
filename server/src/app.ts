@@ -323,6 +323,7 @@ export function createApp(
       })();
       return { ok: true };
     },
+  );
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
