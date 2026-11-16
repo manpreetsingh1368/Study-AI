@@ -298,6 +298,7 @@ class _SetDetailState extends State<SetDetail> {
               onPressed: () {
                 Navigator.pop(ctx);
                 if (isPdf) {
+                  context.go('/pdf/${source['id']}?page=${cite['page']}');
                         ),
                       ),
                     ),
