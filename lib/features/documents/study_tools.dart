@@ -166,3 +166,4 @@ class _StudyToolsState extends State<StudyTools> {
               builder: (context, size) => Row(
                 children: [
                   SizedBox(
+                    width: (size.maxWidth - 14) * split,
