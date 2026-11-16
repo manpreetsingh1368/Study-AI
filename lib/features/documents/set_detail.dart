@@ -991,4 +991,5 @@ class _SetDetailState extends State<SetDetail> {
   );
   @override
   void dispose() {
+    composer.dispose();
 }
