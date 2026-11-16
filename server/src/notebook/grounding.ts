@@ -103,3 +103,4 @@ export function splitSource(
     if (part.trim())
       result.push({
         ...source,
+        id: `${source.sourceId}:${source.page ?? 0}:${result.length}`,
