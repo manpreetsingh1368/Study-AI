@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                  MouseRegion(
                     cursor: SystemMouseCursors.resizeLeftRight,
                     child: GestureDetector(
                       behavior: HitTestBehavior.opaque,
