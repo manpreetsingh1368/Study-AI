@@ -43,6 +43,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Source file inventory
 
+The owner explicitly requested **one commit per changed line**, including individual deletions and additions, after being informed that intermediate commits may not compile. Only local history is updated; nothing is pushed. Existing commits remain intact. Final content is verified against the pre-commit snapshot and each new commit is checked for exactly one changed line. The final response records the resulting count/range.
 
 ## Source inventory
 
