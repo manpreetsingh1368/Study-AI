@@ -395,4 +395,5 @@ class _SetDetailState extends State<SetDetail> {
                         child: const Text('Load earlier responses'),
                       ),
                     for (final raw in conversation) ...[
+                      Align(
 }
