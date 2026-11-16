@@ -23,6 +23,7 @@ class _SetDetailState extends State<SetDetail> {
   StudyController get c => widget.controller;
   Map<String, dynamic> get notebook =>
       Map<String, dynamic>.from(widget.set['notebook'] ?? {});
+  List<dynamic> get entries => notebook['entries'] as List? ?? [];
     setState(() {
       busy = true;
       error = null;
