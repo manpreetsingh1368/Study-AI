@@ -86,3 +86,4 @@ void main() {
           .first
           .timeout(const Duration(seconds: 15))
           .catchError(
+            (Object e) => throw StateError(
