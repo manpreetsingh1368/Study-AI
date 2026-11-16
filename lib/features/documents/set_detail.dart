@@ -926,4 +926,5 @@ class _SetDetailState extends State<SetDetail> {
                           : note['text'],
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(fontSize: 10),
 }
