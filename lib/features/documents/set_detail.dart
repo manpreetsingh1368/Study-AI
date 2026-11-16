@@ -450,4 +450,5 @@ class _SetDetailState extends State<SetDetail> {
   }
 
   Widget emptyChat() => SingleChildScrollView(
+    padding: const EdgeInsets.all(26),
 }
