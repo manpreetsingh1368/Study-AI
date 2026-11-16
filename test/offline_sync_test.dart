@@ -245,6 +245,7 @@ class _RealHttp extends HttpOverrides {}
 
 Future<LocalStore> memoryStore() async {
   sqfliteFfiInit();
+  final db = await databaseFactoryFfi.openDatabase(
   await db.execute(
     'CREATE TABLE cache(account TEXT,key TEXT,value TEXT,PRIMARY KEY(account,key))',
   );
