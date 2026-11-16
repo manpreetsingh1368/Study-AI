@@ -73,3 +73,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
         )
           throw Object.assign(
             new Error(
+              "A citation could not be verified against your sources. Please retry.",
