@@ -384,6 +384,7 @@ class _SetDetailState extends State<SetDetail> {
         const SizedBox(height: 10),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Text(
                   ),
                 ),
             ],
