@@ -24,3 +24,4 @@ class _StudyToolsState extends State<StudyTools> {
   Future<void> action(Future<void> Function() task) async {
     setState(() {
       busy = true;
+      error = null;
