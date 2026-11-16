@@ -25,3 +25,4 @@ const app = createApp({
             back: "An energy carrier",
             topic: "Cell biology",
             difficulty: input.difficulty,
+          })),
