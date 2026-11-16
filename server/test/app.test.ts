@@ -675,3 +675,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
     count: 1,
     difficulty: "medium",
   };
+  const first = await call("POST", `/sets/${sid}/generate`, a.token, operation);
