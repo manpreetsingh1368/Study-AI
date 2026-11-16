@@ -329,3 +329,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
   t.after(async () => {
     await app.close();
     rmSync(directory, { recursive: true, force: true });
+  });
