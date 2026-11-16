@@ -705,4 +705,5 @@ class _SetDetailState extends State<SetDetail> {
                 composerFocus.requestFocus();
               },
               child: Text(follow, style: const TextStyle(fontSize: 11)),
+            ),
 }
