@@ -159,7 +159,6 @@ class _SetDetailState extends State<SetDetail> {
           ),
           const SizedBox(height: 20),
         ],
-        if (sideBySide && s['document'] != null)
           SizedBox(
             height: 540,
             child: LayoutBuilder(
