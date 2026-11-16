@@ -70,3 +70,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
       title: "Cell biology",
       notes: sourceText,
     })
+  ).body.set;
