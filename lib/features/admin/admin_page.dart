@@ -133,6 +133,7 @@ class _AdminPageState extends State<AdminPage> {
             onPressed: loading ? null : () => load(append: true),
             child: Text(loading ? 'Loading…' : 'Load more accounts'),
           ),
+        ),
       const SizedBox(height: 28),
       Text('Generation usage', style: Theme.of(context).textTheme.titleLarge),
       for (final u in stats['usage'] ?? [])
