@@ -151,3 +151,4 @@ export function registerNotebookRoutes(
     const previous = get("SELECT * FROM notebook_entries WHERE id=?", b.id);
     if (previous) {
       if (previous.notebook_id !== sid || previous.request_hash !== hash)
+        fail(409, "Request identifier reused with different data.");
