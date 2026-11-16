@@ -363,6 +363,7 @@ class _SetDetailState extends State<SetDetail> {
                     labelText: 'Your note',
                     alignLabelWithHint: true,
                   ),
+                ),
                         ),
                       ),
                     ),
