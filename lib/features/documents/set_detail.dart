@@ -112,7 +112,6 @@ class _SetDetailState extends State<SetDetail> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                  style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
                 const SizedBox(height: 16),
                 TextField(
