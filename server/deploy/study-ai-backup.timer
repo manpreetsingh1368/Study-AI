@@ -6,3 +6,4 @@ Persistent=true
 RandomizedDelaySec=300
 Unit=study-ai-backup.service
 [Install]
+WantedBy=timers.target
