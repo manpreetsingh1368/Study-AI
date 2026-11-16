@@ -55,6 +55,7 @@ class _AdminPageState extends State<AdminPage> {
           for (final metric in [
             ('Students', stats['students'] ?? 0),
             ('Private documents', stats['documents'] ?? 0),
+            ('Storage bytes', stats['storage'] ?? 0),
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
