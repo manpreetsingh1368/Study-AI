@@ -537,4 +537,5 @@ class _SetDetailState extends State<SetDetail> {
                 LogicalKeyboardKey.enter,
                 control: true,
               ): () =>
+                  ask('chat', composer.text),
 }
