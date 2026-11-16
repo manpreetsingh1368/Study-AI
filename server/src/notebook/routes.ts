@@ -305,3 +305,4 @@ export function registerNotebookRoutes(
       throw e;
     }
   });
+}
