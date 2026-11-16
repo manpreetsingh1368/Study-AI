@@ -85,3 +85,4 @@ class _StudyToolsState extends State<StudyTools> {
                             ),
                             FilledButton(
                               onPressed: () => Navigator.pop(ctx, true),
+                              child: const Text('Delete'),
