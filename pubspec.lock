@@ -336,6 +336,7 @@ packages:
   integration_test:
     dependency: "direct dev"
     description: flutter
+    source: sdk
   intl:
     dependency: transitive
     description:
