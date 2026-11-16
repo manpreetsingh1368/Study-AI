@@ -193,6 +193,7 @@ void main() {
         );
         await other.saveSet('Offline addition', 'A genuinely offline note.');
         expect((await otherStore.pending(other.account)).length, 1);
+        await other.saveNotebookNote(
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
