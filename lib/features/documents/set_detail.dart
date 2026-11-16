@@ -567,4 +567,5 @@ class _SetDetailState extends State<SetDetail> {
                   onPressed: busy || c.offline || validSelection.isEmpty
                       ? null
                       : () => ask('chat', composer.text),
+                  icon: const Icon(Icons.arrow_upward_rounded, size: 20),
 }
