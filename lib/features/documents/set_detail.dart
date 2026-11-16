@@ -363,6 +363,7 @@ class _SetDetailState extends State<SetDetail> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 14),
           child: OutlinedButton.icon(
+            onPressed: busy ? null : addSource,
                   ),
                 ),
             ],
