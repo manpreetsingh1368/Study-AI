@@ -201,6 +201,7 @@ void main() {
         );
         expect((await otherStore.pending(other.account)).length, 2);
         expect(
+          other.sets
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
