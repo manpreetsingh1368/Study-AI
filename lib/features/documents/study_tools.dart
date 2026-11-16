@@ -152,3 +152,4 @@ class _StudyToolsState extends State<StudyTools> {
                               : 'Read beside notes',
                         ),
                       ),
+                  ],
