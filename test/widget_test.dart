@@ -125,6 +125,7 @@ void main() {
                 'answer': 0,
                 'explanation': 'ATP stores and transfers chemical energy.',
                 'topic': 'Biology',
+                'difficulty': 'easy',
 }
 
 class WidgetMemoryStore extends LocalStore {
