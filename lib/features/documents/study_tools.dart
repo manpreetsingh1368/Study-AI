@@ -337,3 +337,4 @@ class _StudyToolsState extends State<StudyTools> {
                   ),
                 ],
               ),
+              const SizedBox(height: 24),
