@@ -959,6 +959,7 @@ export function createApp(
       ),
     };
   });
+  registerNotebookRoutes(
   registerLearningRoutes(app, {
     db,
     user,
