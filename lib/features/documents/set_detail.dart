@@ -923,4 +923,5 @@ class _SetDetailState extends State<SetDetail> {
                     subtitle: Text(
                       note['pending'] == true
                           ? 'Saved offline · waiting to sync'
+                          : note['text'],
 }
