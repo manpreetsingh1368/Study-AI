@@ -380,4 +380,5 @@ class _SetDetailState extends State<SetDetail> {
                   child: answer(report!, isReport: true),
                 )
               : conversation.isEmpty && !busy
+              ? emptyChat()
 }
