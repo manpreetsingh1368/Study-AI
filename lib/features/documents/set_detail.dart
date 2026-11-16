@@ -165,6 +165,7 @@ class _SetDetailState extends State<SetDetail> {
         final source = await c.saveSet(
           file.name.replaceFirst(RegExp(r'\.pdf$', caseSensitive: false), ''),
           '',
+          folder: widget.set['folder'] ?? '',
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
