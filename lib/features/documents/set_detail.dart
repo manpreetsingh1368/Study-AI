@@ -315,6 +315,7 @@ class _SetDetailState extends State<SetDetail> {
           ? Theme.of(context).colorScheme.surfaceContainerLow
           : Theme.of(context).colorScheme.surface,
       borderRadius: BorderRadius.circular(20),
+      border: Border.all(
                   ),
                 ),
             ],
