@@ -282,3 +282,4 @@ export function registerNotebookRoutes(
           b.id,
           sid,
           b.kind,
+          b.prompt,
