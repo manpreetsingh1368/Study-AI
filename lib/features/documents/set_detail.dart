@@ -450,6 +450,7 @@ class _SetDetailState extends State<SetDetail> {
                                   Row(
                                     children: [
                                       Icon(
+                                        source['document'] == null
                   ),
                 ),
             ],
