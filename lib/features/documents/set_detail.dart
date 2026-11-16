@@ -310,6 +310,7 @@ class _SetDetailState extends State<SetDetail> {
     );
   }
 
+  Future<void> pin(Map<String, dynamic> entry) async {
                         ),
                       ),
                     ),
