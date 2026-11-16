@@ -121,6 +121,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                               child: ModernToolbar(
                                 title: title,
                                 onOpenSearch: openSearch,
+                                status: c.syncLabel,
                             ),
                           ],
                         ),
