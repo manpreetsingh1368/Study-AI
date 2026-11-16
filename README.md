@@ -9,7 +9,6 @@ Keep the installed Flutter SDK. This project currently targets Dart 3.14 / Flutt
 System dependencies: Node.js 22 or newer, a C++ compiler/build tools for `better-sqlite3`, Flutter Linux dependencies, SQLite, and Linux Secret Service headers/runtime:
 
 ```sh
-sudo apt install build-essential clang cmake ninja-build pkg-config libgtk-3-dev libsecret-1-dev libsqlite3-dev gnome-keyring
 flutter pub get
 cd server
 npm ci
