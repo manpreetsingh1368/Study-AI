@@ -490,4 +490,5 @@ class _SetDetailState extends State<SetDetail> {
           'What connections exist between these sources?',
         ])
           Padding(
+            padding: const EdgeInsets.only(bottom: 10),
 }
