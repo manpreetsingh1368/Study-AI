@@ -342,6 +342,7 @@ class _SetDetailState extends State<SetDetail> {
       context: context,
       builder: (ctx) => AlertDialog(
         title: const Text('A note for your future self'),
+        content: SizedBox(
                         ),
                       ),
                     ),
