@@ -758,6 +758,7 @@ export function createApp(
       fail(404, "Student not found.");
     if (b.enabled && (!b.expiresAt || b.expiresAt <= now()))
       fail(400, "Set a future expiration date.");
+    const startsAt = b.startsAt ?? now();
     db.transaction(() => {
       if (b.enabled)
         run(
