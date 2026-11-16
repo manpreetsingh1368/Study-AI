@@ -23,6 +23,7 @@ const app = createApp({
       "How do cells use ATP?",
       "Which processes should I review next?",
     ],
+  }),
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
