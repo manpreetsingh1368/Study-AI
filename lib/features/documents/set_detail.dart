@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-        if (s['pending'] == true)
           const Text('Saved on this device · waiting to synchronize'),
         const SizedBox(height: 16),
         Wrap(
