@@ -155,6 +155,7 @@ class ModernToolbar extends StatelessWidget {
                     decoration: const InputDecoration(
                       hintText: 'Search your library',
                       prefixIcon: Icon(Icons.search, size: 19),
+                      isDense: true,
           ),
         const SizedBox(width: 12),
         Tooltip(
