@@ -745,4 +745,5 @@ class _SetDetailState extends State<SetDetail> {
                 'FAQ',
                 'Questions worth asking',
                 Icons.question_answer_outlined,
+              ),
 }
