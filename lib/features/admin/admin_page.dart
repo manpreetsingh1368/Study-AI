@@ -58,6 +58,7 @@ class _AdminPageState extends State<AdminPage> {
             ('Storage bytes', stats['storage'] ?? 0),
           ])
             StudyCard(
+              child: Column(
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
