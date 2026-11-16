@@ -101,6 +101,7 @@ class _AdminPageState extends State<AdminPage> {
                                         'Private storage: ${detail['storage']} bytes',
                                       ),
                                       if (detail['subscription'] != null)
+                                        Text(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
