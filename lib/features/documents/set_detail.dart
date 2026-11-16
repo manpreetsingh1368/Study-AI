@@ -171,6 +171,7 @@ class _SetDetailState extends State<SetDetail> {
         if (mounted) setState(() => selected.add(source['id']));
       });
       return;
+    }
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
