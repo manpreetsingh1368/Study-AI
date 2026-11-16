@@ -93,3 +93,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   ErrorState(message: message!),
                   const SizedBox(height: 16),
                 ],
+                PrimaryActionButton(
