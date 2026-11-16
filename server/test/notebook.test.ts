@@ -177,3 +177,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
         citations: [
           {
             chunkId: input.chunks[0].id,
+            quote: "This sentence never appeared in the source.",
