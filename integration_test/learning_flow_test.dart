@@ -191,3 +191,4 @@ void main() {
           await other.documentBytes(other.sets.single['document']['id']),
           bytes,
         );
+        await other.saveSet('Offline addition', 'A genuinely offline note.');
