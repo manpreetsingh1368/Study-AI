@@ -136,3 +136,4 @@ export function registerNotebookRoutes(
   });
   app.post("/notebooks/:id/ask", async (req) => {
     const u = user(req),
+      sid = (req.params as any).id;
