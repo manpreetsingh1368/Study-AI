@@ -165,3 +165,4 @@ export function registerNotebookRoutes(
     let total = 0;
     for (const source of sources) {
       if (source.notes.trim()) {
+        total += source.notes.length;
