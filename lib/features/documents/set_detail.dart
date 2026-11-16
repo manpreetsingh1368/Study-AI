@@ -622,4 +622,5 @@ class _SetDetailState extends State<SetDetail> {
                         .join('\n\n'),
                   ),
                 ),
+                icon: const Icon(Icons.copy_outlined, size: 16),
 }
