@@ -225,3 +225,4 @@ export function registerNotebookRoutes(
       )
         fail(409, "Request identifier already used.");
       if (previousUsage?.status === "pending")
+        fail(409, "This notebook request is still running. Refresh shortly.");
