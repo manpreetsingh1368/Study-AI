@@ -210,6 +210,7 @@ class _SetDetailState extends State<SetDetail> {
                     padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
                       ),
                       const SizedBox(height: 12),
                       Expanded(
