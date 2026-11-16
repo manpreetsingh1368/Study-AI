@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                label: busy ? 'Creating with Gemini…' : 'Generate with AI',
                 icon: Icons.auto_awesome,
                 onPressed: busy || c.offline
                     ? null
