@@ -134,6 +134,7 @@ void main() {
                 'collection_id': 'cards-one',
                 'front': 'ATP',
                 'back': 'An energy carrier',
+                'topic': 'Biology',
 }
 
 class WidgetMemoryStore extends LocalStore {
