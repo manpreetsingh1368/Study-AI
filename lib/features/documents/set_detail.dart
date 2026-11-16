@@ -216,6 +216,7 @@ class _SetDetailState extends State<SetDetail> {
               ),
               Expanded(
                 child: TabBarView(
+                  children: [
                         ),
                       ),
                     ),
