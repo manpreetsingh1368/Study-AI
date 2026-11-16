@@ -87,3 +87,4 @@ class _StudyToolsState extends State<StudyTools> {
                               onPressed: () => Navigator.pop(ctx, true),
                               child: const Text('Delete'),
                             ),
+                          ],
