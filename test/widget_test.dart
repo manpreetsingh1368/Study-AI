@@ -115,6 +115,7 @@ void main() {
                 'kind': 'flashcards',
                 'title': 'Biology cards',
               },
+            ],
 }
 
 class WidgetMemoryStore extends LocalStore {
