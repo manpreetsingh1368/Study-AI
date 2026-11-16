@@ -513,6 +513,7 @@ export function createApp(
           sid,
         );
         if (!collection)
+          fail(409, "Generation identifier belongs to another study set.");
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
