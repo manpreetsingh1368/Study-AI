@@ -266,6 +266,7 @@ class _SetDetailState extends State<SetDetail> {
               children: [
                 if (isPdf)
                   Text(
+                    'Page ${cite['page']}',
                         ),
                       ),
                     ),
