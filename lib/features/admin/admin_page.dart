@@ -80,6 +80,7 @@ class _AdminPageState extends State<AdminPage> {
                             'GET',
                             '/admin/users/${u['id']}',
                           );
+                          if (!context.mounted) return;
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
