@@ -555,4 +555,5 @@ class _SetDetailState extends State<SetDetail> {
                       hintText: 'Ask your sources…',
                       border: InputBorder.none,
                       enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
 }
