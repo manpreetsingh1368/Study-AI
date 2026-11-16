@@ -18,3 +18,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
   blocks: [
     {
       heading: "Key concept",
+      text: "ATP transfers energy for cellular processes.",
