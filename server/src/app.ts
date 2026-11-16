@@ -512,6 +512,7 @@ export function createApp(
           previousUsage.collection_id,
           sid,
         );
+        if (!collection)
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
