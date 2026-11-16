@@ -275,6 +275,7 @@ export function createApp(
   });
   app.post("/me/recovery", async (req) => {
     const u = user(req),
+      b = z.object({ password: z.string().max(128) }).parse(req.body);
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
