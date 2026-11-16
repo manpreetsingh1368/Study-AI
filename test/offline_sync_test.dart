@@ -110,7 +110,6 @@ void main() {
           return;
         }
         Object body = {};
-        if (req.uri.path == '/me')
           body = {
             'user': {'id': 'owner', 'name': 'Learner'},
             'plan': {'name': 'Free', 'pro': false, 'sets': 5},
