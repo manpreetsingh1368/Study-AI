@@ -801,4 +801,5 @@ class _SetDetailState extends State<SetDetail> {
             const Text(
               'Each Studio generation uses 1 AI credit.',
               style: TextStyle(fontSize: 9),
+            ),
 }
