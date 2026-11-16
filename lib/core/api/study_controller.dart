@@ -408,6 +408,7 @@ class StudyController extends ChangeNotifier {
         });
       } else {
         notes.removeWhere((n) => n['id'] == body['noteId']);
+      }
     }
   }
 
