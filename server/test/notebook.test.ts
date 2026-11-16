@@ -37,3 +37,4 @@ async function setup(t: any, generate = supported) {
     notebookGenerate: async (i) => generate(i),
   });
   await app.ready();
+  t.after(async () => {
