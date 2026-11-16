@@ -288,3 +288,4 @@ class _StudyToolsState extends State<StudyTools> {
                         ? null
                         : (v) => setState(() {
                             kind = v!;
+                            count = 5;
