@@ -732,6 +732,7 @@ export function createApp(
       .parse(req.query);
     return {
       users: all(
+        "SELECT id,email,name,role,created_at FROM users WHERE email LIKE ? OR name LIKE ? ORDER BY created_at DESC,id LIMIT ? OFFSET ?",
         `%${q.search}%`,
         `%${q.search}%`,
         q.limit,
