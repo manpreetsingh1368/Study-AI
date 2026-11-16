@@ -589,6 +589,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                       Flexible(
                         child: Text(
                           set['folder'],
+                          maxLines: 1,
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
