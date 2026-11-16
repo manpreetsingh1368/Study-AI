@@ -196,6 +196,7 @@ class _SetDetailState extends State<SetDetail> {
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: Theme.of(context).textTheme.headlineSmall
+                      ?.copyWith(fontSize: wide ? 28 : 24),
                   ),
                 ),
               ],
