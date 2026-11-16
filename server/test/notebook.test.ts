@@ -25,3 +25,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
           quote: "ATP transfers chemical energy.",
         },
       ],
+    },
