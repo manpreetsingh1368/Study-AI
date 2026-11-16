@@ -833,4 +833,5 @@ class _SetDetailState extends State<SetDetail> {
                 dense: true,
                 leading: Icon(
                   collection['kind'] == 'flashcards'
+                      ? Icons.style_outlined
 }
