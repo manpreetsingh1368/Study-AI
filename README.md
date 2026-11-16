@@ -57,6 +57,7 @@ Quiz attempts and flashcard review actions are queued locally with stable operat
 
 Material and learning-history feeds have independent paginated cursors. Cache/cursor writes are atomic. Login and the toolbar trigger sync; an open app retries every 30 seconds after reconnect. Server-side scores always come from saved questions and submitted answers. Local offline scores are marked pending. Attempts and flashcard reviews use stable IDs for idempotent replay. Review state and due dates download to other devices. Due-only study queues use the latest review; a known card's interval doubles up to 180 days, and a card needing review returns the next day.
 
+Each generation creates a separate immutable collection within its study set. Old question IDs remain available for historical answer review. Quiz drafts are stored per collection. Optional timers persist as wall-clock deadlines; immediate explanations and an incorrect-answer filter are supported. Practice exams require Pro and an online start/submission: their deadline is set by the backend, persists across app restarts, and submissions more than ten seconds late score zero. Exam timing is a learning aid, not an anti-cheating certification mechanism.
 
 ## Android, iOS and macOS
 
