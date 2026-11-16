@@ -76,3 +76,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
       title: "Private notes",
       notes: sourceText,
     })
+  ).body.set;
