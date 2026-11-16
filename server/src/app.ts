@@ -231,6 +231,7 @@ export function createApp(
     },
     pro: {
       generations: Number(process.env.PRO_GENERATIONS || 30),
+      cards: Number(process.env.PRO_CARDS || 50),
   app.get("/health", async () => ({ status: "ok" }));
   app.post(
     "/auth/register",
