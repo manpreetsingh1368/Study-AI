@@ -542,4 +542,5 @@ class _SetDetailState extends State<SetDetail> {
                   ask('chat', composer.text),
             },
             child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
 }
