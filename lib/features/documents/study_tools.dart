@@ -95,3 +95,4 @@ class _StudyToolsState extends State<StudyTools> {
                           await c.deleteSet(s);
                           if (context.mounted) context.go('/library');
                         });
+                      }
