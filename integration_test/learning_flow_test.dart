@@ -44,3 +44,4 @@ Uint8List validPdf() {
   var text = '%PDF-1.4\n';
   final offsets = <int>[0];
   for (var i = 0; i < objects.length; i++) {
+    offsets.add(text.length);
