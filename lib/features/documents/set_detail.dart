@@ -102,7 +102,6 @@ class _SetDetailState extends State<SetDetail> {
             ),
           ],
         ),
-          StudyCard(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
