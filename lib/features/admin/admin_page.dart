@@ -96,6 +96,7 @@ class _AdminPageState extends State<AdminPage> {
                                       Text('Role: ${detail['user']['role']}'),
                                       Text(
                                         'Study sets: ${detail['sets']} · Quiz attempts: ${detail['attempts']}',
+                                      ),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
