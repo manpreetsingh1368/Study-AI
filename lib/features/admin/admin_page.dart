@@ -75,6 +75,7 @@ class _AdminPageState extends State<AdminPage> {
                   children: [
                     TextButton(
                       onPressed: () async {
+                        try {
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
