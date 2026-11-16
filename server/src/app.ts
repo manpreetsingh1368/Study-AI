@@ -491,6 +491,7 @@ export function createApp(
         sid,
         version: s.version,
         kind: b.kind,
+        count: b.count,
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
