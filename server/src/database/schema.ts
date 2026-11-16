@@ -184,3 +184,4 @@ export const learningChanges = sqliteTable("learning_changes", {
   kind: text("kind").notNull(),
   recordId: text("record_id").notNull(),
 });
+
