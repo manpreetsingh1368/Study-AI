@@ -526,4 +526,5 @@ class _SetDetailState extends State<SetDetail> {
       children: [
         Container(
           padding: const EdgeInsets.fromLTRB(14, 8, 8, 8),
+          decoration: BoxDecoration(
 }
