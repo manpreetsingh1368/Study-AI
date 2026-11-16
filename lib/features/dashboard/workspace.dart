@@ -575,6 +575,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                     Container(
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
+                        color: accent.withValues(alpha: .1),
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
