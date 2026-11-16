@@ -18,6 +18,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 ## Verification
 
 - `flutter analyze`: clean.
+- `flutter test`: 8 passed, including onboarding/preferences, registration validation, 390/1200px responsive learning flows and real SQLite offline mutation/replay/conflict/merge/deletion/account-isolation tests.
 
 ## Configuration and remaining release work
 
