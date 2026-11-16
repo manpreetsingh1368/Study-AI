@@ -132,6 +132,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           : 'New here? Create an account',
                     ),
                   ),
+                  if (!register)
                   const SizedBox(height: 12),
                   const Text(
                     'Your materials, in your own workspace.\nAI generation requires an internet connection.',
