@@ -21,3 +21,4 @@ Future<LocalStore> testStore() async {
     options: OpenDatabaseOptions(singleInstance: false),
   );
   await db.execute(
+    'CREATE TABLE cache(account TEXT,key TEXT,value TEXT,PRIMARY KEY(account,key))',
