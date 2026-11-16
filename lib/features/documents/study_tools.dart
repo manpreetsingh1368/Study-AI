@@ -182,3 +182,4 @@ class _StudyToolsState extends State<StudyTools> {
                     child: GestureDetector(
                       behavior: HitTestBehavior.opaque,
                       onHorizontalDragUpdate: (d) => setState(
+                        () => split = (split + d.delta.dx / size.maxWidth)
