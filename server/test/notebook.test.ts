@@ -250,3 +250,4 @@ test("source selection excludes previous conversations about unchecked sources; 
         prompt: "Overview",
         sourceIds: [one.id],
       })
+    ).status,
