@@ -242,6 +242,7 @@ class _SetDetailState extends State<SetDetail> {
                               icon: Icon(Icons.auto_awesome_outlined, size: 17),
                             ),
                           ],
+                          selected: {mobileTab},
                       ),
                       const SizedBox(height: 12),
                       Expanded(
