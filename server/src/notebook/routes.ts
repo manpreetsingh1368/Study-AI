@@ -46,3 +46,4 @@ export function registerNotebookRoutes(
       ).map(entry),
     };
   });
+  app.post("/notebooks/:id/notes", async (req) => {
