@@ -77,7 +77,6 @@ class _AdminPageState extends State<AdminPage> {
                       onPressed: () async {
                         final date = await showDatePicker(
                           context: context,
-                            const Duration(days: 1),
                           ),
                           lastDate: DateTime.now().add(
                             const Duration(days: 3650),
