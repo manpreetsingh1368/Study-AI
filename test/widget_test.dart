@@ -56,3 +56,4 @@ void main() {
 class WidgetMemoryStore extends LocalStore {
   final values = <String, dynamic>{};
   @override
+  Future<dynamic> read(String account, String key) async =>
