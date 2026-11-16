@@ -478,6 +478,7 @@ class _SetDetailState extends State<SetDetail> {
                                       style: TextStyle(
                                         fontSize: 10,
                                         color: accent,
+                                      ),
                   ),
                 ),
             ],
