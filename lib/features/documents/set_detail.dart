@@ -425,6 +425,7 @@ class _SetDetailState extends State<SetDetail> {
               wide ? 24 : 16,
               18,
             ),
+            child: Column(
                         ),
                       ),
                     ),
