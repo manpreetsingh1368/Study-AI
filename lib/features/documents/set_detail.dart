@@ -371,4 +371,5 @@ class _SetDetailState extends State<SetDetail> {
                   icon: const Icon(Icons.close, size: 19),
                 )
               : null,
+        ),
 }
