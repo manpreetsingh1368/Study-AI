@@ -551,4 +551,5 @@ class _SetDetailState extends State<SetDetail> {
                     enabled: !busy,
                     minLines: 1,
                     maxLines: 5,
+                    decoration: const InputDecoration(
 }
