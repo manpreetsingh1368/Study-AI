@@ -55,3 +55,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 460),
           child: StudyCard(
+            child: Column(
