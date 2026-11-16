@@ -66,3 +66,4 @@ export function registerNotebookRoutes(
           existing.title !== b.title ||
           existing.text !== b.text
         )
+          fail(409, "Note identifier already used.");
