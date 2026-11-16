@@ -1,6 +1,5 @@
 # Study AI implementation progress
 
-Updated: 2026-11-16. This is an incremental development build, not a production release candidate.
 
 ## Implemented application
 
