@@ -102,3 +102,4 @@ export function splitSource(
     const part = normalized.slice(offset, offset + 2800);
     if (part.trim())
       result.push({
+        ...source,
