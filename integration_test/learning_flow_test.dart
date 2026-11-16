@@ -197,6 +197,7 @@ void main() {
           set['id'],
           'Offline thought',
           'ATP powers cellular work.',
+          entryId: response['id'],
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
