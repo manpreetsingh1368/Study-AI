@@ -522,6 +522,7 @@ class StudyController extends ChangeNotifier {
   Future<void> retryUpload(String id) async {
     final issue = uploadIssues.where((op) => op['id'] == id).first;
     final current = sets.where((s) => s['id'] == issue['setId']).firstOrNull;
+    if (current == null) {
       throw ApiException(
         404,
         'The study set was deleted. Save the PDF to disk before discarding this upload.',
