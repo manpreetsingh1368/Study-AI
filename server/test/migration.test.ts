@@ -83,3 +83,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
       ).version,
       2,
     );
+    reopened.sqlite.close();
