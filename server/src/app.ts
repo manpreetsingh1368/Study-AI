@@ -732,6 +732,7 @@ export function createApp(
       .parse(req.query);
     const total = get(
       "SELECT count(*) n FROM users WHERE email LIKE ? OR name LIKE ?",
+      `%${q.search}%`,
     return {
       total,
       hasMore: q.offset + q.limit < total,
