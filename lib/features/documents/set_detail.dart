@@ -139,6 +139,7 @@ class _SetDetailState extends State<SetDetail> {
                   'Private storage with selectable source text',
                 ),
                 onTap: () => Navigator.pop(ctx, 'pdf'),
+              ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
