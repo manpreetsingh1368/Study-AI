@@ -164,3 +164,4 @@ void main() {
           await tester.pump(const Duration(milliseconds: 250));
         }
         await c.sync();
+        expect(c.reviews.length, 1);
