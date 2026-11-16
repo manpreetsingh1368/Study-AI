@@ -145,3 +145,4 @@ void main() {
         await tester.tap(find.text('Finish quiz'));
         for (
           var i = 0;
+          i < 40 && find.text('Session complete.').evaluate().isEmpty;
