@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-                        '${(s['questions'] as List).where((q) => q['collection_id'] == deck['id']).length} questions',
                       ),
                       const SizedBox(height: 12),
                       Expanded(
