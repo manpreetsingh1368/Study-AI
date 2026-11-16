@@ -74,6 +74,7 @@ flutter analyze
 flutter test
 cd server
 npm run check
+npm test
 
 ## Android, iOS and macOS
 
