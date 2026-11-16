@@ -82,3 +82,4 @@ void main() {
       });
       final line = await process.stdout
           .transform(utf8.decoder)
+          .transform(const LineSplitter())
