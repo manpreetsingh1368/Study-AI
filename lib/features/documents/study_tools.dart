@@ -61,3 +61,4 @@ class _StudyToolsState extends State<StudyTools> {
                       isScrollControlled: true,
                       builder: (_) => SizedBox(
                         height: MediaQuery.sizeOf(context).height * .85,
+                        child: NotesEditor(controller: c, existing: s),
