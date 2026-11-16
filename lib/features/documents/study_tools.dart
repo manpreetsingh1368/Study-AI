@@ -65,3 +65,4 @@ class _StudyToolsState extends State<StudyTools> {
                       ),
                     ),
               icon: const Icon(Icons.edit_outlined, size: 18),
+              label: const Text('Edit notes / PDF'),
