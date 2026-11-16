@@ -686,4 +686,5 @@ class _SetDetailState extends State<SetDetail> {
         if ((content['followUps'] as List).isNotEmpty) ...[
           Text(
             'Keep exploring',
+            style: TextStyle(
 }
