@@ -40,3 +40,4 @@ async function setup(t: any, generate = supported) {
   t.after(async () => {
     await app.close();
     rmSync(dir, { recursive: true, force: true });
+  });
