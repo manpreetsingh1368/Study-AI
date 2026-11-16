@@ -333,6 +333,7 @@ class _SetDetailState extends State<SetDetail> {
           context,
         ).showSnackBar(const SnackBar(content: Text('Saved to Studio notes.')));
       }
+    });
                         ),
                       ),
                     ),
