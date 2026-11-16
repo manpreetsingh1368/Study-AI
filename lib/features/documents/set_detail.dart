@@ -659,4 +659,5 @@ class _SetDetailState extends State<SetDetail> {
             style: const TextStyle(fontSize: 13, height: 1.85),
           ),
           const SizedBox(height: 12),
+          Wrap(
 }
