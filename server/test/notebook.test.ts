@@ -241,3 +241,4 @@ test("source selection excludes previous conversations about unchecked sources; 
   assert.equal(
     inputs[1].chunks.every((c) => c.setId === two.id),
     true,
+  );
