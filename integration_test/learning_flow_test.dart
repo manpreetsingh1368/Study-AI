@@ -171,3 +171,4 @@ void main() {
         expect(other.reviews.length, 1);
         final bytes = await other.documentBytes(
           other.sets.single['document']['id'],
+        );
