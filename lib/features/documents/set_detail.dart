@@ -974,4 +974,5 @@ class _SetDetailState extends State<SetDetail> {
                                 export(note['title'], note['text']),
                             child: const Text('Export'),
                           ),
+                          FilledButton(
 }
