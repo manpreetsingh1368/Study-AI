@@ -763,6 +763,7 @@ export function createApp(
         run(
           "INSERT INTO subscriptions VALUES(?,?,?) ON CONFLICT(user_id) DO UPDATE SET starts_at=excluded.starts_at,expires_at=excluded.expires_at",
           uid,
+          startsAt,
           b.expiresAt!,
         );
       else run("DELETE FROM subscriptions WHERE user_id=?", uid);
