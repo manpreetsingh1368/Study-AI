@@ -51,6 +51,7 @@ class _AdminPageState extends State<AdminPage> {
       Wrap(
         spacing: 16,
         runSpacing: 16,
+        children: [
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
