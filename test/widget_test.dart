@@ -158,6 +158,7 @@ void main() {
         await tester.runAsync(
           () => Future<void>.delayed(const Duration(milliseconds: 100)),
         );
+        await tester.pumpAndSettle();
 }
 
 class WidgetMemoryStore extends LocalStore {
