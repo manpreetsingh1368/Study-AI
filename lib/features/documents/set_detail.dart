@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-          StudyCard(child: SelectableText(s['notes'])),
         const SizedBox(height: 28),
         Text(
           'Your learning collections',
