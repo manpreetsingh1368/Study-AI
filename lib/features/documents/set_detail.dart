@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                          value: n,
                           label: '$n',
                           enabled:
                               n <=
