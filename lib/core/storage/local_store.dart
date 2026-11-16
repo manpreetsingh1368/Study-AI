@@ -187,6 +187,7 @@ class LocalStore {
     List<Map<String, dynamic>> sets,
   ) async {
     await db.transaction((txn) async {
+      await txn.delete(
   Future<void> remove(String id) async {
     await db.delete('outbox', where: 'id=?', whereArgs: [id]);
   }
