@@ -560,6 +560,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
     final books = set['notebook'] as Map? ?? {};
     final date = set['updated_at'] as int?;
     return Card(
+      clipBehavior: Clip.antiAlias,
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
