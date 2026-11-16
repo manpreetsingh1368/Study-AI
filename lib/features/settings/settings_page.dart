@@ -154,6 +154,7 @@ class _SettingsPageState extends State<SettingsPage> {
                             ],
                           ),
                           actions: [
+                            FilledButton(
             OutlinedButton(
               onPressed: busy
                   ? null
