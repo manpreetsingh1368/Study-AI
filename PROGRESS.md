@@ -37,6 +37,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Adapt/install/enable the supplied backup/maintenance systemd units and conduct a host-level disaster-recovery drill. Units were created, not installed into the host.
 - Complete Apple-platform builds and Keychain/signing QA on macOS; configure production Android signing and store distribution. The debug APK is not a store release.
 - Complete independent security, load and accessibility/native visual audits. PDF structural validation is not antivirus scanning. Local cached content is protected by operating-system access/disk security rather than database encryption.
+- Regular quizzes/cards/notes work offline. Practice exams require online start/submission and are learning tools rather than anti-cheating certification.
 
 ## Commit policy requested by owner
 
