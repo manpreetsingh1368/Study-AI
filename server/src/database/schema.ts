@@ -124,6 +124,7 @@ export const generationUsage = sqliteTable("generation_usage", {
     .references(() => users.id, { onDelete: "cascade" }),
   day: text("day").notNull(),
   status: text("status").notNull(),
+  requestHash: text("request_hash"),
   createdAt: integer("created_at").notNull(),
 });
 export const syncChanges = sqliteTable("sync_changes", {
