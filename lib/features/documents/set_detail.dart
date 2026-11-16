@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                      context: context,
                       isScrollControlled: true,
                       builder: (_) => SizedBox(
                         height: MediaQuery.sizeOf(context).height * .85,
