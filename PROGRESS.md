@@ -33,6 +33,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 ## Notebook UI/UX refinement
 
 - Replaced the long study-set detail page with a source/chat/Studio workspace: three desktop panels, focused mobile tabs, compact mobile navigation, cohesive light/dark surfaces, contextual source previews and a richer notebook library grid.
+- Source selection across up to eight owned study materials, inline text/PDF additions and source-aware chat using Gemini. Scanned PDFs without text receive an explicit explanation.
 
 ## Configuration and remaining release work
 
