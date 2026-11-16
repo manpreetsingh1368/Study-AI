@@ -752,4 +752,5 @@ class _SetDetailState extends State<SetDetail> {
                 child: Material(
                   color: accent.withValues(alpha: .045),
                   borderRadius: BorderRadius.circular(14),
+                  child: InkWell(
 }
