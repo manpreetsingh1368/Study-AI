@@ -757,6 +757,7 @@ export function createApp(
       user: u,
       plan: plan(uid),
       subscription:
+        get("SELECT * FROM subscriptions WHERE user_id=?", uid) || null,
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
