@@ -19,3 +19,4 @@ const app = createApp({
           })),
     flashcards:
       input.kind !== "flashcards"
+        ? []
