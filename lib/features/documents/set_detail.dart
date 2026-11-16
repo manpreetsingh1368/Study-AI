@@ -351,6 +351,7 @@ class _SetDetailState extends State<SetDetail> {
                 TextField(
                   controller: title,
                   maxLength: 150,
+                  decoration: const InputDecoration(labelText: 'Title'),
                         ),
                       ),
                     ),
