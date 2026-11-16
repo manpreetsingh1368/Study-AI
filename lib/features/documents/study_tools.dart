@@ -223,3 +223,4 @@ class _StudyToolsState extends State<StudyTools> {
             child: StudyCard(
               padding: const EdgeInsets.all(8),
               child: ListTile(
+                leading: Icon(
