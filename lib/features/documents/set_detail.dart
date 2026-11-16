@@ -190,6 +190,7 @@ class _SetDetailState extends State<SetDetail> {
                   Expanded(child: ErrorState(message: error!)),
                   IconButton(
                     tooltip: 'Dismiss error',
+                    onPressed: () => setState(() => error = null),
                   ),
                 ],
               ),
