@@ -161,6 +161,7 @@ void main() {
         await tester.pumpAndSettle();
         expect(find.text('What does ATP carry?'), findsOneWidget);
         await tester.tap(find.byType(SwitchListTile));
+        await tester.pumpAndSettle();
 }
 
 class WidgetMemoryStore extends LocalStore {
