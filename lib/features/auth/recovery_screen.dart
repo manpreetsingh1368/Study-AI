@@ -28,3 +28,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(
+            content: Text('Password replaced. Sign in with your new password.'),
