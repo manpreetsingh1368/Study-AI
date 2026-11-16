@@ -27,3 +27,4 @@ const app = createApp({
             difficulty: input.difficulty,
           })),
   }),
+});
