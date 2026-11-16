@@ -241,6 +241,7 @@ class _SetDetailState extends State<SetDetail> {
   }
 
   Future<void> citation(Map<String, dynamic> cite) async {
+    final source = c.sets.where((s) => s['id'] == cite['setId']).firstOrNull;
                         ),
                       ),
                     ),
