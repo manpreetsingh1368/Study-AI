@@ -159,7 +159,6 @@ class _SetDetailState extends State<SetDetail> {
           ),
           const SizedBox(height: 20),
         ],
-                        child: SelectableText(
                           (s['notes'] as String).isEmpty
                               ? 'No notes yet.'
                               : s['notes'],
