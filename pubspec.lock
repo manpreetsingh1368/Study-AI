@@ -733,6 +733,7 @@ packages:
   sync_http:
     dependency: transitive
     description:
+      name: sync_http
   synchronized:
     dependency: transitive
     description:
