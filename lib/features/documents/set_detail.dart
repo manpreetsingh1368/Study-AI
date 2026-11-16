@@ -357,6 +357,7 @@ class _SetDetailState extends State<SetDetail> {
               fontSize: 10,
               height: 1.6,
               color: Theme.of(context).colorScheme.onSurfaceVariant,
+            ),
           ),
         ),
       ],
