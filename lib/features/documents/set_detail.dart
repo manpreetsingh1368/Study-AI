@@ -475,4 +475,5 @@ class _SetDetailState extends State<SetDetail> {
               ?.copyWith(fontSize: 28),
         ),
         const SizedBox(height: 12),
+        Text(
 }
