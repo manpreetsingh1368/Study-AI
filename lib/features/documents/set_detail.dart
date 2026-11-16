@@ -942,4 +942,5 @@ class _SetDetailState extends State<SetDetail> {
                                 SelectableText(note['text']),
                                 const SizedBox(height: 16),
                                 for (final cite in note['citations'] ?? [])
+                                  TextButton.icon(
 }
