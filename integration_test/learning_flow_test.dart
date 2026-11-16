@@ -196,3 +196,4 @@ void main() {
         expect(tester.takeException(), isNull);
       } finally {
         await tester.pumpWidget(const SizedBox());
+        c.dispose();
