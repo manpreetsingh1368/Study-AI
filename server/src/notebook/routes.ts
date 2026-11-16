@@ -180,3 +180,4 @@ export function registerNotebookRoutes(
         );
       }
       const document = get("SELECT * FROM documents WHERE set_id=?", source.id);
+      if (document) {
