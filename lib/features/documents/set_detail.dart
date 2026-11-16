@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                            'This deletion will synchronize across your devices.',
                           ),
                           actions: [
                             TextButton(
