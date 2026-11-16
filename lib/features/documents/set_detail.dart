@@ -387,6 +387,7 @@ class _SetDetailState extends State<SetDetail> {
           child: Text(
             'Use up to 8 sources',
             style: TextStyle(
+              fontSize: 11,
                   ),
                 ),
             ],
