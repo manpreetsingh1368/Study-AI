@@ -52,6 +52,7 @@ class _AdminPageState extends State<AdminPage> {
         spacing: 16,
         runSpacing: 16,
         children: [
+          for (final metric in [
       const SizedBox(height: 24),
       TextField(
         decoration: const InputDecoration(
