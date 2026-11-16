@@ -7,3 +7,4 @@ import {
   pdfPages,
   splitSource,
   validatedEvidence,
+  type NotebookInput,
