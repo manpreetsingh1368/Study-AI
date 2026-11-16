@@ -147,3 +147,4 @@ export async function notebookGenerate(
         signal: AbortSignal.timeout(60000),
         body: JSON.stringify({
           systemInstruction: { parts: [{ text: instruction }] },
+          contents: [
