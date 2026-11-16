@@ -185,3 +185,4 @@ void main() {
         await pdf.dispose();
         process.kill();
         await process.exitCode.timeout(const Duration(seconds: 10));
+        await other.sync();
