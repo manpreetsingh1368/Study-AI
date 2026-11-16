@@ -97,3 +97,4 @@ export function registerNotebookRoutes(
         JSON.stringify(citations),
         now(),
       );
+      change(sid, u.id);
