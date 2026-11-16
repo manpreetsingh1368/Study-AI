@@ -177,6 +177,7 @@ void main() {
         );
         await c.saveNotebookNote(
           set['id'],
+          'Energy essentials',
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
