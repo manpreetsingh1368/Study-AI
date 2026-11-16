@@ -645,7 +645,6 @@ class StudyController extends ChangeNotifier {
 
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
-    if (path == '/attempts') {
       final set = sets.where((s) => s['id'] == body['setId']).firstOrNull;
       if (set != null && (set['questions'] as List? ?? []).isNotEmpty) {
         final questions = (set['questions'] as List)
