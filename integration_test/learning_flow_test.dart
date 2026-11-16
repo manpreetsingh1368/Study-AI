@@ -73,3 +73,4 @@ void main() {
         ['--import', 'tsx', 'test/fixture-server.ts', temp.path],
         workingDirectory: '$project/server',
       );
+      final stderr = <String>[];
