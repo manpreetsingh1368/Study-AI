@@ -168,3 +168,4 @@ export async function notebookGenerate(
           response.status === 429
             ? "AI quota exceeded. Try again later."
             : "The AI provider could not complete the notebook request.",
+        ),
