@@ -15,6 +15,7 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Flashcard reviews, doubling known-card intervals (up to 180 days), next-day relearning, due-only queues and cross-device review-state download.
 - Real dashboard totals, performance charts, daily study activity, history and weak topics. Pro topic-mastery analytics are protected server-side.
 - Configurable Free/Pro limits and atomic generation reservations, manually granted activation/expiration dates, cross-device entitlement refresh, current usage display and environment-driven plan descriptions. No payment processing.
+- Admin account search/pagination/details, Pro grants/revocation/date ranges, storage counts, generation statistics, sanitized error records and administrative audit history.
 
 ## Verification
 
