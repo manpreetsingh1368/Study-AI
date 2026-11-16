@@ -420,4 +420,5 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                       answer(Map<String, dynamic>.from(raw)),
                       const SizedBox(height: 30),
+                    ],
 }
