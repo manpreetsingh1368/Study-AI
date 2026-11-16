@@ -230,6 +230,7 @@ class _SetDetailState extends State<SetDetail> {
                               value: 0,
                               label: Text('Sources'),
                               icon: Icon(Icons.source_outlined, size: 17),
+                            ),
                       ),
                       const SizedBox(height: 12),
                       Expanded(
