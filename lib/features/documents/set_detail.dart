@@ -525,4 +525,5 @@ class _SetDetailState extends State<SetDetail> {
     child: Column(
       children: [
         Container(
+          padding: const EdgeInsets.fromLTRB(14, 8, 8, 8),
 }
