@@ -227,3 +227,4 @@ test("source selection excludes previous conversations about unchecked sources; 
   ] as const) {
     assert.equal(
       (
+        await call("POST", `/notebooks/${one.id}/ask`, a.token, {
