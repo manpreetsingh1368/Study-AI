@@ -374,6 +374,7 @@ class _SetDetailState extends State<SetDetail> {
           child: TextField(
             controller: sourceSearch,
             onChanged: (_) => setState(() {}),
+            decoration: const InputDecoration(
                   ),
                 ),
             ],
