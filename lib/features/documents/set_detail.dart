@@ -615,4 +615,5 @@ class _SetDetailState extends State<SetDetail> {
             if (blocks.isNotEmpty)
               IconButton(
                 tooltip: 'Copy answer',
+                onPressed: () => Clipboard.setData(
 }
