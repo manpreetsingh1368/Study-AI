@@ -610,4 +610,5 @@ class _SetDetailState extends State<SetDetail> {
               IconButton(
                 tooltip: 'Save answer to Studio notes',
                 onPressed: busy ? null : () => pin(entry),
+                icon: const Icon(Icons.bookmark_add_outlined, size: 18),
 }
