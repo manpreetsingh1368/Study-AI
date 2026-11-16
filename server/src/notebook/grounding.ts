@@ -21,3 +21,4 @@ export const responseSchema = z.object({
         text: z.string().min(1).max(2200),
         citations: z
           .array(
+            z.object({
