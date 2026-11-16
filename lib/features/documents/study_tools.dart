@@ -300,3 +300,4 @@ class _StudyToolsState extends State<StudyTools> {
                         value: 'exam',
                         label: 'Practice exam · Pro',
                         enabled: pro,
+                      ),
