@@ -284,6 +284,7 @@ class _SetDetailState extends State<SetDetail> {
                       : 'This excerpt was checked against the text of your selected source.',
                   style: const TextStyle(fontSize: 12),
                 ),
+              ],
                         ),
                       ),
                     ),
