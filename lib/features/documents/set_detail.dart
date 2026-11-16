@@ -365,4 +365,5 @@ class _SetDetailState extends State<SetDetail> {
           report == null ? 'Source conversation' : label(report!['kind']),
           Icons.forum_outlined,
           action: report != null
+              ? IconButton(
 }
