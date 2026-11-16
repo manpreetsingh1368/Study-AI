@@ -3,3 +3,4 @@ CREATE INDEX notebook_entries_recent ON notebook_entries(notebook_id,created_at 
 CREATE TABLE notebook_notes(id TEXT PRIMARY KEY,notebook_id TEXT NOT NULL REFERENCES study_sets(id) ON DELETE CASCADE,title TEXT NOT NULL,text TEXT NOT NULL,citations TEXT NOT NULL,created_at INTEGER NOT NULL,deleted INTEGER NOT NULL DEFAULT 0);
 CREATE INDEX notebook_notes_recent ON notebook_notes(notebook_id,deleted,created_at DESC);
 CREATE TABLE notebook_preferences(notebook_id TEXT PRIMARY KEY REFERENCES study_sets(id) ON DELETE CASCADE,source_ids TEXT NOT NULL);
+-- Existing clients need a fresh material snapshot to receive notebook metadata.
