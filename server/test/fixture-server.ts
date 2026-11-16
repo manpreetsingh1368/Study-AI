@@ -21,3 +21,4 @@ const app = createApp({
       input.kind !== "flashcards"
         ? []
         : Array.from({ length: input.count }, () => ({
+            front: "ATP",
