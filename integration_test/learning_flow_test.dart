@@ -87,3 +87,4 @@ void main() {
           .timeout(const Duration(seconds: 15))
           .catchError(
             (Object e) => throw StateError(
+              'Fixture startup failed: ${stderr.join()} ($e)',
