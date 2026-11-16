@@ -11,3 +11,4 @@ import {
   type NotebookInput,
   type NotebookOutput,
 } from "../src/notebook/grounding.js";
+const sourceText =
