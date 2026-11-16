@@ -387,6 +387,7 @@ class StudyController extends ChangeNotifier {
 
   void _overlayNotebookOperations(
     Map<String, dynamic> material,
+    List<Map<String, Object?>> pendingRecords,
     }
   }
 
