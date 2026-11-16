@@ -50,3 +50,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
       title: const Text('Account recovery'),
     ),
     body: Center(
+      child: SingleChildScrollView(
