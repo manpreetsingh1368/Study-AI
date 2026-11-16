@@ -53,3 +53,4 @@ Uint8List validPdf() {
     text += '${offset.toString().padLeft(10, '0')} 00000 n \n';
   }
   text += 'trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n$xref\n%%EOF\n';
+  return Uint8List.fromList(utf8.encode(text));
