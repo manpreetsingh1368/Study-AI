@@ -31,7 +31,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Remaining before production
 
-- Live Gemini acceptance tests using genuine documents; stronger PDF parsing/scanning beyond signature checks; abuse/content policy and operational review.
 - Full bidirectional sync for offline study-set creation/editing, richer conflict UI, full attempt/review delta synchronization. Attempts/reviews upload and contribute to synchronized server analytics; per-card due state is not yet surfaced or used to filter a due-only review session.
 - Offline PDF binary cache/viewer. Notes/questions/cards are cached; original PDF files are server-side only.
 - Drag/drop upload, resizable panels, global search shortcut, onboarding tour, persistent appearance preference, complete accessibility/reduced-motion audits and native visual QA.
