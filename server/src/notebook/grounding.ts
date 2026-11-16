@@ -58,3 +58,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
     return { ...parsed, blocks: [] };
   }
   if (!parsed.blocks.length)
+    throw Object.assign(new Error("AI returned no supported answer."), {
