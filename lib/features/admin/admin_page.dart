@@ -84,6 +84,7 @@ class _AdminPageState extends State<AdminPage> {
                           await showDialog<void>(
                             context: context,
                             builder: (ctx) => AlertDialog(
+                              title: Text(u['email']),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
