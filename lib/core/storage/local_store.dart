@@ -192,6 +192,7 @@ class LocalStore {
         where: 'id=? AND account=?',
         whereArgs: [id, account],
       );
+      await txn.insert('cache', {
   Future<void> remove(String id) async {
     await db.delete('outbox', where: 'id=?', whereArgs: [id]);
   }
