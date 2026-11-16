@@ -256,6 +256,7 @@ class _SetDetailState extends State<SetDetail> {
             const SizedBox(width: 12),
             Expanded(child: Text(cite['title'])),
           ],
+        ),
                         ),
                       ),
                     ),
