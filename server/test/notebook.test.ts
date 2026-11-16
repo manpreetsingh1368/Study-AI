@@ -80,3 +80,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   const request = {
     id: randomUUID(),
     kind: "chat",
+    prompt: "Explain ATP.",
