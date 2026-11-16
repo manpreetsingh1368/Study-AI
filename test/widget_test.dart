@@ -185,6 +185,7 @@ void main() {
             .go('/settings');
         await tester.pumpAndSettle();
         expect(find.text('Make yourself at home.'), findsOneWidget);
+        expect(tester.takeException(), isNull);
 }
 
 class WidgetMemoryStore extends LocalStore {
