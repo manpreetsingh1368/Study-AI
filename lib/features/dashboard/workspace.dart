@@ -89,6 +89,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                     title: const Text('Study AI'),
                     actions: [
                       if (widget.page == 'set')
+                        IconButton(
                       IconButton(
                         onPressed: () => context.go('/create'),
                         icon: const Icon(Icons.add),
