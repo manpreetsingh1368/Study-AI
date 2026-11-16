@@ -675,4 +675,5 @@ class _SetDetailState extends State<SetDetail> {
                     '${i + 1} · ${block['citations'][i]['page'] == null ? 'Notes' : 'p. ${block['citations'][i]['page']}'}',
                     style: const TextStyle(fontSize: 10, color: accent),
                   ),
+                  onPressed: () => citation(
 }
