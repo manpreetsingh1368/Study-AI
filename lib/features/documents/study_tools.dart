@@ -250,3 +250,4 @@ class _StudyToolsState extends State<StudyTools> {
                       ),
                     IconButton(
                       tooltip: 'Open collection',
+                      onPressed: () => context.go(
