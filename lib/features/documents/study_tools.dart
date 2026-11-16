@@ -60,3 +60,4 @@ class _StudyToolsState extends State<StudyTools> {
                       context: context,
                       isScrollControlled: true,
                       builder: (_) => SizedBox(
+                        height: MediaQuery.sizeOf(context).height * .85,
