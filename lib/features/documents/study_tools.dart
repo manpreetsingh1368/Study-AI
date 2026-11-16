@@ -109,3 +109,4 @@ class _StudyToolsState extends State<StudyTools> {
         ],
         if (s['document'] != null) ...[
           StudyCard(
+            child: Column(
