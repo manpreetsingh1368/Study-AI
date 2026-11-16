@@ -3,3 +3,4 @@ Description=Daily Study AI backup
 [Timer]
 OnCalendar=*-*-* 03:00:00 UTC
 Persistent=true
+RandomizedDelaySec=300
