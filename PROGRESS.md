@@ -17,7 +17,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Verification
 
-- `npm audit --omit=dev`: zero reported vulnerabilities after updating Drizzle.
 - Real HTTP API startup/registration, administrator bootstrap CLI, backup CLI and backup SQLite integrity check: passed with temporary test data.
 - Linux release build: passed. Missing libsecret development packages were downloaded/extracted under `/tmp/study-ai-build-deps` without changing system packages; the build used `PKG_CONFIG_PATH=/tmp/study-ai-build-deps/root/usr/lib/x86_64-linux-gnu/pkgconfig`. Normal development should install `libsecret-1-dev` as described in README.
 - Linux executable: 12-second Xvfb launch smoke test, no Dart crash observed; process deliberately stopped by timeout. This is not a full native acceptance test.
