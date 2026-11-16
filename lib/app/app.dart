@@ -41,6 +41,7 @@ class _StudyAIAppState extends ConsumerState<StudyAIApp> {
         GoRoute(
           path: '/recovery',
           builder: (_, _) => RecoveryScreen(controller: c),
+        ),
         GoRoute(
           path: '/welcome',
           builder: (_, _) => OnboardingScreen(controller: c),
