@@ -263,3 +263,4 @@ export function registerNotebookRoutes(
         }));
       const output = await generate({
         kind: b.kind,
+        prompt: b.prompt,
