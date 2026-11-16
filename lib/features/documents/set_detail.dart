@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-                  color: accent,
                 ),
                 title: Text(deck['title']),
                 subtitle: deck['kind'] == 'flashcards'
