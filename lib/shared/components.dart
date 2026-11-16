@@ -144,6 +144,7 @@ class ModernToolbar extends StatelessWidget {
         if (MediaQuery.sizeOf(context).width > 800)
           SizedBox(
             width: 240,
+            child: onOpenSearch != null
           ),
         const SizedBox(width: 12),
         Tooltip(
