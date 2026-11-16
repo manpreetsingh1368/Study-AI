@@ -170,3 +170,4 @@ export function registerNotebookRoutes(
           ...splitSource(
             {
               setId: source.id,
+              sourceId: `${source.id}:notes`,
