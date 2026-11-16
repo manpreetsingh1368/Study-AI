@@ -102,7 +102,6 @@ class _SetDetailState extends State<SetDetail> {
             ),
           ],
         ),
-          const SizedBox(height: 16),
         ],
         if (s['document'] != null) ...[
           StudyCard(
