@@ -115,6 +115,7 @@ class _SetDetailState extends State<SetDetail> {
                 TextField(
                   controller: title,
                   autofocus: true,
+                  maxLength: 200,
                 ),
                 const SizedBox(height: 16),
                 TextField(
