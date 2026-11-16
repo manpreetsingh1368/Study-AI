@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                      behavior: HitTestBehavior.opaque,
                       onHorizontalDragUpdate: (d) => setState(
                         () => split = (split + d.delta.dx / size.maxWidth)
                             .clamp(.25, .75),
