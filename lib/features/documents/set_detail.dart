@@ -781,4 +781,5 @@ class _SetDetailState extends State<SetDetail> {
                                 Text(
                                   item.$3,
                                   style: TextStyle(
+                                    fontSize: 10,
 }
