@@ -106,6 +106,7 @@ class _SetDetailState extends State<SetDetail> {
     ),
   );
   void editSource() => showModalBottomSheet(
+    context: context,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
