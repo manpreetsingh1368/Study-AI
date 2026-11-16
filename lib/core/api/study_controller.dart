@@ -274,6 +274,7 @@ class StudyController extends ChangeNotifier {
           if (change['set'] != null) {
             final incoming = Map<String, dynamic>.from(change['set']);
             _overlayNotebookOperations(incoming, pendingRecords);
+            sets.add(incoming);
           }
         }
         cursor = page['cursor'];
