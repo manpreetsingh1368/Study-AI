@@ -6,3 +6,4 @@ const { sqlite } = openDatabase(process.env.DATA_DIR || "./data");
 const uploads = process.env.UPLOAD_DIR || "./uploads",
   now = Date.now();
 const retention = Number(process.env.DELETED_FILE_RETENTION_DAYS || 30);
+if (!Number.isFinite(retention) || retention < 1)
