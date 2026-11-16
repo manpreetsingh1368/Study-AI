@@ -51,6 +51,7 @@ Implementation follows Google's [generateContent API](https://ai.google.dev/api/
 
 The backend is authoritative. Each account owns its sets, questions, cards, attempts and reviews. The client stores notes/questions/cards and server analytics in local SQLite under the platform application-support directory. Tokens use platform secure storage. Original PDF bytes are not cached offline yet.
 
+Creating, editing and deleting study sets works offline. Local changes and their stable operation IDs are saved atomically before any network call. The backend checks record versions and stores operation receipts in the same transaction as the mutation, so a dropped HTTP response can be retried without duplicating work. PDFs also have a durable upload queue and stable document IDs. Edits to folders synchronize with the study set.
 
 Conflicting or rejected material edits preserve the latest local copy in **Sync conflicts**. Compare it with the current server version, keep the server version, save local notes as a separate set, or merge them manually. The merged save still checks the server version, so another concurrent edit is never blindly overwritten. Deletion tombstones remain permanently and old devices cannot resurrect a set. Rejected uploads can be retried against the latest version, saved to disk, or discarded. Rejected study-progress operations remain available for retry or explicit discard rather than blocking unrelated changes.
 
