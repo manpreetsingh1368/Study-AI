@@ -433,6 +433,7 @@ class _SetDetailState extends State<SetDetail> {
                             borderRadius: BorderRadius.circular(12),
                             onTap: () => previewSource(source),
                             child: Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 12, 10, 12),
                   ),
                 ),
             ],
