@@ -4,3 +4,4 @@ Description=Daily Study AI backup
 OnCalendar=*-*-* 03:00:00 UTC
 Persistent=true
 RandomizedDelaySec=300
+Unit=study-ai-backup.service
