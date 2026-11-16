@@ -572,7 +572,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
           'Your library',
           'A home for everything you’re learning.',
           trailing: PrimaryActionButton(
-            label: 'New study set',
             onPressed: () => context.go('/create'),
           ),
         ),
