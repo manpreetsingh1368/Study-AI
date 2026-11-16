@@ -100,3 +100,4 @@ export function registerNotebookRoutes(
       change(sid, u.id);
       return { ok: true, notebook: notebookState(sid, get, all) };
     })();
+  });
