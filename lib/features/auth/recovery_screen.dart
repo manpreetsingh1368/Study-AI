@@ -95,3 +95,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                 ],
                 PrimaryActionButton(
                   label: busy ? 'Recovering…' : 'Replace password',
+                  icon: Icons.key,
