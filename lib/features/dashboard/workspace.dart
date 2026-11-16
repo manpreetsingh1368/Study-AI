@@ -884,7 +884,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       const SizedBox(height: 20),
       SubscriptionCard(
         name: 'Pro',
-        description: '30 AI generations a day\nUp to 50 flashcards per generation\n200 saved study sets\nPractice exams and advanced difficulty',
         action: const Text(
           'Pro is activated manually by your administrator.\nPayments are not available in this version.',
         ),
