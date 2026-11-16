@@ -156,3 +156,4 @@ void main() {
             .go('/cards/${set['id']}?collection=${cards['id']}&due=true');
         await tester.pumpAndSettle();
         await tester.tap(find.text('ATP'));
+        await tester.pumpAndSettle();
