@@ -8,3 +8,4 @@ import {
   splitSource,
   validatedEvidence,
   type NotebookInput,
+  type NotebookOutput,
