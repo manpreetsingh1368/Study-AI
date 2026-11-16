@@ -220,6 +220,7 @@ class StudyController extends ChangeNotifier {
                 .firstMatch(operation['path'] as String);
             final material = sets
                 .where((s) => s['id'] == match?.group(1))
+                .firstOrNull;
         } on ApiException catch (e) {
           if (operation['path'] == '/sync/mutate' &&
               [400, 403, 404, 409].contains(e.status)) {
