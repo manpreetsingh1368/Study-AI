@@ -545,6 +545,7 @@ export function createApp(
           sid,
         );
         change(sid, u.id);
+        run(
       })();
       return { set: full(owned(u.id, sid)), plan: plan(u.id) };
     } catch (e) {
