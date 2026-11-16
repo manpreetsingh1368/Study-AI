@@ -541,4 +541,5 @@ class _SetDetailState extends State<SetDetail> {
               const SingleActivator(LogicalKeyboardKey.enter, meta: true): () =>
                   ask('chat', composer.text),
             },
+            child: Row(
 }
