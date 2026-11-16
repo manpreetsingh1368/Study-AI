@@ -199,3 +199,4 @@ class _StudyToolsState extends State<StudyTools> {
                         controller: c,
                         document: Map<String, dynamic>.from(s['document']),
                       ),
+                    ),
