@@ -149,6 +149,7 @@ class _SetDetailState extends State<SetDetail> {
     if (validSelection.length >= 8) {
       setState(
         () => error = 'Select up to 8 sources at a time. Uncheck one before adding another.',
+      );
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
