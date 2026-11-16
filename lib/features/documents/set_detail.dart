@@ -642,4 +642,5 @@ class _SetDetailState extends State<SetDetail> {
         ),
         const SizedBox(height: 12),
         if (content['insufficientEvidence'] == true)
+          const Text(
 }
