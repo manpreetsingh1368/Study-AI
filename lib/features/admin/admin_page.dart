@@ -78,6 +78,7 @@ class _AdminPageState extends State<AdminPage> {
                         try {
                           final detail = await widget.controller.request(
                             'GET',
+                            '/admin/users/${u['id']}',
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
