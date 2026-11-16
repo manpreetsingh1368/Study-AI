@@ -28,3 +28,4 @@ export function registerNotebookRoutes(
     content: JSON.parse(r.content),
   });
   app.get("/notebooks/:id/entries", async (req) => {
+    const u = user(req),
