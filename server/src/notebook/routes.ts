@@ -104,3 +104,4 @@ export function registerNotebookRoutes(
   app.post("/notebooks/:id/delete-note", async (req) => {
     const u = user(req),
       sid = (req.params as any).id,
+      b = z.object({ id: z.uuid(), noteId: z.uuid() }).parse(req.body);
