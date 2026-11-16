@@ -27,7 +27,6 @@ class _AdminPageState extends State<AdminPage> {
     try {
       final data = await widget.controller.request(
         'GET',
-        '/admin/users?search=${Uri.encodeQueryComponent(query)}',
       );
       final s = await widget.controller.request('GET', '/admin/stats');
       if (mounted) {
