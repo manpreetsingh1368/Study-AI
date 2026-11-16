@@ -617,4 +617,5 @@ class _SetDetailState extends State<SetDetail> {
                 tooltip: 'Copy answer',
                 onPressed: () => Clipboard.setData(
                   ClipboardData(
+                    text: blocks
 }
