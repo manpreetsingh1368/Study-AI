@@ -107,3 +107,4 @@ export function splitSource(
         text: part,
       });
     if (offset + 2800 >= normalized.length) break;
+  }
