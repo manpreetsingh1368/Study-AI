@@ -252,6 +252,7 @@ class _SetDetailState extends State<SetDetail> {
       builder: (ctx) => AlertDialog(
         title: Row(
           children: [
+            const Icon(Icons.format_quote, color: accent),
                         ),
                       ),
                     ),
