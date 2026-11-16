@@ -51,6 +51,7 @@ void main() {
       expect(find.text('Make space for a new idea.'), findsOneWidget);
     });
   }
+  testWidgets('Onboarding persists completion and appearance preferences', (
 }
 
 class WidgetMemoryStore extends LocalStore {
