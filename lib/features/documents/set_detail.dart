@@ -925,4 +925,5 @@ class _SetDetailState extends State<SetDetail> {
                           ? 'Saved offline · waiting to sync'
                           : note['text'],
                       maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
 }
