@@ -116,7 +116,6 @@ class _SetDetailState extends State<SetDetail> {
                   s['document']['filename'],
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
-                      label: const Text('Open PDF'),
                     ),
                     TextButton.icon(
                       onPressed: busy
