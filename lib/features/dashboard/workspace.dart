@@ -317,6 +317,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
               document: Map<String, dynamic>.from(set['document']),
               initialPageNumber:
                   (int.tryParse(
+                            GoRouterState.of(context)
             );
     }
     if (widget.page == 'attempt') {
