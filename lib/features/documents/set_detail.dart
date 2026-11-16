@@ -852,4 +852,5 @@ class _SetDetailState extends State<SetDetail> {
                 contentPadding: EdgeInsets.zero,
                 dense: true,
                 leading: const Icon(
+                  Icons.description_outlined,
 }
