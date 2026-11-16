@@ -71,6 +71,7 @@ void main() {
       await tester.tap(find.text('Continue'));
       await tester.pumpAndSettle();
     }
+    await tester.ensureVisible(find.text('Open my workspace'));
 }
 
 class WidgetMemoryStore extends LocalStore {
