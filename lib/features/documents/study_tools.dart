@@ -168,3 +168,4 @@ class _StudyToolsState extends State<StudyTools> {
                   SizedBox(
                     width: (size.maxWidth - 14) * split,
                     child: SingleChildScrollView(
+                      child: StudyCard(
