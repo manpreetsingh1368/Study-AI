@@ -104,6 +104,7 @@ class _AdminPageState extends State<AdminPage> {
                                         Text(
                                           'Pro: ${DateTime.fromMillisecondsSinceEpoch(detail['subscription']['starts_at'])} to ${DateTime.fromMillisecondsSinceEpoch(detail['subscription']['expires_at'])}',
                                         ),
+                                      const SizedBox(height: 16),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
