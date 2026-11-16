@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-        if ((s['folder'] ?? '').isNotEmpty)
           Text(s['folder'], style: const TextStyle(color: accent)),
         if (s['pending'] == true)
           const Text('Saved on this device · waiting to synchronize'),
