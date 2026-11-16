@@ -885,4 +885,5 @@ class _SetDetailState extends State<SetDetail> {
                       fontWeight: FontWeight.w700,
                     ),
                   ),
+                ),
 }
