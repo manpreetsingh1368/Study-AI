@@ -98,3 +98,4 @@ class _StudyToolsState extends State<StudyTools> {
                       }
                     },
               icon: const Icon(Icons.delete_outline, size: 18),
+              label: const Text('Delete'),
