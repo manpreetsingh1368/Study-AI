@@ -872,4 +872,5 @@ class _SetDetailState extends State<SetDetail> {
                 onTap: () => setState(() {
                   report = Map<String, dynamic>.from(entry);
                   mobileTab = 1;
+                }),
 }
