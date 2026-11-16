@@ -771,4 +771,5 @@ class _SetDetailState extends State<SetDetail> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
+                                  item.$2,
 }
