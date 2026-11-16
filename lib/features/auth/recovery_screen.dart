@@ -58,3 +58,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                const Icon(Icons.key_outlined, color: accent, size: 40),
