@@ -120,3 +120,4 @@ export async function pdfPages(path: string): Promise<string[]> {
     return stdout.split("\f");
   } catch {
     throw Object.assign(
+      new Error(
