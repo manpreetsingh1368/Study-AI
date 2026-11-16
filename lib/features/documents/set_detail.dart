@@ -528,4 +528,5 @@ class _SetDetailState extends State<SetDetail> {
           padding: const EdgeInsets.fromLTRB(14, 8, 8, 8),
           decoration: BoxDecoration(
             color: Theme.of(context).colorScheme.surface,
+            borderRadius: BorderRadius.circular(18),
 }
