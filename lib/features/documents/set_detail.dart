@@ -462,6 +462,7 @@ class _SetDetailState extends State<SetDetail> {
                                           source['document'] == null
                                               ? 'Lecture notes'
                                               : 'PDF + notes',
+                                          style: TextStyle(
                   ),
                 ),
             ],
