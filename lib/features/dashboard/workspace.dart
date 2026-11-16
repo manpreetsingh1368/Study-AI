@@ -315,6 +315,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
               key: ValueKey(set!['document']['id']),
               controller: c,
               document: Map<String, dynamic>.from(set['document']),
+              initialPageNumber:
             );
     }
     if (widget.page == 'attempt') {
