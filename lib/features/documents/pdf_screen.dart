@@ -36,7 +36,7 @@ class _PdfScreenState extends State<PdfScreen> {
         child: FutureBuilder<Uint8List>(
           future: bytes,
           builder: (context, snapshot) {
-            if (snapshot.hasError)
+            if (snapshot.hasError) {
               return Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -54,8 +54,10 @@ class _PdfScreenState extends State<PdfScreen> {
                   ],
                 ),
               );
-            if (!snapshot.hasData)
+            }
+            if (!snapshot.hasData) {
               return const LoadingState(label: 'Opening your private PDF…');
+            }
             return PdfViewer.data(
               snapshot.data!,
               sourceName:

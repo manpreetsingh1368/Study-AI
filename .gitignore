@@ -10,6 +10,16 @@
 .history
 .svn/
 .swiftpm/
+.env
+.env.*
+!.env.example
+
+**/node_modules/
+**/data/*.db
+**/data/*.sqlite
+**/uploads/
+.dart_tool/
+build/
 migrate_working_dir/
 
 # IntelliJ related

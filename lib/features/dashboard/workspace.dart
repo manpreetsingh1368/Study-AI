@@ -126,9 +126,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                           ),
                         ],
                       ),
-                      if (c.offline ||
-                          c.error != null ||
-                          c.conflicts.isNotEmpty)
+                      if (c.offline || c.error != null || c.attentionCount > 0)
                         Material(
                           color: Theme.of(context)
                               .colorScheme
@@ -150,8 +148,8 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                                 Expanded(
                                   child: Text(
                                     c.error ??
-                                        (c.conflicts.isNotEmpty
-                                            ? '${c.conflicts.length} conflicting edits preserved. Open Sync conflicts to resolve them.'
+                                        (c.attentionCount > 0
+                                            ? '${c.attentionCount} items need attention. Open Sync conflicts to review preserved edits or retry uploads.'
                                             : 'Offline: changes and study progress are saved on this device.'),
                                     style: const TextStyle(fontSize: 12),
                                   ),
@@ -306,7 +304,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
             );
     }
     if (widget.page == 'conflicts') return ConflictsScreen(controller: c);
-    if (widget.page == 'pdf')
+    if (widget.page == 'pdf') {
       return set?['document'] == null
           ? const EmptyState(
               title: 'PDF unavailable',
@@ -317,6 +315,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
               controller: c,
               document: Map<String, dynamic>.from(set['document']),
             );
+    }
     if (widget.page == 'attempt') {
       final attempt = c.attempts
           .where((a) => a['id'] == widget.setId)

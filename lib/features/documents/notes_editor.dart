@@ -110,17 +110,19 @@ class _NotesEditorState extends State<NotesEditor> {
                 final file = details.files.single;
                 if (!file.name.toLowerCase().endsWith('.pdf') ||
                     await file.length() > 10485760) {
-                  if (mounted)
+                  if (mounted) {
                     setState(() => error = 'Drop one PDF smaller than 10 MB.');
+                  }
                   return;
                 }
                 final bytes = await file.readAsBytes();
-                if (mounted)
+                if (mounted) {
                   setState(() {
                     droppedName = file.name;
                     droppedBytes = bytes;
                     pdf = null;
                   });
+                }
               },
               child: DocumentUploadArea(
                 filename:

@@ -88,11 +88,12 @@ class _StudySessionState extends State<StudySession> {
         if (deadline != null) tickTimer();
       }
     } catch (e) {
-      if (mounted)
+      if (mounted) {
         setState(() {
           ready = true;
           error = e.toString();
         });
+      }
     }
   }
 
@@ -192,13 +193,14 @@ class _StudySessionState extends State<StudySession> {
       }
       final score = items.where((q) => answers[q['id']] == q['answer']).length;
       await c.store.write(c.account, draftKey, null);
-      if (mounted)
+      if (mounted) {
         setState(() {
           finished = true;
           result =
               authoritative ??
               {'score': score, 'total': items.length, 'pending': true};
         });
+      }
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
@@ -234,7 +236,7 @@ class _StudySessionState extends State<StudySession> {
   @override
   Widget build(BuildContext context) {
     if (!ready) return const LoadingState();
-    if (items.isEmpty)
+    if (items.isEmpty) {
       return EmptyState(
         title: widget.dueOnly
             ? 'You’re all caught up.'
@@ -243,7 +245,8 @@ class _StudySessionState extends State<StudySession> {
             ? 'There are no cards due in this collection. Your review schedule is saved across devices.'
             : 'Generate learning material from your study set first.',
       );
-    if (finished)
+    }
+    if (finished) {
       return ListView(
         padding: const EdgeInsets.all(28),
         children: [
@@ -285,7 +288,8 @@ class _StudySessionState extends State<StudySession> {
           ],
         ],
       );
-    if (exam && sessionId == null)
+    }
+    if (exam && sessionId == null) {
       return ListView(
         padding: const EdgeInsets.all(28),
         children: [
@@ -315,6 +319,7 @@ class _StudySessionState extends State<StudySession> {
           ),
         ],
       );
+    }
     final q = items[index];
     final reveal =
         !widget.flashcards && immediate && answers.containsKey(q['id']);

@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -40,6 +39,9 @@ class StudyController extends ChangeNotifier {
   String? token, error;
   Map<String, dynamic>? user;
   Map<String, dynamic> plan = {}, analytics = {}, advanced = {};
+  List<Map<String, dynamic>> failedOperations = [], uploadIssues = [];
+  int get attentionCount =>
+      conflicts.length + failedOperations.length + uploadIssues.length;
   List<Map<String, dynamic>> sets = [],
       attempts = [],
       reviews = [],
@@ -103,11 +105,12 @@ class StudyController extends ChangeNotifier {
     } catch (_) {
       throw const FormatException('The backend returned an invalid response.');
     }
-    if (response.statusCode >= 400)
+    if (response.statusCode >= 400) {
       throw ApiException(
         response.statusCode,
         data['message'] ?? 'Request failed.',
       );
+    }
     return data;
   }
 
@@ -144,6 +147,8 @@ class StudyController extends ChangeNotifier {
           .map((e) => Map<String, dynamic>.from(e))
           .toList();
   Future<void> _loadCache() async {
+    failedOperations = await _readList('failures');
+    uploadIssues = await _readList('uploadIssues');
     sets = await _readList('sets');
     attempts = await _readList('attempts');
     reviews = await _readList('reviews');
@@ -199,8 +204,9 @@ class StudyController extends ChangeNotifier {
             );
             if (!later) {
               sets.removeWhere((s) => s['id'] == body['setId']);
-              if (result['set'] != null)
+              if (result['set'] != null) {
                 sets.add(Map<String, dynamic>.from(result['set']));
+              }
             }
           }
         } on ApiException catch (e) {
@@ -232,7 +238,15 @@ class StudyController extends ChangeNotifier {
             }
             blocked.add(body['setId']);
             sets.removeWhere((s) => s['id'] == body['setId']);
-          } else if (e.status == 404) {
+          } else if ([400, 403, 404, 409].contains(e.status)) {
+            failedOperations.removeWhere((op) => op['id'] == operation['id']);
+            failedOperations.add({
+              'id': operation['id'],
+              'path': operation['path'],
+              'body': body,
+              'message': e.message,
+            });
+            await store.write(uid, 'failures', failedOperations);
             await store.remove(operation['id'] as String);
           } else {
             rethrow;
@@ -251,8 +265,9 @@ class StudyController extends ChangeNotifier {
         for (final change in page['changes']) {
           if (pending.contains(change['set_id'])) continue;
           sets.removeWhere((s) => s['id'] == change['set_id']);
-          if (change['set'] != null)
+          if (change['set'] != null) {
             sets.add(Map<String, dynamic>.from(change['set']));
+          }
         }
         cursor = page['cursor'];
         more = page['hasMore'];
@@ -271,13 +286,27 @@ class StudyController extends ChangeNotifier {
       }
       for (final upload in await store.pendingUploads(uid)) {
         if (!valid()) return;
-        if (conflicts.any((c) => c['local']['setId'] == upload['set_id']))
+        if (conflicts.any((c) => c['local']['setId'] == upload['set_id'])) {
           continue;
-        final response = await _sendUpload(upload);
-        if (!valid()) return;
-        await store.removeUpload(upload['id'] as String);
-        sets.removeWhere((s) => s['id'] == upload['set_id']);
-        sets.add(Map<String, dynamic>.from(response['set']));
+        }
+        try {
+          final response = await _sendUpload(upload);
+          if (!valid()) return;
+          await store.removeUpload(upload['id'] as String);
+          uploadIssues.removeWhere((e) => e['id'] == upload['id']);
+          sets.removeWhere((s) => s['id'] == upload['set_id']);
+          sets.add(Map<String, dynamic>.from(response['set']));
+        } on ApiException catch (e) {
+          if (![400, 403, 404, 409, 413].contains(e.status)) rethrow;
+          uploadIssues.removeWhere((i) => i['id'] == upload['id']);
+          uploadIssues.add({
+            'id': upload['id'],
+            'setId': upload['set_id'],
+            'name': upload['name'],
+            'message': e.message,
+          });
+          await store.write(uid, 'uploadIssues', uploadIssues);
+        }
       }
       var learningCursor = await store.read(uid, 'learningCursor') as int? ?? 0;
       do {
@@ -289,8 +318,9 @@ class StudyController extends ChangeNotifier {
         for (final change in page['changes'] ?? []) {
           final list = change['kind'] == 'attempt' ? attempts : reviews;
           list.removeWhere((r) => r['id'] == change['record_id']);
-          if (change['record'] != null)
+          if (change['record'] != null) {
             list.add(Map<String, dynamic>.from(change['record']));
+          }
         }
         learningCursor = page['cursor'] ?? learningCursor;
         more = page['hasMore'] ?? false;
@@ -323,14 +353,15 @@ class StudyController extends ChangeNotifier {
         'analytics': analytics,
         'advanced': advanced,
         'exams': activeExams,
+        'uploadIssues': uploadIssues,
       }.entries) {
         await store.write(uid, e.key, e.value);
       }
       offline = false;
       error = null;
-      syncLabel = conflicts.isEmpty
+      syncLabel = attentionCount == 0
           ? 'Up to date'
-          : '${conflicts.length} edit conflicts to resolve';
+          : '$attentionCount items need attention';
     } on ApiException catch (e) {
       if (!valid()) return;
       error = e.message;
@@ -363,7 +394,7 @@ class StudyController extends ChangeNotifier {
       final pending =
           (await store.pending(account)).isNotEmpty ||
           (await store.pendingUploads(account)).isNotEmpty ||
-          conflicts.isNotEmpty;
+          attentionCount > 0;
       if (eraseCache || !pending) await store.clear(account);
     }
     token = null;
@@ -372,6 +403,8 @@ class StudyController extends ChangeNotifier {
     reviews = [];
     attempts = [];
     conflicts = [];
+    failedOperations = [];
+    uploadIssues = [];
     activeExams = [];
     plan = {};
     analytics = {};
@@ -443,19 +476,21 @@ class StudyController extends ChangeNotifier {
     String? notes,
   }) async {
     final local = Map<String, dynamic>.from(conflict['local']);
-    if (resolution == 'copy')
+    if (resolution == 'copy') {
       await saveSet(
         title ?? '${local['title']} (local copy)',
         notes ?? local['notes'] ?? '',
         folder: local['folder'] ?? '',
       );
+    }
     if (resolution == 'merge') {
       final current = sets.where((s) => s['id'] == local['setId']).firstOrNull;
-      if (current == null)
+      if (current == null) {
         throw ApiException(
           409,
           'The server copy was deleted. Save a separate copy instead.',
         );
+      }
       await saveSet(
         title ?? local['title'],
         notes ?? local['notes'] ?? '',
@@ -466,6 +501,54 @@ class StudyController extends ChangeNotifier {
     conflicts.removeWhere((c) => c['id'] == conflict['id']);
     await store.write(account, 'conflicts', conflicts);
     notifyListeners();
+  }
+
+  Future<void> retryFailedOperation(Map<String, dynamic> operation) async {
+    await store.enqueue(
+      account,
+      operation['path'],
+      Map<String, dynamic>.from(operation['body']),
+    );
+    await discardFailedOperation(operation['id']);
+    await sync();
+  }
+
+  Future<void> discardFailedOperation(String id) async {
+    failedOperations.removeWhere((op) => op['id'] == id);
+    await store.write(account, 'failures', failedOperations);
+    notifyListeners();
+  }
+
+  Future<void> retryUpload(String id) async {
+    final issue = uploadIssues.where((op) => op['id'] == id).first;
+    final current = sets.where((s) => s['id'] == issue['setId']).firstOrNull;
+    if (current == null)
+      throw ApiException(
+        404,
+        'The study set was deleted. Save the PDF to disk before discarding this upload.',
+      );
+    await store.db.update(
+      'uploads',
+      {'version': current['version']},
+      where: 'id=? AND account=?',
+      whereArgs: [id, account],
+    );
+    uploadIssues.removeWhere((op) => op['id'] == id);
+    await store.write(account, 'uploadIssues', uploadIssues);
+    await sync();
+  }
+
+  Future<void> discardUpload(String id) async {
+    await store.removeUpload(id);
+    uploadIssues.removeWhere((op) => op['id'] == id);
+    await store.write(account, 'uploadIssues', uploadIssues);
+    notifyListeners();
+  }
+
+  Future<Uint8List> pendingPdf(String id) async {
+    final bytes = await store.pdf(account, id);
+    if (bytes == null) throw ApiException(404, 'Local PDF unavailable.');
+    return bytes;
   }
 
   Future<dynamic> _sendUpload(Map<String, Object?> upload) async {
@@ -491,8 +574,9 @@ class StudyController extends ChangeNotifier {
         .then(http.Response.fromStream)
         .timeout(const Duration(seconds: 60));
     final result = jsonDecode(response.body);
-    if (response.statusCode >= 400)
+    if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, result['message']);
+    }
     return result;
   }
 
@@ -520,8 +604,9 @@ class StudyController extends ChangeNotifier {
           headers: {'Authorization': 'Bearer $token'},
         )
         .timeout(const Duration(seconds: 45));
-    if (response.statusCode >= 400)
+    if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, 'Could not download this PDF.');
+    }
     if (uid != user?['id']) throw ApiException(401, 'Account changed.');
     await store.cachePdf(uid, id, response.bodyBytes);
     return response.bodyBytes;
@@ -534,20 +619,22 @@ class StudyController extends ChangeNotifier {
     String difficulty,
   ) async {
     await sync();
-    if (offline)
+    if (offline) {
       throw ApiException(
         503,
         'Connect to the backend to generate learning material.',
       );
+    }
     if ((await store.pending(account)).any(
       (op) =>
           op['path'] == '/sync/mutate' &&
           jsonDecode(op['body'] as String)['setId'] == sid,
-    ))
+    )) {
       throw ApiException(
         409,
         'Finish syncing this study set before generating.',
       );
+    }
     await request('POST', '/sets/$sid/generate', {
       'kind': kind,
       'count': count,
@@ -558,6 +645,37 @@ class StudyController extends ChangeNotifier {
 
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
+    if (path == '/attempts') {
+      final set = sets.where((s) => s['id'] == body['setId']).firstOrNull;
+      if (set != null) {
+        final questions = (set['questions'] as List)
+            .where(
+              (q) =>
+                  body['collectionId'] == null ||
+                  q['collection_id'] == body['collectionId'],
+            )
+            .map(
+              (q) => <String, dynamic>{
+                ...Map<String, dynamic>.from(q),
+                'selected': body['answers'][q['id']] ?? -1,
+              },
+            )
+            .toList();
+        final attempt = {
+          'id': body['id'],
+          'set_id': body['setId'],
+          'title': set['title'],
+          'questions': questions,
+          'score': questions.where((q) => q['selected'] == q['answer']).length,
+          'total': questions.length,
+          'created_at': DateTime.now().millisecondsSinceEpoch,
+          'pending': true,
+        };
+        attempts.removeWhere((a) => a['id'] == body['id']);
+        attempts.add(attempt);
+        await store.write(account, 'attempts', attempts);
+      }
+    }
     if (path == '/reviews') {
       final previous = reviewFor(body['cardId']);
       final days = body['known'] == true

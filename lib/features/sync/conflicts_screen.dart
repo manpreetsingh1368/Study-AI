@@ -1,4 +1,5 @@
 import 'package:material_ui/material_ui.dart';
+import 'package:file_picker/file_picker.dart';
 
 import '../../core/api/study_controller.dart';
 import '../../shared/components.dart';
@@ -14,9 +15,10 @@ class ConflictsScreen extends StatelessWidget {
     try {
       await controller.resolveConflict(conflict, resolution: choice);
     } catch (e) {
-      if (context.mounted)
+      if (context.mounted) {
         ScaffoldMessenger.of(context)
             .showSnackBar(SnackBar(content: Text(e.toString())));
+      }
     }
   }
 
@@ -35,10 +37,99 @@ class ConflictsScreen extends StatelessWidget {
           'Your local copy is preserved here. Compare it with the current server copy before choosing what to keep.',
         ),
         const SizedBox(height: 24),
-        if (controller.conflicts.isEmpty)
+        if (controller.attentionCount == 0)
           const EmptyState(
             title: 'Everything is in harmony',
             description: 'There are no conflicting edits to resolve.',
+          ),
+        for (final op in controller.failedOperations)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: StudyCard(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Study progress could not synchronize',
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  Text(op['message']),
+                  Wrap(
+                    spacing: 12,
+                    children: [
+                      TextButton(
+                        onPressed: () => controller.retryFailedOperation(op),
+                        child: const Text('Retry'),
+                      ),
+                      TextButton(
+                        onPressed: () =>
+                            controller.discardFailedOperation(op['id']),
+                        child: const Text('Discard rejected operation'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        for (final issue in controller.uploadIssues)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: StudyCard(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    issue['name'],
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                  Text(issue['message']),
+                  Wrap(
+                    spacing: 12,
+                    children: [
+                      TextButton(
+                        onPressed: () async {
+                          try {
+                            await controller.retryUpload(issue['id']);
+                          } catch (e) {
+                            if (context.mounted)
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text(e.toString())),
+                              );
+                          }
+                        },
+                        child: const Text('Retry against current version'),
+                      ),
+                      TextButton(
+                        onPressed: () async {
+                          try {
+                            final bytes = await controller.pendingPdf(
+                              issue['id'],
+                            );
+                            await FilePicker.saveFile(
+                              fileName: issue['name'],
+                              bytes: bytes,
+                              type: FileType.custom,
+                              allowedExtensions: ['pdf'],
+                            );
+                          } catch (e) {
+                            if (context.mounted)
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text(e.toString())),
+                              );
+                          }
+                        },
+                        child: const Text('Save local PDF to disk'),
+                      ),
+                      TextButton(
+                        onPressed: () => controller.discardUpload(issue['id']),
+                        child: const Text('Discard upload'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ),
         for (final conflict in controller.conflicts)
           Padding(
@@ -194,10 +285,11 @@ class ConflictsScreen extends StatelessWidget {
                                 notes: notes.text,
                               );
                             } catch (e) {
-                              if (context.mounted)
+                              if (context.mounted) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   SnackBar(content: Text(e.toString())),
                                 );
+                              }
                             }
                           }
                           title.dispose();

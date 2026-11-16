@@ -80,8 +80,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 try {
                                   await widget.controller.completeOnboarding();
                                 } catch (e) {
-                                  if (mounted)
+                                  if (mounted) {
                                     setState(() => error = e.toString());
+                                  }
                                 } finally {
                                   if (mounted) setState(() => busy = false);
                                 }

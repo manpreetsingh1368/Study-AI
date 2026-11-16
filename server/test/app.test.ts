@@ -1,3 +1,4 @@
+import { PDFDocument } from "pdf-lib";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { mkdtempSync, rmSync } from "node:fs";
@@ -303,7 +304,7 @@ test("private PDF upload signature validation and download authorization", async
   const sid = (
     await call("POST", "/sets", a.token, { title: "PDF", notes: "" })
   ).body.set.id;
-  async function upload(content: string) {
+  async function upload(content: string | Buffer) {
     return app.inject({
       method: "POST",
       url: `/sets/${sid}/pdf`,
@@ -311,11 +312,20 @@ test("private PDF upload signature validation and download authorization", async
         authorization: `Bearer ${a.token}`,
         "content-type": "multipart/form-data; boundary=study",
       },
-      payload: `--study\r\nContent-Disposition: form-data; name="file"; filename="notes.pdf"\r\nContent-Type: application/pdf\r\n\r\n${content}\r\n--study--\r\n`,
+      payload: Buffer.concat([
+        Buffer.from(
+          '--study\r\nContent-Disposition: form-data; name="file"; filename="notes.pdf"\r\nContent-Type: application/pdf\r\n\r\n',
+        ),
+        Buffer.isBuffer(content) ? content : Buffer.from(content),
+        Buffer.from("\r\n--study--\r\n"),
+      ]),
     });
   }
   assert.equal((await upload("not a PDF")).statusCode, 400);
-  const pdf = await upload("%PDF-1.4\n%%EOF");
+  assert.equal((await upload("%PDF-1.4\n%%EOF")).statusCode, 400);
+  const document = await PDFDocument.create();
+  document.addPage();
+  const pdf = await upload(Buffer.from(await document.save()));
   assert.equal(pdf.statusCode, 200);
   const did = pdf.json().set.document.id;
   assert.equal(

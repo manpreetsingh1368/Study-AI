@@ -90,11 +90,12 @@ class _SetDetailState extends State<SetDetail> {
                           ],
                         ),
                       );
-                      if (yes == true)
+                      if (yes == true) {
                         await action(() async {
                           await c.deleteSet(s);
                           if (context.mounted) context.go('/library');
                         });
+                      }
                     },
               icon: const Icon(Icons.delete_outline, size: 18),
               label: const Text('Delete'),
@@ -128,7 +129,7 @@ class _SetDetailState extends State<SetDetail> {
                           ? null
                           : () => action(() async {
                               await c.documentBytes(s['document']['id']);
-                              if (context.mounted)
+                              if (context.mounted) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   const SnackBar(
                                     content: Text(
@@ -136,6 +137,7 @@ class _SetDetailState extends State<SetDetail> {
                                     ),
                                   ),
                                 );
+                              }
                             }),
                       icon: const Icon(Icons.offline_pin_outlined),
                       label: const Text('Keep offline'),

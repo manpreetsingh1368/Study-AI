@@ -10,11 +10,13 @@ import {
   writeFileSync,
   unlinkSync,
   existsSync,
+  renameSync,
 } from "node:fs";
 import { join } from "node:path";
 import { eq } from "drizzle-orm";
 import { z } from "zod";
 import { openDatabase } from "./database/db.js";
+import { validatePdf } from "./ai/pdf.js";
 import { users } from "./database/schema.js";
 import { registerLearningRoutes } from "./routes/learning.js";
 import {
@@ -389,10 +391,22 @@ export function createApp(
     const bytes = await part!.toBuffer();
     if (bytes.subarray(0, 5).toString() !== "%PDF-")
       fail(400, "Invalid PDF signature.");
-    writeFileSync(join(uploads, did), bytes, { mode: 0o600 });
+    if (get("SELECT id FROM documents WHERE id=?", did))
+      fail(409, "Document identifier already used.");
+    const temporary = join(uploads, `${id()}.pending`);
+    writeFileSync(temporary, bytes, { mode: 0o600 });
+    let promoted = false;
     try {
+      await validatePdf(temporary);
       db.transaction(() => {
-        owned(u.id, s.id);
+        const current = owned(u.id, s.id);
+        if (current.version !== s.version)
+          fail(
+            409,
+            "This material changed during upload. Refresh and try again.",
+          );
+        if (get("SELECT id FROM documents WHERE id=?", did))
+          fail(409, "Document identifier already used.");
         if (
           get(
             "SELECT coalesce(sum(d.bytes),0) n FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.user_id=?",
@@ -416,9 +430,13 @@ export function createApp(
           s.id,
         );
         change(s.id, u.id);
+        renameSync(temporary, join(uploads, did));
+        promoted = true;
       })();
     } catch (e) {
-      unlinkSync(join(uploads, did));
+      if (existsSync(temporary)) unlinkSync(temporary);
+      if (promoted && existsSync(join(uploads, did)))
+        unlinkSync(join(uploads, did));
       throw e;
     }
     if (previousDocument && existsSync(join(uploads, previousDocument.id)))
