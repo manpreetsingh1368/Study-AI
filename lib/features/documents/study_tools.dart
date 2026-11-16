@@ -326,3 +326,4 @@ class _StudyToolsState extends State<StudyTools> {
                       for (final n in [5, 10, 20, 50])
                         DropdownMenuEntry(
                           value: n,
+                          label: '$n',
