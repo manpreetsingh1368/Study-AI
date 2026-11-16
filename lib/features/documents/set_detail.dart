@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-                      ? Icons.timer_outlined
                       : Icons.quiz_outlined,
                   color: accent,
                 ),
