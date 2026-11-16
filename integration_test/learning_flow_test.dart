@@ -183,3 +183,4 @@ void main() {
         expect(image!.width, greaterThan(0));
         image.dispose();
         await pdf.dispose();
+        process.kill();
