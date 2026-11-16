@@ -254,3 +254,4 @@ test("source selection excludes previous conversations about unchecked sources; 
     429,
   );
 });
+test("citation normalization and explicit insufficient-evidence behavior", () => {
