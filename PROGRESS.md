@@ -82,6 +82,7 @@ Application, backend, tests, deployment and documentation files created or updat
 - `server/migrations/001_initial.sql`
 - `server/migrations/002_learning_sync.sql`
 - `server/migrations/003_recovery_and_generation.sql`
+- `server/migrations/004_notebook_studio.sql`
 - `server/package-lock.json`
 - `server/package.json`
 - `server/src/admin.ts`
