@@ -637,4 +637,5 @@ class _SetDetailState extends State<SetDetail> {
                       .join('\n\n'),
                 ),
                 icon: const Icon(Icons.file_download_outlined, size: 18),
+              ),
 }
