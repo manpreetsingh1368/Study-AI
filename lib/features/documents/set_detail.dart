@@ -858,4 +858,5 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 title: Text(
                   label(entry['kind']),
+                  style: const TextStyle(fontSize: 11),
 }
