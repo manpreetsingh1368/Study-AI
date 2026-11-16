@@ -676,6 +676,7 @@ class StudyController extends ChangeNotifier {
         await store.write(account, 'attempts', attempts);
       }
     }
+    if (path == '/reviews' && !reviews.any((r) => r['id'] == body['id'])) {
       final previous = reviewFor(body['cardId']);
       final days = body['known'] == true
           ? (previous?['known'] == 1
