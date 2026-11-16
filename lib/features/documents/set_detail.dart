@@ -418,6 +418,7 @@ class _SetDetailState extends State<SetDetail> {
                                       () => error = 'Select up to 8 sources.',
                                     );
                                     return;
+                                  }
                   ),
                 ),
             ],
