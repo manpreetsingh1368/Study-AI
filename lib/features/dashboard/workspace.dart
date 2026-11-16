@@ -650,6 +650,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                     ),
                   ),
               ],
+            ),
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
