@@ -57,3 +57,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
           child: StudyCard(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
