@@ -50,3 +50,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
       .get("s") as any;
     assert.equal(material.notes, "Important notes");
     assert.equal(material.version, 2);
+    assert.equal(material.folder, "");
