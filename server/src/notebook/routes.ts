@@ -243,3 +243,4 @@ export function registerNotebookRoutes(
         hash,
       );
     })();
+    try {
