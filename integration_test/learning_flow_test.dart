@@ -96,3 +96,4 @@ void main() {
       ); // Test-only credentials; never touches the user's keyring.
       final store = await testStore(), otherStore = await testStore();
       final c = StudyController(store, baseUrl: 'http://127.0.0.1:$port');
+      final other = StudyController(
