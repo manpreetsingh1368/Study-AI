@@ -207,6 +207,7 @@ void main() {
               await tester.pumpAndSettle();
             }
             await c.setAppearance(appearance);
+            await tester.pumpAndSettle();
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
