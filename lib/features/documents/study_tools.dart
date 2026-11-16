@@ -213,3 +213,4 @@ class _StudyToolsState extends State<StudyTools> {
           style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height: 16),
+        if (decks.isEmpty)
