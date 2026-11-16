@@ -171,6 +171,7 @@ class _SetDetailState extends State<SetDetail> {
           text.text.trim(),
           folder: widget.set['folder'] ?? '',
         );
+        if (mounted) setState(() => selected.add(source['id']));
                         ),
                       ),
                     ),
