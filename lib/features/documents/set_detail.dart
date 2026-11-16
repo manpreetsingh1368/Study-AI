@@ -361,6 +361,7 @@ class _SetDetailState extends State<SetDetail> {
                   maxLength: 30000,
                   decoration: const InputDecoration(
                     labelText: 'Your note',
+                    alignLabelWithHint: true,
                         ),
                       ),
                     ),
