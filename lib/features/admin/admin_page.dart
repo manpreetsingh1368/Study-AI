@@ -25,6 +25,7 @@ class _AdminPageState extends State<AdminPage> {
 
   Future<void> load({bool append = false}) async {
     if (loading) return;
+    setState(() => loading = true);
     try {
       final data = await widget.controller.request(
         'GET',
