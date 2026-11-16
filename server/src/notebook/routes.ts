@@ -287,3 +287,4 @@ export function registerNotebookRoutes(
           hash,
           JSON.stringify(verified),
           now(),
+        );
