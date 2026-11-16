@@ -76,3 +76,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
               "A citation could not be verified against your sources. Please retry.",
             ),
             { statusCode: 502 },
+          );
