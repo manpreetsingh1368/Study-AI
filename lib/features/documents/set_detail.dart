@@ -498,4 +498,5 @@ class _SetDetailState extends State<SetDetail> {
               },
               style: OutlinedButton.styleFrom(
                 padding: const EdgeInsets.all(16),
+                alignment: Alignment.centerLeft,
 }
