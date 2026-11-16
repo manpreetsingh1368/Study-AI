@@ -19,3 +19,4 @@ class _StudyToolsState extends State<StudyTools> {
   int count = 5;
   bool busy = false, sideBySide = false;
   double split = .5;
+  String? error;
