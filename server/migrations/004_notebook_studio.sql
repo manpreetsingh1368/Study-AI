@@ -7,3 +7,4 @@ CREATE TABLE notebook_preferences(notebook_id TEXT PRIMARY KEY REFERENCES study_
 INSERT INTO sync_changes(user_id,set_id,version,deleted) SELECT user_id,id,version,deleted FROM study_sets;
 
 -- Receipts acknowledge operations; they must not retain private historical snapshots.
+UPDATE mutation_receipts SET response=json_object('setId',json_extract(response,'$.setId'));
