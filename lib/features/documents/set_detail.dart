@@ -117,6 +117,7 @@ class _SetDetailState extends State<SetDetail> {
   Future<void> addSource() async {
     final choice = await showModalBottomSheet<String>(
       context: context,
+      showDragHandle: true,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
