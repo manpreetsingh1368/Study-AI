@@ -132,3 +132,4 @@ class _StudyToolsState extends State<StudyTools> {
                               if (context.mounted) {
                                 ScaffoldMessenger.of(context).showSnackBar(
                                   const SnackBar(
+                                    content: Text(
