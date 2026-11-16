@@ -635,4 +635,5 @@ class _SetDetailState extends State<SetDetail> {
                             '## ${b['heading']}\n\n${b['text']}\n\n${(b['citations'] as List).map((v) => '> ${v['quote']} — ${v['title']}${v['page'] == null ? '' : ' (page ${v['page']})'}').join('\n\n')}',
                       )
                       .join('\n\n'),
+                ),
 }
