@@ -291,3 +291,4 @@ class _StudyToolsState extends State<StudyTools> {
                             count = 5;
                           }),
                     dropdownMenuEntries: [
+                      const DropdownMenuEntry(value: 'quiz', label: 'Quiz'),
