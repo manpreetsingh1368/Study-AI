@@ -15,7 +15,6 @@ class SetDetail extends StatefulWidget {
 }
 
 class _SetDetailState extends State<SetDetail> {
-  String kind = 'quiz', level = 'medium';
   int count = 5;
   bool busy = false, sideBySide = false;
   double split = .5;
