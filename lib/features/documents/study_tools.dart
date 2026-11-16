@@ -108,3 +108,4 @@ class _StudyToolsState extends State<StudyTools> {
           const SizedBox(height: 16),
         ],
         if (s['document'] != null) ...[
+          StudyCard(
