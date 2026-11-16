@@ -303,7 +303,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                        label: 'Hard · Pro',
                         enabled: pro,
                       ),
                     ],
