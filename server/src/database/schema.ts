@@ -222,3 +222,4 @@ export const notebookNotes = sqliteTable("notebook_notes", {
   createdAt: integer("created_at").notNull(),
   deleted: integer("deleted").notNull().default(0),
 });
+export const notebookPreferences = sqliteTable("notebook_preferences", {
