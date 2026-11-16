@@ -623,3 +623,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
     (
       await call("POST", "/auth/recover", undefined, {
         email: "student@example.com",
+        code: recovery.code,
