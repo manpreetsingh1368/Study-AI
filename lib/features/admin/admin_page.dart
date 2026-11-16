@@ -90,6 +90,7 @@ class _AdminPageState extends State<AdminPage> {
                                 child: SingleChildScrollView(
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
+                                    crossAxisAlignment:
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
