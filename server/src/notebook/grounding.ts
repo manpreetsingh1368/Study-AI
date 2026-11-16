@@ -155,3 +155,4 @@ export async function notebookGenerate(
             responseJsonSchema: z.toJSONSchema(responseSchema),
             maxOutputTokens: Number(process.env.GEMINI_MAX_TOKENS || 12000),
           },
+        }),
