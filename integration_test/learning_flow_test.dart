@@ -181,3 +181,4 @@ void main() {
         final image = await pdf.pages.first.render();
         expect(image, isNotNull);
         expect(image!.width, greaterThan(0));
+        image.dispose();
