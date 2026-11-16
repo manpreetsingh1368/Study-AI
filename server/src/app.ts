@@ -298,6 +298,7 @@ export function createApp(
           email: z
             .email()
             .max(254)
+            .transform((s) => s.toLowerCase()),
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
