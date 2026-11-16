@@ -395,6 +395,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
         'Your next breakthrough\nstarts here.',
         'Welcome back, ${c.user?['name'] ?? 'student'}. Make a little room for learning.',
         trailing: PrimaryActionButton(
+          label: 'New notebook',
           onPressed: () => context.go('/create'),
         ),
       ),
