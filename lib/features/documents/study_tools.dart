@@ -222,3 +222,4 @@ class _StudyToolsState extends State<StudyTools> {
             padding: const EdgeInsets.only(bottom: 12),
             child: StudyCard(
               padding: const EdgeInsets.all(8),
+              child: ListTile(
