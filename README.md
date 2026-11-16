@@ -75,6 +75,7 @@ Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses thr
 
 The backend extracts PDF text using the open-source `pdftotext` command from `poppler-utils` (`PDFTOTEXT_BIN` may specify an alternate executable). Source extraction has a timeout/output bound; selected text is limited to 100,000 characters in total. Oversized selections are rejected explicitly. Scanned PDFs without selectable text require pasted notes or a transcript.
 
+Only checked source material and prior conversation turns confined to those same sources are sent for notebook requests. Responses use structured JSON. Every citation must reference a supplied chunk and contain a quotation found in that chunk after whitespace/Unicode normalization. Unsupported citations are rejected and failed application quota reservations are released. A verified quotation proves the excerpt exists, not that every AI interpretation is correct: inspect sources for important claims. Insufficient-evidence responses are shown explicitly.
 
 ## Recovery codes
 
