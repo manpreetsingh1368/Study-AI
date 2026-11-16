@@ -622,6 +622,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
               final width = (size.maxWidth - (columns - 1) * 16) / columns;
               return Wrap(
                 spacing: 16,
+                runSpacing: 16,
       ],
     );
   }
