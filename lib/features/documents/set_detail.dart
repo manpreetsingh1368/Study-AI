@@ -317,6 +317,7 @@ class _SetDetailState extends State<SetDetail> {
         .join('\n\n');
     if (text.isEmpty) return;
     await task(() async {
+      await c.saveNotebookNote(
                         ),
                       ),
                     ),
