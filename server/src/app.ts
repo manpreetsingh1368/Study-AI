@@ -498,6 +498,7 @@ export function createApp(
     const previousUsage = get(
       "SELECT * FROM generation_usage WHERE id=?",
       usage,
+    );
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
