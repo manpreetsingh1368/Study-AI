@@ -178,3 +178,4 @@ void main() {
           sourceName: 'native-acceptance',
         );
         expect(pdf.pages.length, 1);
+        final image = await pdf.pages.first.render();
