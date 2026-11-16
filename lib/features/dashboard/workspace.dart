@@ -613,6 +613,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
           )
         else
           LayoutBuilder(
+            builder: (context, size) {
       ],
     );
   }
