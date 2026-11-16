@@ -87,3 +87,4 @@ export function registerNotebookRoutes(
         citations = JSON.parse(original.content).blocks.flatMap(
           (block: any) => block.citations,
         );
+      }
