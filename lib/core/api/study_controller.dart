@@ -200,7 +200,6 @@ class StudyController extends ChangeNotifier {
             body,
           );
           if (!valid()) return;
-          await store.remove(operation['id'] as String);
           if (operation['path'] == '/sync/mutate') {
             final remaining = (await store.pending(uid))
                 .where((op) => op['id'] != operation['id'])
