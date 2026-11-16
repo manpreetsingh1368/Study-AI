@@ -21,6 +21,7 @@ class _SetDetailState extends State<SetDetail> {
   double split = .5;
   String? error;
   StudyController get c => widget.controller;
+  Map<String, dynamic> get notebook =>
     setState(() {
       busy = true;
       error = null;
