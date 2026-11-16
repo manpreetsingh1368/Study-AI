@@ -164,6 +164,7 @@ void main() {
         await tester.pumpAndSettle();
         await tester.ensureVisible(find.text('A.  Energy'));
         await tester.tap(find.text('A.  Energy'));
+        await tester.pumpAndSettle();
 }
 
 class WidgetMemoryStore extends LocalStore {
