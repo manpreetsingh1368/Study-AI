@@ -679,4 +679,5 @@ class _SetDetailState extends State<SetDetail> {
                     Map<String, dynamic>.from(block['citations'][i]),
                   ),
                 ),
+            ],
 }
