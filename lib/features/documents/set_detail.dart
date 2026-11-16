@@ -400,6 +400,7 @@ class _SetDetailState extends State<SetDetail> {
     'summary' => 'Source overview',
     'guide' => 'Study guide',
     'faq' => 'Questions & answers',
+    _ => 'Source conversation',
                         ),
                       ),
                     ),
