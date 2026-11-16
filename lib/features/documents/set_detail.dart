@@ -874,4 +874,5 @@ class _SetDetailState extends State<SetDetail> {
                   mobileTab = 1;
                 }),
               ),
+            const SizedBox(height: 20),
 }
