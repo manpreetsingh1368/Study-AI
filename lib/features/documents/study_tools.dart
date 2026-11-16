@@ -29,3 +29,4 @@ class _StudyToolsState extends State<StudyTools> {
     try {
       await task();
     } catch (e) {
+      if (mounted) setState(() => error = e.toString());
