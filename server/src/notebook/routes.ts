@@ -60,3 +60,4 @@ export function registerNotebookRoutes(
     owned(u.id, sid);
     return db.transaction(() => {
       const existing = get("SELECT * FROM notebook_notes WHERE id=?", b.id);
+      if (existing) {
