@@ -182,6 +182,7 @@ class _SetDetailState extends State<SetDetail> {
             ),
           ),
           if (error != null)
+            Padding(
                   ),
                 ],
               ),
