@@ -64,3 +64,4 @@ async function setup(t: any, generate = supported) {
 test("notebook: verified citations, idempotent quota, pinned notes, source ownership and sync", async (t) => {
   const { call, register } = await setup(t);
   const a = await register("a@example.com"),
+    b = await register("b@example.com");
