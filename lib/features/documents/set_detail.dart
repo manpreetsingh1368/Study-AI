@@ -663,4 +663,5 @@ class _SetDetailState extends State<SetDetail> {
             spacing: 6,
             runSpacing: 6,
             children: [
+              for (var i = 0; i < (block['citations'] as List).length; i++)
 }
