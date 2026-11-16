@@ -658,3 +658,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
         email: "student@example.com",
         code: next.code,
         password: "replacement-again",
+      })
