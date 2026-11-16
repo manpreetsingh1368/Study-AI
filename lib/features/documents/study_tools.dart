@@ -208,3 +208,4 @@ class _StudyToolsState extends State<StudyTools> {
         else if ((s['notes'] as String).isNotEmpty)
           StudyCard(child: SelectableText(s['notes'])),
         const SizedBox(height: 28),
+        Text(
