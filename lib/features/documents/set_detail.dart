@@ -33,6 +33,7 @@ class _SetDetailState extends State<SetDetail> {
     selected = Set<String>.from(notebook['sourceIds'] ?? [widget.set['id']]);
   }
 
+  Future<void> task(Future<void> Function() work) async {
     setState(() {
       busy = true;
       error = null;
