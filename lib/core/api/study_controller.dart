@@ -102,6 +102,7 @@ class StudyController extends ChangeNotifier {
         .timeout(
           Duration(
             seconds: path.endsWith('/ask')
+                ? 300
     final dynamic data;
     try {
       data = jsonDecode(response.body);
