@@ -59,3 +59,4 @@ class _StudyToolsState extends State<StudyTools> {
                   : () => showModalBottomSheet(
                       context: context,
                       isScrollControlled: true,
+                      builder: (_) => SizedBox(
