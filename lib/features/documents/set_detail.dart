@@ -866,4 +866,5 @@ class _SetDetailState extends State<SetDetail> {
                       .toString()
                       .split('.')
                       .first,
+                  style: const TextStyle(fontSize: 9),
 }
