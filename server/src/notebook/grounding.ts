@@ -110,3 +110,4 @@ export function splitSource(
   }
   return result;
 }
+export async function pdfPages(path: string): Promise<string[]> {
