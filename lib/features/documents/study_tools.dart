@@ -245,3 +245,4 @@ class _StudyToolsState extends State<StudyTools> {
                       TextButton(
                         onPressed: () => context.go(
                           '/cards/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}&due=true',
+                        ),
