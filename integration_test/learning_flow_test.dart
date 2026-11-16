@@ -150,3 +150,4 @@ void main() {
         ) {
           await tester.pump(const Duration(milliseconds: 250));
         }
+        expect(find.text('Session complete.'), findsOneWidget);
