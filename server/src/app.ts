@@ -487,6 +487,7 @@ export function createApp(
       }),
     );
     const requestHash = digest(
+      JSON.stringify({
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
