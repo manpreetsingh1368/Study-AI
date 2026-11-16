@@ -313,3 +313,4 @@ export function notebookState(sid: string, get: any, all: any) {
       sid,
     ).map((r: any) => ({
       ...r,
+      sourceIds: JSON.parse(r.source_ids),
