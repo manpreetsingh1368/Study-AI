@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-  @override
   Widget build(BuildContext context) {
     final s = widget.set;
     final pro = c.plan['pro'] == true;
