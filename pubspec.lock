@@ -867,6 +867,7 @@ packages:
     source: hosted
     version: "1.1.2"
   webdriver:
+    dependency: transitive
   win32:
     dependency: transitive
     description:
