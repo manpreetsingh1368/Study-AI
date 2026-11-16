@@ -86,6 +86,7 @@ Created implementation/documentation files:
 - `server/src/database/db.ts`
 - `server/src/database/schema.ts`
 - `server/src/index.ts`
+- `server/src/maintenance.ts`
 - `server/test/app.test.ts`
 - `server/test/fixture-server.ts`
 - `server/test/gemini.test.ts`
