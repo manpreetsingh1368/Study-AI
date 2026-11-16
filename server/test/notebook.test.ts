@@ -226,3 +226,4 @@ test("source selection excludes previous conversations about unchecked sources; 
     ["faq", [two.id]],
   ] as const) {
     assert.equal(
+      (
