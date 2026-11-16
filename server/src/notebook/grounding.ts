@@ -106,3 +106,4 @@ export function splitSource(
         id: `${source.sourceId}:${source.page ?? 0}:${result.length}`,
         text: part,
       });
+    if (offset + 2800 >= normalized.length) break;
