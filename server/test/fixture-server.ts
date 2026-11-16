@@ -18,6 +18,7 @@ const app = createApp({
           },
         ],
       },
+    ],
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
