@@ -177,6 +177,7 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                     if (!wide)
+                      IconButton(
                   ),
                 ),
               ],
