@@ -51,3 +51,4 @@ async function setup(t: any, generate = supported) {
     return { status: r.statusCode, body: r.json() };
   }
   async function register(email: string) {
+    return (
