@@ -207,3 +207,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
     0,
   );
 });
+test("source selection excludes previous conversations about unchecked sources; all modes share quota", async (t) => {
