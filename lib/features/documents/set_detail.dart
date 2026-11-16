@@ -166,6 +166,7 @@ class _SetDetailState extends State<SetDetail> {
           file.name.replaceFirst(RegExp(r'\.pdf$', caseSensitive: false), ''),
           '',
           folder: widget.set['folder'] ?? '',
+        );
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
