@@ -735,6 +735,7 @@ class StudyController extends ChangeNotifier {
         'id': id,
         'title': title,
         'text': text,
+        'created_at': DateTime.now().millisecondsSinceEpoch,
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
