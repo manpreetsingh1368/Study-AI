@@ -120,6 +120,7 @@ class _SettingsPageState extends State<SettingsPage> {
             const SizedBox(height: 12),
             OutlinedButton.icon(
               onPressed: busy
+                  ? null
             OutlinedButton(
               onPressed: busy
                   ? null
