@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-          runSpacing: 12,
           children: [
             OutlinedButton.icon(
               onPressed: busy
