@@ -27,3 +27,4 @@ export const responseSchema = z.object({
             }),
           )
           .min(1)
+          .max(4),
