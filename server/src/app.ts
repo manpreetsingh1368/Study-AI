@@ -490,6 +490,7 @@ export function createApp(
         "pending",
         now(),
         requestHash,
+        requestConfig,
       );
     })();
     try {
