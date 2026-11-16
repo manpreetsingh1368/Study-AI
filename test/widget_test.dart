@@ -119,6 +119,7 @@ void main() {
             'questions': [
               {
                 'id': 'q1',
+                'collection_id': 'quiz-one',
 }
 
 class WidgetMemoryStore extends LocalStore {
