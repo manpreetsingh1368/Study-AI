@@ -373,6 +373,7 @@ class _SetDetailState extends State<SetDetail> {
           padding: const EdgeInsets.symmetric(horizontal: 14),
           child: TextField(
             controller: sourceSearch,
+            onChanged: (_) => setState(() {}),
                   ),
                 ),
             ],
