@@ -324,6 +324,7 @@ class _SetDetailState extends State<SetDetail> {
                 0,
                 (entry['prompt'] as String).length.clamp(0, 150),
               )
+            : label(entry['kind']),
                         ),
                       ),
                     ),
