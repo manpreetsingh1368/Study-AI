@@ -98,6 +98,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
             bottomNavigationBar:
                 desktop ||
                     widget.page == 'quiz' ||
+                    widget.page == 'set' ||
                     (widget.page == 'cards' && widget.setId != null)
                 ? null
                 : AdaptiveNavigation(page: widget.page),
