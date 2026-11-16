@@ -170,3 +170,4 @@ export async function notebookGenerate(
             : "The AI provider could not complete the notebook request.",
         ),
         { statusCode: response.status === 429 ? 429 : 502 },
+      );
