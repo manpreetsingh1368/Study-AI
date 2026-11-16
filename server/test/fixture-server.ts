@@ -16,3 +16,4 @@ const app = createApp({
             explanation: "ATP transfers chemical energy.",
             topic: "Cell biology",
             difficulty: input.difficulty,
+          })),
