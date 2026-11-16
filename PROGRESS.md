@@ -93,4 +93,3 @@ Created implementation/documentation files:
 
 Flutter regenerated native plugin integration files:
 
-- Android debug APK: `build/app/outputs/flutter-apk/app-debug.apk` (debug-signed, not a store release).
