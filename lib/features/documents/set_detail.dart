@@ -351,6 +351,7 @@ class _SetDetailState extends State<SetDetail> {
       children: [
         panelTitle(
           'Sources',
+          Icons.source_outlined,
                   ),
                 ),
             ],
