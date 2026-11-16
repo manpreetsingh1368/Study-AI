@@ -110,6 +110,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                       if (desktop || widget.page != 'set')
                         Row(
                           children: [
+                            if (desktop)
                             ),
                           ],
                         ),
