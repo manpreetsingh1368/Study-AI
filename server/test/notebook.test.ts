@@ -260,3 +260,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
     "ATP transfers\n chemical energy.",
   );
   assert.equal(
+    validatedEvidence(
