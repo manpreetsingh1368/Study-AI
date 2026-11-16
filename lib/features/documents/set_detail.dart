@@ -374,4 +374,5 @@ class _SetDetailState extends State<SetDetail> {
         ),
         const Divider(height: 1),
         Expanded(
+          child: report != null
 }
