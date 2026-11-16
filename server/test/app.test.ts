@@ -606,3 +606,4 @@ test("immutable collections, historical review, learning deltas and timed exam e
     1,
   );
 });
+test("one-time recovery revokes sessions, consumes codes and supports expiration", async (t) => {
