@@ -6,3 +6,4 @@ import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { createApp } from "../src/app.js";
 import {
+  splitSource,
