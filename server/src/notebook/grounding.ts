@@ -178,3 +178,4 @@ export async function notebookGenerate(
           data.candidates?.[0]?.content?.parts
             ?.map((p: any) => p.text || "")
             .join("") || "{}",
+        ),
