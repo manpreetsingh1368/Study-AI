@@ -112,3 +112,4 @@ class _StudyToolsState extends State<StudyTools> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Text(
