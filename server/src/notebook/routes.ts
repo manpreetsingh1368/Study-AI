@@ -55,3 +55,4 @@ export function registerNotebookRoutes(
           title: z.string().trim().min(1).max(150),
           text: z.string().trim().min(1).max(30000),
           entryId: z.uuid().optional(),
+        })
