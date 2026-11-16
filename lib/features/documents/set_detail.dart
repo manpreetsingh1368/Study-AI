@@ -447,4 +447,5 @@ class _SetDetailState extends State<SetDetail> {
         if (report == null) composerBox(),
       ],
     );
+  }
 }
