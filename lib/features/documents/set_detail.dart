@@ -102,7 +102,6 @@ class _SetDetailState extends State<SetDetail> {
             ),
           ],
         ),
-        if (error != null) ...[
           ErrorState(message: error!),
           const SizedBox(height: 16),
         ],
