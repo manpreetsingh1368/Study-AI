@@ -627,4 +627,5 @@ class _SetDetailState extends State<SetDetail> {
             if (isReport)
               IconButton(
                 tooltip: 'Export Markdown',
+                onPressed: () => export(
 }
