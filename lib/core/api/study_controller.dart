@@ -636,6 +636,7 @@ class StudyController extends ChangeNotifier {
       );
     }
     await request('POST', '/sets/$sid/generate', {
+      'id': operationId,
       'kind': kind,
       'count': count,
       'difficulty': difficulty,
