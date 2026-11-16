@@ -112,6 +112,7 @@ class _SetDetailState extends State<SetDetail> {
     builder: (_) => SizedBox(
       height: MediaQuery.sizeOf(context).height * .88,
       child: NotesEditor(controller: c, existing: widget.set),
+    ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
