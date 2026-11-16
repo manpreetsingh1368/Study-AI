@@ -128,3 +128,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     text: "ATP transfers energy.",
     entryId: request.id,
   };
+  assert.equal(
