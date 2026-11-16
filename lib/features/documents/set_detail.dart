@@ -930,4 +930,5 @@ class _SetDetailState extends State<SetDetail> {
                     ),
                     onTap: () => showDialog(
                       context: context,
+                      builder: (ctx) => AlertDialog(
 }
