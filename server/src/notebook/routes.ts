@@ -127,3 +127,4 @@ export function registerNotebookRoutes(
     db.transaction(() => {
       run(
         "UPDATE notebook_notes SET deleted=1 WHERE id=? AND notebook_id=?",
+        noteId,
