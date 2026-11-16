@@ -654,3 +654,4 @@ test("one-time recovery revokes sessions, consumes codes and supports expiration
   advance(366 * 86400000);
   assert.equal(
     (
+      await call("POST", "/auth/recover", undefined, {
