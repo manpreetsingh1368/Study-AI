@@ -19,6 +19,7 @@ const app = createApp({
         ],
       },
     ],
+    followUps: [
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
