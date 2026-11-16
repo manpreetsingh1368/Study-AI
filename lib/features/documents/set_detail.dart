@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-    final pro = c.plan['pro'] == true;
     final decks = s['collections'] as List? ?? [];
     return ListView(
       padding: const EdgeInsets.all(28),
