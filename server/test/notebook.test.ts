@@ -218,3 +218,4 @@ test("source selection excludes previous conversations about unchecked sources; 
       await call("POST", "/sets", a.token, { title: "One", notes: sourceText })
     ).body.set,
     two = (
+      await call("POST", "/sets", a.token, { title: "Two", notes: sourceText })
