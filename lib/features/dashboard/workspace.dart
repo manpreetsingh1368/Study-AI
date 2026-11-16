@@ -614,6 +614,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                         ? 'Explore your PDF with a source-grounded conversation.'
                         : (set['notes'] as String).replaceAll(
                             RegExp(r'\s+'),
+                            ' ',
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
