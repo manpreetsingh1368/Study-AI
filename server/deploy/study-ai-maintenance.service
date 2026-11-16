@@ -5,3 +5,4 @@ After=study-ai.service
 Type=oneshot
 User=study-ai
 Group=study-ai
+WorkingDirectory=/opt/study-ai/server
