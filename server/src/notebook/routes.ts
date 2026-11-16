@@ -210,3 +210,4 @@ export function registerNotebookRoutes(
         "No readable source text was found. Paste notes or use a PDF with selectable text.",
       );
     db.transaction(() => {
+      owned(u.id, sid);
