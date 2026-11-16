@@ -73,6 +73,7 @@ Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses thr
 - Save an answer to Studio notes, write a personal note, copy an answer, export reports/notes as Markdown, and reopen older conversations. Notes queue safely offline; saved answers/reports remain available from the local cache.
 - Quizzes, flashcards and exams remain available under **Study tools** and the Studio collection list.
 
+
 ## Recovery codes
 
 While signed in, enter your current password in Settings and choose **Create a one-time recovery code**. Store it privately; generating another invalidates the old code. Only its SHA-256 digest is retained on the server. The 256-bit code expires after one year and can reset the password once through **Use a recovery code** on the login screen. Resetting the password consumes the code and revokes all sessions. Changing the password also invalidates recovery codes. There is no email verification, email reset delivery or fake recovery email.
