@@ -266,3 +266,4 @@ export function registerNotebookRoutes(
         prompt: b.prompt,
         chunks,
         history,
+      });
