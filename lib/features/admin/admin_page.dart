@@ -116,6 +116,7 @@ class _AdminPageState extends State<AdminPage> {
                               actions: [
                                 TextButton(
                                   onPressed: () => Navigator.pop(ctx),
+                                  child: const Text('Close'),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
