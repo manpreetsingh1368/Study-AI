@@ -393,6 +393,7 @@ class StudyController extends ChangeNotifier {
       final match = RegExp(r'^/notebooks/([^/]+)/(notes|delete-note)$')
           .firstMatch(pendingRecord['path'] as String);
       if (match == null || match.group(1) != material['id']) continue;
+      final body = Map<String, dynamic>.from(
     }
   }
 
