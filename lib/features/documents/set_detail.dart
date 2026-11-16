@@ -155,6 +155,7 @@ class _SetDetailState extends State<SetDetail> {
     if (choice == 'pdf') {
       await task(() async {
         final file = await FilePicker.pickFile(
+          type: FileType.custom,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
