@@ -104,6 +104,7 @@ void main() {
         controller.sets = [
           {
             'id': 'sample',
+            'title': 'Cell biology',
 }
 
 class WidgetMemoryStore extends LocalStore {
