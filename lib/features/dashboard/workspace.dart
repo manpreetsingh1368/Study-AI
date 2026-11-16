@@ -624,6 +624,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                 spacing: 16,
                 runSpacing: 16,
                 children: [
+                  for (final set in filtered)
       ],
     );
   }
