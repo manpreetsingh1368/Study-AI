@@ -110,6 +110,7 @@ class _SetDetailState extends State<SetDetail> {
         if (s['document'] != null) ...[
           StudyCard(
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               children: [
                 TextField(
                   controller: title,
