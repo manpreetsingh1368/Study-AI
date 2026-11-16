@@ -58,6 +58,7 @@ class _SetDetailState extends State<SetDetail> {
                 ? Duration.zero
                 : const Duration(milliseconds: 250),
             curve: Curves.easeOut,
+          );
         ),
       ),
     ),
