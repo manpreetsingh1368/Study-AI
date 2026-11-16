@@ -119,6 +119,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                               ),
                             Expanded(
                               child: ModernToolbar(
+                                title: title,
                             ),
                           ],
                         ),
