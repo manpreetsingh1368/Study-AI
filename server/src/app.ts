@@ -772,7 +772,6 @@ export function createApp(
         id(),
         a.id,
         uid,
-        b.enabled ? `grant_pro:${b.expiresAt}` : "revoke_pro",
         now(),
       );
     })();
