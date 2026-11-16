@@ -134,3 +134,4 @@ class _StudyToolsState extends State<StudyTools> {
                                   const SnackBar(
                                     content: Text(
                                       'PDF saved for offline reading.',
+                                    ),
