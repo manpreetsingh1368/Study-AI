@@ -870,6 +870,7 @@ packages:
     dependency: transitive
     description:
       name: webdriver
+      sha256: "28b82ec894fed45dd71c23ba62d1af973ed97dd59a4f5790a4d38b0b13e5657e"
   win32:
     dependency: transitive
     description:
