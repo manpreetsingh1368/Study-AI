@@ -752,6 +752,7 @@ export function createApp(
         "SELECT id,email,name,role,created_at FROM users WHERE id=?",
         uid,
       );
+    if (!u) fail(404, "Student not found.");
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
