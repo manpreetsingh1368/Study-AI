@@ -74,3 +74,4 @@ test("v1 migration retains accounts, material, questions, attempts and emits a f
     );
     assert.equal((sqlite.pragma("foreign_key_check") as unknown[]).length, 0);
     sqlite.close();
+    const reopened = openDatabase(dir);
