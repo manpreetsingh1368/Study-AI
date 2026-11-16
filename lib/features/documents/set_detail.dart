@@ -206,6 +206,7 @@ class _SetDetailState extends State<SetDetail> {
                       icon: const Icon(Icons.close),
                     ),
                   ],
+                ),
                         ),
                       ),
                     ),
