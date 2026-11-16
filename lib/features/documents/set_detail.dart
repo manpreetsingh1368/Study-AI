@@ -433,4 +433,5 @@ class _SetDetailState extends State<SetDetail> {
                             ),
                             SizedBox(width: 12),
                             Expanded(
+                              child: Text(
 }
