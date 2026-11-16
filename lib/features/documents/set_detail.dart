@@ -792,4 +792,5 @@ class _SetDetailState extends State<SetDetail> {
                           ),
                           const Icon(Icons.add, size: 16, color: accent),
                         ],
+                      ),
 }
