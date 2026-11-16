@@ -20,3 +20,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
   Future<void> submit() async {
     setState(() => busy = true);
     try {
+      await widget.controller.request('POST', '/auth/recover', {
