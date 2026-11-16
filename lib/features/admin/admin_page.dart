@@ -119,6 +119,7 @@ class _AdminPageState extends State<AdminPage> {
                                   child: const Text('Close'),
                                 ),
                               ],
+                            ),
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
