@@ -891,4 +891,5 @@ class _SetDetailState extends State<SetDetail> {
                   onPressed: busy ? null : newNote,
                   icon: const Icon(Icons.add, size: 18),
                 ),
+              ],
 }
