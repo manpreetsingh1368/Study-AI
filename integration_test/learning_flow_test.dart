@@ -104,3 +104,4 @@ void main() {
         await c.initialize();
         await tester.pumpWidget(
           ProviderScope(
+            overrides: [studyProvider.overrideWithValue(c)],
