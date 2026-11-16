@@ -496,4 +496,5 @@ class _SetDetailState extends State<SetDetail> {
                 composer.text = prompt;
                 composerFocus.requestFocus();
               },
+              style: OutlinedButton.styleFrom(
 }
