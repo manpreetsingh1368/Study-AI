@@ -4,3 +4,4 @@ import 'package:go_router/go_router.dart';
 import '../../core/api/study_controller.dart';
 import '../../shared/components.dart';
 
+class RecoveryScreen extends StatefulWidget {
