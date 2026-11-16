@@ -40,3 +40,4 @@ export type NotebookInput = {
   chunks: SourceChunk[];
   history: { prompt: string; answer: string }[];
 };
+export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
