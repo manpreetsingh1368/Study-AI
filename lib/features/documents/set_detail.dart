@@ -397,4 +397,5 @@ class _SetDetailState extends State<SetDetail> {
                     for (final raw in conversation) ...[
                       Align(
                         alignment: Alignment.centerRight,
+                        child: Container(
 }
