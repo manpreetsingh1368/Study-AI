@@ -27,3 +27,4 @@ class _StudyToolsState extends State<StudyTools> {
       error = null;
     });
     try {
+      await task();
