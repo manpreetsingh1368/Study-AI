@@ -50,6 +50,7 @@ class _SetDetailState extends State<SetDetail> {
         composer.clear();
         mobileTab = 1;
       });
+      WidgetsBinding.instance.addPostFrameCallback((_) {
         ),
       ),
     ),
