@@ -446,6 +446,7 @@ class _SetDetailState extends State<SetDetail> {
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
+                                  const SizedBox(height: 5),
                   ),
                 ),
             ],
