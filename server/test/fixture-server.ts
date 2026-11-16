@@ -20,3 +20,4 @@ const app = createApp({
     flashcards:
       input.kind !== "flashcards"
         ? []
+        : Array.from({ length: input.count }, () => ({
