@@ -107,3 +107,4 @@ void main() {
             overrides: [studyProvider.overrideWithValue(c)],
             child: const StudyAIApp(),
           ),
+        );
