@@ -477,6 +477,7 @@ class _SetDetailState extends State<SetDetail> {
                                       'Waiting to sync',
                                       style: TextStyle(
                                         fontSize: 10,
+                                        color: accent,
                   ),
                 ),
             ],
