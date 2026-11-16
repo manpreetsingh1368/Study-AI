@@ -116,7 +116,6 @@ class _SetDetailState extends State<SetDetail> {
                   s['document']['filename'],
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
-                            setState(() => sideBySide = !sideBySide),
                         child: Text(
                           sideBySide
                               ? 'Close reading panel'
