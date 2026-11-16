@@ -67,3 +67,4 @@ server/.env
 *.sqlite-wal
 *.sqlite-shm
 
+# Generated Android Kotlin compiler state
