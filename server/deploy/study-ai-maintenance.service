@@ -4,3 +4,4 @@ After=study-ai.service
 [Service]
 Type=oneshot
 User=study-ai
+Group=study-ai
