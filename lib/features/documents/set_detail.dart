@@ -842,4 +842,5 @@ class _SetDetailState extends State<SetDetail> {
                   collection['title'],
                   style: const TextStyle(fontSize: 11),
                 ),
+                trailing: const Icon(Icons.play_arrow_rounded, size: 18),
 }
