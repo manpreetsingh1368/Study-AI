@@ -31,7 +31,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Remaining before production
 
-- Deploy TLS, persistent server storage, automatic private backup scheduling and restore drills, monitoring, retention/privacy policy, security/load audit and full native integration tests.
 - Password recovery/email delivery intentionally absent. There is no configured delivery system. No payments or external subscription service.
 
 ## Commit policy requested by owner
