@@ -906,4 +906,5 @@ class _SetDetailState extends State<SetDetail> {
               Padding(
                 padding: const EdgeInsets.only(bottom: 8),
                 child: Material(
+                  color: Theme.of(context).colorScheme.surfaceContainerLow,
 }
