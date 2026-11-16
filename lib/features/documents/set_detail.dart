@@ -706,4 +706,5 @@ class _SetDetailState extends State<SetDetail> {
               },
               child: Text(follow, style: const TextStyle(fontSize: 11)),
             ),
+        ],
 }
