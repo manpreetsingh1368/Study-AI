@@ -191,6 +191,7 @@ class _SetDetailState extends State<SetDetail> {
           child: Column(
             children: [
               Padding(
+                padding: const EdgeInsets.all(20),
                         ),
                       ),
                     ),
