@@ -45,3 +45,4 @@ Uint8List validPdf() {
   final offsets = <int>[0];
   for (var i = 0; i < objects.length; i++) {
     offsets.add(text.length);
+    text += '${i + 1} 0 obj\n${objects[i]}\nendobj\n';
