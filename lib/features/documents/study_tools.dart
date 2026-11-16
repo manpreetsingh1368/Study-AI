@@ -312,3 +312,4 @@ class _StudyToolsState extends State<StudyTools> {
                       const DropdownMenuEntry(value: 'medium', label: 'Medium'),
                       DropdownMenuEntry(
                         value: 'hard',
+                        label: 'Hard · Pro',
