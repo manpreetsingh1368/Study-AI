@@ -199,3 +199,4 @@ export const recoveryCodes = sqliteTable("recovery_codes", {
   createdAt: integer("created_at").notNull(),
 });
 
+export const notebookEntries = sqliteTable("notebook_entries", {
