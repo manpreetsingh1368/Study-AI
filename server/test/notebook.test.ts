@@ -336,3 +336,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       url: "/auth/register",
       payload: {
         name: "PDF Reader",
+        email: "reader@example.com",
