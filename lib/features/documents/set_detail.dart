@@ -947,4 +947,5 @@ class _SetDetailState extends State<SetDetail> {
                                       Map<String, dynamic>.from(cite),
                                     ),
                                     icon: const Icon(
+                                      Icons.format_quote,
 }
