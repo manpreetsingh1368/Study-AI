@@ -125,3 +125,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   const note = {
     id: randomUUID(),
     title: "Remember this",
+    text: "ATP transfers energy.",
