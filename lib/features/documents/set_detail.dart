@@ -600,4 +600,5 @@ class _SetDetailState extends State<SetDetail> {
             const Text(
               'STUDY AI',
               style: TextStyle(
+                fontSize: 10,
 }
