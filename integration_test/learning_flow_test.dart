@@ -149,3 +149,4 @@ void main() {
           i++
         ) {
           await tester.pump(const Duration(milliseconds: 250));
+        }
