@@ -107,6 +107,7 @@ void main() {
             key: captureKey,
             child: ProviderScope(
               overrides: [studyProvider.overrideWithValue(c)],
+              child: const StudyAIApp(),
           ),
         );
         await tester.pumpAndSettle();
