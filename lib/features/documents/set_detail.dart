@@ -136,6 +136,7 @@ class _SetDetailState extends State<SetDetail> {
                 leading: const Icon(Icons.picture_as_pdf_outlined),
                 title: const Text('Upload a PDF'),
                 subtitle: const Text(
+                  'Private storage with selectable source text',
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
