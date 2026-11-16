@@ -587,4 +587,5 @@ class _SetDetailState extends State<SetDetail> {
       ],
     ),
   );
+  Widget answer(Map<String, dynamic> entry, {bool isReport = false}) {
 }
