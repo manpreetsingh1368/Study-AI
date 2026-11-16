@@ -122,3 +122,4 @@ export function registerNotebookRoutes(
   });
   app.delete("/notebooks/:id/notes/:noteId", async (req) => {
     const u = user(req),
+      { id: sid, noteId } = req.params as any;
