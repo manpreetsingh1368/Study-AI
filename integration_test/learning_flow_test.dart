@@ -116,3 +116,4 @@ void main() {
           name: 'Native Test',
         );
         await tester.pumpAndSettle();
+        expect(
