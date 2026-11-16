@@ -391,6 +391,7 @@ class StudyController extends ChangeNotifier {
   ) {
     for (final pendingRecord in pendingRecords) {
       final match = RegExp(r'^/notebooks/([^/]+)/(notes|delete-note)$')
+          .firstMatch(pendingRecord['path'] as String);
     }
   }
 
