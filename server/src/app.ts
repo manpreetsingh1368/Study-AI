@@ -280,6 +280,7 @@ export function createApp(
       fail(401, "Password is incorrect.");
     const code = randomBytes(32).toString("base64url"),
       expiresAt = now() + 365 * 86400000;
+    run(
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
