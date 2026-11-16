@@ -24,3 +24,4 @@ export const responseSchema = z.object({
             z.object({
               chunkId: z.string().max(120),
               quote: z.string().min(12).max(700),
+            }),
