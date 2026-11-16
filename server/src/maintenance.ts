@@ -18,3 +18,4 @@ try {
   for (const file of files)
     if (existsSync(join(uploads, file.id))) unlinkSync(join(uploads, file.id));
   sqlite.transaction(() => {
+    for (const file of files)
