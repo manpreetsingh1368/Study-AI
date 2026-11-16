@@ -948,4 +948,5 @@ class _SetDetailState extends State<SetDetail> {
                                     ),
                                     icon: const Icon(
                                       Icons.format_quote,
+                                      size: 16,
 }
