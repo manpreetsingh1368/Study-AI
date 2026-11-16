@@ -254,6 +254,7 @@ class _SetDetailState extends State<SetDetail> {
           children: [
             const Icon(Icons.format_quote, color: accent),
             const SizedBox(width: 12),
+            Expanded(child: Text(cite['title'])),
                         ),
                       ),
                     ),
