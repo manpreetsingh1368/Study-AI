@@ -126,3 +126,4 @@ class _StudyToolsState extends State<StudyTools> {
                     ),
                     TextButton.icon(
                       onPressed: busy
+                          ? null
