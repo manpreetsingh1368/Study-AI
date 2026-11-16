@@ -211,3 +211,4 @@ test("source selection excludes previous conversations about unchecked sources; 
   const inputs: NotebookInput[] = [];
   const { call, register } = await setup(t, (input) => {
     inputs.push(input);
+    return supported(input);
