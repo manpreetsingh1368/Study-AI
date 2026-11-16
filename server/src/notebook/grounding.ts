@@ -151,3 +151,4 @@ export async function notebookGenerate(
             { role: "user", parts: [{ text: JSON.stringify(input) }] },
           ],
           generationConfig: {
+            responseMimeType: "application/json",
