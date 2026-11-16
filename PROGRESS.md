@@ -93,7 +93,6 @@ Created implementation/documentation files:
 
 Flutter regenerated native plugin integration files:
 
-- `linux/flutter/generated_plugins.cmake`
 - `macos/Flutter/GeneratedPluginRegistrant.swift`
 
 Dependency tooling also regenerated ignored `.dart_tool/`, `.flutter-plugins-dependencies`, native ephemeral configuration, and `build/` outputs. No existing application data or project platforms were removed.
