@@ -4,3 +4,4 @@ Description=Hourly Study AI maintenance
 OnBootSec=15min
 OnUnitActiveSec=1h
 Persistent=true
+[Install]
