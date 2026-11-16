@@ -73,6 +73,7 @@ class _SetDetailState extends State<SetDetail> {
       child: ListenableBuilder(
         listenable: c,
         builder: (_, _) => StudyTools(
+          set:
         ),
       ),
     ),
