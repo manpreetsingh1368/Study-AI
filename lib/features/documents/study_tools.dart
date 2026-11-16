@@ -334,3 +334,4 @@ class _StudyToolsState extends State<StudyTools> {
                                   : (pro ? 50 : 10)),
                         ),
                     ],
+                  ),
