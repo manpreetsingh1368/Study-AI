@@ -426,4 +426,5 @@ class _SetDetailState extends State<SetDetail> {
                         padding: EdgeInsets.all(16),
                         child: Row(
                           children: [
+                            SizedBox(
 }
