@@ -767,6 +767,7 @@ export function createApp(
       storage: get(
         "SELECT coalesce(sum(d.bytes),0) n FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.user_id=?",
         uid,
+      ).n,
   app.put("/admin/users/:id/pro", async (req) => {
     const a = admin(req),
       uid = (req.params as any).id,
