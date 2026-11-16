@@ -173,3 +173,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
     blocks: [
       {
         heading: "Unsupported",
+        text: "A false answer",
