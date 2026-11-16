@@ -11,3 +11,4 @@ class StudyTools extends StatefulWidget {
   final StudyController controller;
   const StudyTools({super.key, required this.set, required this.controller});
   @override
+  State<StudyTools> createState() => _StudyToolsState();
