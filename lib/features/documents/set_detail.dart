@@ -312,6 +312,7 @@ class _SetDetailState extends State<SetDetail> {
 
   Future<void> pin(Map<String, dynamic> entry) async {
     final blocks = entry['content']['blocks'] as List;
+    final text = blocks
                         ),
                       ),
                     ),
