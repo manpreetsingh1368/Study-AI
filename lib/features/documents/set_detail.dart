@@ -934,4 +934,5 @@ class _SetDetailState extends State<SetDetail> {
                         title: Text(note['title']),
                         content: SizedBox(
                           width: 560,
+                          child: SingleChildScrollView(
 }
