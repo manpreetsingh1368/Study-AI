@@ -187,6 +187,7 @@ class _SetDetailState extends State<SetDetail> {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Expanded(child: ErrorState(message: error!)),
                   ),
                 ],
               ),
