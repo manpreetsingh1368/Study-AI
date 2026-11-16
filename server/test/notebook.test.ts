@@ -305,3 +305,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
   const bytes = Buffer.from(await pdf.save());
   // Use the real multipart route rather than injecting extracted text.
   const directory = mkdtempSync(join(tmpdir(), "pdf-grounding-"));
+  const app = createApp({
