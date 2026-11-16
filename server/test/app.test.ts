@@ -693,3 +693,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
         count: 2,
       })
     ).status,
+    409,
