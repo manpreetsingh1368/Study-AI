@@ -183,3 +183,4 @@ test("notebook rejects fabricated quotations and releases failed quota without s
       },
     ],
   }));
+  const a = await register("a@example.com"),
