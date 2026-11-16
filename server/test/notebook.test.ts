@@ -338,3 +338,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
         name: "PDF Reader",
         email: "reader@example.com",
         password: "pdf-reader-password",
+      },
