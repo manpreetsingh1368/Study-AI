@@ -323,6 +323,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                                 '1',
                           ) ??
                           1)
+                      .clamp(1, 10000),
             );
     }
     if (widget.page == 'attempt') {
