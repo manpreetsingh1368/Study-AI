@@ -632,6 +632,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
                       child: Text(
                         '${(set['collections'] as List? ?? []).length} collections · ${(books['notes'] as List? ?? []).length} notes',
                         style: const TextStyle(fontSize: 10),
+                      ),
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
