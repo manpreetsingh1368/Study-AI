@@ -220,3 +220,4 @@ export function registerNotebookRoutes(
         b.id,
       );
       if (
+        previousUsage &&
