@@ -214,6 +214,7 @@ void main() {
             final captured = await boundary.toImage(pixelRatio: 1.5);
             final png = await captured.toByteData(
               format: ui.ImageByteFormat.png,
+            );
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
