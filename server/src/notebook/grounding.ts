@@ -38,3 +38,4 @@ export type NotebookInput = {
   kind: "chat" | "summary" | "guide" | "faq";
   prompt: string;
   chunks: SourceChunk[];
+  history: { prompt: string; answer: string }[];
