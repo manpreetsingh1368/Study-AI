@@ -57,6 +57,7 @@ class _SetDetailState extends State<SetDetail> {
             duration: MediaQuery.disableAnimationsOf(context)
                 ? Duration.zero
                 : const Duration(milliseconds: 250),
+            curve: Curves.easeOut,
         ),
       ),
     ),
