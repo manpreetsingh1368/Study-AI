@@ -253,3 +253,4 @@ class _StudyToolsState extends State<StudyTools> {
                       onPressed: () => context.go(
                         '/${deck['kind'] == 'flashcards' ? 'cards' : 'quiz'}/${s['id']}?collection=${Uri.encodeQueryComponent(deck['id'])}',
                       ),
+                      icon: const Icon(Icons.play_arrow_rounded),
