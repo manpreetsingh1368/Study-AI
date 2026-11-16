@@ -432,6 +432,7 @@ class _SetDetailState extends State<SetDetail> {
                           child: InkWell(
                             borderRadius: BorderRadius.circular(12),
                             onTap: () => previewSource(source),
+                            child: Padding(
                   ),
                 ),
             ],
