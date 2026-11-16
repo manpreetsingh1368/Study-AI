@@ -45,3 +45,4 @@ class _StudyToolsState extends State<StudyTools> {
       children: [
         Text(s['title'], style: Theme.of(context).textTheme.headlineLarge),
         if ((s['folder'] ?? '').isNotEmpty)
+          Text(s['folder'], style: const TextStyle(color: accent)),
