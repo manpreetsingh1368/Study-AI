@@ -941,4 +941,5 @@ class _SetDetailState extends State<SetDetail> {
                               children: [
                                 SelectableText(note['text']),
                                 const SizedBox(height: 16),
+                                for (final cite in note['citations'] ?? [])
 }
