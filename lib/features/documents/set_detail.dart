@@ -459,4 +459,5 @@ class _SetDetailState extends State<SetDetail> {
           width: 58,
           height: 58,
           decoration: BoxDecoration(
+            color: accent.withValues(alpha: .12),
 }
