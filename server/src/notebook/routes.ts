@@ -219,3 +219,4 @@ export function registerNotebookRoutes(
         "SELECT * FROM generation_usage WHERE id=?",
         b.id,
       );
+      if (
