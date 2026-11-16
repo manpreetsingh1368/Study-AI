@@ -194,3 +194,4 @@ export function registerNotebookRoutes(
                 page: i + 1,
               },
               pages[i],
+            ),
