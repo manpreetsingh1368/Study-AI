@@ -75,6 +75,7 @@ Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses thr
 
 The backend extracts PDF text using the open-source `pdftotext` command from `poppler-utils` (`PDFTOTEXT_BIN` may specify an alternate executable). Source extraction has a timeout/output bound; selected text is limited to 100,000 characters in total. Oversized selections are rejected explicitly. Scanned PDFs without selectable text require pasted notes or a transcript.
 
+
 ## Recovery codes
 
 While signed in, enter your current password in Settings and choose **Create a one-time recovery code**. Store it privately; generating another invalidates the old code. Only its SHA-256 digest is retained on the server. The 256-bit code expires after one year and can reset the password once through **Use a recovery code** on the login screen. Resetting the password consumes the code and revokes all sessions. Changing the password also invalidates recovery codes. There is no email verification, email reset delivery or fake recovery email.
