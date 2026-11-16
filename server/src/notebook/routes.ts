@@ -285,3 +285,4 @@ export function registerNotebookRoutes(
           b.prompt,
           JSON.stringify(sourceIds),
           hash,
+          JSON.stringify(verified),
