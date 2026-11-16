@@ -405,6 +405,7 @@ class _SetDetailState extends State<SetDetail> {
                         ? accent.withValues(alpha: .08)
                         : Colors.transparent,
                     borderRadius: BorderRadius.circular(12),
+                    child: Row(
                   ),
                 ),
             ],
