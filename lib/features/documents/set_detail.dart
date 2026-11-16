@@ -557,4 +557,5 @@ class _SetDetailState extends State<SetDetail> {
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
                       filled: false,
+                      contentPadding: EdgeInsets.symmetric(vertical: 10),
 }
