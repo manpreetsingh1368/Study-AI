@@ -76,6 +76,7 @@ class _SetDetailState extends State<SetDetail> {
           set:
               c.sets.where((s) => s['id'] == widget.set['id']).firstOrNull ??
               widget.set,
+          controller: c,
         ),
       ),
     ),
