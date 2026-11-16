@@ -44,3 +44,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
   let parsed: NotebookOutput;
   try {
     parsed = responseSchema.parse(output);
+  } catch {
