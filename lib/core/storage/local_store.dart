@@ -92,6 +92,7 @@ class LocalStore {
     String account,
     String path,
     Map<String, dynamic> body,
+    List<Map<String, dynamic>> sets,
   }
 
   Future<void> queueMutation(
