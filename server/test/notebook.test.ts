@@ -285,3 +285,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
   );
   assert.equal(
     validatedEvidence(
+      { insufficientEvidence: true, blocks: [], followUps: [] },
