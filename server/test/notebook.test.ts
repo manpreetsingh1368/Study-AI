@@ -165,3 +165,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
       )
     ).body.entries.length,
     1,
+  );
