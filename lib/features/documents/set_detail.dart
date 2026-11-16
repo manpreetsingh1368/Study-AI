@@ -357,4 +357,5 @@ class _SetDetailState extends State<SetDetail> {
     final conversation = entries
         .where((e) => e['kind'] == 'chat')
         .toList()
+        .reversed
 }
