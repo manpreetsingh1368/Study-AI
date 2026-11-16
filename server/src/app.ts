@@ -508,6 +508,7 @@ export function createApp(
         fail(409, "Generation identifier reused with different options.");
       if (previousUsage.status === "success" && previousUsage.collection_id) {
         const collection = get(
+          "SELECT * FROM collections WHERE id=? AND set_id=?",
     db.transaction(() => {
       const current = plan(u.id);
       if (current.used >= current.generations)
