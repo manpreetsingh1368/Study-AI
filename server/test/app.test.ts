@@ -674,3 +674,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
     kind: "quiz",
     count: 1,
     difficulty: "medium",
+  };
