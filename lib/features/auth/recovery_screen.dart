@@ -23,3 +23,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
       await widget.controller.request('POST', '/auth/recover', {
         'email': email.text.trim(),
         'code': code.text.trim(),
+        'password': password.text,
