@@ -391,4 +391,5 @@ class _SetDetailState extends State<SetDetail> {
                             ? null
                             : () => task(
                                 () => c.loadEarlierNotebook(widget.set['id']),
+                              ),
 }
