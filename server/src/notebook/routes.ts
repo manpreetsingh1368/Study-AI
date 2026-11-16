@@ -119,3 +119,4 @@ export function registerNotebookRoutes(
       }
     })();
     return { ok: true, notebook: notebookState(sid, get, all) };
+  });
