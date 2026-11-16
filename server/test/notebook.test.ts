@@ -170,3 +170,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
 test("notebook rejects fabricated quotations and releases failed quota without storing an answer", async (t) => {
   const { call, register } = await setup(t, (input) => ({
     ...supported(input),
+    blocks: [
