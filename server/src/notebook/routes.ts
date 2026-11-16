@@ -257,3 +257,4 @@ export function registerNotebookRoutes(
         .reverse()
         .map((r: any) => ({
           prompt: r.prompt,
+          answer: JSON.parse(r.content)
