@@ -78,6 +78,7 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(controller.onboarded, true);
+    expect(await store.read('_device', 'onboarded'), true);
 }
 
 class WidgetMemoryStore extends LocalStore {
