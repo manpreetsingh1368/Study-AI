@@ -729,4 +729,5 @@ class _SetDetailState extends State<SetDetail> {
             const SizedBox(height: 16),
             for (final item in [
               (
+                'summary',
 }
