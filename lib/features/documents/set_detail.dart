@@ -162,6 +162,7 @@ class _SetDetailState extends State<SetDetail> {
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
             child: const Text('Cancel'),
+          ),
         ],
       ),
     );
