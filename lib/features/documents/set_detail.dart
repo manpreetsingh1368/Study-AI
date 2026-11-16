@@ -319,6 +319,7 @@ class _SetDetailState extends State<SetDetail> {
         color: Theme.of(context).colorScheme.outlineVariant
             .withValues(alpha: .6),
       ),
+    ),
                   ),
                 ),
             ],
