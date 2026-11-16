@@ -212,6 +212,7 @@ class _SetDetailState extends State<SetDetail> {
                 tabs: [
                   const Tab(text: 'Notes'),
                   if (source['document'] != null) const Tab(text: 'PDF'),
+                ],
                         ),
                       ),
                     ),
