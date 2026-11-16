@@ -171,6 +171,7 @@ void main() {
         );
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
+            .go('/cards/sample?collection=cards-one&due=true');
 }
 
 class WidgetMemoryStore extends LocalStore {
