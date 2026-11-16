@@ -22,3 +22,4 @@ export function registerNotebookRoutes(
     c;
   const digest = (input: unknown) =>
     createHash("sha256").update(JSON.stringify(input)).digest("hex");
+  const entry = (r: any) => ({
