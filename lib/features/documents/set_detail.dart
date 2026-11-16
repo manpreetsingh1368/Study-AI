@@ -39,6 +39,7 @@ class _SetDetailState extends State<SetDetail> {
     if (prompt.trim().isEmpty) return;
     await task(() async {
       final result = await c.askNotebook(
+        widget.set['id'],
         ),
       ),
     ),
