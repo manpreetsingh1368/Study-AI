@@ -329,3 +329,4 @@ class _StudyToolsState extends State<StudyTools> {
                           label: '$n',
                           enabled:
                               n <=
+                              (kind == 'flashcards'
