@@ -126,6 +126,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         'POST',
                         '/me/recovery',
                         {'password': current.text},
+                      );
             OutlinedButton(
               onPressed: busy
                   ? null
