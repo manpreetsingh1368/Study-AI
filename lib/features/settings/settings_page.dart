@@ -146,6 +146,7 @@ class _SettingsPageState extends State<SettingsPage> {
                               const SizedBox(height: 12),
                               TextButton.icon(
                                 onPressed: () => Clipboard.setData(
+                                  ClipboardData(text: result['code']),
             OutlinedButton(
               onPressed: busy
                   ? null
