@@ -728,6 +728,7 @@ export function createApp(
   app.get("/admin/users", async (req) => {
     admin(req);
     const q = z
+      .object({
       .parse(req.query);
     const total = get(
       "SELECT count(*) n FROM users WHERE email LIKE ? OR name LIKE ?",
