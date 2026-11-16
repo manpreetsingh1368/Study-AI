@@ -81,3 +81,4 @@ void main() {
         if (await temp.exists()) await temp.delete(recursive: true);
       });
       final line = await process.stdout
+          .transform(utf8.decoder)
