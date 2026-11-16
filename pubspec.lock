@@ -208,6 +208,7 @@ packages:
     version: "0.0.0"
   flutter_driver:
     dependency: transitive
+    description: flutter
   flutter_lints:
     dependency: "direct dev"
     description:
