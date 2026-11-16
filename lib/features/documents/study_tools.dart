@@ -344,3 +344,4 @@ class _StudyToolsState extends State<StudyTools> {
                 onPressed: busy || c.offline
                     ? null
                     : () =>
+                          action(() => c.generate(s['id'], kind, count, level)),
