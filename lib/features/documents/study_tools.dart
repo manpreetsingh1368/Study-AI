@@ -196,3 +196,4 @@ class _StudyToolsState extends State<StudyTools> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(16),
                       child: PdfScreen(
+                        controller: c,
