@@ -666,4 +666,5 @@ class _SetDetailState extends State<SetDetail> {
               for (var i = 0; i < (block['citations'] as List).length; i++)
                 ActionChip(
                   visualDensity: VisualDensity.compact,
+                  avatar: const Icon(
 }
