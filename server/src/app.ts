@@ -278,6 +278,7 @@ export function createApp(
       b = z.object({ password: z.string().max(128) }).parse(req.body);
     if (!(await verify(u.password_hash, b.password)))
       fail(401, "Password is incorrect.");
+    const code = randomBytes(32).toString("base64url"),
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
