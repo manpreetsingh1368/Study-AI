@@ -81,6 +81,7 @@ Created implementation/documentation files:
 - `server/package.json`
 - `server/src/admin.ts`
 - `server/src/ai/gemini.ts`
+- `server/src/ai/pdf.ts`
 - `server/src/app.ts`
 - `server/src/backup.ts`
 - `server/src/database/db.ts`
