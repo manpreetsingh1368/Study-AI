@@ -720,4 +720,5 @@ class _SetDetailState extends State<SetDetail> {
           padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
           children: [
             Text(
+              'Turn sources into understanding',
 }
