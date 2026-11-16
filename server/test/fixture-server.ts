@@ -33,3 +33,4 @@ const address = app.server.address();
 if (!address || typeof address === "string")
   throw new Error("No listening address.");
 console.log(JSON.stringify({ port: address.port }));
+for (const signal of ["SIGTERM", "SIGINT"])
