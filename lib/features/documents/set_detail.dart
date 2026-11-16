@@ -928,4 +928,5 @@ class _SetDetailState extends State<SetDetail> {
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(fontSize: 10),
                     ),
+                    onTap: () => showDialog(
 }
