@@ -743,4 +743,5 @@ class _SetDetailState extends State<SetDetail> {
               (
                 'faq',
                 'FAQ',
+                'Questions worth asking',
 }
