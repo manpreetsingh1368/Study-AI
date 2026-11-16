@@ -122,6 +122,7 @@ class _SettingsPageState extends State<SettingsPage> {
               onPressed: busy
                   ? null
                   : () => perform(() async {
+                      final result = await widget.controller.request(
             OutlinedButton(
               onPressed: busy
                   ? null
