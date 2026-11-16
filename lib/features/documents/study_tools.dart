@@ -125,3 +125,4 @@ class _StudyToolsState extends State<StudyTools> {
                       label: const Text('Open PDF'),
                     ),
                     TextButton.icon(
+                      onPressed: busy
