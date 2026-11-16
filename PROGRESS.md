@@ -41,7 +41,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 - Deploy TLS, persistent server storage, automatic private backup scheduling and restore drills, monitoring, retention/privacy policy, security/load audit and full native integration tests.
 - Password recovery/email delivery intentionally absent. There is no configured delivery system. No payments or external subscription service.
 
-## Source file inventory
 
 The owner explicitly requested **one commit per changed line**, including individual deletions and additions, after being informed that intermediate commits may not compile. Only local history is updated; nothing is pushed. Existing commits remain intact. Final content is verified against the pre-commit snapshot and each new commit is checked for exactly one changed line. The final response records the resulting count/range.
 
