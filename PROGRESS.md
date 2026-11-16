@@ -17,7 +17,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Verification
 
-- `npm run check` in server: passed.
 - `npm test` in server: 7 passed (auth/revocation/expiry/deletion, two-device sync/conflicts/tombstones, output validation/scoring/idempotent offline replay/reviews, atomic concurrent quota/admin/Pro expiry, PDF authorization/validation, restart/password revocation, Gemini retry/quota/malformed output).
 - `npm audit --omit=dev`: zero reported vulnerabilities after updating Drizzle.
 - Real HTTP API startup/registration, administrator bootstrap CLI, backup CLI and backup SQLite integrity check: passed with temporary test data.
