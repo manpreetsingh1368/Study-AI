@@ -223,6 +223,7 @@ class _SetDetailState extends State<SetDetail> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
+                        child: SegmentedButton<int>(
                       ),
                       const SizedBox(height: 12),
                       Expanded(
