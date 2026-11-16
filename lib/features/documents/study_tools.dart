@@ -194,3 +194,4 @@ class _StudyToolsState extends State<StudyTools> {
                   ),
                   Expanded(
                     child: ClipRRect(
+                      borderRadius: BorderRadius.circular(16),
