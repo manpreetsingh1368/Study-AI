@@ -97,3 +97,4 @@ void main() {
       final store = await testStore(), otherStore = await testStore();
       final c = StudyController(store, baseUrl: 'http://127.0.0.1:$port');
       final other = StudyController(
+        otherStore,
