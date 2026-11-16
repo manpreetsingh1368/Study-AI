@@ -117,6 +117,7 @@ void main() {
               },
             ],
             'questions': [
+              {
 }
 
 class WidgetMemoryStore extends LocalStore {
