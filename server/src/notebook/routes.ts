@@ -273,3 +273,4 @@ export function registerNotebookRoutes(
         for (const source of sources) {
           if (owned(u.id, source.id).version !== source.version)
             fail(
+              409,
