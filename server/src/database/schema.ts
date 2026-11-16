@@ -128,6 +128,7 @@ export const generationUsage = sqliteTable("generation_usage", {
   requestConfig: text("request_config"),
   collectionId: text("collection_id").references(() => collections.id, {
     onDelete: "set null",
+  }),
   createdAt: integer("created_at").notNull(),
 });
 export const syncChanges = sqliteTable("sync_changes", {
