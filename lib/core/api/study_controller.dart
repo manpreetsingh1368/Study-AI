@@ -760,6 +760,7 @@ class StudyController extends ChangeNotifier {
           sets.firstWhere((s) => s['id'] == notebookId)['notebook'] ?? {},
         );
     notebook['notes'] = (notebook['notes'] as List? ?? [])
+        .where((n) => n['id'] != noteId)
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
