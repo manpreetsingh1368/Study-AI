@@ -667,3 +667,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
   const { call, register } = await setup(t);
   const a = await register();
   const sid = (
+    await call("POST", "/sets", a.token, { title: "Replay-safe", notes: "ATP" })
