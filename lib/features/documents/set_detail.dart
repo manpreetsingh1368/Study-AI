@@ -924,4 +924,5 @@ class _SetDetailState extends State<SetDetail> {
                       note['pending'] == true
                           ? 'Saved offline · waiting to sync'
                           : note['text'],
+                      maxLines: 2,
 }
