@@ -233,3 +233,4 @@ test("source selection excludes previous conversations about unchecked sources; 
           prompt: "Help me study",
           sourceIds: sources,
         })
+      ).status,
