@@ -68,6 +68,7 @@ void main() {
     expect(find.text('A workspace for your next idea.'), findsOneWidget);
     for (var i = 0; i < 2; i++) {
       await tester.ensureVisible(find.text('Continue'));
+      await tester.tap(find.text('Continue'));
 }
 
 class WidgetMemoryStore extends LocalStore {
