@@ -102,6 +102,7 @@ void main() {
       );
       try {
         await c.initialize();
+        final captureKey = GlobalKey();
         await tester.pumpWidget(
           RepaintBoundary(
             key: captureKey,
