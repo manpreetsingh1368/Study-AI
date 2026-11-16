@@ -384,6 +384,7 @@ class StudyController extends ChangeNotifier {
       notifyListeners();
     }
   }
+
     }
   }
 
