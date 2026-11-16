@@ -26,6 +26,7 @@ try {
       )
       .run(now - retention * 86400000);
     for (const table of [
+      "notebook_entries",
     sqlite.prepare("DELETE FROM sessions WHERE expires_at<=?").run(now);
     sqlite.prepare("DELETE FROM recovery_codes WHERE expires_at<=?").run(now);
     sqlite
