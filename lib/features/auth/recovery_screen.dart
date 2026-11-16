@@ -99,3 +99,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   onPressed: busy ? null : submit,
                 ),
               ],
+            ),
