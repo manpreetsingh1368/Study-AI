@@ -352,6 +352,7 @@ class _SetDetailState extends State<SetDetail> {
         panelTitle(
           'Sources',
           Icons.source_outlined,
+          action: Tooltip(
                   ),
                 ),
             ],
