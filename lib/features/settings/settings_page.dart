@@ -160,6 +160,7 @@ class _SettingsPageState extends State<SettingsPage> {
                             ),
                           ],
                         ),
+                      );
             OutlinedButton(
               onPressed: busy
                   ? null
