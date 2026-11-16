@@ -82,6 +82,7 @@ Created implementation/documentation files:
 - `server/src/admin.ts`
 - `server/src/ai/gemini.ts`
 - `server/src/ai/pdf.ts`
+- `server/src/ai/pdf_check.mjs`
 - `server/src/app.ts`
 - `server/src/backup.ts`
 - `server/src/database/db.ts`
