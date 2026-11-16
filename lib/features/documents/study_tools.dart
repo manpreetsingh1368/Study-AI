@@ -28,3 +28,4 @@ class _StudyToolsState extends State<StudyTools> {
     });
     try {
       await task();
+    } catch (e) {
