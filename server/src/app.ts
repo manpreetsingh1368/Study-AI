@@ -463,6 +463,7 @@ export function createApp(
       s = owned(u.id, sid),
       b = z
         .object({
+          id: z.uuid().optional(),
           kind: z.enum(["quiz", "flashcards", "exam"]),
           count: z.number().int().min(1).max(50),
           difficulty,
