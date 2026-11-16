@@ -189,3 +189,4 @@ export function registerNotebookRoutes(
               {
                 setId: source.id,
                 sourceId: document.id,
+                title: document.filename,
