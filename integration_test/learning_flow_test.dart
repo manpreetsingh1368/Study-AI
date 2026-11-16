@@ -18,3 +18,4 @@ Future<LocalStore> testStore() async {
   sqfliteFfiInit();
   final db = await databaseFactoryFfi.openDatabase(
     inMemoryDatabasePath,
+    options: OpenDatabaseOptions(singleInstance: false),
