@@ -311,6 +311,7 @@ class _SetDetailState extends State<SetDetail> {
   Widget panel(Widget child, {bool chatPanel = false}) => Container(
     clipBehavior: Clip.antiAlias,
     decoration: BoxDecoration(
+      color: chatPanel
                   ),
                 ),
             ],
