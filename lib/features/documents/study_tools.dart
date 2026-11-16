@@ -173,3 +173,4 @@ class _StudyToolsState extends State<StudyTools> {
                           (s['notes'] as String).isEmpty
                               ? 'No notes yet.'
                               : s['notes'],
+                        ),
