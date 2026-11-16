@@ -121,6 +121,7 @@ class _SettingsPageState extends State<SettingsPage> {
             OutlinedButton.icon(
               onPressed: busy
                   ? null
+                  : () => perform(() async {
             OutlinedButton(
               onPressed: busy
                   ? null
