@@ -53,7 +53,6 @@ Modified existing files:
 - `lib/main.dart`
 - `test/widget_test.dart`
 - `README.md`
-- `PROGRESS.md`
 - `lib/app/app.dart`
 - `lib/core/api/study_controller.dart`
 - `lib/core/storage/local_store.dart`
