@@ -703,4 +703,5 @@ class _SetDetailState extends State<SetDetail> {
                 setState(() => report = null);
                 composer.text = follow;
                 composerFocus.requestFocus();
+              },
 }
