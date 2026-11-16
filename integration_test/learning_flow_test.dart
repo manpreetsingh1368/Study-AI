@@ -19,3 +19,4 @@ Future<LocalStore> testStore() async {
   final db = await databaseFactoryFfi.openDatabase(
     inMemoryDatabasePath,
     options: OpenDatabaseOptions(singleInstance: false),
+  );
