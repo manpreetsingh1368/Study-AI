@@ -197,6 +197,7 @@ class _SetDetailState extends State<SetDetail> {
                     Expanded(
                       child: Text(
                         source['title'],
+                        style: Theme.of(context).textTheme.titleLarge,
                         ),
                       ),
                     ),
