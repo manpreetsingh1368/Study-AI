@@ -355,6 +355,7 @@ class _SetDetailState extends State<SetDetail> {
             'Only checked sources are sent for notebook answers. PDFs need selectable text.',
             style: TextStyle(
               fontSize: 10,
+              height: 1.6,
           ),
         ),
       ],
