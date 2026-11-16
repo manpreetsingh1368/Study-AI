@@ -229,3 +229,4 @@ export function registerNotebookRoutes(
       const p = plan(u.id);
       if (p.used >= p.generations)
         fail(
+          429,
