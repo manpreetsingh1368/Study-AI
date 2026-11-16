@@ -114,6 +114,7 @@ class _SetDetailState extends State<SetDetail> {
       child: NotesEditor(controller: c, existing: widget.set),
     ),
   );
+  Future<void> addSource() async {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
