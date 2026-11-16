@@ -181,6 +181,7 @@ void main() {
           'ATP transfers chemical energy.',
           entryId: response['id'],
         );
+        GoRouter.of(tester.element(find.byType(Scaffold).first))
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
