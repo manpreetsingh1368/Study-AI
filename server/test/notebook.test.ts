@@ -97,3 +97,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     404,
   );
   const answer = await call(
+    "POST",
