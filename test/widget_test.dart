@@ -156,6 +156,7 @@ void main() {
         GoRouter.of(tester.element(find.byType(Scaffold).first))
             .go('/quiz/sample?collection=quiz-one');
         await tester.runAsync(
+          () => Future<void>.delayed(const Duration(milliseconds: 100)),
 }
 
 class WidgetMemoryStore extends LocalStore {
