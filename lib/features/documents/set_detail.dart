@@ -297,6 +297,7 @@ class _SetDetailState extends State<SetDetail> {
             FilledButton(
               onPressed: () {
                 Navigator.pop(ctx);
+                if (isPdf) {
                         ),
                       ),
                     ),
