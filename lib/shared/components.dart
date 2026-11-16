@@ -144,7 +144,6 @@ class ModernToolbar extends StatelessWidget {
         if (MediaQuery.sizeOf(context).width > 800)
           SizedBox(
             width: 240,
-              onChanged: onSearch,
               decoration: const InputDecoration(
                 hintText: 'Search your library',
                 prefixIcon: Icon(Icons.search, size: 19),
