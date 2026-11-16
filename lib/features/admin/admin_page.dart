@@ -23,6 +23,7 @@ class _AdminPageState extends State<AdminPage> {
     unawaited(load());
   }
 
+  Future<void> load({bool append = false}) async {
     try {
       final data = await widget.controller.request(
         'GET',
