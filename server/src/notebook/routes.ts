@@ -79,3 +79,4 @@ export function registerNotebookRoutes(
       let citations: object[] = [];
       if (b.entryId) {
         const original = get(
+          "SELECT * FROM notebook_entries WHERE id=? AND notebook_id=?",
