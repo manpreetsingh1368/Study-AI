@@ -668,4 +668,5 @@ class _SetDetailState extends State<SetDetail> {
                   visualDensity: VisualDensity.compact,
                   avatar: const Icon(
                     Icons.format_quote,
+                    size: 12,
 }
