@@ -20,3 +20,4 @@ class _StudyToolsState extends State<StudyTools> {
   bool busy = false, sideBySide = false;
   double split = .5;
   String? error;
+  StudyController get c => widget.controller;
