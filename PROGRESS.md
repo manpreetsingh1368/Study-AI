@@ -43,7 +43,6 @@ Updated: 2026-11-16. This is an incremental development build, not a production 
 
 ## Source file inventory
 
-The directory did not contain a Git repository, so no commit/diff was created. Build artifacts, downloaded dependencies, and temporary build tooling are excluded from this source inventory.
 
 ## Source inventory
 
