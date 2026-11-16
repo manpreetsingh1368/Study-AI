@@ -413,6 +413,7 @@ class _SetDetailState extends State<SetDetail> {
                           onChanged: busy
                               ? null
                               : (v) {
+                                  if (v == true && validSelection.length >= 8) {
                   ),
                 ),
             ],
