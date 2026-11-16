@@ -34,3 +34,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
         context.go('/login');
       }
     } catch (e) {
+      if (mounted) setState(() => message = e.toString());
