@@ -75,3 +75,4 @@ export function registerNotebookRoutes(
           sid,
         ).n >= 100
       )
+        fail(403, "This notebook supports up to 100 saved notes.");
