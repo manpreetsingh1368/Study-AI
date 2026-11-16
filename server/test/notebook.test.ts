@@ -30,3 +30,4 @@ const supported = (input: NotebookInput): NotebookOutput => ({
   followUps: ["How do cells use this energy?"],
 });
 async function setup(t: any, generate = supported) {
+  const dir = mkdtempSync(join(tmpdir(), "notebook-"));
