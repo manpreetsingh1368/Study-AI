@@ -224,3 +224,4 @@ export function registerNotebookRoutes(
         (previousUsage.user_id !== u.id || previousUsage.request_hash !== hash)
       )
         fail(409, "Request identifier already used.");
+      if (previousUsage?.status === "pending")
