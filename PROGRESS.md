@@ -32,6 +32,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 
 ## Notebook UI/UX refinement
 
+- Replaced the long study-set detail page with a source/chat/Studio workspace: three desktop panels, focused mobile tabs, compact mobile navigation, cohesive light/dark surfaces, contextual source previews and a richer notebook library grid.
 
 ## Configuration and remaining release work
 
