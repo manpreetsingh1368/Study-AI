@@ -83,6 +83,7 @@ class _AdminPageState extends State<AdminPage> {
                           if (!context.mounted) return;
                           await showDialog<void>(
                             context: context,
+                            builder: (ctx) => AlertDialog(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
