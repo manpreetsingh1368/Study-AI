@@ -189,3 +189,4 @@ export const recoveryCodes = sqliteTable("recovery_codes", {
   userId: text("user_id")
     .primaryKey()
     .references(() => users.id, { onDelete: "cascade" }),
+  codeHash: text("code_hash").notNull().unique(),
