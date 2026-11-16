@@ -412,6 +412,7 @@ class _SetDetailState extends State<SetDetail> {
                           value: selected.contains(source['id']),
                           onChanged: busy
                               ? null
+                              : (v) {
                   ),
                 ),
             ],
