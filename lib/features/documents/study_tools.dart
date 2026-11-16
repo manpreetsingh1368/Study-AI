@@ -205,3 +205,4 @@ class _StudyToolsState extends State<StudyTools> {
               ),
             ),
           )
+        else if ((s['notes'] as String).isNotEmpty)
