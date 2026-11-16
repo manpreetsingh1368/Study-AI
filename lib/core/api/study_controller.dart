@@ -410,6 +410,7 @@ class StudyController extends ChangeNotifier {
         notes.removeWhere((n) => n['id'] == body['noteId']);
       }
       book['notes'] = notes;
+      material['notebook'] = book;
     }
   }
 
