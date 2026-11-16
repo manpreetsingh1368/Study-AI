@@ -113,3 +113,4 @@ class _StudyToolsState extends State<StudyTools> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
+                  s['document']['filename'],
