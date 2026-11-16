@@ -184,3 +184,4 @@ class _StudyToolsState extends State<StudyTools> {
                       onHorizontalDragUpdate: (d) => setState(
                         () => split = (split + d.delta.dx / size.maxWidth)
                             .clamp(.25, .75),
+                      ),
