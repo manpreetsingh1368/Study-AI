@@ -179,3 +179,4 @@ class _StudyToolsState extends State<StudyTools> {
                   ),
                   MouseRegion(
                     cursor: SystemMouseCursors.resizeLeftRight,
+                    child: GestureDetector(
