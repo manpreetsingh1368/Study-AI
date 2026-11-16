@@ -107,6 +107,7 @@ void main() {
             'title': 'Cell biology',
             'notes': 'ATP carries chemical energy.',
             'folder': 'Biology',
+            'version': 1,
 }
 
 class WidgetMemoryStore extends LocalStore {
