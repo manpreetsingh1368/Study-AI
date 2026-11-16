@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                    child: ClipRRect(
                       borderRadius: BorderRadius.circular(16),
                       child: PdfScreen(
                         controller: c,
