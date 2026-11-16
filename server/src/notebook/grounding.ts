@@ -165,3 +165,4 @@ export async function notebookGenerate(
     if (!response.ok)
       throw Object.assign(
         new Error(
+          response.status === 429
