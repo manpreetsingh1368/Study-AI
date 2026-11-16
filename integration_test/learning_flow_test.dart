@@ -16,3 +16,4 @@ import 'package:study_ai/core/storage/local_store.dart';
 
 Future<LocalStore> testStore() async {
   sqfliteFfiInit();
+  final db = await databaseFactoryFfi.openDatabase(
