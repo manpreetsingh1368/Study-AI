@@ -322,3 +322,4 @@ export function notebookState(sid: string, get: any, all: any) {
     ).n,
     notes: all(
       "SELECT * FROM notebook_notes WHERE notebook_id=? AND deleted=0 ORDER BY created_at DESC",
+      sid,
