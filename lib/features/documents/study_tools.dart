@@ -287,3 +287,4 @@ class _StudyToolsState extends State<StudyTools> {
                     onSelected: busy
                         ? null
                         : (v) => setState(() {
+                            kind = v!;
