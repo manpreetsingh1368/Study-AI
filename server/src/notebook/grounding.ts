@@ -55,3 +55,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
       throw Object.assign(new Error("Inconsistent evidence response."), {
         statusCode: 502,
       });
+    return { ...parsed, blocks: [] };
