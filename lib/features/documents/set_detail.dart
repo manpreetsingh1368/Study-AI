@@ -123,6 +123,7 @@ class _SetDetailState extends State<SetDetail> {
                   maxLines: 12,
                   maxLength: 100000,
                   decoration: const InputDecoration(
+                    labelText: 'Paste your source text',
                 ),
               ],
             ),
