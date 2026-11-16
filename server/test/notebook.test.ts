@@ -48,3 +48,4 @@ async function setup(t: any, generate = supported) {
       headers: token ? { authorization: `Bearer ${token}` } : {},
       payload,
     });
+    return { status: r.statusCode, body: r.json() };
