@@ -78,3 +78,4 @@ class _StudyToolsState extends State<StudyTools> {
                           content: const Text(
                             'This removes the notebook, its saved material and conversations from your library on every device.',
                           ),
+                          actions: [
