@@ -13,6 +13,7 @@ const app = createApp({
         text: "ATP transfers chemical energy. Use this core idea to connect the cellular processes in your notes.",
         citations: [
           {
+            chunkId: input.chunks[0].id,
   generate: async (input) => ({
     questions:
       input.kind === "flashcards"
