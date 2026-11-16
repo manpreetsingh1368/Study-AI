@@ -66,3 +66,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   const a = await register("a@example.com"),
     b = await register("b@example.com");
   const set = (
+    await call("POST", "/sets", a.token, {
