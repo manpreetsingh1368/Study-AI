@@ -81,6 +81,7 @@ class _AdminPageState extends State<AdminPage> {
                             '/admin/users/${u['id']}',
                           );
                           if (!context.mounted) return;
+                          await showDialog<void>(
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
