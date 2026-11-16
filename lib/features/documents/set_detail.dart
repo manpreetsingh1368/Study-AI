@@ -346,6 +346,7 @@ class _SetDetailState extends State<SetDetail> {
           width: 560,
           child: SingleChildScrollView(
             child: Column(
+              mainAxisSize: MainAxisSize.min,
                         ),
                       ),
                     ),
