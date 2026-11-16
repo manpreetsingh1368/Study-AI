@@ -98,6 +98,7 @@ class _AdminPageState extends State<AdminPage> {
                                         'Study sets: ${detail['sets']} · Quiz attempts: ${detail['attempts']}',
                                       ),
                                       Text(
+                                        'Private storage: ${detail['storage']} bytes',
                           context: context,
                           firstDate: DateTime.now(),
                           lastDate: DateTime.now().add(
