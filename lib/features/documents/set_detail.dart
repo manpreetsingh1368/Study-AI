@@ -580,4 +580,5 @@ class _SetDetailState extends State<SetDetail> {
               : '${validSelection.length} ${validSelection.length == 1 ? 'source' : 'sources'} selected · 1 AI credit per request · verify important claims',
           textAlign: TextAlign.center,
           style: TextStyle(
+            fontSize: 9,
 }
