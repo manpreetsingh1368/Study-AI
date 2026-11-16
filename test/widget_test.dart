@@ -58,6 +58,7 @@ void main() {
     final controller = StudyController(store)
       ..loading = false
       ..onboarded = false;
+    await tester.pumpWidget(
 }
 
 class WidgetMemoryStore extends LocalStore {
