@@ -485,4 +485,5 @@ class _SetDetailState extends State<SetDetail> {
         ),
         const SizedBox(height: 26),
         for (final prompt in [
+          'What are the most important ideas?',
 }
