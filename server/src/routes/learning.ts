@@ -58,6 +58,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
         const current = get(
           "SELECT * FROM study_sets WHERE id=? AND user_id=?",
           b.setId,
+          u.id,
       }
       if (b.kind === "create") {
         if (
