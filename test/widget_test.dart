@@ -162,6 +162,7 @@ void main() {
           find.text('Source overview').last,
           const Offset(0, -320),
         );
+        await tester.pumpAndSettle();
         expect(find.text('Your learning collections'), findsOneWidget);
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
