@@ -19,3 +19,4 @@ export function registerNotebookRoutes(
   ) => Promise<NotebookOutput> = notebookGenerate,
 ) {
   const { db, user, owned, get, all, run, plan, change, now, fail, uploads } =
+    c;
