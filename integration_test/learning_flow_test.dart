@@ -27,3 +27,4 @@ Future<LocalStore> testStore() async {
     'CREATE TABLE outbox(id TEXT PRIMARY KEY,account TEXT,path TEXT,body TEXT)',
   );
   final store = LocalStore()..db = db;
+  await store.createDocumentTables(db);
