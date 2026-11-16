@@ -405,6 +405,7 @@ class StudyController extends ChangeNotifier {
           'citations': [],
           'created_at': DateTime.now().millisecondsSinceEpoch,
           'pending': true,
+        });
     }
   }
 
