@@ -238,3 +238,4 @@ class _StudyToolsState extends State<StudyTools> {
                       )
                     : Text(
                         '${(s['questions'] as List).where((q) => q['collection_id'] == deck['id']).length} questions',
+                      ),
