@@ -255,3 +255,4 @@ test("source selection excludes previous conversations about unchecked sources; 
   );
 });
 test("citation normalization and explicit insufficient-evidence behavior", () => {
+  const chunks = splitSource(
