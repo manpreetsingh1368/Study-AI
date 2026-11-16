@@ -97,3 +97,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   label: busy ? 'Recovering…' : 'Replace password',
                   icon: Icons.key,
                   onPressed: busy ? null : submit,
+                ),
