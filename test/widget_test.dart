@@ -152,6 +152,7 @@ void main() {
         final ctx = tester.element(find.byType(Scaffold).first);
         GoRouter.of(ctx).go('/set/sample');
         await tester.pumpAndSettle();
+        expect(find.text('Meet your material.'), findsOneWidget);
         expect(find.text('Your learning collections'), findsOneWidget);
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
