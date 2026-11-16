@@ -675,6 +675,7 @@ class StudyController extends ChangeNotifier {
         'Reconnect to ask your sources. Saved answers and notes are available offline.',
       );
     }
+    if (sourceIds.isEmpty) {
   Future<void> record(String path, Map<String, dynamic> body) async {
     await store.enqueue(account, path, body);
     if (path == '/attempts' && !attempts.any((a) => a['id'] == body['id'])) {
