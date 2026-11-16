@@ -100,6 +100,7 @@ void main() {
         final controller = StudyController(store)
           ..loading = false
           ..user = {'id': 'student', 'name': 'Student', 'role': 'student'}
+          ..offline = true;
 }
 
 class WidgetMemoryStore extends LocalStore {
