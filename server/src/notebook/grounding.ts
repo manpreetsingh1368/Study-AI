@@ -30,3 +30,4 @@ export const responseSchema = z.object({
           .max(4),
       }),
     )
+    .max(12),
