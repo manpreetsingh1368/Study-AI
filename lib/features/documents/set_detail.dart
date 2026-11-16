@@ -317,7 +317,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                                  : (pro ? 50 : 10)),
                         ),
                     ],
                   ),
