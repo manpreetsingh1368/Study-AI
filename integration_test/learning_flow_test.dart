@@ -66,3 +66,4 @@ void main() {
         throw StateError(
           'Pass --dart-define=PROJECT_ROOT=/absolute/project/path',
         );
+      }
