@@ -147,3 +147,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   assert.equal(sync.changes.at(-1).set.notebook.notes[0].id, note.id);
   const deletion = { id: randomUUID(), noteId: note.id };
   await call("POST", `/notebooks/${set.id}/delete-note`, a.token, deletion);
+  await call("POST", `/notebooks/${set.id}/delete-note`, a.token, deletion);
