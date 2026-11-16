@@ -372,3 +372,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
     headers: { authorization: `Bearer ${auth.token}` },
     payload: {
       id: randomUUID(),
+      kind: "chat",
