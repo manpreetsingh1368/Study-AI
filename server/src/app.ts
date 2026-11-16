@@ -297,6 +297,7 @@ export function createApp(
         .object({
           email: z
             .email()
+            .max(254)
   app.get("/me", async (req) => {
     const u = user(req);
     return { user: publicUser(u), plan: plan(u.id) };
