@@ -48,7 +48,6 @@ The directory did not contain a Git repository, so no commit/diff was created. B
 Modified existing files:
 
 - `.gitignore`
-- `pubspec.yaml`
 - `pubspec.lock`
 - `lib/main.dart`
 - `test/widget_test.dart`
