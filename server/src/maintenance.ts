@@ -39,3 +39,4 @@ try {
         file.endsWith(".pending") &&
         statSync(join(uploads, file)).mtimeMs < now - 86400000
       )
+        unlinkSync(join(uploads, file));
