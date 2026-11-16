@@ -349,6 +349,7 @@ class _SetDetailState extends State<SetDetail> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 TextField(
+                  controller: title,
                         ),
                       ),
                     ),
