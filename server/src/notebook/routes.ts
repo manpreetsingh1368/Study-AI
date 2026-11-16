@@ -206,3 +206,4 @@ export function registerNotebookRoutes(
     }
     if (!chunks.length)
       fail(
+        422,
