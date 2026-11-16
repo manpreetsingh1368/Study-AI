@@ -76,3 +76,4 @@ void main() {
       final stderr = <String>[];
       process.stderr.transform(utf8.decoder).listen(stderr.add);
       addTearDown(() async {
+        process.kill();
