@@ -396,6 +396,7 @@ class _SetDetailState extends State<SetDetail> {
     text.dispose();
   }
 
+  static String label(String kind) => switch (kind) {
                         ),
                       ),
                     ),
