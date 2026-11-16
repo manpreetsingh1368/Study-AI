@@ -406,6 +406,7 @@ class StudyController extends ChangeNotifier {
           'created_at': DateTime.now().millisecondsSinceEpoch,
           'pending': true,
         });
+      } else {
     }
   }
 
