@@ -873,4 +873,5 @@ class _SetDetailState extends State<SetDetail> {
                   report = Map<String, dynamic>.from(entry);
                   mobileTab = 1;
                 }),
+              ),
 }
