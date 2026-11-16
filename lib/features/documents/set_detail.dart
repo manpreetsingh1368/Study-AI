@@ -227,6 +227,7 @@ class _SetDetailState extends State<SetDetail> {
                     ),
                     if (source['document'] != null)
                       PdfScreen(
+                        controller: c,
                         ),
                       ),
                     ),
