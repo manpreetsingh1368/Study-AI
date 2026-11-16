@@ -184,3 +184,4 @@ export function registerNotebookRoutes(
         const pages = await pdfPages(join(uploads, document.id));
         for (let i = 0; i < pages.length; i++) {
           total += pages[i].length;
+          chunks.push(
