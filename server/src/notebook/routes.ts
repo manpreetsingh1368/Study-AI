@@ -269,3 +269,4 @@ export function registerNotebookRoutes(
       });
       const verified = validatedEvidence(output, chunks);
       db.transaction(() => {
+        owned(u.id, sid);
