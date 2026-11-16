@@ -752,6 +752,7 @@ export function createApp(
         .object({
           enabled: z.boolean(),
           expiresAt: z.number().int().positive().optional(),
+          startsAt: z.number().int().positive().optional(),
         })
         .parse(req.body);
     if (!get("SELECT id FROM users WHERE id=?", uid))
