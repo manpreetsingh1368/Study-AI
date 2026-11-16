@@ -161,3 +161,4 @@ export function registerNotebookRoutes(
         "Daily AI allowance reached. Chat and Studio use the same allowance as quiz generation.",
       );
     const sources = sourceIds.map((sourceId) => owned(u.id, sourceId));
+    const chunks: SourceChunk[] = [];
