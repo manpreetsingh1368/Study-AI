@@ -126,3 +126,4 @@ export function registerNotebookRoutes(
     owned(u.id, sid);
     db.transaction(() => {
       run(
+        "UPDATE notebook_notes SET deleted=1 WHERE id=? AND notebook_id=?",
