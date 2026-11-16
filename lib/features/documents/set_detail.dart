@@ -204,7 +204,6 @@ class _SetDetailState extends State<SetDetail> {
                 ],
               ),
             ),
-          'Your learning collections',
           style: Theme.of(context).textTheme.titleLarge,
         ),
         const SizedBox(height: 16),
