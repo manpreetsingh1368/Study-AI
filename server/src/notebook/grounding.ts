@@ -59,3 +59,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
   }
   if (!parsed.blocks.length)
     throw Object.assign(new Error("AI returned no supported answer."), {
+      statusCode: 502,
