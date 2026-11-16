@@ -226,6 +226,7 @@ class _SetDetailState extends State<SetDetail> {
                         child: SegmentedButton<int>(
                           showSelectedIcon: false,
                           segments: const [
+                            ButtonSegment(
                       ),
                       const SizedBox(height: 12),
                       Expanded(
