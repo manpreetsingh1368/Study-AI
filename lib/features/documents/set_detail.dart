@@ -159,7 +159,6 @@ class _SetDetailState extends State<SetDetail> {
           ),
           const SizedBox(height: 20),
         ],
-                    width: (size.maxWidth - 14) * split,
                     child: SingleChildScrollView(
                       child: StudyCard(
                         child: SelectableText(
