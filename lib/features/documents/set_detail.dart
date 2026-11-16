@@ -397,6 +397,7 @@ class _SetDetailState extends State<SetDetail> {
           child: ListView(
             padding: const EdgeInsets.symmetric(horizontal: 8),
             children: [
+              for (final source in filtered)
                   ),
                 ),
             ],
