@@ -320,6 +320,7 @@ class _SetDetailState extends State<SetDetail> {
       await c.saveNotebookNote(
         widget.set['id'],
         entry['kind'] == 'chat'
+            ? (entry['prompt'] as String).substring(
                         ),
                       ),
                     ),
