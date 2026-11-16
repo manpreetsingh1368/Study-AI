@@ -139,3 +139,4 @@ void main() {
             .go('/quiz/${set['id']}?collection=${quiz['id']}');
         await tester.pumpAndSettle();
         await tester.ensureVisible(find.text('A.  Energy'));
+        await tester.tap(find.text('A.  Energy'));
