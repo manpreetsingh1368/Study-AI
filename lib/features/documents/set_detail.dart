@@ -363,4 +363,5 @@ class _SetDetailState extends State<SetDetail> {
       children: [
         panelTitle(
           report == null ? 'Source conversation' : label(report!['kind']),
+          Icons.forum_outlined,
 }
