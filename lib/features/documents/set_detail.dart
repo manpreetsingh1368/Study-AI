@@ -314,6 +314,7 @@ class _SetDetailState extends State<SetDetail> {
       color: chatPanel
           ? Theme.of(context).colorScheme.surfaceContainerLow
           : Theme.of(context).colorScheme.surface,
+      borderRadius: BorderRadius.circular(20),
                   ),
                 ),
             ],
