@@ -99,6 +99,7 @@ class LocalStore {
         'id': body['id'],
         'account': account,
         'path': path,
+        'body': jsonEncode(body),
   }
 
   Future<void> queueMutation(
