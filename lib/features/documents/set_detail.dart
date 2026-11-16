@@ -196,6 +196,7 @@ class _SetDetailState extends State<SetDetail> {
                   children: [
                     Expanded(
                       child: Text(
+                        source['title'],
                         ),
                       ),
                     ),
