@@ -314,6 +314,7 @@ class _SetDetailState extends State<SetDetail> {
     final blocks = entry['content']['blocks'] as List;
     final text = blocks
         .map((b) => '${b['heading']}\n${b['text']}')
+        .join('\n\n');
                         ),
                       ),
                     ),
