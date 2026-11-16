@@ -920,4 +920,5 @@ class _SetDetailState extends State<SetDetail> {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
+                    subtitle: Text(
 }
