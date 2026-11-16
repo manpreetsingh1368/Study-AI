@@ -963,4 +963,5 @@ class _SetDetailState extends State<SetDetail> {
                               task(
                                 () => c.deleteNotebookNote(
                                   widget.set['id'],
+                                  note['id'],
 }
