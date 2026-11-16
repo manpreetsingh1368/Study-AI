@@ -24,3 +24,4 @@ Future<LocalStore> testStore() async {
     'CREATE TABLE cache(account TEXT,key TEXT,value TEXT,PRIMARY KEY(account,key))',
   );
   await db.execute(
+    'CREATE TABLE outbox(id TEXT PRIMARY KEY,account TEXT,path TEXT,body TEXT)',
