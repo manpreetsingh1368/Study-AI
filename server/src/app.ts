@@ -547,6 +547,7 @@ export function createApp(
         change(sid, u.id);
         run(
           "UPDATE generation_usage SET status='success',collection_id=? WHERE id=?",
+          collectionId,
       })();
       return { set: full(owned(u.id, sid)), plan: plan(u.id) };
     } catch (e) {
