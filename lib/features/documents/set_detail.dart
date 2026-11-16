@@ -303,7 +303,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ],
                   ),
-                      const DropdownMenuEntry(value: 'medium', label: 'Medium'),
                       DropdownMenuEntry(
                         value: 'hard',
                         label: 'Hard · Pro',
