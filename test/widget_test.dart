@@ -172,6 +172,7 @@ void main() {
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
             .go('/cards/sample?collection=cards-one&due=true');
+        await tester.runAsync(
 }
 
 class WidgetMemoryStore extends LocalStore {
