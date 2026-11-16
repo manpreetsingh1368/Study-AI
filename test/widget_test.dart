@@ -176,6 +176,7 @@ void main() {
           () => Future<void>.delayed(const Duration(milliseconds: 100)),
         );
         await tester.pumpAndSettle();
+        expect(find.text('ATP'), findsOneWidget);
 }
 
 class WidgetMemoryStore extends LocalStore {
