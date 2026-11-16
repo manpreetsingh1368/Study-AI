@@ -174,3 +174,4 @@ export function registerNotebookRoutes(
               title: `${source.title} · notes`,
               version: source.version,
               page: null,
+            },
