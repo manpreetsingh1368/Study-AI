@@ -116,7 +116,6 @@ class _SetDetailState extends State<SetDetail> {
                   s['document']['filename'],
                   style: const TextStyle(fontWeight: FontWeight.w600),
                 ),
-                              }
                             }),
                       icon: const Icon(Icons.offline_pin_outlined),
                       label: const Text('Keep offline'),
