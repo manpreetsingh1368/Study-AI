@@ -636,6 +636,7 @@ class StudyController extends ChangeNotifier {
       );
     }
     final configuration = '$kind:$count:$difficulty';
+    final saved = await store.read(account, 'generation:$sid');
     await request('POST', '/sets/$sid/generate', {
       'id': operationId,
       'kind': kind,
