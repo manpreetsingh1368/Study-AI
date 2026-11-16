@@ -462,4 +462,5 @@ class _SetDetailState extends State<SetDetail> {
             color: accent.withValues(alpha: .12),
             borderRadius: BorderRadius.circular(18),
           ),
+          child: const Icon(
 }
