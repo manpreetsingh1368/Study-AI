@@ -137,6 +137,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           content: Column(
                             mainAxisSize: MainAxisSize.min,
                             crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
             OutlinedButton(
               onPressed: busy
                   ? null
