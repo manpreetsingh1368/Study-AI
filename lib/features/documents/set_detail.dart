@@ -423,6 +423,7 @@ class _SetDetailState extends State<SetDetail> {
               wide ? 24 : 16,
               14,
               wide ? 24 : 16,
+              18,
                         ),
                       ),
                     ),
