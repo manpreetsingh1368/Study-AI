@@ -211,3 +211,4 @@ export function registerNotebookRoutes(
       );
     db.transaction(() => {
       owned(u.id, sid);
+      for (const source of sources) {
