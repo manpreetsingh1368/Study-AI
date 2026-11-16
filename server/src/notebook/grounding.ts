@@ -71,3 +71,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
           !chunk ||
           !normalize(chunk.text).includes(normalize(citation.quote))
         )
+          throw Object.assign(
