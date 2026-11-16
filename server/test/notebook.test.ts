@@ -234,3 +234,4 @@ test("source selection excludes previous conversations about unchecked sources; 
           sourceIds: sources,
         })
       ).status,
+      200,
