@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                          await c.deleteSet(s);
                           if (context.mounted) context.go('/library');
                         });
                       }
