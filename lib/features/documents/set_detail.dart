@@ -163,6 +163,7 @@ class _SetDetailState extends State<SetDetail> {
           throw ApiException(413, 'Choose a PDF smaller than 10 MB.');
         }
         final source = await c.saveSet(
+          file.name.replaceFirst(RegExp(r'\.pdf$', caseSensitive: false), ''),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
