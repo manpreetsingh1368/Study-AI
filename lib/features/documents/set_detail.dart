@@ -27,6 +27,7 @@ class _SetDetailState extends State<SetDetail> {
       error = null;
     });
     try {
+      await work();
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
