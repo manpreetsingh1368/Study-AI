@@ -97,6 +97,7 @@ void main() {
         addTearDown(tester.view.resetPhysicalSize);
         addTearDown(tester.view.resetDevicePixelRatio);
         final store = WidgetMemoryStore();
+        final controller = StudyController(store)
 }
 
 class WidgetMemoryStore extends LocalStore {
