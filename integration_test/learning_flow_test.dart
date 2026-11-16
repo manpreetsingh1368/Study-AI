@@ -30,3 +30,4 @@ Future<LocalStore> testStore() async {
   await store.createDocumentTables(db);
   await store.write('_device', 'onboarded', true);
   return store;
+}
