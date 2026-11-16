@@ -256,3 +256,4 @@ class _StudyToolsState extends State<StudyTools> {
                       icon: const Icon(Icons.play_arrow_rounded),
                     ),
                   ],
+                ),
