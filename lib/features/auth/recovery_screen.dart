@@ -98,3 +98,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   icon: Icons.key,
                   onPressed: busy ? null : submit,
                 ),
+              ],
