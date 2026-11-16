@@ -205,3 +205,4 @@ export function registerNotebookRoutes(
         );
     }
     if (!chunks.length)
+      fail(
