@@ -803,4 +803,5 @@ class _SetDetailState extends State<SetDetail> {
               style: TextStyle(fontSize: 9),
             ),
             const SizedBox(height: 24),
+            Row(
 }
