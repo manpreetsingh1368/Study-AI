@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                        builder: (ctx) => AlertDialog(
                           title: const Text('Delete this study set?'),
                           content: const Text(
                             'This deletion will synchronize across your devices.',
