@@ -202,3 +202,4 @@ export const recoveryCodes = sqliteTable("recovery_codes", {
 export const notebookEntries = sqliteTable("notebook_entries", {
   id: text("id").primaryKey(),
   notebookId: text("notebook_id")
+    .notNull()
