@@ -469,6 +469,7 @@ class _SetDetailState extends State<SetDetail> {
                                                 .onSurfaceVariant,
                                           ),
                                         ),
+                                      ),
                   ),
                 ),
             ],
