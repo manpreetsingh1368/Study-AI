@@ -821,4 +821,5 @@ class _SetDetailState extends State<SetDetail> {
             if ((widget.set['collections'] as List? ?? []).isEmpty)
               TextButton.icon(
                 onPressed: showTools,
+                icon: const Icon(Icons.quiz_outlined, size: 17),
 }
