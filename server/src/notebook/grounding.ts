@@ -37,3 +37,4 @@ export type NotebookOutput = z.infer<typeof responseSchema>;
 export type NotebookInput = {
   kind: "chat" | "summary" | "guide" | "faq";
   prompt: string;
+  chunks: SourceChunk[];
