@@ -870,4 +870,5 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 trailing: const Icon(Icons.chevron_right, size: 17),
                 onTap: () => setState(() {
+                  report = Map<String, dynamic>.from(entry);
 }
