@@ -262,3 +262,4 @@ export function registerNotebookRoutes(
             .join("\n"),
         }));
       const output = await generate({
+        kind: b.kind,
