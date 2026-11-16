@@ -250,6 +250,7 @@ class _SetDetailState extends State<SetDetail> {
     await showDialog<void>(
       context: context,
       builder: (ctx) => AlertDialog(
+        title: Row(
                         ),
                       ),
                     ),
