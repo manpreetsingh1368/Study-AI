@@ -137,6 +137,7 @@ void main() {
                 'topic': 'Biology',
                 'difficulty': 'easy',
               },
+            ],
 }
 
 class WidgetMemoryStore extends LocalStore {
