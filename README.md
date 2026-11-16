@@ -69,6 +69,7 @@ While signed in, enter your current password in Settings and choose **Create a o
 
 ## Verification
 
+```sh
 
 ## Android, iOS and macOS
 
