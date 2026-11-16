@@ -45,3 +45,4 @@ export function registerNotebookRoutes(
         q.offset,
       ).map(entry),
     };
+  });
