@@ -812,4 +812,5 @@ class _SetDetailState extends State<SetDetail> {
                   ),
                 ),
                 IconButton(
+                  tooltip: 'Create quizzes, cards or exams',
 }
