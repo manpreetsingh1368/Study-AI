@@ -66,6 +66,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
       final desktop = MediaQuery.sizeOf(context).width >= 920;
       final title =
           destinations.where((d) => d.$1 == widget.page).firstOrNull?.$2 ??
+          'Study notebook';
       return CallbackShortcuts(
         bindings: {
           const SingleActivator(LogicalKeyboardKey.keyK, control: true):
