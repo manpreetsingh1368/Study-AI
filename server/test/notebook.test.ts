@@ -35,3 +35,4 @@ async function setup(t: any, generate = supported) {
     dataDir: dir,
     uploadDir: join(dir, "uploads"),
     notebookGenerate: async (i) => generate(i),
+  });
