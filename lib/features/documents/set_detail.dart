@@ -366,4 +366,5 @@ class _SetDetailState extends State<SetDetail> {
           Icons.forum_outlined,
           action: report != null
               ? IconButton(
+                  tooltip: 'Back to chat',
 }
