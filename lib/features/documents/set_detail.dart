@@ -864,4 +864,5 @@ class _SetDetailState extends State<SetDetail> {
                   DateTime.fromMillisecondsSinceEpoch(entry['created_at'])
                       .toLocal()
                       .toString()
+                      .split('.')
 }
