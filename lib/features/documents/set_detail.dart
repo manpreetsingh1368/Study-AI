@@ -802,4 +802,5 @@ class _SetDetailState extends State<SetDetail> {
               'Each Studio generation uses 1 AI credit.',
               style: TextStyle(fontSize: 9),
             ),
+            const SizedBox(height: 24),
 }
