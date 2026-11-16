@@ -67,6 +67,7 @@ The app includes first-run onboarding, saved appearance, folders, desktop PDF dr
 
 Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses three panels; mobile uses focused tabs with less navigation chrome. The library now presents notebook cards with collection/note counts and recent updates.
 
+- Check up to eight saved materials as sources. Add another text source or PDF directly from the source panel, or open a source to read its notes/PDF.
 
 ## Recovery codes
 
