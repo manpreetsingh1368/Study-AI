@@ -44,3 +44,4 @@ export function registerNotebookRoutes(
         q.limit,
         q.offset,
       ).map(entry),
+    };
