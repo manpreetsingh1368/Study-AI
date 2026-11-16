@@ -162,3 +162,4 @@ export function registerNotebookRoutes(
       );
     const sources = sourceIds.map((sourceId) => owned(u.id, sourceId));
     const chunks: SourceChunk[] = [];
+    let total = 0;
