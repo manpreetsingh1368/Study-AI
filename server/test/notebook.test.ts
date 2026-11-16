@@ -299,3 +299,4 @@ test("citation normalization and explicit insufficient-evidence behavior", () =>
 });
 test("PDF grounding carries a verified page reference and permits PDF-only sources", async (t) => {
   const { PDFDocument } = await import("pdf-lib");
+  const pdf = await PDFDocument.create();
