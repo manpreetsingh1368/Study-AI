@@ -20,3 +20,4 @@ Future<LocalStore> testStore() async {
     inMemoryDatabasePath,
     options: OpenDatabaseOptions(singleInstance: false),
   );
+  await db.execute(
