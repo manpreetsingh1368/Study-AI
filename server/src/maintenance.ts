@@ -25,6 +25,7 @@ try {
         "UPDATE study_sets SET notes='',title='Deleted study set',folder='' WHERE deleted=1 AND updated_at<?",
       )
       .run(now - retention * 86400000);
+    for (const table of [
     sqlite.prepare("DELETE FROM sessions WHERE expires_at<=?").run(now);
     sqlite.prepare("DELETE FROM recovery_codes WHERE expires_at<=?").run(now);
     sqlite
