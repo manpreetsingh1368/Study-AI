@@ -120,6 +120,7 @@ class _SetDetailState extends State<SetDetail> {
                 TextField(
                   controller: text,
                   minLines: 7,
+                  maxLines: 12,
                 ),
               ],
             ),
