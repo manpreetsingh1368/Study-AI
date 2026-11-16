@@ -403,6 +403,7 @@ class StudyController extends ChangeNotifier {
         notes.add({
           ...body,
           'citations': [],
+          'created_at': DateTime.now().millisecondsSinceEpoch,
     }
   }
 
