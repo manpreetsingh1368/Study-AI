@@ -607,4 +607,5 @@ class _SetDetailState extends State<SetDetail> {
             ),
             const Spacer(),
             if (blocks.isNotEmpty)
+              IconButton(
 }
