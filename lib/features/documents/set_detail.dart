@@ -667,4 +667,5 @@ class _SetDetailState extends State<SetDetail> {
                 ActionChip(
                   visualDensity: VisualDensity.compact,
                   avatar: const Icon(
+                    Icons.format_quote,
 }
