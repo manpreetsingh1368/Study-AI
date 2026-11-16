@@ -510,4 +510,5 @@ class _SetDetailState extends State<SetDetail> {
                 children: [
                   Expanded(
                     child: Text(prompt, style: const TextStyle(fontSize: 12)),
+                  ),
 }
