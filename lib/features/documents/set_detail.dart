@@ -407,4 +407,5 @@ class _SetDetailState extends State<SetDetail> {
                             color: accent.withValues(alpha: .11),
                             borderRadius: const BorderRadius.only(
                               topLeft: Radius.circular(18),
+                              topRight: Radius.circular(18),
 }
