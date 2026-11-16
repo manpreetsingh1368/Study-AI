@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                            .clamp(.25, .75),
                       ),
                       child: const SizedBox(
                         width: 14,
