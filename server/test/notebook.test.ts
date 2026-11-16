@@ -365,3 +365,4 @@ test("PDF grounding carries a verified page reference and permits PDF-only sourc
       Buffer.from(`\r\n--${boundary}--\r\n`),
     ]),
   });
+  assert.equal(upload.statusCode, 200);
