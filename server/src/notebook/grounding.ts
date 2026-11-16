@@ -86,3 +86,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
           page: chunk.page,
           quote: citation.quote,
         };
+      }),
