@@ -14,3 +14,4 @@ import 'package:study_ai/app/app.dart';
 import 'package:study_ai/core/api/study_controller.dart';
 import 'package:study_ai/core/storage/local_store.dart';
 
+Future<LocalStore> testStore() async {
