@@ -175,3 +175,4 @@ export function registerNotebookRoutes(
               version: source.version,
               page: null,
             },
+            source.notes,
