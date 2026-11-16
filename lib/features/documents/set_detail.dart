@@ -135,6 +135,7 @@ class _SetDetailState extends State<SetDetail> {
               ListTile(
                 leading: const Icon(Icons.picture_as_pdf_outlined),
                 title: const Text('Upload a PDF'),
+                subtitle: const Text(
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
