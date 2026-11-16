@@ -47,3 +47,4 @@ export function validatedEvidence(output: unknown, chunks: SourceChunk[]) {
   } catch {
     throw Object.assign(
       new Error("AI returned an invalid notebook response."),
+      { statusCode: 502 },
