@@ -760,6 +760,7 @@ export function createApp(
       fail(400, "Set a future expiration date.");
     const startsAt = b.startsAt ?? now();
     if (b.enabled && b.expiresAt! <= startsAt)
+      fail(400, "Pro expiration must follow its activation date.");
     db.transaction(() => {
       if (b.enabled)
         run(
