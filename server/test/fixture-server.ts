@@ -24,3 +24,4 @@ const app = createApp({
             front: "ATP",
             back: "An energy carrier",
             topic: "Cell biology",
+            difficulty: input.difficulty,
