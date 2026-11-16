@@ -415,6 +415,7 @@ class _SetDetailState extends State<SetDetail> {
                               : (v) {
                                   if (v == true && validSelection.length >= 8) {
                                     setState(
+                                      () => error = 'Select up to 8 sources.',
                   ),
                 ),
             ],
