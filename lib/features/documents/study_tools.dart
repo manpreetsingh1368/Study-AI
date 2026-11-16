@@ -218,3 +218,4 @@ class _StudyToolsState extends State<StudyTools> {
             'Generate a quiz, flashcards, or an exam from this material.',
           ),
         for (final deck in decks)
+          Padding(
