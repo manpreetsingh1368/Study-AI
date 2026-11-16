@@ -186,3 +186,4 @@ class _StudyToolsState extends State<StudyTools> {
                             .clamp(.25, .75),
                       ),
                       child: const SizedBox(
+                        width: 14,
