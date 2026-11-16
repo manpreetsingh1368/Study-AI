@@ -38,6 +38,7 @@ class StudyController extends ChangeNotifier {
   });
   String? token, error;
   Map<String, dynamic>? user;
+  Map<String, dynamic> catalog = {};
   Map<String, dynamic> plan = {}, analytics = {}, advanced = {};
   List<Map<String, dynamic>> failedOperations = [], uploadIssues = [];
   int get attentionCount =>
