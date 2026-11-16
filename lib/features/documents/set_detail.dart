@@ -35,7 +35,6 @@ class _SetDetailState extends State<SetDetail> {
     }
   }
 
-                  ? null
                   : () async {
                       final yes = await showDialog<bool>(
                         context: context,
