@@ -18,3 +18,4 @@ export function registerNotebookRoutes(
     input: NotebookInput,
   ) => Promise<NotebookOutput> = notebookGenerate,
 ) {
+  const { db, user, owned, get, all, run, plan, change, now, fail, uploads } =
