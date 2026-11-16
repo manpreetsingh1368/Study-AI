@@ -177,7 +177,6 @@ class _SetDetailState extends State<SetDetail> {
                       ),
                     ),
                   ),
-                      onHorizontalDragUpdate: (d) => setState(
                         () => split = (split + d.delta.dx / size.maxWidth)
                             .clamp(.25, .75),
                       ),
