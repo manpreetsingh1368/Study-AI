@@ -42,6 +42,7 @@ class _SetDetailState extends State<SetDetail> {
         widget.set['id'],
         kind,
         prompt.trim(),
+        validSelection,
         ),
       ),
     ),
