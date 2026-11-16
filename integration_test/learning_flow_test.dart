@@ -103,6 +103,7 @@ void main() {
       try {
         await c.initialize();
         await tester.pumpWidget(
+          RepaintBoundary(
           ),
         );
         await tester.pumpAndSettle();
