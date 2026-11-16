@@ -714,4 +714,5 @@ class _SetDetailState extends State<SetDetail> {
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
+      panelTitle('Studio', Icons.auto_awesome_outlined),
 }
