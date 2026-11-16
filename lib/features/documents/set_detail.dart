@@ -388,6 +388,7 @@ class _SetDetailState extends State<SetDetail> {
             'Use up to 8 sources',
             style: TextStyle(
               fontSize: 11,
+              color: Theme.of(context).colorScheme.onSurfaceVariant,
                   ),
                 ),
             ],
