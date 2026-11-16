@@ -224,6 +224,7 @@ export function createApp(
     });
   });
   app.get("/plans", async () => ({
+    free: {
   app.get("/health", async () => ({ status: "ok" }));
   app.post(
     "/auth/register",
