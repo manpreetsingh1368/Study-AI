@@ -229,3 +229,4 @@ test("source selection excludes previous conversations about unchecked sources; 
       (
         await call("POST", `/notebooks/${one.id}/ask`, a.token, {
           id: randomUUID(),
+          kind,
