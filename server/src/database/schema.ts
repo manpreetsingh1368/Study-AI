@@ -210,3 +210,4 @@ export const notebookEntries = sqliteTable("notebook_entries", {
   requestHash: text("request_hash").notNull(),
   content: text("content").notNull(),
   createdAt: integer("created_at").notNull(),
+});
