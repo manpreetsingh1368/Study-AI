@@ -844,4 +844,5 @@ class _SetDetailState extends State<SetDetail> {
                 ),
                 trailing: const Icon(Icons.play_arrow_rounded, size: 18),
                 onTap: () => context.go(
+                  '/${collection['kind'] == 'flashcards' ? 'cards' : 'quiz'}/${widget.set['id']}?collection=${Uri.encodeQueryComponent(collection['id'])}',
 }
