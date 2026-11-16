@@ -46,6 +46,7 @@ class _SetDetailState extends State<SetDetail> {
       );
       if (!mounted) return;
       setState(() {
+        report = kind == 'chat' ? null : result;
         ),
       ),
     ),
