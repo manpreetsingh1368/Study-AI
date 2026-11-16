@@ -127,3 +127,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
     title: "Remember this",
     text: "ATP transfers energy.",
     entryId: request.id,
+  };
