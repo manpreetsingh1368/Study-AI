@@ -246,3 +246,4 @@ export function registerNotebookRoutes(
     try {
       const history = all(
         "SELECT prompt,content,source_ids FROM notebook_entries WHERE notebook_id=? AND kind='chat' ORDER BY created_at DESC,id DESC LIMIT 12",
+        sid,
