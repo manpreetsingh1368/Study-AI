@@ -682,3 +682,4 @@ test("generation replay does not consume quota twice or duplicate a collection",
     `/sets/${sid}/generate`,
     a.token,
     operation,
+  );
