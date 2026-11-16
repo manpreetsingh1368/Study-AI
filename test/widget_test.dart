@@ -154,6 +154,7 @@ void main() {
         expect(find.text('Your learning collections'), findsOneWidget);
         expect(tester.takeException(), isNull);
         GoRouter.of(tester.element(find.byType(Scaffold).first))
+            .go('/quiz/sample?collection=quiz-one');
 }
 
 class WidgetMemoryStore extends LocalStore {
