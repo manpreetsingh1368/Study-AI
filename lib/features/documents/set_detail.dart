@@ -386,6 +386,7 @@ class _SetDetailState extends State<SetDetail> {
           throw ApiException(400, 'Add a title and note text.');
         }
         await c.saveNotebookNote(
+          widget.set['id'],
                         ),
                       ),
                     ),
