@@ -497,4 +497,5 @@ class _SetDetailState extends State<SetDetail> {
                 composerFocus.requestFocus();
               },
               style: OutlinedButton.styleFrom(
+                padding: const EdgeInsets.all(16),
 }
