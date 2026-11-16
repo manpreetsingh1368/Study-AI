@@ -88,6 +88,7 @@ class LocalStore {
     await db.delete('uploads', where: 'id=?', whereArgs: [id]);
   }
 
+  Future<void> queueNotebookRecord(
   }
 
   Future<void> queueMutation(
