@@ -328,6 +328,7 @@ class _SetDetailState extends State<SetDetail> {
         text,
         entryId: entry['id'],
       );
+      if (mounted) {
                         ),
                       ),
                     ),
