@@ -608,3 +608,4 @@ test("immutable collections, historical review, learning deltas and timed exam e
 });
 test("one-time recovery revokes sessions, consumes codes and supports expiration", async (t) => {
   const { call, register, advance } = await setup(t);
+  const a = await register();
