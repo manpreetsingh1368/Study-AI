@@ -468,4 +468,5 @@ class _SetDetailState extends State<SetDetail> {
             size: 29,
           ),
         ),
+        const SizedBox(height: 24),
 }
