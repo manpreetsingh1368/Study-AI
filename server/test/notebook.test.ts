@@ -44,3 +44,4 @@ async function setup(t: any, generate = supported) {
   async function call(method: any, url: string, token?: string, payload?: any) {
     const r = await app.inject({
       method,
+      url,
