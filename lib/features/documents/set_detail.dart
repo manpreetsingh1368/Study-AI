@@ -647,4 +647,5 @@ class _SetDetailState extends State<SetDetail> {
             style: TextStyle(height: 1.8),
           ),
         for (final block in blocks) ...[
+          if ((block['heading'] as String).isNotEmpty) ...[
 }
