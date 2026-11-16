@@ -38,3 +38,4 @@ try {
       if (
         file.endsWith(".pending") &&
         statSync(join(uploads, file)).mtimeMs < now - 86400000
+      )
