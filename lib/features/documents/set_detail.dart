@@ -417,6 +417,7 @@ class _SetDetailState extends State<SetDetail> {
     builder: (context, size) {
       final wide = size.maxWidth >= 960;
       return Column(
+        children: [
                         ),
                       ),
                     ),
