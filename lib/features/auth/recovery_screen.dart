@@ -75,3 +75,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
                   decoration: const InputDecoration(labelText: 'Account email'),
                 ),
                 const SizedBox(height: 12),
+                TextField(
