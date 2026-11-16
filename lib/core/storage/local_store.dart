@@ -197,6 +197,7 @@ class LocalStore {
         'key': 'sets',
         'value': jsonEncode(sets),
       }, conflictAlgorithm: ConflictAlgorithm.replace);
+    });
   Future<void> remove(String id) async {
     await db.delete('outbox', where: 'id=?', whereArgs: [id]);
   }
