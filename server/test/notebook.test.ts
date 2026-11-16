@@ -159,3 +159,4 @@ test("notebook: verified citations, idempotent quota, pinned notes, source owner
   assert.equal(
     (
       await call(
+        "GET",
