@@ -108,3 +108,4 @@ class _RecoveryScreenState extends State<RecoveryScreen> {
   @override
   void dispose() {
     email.dispose();
+    code.dispose();
