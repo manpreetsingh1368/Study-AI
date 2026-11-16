@@ -566,6 +566,7 @@ class _WorkspaceState extends ConsumerState<Workspace> {
         child: SizedBox(
           height: 244,
           child: Padding(
+            padding: const EdgeInsets.all(22),
   Widget library() {
     final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
