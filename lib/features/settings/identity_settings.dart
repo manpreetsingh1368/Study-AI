@@ -101,3 +101,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           ListTile(
             contentPadding: EdgeInsets.zero,
             leading: Icon(
+              provider == 'apple' ? Icons.apple : Icons.account_circle_outlined,
