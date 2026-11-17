@@ -179,3 +179,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         value: n,
                         label: '$n ${n == 1 ? 'day' : 'days'}',
                       ),
+                  ],
