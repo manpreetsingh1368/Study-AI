@@ -184,6 +184,7 @@ class StudyController extends ChangeNotifier {
         mode: LaunchMode.externalApplication,
       )) {
         throw ApiException(503, 'Could not open your browser.');
+      }
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
