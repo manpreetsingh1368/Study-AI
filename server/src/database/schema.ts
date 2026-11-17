@@ -257,3 +257,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
   nonce: text("nonce").notNull(),
   pkceVerifier: text("pkce_verifier").notNull(),
   clientChallenge: text("client_challenge").notNull(),
+  expiresAt: integer("expires_at").notNull(),
