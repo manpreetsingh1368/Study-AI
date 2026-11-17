@@ -5,3 +5,4 @@ import { escape, page, publicBase } from "./pages.js";
 export function registerSharingRoutes(app: FastifyInstance, c: any) {
   const { user, owned, get, all, run, now, fail } = c;
   const digest = (token: string) =>
+    createHash("sha256").update(token).digest("hex");
