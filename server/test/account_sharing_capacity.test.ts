@@ -274,3 +274,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
     404,
   );
   assert.equal((await call("GET", "/sets", a.token)).body.sets.length, 4);
+});
