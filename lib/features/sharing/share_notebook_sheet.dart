@@ -68,3 +68,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          Padding(
