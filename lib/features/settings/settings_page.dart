@@ -110,6 +110,7 @@ class _SettingsPageState extends State<SettingsPage> {
               OutlinedButton(
                 onPressed: busy
                     ? null
+                    : () => perform(() async {
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               OutlinedButton.icon(
