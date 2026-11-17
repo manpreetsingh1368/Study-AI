@@ -540,7 +540,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
           ),
         )
       else
-        ...c.sets.take(4).map(setTile),
     ],
   );
   Widget setTile(Map<String, dynamic> s) => Padding(
