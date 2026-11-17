@@ -230,3 +230,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                               onPressed: () => launchUrl(
                                 Uri.parse(url!),
                                 mode: LaunchMode.externalApplication,
+                              ),
