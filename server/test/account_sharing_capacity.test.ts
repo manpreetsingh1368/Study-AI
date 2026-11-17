@@ -333,3 +333,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
     (db.prepare("SELECT count(*) n FROM documents").get() as any).n,
     2,
   );
+  db.close();
