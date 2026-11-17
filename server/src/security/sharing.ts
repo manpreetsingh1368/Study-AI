@@ -136,3 +136,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       return page(
         reply,
         "Shared notebook",
+        `<h1>${escape(snapshot.title)}</h1><p class="muted">Read-only snapshot · Shared with anyone who has this link · Expires ${escape(new Date(share.expires_at).toISOString().slice(0, 10))}</p>${snapshot.sections.map((section: any) => `<article><h2>${escape(section.title)}</h2><pre>${escape(section.text)}</pre>${(section.citations || []).map((citation: any) => `<blockquote>${escape(citation.quote)}<br><small>${escape(citation.title)}${citation.page ? ` · page ${escape(citation.page)}` : ""}</small></blockquote>`).join("")}</article>`).join("")}<p class="muted">This snapshot does not grant access to the owner’s account, original PDFs, or unselected material.</p>`,
