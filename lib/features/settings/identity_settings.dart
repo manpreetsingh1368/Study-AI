@@ -107,3 +107,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             subtitle: Text(
               identities.any((i) => i['provider'] == provider)
                   ? 'Connected to this account'
+                  : options[provider] == true
