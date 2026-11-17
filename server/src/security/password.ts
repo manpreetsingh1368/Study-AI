@@ -10,3 +10,4 @@ export const smtpConfigured = () =>
 export const sendReset: ResetDelivery = async (email, url) => {
   const transport = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
+    port: Number(process.env.SMTP_PORT || 587),
