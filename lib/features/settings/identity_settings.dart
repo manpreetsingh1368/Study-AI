@@ -61,3 +61,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
               onPressed: () => Navigator.pop(ctx, controller.text),
               child: const Text('Continue'),
             ),
+          ],
