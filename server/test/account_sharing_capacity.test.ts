@@ -58,3 +58,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     resetDelivery: async (email, url) => {
       mail.push({ email, url });
     },
+  });
