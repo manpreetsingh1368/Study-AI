@@ -435,3 +435,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     method: "POST",
     url: "/auth/oauth/apple/callback",
     headers: {
+      cookie: link.cookie,
