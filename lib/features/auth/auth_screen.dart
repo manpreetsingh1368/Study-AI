@@ -165,6 +165,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       child: Row(
                         children: [
                           Expanded(
+                            child: Padding(
     ),
   );
   @override
