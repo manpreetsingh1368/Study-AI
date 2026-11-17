@@ -113,6 +113,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     : () => perform(() async {
                         await widget.controller.request(
                           'POST',
+                          '/me/password',
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               OutlinedButton.icon(
