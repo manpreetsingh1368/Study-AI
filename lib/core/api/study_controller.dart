@@ -650,6 +650,7 @@ class StudyController extends ChangeNotifier {
           contentType: http.MediaType('application', 'pdf'),
         ),
       );
+    }
     final response = await req
         .send()
         .then(http.Response.fromStream)
