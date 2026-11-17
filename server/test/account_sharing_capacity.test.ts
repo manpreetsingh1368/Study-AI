@@ -298,3 +298,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
   const db = new Database(join(directory, "study.sqlite"));
   db.prepare("INSERT INTO documents VALUES(?,?,?,?)").run(
     randomUUID(),
+    first.id,
