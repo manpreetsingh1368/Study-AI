@@ -79,3 +79,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     'Share your understanding',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
+                ),
