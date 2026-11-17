@@ -9,3 +9,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
   process.env.APPLE_CLIENT_ID = "apple-test-client";
   const pair = await generateKeyPair("RS256"),
     other = await generateKeyPair("RS256");
+  async function token(
