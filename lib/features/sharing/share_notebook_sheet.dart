@@ -235,3 +235,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                               label: const Text('Preview'),
                             ),
                           ],
+                        ),
