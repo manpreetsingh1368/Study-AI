@@ -184,6 +184,7 @@ export function createApp(
         ).n >= 50
       )
         fail(403, "This notebook has reached its 50-source capacity.");
+    } else if (
       get(
         "SELECT count(*) n FROM study_sets WHERE user_id=? AND deleted=0 AND parent_notebook_id IS NULL",
         uid,
