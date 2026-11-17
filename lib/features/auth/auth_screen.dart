@@ -136,6 +136,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                   style: TextStyle(fontSize: 12),
                                 ),
                               ),
+                            ],
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
