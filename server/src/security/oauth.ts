@@ -395,3 +395,4 @@ export function registerOAuthRoutes(
           e.message?.startsWith("An account") ||
           e.message?.startsWith("This identity") ||
           e.message?.startsWith("The original")
+            ? e.message
