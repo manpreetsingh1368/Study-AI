@@ -281,3 +281,4 @@ export function registerOAuthRoutes(
           code: z.string().max(4096).optional(),
           error: z.string().max(200).optional(),
         })
+        .parse(req.method === "POST" ? req.body : req.query);
