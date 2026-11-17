@@ -255,3 +255,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   ListTile(
                     contentPadding: EdgeInsets.zero,
                     leading: Icon(
+                      link['revoked_at'] != null ? Icons.link_off : Icons.link,
