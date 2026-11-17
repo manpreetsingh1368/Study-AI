@@ -150,6 +150,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                   ClipboardData(text: result['code']),
                                 ),
                                 const SizedBox(height: 20),
+                                SelectableText(result['code']),
                               ),
                             ],
                           ),
