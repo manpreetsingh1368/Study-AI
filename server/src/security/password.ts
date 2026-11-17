@@ -98,3 +98,4 @@ export function registerPasswordRoutes(
             "RESET_DELIVERY_FAILED",
             now(),
           );
+        });
