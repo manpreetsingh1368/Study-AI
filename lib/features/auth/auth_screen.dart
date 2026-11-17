@@ -133,6 +133,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                               Expanded(
                                 child: Text(
                                   'Finish signing in in your browser.',
+                                  style: TextStyle(fontSize: 12),
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
