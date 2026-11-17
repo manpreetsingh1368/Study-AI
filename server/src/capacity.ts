@@ -9,3 +9,4 @@ export function capacity(s: any, get: any) {
     sourceLimit: 50,
     noteLimit: 50,
     pdfLimitBytes: NOTEBOOK_PDF_BYTES,
+    fileLimitBytes: FILE_PDF_BYTES(),
