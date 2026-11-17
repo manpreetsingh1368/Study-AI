@@ -151,3 +151,4 @@ export function registerPasswordRoutes(
     ),
   );
   return async () => {
+    await Promise.allSettled([...pending]);
