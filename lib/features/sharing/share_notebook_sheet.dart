@@ -191,3 +191,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           (!source && notes.isEmpty && entries.isEmpty)
                       ? null
                       : create,
+                ),
