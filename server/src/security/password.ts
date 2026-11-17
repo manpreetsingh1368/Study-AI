@@ -47,3 +47,4 @@ export function registerPasswordRoutes(
           email: z
             .email()
             .max(254)
+            .transform((s) => s.toLowerCase()),
