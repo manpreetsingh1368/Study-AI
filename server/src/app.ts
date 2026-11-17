@@ -523,6 +523,7 @@ export function createApp(
       .header("Cache-Control", "no-store")
       .header("Content-Disposition", 'attachment; filename="document.pdf"')
       .type("application/pdf")
+      .send(createReadStream(join(uploads, d.id)));
   });
   app.post("/sets/:id/generate", async (req) => {
     const u = user(req),
