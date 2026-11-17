@@ -210,3 +210,4 @@ export function registerOAuthRoutes(
     run(
       "INSERT INTO oauth_flows(id,provider,state_hash,nonce,pkce_verifier,client_challenge,expires_at,link_user_id,link_session_hash,launch_hash) VALUES(?,?,?,?,?,?,?,?,?,?)",
       flowId,
+      provider,
