@@ -31,7 +31,6 @@ class _StudyAIAppState extends ConsumerState<StudyAIApp> {
           return state.uri.path == '/welcome' ? null : '/welcome';
         }
         if (c.user == null) {
-          return ['/login', '/recovery'].contains(state.uri.path)
               ? null
               : '/login';
         }
