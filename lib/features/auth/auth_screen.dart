@@ -149,6 +149,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
             ),
           ),
         );
+        return SingleChildScrollView(
     ),
   );
   @override
