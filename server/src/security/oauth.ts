@@ -76,3 +76,4 @@ export async function validateIdentityToken(
           ? "Student"
           : email.split("@")[0],
   };
+}
