@@ -121,3 +121,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
   );
 });
 test("unconfigured reset delivery is explicit, never a fake sent email", async (t) => {
+  const { call } = await setup(t);
