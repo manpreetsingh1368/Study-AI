@@ -154,7 +154,6 @@ class _SettingsPageState extends State<SettingsPage> {
                               ),
                             ],
                           ),
-                          actions: [
                             FilledButton(
                               onPressed: () => Navigator.pop(ctx),
                               child: const Text('I saved it'),
