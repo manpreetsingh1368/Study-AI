@@ -52,3 +52,4 @@ async function setup(
     advance: (time: number) => (clock += time),
   };
 }
+test("forgot password: non-enumerating response, real delivery adapter, one-use expiry and revocation", async (t) => {
