@@ -46,3 +46,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
       leading: IconButton(
+        onPressed: () => context.go('/login'),
