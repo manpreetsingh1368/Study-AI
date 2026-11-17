@@ -108,3 +108,4 @@ export function registerPasswordRoutes(
     "/auth/reset-password",
     { config: { rateLimit: { max: 8, timeWindow: 60000 } } },
     async (req) => {
+      const b = z
