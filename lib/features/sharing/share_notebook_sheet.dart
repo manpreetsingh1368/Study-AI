@@ -76,3 +76,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
+                    'Share your understanding',
