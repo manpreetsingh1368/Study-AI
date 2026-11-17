@@ -24,3 +24,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     setState(() => busy = true);
     try {
       final result = await widget.controller.request(
+        'POST',
