@@ -211,3 +211,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           spacing: 12,
                           children: [
                             TextButton.icon(
+                              onPressed: () async {
