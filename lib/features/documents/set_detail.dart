@@ -499,6 +499,7 @@ class _SetDetailState extends State<SetDetail> {
                               useSafeArea: true,
                               showDragHandle: true,
                               builder: (_) => SizedBox(
+                                height: MediaQuery.sizeOf(context).height * .88,
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
