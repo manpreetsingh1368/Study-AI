@@ -151,6 +151,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
+                                const SizedBox(height: 12),
                               ),
                             ],
                           ),
