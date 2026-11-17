@@ -630,7 +630,6 @@ class StudyController extends ChangeNotifier {
       'x-document-id': upload['id'] as String,
       'x-set-version': '${upload['version']}',
     });
-      http.MultipartFile.fromBytes(
         'file',
         upload['bytes'] as Uint8List,
         filename: upload['name'] as String,
