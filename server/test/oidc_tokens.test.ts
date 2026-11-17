@@ -13,3 +13,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
     claims: Record<string, unknown> = {},
     provider: "google" | "apple" = "google",
   ) {
+    return new SignJWT({
