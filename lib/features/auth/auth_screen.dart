@@ -76,6 +76,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     children: [
                       SizedBox(
                         width: desktop ? 188 : 188,
+                        child: OutlinedButton.icon(
                   if (register) ...[
                     TextFormField(
                       controller: name,
