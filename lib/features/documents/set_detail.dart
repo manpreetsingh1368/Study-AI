@@ -1201,6 +1201,7 @@ class _SetDetailState extends State<SetDetail> {
           ),
         ],
       ),
+    );
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
