@@ -50,3 +50,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       );
       if (!entry) fail(404, "A selected response is unavailable.");
       const content = JSON.parse(entry.content);
+      sections.push({
