@@ -426,3 +426,4 @@ export function registerOAuthRoutes(
           now(),
         );
         const proof = digest(b.verifier);
+        if (
