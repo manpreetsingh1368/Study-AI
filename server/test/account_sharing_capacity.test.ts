@@ -51,3 +51,4 @@ async function setup(
     directory,
     advance: (time: number) => (clock += time),
   };
+}
