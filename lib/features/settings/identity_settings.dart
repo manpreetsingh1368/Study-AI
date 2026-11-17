@@ -22,3 +22,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
   }
 
   Future<void> load() async {
+    try {
