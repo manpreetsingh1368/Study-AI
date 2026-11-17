@@ -189,3 +189,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     404,
   );
   await call(
+    "DELETE",
