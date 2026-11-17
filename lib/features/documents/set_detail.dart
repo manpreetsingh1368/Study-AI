@@ -501,6 +501,7 @@ class _SetDetailState extends State<SetDetail> {
                               builder: (_) => SizedBox(
                                 height: MediaQuery.sizeOf(context).height * .88,
                                 child: ShareNotebookSheet(
+                                  controller: c,
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
