@@ -118,3 +118,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
                         ? null
                         : () => connect(provider),
                     child: const Text('Connect'),
+                  ),
