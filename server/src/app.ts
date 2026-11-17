@@ -473,6 +473,7 @@ export function createApp(
             if (signature.length < 5)
               signature = Buffer.concat([
                 signature,
+                chunk.subarray(0, 5 - signature.length),
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
