@@ -102,3 +102,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
   });
   app.delete("/notebooks/:id/shares/:shareId", async (req) => {
     const u = user(req),
+      { id, shareId } = req.params as any;
