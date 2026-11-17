@@ -10,3 +10,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
   const pair = await generateKeyPair("RS256"),
     other = await generateKeyPair("RS256");
   async function token(
+    claims: Record<string, unknown> = {},
