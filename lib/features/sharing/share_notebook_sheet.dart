@@ -285,3 +285,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                   } else if (context.mounted) {
                                     ScaffoldMessenger.of(context).showSnackBar(
                                       const SnackBar(
+                                        content: Text(
