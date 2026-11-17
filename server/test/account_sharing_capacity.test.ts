@@ -426,3 +426,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   );
   const local = (
     await call("POST", "/auth/login", undefined, {
+      email: "owner@example.com",
