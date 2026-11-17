@@ -150,6 +150,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
           ),
         );
         return SingleChildScrollView(
+          padding: EdgeInsets.all(desktop ? 48 : 20),
     ),
   );
   @override
