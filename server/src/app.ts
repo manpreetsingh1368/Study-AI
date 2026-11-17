@@ -481,6 +481,7 @@ export function createApp(
         createWriteStream(temporary, { mode: 0o600, flags: "wx" }),
       );
       if (part!.file.truncated)
+        fail(413, "PDF exceeds the per-file upload limit.");
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
