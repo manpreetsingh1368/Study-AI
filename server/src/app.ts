@@ -477,6 +477,7 @@ export function createApp(
               ]);
             callback(null, chunk);
           },
+        }),
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
