@@ -291,7 +291,6 @@ export function createApp(
   });
   app.post("/me/recovery", async (req) => {
     const u = user(req),
-      b = z.object({ password: z.string().max(128) }).parse(req.body);
     if (!(await verify(u.password_hash, b.password)))
       fail(401, "Password is incorrect.");
     if (
