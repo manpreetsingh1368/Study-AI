@@ -113,6 +113,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   if (c.socialSignInActive)
                     Container(
                       padding: const EdgeInsets.all(16),
+                      margin: const EdgeInsets.only(bottom: 16),
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
