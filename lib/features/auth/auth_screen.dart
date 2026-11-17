@@ -97,6 +97,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                               ? () => social('apple')
                               : null,
                           icon: const Icon(Icons.apple, size: 21),
+                          label: const Text('Apple'),
                   if (register) ...[
                     TextFormField(
                       controller: name,
