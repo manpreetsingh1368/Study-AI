@@ -99,3 +99,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
