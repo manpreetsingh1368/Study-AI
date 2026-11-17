@@ -105,6 +105,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         v!.length < 12 ? 'Use at least 12 characters' : null,
                     onFieldSubmitted: (_) => busy ? null : submit(),
                   ),
+                  if (!register)
                   if (error != null) ...[
                     ErrorState(message: error!),
                     const SizedBox(height: 16),
