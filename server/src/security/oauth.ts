@@ -140,3 +140,4 @@ export const productionOAuth: OAuthAdapter = {
           : process.env.APPLE_CLIENT_ID!,
       client_secret: secret,
       code,
+      grant_type: "authorization_code",
