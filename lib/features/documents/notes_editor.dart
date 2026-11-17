@@ -109,7 +109,6 @@ class _NotesEditorState extends State<NotesEditor> {
                 if (busy || details.files.length != 1) return;
                 final file = details.files.single;
                 if (!file.name.toLowerCase().endsWith('.pdf') ||
-                    await file.length() > 10485760) {
                   if (mounted) {
                     setState(() => error = 'Drop one PDF smaller than 100 MB.');
                   }
