@@ -1,6 +1,7 @@
 import Fastify from "fastify";
 import formbody from "@fastify/formbody";
 import { createWriteStream, createReadStream } from "node:fs";
+import { pipeline } from "node:stream/promises";
 import { registerNotebookRoutes, notebookState } from "./notebook/routes.js";
 import type { NotebookInput, NotebookOutput } from "./notebook/grounding.js";
 import rateLimit from "@fastify/rate-limit";
