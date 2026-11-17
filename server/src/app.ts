@@ -499,6 +499,7 @@ export function createApp(
         );
         change(s.id, u.id);
         if (current.parent_notebook_id)
+          change(current.parent_notebook_id, u.id);
         renameSync(temporary, join(uploads, did));
         promoted = true;
       })();
