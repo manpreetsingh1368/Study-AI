@@ -74,3 +74,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   Text(
                     sent && delivery
                         ? 'Check your inbox.'
+                        : 'Let’s get you back in.',
