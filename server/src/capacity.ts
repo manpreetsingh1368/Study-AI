@@ -17,3 +17,4 @@ export function capacity(s: any, get: any) {
     pdfBytes: get(
       "SELECT coalesce(sum(d.bytes),0) n FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE (s.id=? OR s.parent_notebook_id=?) AND s.deleted=0",
       root,
+      root,
