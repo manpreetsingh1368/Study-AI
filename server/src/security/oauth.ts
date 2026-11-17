@@ -116,3 +116,4 @@ export const productionOAuth: OAuthAdapter = {
     return `${provider === "google" ? "https://accounts.google.com/o/oauth2/v2/auth" : "https://appleid.apple.com/auth/authorize"}?${parameters}`;
   },
   async exchange(provider, code, flow) {
+    let secret = process.env.GOOGLE_CLIENT_SECRET!;
