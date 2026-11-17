@@ -93,3 +93,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     validator: (v) => v == null || !v.contains('@')
                         ? 'Enter a valid email'
                         : null,
+                    onFieldSubmitted: (_) => busy ? null : submit(),
