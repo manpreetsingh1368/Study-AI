@@ -113,3 +113,4 @@ export function registerPasswordRoutes(
           token: z.string().min(30).max(100),
           password: z.string().min(12).max(128),
         })
+        .parse(req.body);
