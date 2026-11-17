@@ -191,6 +191,7 @@ export function createApp(
       folder,
     );
     change(sid, uid);
+    if (parentNotebookId) {
     return sid;
   }
   const session = (u: any) => {
