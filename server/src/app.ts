@@ -201,6 +201,7 @@ export function createApp(
           parentNotebookId,
         );
       let ids: string[] = saved
+        ? JSON.parse(saved.source_ids)
     return sid;
   }
   const session = (u: any) => {
