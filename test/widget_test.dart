@@ -16,6 +16,7 @@ void main() {
       final controller = StudyController(WidgetMemoryStore())..loading = false;
       await tester.pumpWidget(
         ProviderScope(
+          overrides: [studyProvider.overrideWithValue(controller)],
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
