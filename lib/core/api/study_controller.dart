@@ -209,6 +209,7 @@ class StudyController extends ChangeNotifier {
       if (!completed && flow != null) {
         try {
           await request('POST', '/auth/oauth/cancel', {
+            'flowId': flow,
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
