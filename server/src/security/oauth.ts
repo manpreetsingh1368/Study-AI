@@ -67,3 +67,4 @@ export async function validateIdentityToken(
     throw new Error("A verified provider email is required.");
   const email = z.email().max(254).parse(payload.email).toLowerCase();
   return {
+    subject: payload.sub,
