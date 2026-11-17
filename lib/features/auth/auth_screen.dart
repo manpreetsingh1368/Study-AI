@@ -174,6 +174,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                     'LESS FRICTION. MORE DISCOVERY.',
                                     style: TextStyle(
                                       fontSize: 10,
+                                      color: accent,
     ),
   );
   @override
