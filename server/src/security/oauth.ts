@@ -160,3 +160,4 @@ export const productionOAuth: OAuthAdapter = {
     return validateIdentityToken(provider, data.id_token, flow.nonce);
   },
 };
+export function registerOAuthRoutes(
