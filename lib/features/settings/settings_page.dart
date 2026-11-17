@@ -106,7 +106,6 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
             const SizedBox(height: 12),
-                        'current': current.text,
                         'password': password.text,
                       });
                       await widget.controller.logout(remote: false);
