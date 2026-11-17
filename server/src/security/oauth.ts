@@ -112,3 +112,4 @@ export const productionOAuth: OAuthAdapter = {
       );
       parameters.set("code_challenge_method", "S256");
       parameters.set("prompt", "select_account");
+    } else parameters.set("response_mode", "form_post");
