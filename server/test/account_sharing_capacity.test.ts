@@ -47,3 +47,4 @@ async function setup(
   return {
     app,
     call,
+    register,
