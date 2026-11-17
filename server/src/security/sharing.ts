@@ -101,3 +101,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     return { id, url: `${publicBase()}/s/${token}`, expiresAt };
   });
   app.delete("/notebooks/:id/shares/:shareId", async (req) => {
+    const u = user(req),
