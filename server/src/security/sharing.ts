@@ -88,3 +88,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       id = randomUUID(),
       expiresAt = now() + b.expiresInDays * 86400000;
     run(
+      "INSERT INTO notebook_shares VALUES(?,?,?,?,?,?,?,NULL)",
