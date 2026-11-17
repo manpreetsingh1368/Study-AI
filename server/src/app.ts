@@ -966,6 +966,7 @@ export function createApp(
   const settleResetDelivery = registerPasswordRoutes(
     app,
     { db, get, run, now, fail },
+    options.resetDelivery,
   registerNotebookRoutes(
     app,
     { db, user, owned, get, all, run, plan, change, now, fail, uploads },
