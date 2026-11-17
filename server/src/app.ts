@@ -975,6 +975,7 @@ export function createApp(
     full,
     plan,
     newSet,
+    softDelete,
     change,
     now,
     fail,
