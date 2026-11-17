@@ -1168,6 +1168,7 @@ class _SetDetailState extends State<SetDetail> {
   Widget storageMeter() {
     final value = widget.set['capacity'] as Map? ?? {};
     final used = (value['pdfBytes'] as num? ?? 0).toDouble(),
+        limit = (value['pdfLimitBytes'] as num? ?? 2147483648).toDouble();
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
