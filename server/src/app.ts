@@ -467,6 +467,7 @@ export function createApp(
     try {
       await pipeline(
         part!.file,
+        new Transform({
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
