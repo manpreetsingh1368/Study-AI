@@ -154,7 +154,6 @@ class _SettingsPageState extends State<SettingsPage> {
                               ),
                             ],
                           ),
-              label: const Text('Create a one-time recovery code'),
             ),
             const SizedBox(height: 12),
             OutlinedButton(
