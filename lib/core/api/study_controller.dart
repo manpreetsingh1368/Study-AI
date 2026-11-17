@@ -657,6 +657,7 @@ class StudyController extends ChangeNotifier {
   ) async {
     final set = sets.firstWhere((s) => s['id'] == setId),
         id = const Uuid().v4();
+    await store.queueUploadStream(
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
