@@ -462,7 +462,6 @@ export function createApp(
     if (get("SELECT id FROM documents WHERE id=?", did))
       fail(409, "Document identifier already used.");
     const temporary = join(uploads, `${id()}.pending`);
-    writeFileSync(temporary, bytes, { mode: 0o600 });
     let promoted = false;
     try {
       await pipeline(
