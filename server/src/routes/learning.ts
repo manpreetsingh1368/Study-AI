@@ -78,6 +78,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
           fail(400, "Title and notes are required.");
         newSet(
           u.id,
+          b.title,
       } else {
         const s = owned(u.id, b.setId);
         if (s.version !== b.baseVersion)
