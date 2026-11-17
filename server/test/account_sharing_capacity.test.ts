@@ -48,3 +48,4 @@ async function setup(
     app,
     call,
     register,
+    directory,
