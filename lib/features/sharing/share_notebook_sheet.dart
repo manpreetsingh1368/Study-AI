@@ -58,3 +58,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
       if (mounted) setState(() => error = e.toString());
     } finally {
       if (mounted) setState(() => busy = false);
+    }
