@@ -40,3 +40,4 @@ export function registerPasswordRoutes(
   const digest = (s: string) => createHash("sha256").update(s).digest("hex");
   app.post(
     "/auth/forgot-password",
+    { config: { rateLimit: { max: 5, timeWindow: 60000 } } },
