@@ -127,3 +127,4 @@ export function registerPasswordRoutes(
             "This reset link is invalid or expired. Request a new one.",
           );
         run(
+          "UPDATE users SET password_hash=?,password_enabled=1 WHERE id=?",
