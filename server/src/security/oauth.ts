@@ -103,3 +103,4 @@ export const productionOAuth: OAuthAdapter = {
       response_type: "code",
       scope: provider === "google" ? "openid email profile" : "name email",
       state: flow.state,
+      nonce: flow.nonce,
