@@ -209,6 +209,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                       'Answers connected to your sources',
                                     ),
                                     (
+                                      Icons.cloud_done_outlined,
     ),
   );
   @override
