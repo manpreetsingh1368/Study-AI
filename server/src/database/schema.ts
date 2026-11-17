@@ -249,3 +249,4 @@ export const oauthIdentities = sqliteTable(
     createdAt: integer("created_at").notNull(),
   },
   (table) => [primaryKey({ columns: [table.provider, table.subject] })],
+);
