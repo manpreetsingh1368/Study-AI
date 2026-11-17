@@ -220,6 +220,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                       child: Row(
                                         children: [
                                           Icon(
+                                            item.$1,
     ),
   );
   @override
