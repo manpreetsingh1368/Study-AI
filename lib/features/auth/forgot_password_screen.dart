@@ -40,3 +40,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     } finally {
       if (mounted) setState(() => busy = false);
     }
+  }
