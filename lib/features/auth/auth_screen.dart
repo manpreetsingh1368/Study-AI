@@ -122,6 +122,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         child: Text(
                           'or use email',
                           style: TextStyle(fontSize: 11),
+                        ),
                   if (register) ...[
                     TextFormField(
                       controller: name,
