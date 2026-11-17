@@ -6,7 +6,6 @@ export async function validatePdf(path: string): Promise<void> {
     await promisify(execFile)(
       process.execPath,
       [
-        "--max-old-space-size=128",
         fileURLToPath(new URL("./pdf_check.mjs", import.meta.url)),
         path,
         process.env.MAX_PDF_PAGES || "1000",
