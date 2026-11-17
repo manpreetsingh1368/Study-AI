@@ -301,3 +301,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                     : () async {
                                         setState(() => busy = true);
                                         try {
+                                          await c.request(
