@@ -119,6 +119,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         await widget.controller.logout(remote: false);
                       }),
                 child: const Text('Change password and revoke all sessions'),
+              ),
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               OutlinedButton.icon(
