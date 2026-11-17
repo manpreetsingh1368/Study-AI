@@ -246,3 +246,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
                 const SizedBox(height: 10),
+                if (links.isEmpty)
