@@ -112,3 +112,4 @@ export function registerPasswordRoutes(
         .object({
           token: z.string().min(30).max(100),
           password: z.string().min(12).max(128),
+        })
