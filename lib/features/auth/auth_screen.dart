@@ -156,6 +156,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
               minHeight: (size.maxHeight - (desktop ? 96 : 40)).clamp(
                 0,
                 double.infinity,
+              ),
     ),
   );
   @override
