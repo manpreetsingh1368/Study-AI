@@ -97,3 +97,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   ),
                   const SizedBox(height: 18),
                   if (message != null) ...[
+                    delivery
