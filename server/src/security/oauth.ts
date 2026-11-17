@@ -291,3 +291,4 @@ export function registerOAuthRoutes(
       const cookie = req.headers.cookie
         ?.split(";")
         .map((s: string) => s.trim())
+        .find((s: string) =>
