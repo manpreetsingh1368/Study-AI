@@ -5,3 +5,4 @@ import {
   createHash,
   timingSafeEqual,
 } from "node:crypto";
+import { readFileSync } from "node:fs";
