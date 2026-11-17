@@ -482,6 +482,7 @@ export function createApp(
           ).n -
             (previousDocument?.bytes || 0) +
             byteCount >
+          Number(process.env.MAX_STORAGE_BYTES || 21474836480)
         )
           fail(403, "Storage limit reached.");
         const currentCapacity = capacity(current, get);
