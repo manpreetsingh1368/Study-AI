@@ -660,6 +660,7 @@ class StudyController extends ChangeNotifier {
     await store.queueUploadStream(
       account,
       id,
+      setId,
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
