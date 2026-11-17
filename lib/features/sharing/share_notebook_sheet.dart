@@ -156,3 +156,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           ? 'FAQ'
                           : 'Source overview',
                       maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
