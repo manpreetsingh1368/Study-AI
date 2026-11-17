@@ -67,7 +67,6 @@ The app includes first-run onboarding, saved appearance, folders, desktop PDF dr
 
 Open a library notebook to work in **Sources / Chat / Studio**. Desktop uses three panels; mobile uses focused tabs with less navigation chrome. The library now presents notebook cards with collection/note counts and recent updates.
 
-- Check up to eight saved materials as sources. Add another text source or PDF directly from the source panel, or open a source to read its notes/PDF.
 - Ask a question in Chat; Ctrl/Command+Enter sends it. Answers carry clickable source excerpts. PDF references open at their cited page when the original document is still available. Changed sources are clearly identified as older snapshots.
 - Studio generates source overviews, structured study guides and FAQs. Each request uses **one** unit of the existing Free/Pro AI allowance, just like a quiz generation. No additional paid provider is involved.
 - Save an answer to Studio notes, write a personal note, copy an answer, export reports/notes as Markdown, and reopen older conversations. Notes queue safely offline; saved answers/reports remain available from the local cache.
