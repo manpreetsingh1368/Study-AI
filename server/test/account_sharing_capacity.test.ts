@@ -45,3 +45,4 @@ async function setup(
     ).body;
   }
   return {
+    app,
