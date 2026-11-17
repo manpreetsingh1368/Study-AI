@@ -48,3 +48,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             controller: controller,
             obscureText: true,
             autofocus: true,
+            decoration: const InputDecoration(
