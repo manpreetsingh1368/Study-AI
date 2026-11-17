@@ -293,6 +293,7 @@ export function createApp(
     const u = user(req),
       b = z
         .object({
+          password: z.string().max(128).optional(),
       fail(401, "Password is incorrect.");
     if (
       !u.password_enabled &&
