@@ -254,6 +254,7 @@ class StudyController extends ChangeNotifier {
         'expiresInDays': days,
       }),
     );
+    await secure.write(
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
