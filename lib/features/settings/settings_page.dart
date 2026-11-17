@@ -140,6 +140,7 @@ class _SettingsPageState extends State<SettingsPage> {
                               mainAxisSize: MainAxisSize.min,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
+                                const Text(
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
