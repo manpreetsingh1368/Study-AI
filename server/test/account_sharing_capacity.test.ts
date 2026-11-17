@@ -203,3 +203,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     a.token,
     { includeSourceNotes: true, expiresInDays: 1 },
   );
+  advance(86400001);
