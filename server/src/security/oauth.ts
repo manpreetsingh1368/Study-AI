@@ -131,3 +131,4 @@ export const productionOAuth: OAuthAdapter = {
         .setAudience("https://appleid.apple.com")
         .setIssuedAt()
         .setExpirationTime("5m")
+        .sign(await importPKCS8(pem, "ES256"));
