@@ -99,3 +99,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     );
     reply.code(201);
     return { id, url: `${publicBase()}/s/${token}`, expiresAt };
+  });
