@@ -117,3 +117,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 if (error != null) ...[
                   ErrorState(message: error!),
                   const SizedBox(height: 16),
+                ],
