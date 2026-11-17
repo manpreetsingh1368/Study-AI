@@ -102,3 +102,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                         : ErrorState(message: message!),
                     const SizedBox(height: 18),
                   ],
+                  PrimaryActionButton(
