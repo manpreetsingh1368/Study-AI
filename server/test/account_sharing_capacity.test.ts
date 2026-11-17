@@ -484,3 +484,4 @@ test("saved notes stop at 50, retry idempotently and release capacity after dele
     (await call("DELETE", `/notebooks/${set.id}/notes/${ids[0]}`, a.token))
       .status,
     200,
+  );
