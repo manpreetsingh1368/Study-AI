@@ -22,7 +22,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
     try {
-          .authenticate(
             register: register,
             email: email.text.trim(),
             password: password.text,
