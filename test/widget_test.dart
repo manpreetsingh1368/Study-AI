@@ -15,6 +15,7 @@ void main() {
       addTearDown(tester.view.resetDevicePixelRatio);
       final controller = StudyController(WidgetMemoryStore())..loading = false;
       await tester.pumpWidget(
+        ProviderScope(
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
