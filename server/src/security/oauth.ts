@@ -58,3 +58,4 @@ export async function validateIdentityToken(
     throw new Error("Invalid authorized party.");
   if (
     payload.nonce !== nonce ||
+    typeof payload.sub !== "string" ||
