@@ -27,3 +27,4 @@ const appleKeys = createRemoteJWKSet(
   new URL("https://appleid.apple.com/auth/keys"),
 );
 export async function validateIdentityToken(
+  provider: Provider,
