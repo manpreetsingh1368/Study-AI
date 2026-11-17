@@ -79,3 +79,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
         token,
         password: "replacement-password",
       })
+    ).status,
