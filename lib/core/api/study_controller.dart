@@ -164,6 +164,7 @@ class StudyController extends ChangeNotifier {
         .replaceAll('=', '');
     socialSignInActive = true;
     _socialProof = proof;
+    notifyListeners();
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
