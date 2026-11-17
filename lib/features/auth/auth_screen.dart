@@ -196,6 +196,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                       color: Theme.of(context)
                                           .colorScheme
                                           .onSurfaceVariant,
+                                    ),
     ),
   );
   @override
