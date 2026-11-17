@@ -244,3 +244,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 Text(
                   'Manage existing links',
                   style: Theme.of(context).textTheme.titleMedium,
+                ),
