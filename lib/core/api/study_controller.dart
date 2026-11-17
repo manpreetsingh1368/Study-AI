@@ -653,6 +653,7 @@ class StudyController extends ChangeNotifier {
     String setId,
     String name,
     Stream<List<int>> stream,
+    int length,
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
