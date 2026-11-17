@@ -121,3 +121,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         .min(40)
         .max(100)
         .parse((req.params as any).token);
+      const share = get(
