@@ -73,7 +73,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   if (register) ...[
                     TextFormField(
                       controller: name,
-                      decoration: const InputDecoration(labelText: 'Your name'),
                       validator: (v) =>
                           v!.trim().isEmpty ? 'Enter your name' : null,
                     ),
