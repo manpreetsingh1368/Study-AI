@@ -246,6 +246,7 @@ void main() {
         final shareUrl = await c.secure.read(
           key: 'share:${c.account}:$shareId',
         );
+        // The fixture origin differs from the production public origin.
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
