@@ -114,3 +114,4 @@ export function registerPasswordRoutes(
           password: z.string().min(12).max(128),
         })
         .parse(req.body);
+      const passwordHash = await hash(b.password, { type: argon2id });
