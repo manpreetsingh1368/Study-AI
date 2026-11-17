@@ -189,6 +189,7 @@ class StudyController extends ChangeNotifier {
         await Future<void>.delayed(const Duration(seconds: 2));
         if (_socialProof != proof) return;
         final status = await request('POST', '/auth/oauth/complete', {
+          'flowId': flow,
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
