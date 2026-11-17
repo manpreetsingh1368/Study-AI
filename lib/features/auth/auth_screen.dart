@@ -171,6 +171,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   const Text(
+                                    'LESS FRICTION. MORE DISCOVERY.',
     ),
   );
   @override
