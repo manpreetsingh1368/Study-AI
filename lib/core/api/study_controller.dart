@@ -668,6 +668,7 @@ class StudyController extends ChangeNotifier {
     );
     set['document'] = {
       'id': id,
+      'filename': name,
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
