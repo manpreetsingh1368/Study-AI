@@ -21,3 +21,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
     load();
   }
 
+  Future<void> load() async {
