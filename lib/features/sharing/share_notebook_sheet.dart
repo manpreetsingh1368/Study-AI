@@ -267,3 +267,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       link['revoked_at'] != null
                           ? 'Revoked'
                           : 'Expires ${DateTime.fromMillisecondsSinceEpoch(link['expires_at']).toLocal().toString().split(' ').first}',
+                    ),
