@@ -7,6 +7,7 @@ import { capacity, NOTEBOOK_PDF_BYTES, FILE_PDF_BYTES } from "./capacity.js";
 import {
   registerPasswordRoutes,
   type ResetDelivery,
+} from "./security/password.js";
 import { registerNotebookRoutes, notebookState } from "./notebook/routes.js";
 import type { NotebookInput, NotebookOutput } from "./notebook/grounding.js";
 import rateLimit from "@fastify/rate-limit";
