@@ -183,6 +183,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                   Text(
                                     'A calm space for\nambitious minds.',
                                     style: Theme.of(context)
+                                        .textTheme
     ),
   );
   @override
