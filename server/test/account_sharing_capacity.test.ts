@@ -126,3 +126,4 @@ test("unconfigured reset delivery is explicit, never a fake sent email", async (
     email: "anyone@example.com",
   });
   assert.equal(response.body.deliveryAvailable, false);
+});
