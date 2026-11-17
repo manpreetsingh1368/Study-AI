@@ -104,3 +104,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
               provider == 'apple' ? Icons.apple : Icons.account_circle_outlined,
             ),
             title: Text(provider == 'google' ? 'Google' : 'Apple'),
+            subtitle: Text(
