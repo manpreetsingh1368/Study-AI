@@ -53,6 +53,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                 children: [
                   Row(
                     children: [
+                      Container(
                   ),
                   const SizedBox(height: 26),
                   Text(
