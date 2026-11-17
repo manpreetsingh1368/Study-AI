@@ -8,6 +8,7 @@ import 'package:go_router/go_router.dart';
 
 void main() {
   for (final width in [320.0, 800.0, 1200.0]) {
+    testWidgets('Sign-in and password recovery fit at $width', (tester) async {
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
