@@ -28,6 +28,7 @@ void main() {
       await tester.tap(find.text('Forgot password?'));
       await tester.pumpAndSettle();
       expect(find.text('Account email'), findsOneWidget);
+      expect(tester.takeException(), isNull);
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
