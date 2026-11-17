@@ -614,6 +614,7 @@ export function createApp(
       if (doc) {
         if (doc.bytes <= 15728640) pdf = readFileSync(join(uploads, doc.id));
         else {
+          const { pdfPages } = await import("./notebook/grounding.js");
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
