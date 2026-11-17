@@ -340,3 +340,4 @@ export function registerOAuthRoutes(
             if (
               !get(
                 "SELECT token_hash FROM sessions WHERE token_hash=? AND user_id=? AND expires_at>?",
+                flow.link_session_hash,
