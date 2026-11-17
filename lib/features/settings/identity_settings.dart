@@ -28,3 +28,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       if (mounted) {
         setState(() {
           identities = data['identities'];
+          options = Map<String, dynamic>.from(config);
