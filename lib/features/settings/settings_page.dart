@@ -154,7 +154,6 @@ class _SettingsPageState extends State<SettingsPage> {
                               ),
                             ],
                           ),
-                    }),
               icon: const Icon(Icons.key_outlined),
               label: const Text('Create a one-time recovery code'),
             ),
