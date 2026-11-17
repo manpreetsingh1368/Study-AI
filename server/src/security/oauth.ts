@@ -159,3 +159,4 @@ export const productionOAuth: OAuthAdapter = {
     const data: any = await response.json();
     return validateIdentityToken(provider, data.id_token, flow.nonce);
   },
+};
