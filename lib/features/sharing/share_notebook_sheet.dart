@@ -302,3 +302,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                         setState(() => busy = true);
                                         try {
                                           await c.request(
+                                            'DELETE',
