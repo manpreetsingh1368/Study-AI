@@ -345,3 +345,4 @@ export function registerOAuthRoutes(
                 now(),
               )
             )
+              throw new Error(
