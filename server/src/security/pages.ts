@@ -16,3 +16,4 @@ export function page(reply: any, title: string, body: string, script = "") {
     .header(
       "Content-Security-Policy",
       `default-src 'none'; style-src 'unsafe-inline'; script-src 'nonce-${nonce}'; connect-src 'self'; form-action 'self'; base-uri 'none'; frame-ancestors 'none'`,
+    );
