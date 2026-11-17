@@ -305,3 +305,4 @@ export function registerOAuthRoutes(
         run(
           "UPDATE oauth_flows SET status='failed',error=? WHERE id=?",
           "Sign-in was cancelled. Try again when ready.",
+          flow.id,
