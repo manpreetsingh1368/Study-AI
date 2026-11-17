@@ -172,6 +172,7 @@ class StudyController extends ChangeNotifier {
         'POST',
         link ? '/me/identities/$provider/start' : '/auth/oauth/$provider/start',
         {
+          'challenge': sha256.convert(utf8.encode(proof)).toString(),
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
