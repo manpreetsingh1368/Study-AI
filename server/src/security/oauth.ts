@@ -97,3 +97,4 @@ export const productionOAuth: OAuthAdapter = {
     const parameters = new URLSearchParams({
       client_id:
         provider === "google"
+          ? process.env.GOOGLE_CLIENT_ID!
