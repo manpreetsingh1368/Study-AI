@@ -62,7 +62,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     style: Theme.of(context).textTheme.headlineLarge,
                     textAlign: TextAlign.center,
                   ),
-                  const SizedBox(height: 12),
                   Text(
                     register
                         ? 'Create your Study AI workspace.'
