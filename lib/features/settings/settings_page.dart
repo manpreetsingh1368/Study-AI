@@ -5,6 +5,7 @@ import '../../core/api/study_controller.dart';
 import '../../shared/components.dart';
 import 'identity_settings.dart';
 
+import 'package:go_router/go_router.dart';
 
 class SettingsPage extends StatefulWidget {
   final StudyController controller;
