@@ -98,6 +98,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           ? AutofillHints.newPassword
                           : AutofillHints.password,
                     ],
+                    decoration: InputDecoration(
                       labelText: 'Password · 12+ characters',
                       prefixIcon: const Icon(Icons.lock_outline),
                       suffixIcon: IconButton(
