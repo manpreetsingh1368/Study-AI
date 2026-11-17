@@ -50,3 +50,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         icon: const Icon(Icons.arrow_back),
       ),
       title: const Text('Forgot password'),
+    ),
