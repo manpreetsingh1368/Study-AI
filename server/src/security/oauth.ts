@@ -292,3 +292,4 @@ export function registerOAuthRoutes(
         ?.split(";")
         .map((s: string) => s.trim())
         .find((s: string) =>
+          s.startsWith(`study_oauth_${flow?.id?.replaceAll("-", "")}=`),
