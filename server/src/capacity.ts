@@ -13,3 +13,4 @@ export function capacity(s: any, get: any) {
     sources: get(
       "SELECT count(*) n FROM study_sets WHERE parent_notebook_id=? AND deleted=0",
       root,
+    ).n,
