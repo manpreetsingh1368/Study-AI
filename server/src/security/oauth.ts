@@ -188,3 +188,4 @@ export function registerOAuthRoutes(
       sessionHash: string | null = null;
     if (link) {
       owner = user(req);
+      sessionHash = digest(req.headers.authorization.slice(7));
