@@ -25,6 +25,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 - `flutter test`: 8 passed, including onboarding/preferences, registration validation, 390/1200px responsive learning flows and real SQLite offline mutation/replay/conflict/merge/deletion/account-isolation tests.
 - Backend TypeScript checking: passed.
 - Backend tests: 25 passed, covering authentication, revocation/expiry/deletion, isolation/admin permissions, concurrent quota enforcement, entitlements, scoring/review scheduling, PDF validation/privacy, immutable collections, learning deltas, deadlines, recovery codes, generation replay signed OIDC tokens/flows, reset replay, link privacy/revocation, 50-note/source capacity, 2 GiB aggregate storage and upgrade from v1.
+- Native Linux acceptance test: passed using real Fastify HTTP/SQLite and native PDF rendering. Registered a temporary account, saved notes/streamed a real PDF to a durable private cache, generated test-only quiz/cards, completed learning flows, downloaded records from a second client, and created and revoked a public link through the native sharing flow, read it without authentication, and verified cached PDF/offline editing after stopping the fixture server. Credentials were mocked only within the test; the user's keyring was not changed. No Gemini call was made by the fixture.
 - Final Linux release build and Android debug APK build: passed.
 - `npm audit --omit=dev`: zero reported vulnerabilities.
 - iOS/macOS were not built/tested on Ubuntu. Android runtime/device acceptance was not performed.
