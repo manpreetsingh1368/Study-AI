@@ -124,3 +124,4 @@ test("unconfigured reset delivery is explicit, never a fake sent email", async (
   const { call } = await setup(t);
   const response = await call("POST", "/auth/forgot-password", undefined, {
     email: "anyone@example.com",
+  });
