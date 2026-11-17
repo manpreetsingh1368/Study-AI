@@ -52,3 +52,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       const content = JSON.parse(entry.content);
       sections.push({
         title:
+          entry.kind === "chat"
