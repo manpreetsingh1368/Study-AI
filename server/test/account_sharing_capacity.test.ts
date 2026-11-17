@@ -69,3 +69,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
   assert.deepEqual(known, unknown);
   await new Promise((resolve) => setTimeout(resolve, 15));
   assert.equal(mail.length, 1);
+  const token = new URLSearchParams(new URL(mail[0].url).hash.slice(1)).get(
