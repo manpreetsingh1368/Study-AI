@@ -68,3 +68,4 @@ export async function validateIdentityToken(
   const email = z.email().max(254).parse(payload.email).toLowerCase();
   return {
     subject: payload.sub,
+    email,
