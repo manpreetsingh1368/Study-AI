@@ -83,6 +83,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
           b.setId,
           b.folder,
           b.parentNotebookId || null,
+        );
       } else {
         const s = owned(u.id, b.setId);
         if (s.version !== b.baseVersion)
