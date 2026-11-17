@@ -306,3 +306,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                             '/notebooks/${widget.notebook['id']}/shares/${link['id']}',
                                           );
                                           if (url != null) {
+                                            setState(() => url = null);
