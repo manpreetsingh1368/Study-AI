@@ -51,3 +51,4 @@ export function registerPasswordRoutes(
         })
         .parse(req.body);
       const available = !!delivery || smtpConfigured();
+      const response = {
