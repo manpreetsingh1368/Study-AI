@@ -346,3 +346,4 @@ export function registerOAuthRoutes(
               )
             )
               throw new Error(
+                "The original session expired. Start linking again.",
