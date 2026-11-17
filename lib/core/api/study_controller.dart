@@ -235,6 +235,7 @@ class StudyController extends ChangeNotifier {
           'flowId': id,
           'verifier': proof,
         });
+      } catch (_) {}
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
