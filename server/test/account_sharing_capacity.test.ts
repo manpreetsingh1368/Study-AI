@@ -275,3 +275,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
   );
   assert.equal((await call("GET", "/sets", a.token)).body.sets.length, 4);
 });
+test("2 GiB aggregate PDF budget is enforced atomically without allocating gigabytes", async (t) => {
