@@ -317,3 +317,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
     app.inject({
       method: "POST",
       url: `/sets/${second.id}/pdf`,
+      headers: {
