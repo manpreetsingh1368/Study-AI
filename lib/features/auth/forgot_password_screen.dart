@@ -121,3 +121,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     child: const Text('Back to sign in'),
                   ),
                 ],
+              ),
