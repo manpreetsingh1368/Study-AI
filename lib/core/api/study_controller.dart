@@ -655,6 +655,7 @@ class StudyController extends ChangeNotifier {
     Stream<List<int>> stream,
     int length,
   ) async {
+    final set = sets.firstWhere((s) => s['id'] == setId),
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
