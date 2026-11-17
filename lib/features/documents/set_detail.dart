@@ -164,6 +164,7 @@ class _SetDetailState extends State<SetDetail> {
           file.name.replaceFirst(RegExp(r'\.pdf$', caseSensitive: false), ''),
           '',
           folder: widget.set['folder'] ?? '',
+          parentNotebookId:
         );
         await c.uploadStream(
           source['id'],
