@@ -119,3 +119,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   TextButton(
                     onPressed: () => context.go('/login'),
                     child: const Text('Back to sign in'),
+                  ),
