@@ -59,3 +59,4 @@ export async function validateIdentityToken(
   if (
     payload.nonce !== nonce ||
     typeof payload.sub !== "string" ||
+    !payload.sub ||
