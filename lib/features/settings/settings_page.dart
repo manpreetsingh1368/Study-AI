@@ -92,7 +92,6 @@ class _SettingsPageState extends State<SettingsPage> {
               style: TextStyle(fontSize: 12),
             ),
             const SizedBox(height: 24),
-              obscureText: true,
               decoration: const InputDecoration(labelText: 'Current password'),
             ),
             const SizedBox(height: 12),
