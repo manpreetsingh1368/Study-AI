@@ -300,3 +300,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
     randomUUID(),
     first.id,
     "accounting-fixture.pdf",
+    2147483648 - 10,
