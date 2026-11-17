@@ -29,3 +29,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
         provider === "google" ? "google-test-client" : "apple-test-client",
       )
       .setSubject("stable-provider-subject")
+      .setIssuedAt()
