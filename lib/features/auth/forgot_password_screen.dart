@@ -5,3 +5,4 @@ import '../../core/api/study_controller.dart';
 import '../../shared/components.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
+  final StudyController controller;
