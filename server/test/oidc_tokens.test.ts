@@ -18,3 +18,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       email: "student@example.com",
       email_verified: true,
       ...claims,
+    })
