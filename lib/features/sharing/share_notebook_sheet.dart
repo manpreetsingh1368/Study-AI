@@ -23,3 +23,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
   int days = 7;
   String? error, url;
   List<dynamic> links = [];
+  StudyController get c => widget.controller;
