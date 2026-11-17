@@ -188,3 +188,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   onPressed:
                       busy ||
                           c.offline ||
+                          (!source && notes.isEmpty && entries.isEmpty)
