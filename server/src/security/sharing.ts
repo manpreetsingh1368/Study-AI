@@ -47,3 +47,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         "SELECT * FROM notebook_entries WHERE id=? AND notebook_id=?",
         id,
         sid,
+      );
