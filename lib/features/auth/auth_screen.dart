@@ -69,6 +69,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         : 'Welcome back to Study AI.',
                     textAlign: TextAlign.center,
                   ),
+                  const SizedBox(height: 24),
                   if (register) ...[
                     TextFormField(
                       controller: name,
