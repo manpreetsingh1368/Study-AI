@@ -322,3 +322,4 @@ export function registerOAuthRoutes(
           randomBytes(48).toString("base64url"),
           { type: argon2id },
         );
+        db.transaction(() => {
