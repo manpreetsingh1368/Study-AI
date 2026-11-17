@@ -95,3 +95,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       s.title,
       snapshot,
       now(),
+      expiresAt,
