@@ -416,3 +416,4 @@ export function registerOAuthRoutes(
     "/auth/oauth/complete",
     { config: { rateLimit: { max: 90, timeWindow: 60000 } } },
     async (req) => {
+      const b = z
