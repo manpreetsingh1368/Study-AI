@@ -11,3 +11,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       sid = (req.params as any).id;
     owned(u.id, sid);
     return {
+      shares: all(
