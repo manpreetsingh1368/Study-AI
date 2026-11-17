@@ -50,3 +50,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
         includeSourceNotes: source,
         entryIds: entries.toList(),
         noteIds: notes.toList(),
+        days: days,
