@@ -100,3 +100,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         for (final provider in ['google', 'apple'])
           ListTile(
             contentPadding: EdgeInsets.zero,
+            leading: Icon(
