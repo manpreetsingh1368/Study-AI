@@ -87,3 +87,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     const token = randomBytes(32).toString("base64url"),
       id = randomUUID(),
       expiresAt = now() + b.expiresInDays * 86400000;
+    run(
