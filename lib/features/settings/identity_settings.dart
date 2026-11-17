@@ -52,3 +52,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
               labelText: 'Current Study AI password',
             ),
           ),
+          actions: [
