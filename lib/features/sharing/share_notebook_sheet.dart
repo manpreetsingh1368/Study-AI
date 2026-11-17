@@ -126,3 +126,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       widget.notebook['notes'],
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
+                    ),
