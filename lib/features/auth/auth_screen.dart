@@ -77,6 +77,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       decoration: const InputDecoration(
                         labelText: 'Your name',
                         prefixIcon: Icon(Icons.person_outline),
+                      ),
                       validator: (v) =>
                           v!.trim().isEmpty ? 'Enter your name' : null,
                     ),
