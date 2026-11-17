@@ -159,6 +159,7 @@ class StudyController extends ChangeNotifier {
     String? password,
   }) async {
     if (socialSignInActive) return;
+    final proof = base64Url
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
