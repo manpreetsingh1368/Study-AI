@@ -630,7 +630,6 @@ class StudyController extends ChangeNotifier {
       'x-document-id': upload['id'] as String,
       'x-set-version': '${upload['version']}',
     });
-        upload['bytes'] as Uint8List,
         filename: upload['name'] as String,
         contentType: http.MediaType('application', 'pdf'),
       ),
