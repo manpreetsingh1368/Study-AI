@@ -197,3 +197,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   StudyCard(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
