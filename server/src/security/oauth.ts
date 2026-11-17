@@ -334,3 +334,4 @@ export function registerOAuthRoutes(
           const existing = get(
             "SELECT user_id FROM oauth_identities WHERE provider=? AND subject=?",
             provider,
+            identity.subject,
