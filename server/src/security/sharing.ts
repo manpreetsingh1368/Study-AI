@@ -119,3 +119,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       const token = z
         .string()
         .min(40)
+        .max(100)
