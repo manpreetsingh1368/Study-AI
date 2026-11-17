@@ -52,3 +52,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
         noteIds: notes.toList(),
         days: days,
       );
+      if (mounted) setState(() => url = link['url']);
