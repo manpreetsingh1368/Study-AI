@@ -277,3 +277,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                 onPressed: () async {
                                   final saved = await c.secure.read(
                                     key: 'share:${c.account}:${link['id']}',
+                                  );
