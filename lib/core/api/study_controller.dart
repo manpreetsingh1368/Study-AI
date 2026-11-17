@@ -248,6 +248,7 @@ class StudyController extends ChangeNotifier {
   }) async {
     final result = Map<String, dynamic>.from(
       await request('POST', '/notebooks/$notebookId/shares', {
+        'includeSourceNotes': includeSourceNotes,
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
