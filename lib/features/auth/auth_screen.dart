@@ -111,6 +111,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       child: TextButton(
                         onPressed: busy
                             ? null
+                            : () => context.go('/forgot-password'),
                   if (error != null) ...[
                     ErrorState(message: error!),
                     const SizedBox(height: 16),
