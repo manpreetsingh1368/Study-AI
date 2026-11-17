@@ -503,6 +503,7 @@ class _SetDetailState extends State<SetDetail> {
                                 child: ShareNotebookSheet(
                                   controller: c,
                                   notebook: widget.set,
+                                ),
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
