@@ -1185,6 +1185,7 @@ class _SetDetailState extends State<SetDetail> {
         children: [
           const Text(
             'Room for your next idea',
+            style: TextStyle(fontSize: 11, fontWeight: FontWeight.w600),
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
