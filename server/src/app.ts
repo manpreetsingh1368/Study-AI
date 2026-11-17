@@ -335,6 +335,7 @@ export function createApp(
           recovery.user_id,
         );
         run("DELETE FROM recovery_codes WHERE user_id=?", recovery.user_id);
+        run("DELETE FROM password_resets WHERE user_id=?", recovery.user_id);
         run("DELETE FROM sessions WHERE user_id=?", recovery.user_id);
       })();
       return { ok: true };
