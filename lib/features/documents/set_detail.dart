@@ -1175,6 +1175,7 @@ class _SetDetailState extends State<SetDetail> {
         ? '${(used / 1048576).toStringAsFixed(1)} MiB'
         : '${(used / 1024).toStringAsFixed(0)} KiB';
     return Container(
+      padding: const EdgeInsets.all(14),
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
