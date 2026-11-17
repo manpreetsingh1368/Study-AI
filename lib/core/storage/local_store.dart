@@ -50,6 +50,7 @@ class LocalStore {
     Stream<List<int>> stream,
     int length,
     int version,
+  ) async {
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
