@@ -25,6 +25,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 - SMTP reset links use hashed, single-use 20-minute tokens; generic responses avoid account enumeration. Password changes/recovery invalidate outstanding resets and sessions. Missing SMTP is explicitly shown; delivery failures are sanitized. Delivery jobs are in memory with graceful shutdown draining.
 - Google and Apple authorization-code flows validate state, browser cookie, nonce, signature, issuer, audience, token age and verified email. Google uses PKCE; Apple uses a signed client secret. Independent app proof protects one-time backend session collection. Existing emails never silently merge accounts.
 - Public sharing publishes only explicitly selected read-only snapshots, without account details or original PDFs. Expiry, revocation, HTML escaping and no-store/referrer/index headers protect future access. Random link secrets persist only as hashes on the server; the originating device keeps its URL securely.
+- Notebook limits: 50 attached sources, 50 saved Studio notes and 2 GiB aggregate PDFs. Individual files default to 100 MiB and the account PDF budget to 20 GiB. Atomic backend checks enforce limits, root notebook quotas exclude attached sources, and root deletion tombstones its children. Studio shows usage and remaining capacity.
 ## Verification
 
 - `flutter analyze`: clean.
