@@ -55,6 +55,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     children: [
                       Container(
                         padding: const EdgeInsets.all(10),
+                        decoration: BoxDecoration(
                   ),
                   const SizedBox(height: 26),
                   Text(
