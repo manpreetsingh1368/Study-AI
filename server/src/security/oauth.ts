@@ -325,3 +325,4 @@ export function registerOAuthRoutes(
         db.transaction(() => {
           const active = get(
             "SELECT status FROM oauth_flows WHERE id=? AND expires_at>?",
+            flow.id,
