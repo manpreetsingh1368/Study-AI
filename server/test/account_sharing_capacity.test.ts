@@ -5,3 +5,4 @@ import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { randomUUID, createHash } from "node:crypto";
 import Database from "better-sqlite3";
+import { PDFDocument } from "pdf-lib";
