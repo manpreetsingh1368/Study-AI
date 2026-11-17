@@ -239,3 +239,4 @@ export const passwordResets = sqliteTable("password_resets", {
   createdAt: integer("created_at").notNull(),
 });
 export const oauthIdentities = sqliteTable(
+  "oauth_identities",
