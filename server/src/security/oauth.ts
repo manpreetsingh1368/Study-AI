@@ -6,3 +6,4 @@ import {
   timingSafeEqual,
 } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { hash, verify, argon2id } from "argon2";
