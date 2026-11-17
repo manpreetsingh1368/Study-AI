@@ -202,3 +202,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           'Your shareable link',
                           style: TextStyle(fontWeight: FontWeight.w600),
                         ),
+                        const SizedBox(height: 10),
