@@ -41,6 +41,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
   Widget build(BuildContext context) => Scaffold(
     body: LayoutBuilder(
       builder: (context, size) {
+        final desktop = size.maxWidth >= 1000;
           child: StudyCard(
             padding: EdgeInsets.all(desktop ? 36 : 26),
             child: Form(
