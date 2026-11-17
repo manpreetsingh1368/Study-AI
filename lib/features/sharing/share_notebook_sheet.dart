@@ -208,3 +208,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           style: const TextStyle(fontSize: 12),
                         ),
                         Wrap(
+                          spacing: 12,
