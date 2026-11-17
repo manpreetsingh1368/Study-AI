@@ -155,3 +155,4 @@ Remaining release requirements include live Gemini acceptance with your credenti
 
 ## Email recovery, Google and Apple sign-in
 
+Set `PUBLIC_BASE_URL` to the backend's public HTTPS origin (for example `https://study.example.com`), then restart the server. A localhost URL works only on the same computer; it cannot make shared links accessible worldwide. The server and its TLS proxy must be reachable from the recipients' browsers.
