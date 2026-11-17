@@ -51,3 +51,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
         entryIds: entries.toList(),
         noteIds: notes.toList(),
         days: days,
+      );
