@@ -12,3 +12,4 @@ const digest = (s: string) => createHash("sha256").update(s).digest("hex");
 async function setup(
   t: any,
   extra: Partial<Parameters<typeof createApp>[0]> = {},
+) {
