@@ -121,3 +121,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 if ((widget.notebook['notes'] as String).isNotEmpty)
                   CheckboxListTile(
                     contentPadding: EdgeInsets.zero,
+                    title: const Text('Include notebook source notes'),
