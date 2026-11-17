@@ -270,3 +270,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
 });
 export const notebookShares = sqliteTable("notebook_shares", {
   id: text("id").primaryKey(),
+  notebookId: text("notebook_id")
