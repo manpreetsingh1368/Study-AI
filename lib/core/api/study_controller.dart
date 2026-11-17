@@ -170,6 +170,7 @@ class StudyController extends ChangeNotifier {
     try {
       final result = await request(
         'POST',
+        link ? '/me/identities/$provider/start' : '/auth/oauth/$provider/start',
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
