@@ -146,3 +146,4 @@ export function registerPasswordRoutes(
     page(
       reply,
       "Reset password",
+      '<h1>A fresh start.</h1><p>Choose a new password for your Study AI account.</p><form><label for="password">New password</label><input id="password" name="password" type="password" autocomplete="new-password" minlength="12" maxlength="128" required><label for="confirm">Confirm password</label><input id="confirm" type="password" autocomplete="new-password" minlength="12" required><button>Replace password</button><p id="message" role="status" aria-live="polite"></p></form>',
