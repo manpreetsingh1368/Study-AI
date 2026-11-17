@@ -64,6 +64,7 @@ class LocalStore {
       }
       await db.transaction((txn) async {
         await txn.insert('uploads', {
+          'id': id,
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
