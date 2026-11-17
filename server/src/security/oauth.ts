@@ -132,3 +132,4 @@ export const productionOAuth: OAuthAdapter = {
         .setIssuedAt()
         .setExpirationTime("5m")
         .sign(await importPKCS8(pem, "ES256"));
+    }
