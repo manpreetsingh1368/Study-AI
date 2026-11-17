@@ -1172,6 +1172,7 @@ class _SetDetailState extends State<SetDetail> {
     final label = used >= 1073741824
         ? '${(used / 1073741824).toStringAsFixed(2)} GiB'
         : used >= 1048576
+        ? '${(used / 1048576).toStringAsFixed(1)} MiB'
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
