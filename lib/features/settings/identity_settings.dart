@@ -73,3 +73,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         provider,
         link: true,
         password: password,
+      );
