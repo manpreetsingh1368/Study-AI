@@ -41,6 +41,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
           title: z.string().trim().min(1).max(200).optional(),
           notes: z.string().max(100000).optional(),
           folder: z.string().trim().max(80).default(""),
+          parentNotebookId: z.uuid().optional(),
         })
         .parse(req.body);
     const fingerprint = createHash("sha256")
