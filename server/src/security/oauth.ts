@@ -417,3 +417,4 @@ export function registerOAuthRoutes(
     { config: { rateLimit: { max: 90, timeWindow: 60000 } } },
     async (req) => {
       const b = z
+        .object({ flowId: z.uuid(), verifier: z.string().min(30).max(100) })
