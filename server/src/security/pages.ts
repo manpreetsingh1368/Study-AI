@@ -14,3 +14,4 @@ export function page(reply: any, title: string, body: string, script = "") {
     .header("Referrer-Policy", "no-referrer")
     .header("X-Robots-Tag", "noindex, nofollow")
     .header(
+      "Content-Security-Policy",
