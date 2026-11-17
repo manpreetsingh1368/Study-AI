@@ -10,3 +10,4 @@ class IdentitySettings extends StatefulWidget {
   State<IdentitySettings> createState() => _IdentitySettingsState();
 }
 
+class _IdentitySettingsState extends State<IdentitySettings> {
