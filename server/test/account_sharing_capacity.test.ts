@@ -110,3 +110,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     "token",
   )!;
   advance(1200001);
+  assert.equal(
