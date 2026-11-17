@@ -224,6 +224,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                             color: accent,
                                             size: 22,
                                           ),
+                                          const SizedBox(width: 14),
     ),
   );
   @override
