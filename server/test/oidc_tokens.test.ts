@@ -88,3 +88,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       .setIssuedAt()
       .sign(pair.privateKey);
     await assert.rejects(
+      validateIdentityToken(
