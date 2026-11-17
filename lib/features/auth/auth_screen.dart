@@ -25,6 +25,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       await c.authenticate(
         register: register,
         email: email.text.trim(),
+        password: password.text,
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
