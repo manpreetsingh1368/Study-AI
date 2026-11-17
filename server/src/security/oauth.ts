@@ -42,3 +42,4 @@ export async function validateIdentityToken(
           : "https://appleid.apple.com",
       audience:
         provider === "google"
+          ? process.env.GOOGLE_CLIENT_ID
