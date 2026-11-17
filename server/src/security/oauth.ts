@@ -225,3 +225,4 @@ export function registerOAuthRoutes(
       flowId,
       url: `${publicBase()}/auth/oauth/${provider}/begin?flow=${flowId}&key=${launch}&state=${state}`,
       expiresAt: now() + 600000,
+    };
