@@ -140,3 +140,4 @@ export function registerPasswordRoutes(
         run("DELETE FROM recovery_codes WHERE user_id=?", reset.user_id);
       })();
       return { ok: true };
+    },
