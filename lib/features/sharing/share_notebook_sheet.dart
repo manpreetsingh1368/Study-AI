@@ -49,3 +49,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
         widget.notebook['id'],
         includeSourceNotes: source,
         entryIds: entries.toList(),
+        noteIds: notes.toList(),
