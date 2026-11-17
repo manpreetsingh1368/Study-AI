@@ -56,3 +56,4 @@ export function registerPasswordRoutes(
           "If an account exists and email delivery is available, a password-reset link will be sent. Check your inbox and spam folder.",
         deliveryAvailable: available,
       };
+      if (!available) return response;
