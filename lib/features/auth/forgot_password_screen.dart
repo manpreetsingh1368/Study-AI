@@ -18,3 +18,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   final form = GlobalKey<FormState>();
   bool busy = false, sent = false;
   String? message;
+  bool delivery = true;
