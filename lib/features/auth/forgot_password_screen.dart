@@ -106,3 +106,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     label: busy
                         ? 'Requesting…'
                         : sent
+                        ? 'Request another link'
