@@ -137,3 +137,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     subtitle: const Text('Saved Studio note'),
                     value: notes.contains(item['id']),
                     onChanged: busy
+                        ? null
