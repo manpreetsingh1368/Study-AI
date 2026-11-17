@@ -94,3 +94,4 @@ export const productionOAuth: OAuthAdapter = {
           process.env.PUBLIC_BASE_URL?.startsWith("https://")
         ),
   authorization(provider, flow) {
+    const parameters = new URLSearchParams({
