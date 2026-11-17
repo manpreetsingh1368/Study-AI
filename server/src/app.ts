@@ -179,6 +179,7 @@ export function createApp(
         uid,
       ).n >= plan(uid).sets
     )
+      fail(403, "Your saved notebook limit has been reached.");
     run(
       "INSERT INTO study_sets(id,user_id,title,notes,version,deleted,created_at,updated_at,folder,parent_notebook_id) VALUES(?,?,?,?,1,0,?,?,?,?)",
       sid,
