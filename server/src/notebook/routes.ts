@@ -168,6 +168,7 @@ export function registerNotebookRoutes(
       0,
     );
     if (selectedBytes > 2147483648)
+      fail(413, "Selected PDFs exceed the 2 GiB notebook allowance.");
     const chunks: SourceChunk[] = [];
     let total = 0;
     for (const source of sources) {
