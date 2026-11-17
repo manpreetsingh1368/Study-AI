@@ -412,3 +412,4 @@ export function registerOAuthRoutes(
     app.get(`/auth/oauth/${provider}/callback`, callback);
     app.post(`/auth/oauth/${provider}/callback`, callback);
   }
+  app.post(
