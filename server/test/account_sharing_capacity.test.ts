@@ -198,3 +198,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     404,
   );
   const expired = await call(
+    "POST",
