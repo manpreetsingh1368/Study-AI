@@ -13,3 +13,4 @@ async function setup(
   t: any,
   extra: Partial<Parameters<typeof createApp>[0]> = {},
 ) {
+  const directory = mkdtempSync(join(tmpdir(), "study-account-"));
