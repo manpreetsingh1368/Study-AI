@@ -490,6 +490,7 @@ class _SetDetailState extends State<SetDetail> {
                     ),
                     const Spacer(),
                     IconButton(
+                      tooltip: 'Share notebook',
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
