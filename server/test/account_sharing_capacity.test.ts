@@ -67,3 +67,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     email: "owner@example.com",
   });
   assert.deepEqual(known, unknown);
+  await new Promise((resolve) => setTimeout(resolve, 15));
