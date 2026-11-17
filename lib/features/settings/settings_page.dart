@@ -153,6 +153,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                 SelectableText(result['code']),
                                 const SizedBox(height: 12),
                                 TextButton.icon(
+                                  onPressed: () => Clipboard.setData(
                               ),
                             ],
                           ),
