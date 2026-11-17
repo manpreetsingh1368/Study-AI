@@ -69,3 +69,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                       radius: 28,
                       child: Icon(Icons.lock_reset_rounded, size: 30),
                     ),
+                  ),
