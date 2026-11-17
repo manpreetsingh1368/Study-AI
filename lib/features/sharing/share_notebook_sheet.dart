@@ -32,3 +32,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
 
   Future<void> load() async {
     try {
+      final data = await c.request(
