@@ -379,3 +379,4 @@ export function registerOAuthRoutes(
               accountId,
               now(),
             );
+          run(
