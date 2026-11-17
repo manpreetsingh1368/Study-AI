@@ -97,6 +97,7 @@ export function createApp(
     email: u.email,
     name: u.name,
     role: u.role,
+    hasPassword: u.password_enabled === undefined ? true : !!u.password_enabled,
   });
   function admin(req: any) {
     const u = user(req);
