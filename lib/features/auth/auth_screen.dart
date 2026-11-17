@@ -29,6 +29,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
         name: name.text.trim(),
       );
     } catch (e) {
+      if (mounted) setState(() => error = e.toString());
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
