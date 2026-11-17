@@ -214,6 +214,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                     ),
                                   ])
                                     Padding(
+                                      padding: const EdgeInsets.only(
     ),
   );
   @override
