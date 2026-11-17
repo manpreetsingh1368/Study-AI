@@ -335,3 +335,4 @@ export function registerOAuthRoutes(
             "SELECT user_id FROM oauth_identities WHERE provider=? AND subject=?",
             provider,
             identity.subject,
+          );
