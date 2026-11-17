@@ -234,3 +234,4 @@ export function registerOAuthRoutes(
       (req) => start(req, provider),
     );
     app.post(
+      `/me/identities/${provider}/start`,
