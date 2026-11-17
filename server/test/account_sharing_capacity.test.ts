@@ -182,3 +182,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     (
       await call(
         "DELETE",
+        `/notebooks/${set.id}/shares/${created.body.id}`,
