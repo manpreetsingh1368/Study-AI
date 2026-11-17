@@ -70,3 +70,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                       child: Icon(Icons.lock_reset_rounded, size: 30),
                     ),
                   ),
+                  const SizedBox(height: 24),
