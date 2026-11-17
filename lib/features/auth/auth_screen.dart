@@ -60,7 +60,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   Text(
                     'A little focus.\nA lot of possibility.',
                     style: Theme.of(context).textTheme.headlineLarge,
-                    textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 10),
                   Text(
