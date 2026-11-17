@@ -620,6 +620,7 @@ export function createApp(
             fail(
               413,
               "This large PDF is saved, but its extracted text is too long for one generation. Paste the section you want to study into a separate source.",
+            );
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
