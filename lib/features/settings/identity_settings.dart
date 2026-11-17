@@ -31,3 +31,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           options = Map<String, dynamic>.from(config);
         });
       }
+    } catch (e) {
