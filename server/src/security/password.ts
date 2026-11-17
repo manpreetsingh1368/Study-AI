@@ -36,3 +36,4 @@ export function registerPasswordRoutes(
   delivery?: ResetDelivery,
 ) {
   const { db, get, run, now, fail } = c;
+  const pending = new Set<Promise<void>>();
