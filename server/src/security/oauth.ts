@@ -93,3 +93,4 @@ export const productionOAuth: OAuthAdapter = {
             process.env.APPLE_PRIVATE_KEY_PATH) &&
           process.env.PUBLIC_BASE_URL?.startsWith("https://")
         ),
+  authorization(provider, flow) {
