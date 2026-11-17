@@ -289,3 +289,4 @@ export function registerOAuthRoutes(
         now(),
       );
       const cookie = req.headers.cookie
+        ?.split(";")
