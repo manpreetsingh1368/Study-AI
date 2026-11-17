@@ -9,3 +9,4 @@ import { PDFDocument } from "pdf-lib";
 import { createApp } from "../src/app.js";
 import type { OAuthAdapter } from "../src/security/oauth.js";
 const digest = (s: string) => createHash("sha256").update(s).digest("hex");
+async function setup(
