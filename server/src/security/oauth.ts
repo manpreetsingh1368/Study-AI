@@ -431,3 +431,4 @@ export function registerOAuthRoutes(
           !timingSafeEqual(
             Buffer.from(flow.client_challenge, "hex"),
             Buffer.from(proof, "hex"),
+          )
