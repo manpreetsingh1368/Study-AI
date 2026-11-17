@@ -78,3 +78,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
     process.env.GOOGLE_CLIENT_ID = "google-test-client";
     const noExpiry = await new SignJWT({
       nonce: "expected-nonce",
+      email: "student@example.com",
