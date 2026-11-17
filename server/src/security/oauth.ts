@@ -150,3 +150,4 @@ export const productionOAuth: OAuthAdapter = {
         : "https://appleid.apple.com/auth/token",
       {
         method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
