@@ -165,3 +165,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         : (v) => setState(() {
                             v == true
                                 ? entries.add(item['id'])
+                                : entries.remove(item['id']);
