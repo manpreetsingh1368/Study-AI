@@ -155,6 +155,7 @@ class StudyController extends ChangeNotifier {
   String? _socialFlow, _socialProof;
   Future<void> socialSignIn(
     String provider, {
+    bool link = false,
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
