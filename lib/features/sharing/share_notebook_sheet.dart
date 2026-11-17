@@ -22,3 +22,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
   bool source = false, busy = false;
   int days = 7;
   String? error, url;
+  List<dynamic> links = [];
