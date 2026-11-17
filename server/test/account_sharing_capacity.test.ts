@@ -362,3 +362,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     const url = new URL(start.body.url),
       state = url.searchParams.get("state")!;
     const browser = await app.inject({
+      method: "GET",
