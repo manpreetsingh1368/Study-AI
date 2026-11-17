@@ -235,3 +235,4 @@ export const passwordResets = sqliteTable("password_resets", {
     .notNull()
     .references(() => users.id, { onDelete: "cascade" }),
   expiresAt: integer("expires_at").notNull(),
+  usedAt: integer("used_at"),
