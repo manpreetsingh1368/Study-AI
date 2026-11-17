@@ -409,3 +409,4 @@ export function registerOAuthRoutes(
         );
       }
     };
+    app.get(`/auth/oauth/${provider}/callback`, callback);
