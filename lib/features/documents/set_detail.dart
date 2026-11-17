@@ -685,6 +685,7 @@ class _SetDetailState extends State<SetDetail> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Text(
+            'Use up to 50 sources',
             style: TextStyle(
               fontSize: 11,
               color: Theme.of(context).colorScheme.onSurfaceVariant,
