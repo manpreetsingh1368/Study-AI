@@ -74,3 +74,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
               children: [
                 const Icon(Icons.ios_share_rounded, color: accent),
                 const SizedBox(width: 12),
+                Expanded(
