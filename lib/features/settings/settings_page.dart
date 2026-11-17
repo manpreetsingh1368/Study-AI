@@ -132,6 +132,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         if (!context.mounted) return;
                         await showDialog<void>(
                           context: context,
+                          builder: (ctx) => AlertDialog(
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
