@@ -1166,6 +1166,7 @@ class _SetDetailState extends State<SetDetail> {
   }
 
   Widget storageMeter() {
+    final value = widget.set['capacity'] as Map? ?? {};
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
