@@ -111,3 +111,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
                   ? 'Available to connect'
                   : 'Not configured by the server owner',
             ),
+            trailing: identities.any((i) => i['provider'] == provider)
