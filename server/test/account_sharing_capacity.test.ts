@@ -349,3 +349,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   const { app, call, register } = await setup(t, { oauthAdapter: adapter });
   await register();
   async function begin(provider = "google", linkToken?: string) {
+    const verifier = "a-very-long-random-client-verifier-123456789";
