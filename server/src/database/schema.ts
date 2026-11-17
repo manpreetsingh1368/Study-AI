@@ -10,6 +10,7 @@ export const users = sqliteTable("users", {
   name: text("name").notNull(),
   passwordHash: text("password_hash").notNull(),
   role: text("role").notNull().default("student"),
+  passwordEnabled: integer("password_enabled").notNull().default(1),
   createdAt: integer("created_at").notNull(),
 });
 export const studySets = sqliteTable("study_sets", {
