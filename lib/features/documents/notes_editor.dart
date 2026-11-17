@@ -40,6 +40,7 @@ class _NotesEditorState extends State<NotesEditor> {
         folder: folder.text.trim(),
       );
       savedSet = s;
+      if (pdf != null || droppedStream != null) {
           s['id'],
           droppedName ?? pdf!.name,
           droppedStream != null ? droppedStream!() : pdf!.readAsByteStream(),
