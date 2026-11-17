@@ -103,6 +103,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     ],
                   ),
                   if (providers['google'] != true || providers['apple'] != true)
+                    Padding(
                   if (register) ...[
                     TextFormField(
                       controller: name,
