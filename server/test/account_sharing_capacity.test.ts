@@ -356,3 +356,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
         ? `/me/identities/${provider}/start`
         : `/auth/oauth/${provider}/start`,
       linkToken,
+      { challenge: digest(verifier), password: "owner-secure-password" },
