@@ -39,3 +39,4 @@ export async function validateIdentityToken(
       issuer:
         provider === "google"
           ? ["https://accounts.google.com", "accounts.google.com"]
+          : "https://appleid.apple.com",
