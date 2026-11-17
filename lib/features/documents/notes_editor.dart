@@ -115,6 +115,7 @@ class _NotesEditorState extends State<NotesEditor> {
                   }
                   return;
                 }
+                final length = await file.length();
                 if (mounted) {
                   setState(() {
                     droppedName = file.name;
