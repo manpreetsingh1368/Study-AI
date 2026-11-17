@@ -609,7 +609,6 @@ export function createApp(
       );
     })();
     try {
-        pdf: doc ? readFileSync(join(uploads, doc.id)) : undefined,
       });
       db.transaction(() => {
         const current = owned(u.id, sid);
