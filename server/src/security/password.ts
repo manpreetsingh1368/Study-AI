@@ -137,3 +137,4 @@ export function registerPasswordRoutes(
           reset.user_id,
         );
         run("DELETE FROM sessions WHERE user_id=?", reset.user_id);
+        run("DELETE FROM recovery_codes WHERE user_id=?", reset.user_id);
