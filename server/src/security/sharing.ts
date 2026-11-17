@@ -89,3 +89,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       expiresAt = now() + b.expiresInDays * 86400000;
     run(
       "INSERT INTO notebook_shares VALUES(?,?,?,?,?,?,?,NULL)",
+      id,
