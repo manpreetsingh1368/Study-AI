@@ -149,3 +149,4 @@ export const productionOAuth: OAuthAdapter = {
         ? "https://oauth2.googleapis.com/token"
         : "https://appleid.apple.com/auth/token",
       {
+        method: "POST",
