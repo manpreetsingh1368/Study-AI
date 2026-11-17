@@ -113,3 +113,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     return { ok: true };
   });
   app.get(
+    "/s/:token",
