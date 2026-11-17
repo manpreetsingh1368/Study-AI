@@ -51,6 +51,7 @@ class LocalStore {
     int length,
     int version,
   ) async {
+    final support = await getApplicationSupportDirectory();
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
