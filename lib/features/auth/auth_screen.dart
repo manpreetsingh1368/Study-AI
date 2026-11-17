@@ -126,6 +126,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                 width: 17,
                                 height: 17,
                                 child: CircularProgressIndicator(
+                                  strokeWidth: 2,
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
