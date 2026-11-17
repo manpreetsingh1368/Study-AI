@@ -270,3 +270,4 @@ export function registerOAuthRoutes(
         )
         .header("Cache-Control", "no-store")
         .header("Referrer-Policy", "no-referrer");
+      return reply.redirect(
