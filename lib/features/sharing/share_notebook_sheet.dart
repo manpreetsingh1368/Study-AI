@@ -72,3 +72,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
             padding: const EdgeInsets.fromLTRB(24, 12, 14, 12),
             child: Row(
               children: [
+                const Icon(Icons.ios_share_rounded, color: accent),
