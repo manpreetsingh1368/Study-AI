@@ -102,6 +102,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       ),
                     ],
                   ),
+                  if (providers['google'] != true || providers['apple'] != true)
                   if (register) ...[
                     TextFormField(
                       controller: name,
