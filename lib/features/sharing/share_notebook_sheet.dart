@@ -111,3 +111,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         style: TextStyle(fontSize: 12, height: 1.7),
                       ),
                     ],
+                  ),
