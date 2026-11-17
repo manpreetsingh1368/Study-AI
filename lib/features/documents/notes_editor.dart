@@ -45,6 +45,7 @@ class _NotesEditorState extends State<NotesEditor> {
           s['id'],
           droppedName ?? pdf!.name,
           droppedStream != null ? droppedStream!() : pdf!.readAsByteStream(),
+          droppedLength ?? (await pdf!.length())!,
         );
       }
       if (mounted) {
