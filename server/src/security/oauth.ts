@@ -252,3 +252,4 @@ export function registerOAuthRoutes(
         provider,
         now(),
       );
+      if (
