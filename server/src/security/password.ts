@@ -91,3 +91,4 @@ export function registerPasswordRoutes(
           ),
         )
         .catch(() => {
+          run("DELETE FROM password_resets WHERE token_hash=?", tokenHash);
