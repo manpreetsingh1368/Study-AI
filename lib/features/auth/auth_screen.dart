@@ -56,6 +56,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       Container(
                         padding: const EdgeInsets.all(10),
                         decoration: BoxDecoration(
+                          color: accent.withValues(alpha: .12),
                   ),
                   const SizedBox(height: 26),
                   Text(
