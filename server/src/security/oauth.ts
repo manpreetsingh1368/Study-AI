@@ -287,3 +287,4 @@ export function registerOAuthRoutes(
         digest(b.state),
         provider,
         now(),
+      );
