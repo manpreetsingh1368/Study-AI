@@ -57,3 +57,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         child: ConstrainedBox(
           constraints: const BoxConstraints(maxWidth: 480),
           child: StudyCard(
+            padding: const EdgeInsets.all(32),
