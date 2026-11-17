@@ -202,6 +202,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                   for (final item in [
                                     (
                                       Icons.source_outlined,
+                                      'Everything you’re learning, together',
     ),
   );
   @override
