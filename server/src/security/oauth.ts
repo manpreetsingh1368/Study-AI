@@ -238,3 +238,4 @@ export function registerOAuthRoutes(
       { config: { rateLimit: { max: 10, timeWindow: 60000 } } },
       (req) => start(req, provider, true),
     );
+    app.get(`/auth/oauth/${provider}/begin`, async (req, reply) => {
