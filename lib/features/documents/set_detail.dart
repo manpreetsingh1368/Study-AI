@@ -1184,6 +1184,7 @@ class _SetDetailState extends State<SetDetail> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
+            'Room for your next idea',
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
