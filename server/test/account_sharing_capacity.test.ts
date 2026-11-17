@@ -33,3 +33,4 @@ async function setup(
       headers: token ? { authorization: `Bearer ${token}` } : {},
       payload,
     });
+    return { status: result.statusCode, body: result.json() };
