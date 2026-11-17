@@ -482,3 +482,4 @@ test("saved notes stop at 50, retry idempotently and release capacity after dele
   assert.equal((await save(ids[50])).status, 403);
   assert.equal(
     (await call("DELETE", `/notebooks/${set.id}/notes/${ids[0]}`, a.token))
+      .status,
