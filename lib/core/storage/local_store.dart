@@ -51,6 +51,7 @@ class LocalStore {
     if (files.isNotEmpty) {
       final file = File(files.first['path'] as String);
       if (await file.exists()) return file.readAsBytes();
+    }
     final rows = await db.query(
       'pdf_cache',
       where: 'account=? AND id=?',
