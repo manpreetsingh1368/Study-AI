@@ -475,3 +475,4 @@ test("saved notes stop at 50, retry idempotently and release capacity after dele
     call("POST", `/notebooks/${set.id}/notes`, a.token, {
       id,
       title: "Saved thought",
+      text: "An idea",
