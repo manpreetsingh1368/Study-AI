@@ -143,6 +143,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                             child: const Text('Cancel browser sign-in'),
                           ),
                         ],
+                      ),
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
