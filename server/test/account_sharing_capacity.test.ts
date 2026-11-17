@@ -116,3 +116,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
         token: expired,
         password: "expired-password",
       })
+    ).status,
