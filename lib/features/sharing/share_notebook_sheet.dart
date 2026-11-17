@@ -207,3 +207,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           url!,
                           style: const TextStyle(fontSize: 12),
                         ),
+                        Wrap(
