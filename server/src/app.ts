@@ -481,6 +481,7 @@ export function createApp(
             u.id,
           ).n -
             (previousDocument?.bytes || 0) +
+            byteCount >
         )
           fail(403, "Storage limit reached.");
         const currentCapacity = capacity(current, get);
