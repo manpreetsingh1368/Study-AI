@@ -300,3 +300,4 @@ export function registerOAuthRoutes(
           reply.code(400),
           "Sign-in expired",
           "<h1>Start again in Study AI.</h1><p>This browser sign-in request is invalid or expired.</p>",
+        );
