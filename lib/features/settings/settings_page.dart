@@ -106,7 +106,6 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
             const SizedBox(height: 12),
-                      });
                       await widget.controller.logout(remote: false);
                     }),
               child: const Text('Change password and revoke all sessions'),
