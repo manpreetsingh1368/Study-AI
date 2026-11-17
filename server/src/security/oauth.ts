@@ -155,3 +155,4 @@ export const productionOAuth: OAuthAdapter = {
         signal: AbortSignal.timeout(15000),
       },
     );
+    if (!response.ok) throw new Error("Provider exchange failed.");
