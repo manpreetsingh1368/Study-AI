@@ -92,3 +92,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
             child: ListView(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               children: [
+                Container(
