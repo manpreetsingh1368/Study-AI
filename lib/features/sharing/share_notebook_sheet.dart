@@ -192,3 +192,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       ? null
                       : create,
                 ),
+                if (url != null) ...[
