@@ -23,3 +23,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
     await transport.sendMail({
       from: process.env.SMTP_FROM,
       to: email,
+      subject: "Reset your Study AI password",
