@@ -84,7 +84,6 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
             409,
             "This study set changed on another device. Both versions have been preserved.",
           );
-          run(
             "UPDATE study_sets SET deleted=1,version=version+1,updated_at=? WHERE id=?",
             now(),
             b.setId,
