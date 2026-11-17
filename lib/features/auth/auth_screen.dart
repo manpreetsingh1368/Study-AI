@@ -193,6 +193,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                     style: TextStyle(
                                       fontSize: 16,
                                       height: 1.9,
+                                      color: Theme.of(context)
     ),
   );
   @override
