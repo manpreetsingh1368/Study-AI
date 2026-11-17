@@ -193,3 +193,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       : create,
                 ),
                 if (url != null) ...[
+                  const SizedBox(height: 20),
