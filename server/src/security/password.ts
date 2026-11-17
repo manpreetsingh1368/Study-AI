@@ -104,3 +104,4 @@ export function registerPasswordRoutes(
       return response;
     },
   );
+  app.post(
