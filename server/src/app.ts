@@ -210,6 +210,7 @@ export function createApp(
         ids = ids.filter((id) => id !== parentNotebookId);
       if (ids.length < 50 && !ids.includes(sid)) ids.push(sid);
       run(
+        "INSERT INTO notebook_preferences VALUES(?,?) ON CONFLICT(notebook_id) DO UPDATE SET source_ids=excluded.source_ids",
     return sid;
   }
   const session = (u: any) => {
