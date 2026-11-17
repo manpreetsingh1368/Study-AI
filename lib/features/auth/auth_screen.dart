@@ -111,6 +111,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     const SizedBox(height: 16),
                   ],
                   if (c.socialSignInActive)
+                    Container(
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
