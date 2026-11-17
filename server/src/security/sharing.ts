@@ -106,3 +106,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     owned(u.id, id);
     run(
       "UPDATE notebook_shares SET revoked_at=? WHERE id=? AND notebook_id=?",
+      now(),
