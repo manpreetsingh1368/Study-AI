@@ -99,3 +99,4 @@ export const productionOAuth: OAuthAdapter = {
         provider === "google"
           ? process.env.GOOGLE_CLIENT_ID!
           : process.env.APPLE_CLIENT_ID!,
+      redirect_uri: `${publicBase()}/auth/oauth/${provider}/callback`,
