@@ -527,7 +527,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
         ],
       ),
       const SizedBox(height: 16),
-      if (c.sets.isEmpty)
         StudyCard(
           child: EmptyState(
             title: 'A fresh page, a focused mind',
