@@ -109,6 +109,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                               ? Icons.visibility_outlined
                               : Icons.visibility_off_outlined,
                         ),
+                      ),
                     ),
                     validator: (v) =>
                         v!.length < 12 ? 'Use at least 12 characters' : null,
