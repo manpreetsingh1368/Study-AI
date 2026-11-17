@@ -356,3 +356,4 @@ export function registerOAuthRoutes(
           } else if (existing) {
             accountId = existing.user_id;
           } else {
+            if (get("SELECT id FROM users WHERE email=?", email))
