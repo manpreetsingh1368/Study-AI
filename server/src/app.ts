@@ -609,6 +609,7 @@ export function createApp(
       );
     })();
     try {
+      let notes = s.notes,
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
