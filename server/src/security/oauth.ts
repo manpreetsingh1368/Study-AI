@@ -298,3 +298,4 @@ export function registerOAuthRoutes(
       if (!flow || !cookie || digest(cookie) !== flow.launch_hash)
         return page(
           reply.code(400),
+          "Sign-in expired",
