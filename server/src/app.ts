@@ -975,6 +975,7 @@ export function createApp(
     () =>
       !!options.resetDelivery ||
       !!(process.env.SMTP_HOST && process.env.SMTP_FROM),
+  );
   registerNotebookRoutes(
     app,
     { db, user, owned, get, all, run, plan, change, now, fail, uploads },
