@@ -676,7 +676,6 @@ class _WorkspaceState extends ConsumerState<Workspace> {
   }
 
   Widget library() {
-    final filtered = c.sets
         .where((s) => folder == null || (s['folder'] ?? '') == folder)
         .where(
           (s) => '${s['title']} ${s['notes']}'.toLowerCase().contains(
