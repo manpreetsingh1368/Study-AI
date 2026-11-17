@@ -19,6 +19,7 @@ class LocalStore {
       p.join(dir.path, 'study_cache.sqlite'),
       version: 2,
       onUpgrade: (db, oldVersion, _) async {
+        if (oldVersion < 2) {
       },
       onCreate: (db, _) async {
         await db.execute(
