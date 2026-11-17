@@ -120,3 +120,4 @@ export const productionOAuth: OAuthAdapter = {
     if (provider === "apple") {
       const pem = (
         process.env.APPLE_PRIVATE_KEY ||
+        (process.env.APPLE_PRIVATE_KEY_PATH
