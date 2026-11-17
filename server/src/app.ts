@@ -465,6 +465,7 @@ export function createApp(
     writeFileSync(temporary, bytes, { mode: 0o600 });
     let promoted = false;
     try {
+      await pipeline(
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
