@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 
 import '../core/api/study_controller.dart';
 import '../features/auth/auth_screen.dart';
+import '../features/auth/forgot_password_screen.dart';
 import '../features/auth/recovery_screen.dart';
 import '../features/onboarding/onboarding_screen.dart';
 import '../features/dashboard/workspace.dart';
