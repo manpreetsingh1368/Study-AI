@@ -300,3 +300,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                     ? null
                                     : () async {
                                         setState(() => busy = true);
+                                        try {
