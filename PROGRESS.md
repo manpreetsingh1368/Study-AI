@@ -20,6 +20,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 - Backup CLI, consistent maintenance-window backup script, daily backup and hourly maintenance systemd units, cleanup of expired sessions/recovery codes/stale uploads/abandoned reservations, and configurable deleted-file retention while preserving tombstones.
 
 ## Identity, sharing and capacity refinement
+
 ## Verification
 
 - `flutter analyze`: clean.
