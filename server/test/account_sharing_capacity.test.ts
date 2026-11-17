@@ -193,3 +193,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     `/notebooks/${set.id}/shares/${created.body.id}`,
     a.token,
   );
+  assert.equal(
