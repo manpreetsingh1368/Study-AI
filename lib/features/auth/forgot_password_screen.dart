@@ -78,3 +78,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                   const SizedBox(height: 12),
+                  const Text(
