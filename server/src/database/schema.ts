@@ -262,3 +262,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
   userId: text("user_id").references(() => users.id, { onDelete: "cascade" }),
   linkUserId: text("link_user_id").references(() => users.id, {
     onDelete: "cascade",
+  }),
