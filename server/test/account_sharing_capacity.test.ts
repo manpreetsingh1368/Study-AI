@@ -123,3 +123,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
 test("unconfigured reset delivery is explicit, never a fake sent email", async (t) => {
   const { call } = await setup(t);
   const response = await call("POST", "/auth/forgot-password", undefined, {
+    email: "anyone@example.com",
