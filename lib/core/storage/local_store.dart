@@ -24,6 +24,7 @@ class LocalStore {
         } else if (oldVersion < 3) {
           await db.execute('ALTER TABLE uploads ADD COLUMN path TEXT');
           await db.execute(
+            'CREATE TABLE pdf_files(account TEXT,id TEXT,path TEXT,PRIMARY KEY(account,id))',
       },
       onCreate: (db, _) async {
         await db.execute(
