@@ -399,6 +399,7 @@ export function createApp(
         u.id,
         b.title,
         b.notes,
+        undefined,
     )();
     reply.code(201);
     return { set: full(owned(u.id, sid)) };
