@@ -299,6 +299,7 @@ export function createApp(
       (b.confirm !== "DELETE" ||
         !signedIn ||
         signedIn.created_at < now() - 300000)
+    )
     const code = randomBytes(32).toString("base64url"),
       expiresAt = now() + 365 * 86400000;
     run(
