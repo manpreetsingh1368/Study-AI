@@ -200,3 +200,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
   const expired = await call(
     "POST",
     `/notebooks/${secret.id}/shares`,
+    a.token,
