@@ -7,3 +7,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
   const digest = (token: string) =>
     createHash("sha256").update(token).digest("hex");
   app.get("/notebooks/:id/shares", async (req) => {
+    const u = user(req),
