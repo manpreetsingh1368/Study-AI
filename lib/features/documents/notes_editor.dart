@@ -44,6 +44,7 @@ class _NotesEditorState extends State<NotesEditor> {
         await widget.controller.upload(
           s['id'],
           droppedName ?? pdf!.name,
+          droppedStream != null ? droppedStream!() : pdf!.readAsByteStream(),
         );
       }
       if (mounted) {
