@@ -119,7 +119,6 @@ class _NotesEditorState extends State<NotesEditor> {
                 if (mounted) {
                   setState(() {
                     droppedName = file.name;
-                    droppedBytes = bytes;
                     pdf = null;
                   });
                 }
