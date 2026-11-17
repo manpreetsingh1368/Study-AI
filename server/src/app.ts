@@ -291,7 +291,6 @@ export function createApp(
   });
   app.post("/me/recovery", async (req) => {
     const u = user(req),
-    if (!(await verify(u.password_hash, b.password)))
       fail(401, "Password is incorrect.");
     if (
       !u.password_enabled &&
