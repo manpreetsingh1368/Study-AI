@@ -204,6 +204,7 @@ export function createApp(
         ? JSON.parse(saved.source_ids)
         : [parentNotebookId];
       if (
+        !parent.notes.trim() &&
     return sid;
   }
   const session = (u: any) => {
