@@ -191,3 +191,4 @@ export function registerOAuthRoutes(
       sessionHash = digest(req.headers.authorization.slice(7));
       const current = get(
         "SELECT created_at FROM sessions WHERE token_hash=?",
+        sessionHash,
