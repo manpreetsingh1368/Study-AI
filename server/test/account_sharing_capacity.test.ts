@@ -422,3 +422,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
         verifier: existing.verifier,
       })
     ).body.status,
+    "failed",
