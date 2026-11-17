@@ -53,3 +53,4 @@ export async function validateIdentityToken(
   const audience =
     provider === "google"
       ? process.env.GOOGLE_CLIENT_ID
+      : process.env.APPLE_CLIENT_ID;
