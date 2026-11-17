@@ -157,6 +157,7 @@ class StudyController extends ChangeNotifier {
     String provider, {
     bool link = false,
     String? password,
+  }) async {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
