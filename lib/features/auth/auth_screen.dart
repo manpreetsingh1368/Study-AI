@@ -170,6 +170,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+                                  const Text(
     ),
   );
   @override
