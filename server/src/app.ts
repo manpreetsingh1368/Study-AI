@@ -302,6 +302,7 @@ export function createApp(
       digest(req.headers.authorization!.slice(7)),
     );
     if (
+      u.password_enabled &&
       fail(401, "Password is incorrect.");
     if (
       !u.password_enabled &&
