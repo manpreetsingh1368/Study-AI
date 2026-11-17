@@ -309,3 +309,4 @@ export function registerOAuthRoutes(
         );
         return page(
           reply,
+          "Sign-in cancelled",
