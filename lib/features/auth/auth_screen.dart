@@ -80,6 +80,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           onPressed: !busy && providers['google'] == true
                               ? () => social('google')
                               : null,
+                          icon: const Text(
                   if (register) ...[
                     TextFormField(
                       controller: name,
