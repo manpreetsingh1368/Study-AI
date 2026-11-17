@@ -10,6 +10,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
     full,
     plan,
     newSet,
+    softDelete,
     change,
     now,
     fail,
