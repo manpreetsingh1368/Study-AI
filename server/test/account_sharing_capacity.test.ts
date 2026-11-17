@@ -447,3 +447,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     flowId: link.id,
     verifier: link.verifier,
   });
+  assert.equal(linked.body.user.id, local.user.id);
