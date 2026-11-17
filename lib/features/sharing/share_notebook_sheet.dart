@@ -63,3 +63,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
 
   @override
   Widget build(BuildContext context) {
+    final book = widget.notebook['notebook'] as Map? ?? {};
