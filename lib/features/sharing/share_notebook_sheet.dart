@@ -48,3 +48,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
       final link = await c.createShare(
         widget.notebook['id'],
         includeSourceNotes: source,
+        entryIds: entries.toList(),
