@@ -276,3 +276,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                 tooltip: 'Copy saved link',
                                 onPressed: () async {
                                   final saved = await c.secure.read(
+                                    key: 'share:${c.account}:${link['id']}',
