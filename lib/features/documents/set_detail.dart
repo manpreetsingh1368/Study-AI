@@ -1188,6 +1188,7 @@ class _SetDetailState extends State<SetDetail> {
             style: TextStyle(fontSize: 11, fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 8),
+          Text('$label of 2 GiB PDFs', style: const TextStyle(fontSize: 10)),
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
