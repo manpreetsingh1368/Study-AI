@@ -497,6 +497,7 @@ class _SetDetailState extends State<SetDetail> {
                               context: context,
                               isScrollControlled: true,
                               useSafeArea: true,
+                              showDragHandle: true,
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
