@@ -71,6 +71,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           'Study AI',
                           style: TextStyle(
                             fontWeight: FontWeight.w700,
+                            fontSize: 22,
                   ),
                   const SizedBox(height: 26),
                   Text(
