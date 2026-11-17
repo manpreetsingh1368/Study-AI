@@ -192,3 +192,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     "DELETE",
     `/notebooks/${set.id}/shares/${created.body.id}`,
     a.token,
+  );
