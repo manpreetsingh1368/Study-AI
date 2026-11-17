@@ -93,6 +93,7 @@ class StudyController extends ChangeNotifier {
     Map<String, dynamic>? body,
   ]) async {
     final req = http.Request(method, Uri.parse('$baseUrl$path'));
+    if (body != null) req.headers['Content-Type'] = 'application/json';
     if (token != null) req.headers['Authorization'] = 'Bearer $token';
     if (body != null) req.body = jsonEncode(body);
     final response = await req
