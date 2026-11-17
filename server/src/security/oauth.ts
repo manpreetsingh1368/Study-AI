@@ -332,3 +332,4 @@ export function registerOAuthRoutes(
             throw new Error("Sign-in was cancelled or expired.");
           let accountId: string;
           const existing = get(
+            "SELECT user_id FROM oauth_identities WHERE provider=? AND subject=?",
