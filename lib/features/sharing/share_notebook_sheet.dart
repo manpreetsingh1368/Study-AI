@@ -96,3 +96,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   padding: const EdgeInsets.all(18),
                   decoration: BoxDecoration(
                     color: accent.withValues(alpha: .07),
+                    borderRadius: BorderRadius.circular(16),
