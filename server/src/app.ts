@@ -45,6 +45,7 @@ const setInput = z.object({
   title: z.string().trim().min(1).max(200),
   notes: z.string().max(100000),
   folder: z.string().trim().max(80).default(""),
+  parentNotebookId: z.uuid().optional(),
 });
 export function createApp(
   options: {
