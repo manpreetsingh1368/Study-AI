@@ -37,6 +37,7 @@ class LocalStore {
     await db.execute(
       'CREATE TABLE IF NOT EXISTS pdf_files(account TEXT,id TEXT,path TEXT,PRIMARY KEY(account,id))',
     );
+    await db.execute(
       'CREATE TABLE IF NOT EXISTS pdf_cache(account TEXT, id TEXT, bytes BLOB, PRIMARY KEY(account,id))',
     );
     await db.execute(
