@@ -46,3 +46,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           title: Text('Connect ${provider == 'google' ? 'Google' : 'Apple'}'),
           content: TextField(
             controller: controller,
+            obscureText: true,
