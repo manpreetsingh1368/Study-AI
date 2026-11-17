@@ -210,3 +210,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
         method: "GET",
         url: new URL(expired.body.url).pathname,
       })
+    ).statusCode,
