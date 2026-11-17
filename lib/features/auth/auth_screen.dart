@@ -69,6 +69,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       const Expanded(
                         child: Text(
                           'Study AI',
+                          style: TextStyle(
                   ),
                   const SizedBox(height: 26),
                   Text(
