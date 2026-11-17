@@ -182,6 +182,7 @@ class StudyController extends ChangeNotifier {
       if (!await launchUrl(
         Uri.parse(result['url']),
         mode: LaunchMode.externalApplication,
+      )) {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
