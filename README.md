@@ -167,3 +167,4 @@ Real Google/Apple credentials and an SMTP server are required for live end-to-en
 
 ## Notebook capacity and public sharing
 
+Each root notebook supports 50 attached sources, 50 saved Studio notes, and 2 GiB of PDFs across itself and its attached sources. The primary notebook material is separate from the attached-source counter. AI requests can select up to 50 materials, with an existing 100,000-character extraction bound. Free/Pro notebook-count limits still apply to root notebooks; attaching sources does not consume another notebook slot. The default account-wide PDF budget is 20 GiB (`MAX_STORAGE_BYTES`). Existing material is retained during migration; notebooks above a new limit must remove material before adding more.
