@@ -433,7 +433,6 @@ export function createApp(
       const s = owned(u.id, sid);
       if (s.version !== b.version)
         fail(409, "This set changed. Refresh before deleting.");
-        "UPDATE study_sets SET deleted=1,version=version+1,updated_at=? WHERE id=?",
         now(),
         sid,
       );
