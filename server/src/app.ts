@@ -128,6 +128,7 @@ export function createApp(
       "SELECT id FROM study_sets WHERE parent_notebook_id=? AND deleted=0",
       sid,
     );
+    for (const record of [...children, { id: sid }]) {
   function full(s: any) {
     return {
       ...s,
