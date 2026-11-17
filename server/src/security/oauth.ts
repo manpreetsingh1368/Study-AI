@@ -56,3 +56,4 @@ export async function validateIdentityToken(
       : process.env.APPLE_CLIENT_ID;
   if (payload.azp && payload.azp !== audience)
     throw new Error("Invalid authorized party.");
+  if (
