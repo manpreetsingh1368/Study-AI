@@ -125,6 +125,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     ? null
                     : () => perform(() async {
                         final result = await widget.controller.request(
+                          'POST',
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
