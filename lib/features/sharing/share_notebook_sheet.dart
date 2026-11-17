@@ -251,3 +251,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     'No shared links yet.',
                     style: TextStyle(fontSize: 12),
                   ),
+                for (final link in links)
