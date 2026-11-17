@@ -100,3 +100,4 @@ export function registerPasswordRoutes(
           );
         });
       pending.add(job);
+      void job.finally(() => pending.delete(job));
