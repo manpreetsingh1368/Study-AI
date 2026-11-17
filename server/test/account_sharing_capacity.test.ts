@@ -227,3 +227,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
       })
     ).body.set;
   assert.equal(
+    (await call("POST", "/sets", a.token, { title: "Notebook six", notes: "" }))
