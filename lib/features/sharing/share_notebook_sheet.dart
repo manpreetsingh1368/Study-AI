@@ -289,3 +289,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                           'This device doesn’t hold the link secret. Create a new link to share.',
                                         ),
                                       ),
+                                    );
