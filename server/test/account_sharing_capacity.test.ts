@@ -439,3 +439,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
       "content-type": "application/x-www-form-urlencoded",
     },
     payload: new URLSearchParams({
+      state: link.state,
