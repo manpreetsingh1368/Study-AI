@@ -126,6 +126,7 @@ New files for this refinement:
 - `lib/features/settings/identity_settings.dart`
 - `lib/features/sharing/share_notebook_sheet.dart`
 - `server/migrations/005_identity_sharing_capacity.sql`
+- `server/src/capacity.ts`
 Native setup changes include `linux/CMakeLists.txt`, `android/app/src/main/AndroidManifest.xml`, both macOS entitlement files, and Flutter-generated plugin registrants. Ignored native build caches and artifacts are excluded from commits.
 
 Build outputs: `build/linux/x64/release/bundle/` and `build/app/outputs/flutter-apk/app-debug.apk`.
