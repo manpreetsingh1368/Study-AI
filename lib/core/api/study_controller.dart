@@ -635,6 +635,7 @@ class StudyController extends ChangeNotifier {
       req.files.add(
         http.MultipartFile(
           'file',
+          file.openRead(),
     final response = await req
         .send()
         .then(http.Response.fromStream)
