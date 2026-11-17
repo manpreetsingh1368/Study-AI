@@ -132,3 +132,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
           "Link unavailable",
           "<h1>This link is no longer available.</h1><p>It may have expired or been revoked. Ask its owner for a new link.</p>",
         );
+      const snapshot = JSON.parse(share.snapshot);
