@@ -181,6 +181,7 @@ class StudyController extends ChangeNotifier {
       _socialFlow = flow;
       if (!await launchUrl(
         Uri.parse(result['url']),
+        mode: LaunchMode.externalApplication,
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
