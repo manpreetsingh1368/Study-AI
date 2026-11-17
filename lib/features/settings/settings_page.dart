@@ -128,6 +128,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           'POST',
                           '/me/recovery',
                           {'password': current.text},
+                        );
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
