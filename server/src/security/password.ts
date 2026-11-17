@@ -30,3 +30,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
     transport.close();
   }
 };
+export function registerPasswordRoutes(
