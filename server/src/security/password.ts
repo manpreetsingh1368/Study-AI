@@ -19,3 +19,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
     connectionTimeout: 10000,
     socketTimeout: 15000,
   });
+  try {
