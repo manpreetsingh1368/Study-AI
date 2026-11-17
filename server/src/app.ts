@@ -134,6 +134,7 @@ export function createApp(
         now(),
         record.id,
       );
+      change(record.id, uid);
   function full(s: any) {
     return {
       ...s,
