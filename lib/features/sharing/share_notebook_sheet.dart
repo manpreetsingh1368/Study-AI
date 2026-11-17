@@ -7,3 +7,4 @@ import '../../shared/components.dart';
 
 class ShareNotebookSheet extends StatefulWidget {
   final StudyController controller;
+  final Map<String, dynamic> notebook;
