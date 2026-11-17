@@ -215,3 +215,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                 await Clipboard.setData(
                                   ClipboardData(text: url!),
                                 );
+                                if (context.mounted) {
