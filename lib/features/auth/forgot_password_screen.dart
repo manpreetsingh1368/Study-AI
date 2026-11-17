@@ -15,3 +15,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   late final email = TextEditingController(
     text: widget.controller.user?['email'],
   );
+  final form = GlobalKey<FormState>();
