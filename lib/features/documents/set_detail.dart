@@ -168,6 +168,7 @@ class _SetDetailState extends State<SetDetail> {
         await c.uploadStream(
           source['id'],
           file.name,
+          file.readAsByteStream(),
         if (mounted) setState(() => selected.add(source['id']));
       });
       return;
