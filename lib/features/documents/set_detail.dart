@@ -713,6 +713,7 @@ class _SetDetailState extends State<SetDetail> {
                           onChanged: busy
                               ? null
                               : (v) {
+                                  if (v == true &&
                                     setState(
                                       () => error = 'Select up to 50 sources.',
                                     );
