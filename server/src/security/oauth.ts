@@ -118,3 +118,4 @@ export const productionOAuth: OAuthAdapter = {
   async exchange(provider, code, flow) {
     let secret = process.env.GOOGLE_CLIENT_SECRET!;
     if (provider === "apple") {
+      const pem = (
