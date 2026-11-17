@@ -33,3 +33,4 @@ export async function validateIdentityToken(
   verificationKey?: CryptoKey,
 ) {
   const { payload } = await jwtVerify(
+    token,
