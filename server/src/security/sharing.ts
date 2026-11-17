@@ -68,3 +68,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       });
     }
     for (const id of [...new Set(b.noteIds)]) {
+      const note = get(
