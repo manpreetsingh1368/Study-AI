@@ -19,3 +19,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   bool busy = false, sent = false;
   String? message;
   bool delivery = true;
+  Future<void> submit() async {
