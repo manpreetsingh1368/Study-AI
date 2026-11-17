@@ -39,3 +39,4 @@ async function setup(
     return (
       await call("POST", "/auth/register", undefined, {
         name: "Owner",
+        email,
