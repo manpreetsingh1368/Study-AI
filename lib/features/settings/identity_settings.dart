@@ -51,3 +51,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             decoration: const InputDecoration(
               labelText: 'Current Study AI password',
             ),
+          ),
