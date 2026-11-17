@@ -265,6 +265,7 @@ void main() {
           reader.close(force: true);
         }
         await tester.tap(find.byTooltip('Close sharing'));
+        await tester.pumpAndSettle();
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
