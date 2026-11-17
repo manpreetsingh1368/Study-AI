@@ -198,3 +198,4 @@ export function registerOAuthRoutes(
           !body.password ||
           !(await verify(owner.password_hash, body.password))
         )
+          fail(401, "Enter your current password to connect an identity.");
