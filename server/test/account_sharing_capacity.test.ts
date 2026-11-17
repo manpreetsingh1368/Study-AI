@@ -380,3 +380,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   );
   assert.equal(
     (
+      await call("POST", "/auth/oauth/complete", undefined, {
