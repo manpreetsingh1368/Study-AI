@@ -41,3 +41,4 @@ export function registerPasswordRoutes(
   app.post(
     "/auth/forgot-password",
     { config: { rateLimit: { max: 5, timeWindow: 60000 } } },
+    async (req) => {
