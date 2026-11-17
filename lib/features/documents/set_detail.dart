@@ -165,6 +165,7 @@ class _SetDetailState extends State<SetDetail> {
           '',
           folder: widget.set['folder'] ?? '',
           parentNotebookId:
+              widget.set['parent_notebook_id'] ?? widget.set['id'],
         );
         await c.uploadStream(
           source['id'],
