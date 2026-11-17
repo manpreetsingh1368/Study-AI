@@ -465,3 +465,4 @@ export function registerOAuthRoutes(
           "SELECT provider,created_at FROM oauth_identities WHERE user_id=?",
         )
         .all(u.id),
+      hasPassword: !!u.password_enabled,
