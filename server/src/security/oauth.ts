@@ -143,3 +143,4 @@ export const productionOAuth: OAuthAdapter = {
       grant_type: "authorization_code",
       redirect_uri: `${publicBase()}/auth/oauth/${provider}/callback`,
     });
+    if (provider === "google") body.set("code_verifier", flow.pkce_verifier);
