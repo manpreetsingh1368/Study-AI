@@ -170,3 +170,4 @@ export function registerOAuthRoutes(
   app.get("/auth/options", async () => ({
     google: adapter.enabled("google"),
     apple: adapter.enabled("apple"),
+    passwordReset: resetConfigured(),
