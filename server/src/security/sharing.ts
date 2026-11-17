@@ -97,3 +97,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       now(),
       expiresAt,
     );
+    reply.code(201);
