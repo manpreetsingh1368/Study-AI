@@ -296,3 +296,4 @@ export function registerOAuthRoutes(
         )
         ?.split("=")[1];
       if (!flow || !cookie || digest(cookie) !== flow.launch_hash)
+        return page(
