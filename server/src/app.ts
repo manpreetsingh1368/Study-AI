@@ -894,7 +894,6 @@ export function createApp(
       subscription:
         get("SELECT * FROM subscriptions WHERE user_id=?", uid) || null,
       sets: get(
-        "SELECT count(*) n FROM study_sets WHERE user_id=? AND deleted=0",
         uid,
       ).n,
       attempts: get("SELECT count(*) n FROM quiz_attempts WHERE user_id=?", uid)
