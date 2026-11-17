@@ -206,6 +206,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                     ),
                                     (
                                       Icons.format_quote_rounded,
+                                      'Answers connected to your sources',
     ),
   );
   @override
