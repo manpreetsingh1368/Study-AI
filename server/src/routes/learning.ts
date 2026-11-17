@@ -81,6 +81,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
           b.title,
           b.notes,
           b.setId,
+          b.folder,
       } else {
         const s = owned(u.id, b.setId);
         if (s.version !== b.baseVersion)
