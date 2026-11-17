@@ -162,3 +162,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
   assert.equal(created.status, 201);
   const path = new URL(created.body.url).pathname;
   const page = await app.inject({ method: "GET", url: path });
+  assert.equal(page.statusCode, 200);
