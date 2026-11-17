@@ -370,7 +370,6 @@ export function createApp(
   });
   app.delete("/me", async (req) => {
     const u = user(req),
-      fail(401, "Password is incorrect.");
     const docs = all(
       "SELECT d.id FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.user_id=?",
       u.id,
