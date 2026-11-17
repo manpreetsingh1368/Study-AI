@@ -46,3 +46,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
     setState(() => busy = true);
     try {
       final link = await c.createShare(
+        widget.notebook['id'],
