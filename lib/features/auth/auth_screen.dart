@@ -62,6 +62,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         child: const Icon(
                           Icons.auto_awesome_rounded,
                           color: accent,
+                          size: 26,
                   ),
                   const SizedBox(height: 26),
                   Text(
