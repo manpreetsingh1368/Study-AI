@@ -461,3 +461,4 @@ export function registerOAuthRoutes(
     const u = user(req);
     return {
       identities: db
+        .prepare(
