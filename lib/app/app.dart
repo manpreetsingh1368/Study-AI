@@ -45,6 +45,7 @@ class _StudyAIAppState extends ConsumerState<StudyAIApp> {
       routes: [
         GoRoute(
           path: '/forgot-password',
+          builder: (_, _) => ForgotPasswordScreen(controller: c),
         GoRoute(
           path: '/recovery',
           builder: (_, _) => RecoveryScreen(controller: c),
