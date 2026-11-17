@@ -105,3 +105,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         'Anyone with the link · read-only',
                         style: TextStyle(fontWeight: FontWeight.w700),
                       ),
+                      SizedBox(height: 8),
