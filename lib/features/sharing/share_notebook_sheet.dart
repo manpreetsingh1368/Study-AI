@@ -221,3 +221,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                       content: Text('Link copied.'),
                                     ),
                                   );
+                                }
