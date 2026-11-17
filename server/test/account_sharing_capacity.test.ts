@@ -407,3 +407,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
         verifier: flow.verifier,
       })
     ).status,
+    400,
