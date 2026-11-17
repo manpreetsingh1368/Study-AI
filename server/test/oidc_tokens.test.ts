@@ -99,3 +99,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       (
         await validateIdentityToken(
           "apple",
+          await token({ email_verified: "true" }, "apple"),
