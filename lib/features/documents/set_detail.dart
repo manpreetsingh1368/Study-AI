@@ -1190,6 +1190,7 @@ class _SetDetailState extends State<SetDetail> {
           const SizedBox(height: 8),
           Text('$label of 2 GiB PDFs', style: const TextStyle(fontSize: 10)),
           const SizedBox(height: 8),
+          LinearProgressIndicator(
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
