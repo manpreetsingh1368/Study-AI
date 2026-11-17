@@ -230,3 +230,4 @@ export const notebookPreferences = sqliteTable("notebook_preferences", {
 });
 
 export const passwordResets = sqliteTable("password_resets", {
+  tokenHash: text("token_hash").primaryKey(),
