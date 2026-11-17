@@ -203,6 +203,7 @@ class StudyController extends ChangeNotifier {
         }
       }
       if (_socialProof == proof) {
+        throw ApiException(408, 'Browser sign-in expired. Please try again.');
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
