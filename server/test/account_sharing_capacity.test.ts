@@ -106,3 +106,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     email: "owner@example.com",
   });
   await new Promise((resolve) => setTimeout(resolve, 15));
+  const expired = new URLSearchParams(new URL(mail[1].url).hash.slice(1)).get(
