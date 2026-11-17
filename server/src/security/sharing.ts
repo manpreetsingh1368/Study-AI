@@ -79,3 +79,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         text: note.text,
         citations: JSON.parse(note.citations),
       });
+    }
