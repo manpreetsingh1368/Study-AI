@@ -152,3 +152,4 @@ Never copy an active database file without its WAL or the backup API.
 `npm run maintenance` removes expired sessions/recovery codes, releases abandoned generation reservations, removes stale temporary uploads, and purges original PDFs/notes for sets deleted more than `DELETED_FILE_RETENTION_DAYS` (30 by default). Tombstones and historical learning records remain. Adapt the supplied hourly maintenance service/timer to the host; review retention before enabling it. This command intentionally deletes expired private blobs, so use backups and the documented retention setting.
 
 Remaining release requirements include live Gemini acceptance with your credentials, HTTPS deployment, production signing/distribution, native Android/iOS/macOS runtime QA, backup retention/restore drills, operational monitoring and independent security/load/accessibility audits. Neither Apple platform was built on Ubuntu.
+
