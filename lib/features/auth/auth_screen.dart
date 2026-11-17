@@ -51,6 +51,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
+                  Row(
                   ),
                   const SizedBox(height: 26),
                   Text(
