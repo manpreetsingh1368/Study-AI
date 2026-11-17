@@ -180,6 +180,7 @@ class StudyController extends ChangeNotifier {
       if (_socialProof != proof) return;
       _socialFlow = flow;
       if (!await launchUrl(
+        Uri.parse(result['url']),
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
