@@ -158,3 +158,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
+                    subtitle: const Text('Includes its source excerpts'),
