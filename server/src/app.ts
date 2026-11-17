@@ -124,6 +124,7 @@ export function createApp(
   }
   function softDelete(sid: string, uid: string) {
     const current = owned(uid, sid);
+    const children = all(
   function full(s: any) {
     return {
       ...s,
