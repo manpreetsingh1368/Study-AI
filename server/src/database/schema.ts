@@ -242,3 +242,4 @@ export const oauthIdentities = sqliteTable(
   "oauth_identities",
   {
     provider: text("provider").notNull(),
+    subject: text("subject").notNull(),
