@@ -141,3 +141,4 @@ export function registerPasswordRoutes(
       })();
       return { ok: true };
     },
+  );
