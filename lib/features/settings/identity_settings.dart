@@ -125,3 +125,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             onPressed: widget.controller.cancelSocialSignIn,
             child: const Text('Cancel browser sign-in'),
           ),
+        if (error != null) ErrorState(message: error!),
