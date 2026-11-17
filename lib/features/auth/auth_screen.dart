@@ -105,6 +105,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         tooltip: obscure ? 'Show password' : 'Hide password',
                         onPressed: () => setState(() => obscure = !obscure),
                         icon: Icon(
+                          obscure
                     ),
                     validator: (v) =>
                         v!.length < 12 ? 'Use at least 12 characters' : null,
