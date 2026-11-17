@@ -14,3 +14,4 @@ async function setup(
   extra: Partial<Parameters<typeof createApp>[0]> = {},
 ) {
   const directory = mkdtempSync(join(tmpdir(), "study-account-"));
+  let clock = Date.now();
