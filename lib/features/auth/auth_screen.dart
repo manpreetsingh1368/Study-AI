@@ -172,6 +172,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                 children: [
                                   const Text(
                                     'LESS FRICTION. MORE DISCOVERY.',
+                                    style: TextStyle(
     ),
   );
   @override
