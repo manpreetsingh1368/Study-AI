@@ -609,7 +609,6 @@ export function createApp(
       );
     })();
     try {
-      });
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
