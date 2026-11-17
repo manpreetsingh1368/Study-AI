@@ -41,6 +41,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       error = null;
     });
     try {
+      await c.socialSignIn(provider);
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
