@@ -385,3 +385,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
         verifier: "incorrect-verifier-with-enough-length",
       })
     ).status,
+    400,
