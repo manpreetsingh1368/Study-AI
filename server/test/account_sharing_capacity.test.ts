@@ -308,3 +308,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
   const boundary = "capacity-check";
   const payload = Buffer.concat([
     Buffer.from(
+      `--${boundary}\r\nContent-Disposition: form-data; name="file"; filename="notes.pdf"\r\nContent-Type: application/pdf\r\n\r\n`,
