@@ -158,3 +158,4 @@ export const productionOAuth: OAuthAdapter = {
     if (!response.ok) throw new Error("Provider exchange failed.");
     const data: any = await response.json();
     return validateIdentityToken(provider, data.id_token, flow.nonce);
+  },
