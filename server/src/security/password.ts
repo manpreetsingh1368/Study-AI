@@ -80,3 +80,4 @@ export function registerPasswordRoutes(
           tokenHash,
           u.id,
           now() + 1200000,
+          now(),
