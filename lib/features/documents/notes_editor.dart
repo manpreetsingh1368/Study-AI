@@ -139,7 +139,6 @@ class _NotesEditorState extends State<NotesEditor> {
                           allowedExtensions: ['pdf'],
                         );
                         if (result.isNotEmpty && mounted) {
-                              10485760) {
                             setState(
                               () => error = 'Choose a PDF smaller than 100 MB.',
                             );
