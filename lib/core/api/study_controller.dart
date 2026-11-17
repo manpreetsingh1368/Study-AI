@@ -656,6 +656,7 @@ class StudyController extends ChangeNotifier {
     int length,
   ) async {
     final set = sets.firstWhere((s) => s['id'] == setId),
+        id = const Uuid().v4();
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
