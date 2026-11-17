@@ -72,3 +72,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       await widget.controller.socialSignIn(
         provider,
         link: true,
+        password: password,
