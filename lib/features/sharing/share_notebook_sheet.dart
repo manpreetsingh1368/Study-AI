@@ -160,3 +160,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     ),
                     subtitle: const Text('Includes its source excerpts'),
                     value: entries.contains(item['id']),
+                    onChanged: busy
