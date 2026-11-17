@@ -105,7 +105,6 @@ export function createApp(
   }
   function owned(uid: string, sid: string) {
     const s = get(
-      "SELECT * FROM study_sets WHERE id=? AND user_id=? AND deleted=0",
       sid,
       uid,
     );
