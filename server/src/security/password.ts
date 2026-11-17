@@ -22,3 +22,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
   try {
     await transport.sendMail({
       from: process.env.SMTP_FROM,
+      to: email,
