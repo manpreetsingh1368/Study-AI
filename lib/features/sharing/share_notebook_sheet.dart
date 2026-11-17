@@ -172,3 +172,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 DropdownMenu<int>(
                   initialSelection: days,
                   label: const Text('Link expires after'),
+                  onSelected: busy ? null : (v) => setState(() => days = v!),
