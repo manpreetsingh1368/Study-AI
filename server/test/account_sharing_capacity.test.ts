@@ -4,3 +4,4 @@ import { mkdtempSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { randomUUID, createHash } from "node:crypto";
+import Database from "better-sqlite3";
