@@ -124,3 +124,4 @@ export const productionOAuth: OAuthAdapter = {
           ? readFileSync(process.env.APPLE_PRIVATE_KEY_PATH, "utf8")
           : "")
       ).replace(/\\n/g, "\n");
+      secret = await new SignJWT({})
