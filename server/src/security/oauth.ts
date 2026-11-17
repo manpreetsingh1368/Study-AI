@@ -192,3 +192,4 @@ export function registerOAuthRoutes(
       const current = get(
         "SELECT created_at FROM sessions WHERE token_hash=?",
         sessionHash,
+      );
