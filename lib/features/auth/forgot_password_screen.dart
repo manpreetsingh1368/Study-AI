@@ -27,3 +27,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         'POST',
         '/auth/forgot-password',
         {'email': email.text.trim()},
+      );
