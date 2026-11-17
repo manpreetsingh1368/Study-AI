@@ -254,3 +254,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 for (final link in links)
                   ListTile(
                     contentPadding: EdgeInsets.zero,
+                    leading: Icon(
