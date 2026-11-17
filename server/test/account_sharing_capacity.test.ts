@@ -242,3 +242,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
     children.push(result.body.set);
   }
   assert.equal(
+    (
