@@ -229,3 +229,4 @@ export const notebookPreferences = sqliteTable("notebook_preferences", {
   sourceIds: text("source_ids").notNull(),
 });
 
+export const passwordResets = sqliteTable("password_resets", {
