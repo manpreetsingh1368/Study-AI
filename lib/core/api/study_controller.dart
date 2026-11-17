@@ -192,6 +192,7 @@ class StudyController extends ChangeNotifier {
           'flowId': flow,
           'verifier': proof,
         });
+        if (_socialProof != proof) return;
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
