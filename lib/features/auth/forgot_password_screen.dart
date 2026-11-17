@@ -60,3 +60,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             padding: const EdgeInsets.all(32),
             child: Form(
               key: form,
+              child: Column(
