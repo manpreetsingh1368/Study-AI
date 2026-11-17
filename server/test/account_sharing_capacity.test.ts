@@ -398,3 +398,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     verifier: flow.verifier,
   });
   assert.equal(complete.body.status, "complete");
+  assert.equal(complete.body.user.hasPassword, false);
