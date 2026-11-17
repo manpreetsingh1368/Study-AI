@@ -195,3 +195,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 if (url != null) ...[
                   const SizedBox(height: 20),
                   StudyCard(
+                    child: Column(
