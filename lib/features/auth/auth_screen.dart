@@ -131,6 +131,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                               ),
                               SizedBox(width: 12),
                               Expanded(
+                                child: Text(
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
