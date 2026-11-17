@@ -68,6 +68,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         ? 'Create your Study AI workspace.'
                         : 'Welcome back to Study AI.',
                     style: TextStyle(
+                      color: Theme.of(context).colorScheme.onSurfaceVariant,
                   ),
                   const SizedBox(height: 24),
                   Wrap(
