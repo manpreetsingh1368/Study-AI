@@ -253,6 +253,7 @@ void main() {
         try {
           final publicResponse = await (await reader.getUrl(sharedUri)).close();
           expect(publicResponse.statusCode, 200);
+          expect(
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
