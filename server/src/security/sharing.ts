@@ -25,3 +25,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         .object({
           expiresInDays: z.number().int().min(1).max(90).default(7),
           includeSourceNotes: z.boolean().default(false),
+          entryIds: z.array(z.uuid()).max(20).default([]),
