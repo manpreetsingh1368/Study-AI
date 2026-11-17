@@ -235,3 +235,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
   for (let i = 0; i < 50; i++) {
     const result = await call("POST", "/sets", a.token, {
       title: `Source ${i}`,
+      notes: "A source note.",
