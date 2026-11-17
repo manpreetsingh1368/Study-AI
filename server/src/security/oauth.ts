@@ -272,3 +272,4 @@ export function registerOAuthRoutes(
         .header("Referrer-Policy", "no-referrer");
       return reply.redirect(
         adapter.authorization(provider, { ...flow, state: q.state }),
+      );
