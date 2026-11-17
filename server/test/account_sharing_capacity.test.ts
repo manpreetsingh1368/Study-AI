@@ -465,3 +465,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
 });
 
 test("saved notes stop at 50, retry idempotently and release capacity after deletion", async (t) => {
+  const { call, register } = await setup(t);
