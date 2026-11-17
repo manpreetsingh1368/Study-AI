@@ -446,3 +446,4 @@ export function registerOAuthRoutes(
       })();
     },
   );
+  app.post("/auth/oauth/cancel", async (req) => {
