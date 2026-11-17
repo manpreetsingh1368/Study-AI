@@ -101,3 +101,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   child: const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Text(
