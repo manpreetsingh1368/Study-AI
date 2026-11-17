@@ -85,3 +85,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   onPressed: () => Navigator.pop(context),
                   icon: const Icon(Icons.close),
                 ),
+              ],
