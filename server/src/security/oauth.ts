@@ -313,3 +313,4 @@ export function registerOAuthRoutes(
           "<h1>You’re in control.</h1><p>Sign-in was cancelled. Return to the Study AI app.</p>",
         );
       }
+      // Claim the callback before awaiting provider I/O; codes cannot be replayed.
