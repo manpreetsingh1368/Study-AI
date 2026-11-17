@@ -70,6 +70,7 @@ export function createApp(
   app.register(rateLimit, { max: 120, timeWindow: 60000 });
   app.register(multipart, {
     limits: {
+      fileSize: FILE_PDF_BYTES(),
       files: 1,
       fields: 0,
       parts: 1,
