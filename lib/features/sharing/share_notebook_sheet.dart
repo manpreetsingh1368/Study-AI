@@ -243,3 +243,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 const SizedBox(height: 26),
                 Text(
                   'Manage existing links',
+                  style: Theme.of(context).textTheme.titleMedium,
