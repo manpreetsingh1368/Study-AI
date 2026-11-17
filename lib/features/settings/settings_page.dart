@@ -5,6 +5,7 @@ import '../../core/api/study_controller.dart';
 import '../../shared/components.dart';
 import 'identity_settings.dart';
 
+
 class SettingsPage extends StatefulWidget {
   final StudyController controller;
   final ThemeMode mode;
