@@ -37,3 +37,4 @@ async function setup(
   }
   async function register(email = "owner@example.com") {
     return (
+      await call("POST", "/auth/register", undefined, {
