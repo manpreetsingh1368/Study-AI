@@ -457,3 +457,4 @@ export function registerOAuthRoutes(
     );
     return { ok: true };
   });
+  app.get("/me/identities", async (req) => {
