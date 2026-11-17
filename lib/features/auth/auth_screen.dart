@@ -118,6 +118,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     children: [
                       Expanded(child: Divider()),
                       Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 12),
                   if (register) ...[
                     TextFormField(
                       controller: name,
