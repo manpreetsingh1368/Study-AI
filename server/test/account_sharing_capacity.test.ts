@@ -409,3 +409,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     ).status,
     400,
   );
+  const existing = await begin();
