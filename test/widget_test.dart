@@ -21,6 +21,7 @@ void main() {
         ),
       );
       await tester.pumpAndSettle();
+      expect(find.text('Google'), findsOneWidget);
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
