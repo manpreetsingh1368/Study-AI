@@ -175,6 +175,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                     style: TextStyle(
                                       fontSize: 10,
                                       color: accent,
+                                      letterSpacing: 2,
     ),
   );
   @override
