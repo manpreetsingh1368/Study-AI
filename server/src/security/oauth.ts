@@ -449,3 +449,4 @@ export function registerOAuthRoutes(
   app.post("/auth/oauth/cancel", async (req) => {
     const b = z
       .object({ flowId: z.uuid(), verifier: z.string().min(30).max(100) })
+      .parse(req.body);
