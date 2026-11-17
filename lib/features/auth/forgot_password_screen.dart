@@ -8,3 +8,4 @@ class ForgotPasswordScreen extends StatefulWidget {
   final StudyController controller;
   const ForgotPasswordScreen({super.key, required this.controller});
   @override
+  State<ForgotPasswordScreen> createState() => _ForgotPasswordScreenState();
