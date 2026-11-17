@@ -94,3 +94,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                         ? 'Enter a valid email'
                         : null,
                     onFieldSubmitted: (_) => busy ? null : submit(),
+                  ),
