@@ -295,6 +295,7 @@ export function createApp(
     if (!(await verify(u.password_hash, b.password)))
       fail(401, "Password is incorrect.");
     if (
+      !u.password_enabled &&
     const code = randomBytes(32).toString("base64url"),
       expiresAt = now() + 365 * 86400000;
     run(
