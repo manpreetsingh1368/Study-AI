@@ -175,7 +175,6 @@ export function createApp(
   ) {
     if (
       get(
-        "SELECT count(*) n FROM study_sets WHERE user_id=? AND deleted=0",
         uid,
       ).n >= plan(uid).sets
     )
