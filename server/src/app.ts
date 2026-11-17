@@ -983,6 +983,7 @@ export function createApp(
     run,
   });
   app.addHook("onClose", async () => {
+    await settleResetDelivery();
     db.close();
   });
   return app;
