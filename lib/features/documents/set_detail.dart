@@ -1182,6 +1182,7 @@ class _SetDetailState extends State<SetDetail> {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
