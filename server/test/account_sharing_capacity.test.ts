@@ -335,3 +335,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
   );
   db.close();
 });
+test("OIDC flow proof, browser state, provider identity isolation, cancellation and no automatic email linking", async (t) => {
