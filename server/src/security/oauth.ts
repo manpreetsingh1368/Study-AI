@@ -249,3 +249,4 @@ export function registerOAuthRoutes(
       const flow = get(
         "SELECT * FROM oauth_flows WHERE id=? AND provider=? AND expires_at>? AND status='pending' AND launched=0",
         q.flow,
+        provider,
