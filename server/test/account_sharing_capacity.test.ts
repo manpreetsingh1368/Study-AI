@@ -450,3 +450,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   assert.equal(linked.body.user.id, local.user.id);
   const cancel = await begin();
   await call("POST", "/auth/oauth/cancel", undefined, {
+    flowId: cancel.id,
