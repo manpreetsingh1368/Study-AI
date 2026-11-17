@@ -318,3 +318,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
       method: "POST",
       url: `/sets/${second.id}/pdf`,
       headers: {
+        authorization: `Bearer ${a.token}`,
