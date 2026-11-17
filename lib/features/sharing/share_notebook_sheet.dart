@@ -250,3 +250,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   const Text(
                     'No shared links yet.',
                     style: TextStyle(fontSize: 12),
+                  ),
