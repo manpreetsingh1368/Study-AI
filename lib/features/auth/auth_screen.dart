@@ -58,6 +58,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         decoration: BoxDecoration(
                           color: accent.withValues(alpha: .12),
                           borderRadius: BorderRadius.circular(14),
+                        ),
                   ),
                   const SizedBox(height: 26),
                   Text(
