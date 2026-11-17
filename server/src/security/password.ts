@@ -123,3 +123,4 @@ export function registerPasswordRoutes(
         );
         if (!reset)
           fail(
+            400,
