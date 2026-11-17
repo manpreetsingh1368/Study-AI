@@ -158,6 +158,7 @@ class _SetDetailState extends State<SetDetail> {
         );
         if (file == null) return;
         if ((await file.length() ?? 104857601) > 104857600) {
+          throw ApiException(413, 'Choose a PDF smaller than 100 MB.');
         }
         final source = await c.saveSet(
           file.name.replaceFirst(RegExp(r'\.pdf$', caseSensitive: false), ''),
