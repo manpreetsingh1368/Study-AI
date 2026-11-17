@@ -299,6 +299,7 @@ export function createApp(
         .parse(req.body);
     const signedIn = get(
       "SELECT created_at FROM sessions WHERE token_hash=?",
+      digest(req.headers.authorization!.slice(7)),
       fail(401, "Password is incorrect.");
     if (
       !u.password_enabled &&
