@@ -1171,6 +1171,7 @@ class _SetDetailState extends State<SetDetail> {
         limit = (value['pdfLimitBytes'] as num? ?? 2147483648).toDouble();
     final label = used >= 1073741824
         ? '${(used / 1073741824).toStringAsFixed(2)} GiB'
+        : used >= 1048576
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
