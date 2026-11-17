@@ -464,6 +464,7 @@ export function createApp(
     const temporary = join(uploads, `${id()}.pending`);
     let promoted = false,
       byteCount = 0,
+      signature = Buffer.alloc(0);
     try {
       await pipeline(
         part!.file,
