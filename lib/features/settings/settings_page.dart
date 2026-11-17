@@ -116,6 +116,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           '/me/password',
                           {'current': current.text, 'password': password.text},
                         );
+                        await widget.controller.logout(remote: false);
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               OutlinedButton.icon(
