@@ -351,3 +351,4 @@ export function registerOAuthRoutes(
             if (existing && existing.user_id !== flow.link_user_id)
               throw new Error(
                 "This identity belongs to another Study AI account.",
+              );
