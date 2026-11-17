@@ -81,3 +81,4 @@ export const productionOAuth: OAuthAdapter = {
   enabled: (provider) =>
     provider === "google"
       ? !!(
+          process.env.GOOGLE_CLIENT_ID &&
