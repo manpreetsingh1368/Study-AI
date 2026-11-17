@@ -648,6 +648,7 @@ class StudyController extends ChangeNotifier {
     }
     return result;
   }
+
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
