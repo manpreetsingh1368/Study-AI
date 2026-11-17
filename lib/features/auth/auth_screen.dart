@@ -56,6 +56,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     color: accent,
                     size: 42,
                   ),
+                  const SizedBox(height: 26),
                   Text(
                     register
                         ? 'Make room for\nyour next idea.'
