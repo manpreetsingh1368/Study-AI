@@ -33,6 +33,7 @@ class _StudyAIAppState extends ConsumerState<StudyAIApp> {
         if (c.user == null) {
           return [
                 '/login',
+                '/recovery',
               ? null
               : '/login';
         }
