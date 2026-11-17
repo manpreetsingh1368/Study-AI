@@ -189,3 +189,4 @@ export function registerOAuthRoutes(
     if (link) {
       owner = user(req);
       sessionHash = digest(req.headers.authorization.slice(7));
+      const current = get(
