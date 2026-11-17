@@ -43,6 +43,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       builder: (context, size) {
         final desktop = size.maxWidth >= 1000;
         final card = ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 460),
           child: StudyCard(
             padding: EdgeInsets.all(desktop ? 36 : 26),
             child: Form(
