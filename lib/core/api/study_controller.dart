@@ -509,6 +509,7 @@ class StudyController extends ChangeNotifier {
       'setId': sid,
       'baseVersion': existing?['version'] ?? 0,
       if (existing == null && parentNotebookId != null)
+        'parentNotebookId': parentNotebookId,
       'title': title,
       'notes': notes,
       'folder': folder,
