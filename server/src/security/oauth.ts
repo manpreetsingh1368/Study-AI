@@ -338,3 +338,4 @@ export function registerOAuthRoutes(
           );
           if (flow.link_user_id) {
             if (
+              !get(
