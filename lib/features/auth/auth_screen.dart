@@ -30,6 +30,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     try {
       final result = await c.request('GET', '/auth/options');
       if (mounted) {
+        setState(() => providers = Map<String, dynamic>.from(result));
   Future<void> submit() async {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
