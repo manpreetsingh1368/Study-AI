@@ -11,3 +11,4 @@ export function capacity(s: any, get: any) {
     pdfLimitBytes: NOTEBOOK_PDF_BYTES,
     fileLimitBytes: FILE_PDF_BYTES(),
     sources: get(
+      "SELECT count(*) n FROM study_sets WHERE parent_notebook_id=? AND deleted=0",
