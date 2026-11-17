@@ -613,6 +613,7 @@ export function createApp(
         pdf: Buffer | undefined;
       if (doc) {
         if (doc.bytes <= 15728640) pdf = readFileSync(join(uploads, doc.id));
+        else {
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
