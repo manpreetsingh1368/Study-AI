@@ -414,3 +414,4 @@ export function registerOAuthRoutes(
   }
   app.post(
     "/auth/oauth/complete",
+    { config: { rateLimit: { max: 90, timeWindow: 60000 } } },
