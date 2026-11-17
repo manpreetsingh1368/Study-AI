@@ -233,3 +233,4 @@ export function registerOAuthRoutes(
       { config: { rateLimit: { max: 10, timeWindow: 60000 } } },
       (req) => start(req, provider),
     );
+    app.post(
