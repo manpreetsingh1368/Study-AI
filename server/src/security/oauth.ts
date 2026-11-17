@@ -399,3 +399,4 @@ export function registerOAuthRoutes(
             : "The provider could not verify this sign-in. Start again in the app.";
         run(
           "UPDATE oauth_flows SET status='failed',error=? WHERE id=?",
+          safe,
