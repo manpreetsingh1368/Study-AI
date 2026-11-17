@@ -365,3 +365,4 @@ export function registerOAuthRoutes(
               "INSERT INTO users(id,email,name,password_hash,role,created_at,password_enabled) VALUES(?,?,?,?,?,?,0)",
               accountId,
               email,
+              identity.name.trim().slice(0, 100) || "Student",
