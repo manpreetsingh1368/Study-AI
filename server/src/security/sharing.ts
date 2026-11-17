@@ -134,3 +134,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         );
       const snapshot = JSON.parse(share.snapshot);
       return page(
+        reply,
