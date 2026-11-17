@@ -106,3 +106,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         style: TextStyle(fontWeight: FontWeight.w700),
                       ),
                       SizedBox(height: 8),
+                      Text(
