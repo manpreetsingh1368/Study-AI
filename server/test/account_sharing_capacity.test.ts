@@ -388,3 +388,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     400,
   );
   const callback = await app.inject({
+    method: "GET",
