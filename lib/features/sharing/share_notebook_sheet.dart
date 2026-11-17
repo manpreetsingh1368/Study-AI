@@ -77,3 +77,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 Expanded(
                   child: Text(
                     'Share your understanding',
+                    style: Theme.of(context).textTheme.titleLarge,
