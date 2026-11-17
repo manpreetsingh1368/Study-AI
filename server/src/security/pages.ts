@@ -7,3 +7,4 @@ export const escape = (value: unknown) =>
         c
       ]!,
   );
+export function page(reply: any, title: string, body: string, script = "") {
