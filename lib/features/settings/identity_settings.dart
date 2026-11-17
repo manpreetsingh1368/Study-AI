@@ -30,3 +30,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           identities = data['identities'];
           options = Map<String, dynamic>.from(config);
         });
+      }
