@@ -28,3 +28,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
     });
   } finally {
     transport.close();
+  }
