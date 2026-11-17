@@ -203,6 +203,7 @@ export function createApp(
       let ids: string[] = saved
         ? JSON.parse(saved.source_ids)
         : [parentNotebookId];
+      if (
     return sid;
   }
   const session = (u: any) => {
