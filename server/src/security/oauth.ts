@@ -34,3 +34,4 @@ export async function validateIdentityToken(
 ) {
   const { payload } = await jwtVerify(
     token,
+    verificationKey ?? (provider === "google" ? googleKeys : appleKeys),
