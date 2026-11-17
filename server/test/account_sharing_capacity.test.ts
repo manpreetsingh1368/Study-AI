@@ -120,3 +120,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     400,
   );
 });
+test("unconfigured reset delivery is explicit, never a fake sent email", async (t) => {
