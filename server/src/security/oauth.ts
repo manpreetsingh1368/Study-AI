@@ -57,3 +57,4 @@ export async function validateIdentityToken(
   if (payload.azp && payload.azp !== audience)
     throw new Error("Invalid authorized party.");
   if (
+    payload.nonce !== nonce ||
