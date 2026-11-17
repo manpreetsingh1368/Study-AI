@@ -102,6 +102,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
             b.setId,
           );
         }
+        if (b.kind !== "delete") change(b.setId, u.id);
       }
       const response = {
         set: b.kind === "delete" ? null : full(owned(u.id, b.setId)),
