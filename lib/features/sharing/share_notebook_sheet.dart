@@ -155,3 +155,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           : item['kind'] == 'faq'
                           ? 'FAQ'
                           : 'Source overview',
+                      maxLines: 2,
