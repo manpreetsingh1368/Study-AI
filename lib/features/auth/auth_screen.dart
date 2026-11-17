@@ -123,6 +123,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           const Row(
                             children: [
                               SizedBox(
+                                width: 17,
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
