@@ -73,6 +73,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   if (register) ...[
                     TextFormField(
                       controller: name,
+                      autofillHints: const [AutofillHints.name],
                       validator: (v) =>
                           v!.trim().isEmpty ? 'Enter your name' : null,
                     ),
