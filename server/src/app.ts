@@ -129,6 +129,7 @@ export function createApp(
       sid,
     );
     for (const record of [...children, { id: sid }]) {
+      run(
   function full(s: any) {
     return {
       ...s,
