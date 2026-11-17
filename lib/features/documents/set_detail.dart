@@ -489,6 +489,7 @@ class _SetDetailState extends State<SetDetail> {
                       label: const Text('Library'),
                     ),
                     const Spacer(),
+                    IconButton(
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
