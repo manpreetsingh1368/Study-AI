@@ -269,3 +269,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
   launched: integer("launched").notNull().default(0),
 });
 export const notebookShares = sqliteTable("notebook_shares", {
+  id: text("id").primaryKey(),
