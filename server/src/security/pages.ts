@@ -25,3 +25,4 @@ export function page(reply: any, title: string, body: string, script = "") {
 }
 export function publicBase() {
   return (
+    process.env.PUBLIC_BASE_URL ||
