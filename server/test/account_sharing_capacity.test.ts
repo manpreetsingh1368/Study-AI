@@ -186,3 +186,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
         b.token,
       )
     ).status,
+    404,
