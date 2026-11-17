@@ -250,6 +250,7 @@ class StudyController extends ChangeNotifier {
       await request('POST', '/notebooks/$notebookId/shares', {
         'includeSourceNotes': includeSourceNotes,
         'entryIds': entryIds,
+        'noteIds': noteIds,
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
