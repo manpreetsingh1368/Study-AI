@@ -24,3 +24,4 @@ export function page(reply: any, title: string, body: string, script = "") {
     );
 }
 export function publicBase() {
+  return (
