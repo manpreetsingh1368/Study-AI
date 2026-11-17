@@ -32,3 +32,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         setState(() {
           sent = true;
           delivery = result['deliveryAvailable'] == true;
+          message = delivery ? result['message'] : 'Email recovery isn’t configured on this server. Use your saved recovery code, or ask the server owner to configure SMTP.';
