@@ -227,6 +227,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                           const SizedBox(width: 14),
                                           Expanded(
                                             child: Text(
+                                              item.$2,
     ),
   );
   @override
