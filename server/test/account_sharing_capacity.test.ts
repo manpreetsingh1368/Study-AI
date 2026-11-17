@@ -26,3 +26,4 @@ async function setup(
     await app.close();
     rmSync(directory, { recursive: true, force: true });
   });
+  async function call(method: any, url: string, token?: string, payload?: any) {
