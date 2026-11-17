@@ -131,6 +131,7 @@ New files for this refinement:
 - `server/src/security/pages.ts`
 - `server/src/security/password.ts`
 - `server/src/security/sharing.ts`
+- `server/test/account_sharing_capacity.test.ts`
 Native setup changes include `linux/CMakeLists.txt`, `android/app/src/main/AndroidManifest.xml`, both macOS entitlement files, and Flutter-generated plugin registrants. Ignored native build caches and artifacts are excluded from commits.
 
 Build outputs: `build/linux/x64/release/bundle/` and `build/app/outputs/flutter-apk/app-debug.apk`.
