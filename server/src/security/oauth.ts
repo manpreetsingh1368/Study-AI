@@ -408,3 +408,4 @@ export function registerOAuthRoutes(
           "<h1>Let’s try again.</h1><p>Sign-in could not finish. Return to Study AI for details.</p>",
         );
       }
+    };
