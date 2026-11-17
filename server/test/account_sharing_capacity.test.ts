@@ -430,3 +430,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
       password: "owner-secure-password",
     })
   ).body;
+  const link = await begin("apple", local.token);
