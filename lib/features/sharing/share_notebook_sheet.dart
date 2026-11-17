@@ -262,3 +262,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       link['title'],
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
+                    ),
