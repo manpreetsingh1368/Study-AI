@@ -131,3 +131,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     onChanged: busy ? null : (v) => setState(() => source = v!),
                   ),
                 for (final item in book['notes'] ?? [])
+                  CheckboxListTile(
