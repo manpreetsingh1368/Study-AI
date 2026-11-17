@@ -213,6 +213,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                       'Your notes, ready across devices',
                                     ),
                                   ])
+                                    Padding(
     ),
   );
   @override
