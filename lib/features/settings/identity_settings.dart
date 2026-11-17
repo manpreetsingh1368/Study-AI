@@ -91,3 +91,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           'Connected sign-in methods',
           style: Theme.of(context).textTheme.titleLarge,
         ),
+        const SizedBox(height: 8),
