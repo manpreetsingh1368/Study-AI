@@ -618,6 +618,7 @@ export function createApp(
           const extracted = (await pdfPages(join(uploads, doc.id))).join("\n");
           if (extracted.length + notes.length > 100000)
             fail(
+              413,
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
