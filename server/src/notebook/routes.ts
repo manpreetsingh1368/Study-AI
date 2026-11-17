@@ -164,6 +164,7 @@ export function registerNotebookRoutes(
     const selectedBytes = sourceIds.reduce(
       (total: number, id: string) =>
         total +
+        (get("SELECT bytes FROM documents WHERE set_id=?", id)?.bytes || 0),
     const chunks: SourceChunk[] = [];
     let total = 0;
     for (const source of sources) {
