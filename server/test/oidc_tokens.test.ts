@@ -76,3 +76,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       validateIdentityToken("google", valid, "expected-nonce", pair.publicKey),
     );
     process.env.GOOGLE_CLIENT_ID = "google-test-client";
+    const noExpiry = await new SignJWT({
