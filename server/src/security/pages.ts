@@ -10,3 +10,4 @@ export const escape = (value: unknown) =>
 export function page(reply: any, title: string, body: string, script = "") {
   const nonce = randomBytes(18).toString("base64url");
   reply
+    .header("Cache-Control", "no-store")
