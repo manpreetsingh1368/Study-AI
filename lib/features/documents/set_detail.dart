@@ -224,6 +224,7 @@ class _SetDetailState extends State<SetDetail> {
           text.text.trim(),
           folder: widget.set['folder'] ?? '',
           parentNotebookId:
+              widget.set['parent_notebook_id'] ?? widget.set['id'],
         );
         if (mounted) setState(() => selected.add(source['id']));
       });
