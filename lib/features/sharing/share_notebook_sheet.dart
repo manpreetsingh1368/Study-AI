@@ -299,3 +299,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                 onPressed: busy
                                     ? null
                                     : () async {
+                                        setState(() => busy = true);
