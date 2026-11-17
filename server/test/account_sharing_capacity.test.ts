@@ -27,3 +27,4 @@ async function setup(
     rmSync(directory, { recursive: true, force: true });
   });
   async function call(method: any, url: string, token?: string, payload?: any) {
+    const result = await app.inject({
