@@ -423,3 +423,4 @@ export function registerOAuthRoutes(
         const flow = get(
           "SELECT * FROM oauth_flows WHERE id=? AND expires_at>?",
           b.flowId,
+          now(),
