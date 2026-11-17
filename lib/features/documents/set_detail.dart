@@ -1178,6 +1178,7 @@ class _SetDetailState extends State<SetDetail> {
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: accent.withValues(alpha: .06),
+        borderRadius: BorderRadius.circular(14),
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
