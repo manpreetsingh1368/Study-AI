@@ -372,6 +372,7 @@ export function createApp(
     const u = user(req),
       b = z
         .object({
+          password: z.string().max(128).optional(),
     const docs = all(
       "SELECT d.id FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.user_id=?",
       u.id,
