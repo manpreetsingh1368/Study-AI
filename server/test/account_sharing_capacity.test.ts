@@ -211,3 +211,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
         url: new URL(expired.body.url).pathname,
       })
     ).statusCode,
+    404,
