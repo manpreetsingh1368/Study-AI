@@ -111,3 +111,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       id,
     );
     return { ok: true };
+  });
