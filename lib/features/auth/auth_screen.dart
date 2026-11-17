@@ -210,6 +210,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                     ),
                                     (
                                       Icons.cloud_done_outlined,
+                                      'Your notes, ready across devices',
     ),
   );
   @override
