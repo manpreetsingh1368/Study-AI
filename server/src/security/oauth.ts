@@ -208,3 +208,4 @@ export function registerOAuthRoutes(
       pkce = randomBytes(32).toString("base64url"),
       launch = randomBytes(32).toString("base64url");
     run(
+      "INSERT INTO oauth_flows(id,provider,state_hash,nonce,pkce_verifier,client_challenge,expires_at,link_user_id,link_session_hash,launch_hash) VALUES(?,?,?,?,?,?,?,?,?,?)",
