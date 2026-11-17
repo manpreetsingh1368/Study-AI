@@ -125,6 +125,7 @@ export function createApp(
   function softDelete(sid: string, uid: string) {
     const current = owned(uid, sid);
     const children = all(
+      "SELECT id FROM study_sets WHERE parent_notebook_id=? AND deleted=0",
   function full(s: any) {
     return {
       ...s,
