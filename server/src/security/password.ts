@@ -144,3 +144,4 @@ export function registerPasswordRoutes(
   );
   app.get("/reset-password", async (_req, reply) =>
     page(
+      reply,
