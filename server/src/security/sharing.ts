@@ -39,3 +39,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       ).n >= 20
     )
       fail(403, "Revoke an existing link before creating more.");
+    const sections: any[] = [];
