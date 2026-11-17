@@ -9,3 +9,4 @@ class IdentitySettings extends StatefulWidget {
   @override
   State<IdentitySettings> createState() => _IdentitySettingsState();
 }
+
