@@ -278,3 +278,4 @@ export const notebookShares = sqliteTable("notebook_shares", {
   snapshot: text("snapshot").notNull(),
   createdAt: integer("created_at").notNull(),
   expiresAt: integer("expires_at").notNull(),
+  revokedAt: integer("revoked_at"),
