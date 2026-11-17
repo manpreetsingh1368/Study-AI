@@ -18,6 +18,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
   final form = GlobalKey<FormState>();
   bool register = false, busy = false;
   String? error;
+  Map<String, dynamic> providers = {};
   Future<void> submit() async {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
