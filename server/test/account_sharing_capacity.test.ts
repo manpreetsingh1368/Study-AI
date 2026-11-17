@@ -43,3 +43,4 @@ async function setup(
         password: "owner-secure-password",
       })
     ).body;
+  }
