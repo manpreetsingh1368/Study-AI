@@ -81,3 +81,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   ),
                 ),
                 IconButton(
+                  tooltip: 'Close sharing',
