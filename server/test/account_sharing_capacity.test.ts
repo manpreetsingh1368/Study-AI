@@ -372,3 +372,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   assert.equal(
     (
       await app.inject({
+        method: "GET",
