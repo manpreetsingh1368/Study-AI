@@ -323,3 +323,4 @@ export function registerOAuthRoutes(
           { type: argon2id },
         );
         db.transaction(() => {
+          const active = get(
