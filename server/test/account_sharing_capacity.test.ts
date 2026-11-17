@@ -143,3 +143,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
       notes: "NEVER_PUBLISH_THIS",
     })
   ).body.set;
+  assert.equal(
