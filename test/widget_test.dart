@@ -32,6 +32,7 @@ void main() {
       await tester.pumpWidget(const SizedBox());
       controller.dispose();
     });
+  }
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
