@@ -105,3 +105,4 @@ export function registerPasswordRoutes(
     },
   );
   app.post(
+    "/auth/reset-password",
