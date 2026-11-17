@@ -291,3 +291,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
     second = (
       await call("POST", "/sets", a.token, {
         title: "Next PDF",
+        notes: "",
