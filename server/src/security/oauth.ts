@@ -216,3 +216,4 @@ export function registerOAuthRoutes(
       pkce,
       body.challenge,
       now() + 600000,
+      owner?.id || null,
