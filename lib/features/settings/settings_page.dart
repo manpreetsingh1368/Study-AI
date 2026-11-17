@@ -155,6 +155,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                 TextButton.icon(
                                   onPressed: () => Clipboard.setData(
                                     ClipboardData(text: result['code']),
+                                  ),
                               ),
                             ],
                           ),
