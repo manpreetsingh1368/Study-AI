@@ -67,6 +67,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     register
                         ? 'Create your Study AI workspace.'
                         : 'Welcome back to Study AI.',
+                    style: TextStyle(
                   ),
                   const SizedBox(height: 24),
                   Wrap(
