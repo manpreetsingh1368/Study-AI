@@ -117,3 +117,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
                     onPressed: busy || options[provider] != true
                         ? null
                         : () => connect(provider),
+                    child: const Text('Connect'),
