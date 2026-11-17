@@ -48,3 +48,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         id,
         sid,
       );
+      if (!entry) fail(404, "A selected response is unavailable.");
