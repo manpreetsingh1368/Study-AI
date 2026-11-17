@@ -61,3 +61,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
             child: Form(
               key: form,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
