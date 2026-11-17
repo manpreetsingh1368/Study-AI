@@ -300,6 +300,7 @@ export function createApp(
         !signedIn ||
         signedIn.created_at < now() - 300000)
     )
+      fail(401, "Sign in again and confirm deletion to delete this account.");
     const code = randomBytes(32).toString("base64url"),
       expiresAt = now() + 365 * 86400000;
     run(
