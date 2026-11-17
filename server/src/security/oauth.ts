@@ -264,3 +264,4 @@ export function registerOAuthRoutes(
       run("UPDATE oauth_flows SET launched=1 WHERE id=?", flow.id);
       const secure = publicBase().startsWith("https://");
       reply
+        .header(
