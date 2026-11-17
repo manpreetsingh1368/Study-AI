@@ -122,6 +122,7 @@ export function createApp(
       s.deleted,
     );
   }
+  function softDelete(sid: string, uid: string) {
   function full(s: any) {
     return {
       ...s,
