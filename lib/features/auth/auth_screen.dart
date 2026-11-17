@@ -86,6 +86,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                               fontWeight: FontWeight.w700,
                               fontSize: 19,
                             ),
+                          ),
                   if (register) ...[
                     TextFormField(
                       controller: name,
