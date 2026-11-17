@@ -479,3 +479,4 @@ test("saved notes stop at 50, retry idempotently and release capacity after dele
     });
   for (const id of ids.slice(0, 50)) assert.equal((await save(id)).status, 200);
   assert.equal((await save(ids[0])).status, 200);
+  assert.equal((await save(ids[50])).status, 403);
