@@ -131,6 +131,7 @@ export function createApp(
     for (const record of [...children, { id: sid }]) {
       run(
         "UPDATE study_sets SET deleted=1,version=version+1,updated_at=? WHERE id=?",
+        now(),
   function full(s: any) {
     return {
       ...s,
