@@ -207,6 +207,7 @@ class StudyController extends ChangeNotifier {
       }
     } finally {
       if (!completed && flow != null) {
+        try {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
