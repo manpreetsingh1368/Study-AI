@@ -82,3 +82,4 @@ export function registerPasswordRoutes(
           now() + 1200000,
           now(),
         );
+      })();
