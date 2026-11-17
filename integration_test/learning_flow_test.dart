@@ -279,6 +279,7 @@ void main() {
         await tester.pumpWidget(const SizedBox());
         c.dispose();
         other.dispose();
+        await store.clear(c.account);
         await store.db.close();
         await otherStore.db.close();
         process.kill();
