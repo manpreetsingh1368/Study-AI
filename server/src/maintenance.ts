@@ -37,6 +37,7 @@ try {
         .run(now - retention * 86400000);
     sqlite.prepare("DELETE FROM oauth_flows WHERE expires_at<=?").run(now);
     sqlite.prepare("DELETE FROM password_resets WHERE expires_at<=?").run(now);
+    sqlite
     sqlite.prepare("DELETE FROM sessions WHERE expires_at<=?").run(now);
     sqlite.prepare("DELETE FROM recovery_codes WHERE expires_at<=?").run(now);
     sqlite
