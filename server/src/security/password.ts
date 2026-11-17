@@ -8,3 +8,4 @@ export type ResetDelivery = (email: string, url: string) => Promise<void>;
 export const smtpConfigured = () =>
   !!(process.env.SMTP_HOST && process.env.SMTP_FROM);
 export const sendReset: ResetDelivery = async (email, url) => {
+  const transport = nodemailer.createTransport({
