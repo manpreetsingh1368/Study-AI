@@ -230,3 +230,4 @@ export function registerOAuthRoutes(
   for (const provider of ["google", "apple"] as const) {
     app.post(
       `/auth/oauth/${provider}/start`,
+      { config: { rateLimit: { max: 10, timeWindow: 60000 } } },
