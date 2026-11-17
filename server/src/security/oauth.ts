@@ -352,3 +352,4 @@ export function registerOAuthRoutes(
               throw new Error(
                 "This identity belongs to another Study AI account.",
               );
+            accountId = flow.link_user_id;
