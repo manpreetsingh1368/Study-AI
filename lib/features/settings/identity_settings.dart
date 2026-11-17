@@ -6,3 +6,4 @@ import '../../shared/components.dart';
 class IdentitySettings extends StatefulWidget {
   final StudyController controller;
   const IdentitySettings({super.key, required this.controller});
+  @override
