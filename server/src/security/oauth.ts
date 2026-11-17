@@ -47,3 +47,4 @@ export async function validateIdentityToken(
       algorithms: ["RS256"],
       requiredClaims: ["exp", "iat", "sub", "nonce", "email", "email_verified"],
       maxTokenAge: "10m",
+      clockTolerance: 5,
