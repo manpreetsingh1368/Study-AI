@@ -611,6 +611,7 @@ export function createApp(
     try {
       let notes = s.notes,
         pdf: Buffer | undefined;
+      if (doc) {
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
