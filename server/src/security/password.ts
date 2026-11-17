@@ -79,3 +79,4 @@ export function registerPasswordRoutes(
           "INSERT INTO password_resets VALUES(?,?,?,NULL,?)",
           tokenHash,
           u.id,
+          now() + 1200000,
