@@ -642,6 +642,7 @@ class StudyController extends ChangeNotifier {
         ),
       );
     } else {
+      req.files.add(
     final response = await req
         .send()
         .then(http.Response.fromStream)
