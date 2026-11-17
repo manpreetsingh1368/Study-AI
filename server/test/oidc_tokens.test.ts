@@ -82,3 +82,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       email_verified: true,
     })
       .setProtectedHeader({ alg: "RS256" })
+      .setIssuer("https://accounts.google.com")
