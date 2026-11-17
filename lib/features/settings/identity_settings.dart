@@ -112,3 +112,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
                   : 'Not configured by the server owner',
             ),
             trailing: identities.any((i) => i['provider'] == provider)
+                ? const Icon(Icons.check_circle_outline, color: accent)
