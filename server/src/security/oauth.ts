@@ -185,3 +185,4 @@ export function registerOAuthRoutes(
       })
       .parse(req.body);
     let owner: any = null,
+      sessionHash: string | null = null;
