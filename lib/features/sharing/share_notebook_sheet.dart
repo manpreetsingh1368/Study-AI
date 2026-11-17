@@ -86,3 +86,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   icon: const Icon(Icons.close),
                 ),
               ],
+            ),
