@@ -227,3 +227,4 @@ export function registerOAuthRoutes(
       expiresAt: now() + 600000,
     };
   }
+  for (const provider of ["google", "apple"] as const) {
