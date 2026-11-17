@@ -113,3 +113,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             ),
             trailing: identities.any((i) => i['provider'] == provider)
                 ? const Icon(Icons.check_circle_outline, color: accent)
+                : OutlinedButton(
