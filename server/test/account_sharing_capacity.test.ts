@@ -401,3 +401,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   assert.equal(complete.body.user.hasPassword, false);
   assert.ok(complete.body.token);
   assert.equal(
+    (
