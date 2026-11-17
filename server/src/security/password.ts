@@ -39,3 +39,4 @@ export function registerPasswordRoutes(
   const pending = new Set<Promise<void>>();
   const digest = (s: string) => createHash("sha256").update(s).digest("hex");
   app.post(
+    "/auth/forgot-password",
