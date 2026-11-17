@@ -303,6 +303,7 @@ export function createApp(
     );
     if (
       u.password_enabled &&
+      (!b.password || !(await verify(u.password_hash, b.password)))
       fail(401, "Password is incorrect.");
     if (
       !u.password_enabled &&
