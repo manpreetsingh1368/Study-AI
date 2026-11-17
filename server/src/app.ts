@@ -616,6 +616,7 @@ export function createApp(
         else {
           const { pdfPages } = await import("./notebook/grounding.js");
           const extracted = (await pdfPages(join(uploads, doc.id))).join("\n");
+          if (extracted.length + notes.length > 100000)
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
