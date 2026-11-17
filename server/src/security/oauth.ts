@@ -212,3 +212,4 @@ export function registerOAuthRoutes(
       flowId,
       provider,
       digest(state),
+      nonce,
