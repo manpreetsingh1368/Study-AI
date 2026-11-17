@@ -239,6 +239,7 @@ void main() {
         await tester.ensureVisible(find.text('Create read-only link'));
         await tester.tap(find.text('Create read-only link'));
         await tester.pumpAndSettle();
+        expect(find.text('Your shareable link'), findsOneWidget);
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
