@@ -44,3 +44,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       sections.push({ title: "Notebook notes", text: s.notes });
     for (const id of [...new Set(b.entryIds)]) {
       const entry = get(
+        "SELECT * FROM notebook_entries WHERE id=? AND notebook_id=?",
