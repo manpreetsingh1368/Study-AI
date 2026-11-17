@@ -35,3 +35,4 @@ export function registerPasswordRoutes(
   c: any,
   delivery?: ResetDelivery,
 ) {
+  const { db, get, run, now, fail } = c;
