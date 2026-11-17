@@ -42,3 +42,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
     }
   }
 
+  Future<void> create() async {
