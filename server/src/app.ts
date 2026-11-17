@@ -123,6 +123,7 @@ export function createApp(
     );
   }
   function softDelete(sid: string, uid: string) {
+    const current = owned(uid, sid);
   function full(s: any) {
     return {
       ...s,
