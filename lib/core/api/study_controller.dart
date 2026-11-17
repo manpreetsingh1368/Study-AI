@@ -188,6 +188,7 @@ class StudyController extends ChangeNotifier {
       for (var attempt = 0; attempt < 300 && _socialProof == proof; attempt++) {
         await Future<void>.delayed(const Duration(seconds: 2));
         if (_socialProof != proof) return;
+        final status = await request('POST', '/auth/oauth/complete', {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
