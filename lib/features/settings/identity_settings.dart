@@ -97,3 +97,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           style: TextStyle(fontSize: 12),
         ),
         const SizedBox(height: 18),
+        for (final provider in ['google', 'apple'])
