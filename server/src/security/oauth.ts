@@ -65,3 +65,4 @@ export async function validateIdentityToken(
     throw new Error("Invalid identity nonce.");
   if (payload.email_verified !== true && payload.email_verified !== "true")
     throw new Error("A verified provider email is required.");
+  const email = z.email().max(254).parse(payload.email).toLowerCase();
