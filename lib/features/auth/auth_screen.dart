@@ -189,6 +189,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                   ),
                                   const SizedBox(height: 22),
                                   Text(
+                                    'Bring your sources. Follow your curiosity.\nBuild understanding that lasts.',
     ),
   );
   @override
