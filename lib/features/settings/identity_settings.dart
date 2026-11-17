@@ -74,3 +74,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         link: true,
         password: password,
       );
+      await load();
