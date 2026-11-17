@@ -14,3 +14,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
   Map<String, dynamic> options = {};
   List<dynamic> identities = [];
   bool busy = false;
+  String? error;
