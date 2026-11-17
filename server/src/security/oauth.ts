@@ -277,3 +277,4 @@ export function registerOAuthRoutes(
     const callback = async (req: any, reply: any) => {
       const b = z
         .object({
+          state: z.string().min(30).max(100),
