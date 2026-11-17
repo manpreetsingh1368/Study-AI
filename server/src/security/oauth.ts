@@ -444,3 +444,4 @@ export function registerOAuthRoutes(
         run("UPDATE oauth_flows SET status='consumed' WHERE id=?", flow.id);
         return { status: "complete", ...session(account) };
       })();
+    },
