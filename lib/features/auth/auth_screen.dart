@@ -185,6 +185,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                     style: Theme.of(context)
                                         .textTheme
                                         .headlineLarge
+                                        ?.copyWith(fontSize: 48, height: 1.15),
     ),
   );
   @override
