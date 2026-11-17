@@ -167,6 +167,7 @@ export function registerNotebookRoutes(
         (get("SELECT bytes FROM documents WHERE set_id=?", id)?.bytes || 0),
       0,
     );
+    if (selectedBytes > 2147483648)
     const chunks: SourceChunk[] = [];
     let total = 0;
     for (const source of sources) {
