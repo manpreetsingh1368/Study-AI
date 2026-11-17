@@ -117,3 +117,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     child: const Text('Use a saved recovery code instead'),
                   ),
                   TextButton(
+                    onPressed: () => context.go('/login'),
