@@ -222,6 +222,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                           Icon(
                                             item.$1,
                                             color: accent,
+                                            size: 22,
     ),
   );
   @override
