@@ -115,7 +115,6 @@ class _NotesEditorState extends State<NotesEditor> {
                   }
                   return;
                 }
-                final bytes = await file.readAsBytes();
                 if (mounted) {
                   setState(() {
                     droppedName = file.name;
