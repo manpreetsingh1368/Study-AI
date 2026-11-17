@@ -624,6 +624,7 @@ export function createApp(
           notes += "\n" + extracted;
         }
       }
+      const output = await (options.generate || generate)({ ...b, notes, pdf });
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
