@@ -9,3 +9,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
   app.get("/notebooks/:id/shares", async (req) => {
     const u = user(req),
       sid = (req.params as any).id;
+    owned(u.id, sid);
