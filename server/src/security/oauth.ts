@@ -123,3 +123,4 @@ export const productionOAuth: OAuthAdapter = {
         (process.env.APPLE_PRIVATE_KEY_PATH
           ? readFileSync(process.env.APPLE_PRIVATE_KEY_PATH, "utf8")
           : "")
+      ).replace(/\\n/g, "\n");
