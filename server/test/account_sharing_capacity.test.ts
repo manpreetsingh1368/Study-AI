@@ -437,3 +437,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     headers: {
       cookie: link.cookie,
       "content-type": "application/x-www-form-urlencoded",
+    },
