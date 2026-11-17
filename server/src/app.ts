@@ -971,6 +971,7 @@ export function createApp(
   registerOAuthRoutes(
     app,
     { db, user, publicUser, session, get, run, now, fail },
+    options.oauthAdapter,
   registerNotebookRoutes(
     app,
     { db, user, owned, get, all, run, plan, change, now, fail, uploads },
