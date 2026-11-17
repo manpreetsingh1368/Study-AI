@@ -12,3 +12,4 @@ class ShareNotebookSheet extends StatefulWidget {
     super.key,
     required this.controller,
     required this.notebook,
+  });
