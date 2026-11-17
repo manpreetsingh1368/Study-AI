@@ -271,3 +271,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     trailing: link['revoked_at'] != null
                         ? null
                         : Wrap(
+                            children: [
