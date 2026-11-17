@@ -231,6 +231,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                               style: const TextStyle(
                                                 fontSize: 13,
                                               ),
+                                            ),
     ),
   );
   @override
