@@ -70,3 +70,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(24, 12, 14, 12),
+            child: Row(
