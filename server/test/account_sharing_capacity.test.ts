@@ -485,3 +485,4 @@ test("saved notes stop at 50, retry idempotently and release capacity after dele
       .status,
     200,
   );
+  assert.equal((await save(ids[50])).status, 200);
