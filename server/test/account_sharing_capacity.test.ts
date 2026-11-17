@@ -393,3 +393,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     headers: { cookie: flow.cookie },
   });
   assert.equal(callback.statusCode, 200);
+  const complete = await call("POST", "/auth/oauth/complete", undefined, {
