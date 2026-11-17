@@ -27,3 +27,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
   @override
   void initState() {
     super.initState();
+    load();
