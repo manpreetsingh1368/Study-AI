@@ -190,3 +190,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           c.offline ||
                           (!source && notes.isEmpty && entries.isEmpty)
                       ? null
+                      : create,
