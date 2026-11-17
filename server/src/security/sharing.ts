@@ -41,3 +41,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       fail(403, "Revoke an existing link before creating more.");
     const sections: any[] = [];
     if (b.includeSourceNotes && s.notes.trim())
+      sections.push({ title: "Notebook notes", text: s.notes });
