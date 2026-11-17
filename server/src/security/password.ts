@@ -94,3 +94,4 @@ export function registerPasswordRoutes(
           run("DELETE FROM password_resets WHERE token_hash=?", tokenHash);
           run(
             "INSERT INTO application_errors VALUES(?,?,?)",
+            randomBytes(16).toString("hex"),
