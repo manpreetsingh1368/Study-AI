@@ -156,6 +156,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           ),
                         );
                       }),
+                icon: const Icon(Icons.key_outlined),
             const SizedBox(height: 12),
             OutlinedButton(
               onPressed: busy
