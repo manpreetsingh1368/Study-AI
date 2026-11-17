@@ -316,3 +316,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                             );
                                           }
                                         } finally {
+                                          if (mounted) {
