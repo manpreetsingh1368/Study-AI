@@ -132,3 +132,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   void dispose() {
     email.dispose();
     super.dispose();
+  }
