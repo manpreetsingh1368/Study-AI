@@ -43,3 +43,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       password = await showDialog<String>(
         context: context,
         builder: (ctx) => AlertDialog(
+          title: Text('Connect ${provider == 'google' ? 'Google' : 'Apple'}'),
