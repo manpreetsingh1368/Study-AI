@@ -330,7 +330,6 @@ export function createApp(
         if (!recovery)
           fail(401, "Email or recovery code is invalid or expired.");
         run(
-          "UPDATE users SET password_hash=? WHERE id=?",
           passwordHash,
           recovery.user_id,
         );
