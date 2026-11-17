@@ -44,6 +44,7 @@ class LocalStore {
 
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
+      'pdf_files',
     final rows = await db.query(
       'pdf_cache',
       where: 'account=? AND id=?',
