@@ -159,3 +159,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       overflow: TextOverflow.ellipsis,
                     ),
                     subtitle: const Text('Includes its source excerpts'),
+                    value: entries.contains(item['id']),
