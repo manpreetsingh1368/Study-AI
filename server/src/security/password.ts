@@ -122,3 +122,4 @@ export function registerPasswordRoutes(
           now(),
         );
         if (!reset)
+          fail(
