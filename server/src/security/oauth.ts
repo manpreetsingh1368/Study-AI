@@ -172,3 +172,4 @@ export function registerOAuthRoutes(
     apple: adapter.enabled("apple"),
     passwordReset: resetConfigured(),
   }));
+  async function start(req: any, provider: Provider, link = false) {
