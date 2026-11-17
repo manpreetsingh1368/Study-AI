@@ -185,3 +185,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 PrimaryActionButton(
                   label: busy ? 'Creating link…' : 'Create read-only link',
                   icon: Icons.link_rounded,
+                  onPressed:
