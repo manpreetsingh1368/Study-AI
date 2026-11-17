@@ -100,6 +100,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           label: const Text('Apple'),
                         ),
                       ),
+                    ],
                   if (register) ...[
                     TextFormField(
                       controller: name,
