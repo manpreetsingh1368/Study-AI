@@ -462,6 +462,7 @@ export function createApp(
     if (get("SELECT id FROM documents WHERE id=?", did))
       fail(409, "Document identifier already used.");
     const temporary = join(uploads, `${id()}.pending`);
+    let promoted = false,
     try {
       await pipeline(
         part!.file,
