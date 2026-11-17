@@ -119,7 +119,6 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Change password and revoke all sessions'),
             ),
             const SizedBox(height: 12),
-                      final result = await widget.controller.request(
                         'POST',
                         '/me/recovery',
                         {'password': current.text},
