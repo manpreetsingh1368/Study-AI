@@ -89,3 +89,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     decoration: const InputDecoration(
                       labelText: 'Account email',
                       prefixIcon: Icon(Icons.alternate_email),
+                    ),
