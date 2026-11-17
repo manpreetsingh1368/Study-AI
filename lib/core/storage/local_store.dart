@@ -228,6 +228,7 @@ class LocalStore {
   Future<void> clear(String account) async {
     final files = await db.query(
       'pdf_files',
+      where: 'account=?',
     await db.delete('pdf_cache', where: 'account=?', whereArgs: [account]);
     await db.delete('uploads', where: 'account=?', whereArgs: [account]);
     await db.delete('cache', where: 'account=?', whereArgs: [account]);
