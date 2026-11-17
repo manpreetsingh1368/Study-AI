@@ -43,3 +43,4 @@ export function registerPasswordRoutes(
     { config: { rateLimit: { max: 5, timeWindow: 60000 } } },
     async (req) => {
       const b = z
+        .object({
