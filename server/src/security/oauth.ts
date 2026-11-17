@@ -184,3 +184,4 @@ export function registerOAuthRoutes(
         password: z.string().max(128).optional(),
       })
       .parse(req.body);
+    let owner: any = null,
