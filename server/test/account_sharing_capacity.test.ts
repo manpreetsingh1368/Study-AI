@@ -358,3 +358,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
       linkToken,
       { challenge: digest(verifier), password: "owner-secure-password" },
     );
+    assert.equal(start.status, 200);
