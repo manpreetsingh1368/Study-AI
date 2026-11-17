@@ -671,6 +671,7 @@ class StudyController extends ChangeNotifier {
       'filename': name,
       'bytes': length,
       'pending': true,
+    };
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
