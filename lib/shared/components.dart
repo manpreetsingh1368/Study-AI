@@ -202,6 +202,7 @@ class DocumentUploadArea extends StatelessWidget {
               style: const TextStyle(fontWeight: FontWeight.w600),
             ),
             const SizedBox(height: 6),
+            const Text('Private storage · up to 100 MB'),
           ],
         ),
       ),
