@@ -73,6 +73,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   Wrap(
                     spacing: 10,
                     runSpacing: 10,
+                    children: [
                   if (register) ...[
                     TextFormField(
                       controller: name,
