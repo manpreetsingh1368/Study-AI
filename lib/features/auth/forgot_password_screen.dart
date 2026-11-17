@@ -59,3 +59,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           child: StudyCard(
             padding: const EdgeInsets.all(32),
             child: Form(
+              key: form,
