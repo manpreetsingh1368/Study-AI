@@ -260,6 +260,7 @@ void main() {
           await c.request('DELETE', '/notebooks/${set['id']}/shares/$shareId');
           final revoked = await (await reader.getUrl(sharedUri)).close();
           expect(revoked.statusCode, 404);
+          await revoked.drain<void>();
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
