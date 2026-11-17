@@ -220,6 +220,7 @@ class StudyController extends ChangeNotifier {
         _socialProof = null;
         notifyListeners();
       }
+    }
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
