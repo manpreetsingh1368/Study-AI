@@ -6,3 +6,4 @@ import { tmpdir } from "node:os";
 import { randomUUID, createHash } from "node:crypto";
 import Database from "better-sqlite3";
 import { PDFDocument } from "pdf-lib";
+import { createApp } from "../src/app.js";
