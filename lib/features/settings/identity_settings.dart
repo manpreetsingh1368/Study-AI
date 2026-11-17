@@ -12,3 +12,4 @@ class IdentitySettings extends StatefulWidget {
 
 class _IdentitySettingsState extends State<IdentitySettings> {
   Map<String, dynamic> options = {};
+  List<dynamic> identities = [];
