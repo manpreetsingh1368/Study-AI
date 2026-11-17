@@ -9,3 +9,4 @@ import { readFileSync } from "node:fs";
 import { hash, verify, argon2id } from "argon2";
 import { createRemoteJWKSet, jwtVerify, SignJWT, importPKCS8 } from "jose";
 import { z } from "zod";
+import { page, publicBase } from "./pages.js";
