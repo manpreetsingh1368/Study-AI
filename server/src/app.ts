@@ -456,7 +456,6 @@ export function createApp(
     const part = await req.file();
     if (!part || part.mimetype !== "application/pdf")
       fail(400, "Select a PDF document.");
-    if (bytes.subarray(0, 5).toString() !== "%PDF-")
       fail(400, "Invalid PDF signature.");
     if (get("SELECT id FROM documents WHERE id=?", did))
       fail(409, "Document identifier already used.");
