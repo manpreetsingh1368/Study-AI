@@ -486,6 +486,7 @@ export function createApp(
         )
           fail(403, "Storage limit reached.");
         const currentCapacity = capacity(current, get);
+        if (
         run(
           "INSERT INTO documents VALUES(?,?,?,?) ON CONFLICT(set_id) DO UPDATE SET id=excluded.id,filename=excluded.filename,bytes=excluded.bytes",
           did,
