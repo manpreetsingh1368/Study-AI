@@ -157,3 +157,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           : 'Source overview',
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
+                    ),
