@@ -100,3 +100,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     delivery
                         ? Text(message!, style: const TextStyle(height: 1.7))
                         : ErrorState(message: message!),
+                    const SizedBox(height: 18),
