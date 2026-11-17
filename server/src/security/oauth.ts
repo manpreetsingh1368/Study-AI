@@ -203,3 +203,4 @@ export function registerOAuthRoutes(
         fail(401, "Sign in again before connecting another provider.");
     }
     const flowId = randomUUID(),
+      state = randomBytes(32).toString("base64url"),
