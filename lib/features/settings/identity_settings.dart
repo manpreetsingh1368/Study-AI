@@ -27,3 +27,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           config = await widget.controller.request('GET', '/auth/options');
       if (mounted) {
         setState(() {
+          identities = data['identities'];
