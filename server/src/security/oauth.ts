@@ -467,3 +467,4 @@ export function registerOAuthRoutes(
         .all(u.id),
       hasPassword: !!u.password_enabled,
       user: publicUser(u),
+    };
