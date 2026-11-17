@@ -146,3 +146,4 @@ export const productionOAuth: OAuthAdapter = {
     if (provider === "google") body.set("code_verifier", flow.pkce_verifier);
     const response = await fetch(
       provider === "google"
+        ? "https://oauth2.googleapis.com/token"
