@@ -20,6 +20,7 @@ class LocalStore {
       version: 2,
       onUpgrade: (db, oldVersion, _) async {
         if (oldVersion < 2) {
+          await createDocumentTables(db);
       },
       onCreate: (db, _) async {
         await db.execute(
