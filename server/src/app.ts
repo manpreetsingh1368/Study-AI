@@ -401,6 +401,7 @@ export function createApp(
         b.notes,
         undefined,
         b.folder,
+        b.parentNotebookId || null,
     )();
     reply.code(201);
     return { set: full(owned(u.id, sid)) };
