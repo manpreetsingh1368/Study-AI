@@ -639,6 +639,7 @@ class StudyController extends ChangeNotifier {
           await file.length(),
           filename: upload['name'] as String,
           contentType: http.MediaType('application', 'pdf'),
+        ),
     final response = await req
         .send()
         .then(http.Response.fromStream)
