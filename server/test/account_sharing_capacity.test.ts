@@ -444,3 +444,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     }).toString(),
   });
   const linked = await call("POST", "/auth/oauth/complete", undefined, {
+    flowId: link.id,
