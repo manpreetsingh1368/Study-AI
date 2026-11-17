@@ -142,3 +142,4 @@ export function registerPasswordRoutes(
       return { ok: true };
     },
   );
+  app.get("/reset-password", async (_req, reply) =>
