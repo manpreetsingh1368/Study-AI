@@ -22,6 +22,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
   StudyController get c => ref.read(studyProvider);
   @override
   void initState() {
+    super.initState();
   Future<void> submit() async {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
