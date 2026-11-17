@@ -361,3 +361,4 @@ export function registerOAuthRoutes(
                 "An account already uses this email. Sign in with its password, then connect this provider in Settings.",
               );
             accountId = randomUUID();
+            run(
