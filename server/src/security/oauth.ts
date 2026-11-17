@@ -321,3 +321,4 @@ export function registerOAuthRoutes(
         const randomPassword = await hash(
           randomBytes(48).toString("base64url"),
           { type: argon2id },
+        );
