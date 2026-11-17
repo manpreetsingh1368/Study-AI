@@ -14,3 +14,4 @@ class ShareNotebookSheet extends StatefulWidget {
     required this.notebook,
   });
   @override
+  State<ShareNotebookSheet> createState() => _ShareNotebookSheetState();
