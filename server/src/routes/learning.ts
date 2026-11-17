@@ -76,7 +76,6 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
           );
         if (!b.title || b.notes === undefined)
           fail(400, "Title and notes are required.");
-        newSet(u.id, b.title, b.notes, b.setId, b.folder);
       } else {
         const s = owned(u.id, b.setId);
         if (s.version !== b.baseVersion)
