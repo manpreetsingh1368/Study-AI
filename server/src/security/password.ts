@@ -90,3 +90,4 @@ export function registerPasswordRoutes(
             `${publicBase()}/reset-password#token=${token}`,
           ),
         )
+        .catch(() => {
