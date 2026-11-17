@@ -240,6 +240,7 @@ void main() {
         await tester.tap(find.text('Create read-only link'));
         await tester.pumpAndSettle();
         expect(find.text('Your shareable link'), findsOneWidget);
+        final shares = await c.request('GET', '/notebooks/${set['id']}/shares');
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
