@@ -148,3 +148,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   CheckboxListTile(
                     contentPadding: EdgeInsets.zero,
                     title: Text(
+                      item['kind'] == 'chat'
