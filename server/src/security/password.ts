@@ -110,3 +110,4 @@ export function registerPasswordRoutes(
     async (req) => {
       const b = z
         .object({
+          token: z.string().min(30).max(100),
