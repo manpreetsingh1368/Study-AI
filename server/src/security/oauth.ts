@@ -307,3 +307,4 @@ export function registerOAuthRoutes(
           "Sign-in was cancelled. Try again when ready.",
           flow.id,
         );
+        return page(
