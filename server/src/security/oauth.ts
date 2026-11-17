@@ -425,3 +425,4 @@ export function registerOAuthRoutes(
           b.flowId,
           now(),
         );
+        const proof = digest(b.verifier);
