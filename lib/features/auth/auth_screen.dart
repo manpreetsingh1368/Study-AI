@@ -23,6 +23,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     setState(() => busy = true);
     try {
       await c.authenticate(
+        register: register,
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
