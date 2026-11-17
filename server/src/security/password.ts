@@ -126,3 +126,4 @@ export function registerPasswordRoutes(
             400,
             "This reset link is invalid or expired. Request a new one.",
           );
+        run(
