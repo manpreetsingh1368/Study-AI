@@ -80,3 +80,4 @@ export async function validateIdentityToken(
 export const productionOAuth: OAuthAdapter = {
   enabled: (provider) =>
     provider === "google"
+      ? !!(
