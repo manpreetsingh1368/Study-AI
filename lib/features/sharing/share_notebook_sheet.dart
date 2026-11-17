@@ -132,3 +132,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   ),
                 for (final item in book['notes'] ?? [])
                   CheckboxListTile(
+                    contentPadding: EdgeInsets.zero,
