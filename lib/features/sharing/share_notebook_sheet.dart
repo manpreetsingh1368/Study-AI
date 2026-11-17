@@ -35,3 +35,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
       final data = await c.request(
         'GET',
         '/notebooks/${widget.notebook['id']}/shares',
+      );
