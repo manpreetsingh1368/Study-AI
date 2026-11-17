@@ -182,3 +182,4 @@ export function registerOAuthRoutes(
       .object({
         challenge: z.string().regex(/^[a-f0-9]{64}$/),
         password: z.string().max(128).optional(),
+      })
