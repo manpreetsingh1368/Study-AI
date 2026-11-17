@@ -169,6 +169,7 @@ class StudyController extends ChangeNotifier {
     var completed = false;
     try {
       final result = await request(
+        'POST',
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
