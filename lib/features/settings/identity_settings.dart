@@ -68,3 +68,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       if (password == null) return;
     }
     setState(() => busy = true);
+    try {
