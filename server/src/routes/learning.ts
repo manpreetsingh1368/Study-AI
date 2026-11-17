@@ -84,6 +84,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
             409,
             "This study set changed on another device. Both versions have been preserved.",
           );
+        if (b.kind === "delete") softDelete(b.setId, u.id);
         else {
           if (!b.title || b.notes === undefined)
             fail(400, "Title and notes are required.");
