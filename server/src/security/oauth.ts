@@ -311,3 +311,4 @@ export function registerOAuthRoutes(
           reply,
           "Sign-in cancelled",
           "<h1>You’re in control.</h1><p>Sign-in was cancelled. Return to the Study AI app.</p>",
+        );
