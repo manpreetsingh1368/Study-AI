@@ -129,3 +129,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     ),
                     value: source,
                     onChanged: busy ? null : (v) => setState(() => source = v!),
+                  ),
