@@ -398,6 +398,7 @@ export function createApp(
       newSet(
         u.id,
         b.title,
+        b.notes,
     )();
     reply.code(201);
     return { set: full(owned(u.id, sid)) };
