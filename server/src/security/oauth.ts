@@ -360,3 +360,4 @@ export function registerOAuthRoutes(
               throw new Error(
                 "An account already uses this email. Sign in with its password, then connect this provider in Settings.",
               );
+            accountId = randomUUID();
