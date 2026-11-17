@@ -199,3 +199,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
+                          'Your shareable link',
