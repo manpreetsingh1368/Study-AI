@@ -468,3 +468,4 @@ export function registerOAuthRoutes(
       hasPassword: !!u.password_enabled,
       user: publicUser(u),
     };
+  });
