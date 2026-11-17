@@ -79,3 +79,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
     const noExpiry = await new SignJWT({
       nonce: "expected-nonce",
       email: "student@example.com",
+      email_verified: true,
