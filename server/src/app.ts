@@ -466,6 +466,7 @@ export function createApp(
     let promoted = false;
     try {
       await pipeline(
+        part!.file,
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
