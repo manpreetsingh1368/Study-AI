@@ -34,6 +34,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       }
     } catch (_) {}
   }
+
   Future<void> submit() async {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
