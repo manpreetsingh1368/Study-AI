@@ -14,3 +14,4 @@ export function capacity(s: any, get: any) {
       "SELECT count(*) n FROM study_sets WHERE parent_notebook_id=? AND deleted=0",
       root,
     ).n,
+    pdfBytes: get(
