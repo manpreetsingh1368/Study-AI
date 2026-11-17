@@ -58,3 +58,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
               child: const Text('Cancel'),
             ),
             FilledButton(
+              onPressed: () => Navigator.pop(ctx, controller.text),
