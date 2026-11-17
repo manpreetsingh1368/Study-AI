@@ -75,3 +75,4 @@ export async function validateIdentityToken(
         : provider === "apple"
           ? "Student"
           : email.split("@")[0],
+  };
