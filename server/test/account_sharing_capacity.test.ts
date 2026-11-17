@@ -50,3 +50,4 @@ async function setup(
     register,
     directory,
     advance: (time: number) => (clock += time),
+  };
