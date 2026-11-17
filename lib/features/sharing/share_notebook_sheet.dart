@@ -24,3 +24,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
   String? error, url;
   List<dynamic> links = [];
   StudyController get c => widget.controller;
+  @override
