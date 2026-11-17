@@ -218,3 +218,4 @@ export function registerOAuthRoutes(
       now() + 600000,
       owner?.id || null,
       sessionHash,
+      digest(launch),
