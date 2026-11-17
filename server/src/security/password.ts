@@ -97,3 +97,4 @@ export function registerPasswordRoutes(
             randomBytes(16).toString("hex"),
             "RESET_DELIVERY_FAILED",
             now(),
+          );
