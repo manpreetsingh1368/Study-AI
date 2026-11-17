@@ -440,3 +440,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     },
     payload: new URLSearchParams({
       state: link.state,
+      code: "local",
