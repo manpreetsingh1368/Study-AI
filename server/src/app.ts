@@ -53,6 +53,7 @@ export function createApp(
     generate?: (i: GenerationInput) => Promise<Generated>;
     now?: () => number;
     resetDelivery?: ResetDelivery;
+    oauthAdapter?: OAuthAdapter;
     notebookGenerate?: (input: NotebookInput) => Promise<NotebookOutput>;
   } = {},
 ) {
