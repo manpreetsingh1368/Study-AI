@@ -443,3 +443,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
       code: "local",
     }).toString(),
   });
+  const linked = await call("POST", "/auth/oauth/complete", undefined, {
