@@ -269,3 +269,4 @@ export function registerOAuthRoutes(
           `study_oauth_${flow.id.replaceAll("-", "")}=${q.key}; HttpOnly; Path=/auth/oauth/${provider}; Max-Age=600; SameSite=${provider === "apple" ? "None" : "Lax"}${secure ? "; Secure" : ""}`,
         )
         .header("Cache-Control", "no-store")
+        .header("Referrer-Policy", "no-referrer");
