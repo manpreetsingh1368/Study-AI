@@ -116,3 +116,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
                 : OutlinedButton(
                     onPressed: busy || options[provider] != true
                         ? null
+                        : () => connect(provider),
