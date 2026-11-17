@@ -142,6 +142,7 @@ class _NotesEditorState extends State<NotesEditor> {
                           if ((await result.single.length() ?? 10485761) >
                               10485760) {
                             setState(
+                              () => error = 'Choose a PDF smaller than 100 MB.',
                             );
                           } else {
                             setState(() {
