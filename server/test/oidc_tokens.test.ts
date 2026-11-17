@@ -30,3 +30,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       )
       .setSubject("stable-provider-subject")
       .setIssuedAt()
+      .setExpirationTime("5m")
