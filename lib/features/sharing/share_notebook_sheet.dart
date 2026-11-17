@@ -273,3 +273,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         : Wrap(
                             children: [
                               IconButton(
+                                tooltip: 'Copy saved link',
