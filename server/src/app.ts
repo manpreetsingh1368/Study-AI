@@ -136,6 +136,7 @@ export function createApp(
       );
       change(record.id, uid);
     }
+    if (current.parent_notebook_id) change(current.parent_notebook_id, uid);
   function full(s: any) {
     return {
       ...s,
