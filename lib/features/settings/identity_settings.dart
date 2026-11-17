@@ -26,3 +26,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       final data = await widget.controller.request('GET', '/me/identities'),
           config = await widget.controller.request('GET', '/auth/options');
       if (mounted) {
+        setState(() {
