@@ -23,6 +23,7 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.text('Google'), findsOneWidget);
       expect(find.text('Apple'), findsOneWidget);
+      expect(tester.takeException(), isNull);
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
