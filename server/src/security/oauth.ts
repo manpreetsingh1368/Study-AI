@@ -139,3 +139,4 @@ export const productionOAuth: OAuthAdapter = {
           ? process.env.GOOGLE_CLIENT_ID!
           : process.env.APPLE_CLIENT_ID!,
       client_secret: secret,
+      code,
