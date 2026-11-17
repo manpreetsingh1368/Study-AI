@@ -77,3 +77,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       sections.push({
         title: note.title,
         text: note.text,
+        citations: JSON.parse(note.citations),
