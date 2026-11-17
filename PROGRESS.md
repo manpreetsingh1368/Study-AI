@@ -21,6 +21,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 
 ## Identity, sharing and capacity refinement
 
+- Responsive sign-in design, password visibility, forgot-password form and browser sign-in progress/cancellation. Google and Apple buttons reflect server configuration; Settings supports explicit password-confirmed provider linking. Provider-only accounts can set a password by email.
 ## Verification
 
 - `flutter analyze`: clean.
