@@ -126,3 +126,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             child: const Text('Cancel browser sign-in'),
           ),
         if (error != null) ErrorState(message: error!),
+      ],
