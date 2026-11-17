@@ -368,3 +368,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     const cookie = String(browser.headers["set-cookie"]).split(";")[0];
     return { id: start.body.flowId, verifier, state, cookie };
   }
+  const flow = await begin();
