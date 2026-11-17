@@ -251,6 +251,7 @@ void main() {
             .replace(host: '127.0.0.1', port: port);
         final reader = HttpClient();
         try {
+          final publicResponse = await (await reader.getUrl(sharedUri)).close();
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
