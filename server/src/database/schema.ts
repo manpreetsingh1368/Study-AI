@@ -251,3 +251,4 @@ export const oauthIdentities = sqliteTable(
   (table) => [primaryKey({ columns: [table.provider, table.subject] })],
 );
 export const oauthFlows = sqliteTable("oauth_flows", {
+  id: text("id").primaryKey(),
