@@ -309,3 +309,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                             setState(() => url = null);
                                           }
                                           await load();
+                                        } catch (e) {
