@@ -62,3 +62,4 @@ export function registerPasswordRoutes(
       if (
         get(
           "SELECT token_hash FROM password_resets WHERE user_id=? AND created_at>?",
+          u.id,
