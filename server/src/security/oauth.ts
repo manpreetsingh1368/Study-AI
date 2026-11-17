@@ -152,3 +152,4 @@ export const productionOAuth: OAuthAdapter = {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body,
+        signal: AbortSignal.timeout(15000),
