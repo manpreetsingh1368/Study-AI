@@ -40,3 +40,4 @@ async function setup(
       await call("POST", "/auth/register", undefined, {
         name: "Owner",
         email,
+        password: "owner-secure-password",
