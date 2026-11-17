@@ -157,6 +157,7 @@ class _SetDetailState extends State<SetDetail> {
           allowedExtensions: ['pdf'],
         );
         if (file == null) return;
+        if ((await file.length() ?? 104857601) > 104857600) {
         }
         final source = await c.saveSet(
           file.name.replaceFirst(RegExp(r'\.pdf$', caseSensitive: false), ''),
