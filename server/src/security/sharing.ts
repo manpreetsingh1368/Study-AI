@@ -128,3 +128,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       );
       if (!share)
         return page(
+          reply.code(404),
