@@ -258,6 +258,7 @@ class StudyController extends ChangeNotifier {
       key: 'share:$account:${result['id']}',
       value: result['url'],
     );
+    return result;
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
