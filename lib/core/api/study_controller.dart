@@ -255,6 +255,7 @@ class StudyController extends ChangeNotifier {
       }),
     );
     await secure.write(
+      key: 'share:$account:${result['id']}',
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
