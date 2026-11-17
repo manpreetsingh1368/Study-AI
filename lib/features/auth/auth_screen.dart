@@ -74,6 +74,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                             fontSize: 22,
                             letterSpacing: -.6,
                           ),
+                        ),
                   ),
                   const SizedBox(height: 26),
                   Text(
