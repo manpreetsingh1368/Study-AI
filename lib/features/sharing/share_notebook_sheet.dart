@@ -67,3 +67,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
     return SafeArea(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
