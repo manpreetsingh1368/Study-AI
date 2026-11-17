@@ -182,6 +182,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                   const SizedBox(height: 26),
                                   Text(
                                     'A calm space for\nambitious minds.',
+                                    style: Theme.of(context)
     ),
   );
   @override
