@@ -30,3 +30,4 @@ export async function validateIdentityToken(
   provider: Provider,
   token: string,
   nonce: string,
+  verificationKey?: CryptoKey,
