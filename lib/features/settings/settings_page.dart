@@ -119,7 +119,6 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Change password and revoke all sessions'),
             ),
             const SizedBox(height: 12),
-                        builder: (ctx) => AlertDialog(
                           title: const Text(
                             'Save this recovery code privately',
                           ),
