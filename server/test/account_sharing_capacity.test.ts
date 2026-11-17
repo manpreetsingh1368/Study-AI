@@ -448,3 +448,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     verifier: link.verifier,
   });
   assert.equal(linked.body.user.id, local.user.id);
+  const cancel = await begin();
