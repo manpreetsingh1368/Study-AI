@@ -58,6 +58,7 @@ class LocalStore {
     final sink = file.openWrite();
     try {
       await sink.addStream(stream);
+      await sink.close();
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
