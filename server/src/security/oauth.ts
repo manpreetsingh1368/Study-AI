@@ -308,3 +308,4 @@ export function registerOAuthRoutes(
           flow.id,
         );
         return page(
+          reply,
