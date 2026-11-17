@@ -217,3 +217,4 @@ export function registerOAuthRoutes(
       body.challenge,
       now() + 600000,
       owner?.id || null,
+      sessionHash,
