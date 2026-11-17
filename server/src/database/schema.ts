@@ -254,3 +254,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
   id: text("id").primaryKey(),
   provider: text("provider").notNull(),
   stateHash: text("state_hash").notNull().unique(),
+  nonce: text("nonce").notNull(),
