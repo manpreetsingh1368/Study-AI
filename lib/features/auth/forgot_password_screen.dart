@@ -16,3 +16,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     text: widget.controller.user?['email'],
   );
   final form = GlobalKey<FormState>();
+  bool busy = false, sent = false;
