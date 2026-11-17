@@ -641,6 +641,7 @@ class StudyController extends ChangeNotifier {
     final response = await req
         .send()
         .then(http.Response.fromStream)
+        .timeout(const Duration(minutes: 5));
     final result = jsonDecode(response.body);
     if (response.statusCode >= 400) {
       throw ApiException(response.statusCode, result['message']);
