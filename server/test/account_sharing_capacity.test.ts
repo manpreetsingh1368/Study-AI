@@ -41,3 +41,4 @@ async function setup(
         name: "Owner",
         email,
         password: "owner-secure-password",
+      })
