@@ -340,3 +340,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     enabled: () => true,
     authorization: (_provider, flow) =>
       `https://provider.test/authorize?state=${flow.state}&nonce=${flow.nonce}`,
+    exchange: async (_provider, code) => ({
