@@ -223,3 +223,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
     root = (
       await call("POST", "/sets", a.token, {
         title: `Notebook ${i}`,
+        notes: "",
