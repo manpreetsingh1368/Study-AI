@@ -214,3 +214,4 @@ export function registerOAuthRoutes(
       digest(state),
       nonce,
       pkce,
+      body.challenge,
