@@ -118,3 +118,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   ErrorState(message: error!),
                   const SizedBox(height: 16),
                 ],
+                if ((widget.notebook['notes'] as String).isNotEmpty)
