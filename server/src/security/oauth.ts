@@ -91,3 +91,4 @@ export const productionOAuth: OAuthAdapter = {
           process.env.APPLE_KEY_ID &&
           (process.env.APPLE_PRIVATE_KEY ||
             process.env.APPLE_PRIVATE_KEY_PATH) &&
+          process.env.PUBLIC_BASE_URL?.startsWith("https://")
