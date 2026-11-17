@@ -115,6 +115,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         child: const Text('Forgot password?'),
                       ),
                     ),
+                  const SizedBox(height: 16),
                   if (error != null) ...[
                     ErrorState(message: error!),
                     const SizedBox(height: 16),
