@@ -384,3 +384,4 @@ export function registerOAuthRoutes(
             accountId,
             flow.id,
           );
+        })();
