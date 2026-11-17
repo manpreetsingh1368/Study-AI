@@ -139,6 +139,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                             ],
                           ),
                           TextButton(
+                            onPressed: c.cancelSocialSignIn,
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
