@@ -156,3 +156,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     400,
   );
   const created = await call("POST", `/notebooks/${set.id}/shares`, a.token, {
+    includeSourceNotes: true,
