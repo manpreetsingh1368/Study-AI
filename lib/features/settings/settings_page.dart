@@ -149,6 +149,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                 onPressed: () => Clipboard.setData(
                                   ClipboardData(text: result['code']),
                                 ),
+                                const SizedBox(height: 20),
                               ),
                             ],
                           ),
