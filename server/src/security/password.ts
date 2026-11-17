@@ -16,3 +16,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
     auth: process.env.SMTP_USER
       ? { user: process.env.SMTP_USER, pass: process.env.SMTP_PASSWORD }
       : undefined,
+    connectionTimeout: 10000,
