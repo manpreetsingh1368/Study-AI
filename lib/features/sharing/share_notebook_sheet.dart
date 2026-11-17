@@ -6,3 +6,4 @@ import '../../core/api/study_controller.dart';
 import '../../shared/components.dart';
 
 class ShareNotebookSheet extends StatefulWidget {
+  final StudyController controller;
