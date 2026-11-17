@@ -458,3 +458,4 @@ export function registerOAuthRoutes(
     return { ok: true };
   });
   app.get("/me/identities", async (req) => {
+    const u = user(req);
