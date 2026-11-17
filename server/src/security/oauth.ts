@@ -445,3 +445,4 @@ export function registerOAuthRoutes(
         return { status: "complete", ...session(account) };
       })();
     },
+  );
