@@ -197,6 +197,7 @@ class StudyController extends ChangeNotifier {
           throw ApiException(401, status['message']);
         }
         if (status['status'] == 'complete') {
+          completed = true;
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
