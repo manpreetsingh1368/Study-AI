@@ -19,3 +19,4 @@ async function setup(
     dataDir: directory,
     uploadDir: join(directory, "uploads"),
     now: () => clock,
+    ...extra,
