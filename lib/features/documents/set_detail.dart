@@ -1197,6 +1197,7 @@ class _SetDetailState extends State<SetDetail> {
           const SizedBox(height: 8),
           Text(
             '${value['sources'] ?? 0}/50 attached sources · ${savedNotes.length}/50 saved notes',
+            style: const TextStyle(fontSize: 9),
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
