@@ -187,3 +187,4 @@ export function registerOAuthRoutes(
     let owner: any = null,
       sessionHash: string | null = null;
     if (link) {
+      owner = user(req);
