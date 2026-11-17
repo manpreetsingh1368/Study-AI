@@ -344,3 +344,4 @@ export function registerOAuthRoutes(
                 flow.link_user_id,
                 now(),
               )
+            )
