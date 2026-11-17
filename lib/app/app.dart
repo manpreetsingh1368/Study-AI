@@ -35,6 +35,7 @@ class _StudyAIAppState extends ConsumerState<StudyAIApp> {
                 '/login',
                 '/recovery',
                 '/forgot-password',
+              ].contains(state.uri.path)
               ? null
               : '/login';
         }
