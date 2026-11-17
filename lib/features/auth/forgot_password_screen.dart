@@ -103,3 +103,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     const SizedBox(height: 18),
                   ],
                   PrimaryActionButton(
+                    label: busy
