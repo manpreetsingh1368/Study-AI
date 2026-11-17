@@ -30,3 +30,4 @@ async function setup(
     const result = await app.inject({
       method,
       url,
+      headers: token ? { authorization: `Bearer ${token}` } : {},
