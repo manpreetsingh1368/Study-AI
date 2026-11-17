@@ -109,6 +109,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ),
             if (widget.controller.user?['hasPassword'] != false)
+              TextField(
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               TextField(
