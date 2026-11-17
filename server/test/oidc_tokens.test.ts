@@ -36,3 +36,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
   try {
     const valid = await token();
     assert.equal(
+      (
