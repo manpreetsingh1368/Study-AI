@@ -195,6 +195,7 @@ class StudyController extends ChangeNotifier {
         if (_socialProof != proof) return;
         if (status['status'] == 'failed') {
           throw ApiException(401, status['message']);
+        }
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
