@@ -197,3 +197,4 @@ export function registerOAuthRoutes(
         if (
           !body.password ||
           !(await verify(owner.password_hash, body.password))
+        )
