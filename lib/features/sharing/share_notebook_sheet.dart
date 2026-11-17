@@ -305,3 +305,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                             'DELETE',
                                             '/notebooks/${widget.notebook['id']}/shares/${link['id']}',
                                           );
+                                          if (url != null) {
