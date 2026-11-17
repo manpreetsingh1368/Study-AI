@@ -400,3 +400,4 @@ export function registerOAuthRoutes(
         run(
           "UPDATE oauth_flows SET status='failed',error=? WHERE id=?",
           safe,
+          flow.id,
