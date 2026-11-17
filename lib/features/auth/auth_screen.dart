@@ -161,6 +161,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
             child: Center(
               child: desktop
                   ? ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 1120),
     ),
   );
   @override
