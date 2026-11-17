@@ -30,3 +30,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       );
       if (mounted) {
         setState(() {
+          sent = true;
