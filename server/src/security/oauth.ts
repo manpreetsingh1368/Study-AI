@@ -219,3 +219,4 @@ export function registerOAuthRoutes(
       owner?.id || null,
       sessionHash,
       digest(launch),
+    );
