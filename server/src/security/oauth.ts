@@ -241,3 +241,4 @@ export function registerOAuthRoutes(
     app.get(`/auth/oauth/${provider}/begin`, async (req, reply) => {
       const q = z
         .object({
+          flow: z.uuid(),
