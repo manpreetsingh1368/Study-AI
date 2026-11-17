@@ -262,6 +262,7 @@ void main() {
           expect(revoked.statusCode, 404);
           await revoked.drain<void>();
         } finally {
+          reader.close(force: true);
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
