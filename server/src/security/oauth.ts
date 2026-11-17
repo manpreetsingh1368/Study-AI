@@ -228,3 +228,4 @@ export function registerOAuthRoutes(
     };
   }
   for (const provider of ["google", "apple"] as const) {
+    app.post(
