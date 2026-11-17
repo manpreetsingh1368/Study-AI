@@ -107,3 +107,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       "stable-provider-subject",
     );
   } finally {
+    if (originalGoogle === undefined) delete process.env.GOOGLE_CLIENT_ID;
