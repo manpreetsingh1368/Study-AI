@@ -242,3 +242,4 @@ export function registerOAuthRoutes(
       const q = z
         .object({
           flow: z.uuid(),
+          key: z.string().min(30).max(100),
