@@ -37,3 +37,4 @@ export async function validateIdentityToken(
     verificationKey ?? (provider === "google" ? googleKeys : appleKeys),
     {
       issuer:
+        provider === "google"
