@@ -16,7 +16,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       password = TextEditingController(),
       name = TextEditingController();
   final form = GlobalKey<FormState>();
-  bool register = false, busy = false;
   String? error;
   Map<String, dynamic> providers = {};
   StudyController get c => ref.read(studyProvider);
