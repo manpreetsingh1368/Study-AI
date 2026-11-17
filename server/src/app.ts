@@ -973,6 +973,7 @@ export function createApp(
     { db, user, publicUser, session, get, run, now, fail },
     options.oauthAdapter,
     () =>
+      !!options.resetDelivery ||
   registerNotebookRoutes(
     app,
     { db, user, owned, get, all, run, plan, change, now, fail, uploads },
