@@ -322,3 +322,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                         }
                                       },
                                 icon: const Icon(Icons.link_off, size: 18),
+                              ),
