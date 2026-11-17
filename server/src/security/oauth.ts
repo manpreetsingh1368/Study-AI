@@ -87,3 +87,4 @@ export const productionOAuth: OAuthAdapter = {
         )
       : !!(
           process.env.APPLE_CLIENT_ID &&
+          process.env.APPLE_TEAM_ID &&
