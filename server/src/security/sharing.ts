@@ -33,3 +33,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       fail(400, "Select at least one note or response to share.");
     if (
       get(
+        "SELECT count(*) n FROM notebook_shares WHERE notebook_id=? AND revoked_at IS NULL AND expires_at>?",
