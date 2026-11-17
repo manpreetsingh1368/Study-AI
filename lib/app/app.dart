@@ -34,6 +34,7 @@ class _StudyAIAppState extends ConsumerState<StudyAIApp> {
           return [
                 '/login',
                 '/recovery',
+                '/forgot-password',
               ? null
               : '/login';
         }
