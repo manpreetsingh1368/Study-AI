@@ -106,6 +106,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     onFieldSubmitted: (_) => busy ? null : submit(),
                   ),
                   if (!register)
+                    Align(
                   if (error != null) ...[
                     ErrorState(message: error!),
                     const SizedBox(height: 16),
