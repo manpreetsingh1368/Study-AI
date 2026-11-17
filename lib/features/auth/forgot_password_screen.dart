@@ -96,3 +96,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     onFieldSubmitted: (_) => busy ? null : submit(),
                   ),
                   const SizedBox(height: 18),
+                  if (message != null) ...[
