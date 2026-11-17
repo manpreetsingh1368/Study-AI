@@ -296,6 +296,7 @@ export function createApp(
       fail(401, "Password is incorrect.");
     if (
       !u.password_enabled &&
+      (b.confirm !== "DELETE" ||
     const code = randomBytes(32).toString("base64url"),
       expiresAt = now() + 365 * 86400000;
     run(
