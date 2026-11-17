@@ -89,3 +89,4 @@ export function registerPasswordRoutes(
             b.email,
             `${publicBase()}/reset-password#token=${token}`,
           ),
+        )
