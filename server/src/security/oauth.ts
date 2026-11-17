@@ -119,3 +119,4 @@ export const productionOAuth: OAuthAdapter = {
     let secret = process.env.GOOGLE_CLIENT_SECRET!;
     if (provider === "apple") {
       const pem = (
+        process.env.APPLE_PRIVATE_KEY ||
