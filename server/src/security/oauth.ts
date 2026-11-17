@@ -171,3 +171,4 @@ export function registerOAuthRoutes(
     google: adapter.enabled("google"),
     apple: adapter.enabled("apple"),
     passwordReset: resetConfigured(),
+  }));
