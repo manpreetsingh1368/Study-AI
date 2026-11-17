@@ -44,3 +44,4 @@ export function registerPasswordRoutes(
     async (req) => {
       const b = z
         .object({
+          email: z
