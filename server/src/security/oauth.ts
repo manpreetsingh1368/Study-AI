@@ -220,3 +220,4 @@ export function registerOAuthRoutes(
       sessionHash,
       digest(launch),
     );
+    // State is needed at authorization time but is never placed in a polling response.
