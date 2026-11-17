@@ -114,3 +114,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     (
       await call("POST", "/auth/reset-password", undefined, {
         token: expired,
+        password: "expired-password",
