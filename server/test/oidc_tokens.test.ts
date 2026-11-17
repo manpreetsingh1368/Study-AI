@@ -33,3 +33,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       .setExpirationTime("5m")
       .sign(pair.privateKey);
   }
+  try {
