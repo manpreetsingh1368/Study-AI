@@ -174,6 +174,7 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Sign out'),
             ),
             const SizedBox(height: 24),
+            Text(
             ),
             TextButton(
               onPressed: busy
