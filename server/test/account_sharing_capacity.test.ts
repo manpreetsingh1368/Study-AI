@@ -238,3 +238,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
       notes: "A source note.",
       parentNotebookId: root.id,
     });
+    assert.equal(result.status, 201);
