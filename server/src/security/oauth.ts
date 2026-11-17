@@ -377,3 +377,4 @@ export function registerOAuthRoutes(
               provider,
               identity.subject,
               accountId,
+              now(),
