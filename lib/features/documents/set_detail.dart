@@ -498,6 +498,7 @@ class _SetDetailState extends State<SetDetail> {
                               isScrollControlled: true,
                               useSafeArea: true,
                               showDragHandle: true,
+                              builder: (_) => SizedBox(
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
