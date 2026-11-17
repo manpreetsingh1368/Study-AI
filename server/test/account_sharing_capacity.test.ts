@@ -472,3 +472,4 @@ test("saved notes stop at 50, retry idempotently and release capacity after dele
   ).body.set;
   const ids = Array.from({ length: 51 }, () => randomUUID());
   const save = (id: string) =>
+    call("POST", `/notebooks/${set.id}/notes`, a.token, {
