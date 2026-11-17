@@ -74,3 +74,4 @@ export async function validateIdentityToken(
         ? payload.name.slice(0, 100)
         : provider === "apple"
           ? "Student"
+          : email.split("@")[0],
