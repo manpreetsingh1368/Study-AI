@@ -22,3 +22,4 @@ const digest = (value: string) =>
   createHash("sha256").update(value).digest("hex");
 const googleKeys = createRemoteJWKSet(
   new URL("https://www.googleapis.com/oauth2/v3/certs"),
+);
