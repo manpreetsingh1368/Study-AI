@@ -105,6 +105,7 @@ export function createApp(
   }
   function owned(uid: string, sid: string) {
     const s = get(
+      "SELECT * FROM study_sets WHERE id=? AND user_id=? AND deleted=0 AND (parent_notebook_id IS NULL OR EXISTS(SELECT 1 FROM study_sets p WHERE p.id=study_sets.parent_notebook_id AND p.deleted=0))",
       sid,
       uid,
     );
