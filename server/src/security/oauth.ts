@@ -175,3 +175,4 @@ export function registerOAuthRoutes(
   async function start(req: any, provider: Provider, link = false) {
     if (!adapter.enabled(provider))
       fail(
+        503,
