@@ -194,3 +194,4 @@ export function registerOAuthRoutes(
         sessionHash,
       );
       if (owner.password_enabled) {
+        if (
