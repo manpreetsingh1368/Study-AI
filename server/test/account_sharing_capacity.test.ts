@@ -307,3 +307,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
   const bytes = Buffer.from(await doc.save());
   const boundary = "capacity-check";
   const payload = Buffer.concat([
+    Buffer.from(
