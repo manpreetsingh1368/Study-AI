@@ -492,6 +492,7 @@ export function createApp(
             byteCount >
           NOTEBOOK_PDF_BYTES
         )
+          fail(403, "This notebook has reached its 2 GiB PDF allowance.");
         run(
           "INSERT INTO documents VALUES(?,?,?,?) ON CONFLICT(set_id) DO UPDATE SET id=excluded.id,filename=excluded.filename,bytes=excluded.bytes",
           did,
