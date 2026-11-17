@@ -36,3 +36,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
         'GET',
         '/notebooks/${widget.notebook['id']}/shares',
       );
+      if (mounted) setState(() => links = data['shares']);
