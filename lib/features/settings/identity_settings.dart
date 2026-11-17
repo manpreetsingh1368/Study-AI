@@ -35,3 +35,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       if (mounted) setState(() => error = e.toString());
     }
   }
+
