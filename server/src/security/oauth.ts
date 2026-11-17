@@ -456,3 +456,4 @@ export function registerOAuthRoutes(
       digest(b.verifier),
     );
     return { ok: true };
+  });
