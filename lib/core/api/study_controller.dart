@@ -193,6 +193,7 @@ class StudyController extends ChangeNotifier {
           'verifier': proof,
         });
         if (_socialProof != proof) return;
+        if (status['status'] == 'failed') {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
