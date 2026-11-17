@@ -279,3 +279,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                     key: 'share:${c.account}:${link['id']}',
                                   );
                                   if (saved != null) {
+                                    await Clipboard.setData(
