@@ -108,3 +108,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                         : sent
                         ? 'Request another link'
                         : 'Email reset link',
+                    icon: Icons.mail_outline_rounded,
