@@ -208,3 +208,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     (
       await app.inject({
         method: "GET",
+        url: new URL(expired.body.url).pathname,
