@@ -45,3 +45,4 @@ export async function validateIdentityToken(
           ? process.env.GOOGLE_CLIENT_ID
           : process.env.APPLE_CLIENT_ID,
       algorithms: ["RS256"],
+      requiredClaims: ["exp", "iat", "sub", "nonce", "email", "email_verified"],
