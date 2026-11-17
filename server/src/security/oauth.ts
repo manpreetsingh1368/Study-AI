@@ -166,3 +166,4 @@ export function registerOAuthRoutes(
   adapter = productionOAuth,
   resetConfigured = smtpConfigured,
 ) {
+  const { db, user, publicUser, session, get, run, now, fail } = c;
