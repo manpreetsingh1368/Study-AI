@@ -107,3 +107,4 @@ export const productionOAuth: OAuthAdapter = {
     });
     if (provider === "google") {
       parameters.set(
+        "code_challenge",
