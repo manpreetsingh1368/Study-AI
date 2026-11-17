@@ -150,6 +150,7 @@ class StudyController extends ChangeNotifier {
     await sync();
     notifyListeners();
   }
+
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
