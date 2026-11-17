@@ -160,3 +160,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     expiresInDays: 1,
   });
   assert.equal(created.status, 201);
+  const path = new URL(created.body.url).pathname;
