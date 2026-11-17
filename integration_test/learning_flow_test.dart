@@ -135,6 +135,7 @@ void main() {
         final uploadBytes = validPdf();
         await c.uploadStream(
           set['id'],
+          'lecture.pdf',
         await c.generate(set['id'], 'quiz', 1, 'easy');
         await c.generate(set['id'], 'flashcards', 1, 'easy');
         final material = c.sets.single;
