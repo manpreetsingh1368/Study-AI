@@ -297,3 +297,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                               IconButton(
                                 tooltip: 'Revoke link',
                                 onPressed: busy
+                                    ? null
