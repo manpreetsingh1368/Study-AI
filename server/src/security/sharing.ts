@@ -92,3 +92,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       id,
       sid,
       digest(token),
+      s.title,
