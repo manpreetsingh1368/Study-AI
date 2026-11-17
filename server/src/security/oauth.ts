@@ -16,3 +16,4 @@ export type Identity = { subject: string; email: string; name: string };
 export type OAuthAdapter = {
   enabled: (provider: Provider) => boolean;
   authorization: (provider: Provider, flow: any) => string;
+  exchange: (provider: Provider, code: string, flow: any) => Promise<Identity>;
