@@ -39,3 +39,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
       if (mounted) setState(() => links = data['shares']);
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
+    }
