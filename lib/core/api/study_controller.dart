@@ -631,6 +631,7 @@ class StudyController extends ChangeNotifier {
       'x-set-version': '${upload['version']}',
     });
     if (upload['path'] != null) {
+      final file = File(upload['path'] as String);
     final response = await req
         .send()
         .then(http.Response.fromStream)
