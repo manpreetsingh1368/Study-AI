@@ -189,6 +189,7 @@ export function createApp(
       now(),
       now(),
       folder,
+      parentNotebookId,
     );
     change(sid, uid);
     if (parentNotebookId) {
