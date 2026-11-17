@@ -199,6 +199,7 @@ export function createApp(
         parent = get(
           "SELECT notes FROM study_sets WHERE id=?",
           parentNotebookId,
+        );
     return sid;
   }
   const session = (u: any) => {
