@@ -297,6 +297,7 @@ export function createApp(
     if (
       !u.password_enabled &&
       (b.confirm !== "DELETE" ||
+        !signedIn ||
     const code = randomBytes(32).toString("base64url"),
       expiresAt = now() + 365 * 86400000;
     run(
