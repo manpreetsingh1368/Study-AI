@@ -80,3 +80,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
     } finally {
       if (mounted) setState(() => busy = false);
     }
+  }
