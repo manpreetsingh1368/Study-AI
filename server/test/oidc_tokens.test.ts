@@ -50,3 +50,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       validateIdentityToken("google", valid, "wrong-nonce", pair.publicKey),
     );
     await assert.rejects(
+      validateIdentityToken("google", valid, "expected-nonce", other.publicKey),
