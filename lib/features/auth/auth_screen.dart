@@ -90,6 +90,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           label: const Text('Google'),
                         ),
                       ),
+                      SizedBox(
                   if (register) ...[
                     TextFormField(
                       controller: name,
