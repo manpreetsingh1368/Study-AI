@@ -493,6 +493,7 @@ class _SetDetailState extends State<SetDetail> {
                       tooltip: 'Share notebook',
                       onPressed: c.offline
                           ? null
+                          : () => showModalBottomSheet(
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
