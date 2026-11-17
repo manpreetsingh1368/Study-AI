@@ -295,3 +295,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
         parentNotebookId: root.id,
       })
     ).body.set;
+  const db = new Database(join(directory, "study.sqlite"));
