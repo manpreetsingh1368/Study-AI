@@ -176,6 +176,7 @@ class StudyController extends ChangeNotifier {
           'password': ?password,
         },
       );
+      flow = result['flowId'];
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
