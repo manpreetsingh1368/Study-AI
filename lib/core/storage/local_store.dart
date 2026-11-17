@@ -60,6 +60,7 @@ class LocalStore {
       await sink.addStream(stream);
       await sink.close();
       if (await file.length() != length) {
+        throw const FormatException('The selected PDF changed while copying.');
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
