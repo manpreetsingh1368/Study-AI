@@ -369,3 +369,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     return { id: start.body.flowId, verifier, state, cookie };
   }
   const flow = await begin();
+  assert.equal(
