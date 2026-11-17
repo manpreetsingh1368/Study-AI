@@ -115,6 +115,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       padding: const EdgeInsets.all(16),
                       margin: const EdgeInsets.only(bottom: 16),
                       decoration: BoxDecoration(
+                        color: accent.withValues(alpha: .07),
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
