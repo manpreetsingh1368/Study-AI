@@ -228,6 +228,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                           Expanded(
                                             child: Text(
                                               item.$2,
+                                              style: const TextStyle(
     ),
   );
   @override
