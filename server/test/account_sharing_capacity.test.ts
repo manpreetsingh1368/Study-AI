@@ -172,3 +172,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     version: 1,
     title: "Changed",
     notes: "Changed text",
+  });
