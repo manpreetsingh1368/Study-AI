@@ -149,3 +149,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     contentPadding: EdgeInsets.zero,
                     title: Text(
                       item['kind'] == 'chat'
+                          ? item['prompt']
