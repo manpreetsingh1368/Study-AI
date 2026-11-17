@@ -142,6 +142,7 @@ export function registerNotebookRoutes(
         id: z.uuid(),
         kind: z.enum(["chat", "summary", "guide", "faq"]),
         prompt: z.string().trim().min(1).max(3000),
+        sourceIds: z.array(z.uuid()).min(1).max(50),
       })
       .parse(req.body);
     owned(u.id, sid);
