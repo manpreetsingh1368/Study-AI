@@ -17,3 +17,4 @@ class ShareNotebookSheet extends StatefulWidget {
   State<ShareNotebookSheet> createState() => _ShareNotebookSheetState();
 }
 
+class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
