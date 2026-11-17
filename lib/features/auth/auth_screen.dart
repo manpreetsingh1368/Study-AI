@@ -157,6 +157,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                 0,
                 double.infinity,
               ),
+            ),
     ),
   );
   @override
