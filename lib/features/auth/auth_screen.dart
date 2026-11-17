@@ -117,6 +117,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   const Row(
                     children: [
                       Expanded(child: Divider()),
+                      Padding(
                   if (register) ...[
                     TextFormField(
                       controller: name,
