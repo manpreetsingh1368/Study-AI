@@ -77,3 +77,4 @@ export function registerPasswordRoutes(
         );
         run(
           "INSERT INTO password_resets VALUES(?,?,?,NULL,?)",
+          tokenHash,
