@@ -99,3 +99,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         const SizedBox(height: 18),
         for (final provider in ['google', 'apple'])
           ListTile(
+            contentPadding: EdgeInsets.zero,
