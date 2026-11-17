@@ -307,3 +307,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                           );
                                           if (url != null) {
                                             setState(() => url = null);
+                                          }
