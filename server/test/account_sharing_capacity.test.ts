@@ -31,3 +31,4 @@ async function setup(
       method,
       url,
       headers: token ? { authorization: `Bearer ${token}` } : {},
+      payload,
