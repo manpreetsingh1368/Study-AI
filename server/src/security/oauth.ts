@@ -329,3 +329,4 @@ export function registerOAuthRoutes(
             now(),
           );
           if (active?.status !== "verifying")
+            throw new Error("Sign-in was cancelled or expired.");
