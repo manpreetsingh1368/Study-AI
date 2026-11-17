@@ -818,7 +818,6 @@ export function createApp(
       );
     return {
       sets: get(
-        "SELECT count(*) n FROM study_sets WHERE user_id=? AND deleted=0",
         u.id,
       ).n,
       completed: attempts.length,
