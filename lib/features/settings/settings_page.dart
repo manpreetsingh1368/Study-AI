@@ -154,7 +154,6 @@ class _SettingsPageState extends State<SettingsPage> {
                               ),
                             ],
                           ),
-                              child: const Text('I saved it'),
                             ),
                           ],
                         ),
