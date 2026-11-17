@@ -50,3 +50,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             autofocus: true,
             decoration: const InputDecoration(
               labelText: 'Current Study AI password',
+            ),
