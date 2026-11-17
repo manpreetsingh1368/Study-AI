@@ -49,3 +49,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         onPressed: () => context.go('/login'),
         icon: const Icon(Icons.arrow_back),
       ),
+      title: const Text('Forgot password'),
