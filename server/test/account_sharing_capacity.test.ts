@@ -22,3 +22,4 @@ async function setup(
     ...extra,
   });
   await app.ready();
+  t.after(async () => {
