@@ -59,3 +59,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             ),
             FilledButton(
               onPressed: () => Navigator.pop(ctx, controller.text),
+              child: const Text('Continue'),
