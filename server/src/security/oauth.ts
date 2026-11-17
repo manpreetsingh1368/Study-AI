@@ -433,3 +433,4 @@ export function registerOAuthRoutes(
             Buffer.from(proof, "hex"),
           )
         )
+          fail(400, "Sign-in request expired. Start again.");
