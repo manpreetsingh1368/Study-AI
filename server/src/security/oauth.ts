@@ -130,3 +130,4 @@ export const productionOAuth: OAuthAdapter = {
         .setSubject(process.env.APPLE_CLIENT_ID!)
         .setAudience("https://appleid.apple.com")
         .setIssuedAt()
+        .setExpirationTime("5m")
