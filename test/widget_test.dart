@@ -10,6 +10,7 @@ void main() {
   for (final width in [320.0, 800.0, 1200.0]) {
     testWidgets('Sign-in and password recovery fit at $width', (tester) async {
       tester.view.physicalSize = Size(width, 900);
+      tester.view.devicePixelRatio = 1;
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
