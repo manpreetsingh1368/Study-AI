@@ -206,6 +206,7 @@ export function createApp(
       if (
         !parent.notes.trim() &&
         !get("SELECT id FROM documents WHERE set_id=?", parentNotebookId)
+      )
     return sid;
   }
   const session = (u: any) => {
