@@ -196,6 +196,7 @@ export function createApp(
   const session = (u: any) => {
     const token = randomBytes(32).toString("base64url");
     run(
+      "INSERT INTO sessions(token_hash,user_id,expires_at,created_at) VALUES(?,?,?,?)",
       digest(token),
       u.id,
       now() + Number(process.env.SESSION_DAYS || 30) * 86400000,
