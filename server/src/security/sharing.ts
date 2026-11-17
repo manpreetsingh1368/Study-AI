@@ -59,3 +59,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
               : entry.kind === "faq"
                 ? "FAQ"
                 : "Source overview",
+        text: content.insufficientEvidence
