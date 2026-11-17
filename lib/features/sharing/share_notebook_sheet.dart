@@ -265,3 +265,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     ),
                     subtitle: Text(
                       link['revoked_at'] != null
+                          ? 'Revoked'
