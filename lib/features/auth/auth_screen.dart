@@ -179,6 +179,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                       fontWeight: FontWeight.w600,
                                     ),
                                   ),
+                                  const SizedBox(height: 26),
     ),
   );
   @override
