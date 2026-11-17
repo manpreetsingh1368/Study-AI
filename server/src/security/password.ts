@@ -129,3 +129,4 @@ export function registerPasswordRoutes(
         run(
           "UPDATE users SET password_hash=?,password_enabled=1 WHERE id=?",
           passwordHash,
+          reset.user_id,
