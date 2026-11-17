@@ -111,3 +111,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     icon: Icons.mail_outline_rounded,
                     onPressed: busy ? null : submit,
                   ),
+                  const SizedBox(height: 14),
