@@ -80,3 +80,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         citations: JSON.parse(note.citations),
       });
     }
+    if (!sections.length) fail(400, "The selected content is empty.");
