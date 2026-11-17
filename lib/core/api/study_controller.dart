@@ -637,6 +637,7 @@ class StudyController extends ChangeNotifier {
           'file',
           file.openRead(),
           await file.length(),
+          filename: upload['name'] as String,
     final response = await req
         .send()
         .then(http.Response.fromStream)
