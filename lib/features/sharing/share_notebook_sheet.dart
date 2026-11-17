@@ -168,3 +168,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                 : entries.remove(item['id']);
                           }),
                   ),
+                const SizedBox(height: 16),
