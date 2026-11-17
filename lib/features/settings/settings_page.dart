@@ -106,7 +106,6 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
             const SizedBox(height: 12),
-                      await widget.controller.request('POST', '/me/password', {
                         'current': current.text,
                         'password': password.text,
                       });
