@@ -68,3 +68,4 @@ export function registerPasswordRoutes(
       )
         return response;
       const token = randomBytes(32).toString("base64url"),
+        tokenHash = digest(token);
