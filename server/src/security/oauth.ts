@@ -374,3 +374,4 @@ export function registerOAuthRoutes(
           if (!existing)
             run(
               "INSERT INTO oauth_identities VALUES(?,?,?,?)",
+              provider,
