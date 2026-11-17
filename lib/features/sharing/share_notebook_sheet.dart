@@ -26,3 +26,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
   StudyController get c => widget.controller;
   @override
   void initState() {
+    super.initState();
