@@ -469,3 +469,4 @@ export function registerOAuthRoutes(
       user: publicUser(u),
     };
   });
+}
