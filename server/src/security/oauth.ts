@@ -348,3 +348,4 @@ export function registerOAuthRoutes(
               throw new Error(
                 "The original session expired. Start linking again.",
               );
+            if (existing && existing.user_id !== flow.link_user_id)
