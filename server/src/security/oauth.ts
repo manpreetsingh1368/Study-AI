@@ -328,3 +328,4 @@ export function registerOAuthRoutes(
             flow.id,
             now(),
           );
+          if (active?.status !== "verifying")
