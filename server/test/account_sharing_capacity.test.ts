@@ -21,3 +21,4 @@ async function setup(
     now: () => clock,
     ...extra,
   });
+  await app.ready();
