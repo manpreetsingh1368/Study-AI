@@ -358,7 +358,6 @@ export function createApp(
           password: z.string().min(12).max(128),
         })
         .parse(req.body);
-    if (!(await verify(u.password_hash, b.current)))
       fail(401, "Current password is incorrect.");
     const h = await hash(b.password, { type: argon2id });
     db.transaction(() => {
