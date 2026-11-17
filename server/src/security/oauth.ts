@@ -434,3 +434,4 @@ export function registerOAuthRoutes(
           )
         )
           fail(400, "Sign-in request expired. Start again.");
+        if (flow.status === "failed")
