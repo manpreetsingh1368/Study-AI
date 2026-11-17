@@ -8,6 +8,7 @@ import {
   registerPasswordRoutes,
   type ResetDelivery,
 } from "./security/password.js";
+import { registerOAuthRoutes, type OAuthAdapter } from "./security/oauth.js";
 import { registerNotebookRoutes, notebookState } from "./notebook/routes.js";
 import type { NotebookInput, NotebookOutput } from "./notebook/grounding.js";
 import rateLimit from "@fastify/rate-limit";
