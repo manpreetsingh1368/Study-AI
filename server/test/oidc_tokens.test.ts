@@ -74,3 +74,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
     process.env.GOOGLE_CLIENT_ID = "wrong-client";
     await assert.rejects(
       validateIdentityToken("google", valid, "expected-nonce", pair.publicKey),
+    );
