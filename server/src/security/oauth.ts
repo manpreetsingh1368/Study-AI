@@ -115,3 +115,4 @@ export const productionOAuth: OAuthAdapter = {
     } else parameters.set("response_mode", "form_post");
     return `${provider === "google" ? "https://accounts.google.com/o/oauth2/v2/auth" : "https://appleid.apple.com/auth/authorize"}?${parameters}`;
   },
+  async exchange(provider, code, flow) {
