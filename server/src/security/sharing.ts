@@ -32,3 +32,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     if (!b.includeSourceNotes && !b.entryIds.length && !b.noteIds.length)
       fail(400, "Select at least one note or response to share.");
     if (
+      get(
