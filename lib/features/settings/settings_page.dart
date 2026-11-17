@@ -134,6 +134,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           context: context,
                           builder: (ctx) => AlertDialog(
                             title: const Text(
+                              'Save this recovery code privately',
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
