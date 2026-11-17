@@ -66,3 +66,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   Container(
                     alignment: Alignment.centerLeft,
                     child: const CircleAvatar(
+                      radius: 28,
