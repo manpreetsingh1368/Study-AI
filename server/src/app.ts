@@ -490,6 +490,7 @@ export function createApp(
           did,
           s.id,
           part!.filename.slice(0, 200),
+          byteCount,
         );
         run(
           "UPDATE study_sets SET version=version+1,updated_at=? WHERE id=?",
