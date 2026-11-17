@@ -52,3 +52,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       title: const Text('Forgot password'),
     ),
     body: Center(
+      child: SingleChildScrollView(
