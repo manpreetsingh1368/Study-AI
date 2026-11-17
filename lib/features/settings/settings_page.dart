@@ -94,6 +94,7 @@ class _SettingsPageState extends State<SettingsPage> {
             const SizedBox(height: 24),
             if (widget.controller.user?['hasPassword'] == false)
               Padding(
+                padding: const EdgeInsets.only(bottom: 20),
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               TextField(
