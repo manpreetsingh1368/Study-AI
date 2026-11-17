@@ -198,6 +198,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                           .onSurfaceVariant,
                                     ),
                                   ),
+                                  const SizedBox(height: 36),
     ),
   );
   @override
