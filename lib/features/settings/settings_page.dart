@@ -119,7 +119,6 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Change password and revoke all sessions'),
             ),
             const SizedBox(height: 12),
-                        '/me/recovery',
                         {'password': current.text},
                       );
                       if (!context.mounted) return;
