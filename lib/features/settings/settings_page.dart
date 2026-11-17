@@ -157,6 +157,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                     ClipboardData(text: result['code']),
                                   ),
                                   icon: const Icon(Icons.copy_outlined),
+                                  label: const Text('Copy code'),
                               ),
                             ],
                           ),
