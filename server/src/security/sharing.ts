@@ -122,3 +122,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         .max(100)
         .parse((req.params as any).token);
       const share = get(
+        "SELECT l.* FROM notebook_shares l JOIN study_sets s ON s.id=l.notebook_id WHERE l.token_hash=? AND l.revoked_at IS NULL AND l.expires_at>? AND s.deleted=0",
