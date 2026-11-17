@@ -378,3 +378,4 @@ export function registerOAuthRoutes(
               identity.subject,
               accountId,
               now(),
+            );
