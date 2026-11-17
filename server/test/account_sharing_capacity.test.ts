@@ -92,3 +92,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     ).status,
     400,
   );
+  assert.equal(
