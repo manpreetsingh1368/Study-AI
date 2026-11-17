@@ -201,6 +201,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                   const SizedBox(height: 36),
                                   for (final item in [
                                     (
+                                      Icons.source_outlined,
     ),
   );
   @override
