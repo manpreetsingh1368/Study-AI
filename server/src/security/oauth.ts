@@ -86,3 +86,4 @@ export const productionOAuth: OAuthAdapter = {
           process.env.PUBLIC_BASE_URL
         )
       : !!(
+          process.env.APPLE_CLIENT_ID &&
