@@ -93,3 +93,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
               padding: const EdgeInsets.symmetric(horizontal: 24),
               children: [
                 Container(
+                  padding: const EdgeInsets.all(18),
