@@ -265,3 +265,4 @@ export function registerOAuthRoutes(
       const secure = publicBase().startsWith("https://");
       reply
         .header(
+          "Set-Cookie",
