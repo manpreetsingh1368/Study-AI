@@ -12,3 +12,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT || 587),
     secure: process.env.SMTP_SECURE === "true",
+    requireTLS: process.env.SMTP_SECURE !== "true",
