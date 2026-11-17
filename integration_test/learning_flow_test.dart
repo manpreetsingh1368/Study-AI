@@ -137,6 +137,7 @@ void main() {
           set['id'],
           'lecture.pdf',
           Stream.value(uploadBytes),
+          uploadBytes.length,
         await c.generate(set['id'], 'quiz', 1, 'easy');
         await c.generate(set['id'], 'flashcards', 1, 'easy');
         final material = c.sets.single;
