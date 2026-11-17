@@ -79,6 +79,7 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
         newSet(
           u.id,
           b.title,
+          b.notes,
       } else {
         const s = owned(u.id, b.setId);
         if (s.version !== b.baseVersion)
