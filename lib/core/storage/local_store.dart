@@ -23,6 +23,7 @@ class LocalStore {
           await createDocumentTables(db);
         } else if (oldVersion < 3) {
           await db.execute('ALTER TABLE uploads ADD COLUMN path TEXT');
+          await db.execute(
       },
       onCreate: (db, _) async {
         await db.execute(
