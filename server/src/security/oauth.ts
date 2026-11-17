@@ -101,3 +101,4 @@ export const productionOAuth: OAuthAdapter = {
           : process.env.APPLE_CLIENT_ID!,
       redirect_uri: `${publicBase()}/auth/oauth/${provider}/callback`,
       response_type: "code",
+      scope: provider === "google" ? "openid email profile" : "name email",
