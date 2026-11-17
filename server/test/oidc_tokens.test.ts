@@ -102,3 +102,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
           await token({ email_verified: "true" }, "apple"),
           "expected-nonce",
           pair.publicKey,
+        )
