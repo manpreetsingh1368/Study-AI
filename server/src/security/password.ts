@@ -117,3 +117,4 @@ export function registerPasswordRoutes(
       const passwordHash = await hash(b.password, { type: argon2id });
       db.transaction(() => {
         const reset = get(
+          "SELECT * FROM password_resets WHERE token_hash=? AND used_at IS NULL AND expires_at>?",
