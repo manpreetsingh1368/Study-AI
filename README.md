@@ -96,7 +96,6 @@ npm test
 npm audit --omit=dev
 ```
 
-A native Linux acceptance test starts an isolated Fastify fixture server, uses real HTTP and SQLite, renders a real PDF, completes a quiz and a flashcard review, and verifies a second client's downloads and offline cache. Its generated content and secure-storage mock are confined to tests; it does not call Gemini or change your login keyring:
 
 ```sh
 # From the project root. NODE_BINARY must match the Node used for npm ci.
