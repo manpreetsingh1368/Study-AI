@@ -59,3 +59,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
       mail.push({ email, url });
     },
   });
+  const a = await register();
