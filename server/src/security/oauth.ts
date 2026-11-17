@@ -105,3 +105,4 @@ export const productionOAuth: OAuthAdapter = {
       state: flow.state,
       nonce: flow.nonce,
     });
+    if (provider === "google") {
