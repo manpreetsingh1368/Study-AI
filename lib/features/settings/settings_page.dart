@@ -103,6 +103,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 controller: password,
                 obscureText: true,
                 decoration: const InputDecoration(
+                  labelText: 'New password · 12+ characters',
               ),
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
