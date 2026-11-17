@@ -168,6 +168,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                             child: Padding(
                               padding: const EdgeInsets.only(right: 76),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
     ),
   );
   @override
