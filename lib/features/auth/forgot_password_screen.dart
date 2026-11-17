@@ -77,3 +77,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                         : 'Let’s get you back in.',
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
+                  const SizedBox(height: 12),
