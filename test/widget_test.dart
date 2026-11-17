@@ -7,6 +7,7 @@ import 'package:study_ai/core/storage/local_store.dart';
 import 'package:go_router/go_router.dart';
 
 void main() {
+  for (final width in [320.0, 800.0, 1200.0]) {
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
