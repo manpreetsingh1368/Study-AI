@@ -132,3 +132,4 @@ export function registerPasswordRoutes(
           reset.user_id,
         );
         run(
+          "UPDATE password_resets SET used_at=? WHERE user_id=? AND used_at IS NULL",
