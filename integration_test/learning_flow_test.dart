@@ -242,6 +242,7 @@ void main() {
         expect(find.text('Your shareable link'), findsOneWidget);
         final shares = await c.request('GET', '/notebooks/${set['id']}/shares');
         expect(shares['shares'].length, 1);
+        final shareId = shares['shares'][0]['id'];
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
