@@ -383,3 +383,4 @@ export function registerOAuthRoutes(
             "UPDATE oauth_flows SET status='complete',user_id=?,error=NULL WHERE id=?",
             accountId,
             flow.id,
+          );
