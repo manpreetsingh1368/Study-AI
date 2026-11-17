@@ -500,6 +500,7 @@ class _SetDetailState extends State<SetDetail> {
                               showDragHandle: true,
                               builder: (_) => SizedBox(
                                 height: MediaQuery.sizeOf(context).height * .88,
+                                child: ShareNotebookSheet(
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
