@@ -1195,6 +1195,7 @@ class _SetDetailState extends State<SetDetail> {
             borderRadius: BorderRadius.circular(4),
           ),
           const SizedBox(height: 8),
+          Text(
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
