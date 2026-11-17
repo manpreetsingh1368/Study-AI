@@ -297,6 +297,7 @@ export function createApp(
           confirm: z.literal("DELETE").optional(),
         })
         .parse(req.body);
+    const signedIn = get(
       fail(401, "Password is incorrect.");
     if (
       !u.password_enabled &&
