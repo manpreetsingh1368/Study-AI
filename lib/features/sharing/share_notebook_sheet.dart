@@ -98,3 +98,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     color: accent.withValues(alpha: .07),
                     borderRadius: BorderRadius.circular(16),
                   ),
+                  child: const Column(
