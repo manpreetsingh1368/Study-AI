@@ -33,7 +33,6 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 ## Notebook UI/UX refinement
 
 - Replaced the long study-set detail page with a source/chat/Studio workspace: three desktop panels, focused mobile tabs, compact mobile navigation, cohesive light/dark surfaces, contextual source previews and a richer notebook library grid.
-- Source selection across up to eight owned study materials, inline text/PDF additions and source-aware chat using Gemini. Scanned PDFs without text receive an explicit explanation.
 - Answers contain clickable quotations validated against selected text chunks, including verified PDF page numbers. Citation previews identify changed source snapshots and open the matching PDF page. Invalid references are rejected; explicit insufficient-evidence output is supported.
 - Studio source overviews, study guides and FAQs; pinned answers, offline personal notes, saved conversations, earlier-history loading, follow-up questions, clipboard copy and Markdown export.
 - Notebook requests share the existing atomic plan allowance and use stable request IDs. Selected-source history filtering prevents unchecked materials leaking into model context.
