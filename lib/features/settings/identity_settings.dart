@@ -47,3 +47,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           content: TextField(
             controller: controller,
             obscureText: true,
+            autofocus: true,
