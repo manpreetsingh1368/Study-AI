@@ -117,3 +117,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     { config: { rateLimit: { max: 60, timeWindow: 60000 } } },
     async (req, reply) => {
       const token = z
+        .string()
