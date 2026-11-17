@@ -140,6 +140,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           ),
                           TextButton(
                             onPressed: c.cancelSocialSignIn,
+                            child: const Text('Cancel browser sign-in'),
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
