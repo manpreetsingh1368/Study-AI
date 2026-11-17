@@ -175,6 +175,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             const SizedBox(height: 24),
             Text(
+              widget.controller.user?['hasPassword'] == false
             ),
             TextButton(
               onPressed: busy
