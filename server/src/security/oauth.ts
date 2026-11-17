@@ -55,3 +55,4 @@ export async function validateIdentityToken(
       ? process.env.GOOGLE_CLIENT_ID
       : process.env.APPLE_CLIENT_ID;
   if (payload.azp && payload.azp !== audience)
+    throw new Error("Invalid authorized party.");
