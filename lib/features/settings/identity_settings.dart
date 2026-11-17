@@ -17,3 +17,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
   String? error;
   @override
   void initState() {
+    super.initState();
