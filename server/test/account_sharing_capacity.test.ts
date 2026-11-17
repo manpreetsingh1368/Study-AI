@@ -130,3 +130,4 @@ test("unconfigured reset delivery is explicit, never a fake sent email", async (
 test("public sharing is an explicit escaped snapshot, isolated, expiring and revocable", async (t) => {
   const { app, call, register, advance } = await setup(t);
   const a = await register(),
+    b = await register("other@example.com");
