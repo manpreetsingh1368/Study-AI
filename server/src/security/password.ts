@@ -38,3 +38,4 @@ export function registerPasswordRoutes(
   const { db, get, run, now, fail } = c;
   const pending = new Set<Promise<void>>();
   const digest = (s: string) => createHash("sha256").update(s).digest("hex");
+  app.post(
