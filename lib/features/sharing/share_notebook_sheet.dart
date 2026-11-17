@@ -220,3 +220,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                     const SnackBar(
                                       content: Text('Link copied.'),
                                     ),
+                                  );
