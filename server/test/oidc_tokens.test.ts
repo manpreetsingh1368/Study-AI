@@ -14,3 +14,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
     provider: "google" | "apple" = "google",
   ) {
     return new SignJWT({
+      nonce: "expected-nonce",
