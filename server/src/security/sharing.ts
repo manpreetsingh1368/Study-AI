@@ -37,3 +37,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         sid,
         now(),
       ).n >= 20
+    )
