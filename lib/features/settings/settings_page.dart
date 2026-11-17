@@ -99,6 +99,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Text(
+                      'This account uses provider sign-in. Set a password through the email reset flow if you also want email/password access.',
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               TextField(
