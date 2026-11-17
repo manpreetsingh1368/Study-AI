@@ -85,6 +85,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     autofillHints: const [AutofillHints.email],
                     decoration: const InputDecoration(
                       labelText: 'Email address',
+                      prefixIcon: Icon(Icons.alternate_email),
                     ),
                     validator: (v) =>
                         !v!.contains('@') ? 'Enter a valid email' : null,
