@@ -49,3 +49,4 @@ async function setup(
     call,
     register,
     directory,
+    advance: (time: number) => (clock += time),
