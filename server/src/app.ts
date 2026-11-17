@@ -295,6 +295,7 @@ export function createApp(
         .object({
           password: z.string().max(128).optional(),
           confirm: z.literal("DELETE").optional(),
+        })
       fail(401, "Password is incorrect.");
     if (
       !u.password_enabled &&
