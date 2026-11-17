@@ -131,3 +131,4 @@ export function registerPasswordRoutes(
           passwordHash,
           reset.user_id,
         );
+        run(
