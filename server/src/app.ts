@@ -52,6 +52,7 @@ export function createApp(
     uploadDir?: string;
     generate?: (i: GenerationInput) => Promise<Generated>;
     now?: () => number;
+    resetDelivery?: ResetDelivery;
     notebookGenerate?: (input: NotebookInput) => Promise<NotebookOutput>;
   } = {},
 ) {
