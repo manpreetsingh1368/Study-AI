@@ -397,6 +397,7 @@ export function createApp(
     const sid = db.transaction(() =>
       newSet(
         u.id,
+        b.title,
     )();
     reply.code(201);
     return { set: full(owned(u.id, sid)) };
