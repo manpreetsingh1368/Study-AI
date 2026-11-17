@@ -83,3 +83,4 @@ export function registerPasswordRoutes(
           now(),
         );
       })();
+      const job = new Promise<void>((resolve) => setImmediate(resolve))
