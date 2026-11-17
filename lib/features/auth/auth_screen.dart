@@ -27,6 +27,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
         email: email.text.trim(),
         password: password.text,
         name: name.text.trim(),
+      );
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
