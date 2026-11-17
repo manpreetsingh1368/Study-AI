@@ -32,6 +32,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
       if (mounted) {
         setState(() => providers = Map<String, dynamic>.from(result));
       }
+    } catch (_) {}
   Future<void> submit() async {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
