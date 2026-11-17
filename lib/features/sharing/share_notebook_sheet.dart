@@ -252,3 +252,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     style: TextStyle(fontSize: 12),
                   ),
                 for (final link in links)
+                  ListTile(
