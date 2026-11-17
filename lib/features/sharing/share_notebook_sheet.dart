@@ -214,3 +214,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                               onPressed: () async {
                                 await Clipboard.setData(
                                   ClipboardData(text: url!),
+                                );
