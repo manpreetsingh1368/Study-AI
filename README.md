@@ -165,3 +165,4 @@ Provider buttons become available only when their server settings exist. Browser
 
 Real Google/Apple credentials and an SMTP server are required for live end-to-end verification. Automated tests use injected delivery/provider adapters and independently test signed-token validation; they do not send real mail or sign into external accounts.
 
+## Notebook capacity and public sharing
