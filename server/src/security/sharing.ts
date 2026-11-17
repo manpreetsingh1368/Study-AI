@@ -70,3 +70,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     for (const id of [...new Set(b.noteIds)]) {
       const note = get(
         "SELECT * FROM notebook_notes WHERE id=? AND notebook_id=? AND deleted=0",
+        id,
