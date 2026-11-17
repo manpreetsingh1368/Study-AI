@@ -346,3 +346,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
       name: "Verified user",
     }),
   };
+  const { app, call, register } = await setup(t, { oauthAdapter: adapter });
