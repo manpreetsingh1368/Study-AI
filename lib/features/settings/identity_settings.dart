@@ -102,3 +102,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
             contentPadding: EdgeInsets.zero,
             leading: Icon(
               provider == 'apple' ? Icons.apple : Icons.account_circle_outlined,
+            ),
