@@ -185,6 +185,7 @@ class StudyController extends ChangeNotifier {
       )) {
         throw ApiException(503, 'Could not open your browser.');
       }
+      for (var attempt = 0; attempt < 300 && _socialProof == proof; attempt++) {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
