@@ -72,6 +72,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           style: TextStyle(
                             fontWeight: FontWeight.w700,
                             fontSize: 22,
+                            letterSpacing: -.6,
                   ),
                   const SizedBox(height: 26),
                   Text(
