@@ -92,6 +92,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   const SizedBox(height: 14),
                   TextFormField(
                     controller: password,
+                    obscureText: obscure,
                     autofillHints: [
                       register
                           ? AutofillHints.newPassword
