@@ -53,3 +53,4 @@ export function registerPasswordRoutes(
       const available = !!delivery || smtpConfigured();
       const response = {
         message:
+          "If an account exists and email delivery is available, a password-reset link will be sent. Check your inbox and spam folder.",
