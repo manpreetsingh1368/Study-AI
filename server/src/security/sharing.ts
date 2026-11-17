@@ -36,3 +36,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         "SELECT count(*) n FROM notebook_shares WHERE notebook_id=? AND revoked_at IS NULL AND expires_at>?",
         sid,
         now(),
+      ).n >= 20
