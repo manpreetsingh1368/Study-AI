@@ -24,3 +24,4 @@ const googleKeys = createRemoteJWKSet(
   new URL("https://www.googleapis.com/oauth2/v3/certs"),
 );
 const appleKeys = createRemoteJWKSet(
+  new URL("https://appleid.apple.com/auth/keys"),
