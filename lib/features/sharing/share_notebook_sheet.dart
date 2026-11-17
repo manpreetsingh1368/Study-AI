@@ -212,3 +212,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           children: [
                             TextButton.icon(
                               onPressed: () async {
+                                await Clipboard.setData(
