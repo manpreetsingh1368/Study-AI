@@ -46,3 +46,4 @@ export function registerPasswordRoutes(
         .object({
           email: z
             .email()
+            .max(254)
