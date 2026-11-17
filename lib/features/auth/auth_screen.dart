@@ -137,6 +137,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                 ),
                               ),
                             ],
+                          ),
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
