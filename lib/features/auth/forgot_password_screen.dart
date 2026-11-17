@@ -6,3 +6,4 @@ import '../../shared/components.dart';
 
 class ForgotPasswordScreen extends StatefulWidget {
   final StudyController controller;
+  const ForgotPasswordScreen({super.key, required this.controller});
