@@ -158,6 +158,7 @@ class StudyController extends ChangeNotifier {
     bool link = false,
     String? password,
   }) async {
+    if (socialSignInActive) return;
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
