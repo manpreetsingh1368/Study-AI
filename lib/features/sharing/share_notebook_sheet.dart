@@ -229,3 +229,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                             TextButton.icon(
                               onPressed: () => launchUrl(
                                 Uri.parse(url!),
+                                mode: LaunchMode.externalApplication,
