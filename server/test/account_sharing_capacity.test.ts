@@ -343,3 +343,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     exchange: async (_provider, code) => ({
       subject: code,
       email: code === "local" ? "owner@example.com" : `${code}@example.com`,
+      name: "Verified user",
