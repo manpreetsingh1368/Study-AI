@@ -53,3 +53,4 @@ async function setup(
   };
 }
 test("forgot password: non-enumerating response, real delivery adapter, one-use expiry and revocation", async (t) => {
+  const mail: { email: string; url: string }[] = [];
