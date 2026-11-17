@@ -236,6 +236,7 @@ void main() {
         expect(find.text('Anyone with the link · read-only'), findsOneWidget);
         await tester.tap(find.text('Include notebook source notes'));
         await tester.pumpAndSettle();
+        await tester.ensureVisible(find.text('Create read-only link'));
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
