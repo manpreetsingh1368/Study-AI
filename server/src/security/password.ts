@@ -116,3 +116,4 @@ export function registerPasswordRoutes(
         .parse(req.body);
       const passwordHash = await hash(b.password, { type: argon2id });
       db.transaction(() => {
+        const reset = get(
