@@ -119,6 +119,7 @@ class _NotesEditorState extends State<NotesEditor> {
                 if (mounted) {
                   setState(() {
                     droppedName = file.name;
+                    droppedStream = () => file.openRead();
                     pdf = null;
                   });
                 }
