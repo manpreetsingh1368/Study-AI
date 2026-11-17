@@ -433,6 +433,7 @@ export function createApp(
       const s = owned(u.id, sid);
       if (s.version !== b.version)
         fail(409, "This set changed. Refresh before deleting.");
+      softDelete(sid, u.id);
     })();
     return { ok: true };
   });
