@@ -264,3 +264,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       overflow: TextOverflow.ellipsis,
                     ),
                     subtitle: Text(
+                      link['revoked_at'] != null
