@@ -315,3 +315,4 @@ export function registerOAuthRoutes(
       }
       // Claim the callback before awaiting provider I/O; codes cannot be replayed.
       run("UPDATE oauth_flows SET status='verifying' WHERE id=?", flow.id);
+      try {
