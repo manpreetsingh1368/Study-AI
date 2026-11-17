@@ -231,6 +231,7 @@ class StudyController extends ChangeNotifier {
     _socialProof = null;
     if (id != null && proof != null) {
       try {
+        await request('POST', '/auth/oauth/cancel', {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
