@@ -404,3 +404,4 @@ export function registerOAuthRoutes(
         );
         return page(
           reply.code(400),
+          "Could not sign in",
