@@ -126,3 +126,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         digest(token),
         now(),
       );
+      if (!share)
