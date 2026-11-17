@@ -121,3 +121,4 @@ export function registerPasswordRoutes(
           digest(b.token),
           now(),
         );
+        if (!reset)
