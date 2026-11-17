@@ -26,6 +26,7 @@ class LocalStore {
           await db.execute(
             'CREATE TABLE pdf_files(account TEXT,id TEXT,path TEXT,PRIMARY KEY(account,id))',
           );
+        }
       },
       onCreate: (db, _) async {
         await db.execute(
