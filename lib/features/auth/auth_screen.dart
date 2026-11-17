@@ -72,6 +72,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   const SizedBox(height: 24),
                   Wrap(
                     spacing: 10,
+                    runSpacing: 10,
                   if (register) ...[
                     TextFormField(
                       controller: name,
