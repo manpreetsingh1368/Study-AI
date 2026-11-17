@@ -60,6 +60,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   Text(
                     register
                         ? 'Make room for\nyour next idea.'
+                        : 'Welcome back.',
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                   const SizedBox(height: 10),
