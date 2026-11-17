@@ -253,3 +253,4 @@ export function registerOAuthRoutes(
         now(),
       );
       if (
+        !flow ||
