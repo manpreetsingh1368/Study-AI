@@ -267,3 +267,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
   error: text("error"),
   launchHash: text("launch_hash").notNull(),
   launched: integer("launched").notNull().default(0),
+});
