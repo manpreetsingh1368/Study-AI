@@ -169,3 +169,4 @@ export function registerOAuthRoutes(
   const { db, user, publicUser, session, get, run, now, fail } = c;
   app.get("/auth/options", async () => ({
     google: adapter.enabled("google"),
+    apple: adapter.enabled("apple"),
