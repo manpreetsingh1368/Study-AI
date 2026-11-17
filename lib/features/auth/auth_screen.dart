@@ -117,6 +117,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       decoration: BoxDecoration(
                         color: accent.withValues(alpha: .07),
                         borderRadius: BorderRadius.circular(14),
+                      ),
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
