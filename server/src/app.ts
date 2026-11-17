@@ -127,6 +127,7 @@ export function createApp(
     const children = all(
       "SELECT id FROM study_sets WHERE parent_notebook_id=? AND deleted=0",
       sid,
+    );
   function full(s: any) {
     return {
       ...s,
