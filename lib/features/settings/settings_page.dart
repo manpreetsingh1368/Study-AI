@@ -137,6 +137,7 @@ class _SettingsPageState extends State<SettingsPage> {
                               'Save this recovery code privately',
                             ),
                             content: Column(
+                              mainAxisSize: MainAxisSize.min,
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
