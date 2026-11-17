@@ -386,3 +386,4 @@ export function registerOAuthRoutes(
           );
         })();
         return page(
+          reply,
