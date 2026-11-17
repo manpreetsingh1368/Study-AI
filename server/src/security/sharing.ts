@@ -84,3 +84,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     const snapshot = JSON.stringify({ title: s.title, sections });
     if (Buffer.byteLength(snapshot) > 1500000)
       fail(413, "Select fewer items for this share link.");
+    const token = randomBytes(32).toString("base64url"),
