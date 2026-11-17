@@ -274,3 +274,4 @@ export function registerOAuthRoutes(
         adapter.authorization(provider, { ...flow, state: q.state }),
       );
     });
+    const callback = async (req: any, reply: any) => {
