@@ -395,7 +395,6 @@ export function createApp(
     const u = user(req),
       b = setInput.parse(req.body);
     const sid = db.transaction(() =>
-      newSet(u.id, b.title, b.notes, undefined, b.folder),
     )();
     reply.code(201);
     return { set: full(owned(u.id, sid)) };
