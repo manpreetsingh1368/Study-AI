@@ -353,3 +353,4 @@ export function registerOAuthRoutes(
                 "This identity belongs to another Study AI account.",
               );
             accountId = flow.link_user_id;
+          } else if (existing) {
