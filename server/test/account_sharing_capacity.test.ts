@@ -375,3 +375,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
         method: "GET",
         url: `/auth/oauth/google/callback?state=${flow.state}&code=new`,
       })
+    ).statusCode,
