@@ -219,3 +219,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
                                       content: Text('Link copied.'),
+                                    ),
