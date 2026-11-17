@@ -469,6 +469,7 @@ export function createApp(
         part!.file,
         new Transform({
           transform(chunk, _encoding, callback) {
+            byteCount += chunk.length;
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
