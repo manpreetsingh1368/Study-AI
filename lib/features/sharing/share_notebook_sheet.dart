@@ -287,3 +287,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                       const SnackBar(
                                         content: Text(
                                           'This device doesn’t hold the link secret. Create a new link to share.',
+                                        ),
