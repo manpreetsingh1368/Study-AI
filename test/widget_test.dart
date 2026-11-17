@@ -11,6 +11,7 @@ void main() {
     testWidgets('Sign-in and password recovery fit at $width', (tester) async {
       tester.view.physicalSize = Size(width, 900);
       tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
