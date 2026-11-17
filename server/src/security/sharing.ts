@@ -42,3 +42,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     const sections: any[] = [];
     if (b.includeSourceNotes && s.notes.trim())
       sections.push({ title: "Notebook notes", text: s.notes });
+    for (const id of [...new Set(b.entryIds)]) {
