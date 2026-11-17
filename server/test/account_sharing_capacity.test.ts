@@ -395,3 +395,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   assert.equal(callback.statusCode, 200);
   const complete = await call("POST", "/auth/oauth/complete", undefined, {
     flowId: flow.id,
+    verifier: flow.verifier,
