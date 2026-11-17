@@ -170,6 +170,7 @@ class _SetDetailState extends State<SetDetail> {
           file.name,
           file.readAsByteStream(),
           (await file.length())!,
+        );
         if (mounted) setState(() => selected.add(source['id']));
       });
       return;
