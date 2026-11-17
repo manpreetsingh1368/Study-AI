@@ -101,6 +101,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     decoration: const InputDecoration(
                       labelText: 'Password · 12+ characters',
                       prefixIcon: const Icon(Icons.lock_outline),
+                      suffixIcon: IconButton(
                     ),
                     validator: (v) =>
                         v!.length < 12 ? 'Use at least 12 characters' : null,
