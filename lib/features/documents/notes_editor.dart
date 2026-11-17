@@ -19,7 +19,6 @@ class _NotesEditorState extends State<NotesEditor> {
   late final notes = TextEditingController(text: widget.existing?['notes']);
   PlatformFile? pdf;
   String? droppedName;
-  List<int>? droppedBytes;
   late final folder = TextEditingController(
     text: widget.existing?['folder'] ?? '',
   );
