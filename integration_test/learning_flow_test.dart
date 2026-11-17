@@ -231,6 +231,7 @@ void main() {
           await c.setAppearance('light');
           await tester.pumpAndSettle();
         }
+        await tester.tap(find.byTooltip('Share notebook'));
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
