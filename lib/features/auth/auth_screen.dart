@@ -22,7 +22,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
     try {
-          );
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
