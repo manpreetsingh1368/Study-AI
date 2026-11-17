@@ -20,6 +20,7 @@ class _NotesEditorState extends State<NotesEditor> {
   PlatformFile? pdf;
   String? droppedName;
   Stream<List<int>> Function()? droppedStream;
+  int? droppedLength;
   late final folder = TextEditingController(
     text: widget.existing?['folder'] ?? '',
   );
