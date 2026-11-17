@@ -402,6 +402,7 @@ export function createApp(
         undefined,
         b.folder,
         b.parentNotebookId || null,
+      ),
     )();
     reply.code(201);
     return { set: full(owned(u.id, sid)) };
