@@ -86,3 +86,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       .setAudience("google-test-client")
       .setSubject("subject")
       .setIssuedAt()
+      .sign(pair.privateKey);
