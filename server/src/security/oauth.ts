@@ -54,3 +54,4 @@ export async function validateIdentityToken(
     provider === "google"
       ? process.env.GOOGLE_CLIENT_ID
       : process.env.APPLE_CLIENT_ID;
+  if (payload.azp && payload.azp !== audience)
