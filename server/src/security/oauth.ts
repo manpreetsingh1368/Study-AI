@@ -376,3 +376,4 @@ export function registerOAuthRoutes(
               "INSERT INTO oauth_identities VALUES(?,?,?,?)",
               provider,
               identity.subject,
+              accountId,
