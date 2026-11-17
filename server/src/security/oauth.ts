@@ -362,3 +362,4 @@ export function registerOAuthRoutes(
               );
             accountId = randomUUID();
             run(
+              "INSERT INTO users(id,email,name,password_hash,role,created_at,password_enabled) VALUES(?,?,?,?,?,?,0)",
