@@ -62,3 +62,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
   const a = await register();
   const unknown = await call("POST", "/auth/forgot-password", undefined, {
     email: "unknown@example.com",
+  });
