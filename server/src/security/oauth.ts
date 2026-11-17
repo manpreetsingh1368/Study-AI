@@ -319,3 +319,4 @@ export function registerOAuthRoutes(
         const identity = await adapter.exchange(provider, b.code, flow);
         const email = z.email().parse(identity.email).toLowerCase();
         const randomPassword = await hash(
+          randomBytes(48).toString("base64url"),
