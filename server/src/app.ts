@@ -400,6 +400,7 @@ export function createApp(
         b.title,
         b.notes,
         undefined,
+        b.folder,
     )();
     reply.code(201);
     return { set: full(owned(u.id, sid)) };
