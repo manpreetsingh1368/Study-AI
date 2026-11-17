@@ -485,6 +485,7 @@ class StudyController extends ChangeNotifier {
     String notes, {
     Map<String, dynamic>? existing,
     String folder = '',
+    String? parentNotebookId,
   }) async {
     final sid = existing?['id'] ?? const Uuid().v4();
     final timestamp = DateTime.now().millisecondsSinceEpoch;
