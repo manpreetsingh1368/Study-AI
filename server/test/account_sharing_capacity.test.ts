@@ -112,3 +112,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
   advance(1200001);
   assert.equal(
     (
+      await call("POST", "/auth/reset-password", undefined, {
