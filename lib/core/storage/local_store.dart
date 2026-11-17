@@ -66,6 +66,7 @@ class LocalStore {
         await txn.insert('uploads', {
           'id': id,
           'account': account,
+          'set_id': setId,
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
