@@ -50,3 +50,4 @@ export function registerPasswordRoutes(
             .transform((s) => s.toLowerCase()),
         })
         .parse(req.body);
+      const available = !!delivery || smtpConfigured();
