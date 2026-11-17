@@ -250,6 +250,7 @@ void main() {
         final sharedUri = Uri.parse(shareUrl!)
             .replace(host: '127.0.0.1', port: port);
         final reader = HttpClient();
+        try {
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
