@@ -153,3 +153,4 @@ Never copy an active database file without its WAL or the backup API.
 
 Remaining release requirements include live Gemini acceptance with your credentials, HTTPS deployment, production signing/distribution, native Android/iOS/macOS runtime QA, backup retention/restore drills, operational monitoring and independent security/load/accessibility audits. Neither Apple platform was built on Ubuntu.
 
+## Email recovery, Google and Apple sign-in
