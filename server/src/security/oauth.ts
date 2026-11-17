@@ -77,3 +77,4 @@ export async function validateIdentityToken(
           : email.split("@")[0],
   };
 }
+export const productionOAuth: OAuthAdapter = {
