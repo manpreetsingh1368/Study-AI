@@ -327,3 +327,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           ),
                   ),
                 const SizedBox(height: 24),
+              ],
