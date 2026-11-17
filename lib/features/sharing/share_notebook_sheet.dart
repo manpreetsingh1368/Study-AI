@@ -140,3 +140,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         ? null
                         : (v) => setState(() {
                             v == true
+                                ? notes.add(item['id'])
