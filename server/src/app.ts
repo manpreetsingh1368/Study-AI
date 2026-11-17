@@ -612,6 +612,7 @@ export function createApp(
       let notes = s.notes,
         pdf: Buffer | undefined;
       if (doc) {
+        if (doc.bytes <= 15728640) pdf = readFileSync(join(uploads, doc.id));
       db.transaction(() => {
         const current = owned(u.id, sid);
         if (current.version !== s.version)
