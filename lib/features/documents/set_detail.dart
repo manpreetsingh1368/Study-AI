@@ -492,6 +492,7 @@ class _SetDetailState extends State<SetDetail> {
                     IconButton(
                       tooltip: 'Share notebook',
                       onPressed: c.offline
+                          ? null
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
