@@ -171,3 +171,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
   await call("PATCH", `/sets/${set.id}`, a.token, {
     version: 1,
     title: "Changed",
+    notes: "Changed text",
