@@ -494,6 +494,7 @@ class StudyController extends ChangeNotifier {
       'title': title,
       'notes': notes,
       'folder': folder,
+      'parent_notebook_id': existing?['parent_notebook_id'] ?? parentNotebookId,
       'version': existing == null ? 1 : (existing['version'] as int) + 1,
       'created_at': existing?['created_at'] ?? timestamp,
       'updated_at': timestamp,
