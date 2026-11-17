@@ -437,3 +437,4 @@ export function registerOAuthRoutes(
         if (flow.status === "failed")
           return { status: "failed", message: flow.error };
         if (flow.status === "consumed" || flow.status === "cancelled")
+          fail(400, "This sign-in request was already used or cancelled.");
