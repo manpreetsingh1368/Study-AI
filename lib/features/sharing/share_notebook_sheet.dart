@@ -259,3 +259,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       color: accent,
                     ),
                     title: Text(
+                      link['title'],
