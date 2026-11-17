@@ -33,3 +33,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
 export function registerPasswordRoutes(
   app: FastifyInstance,
   c: any,
+  delivery?: ResetDelivery,
