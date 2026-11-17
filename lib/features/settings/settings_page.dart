@@ -174,7 +174,6 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Sign out'),
             ),
             const SizedBox(height: 24),
-            const Text(
               'Account deletion permanently removes your server data and private documents. Enter your current password above to confirm.',
             ),
             TextButton(
