@@ -164,3 +164,4 @@ export function registerOAuthRoutes(
   app: FastifyInstance,
   c: any,
   adapter = productionOAuth,
+  resetConfigured = smtpConfigured,
