@@ -191,6 +191,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                   Text(
                                     'Bring your sources. Follow your curiosity.\nBuild understanding that lasts.',
                                     style: TextStyle(
+                                      fontSize: 16,
     ),
   );
   @override
