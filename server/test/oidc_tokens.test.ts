@@ -66,3 +66,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
         await token({ azp: "untrusted-client" }),
         "expected-nonce",
         pair.publicKey,
+      ),
