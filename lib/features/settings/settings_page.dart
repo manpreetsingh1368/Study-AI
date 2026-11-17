@@ -115,6 +115,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           'POST',
                           '/me/password',
                           {'current': current.text, 'password': password.text},
+                        );
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               OutlinedButton.icon(
