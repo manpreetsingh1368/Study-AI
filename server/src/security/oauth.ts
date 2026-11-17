@@ -223,3 +223,4 @@ export function registerOAuthRoutes(
     // State is needed at authorization time but is never placed in a polling response.
     return {
       flowId,
+      url: `${publicBase()}/auth/oauth/${provider}/begin?flow=${flowId}&key=${launch}&state=${state}`,
