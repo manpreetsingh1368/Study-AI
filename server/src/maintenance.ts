@@ -40,6 +40,7 @@ try {
     sqlite
       .prepare(
         "DELETE FROM notebook_shares WHERE expires_at<=? OR revoked_at IS NOT NULL",
+      )
     sqlite.prepare("DELETE FROM sessions WHERE expires_at<=?").run(now);
     sqlite.prepare("DELETE FROM recovery_codes WHERE expires_at<=?").run(now);
     sqlite
