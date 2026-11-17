@@ -57,3 +57,4 @@ export function registerPasswordRoutes(
         deliveryAvailable: available,
       };
       if (!available) return response;
+      const u = get("SELECT id FROM users WHERE email=?", b.email);
