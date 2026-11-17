@@ -152,3 +152,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           ? item['prompt']
                           : item['kind'] == 'guide'
                           ? 'Study guide'
+                          : item['kind'] == 'faq'
