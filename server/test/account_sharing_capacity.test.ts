@@ -214,3 +214,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     404,
   );
 });
+test("50 notebook sources bypass notebook-count quotas, but not source/owner/deletion checks", async (t) => {
