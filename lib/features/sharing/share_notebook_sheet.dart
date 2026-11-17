@@ -304,3 +304,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                           await c.request(
                                             'DELETE',
                                             '/notebooks/${widget.notebook['id']}/shares/${link['id']}',
+                                          );
