@@ -31,6 +31,7 @@ export const sessions = sqliteTable("sessions", {
     .notNull()
     .references(() => users.id, { onDelete: "cascade" }),
   expiresAt: integer("expires_at").notNull(),
+  createdAt: integer("created_at").notNull().default(0),
 });
 export const documents = sqliteTable("documents", {
   id: text("id").primaryKey(),
