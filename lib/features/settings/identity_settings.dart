@@ -85,3 +85,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
   @override
   Widget build(BuildContext context) => StudyCard(
     child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
