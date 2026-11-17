@@ -324,3 +324,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
       payload,
     });
   assert.equal((await upload()).statusCode, 403);
+  db.prepare("UPDATE documents SET bytes=? WHERE set_id=?").run(
