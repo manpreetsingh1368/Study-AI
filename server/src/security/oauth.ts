@@ -391,3 +391,4 @@ export function registerOAuthRoutes(
           "<h1>You’re ready to learn.</h1><p>Your identity is verified. Return to the Study AI app to continue. This page contains no login credentials.</p>",
         );
       } catch (e: any) {
+        const safe =
