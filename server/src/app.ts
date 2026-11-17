@@ -196,6 +196,7 @@ export function createApp(
           "SELECT source_ids FROM notebook_preferences WHERE notebook_id=?",
           parentNotebookId,
         ),
+        parent = get(
     return sid;
   }
   const session = (u: any) => {
