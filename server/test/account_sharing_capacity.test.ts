@@ -166,3 +166,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
   assert.ok(page.body.includes("&lt;script&gt;steal()&lt;/script&gt;"));
   assert.ok(!page.body.includes("<script>steal()"));
   assert.ok(!page.body.includes("NEVER_PUBLISH_THIS"));
+  assert.ok(!page.body.includes("owner@example.com"));
