@@ -108,6 +108,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   if (!register)
                     Align(
                       alignment: Alignment.centerRight,
+                      child: TextButton(
                   if (error != null) ...[
                     ErrorState(message: error!),
                     const SizedBox(height: 16),
