@@ -20,3 +20,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
     socketTimeout: 15000,
   });
   try {
+    await transport.sendMail({
