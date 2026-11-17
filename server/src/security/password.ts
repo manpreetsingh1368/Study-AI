@@ -45,3 +45,4 @@ export function registerPasswordRoutes(
       const b = z
         .object({
           email: z
+            .email()
