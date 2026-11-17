@@ -187,6 +187,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                         .headlineLarge
                                         ?.copyWith(fontSize: 48, height: 1.15),
                                   ),
+                                  const SizedBox(height: 22),
     ),
   );
   @override
