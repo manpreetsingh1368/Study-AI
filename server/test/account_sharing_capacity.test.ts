@@ -293,3 +293,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
         title: "Next PDF",
         notes: "",
         parentNotebookId: root.id,
+      })
