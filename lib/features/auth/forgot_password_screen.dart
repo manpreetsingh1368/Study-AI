@@ -25,3 +25,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
     try {
       final result = await widget.controller.request(
         'POST',
+        '/auth/forgot-password',
