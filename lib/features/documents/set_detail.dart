@@ -1180,6 +1180,7 @@ class _SetDetailState extends State<SetDetail> {
         color: accent.withValues(alpha: .06),
         borderRadius: BorderRadius.circular(14),
       ),
+      child: Column(
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
