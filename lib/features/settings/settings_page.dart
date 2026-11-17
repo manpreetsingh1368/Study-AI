@@ -201,6 +201,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         await perform(() async {
                           await widget.controller.request('DELETE', '/me', {
                             'password': current.text,
+                            'confirm': 'DELETE',
                           });
                           await widget.controller.logout(
                             remote: false,
