@@ -274,3 +274,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                             children: [
                               IconButton(
                                 tooltip: 'Copy saved link',
+                                onPressed: () async {
