@@ -127,6 +127,7 @@ class _SettingsPageState extends State<SettingsPage> {
                         final result = await widget.controller.request(
                           'POST',
                           '/me/recovery',
+                          {'password': current.text},
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
