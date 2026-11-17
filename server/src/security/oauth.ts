@@ -127,3 +127,4 @@ export const productionOAuth: OAuthAdapter = {
       secret = await new SignJWT({})
         .setProtectedHeader({ alg: "ES256", kid: process.env.APPLE_KEY_ID! })
         .setIssuer(process.env.APPLE_TEAM_ID!)
+        .setSubject(process.env.APPLE_CLIENT_ID!)
