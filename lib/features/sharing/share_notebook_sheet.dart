@@ -10,3 +10,4 @@ class ShareNotebookSheet extends StatefulWidget {
   final Map<String, dynamic> notebook;
   const ShareNotebookSheet({
     super.key,
+    required this.controller,
