@@ -28,6 +28,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 - Notebook limits: 50 attached sources, 50 saved Studio notes and 2 GiB aggregate PDFs. Individual files default to 100 MiB and the account PDF budget to 20 GiB. Atomic backend checks enforce limits, root notebook quotas exclude attached sources, and root deletion tombstones its children. Studio shows usage and remaining capacity.
 - Durable PDF file queues and streaming upload/download reduce buffering; large-PDF generation uses bounded extracted text. Deployment proxy limits and environment examples were updated.
 - Migration 005 adds parent notebook relationships, identity flows, reset tokens, session creation times and snapshot sharing. Older data remains intact.
+- Google/Apple live sign-in and SMTP delivery were not exercised against real accounts. Configure the public HTTPS origin, provider clients/signing key and SMTP server as described in README before public use. Apple ID login does not access iCloud storage. Public hosting is still owner-operated.
 ## Verification
 
 - `flutter analyze`: clean.
