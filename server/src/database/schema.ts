@@ -276,3 +276,4 @@ export const notebookShares = sqliteTable("notebook_shares", {
   tokenHash: text("token_hash").notNull().unique(),
   title: text("title").notNull(),
   snapshot: text("snapshot").notNull(),
+  createdAt: integer("created_at").notNull(),
