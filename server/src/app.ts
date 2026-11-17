@@ -4,6 +4,7 @@ import { createWriteStream, createReadStream } from "node:fs";
 import { pipeline } from "node:stream/promises";
 import { Transform } from "node:stream";
 import { capacity, NOTEBOOK_PDF_BYTES, FILE_PDF_BYTES } from "./capacity.js";
+import {
 import { registerNotebookRoutes, notebookState } from "./notebook/routes.js";
 import type { NotebookInput, NotebookOutput } from "./notebook/grounding.js";
 import rateLimit from "@fastify/rate-limit";
