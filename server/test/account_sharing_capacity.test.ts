@@ -469,3 +469,4 @@ test("saved notes stop at 50, retry idempotently and release capacity after dele
   const a = await register();
   const set = (
     await call("POST", "/sets", a.token, { title: "Notebook", notes: "Notes" })
+  ).body.set;
