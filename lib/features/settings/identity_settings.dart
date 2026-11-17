@@ -38,3 +38,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
 
   Future<void> connect(String provider) async {
     String? password;
+    if (widget.controller.user?['hasPassword'] != false) {
