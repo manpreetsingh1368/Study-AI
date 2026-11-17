@@ -30,6 +30,7 @@ void main() {
       expect(find.text('Account email'), findsOneWidget);
       expect(tester.takeException(), isNull);
       await tester.pumpWidget(const SizedBox());
+      controller.dispose();
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
