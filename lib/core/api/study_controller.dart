@@ -674,6 +674,7 @@ class StudyController extends ChangeNotifier {
     };
     await store.write(account, 'sets', sets);
     notifyListeners();
+    await sync();
   }
 
   Future<void> upload(String setId, String name, List<int> bytes) async {
