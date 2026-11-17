@@ -87,6 +87,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                               fontSize: 19,
                             ),
                           ),
+                          label: const Text('Google'),
                   if (register) ...[
                     TextFormField(
                       controller: name,
