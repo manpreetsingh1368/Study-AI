@@ -96,3 +96,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       snapshot,
       now(),
       expiresAt,
+    );
