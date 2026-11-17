@@ -425,3 +425,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     "failed",
   );
   const local = (
+    await call("POST", "/auth/login", undefined, {
