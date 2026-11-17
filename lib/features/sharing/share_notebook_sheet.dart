@@ -283,3 +283,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                       ClipboardData(text: saved),
                                     );
                                   } else if (context.mounted) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
