@@ -201,3 +201,4 @@ export function registerOAuthRoutes(
           fail(401, "Enter your current password to connect an identity.");
       } else if (!current || current.created_at < now() - 300000)
         fail(401, "Sign in again before connecting another provider.");
+    }
