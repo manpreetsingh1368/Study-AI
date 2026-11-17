@@ -79,6 +79,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         child: OutlinedButton.icon(
                           onPressed: !busy && providers['google'] == true
                               ? () => social('google')
+                              : null,
                   if (register) ...[
                     TextFormField(
                       controller: name,
