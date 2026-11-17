@@ -231,6 +231,7 @@ class LocalStore {
       where: 'account=?',
       whereArgs: [account],
     );
+    for (final row in files) {
     await db.delete('pdf_cache', where: 'account=?', whereArgs: [account]);
     await db.delete('uploads', where: 'account=?', whereArgs: [account]);
     await db.delete('cache', where: 'account=?', whereArgs: [account]);
