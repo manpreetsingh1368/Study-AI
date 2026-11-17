@@ -20,3 +20,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
       ...claims,
     })
       .setProtectedHeader({ alg: "RS256" })
+      .setIssuer(
