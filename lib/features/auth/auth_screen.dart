@@ -142,6 +142,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   const Text(
                     'Your materials, in your own workspace.\nAI generation requires an internet connection.',
                     textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 10, height: 1.7),
                   ),
                 ],
               ),
