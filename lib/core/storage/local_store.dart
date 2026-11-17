@@ -17,6 +17,7 @@ class LocalStore {
     final dir = await getApplicationSupportDirectory();
     db = await openDatabase(
       p.join(dir.path, 'study_cache.sqlite'),
+      version: 3,
       onUpgrade: (db, oldVersion, _) async {
         if (oldVersion < 2) {
           await createDocumentTables(db);
