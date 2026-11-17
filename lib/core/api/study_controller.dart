@@ -632,6 +632,7 @@ class StudyController extends ChangeNotifier {
     });
     if (upload['path'] != null) {
       final file = File(upload['path'] as String);
+      req.files.add(
     final response = await req
         .send()
         .then(http.Response.fromStream)
