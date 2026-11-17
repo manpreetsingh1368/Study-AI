@@ -166,6 +166,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         children: [
                           Expanded(
                             child: Padding(
+                              padding: const EdgeInsets.only(right: 76),
     ),
   );
   @override
