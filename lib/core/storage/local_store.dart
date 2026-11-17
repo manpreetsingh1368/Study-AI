@@ -38,7 +38,6 @@ class LocalStore {
       'CREATE TABLE IF NOT EXISTS pdf_cache(account TEXT, id TEXT, bytes BLOB, PRIMARY KEY(account,id))',
     );
     await db.execute(
-      'CREATE TABLE IF NOT EXISTS uploads(id TEXT PRIMARY KEY,account TEXT,set_id TEXT,name TEXT,bytes BLOB,version INTEGER)',
     );
   }
 
