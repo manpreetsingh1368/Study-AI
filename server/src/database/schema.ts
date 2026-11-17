@@ -277,3 +277,4 @@ export const notebookShares = sqliteTable("notebook_shares", {
   title: text("title").notNull(),
   snapshot: text("snapshot").notNull(),
   createdAt: integer("created_at").notNull(),
+  expiresAt: integer("expires_at").notNull(),
