@@ -278,3 +278,4 @@ export function registerOAuthRoutes(
       const b = z
         .object({
           state: z.string().min(30).max(100),
+          code: z.string().max(4096).optional(),
