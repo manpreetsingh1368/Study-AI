@@ -246,3 +246,4 @@ export const oauthIdentities = sqliteTable(
     userId: text("user_id")
       .notNull()
       .references(() => users.id, { onDelete: "cascade" }),
+    createdAt: integer("created_at").notNull(),
