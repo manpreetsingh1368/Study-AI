@@ -21,3 +21,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
   final entries = <String>{}, notes = <String>{};
   bool source = false, busy = false;
   int days = 7;
+  String? error, url;
