@@ -119,6 +119,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         borderRadius: BorderRadius.circular(14),
                       ),
                       child: Column(
+                        children: [
                   PrimaryActionButton(
                     label: busy
                         ? 'Please wait…'
