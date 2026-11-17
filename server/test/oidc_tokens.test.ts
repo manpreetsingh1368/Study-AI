@@ -21,3 +21,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
     })
       .setProtectedHeader({ alg: "RS256" })
       .setIssuer(
+        provider === "google"
