@@ -178,3 +178,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
       "Selected text",
     ),
   );
+  assert.equal(
