@@ -35,6 +35,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     }
   }
 
+  Future<void> social(String provider) async {
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
