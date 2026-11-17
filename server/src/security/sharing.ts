@@ -15,3 +15,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         "SELECT id,title,created_at,expires_at,revoked_at FROM notebook_shares WHERE notebook_id=? ORDER BY created_at DESC LIMIT 100",
         sid,
       ),
+    };
