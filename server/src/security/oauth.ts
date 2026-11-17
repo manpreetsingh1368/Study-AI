@@ -173,3 +173,4 @@ export function registerOAuthRoutes(
     passwordReset: resetConfigured(),
   }));
   async function start(req: any, provider: Provider, link = false) {
+    if (!adapter.enabled(provider))
