@@ -76,3 +76,4 @@ export function registerPasswordRoutes(
           u.id,
         );
         run(
+          "INSERT INTO password_resets VALUES(?,?,?,NULL,?)",
