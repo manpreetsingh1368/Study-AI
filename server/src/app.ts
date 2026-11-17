@@ -609,7 +609,6 @@ export function createApp(
       );
     })();
     try {
-      const output = await (options.generate || generate)({
         ...b,
         notes: s.notes,
         pdf: doc ? readFileSync(join(uploads, doc.id)) : undefined,
