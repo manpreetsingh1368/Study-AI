@@ -69,3 +69,4 @@ export async function validateIdentityToken(
   return {
     subject: payload.sub,
     email,
+    name:
