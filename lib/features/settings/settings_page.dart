@@ -123,6 +123,7 @@ class _SettingsPageState extends State<SettingsPage> {
               OutlinedButton.icon(
                 onPressed: busy
                     ? null
+                    : () => perform(() async {
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
