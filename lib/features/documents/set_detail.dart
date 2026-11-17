@@ -496,6 +496,7 @@ class _SetDetailState extends State<SetDetail> {
                           : () => showModalBottomSheet(
                               context: context,
                               isScrollControlled: true,
+                              useSafeArea: true,
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
