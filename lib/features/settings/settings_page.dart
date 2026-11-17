@@ -119,7 +119,6 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Change password and revoke all sessions'),
             ),
             const SizedBox(height: 12),
-                              SelectableText(result['code']),
                               const SizedBox(height: 12),
                               TextButton.icon(
                                 onPressed: () => Clipboard.setData(
