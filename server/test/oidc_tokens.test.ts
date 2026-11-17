@@ -57,3 +57,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
         "google",
         await token({ email_verified: false }),
         "expected-nonce",
+        pair.publicKey,
