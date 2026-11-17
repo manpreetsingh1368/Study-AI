@@ -170,3 +170,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
   assert.equal(page.headers["cache-control"], "no-store");
   await call("PATCH", `/sets/${set.id}`, a.token, {
     version: 1,
+    title: "Changed",
