@@ -387,6 +387,7 @@ export function createApp(
       if (
         b.confirm !== "DELETE" ||
         !active ||
+        active.created_at < now() - 300000
     const docs = all(
       "SELECT d.id FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.user_id=?",
       u.id,
