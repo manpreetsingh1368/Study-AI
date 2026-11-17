@@ -73,3 +73,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     "token",
   )!;
   assert.ok(token);
+  assert.equal(
