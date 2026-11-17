@@ -5,3 +5,4 @@ import { z } from "zod";
 import nodemailer from "nodemailer";
 import { page, publicBase } from "./pages.js";
 export type ResetDelivery = (email: string, url: string) => Promise<void>;
+export const smtpConfigured = () =>
