@@ -353,3 +353,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     const start = await call(
       "POST",
       linkToken
+        ? `/me/identities/${provider}/start`
