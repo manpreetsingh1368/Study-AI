@@ -75,3 +75,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         password: password,
       );
       await load();
+    } catch (e) {
