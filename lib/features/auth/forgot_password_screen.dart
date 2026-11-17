@@ -55,3 +55,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(24),
         child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 480),
