@@ -34,3 +34,4 @@ export function registerPasswordRoutes(
   app: FastifyInstance,
   c: any,
   delivery?: ResetDelivery,
+) {
