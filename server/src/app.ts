@@ -377,6 +377,7 @@ export function createApp(
         })
         .parse(req.body);
     if (u.password_enabled) {
+      if (!b.password || !(await verify(u.password_hash, b.password)))
     const docs = all(
       "SELECT d.id FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.user_id=?",
       u.id,
