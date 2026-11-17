@@ -256,3 +256,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     contentPadding: EdgeInsets.zero,
                     leading: Icon(
                       link['revoked_at'] != null ? Icons.link_off : Icons.link,
+                      color: accent,
