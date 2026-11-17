@@ -104,3 +104,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     const u = user(req),
       { id, shareId } = req.params as any;
     owned(u.id, id);
+    run(
