@@ -54,6 +54,7 @@ class StudyController extends ChangeNotifier {
   int _sessionVersion = 0;
   Future<void>? _syncTask;
   List<Map<String, dynamic>> get notebooks =>
+      sets.where((s) => s['parent_notebook_id'] == null).toList();
   String get account => user!['id'] as String;
   Future<void> initialize() async {
     try {
