@@ -214,6 +214,7 @@ export function createApp(
         parentNotebookId,
         JSON.stringify(ids),
       );
+      change(parentNotebookId, uid);
     return sid;
   }
   const session = (u: any) => {
