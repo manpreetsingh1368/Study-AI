@@ -69,6 +69,7 @@ class LocalStore {
           'set_id': setId,
           'name': name,
           'path': file.path,
+          'version': version,
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
