@@ -264,3 +264,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
     onDelete: "cascade",
   }),
   linkSessionHash: text("link_session_hash"),
+  error: text("error"),
