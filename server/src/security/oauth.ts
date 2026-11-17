@@ -303,3 +303,4 @@ export function registerOAuthRoutes(
         );
       if (b.error || !b.code) {
         run(
+          "UPDATE oauth_flows SET status='failed',error=? WHERE id=?",
