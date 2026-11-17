@@ -54,3 +54,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         title:
           entry.kind === "chat"
             ? entry.prompt
+            : entry.kind === "guide"
