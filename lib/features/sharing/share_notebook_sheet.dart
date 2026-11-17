@@ -258,3 +258,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                       link['revoked_at'] != null ? Icons.link_off : Icons.link,
                       color: accent,
                     ),
+                    title: Text(
