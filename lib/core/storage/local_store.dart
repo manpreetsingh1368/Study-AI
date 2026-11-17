@@ -53,6 +53,7 @@ class LocalStore {
   ) async {
     final support = await getApplicationSupportDirectory();
     final directory = Directory(p.join(support.path, 'private-pdfs', account));
+    await directory.create(recursive: true);
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
