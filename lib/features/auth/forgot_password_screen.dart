@@ -87,3 +87,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     autofillHints: const [AutofillHints.email],
                     keyboardType: TextInputType.emailAddress,
                     decoration: const InputDecoration(
+                      labelText: 'Account email',
