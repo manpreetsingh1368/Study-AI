@@ -79,6 +79,7 @@ class LocalStore {
       });
     } catch (_) {
       await sink.close();
+      if (await file.exists()) await file.delete();
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
