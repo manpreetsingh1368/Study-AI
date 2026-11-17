@@ -135,6 +135,7 @@ export function createApp(
         record.id,
       );
       change(record.id, uid);
+    }
   function full(s: any) {
     return {
       ...s,
