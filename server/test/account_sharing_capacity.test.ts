@@ -404,3 +404,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     (
       await call("POST", "/auth/oauth/complete", undefined, {
         flowId: flow.id,
+        verifier: flow.verifier,
