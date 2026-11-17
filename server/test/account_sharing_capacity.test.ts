@@ -265,3 +265,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
   await call("DELETE", `/sets/${root.id}`, a.token, { version: root.version });
   assert.equal(
     (
+      await call("PATCH", `/sets/${children[0].id}`, a.token, {
