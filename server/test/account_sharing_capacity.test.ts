@@ -371,3 +371,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   const flow = await begin();
   assert.equal(
     (
+      await app.inject({
