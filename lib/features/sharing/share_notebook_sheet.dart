@@ -54,3 +54,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
       );
       if (mounted) setState(() => url = link['url']);
       await load();
+    } catch (e) {
