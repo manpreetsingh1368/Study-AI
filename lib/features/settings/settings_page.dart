@@ -130,6 +130,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           {'password': current.text},
                         );
                         if (!context.mounted) return;
+                        await showDialog<void>(
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
