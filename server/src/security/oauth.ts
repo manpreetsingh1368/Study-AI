@@ -147,3 +147,4 @@ export const productionOAuth: OAuthAdapter = {
     const response = await fetch(
       provider === "google"
         ? "https://oauth2.googleapis.com/token"
+        : "https://appleid.apple.com/auth/token",
