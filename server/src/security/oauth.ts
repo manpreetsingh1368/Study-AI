@@ -167,3 +167,4 @@ export function registerOAuthRoutes(
   resetConfigured = smtpConfigured,
 ) {
   const { db, user, publicUser, session, get, run, now, fail } = c;
+  app.get("/auth/options", async () => ({
