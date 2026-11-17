@@ -25,3 +25,4 @@ async function setup(
   t.after(async () => {
     await app.close();
     rmSync(directory, { recursive: true, force: true });
+  });
