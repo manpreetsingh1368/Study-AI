@@ -44,6 +44,7 @@ class LocalStore {
 
   Future<void> queueUploadStream(
     String account,
+    String id,
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
