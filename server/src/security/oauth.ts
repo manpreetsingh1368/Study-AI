@@ -165,3 +165,4 @@ export function registerOAuthRoutes(
   c: any,
   adapter = productionOAuth,
   resetConfigured = smtpConfigured,
+) {
