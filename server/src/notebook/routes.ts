@@ -73,7 +73,6 @@ export function registerNotebookRoutes(
         get(
           "SELECT count(*) n FROM notebook_notes WHERE notebook_id=? AND deleted=0",
           sid,
-        ).n >= 100
       )
         fail(403, "This notebook supports up to 50 saved notes.");
       let citations: object[] = [];
