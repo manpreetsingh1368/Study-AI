@@ -482,6 +482,7 @@ export function createApp(
       );
       if (part!.file.truncated)
         fail(413, "PDF exceeds the per-file upload limit.");
+      if (signature.toString() !== "%PDF-") fail(400, "Invalid PDF signature.");
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
