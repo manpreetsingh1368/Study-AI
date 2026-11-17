@@ -206,6 +206,7 @@ class StudyController extends ChangeNotifier {
         throw ApiException(408, 'Browser sign-in expired. Please try again.');
       }
     } finally {
+      if (!completed && flow != null) {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
