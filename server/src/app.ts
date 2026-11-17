@@ -488,6 +488,7 @@ export function createApp(
         const currentCapacity = capacity(current, get);
         if (
           currentCapacity.pdfBytes -
+            (previousDocument?.bytes || 0) +
         run(
           "INSERT INTO documents VALUES(?,?,?,?) ON CONFLICT(set_id) DO UPDATE SET id=excluded.id,filename=excluded.filename,bytes=excluded.bytes",
           did,
