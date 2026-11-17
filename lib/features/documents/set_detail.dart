@@ -146,6 +146,7 @@ class _SetDetailState extends State<SetDetail> {
     if (choice == null || !mounted) return;
     if (validSelection.length >= 8) {
       setState(
+        () => error = 'Select up to 50 sources at a time. Uncheck one before adding another.',
       );
       return;
     }
