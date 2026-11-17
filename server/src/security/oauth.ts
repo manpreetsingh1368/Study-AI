@@ -28,3 +28,4 @@ const appleKeys = createRemoteJWKSet(
 );
 export async function validateIdentityToken(
   provider: Provider,
+  token: string,
