@@ -62,3 +62,4 @@ export async function validateIdentityToken(
     !payload.sub ||
     payload.sub.length > 255
   )
+    throw new Error("Invalid identity nonce.");
