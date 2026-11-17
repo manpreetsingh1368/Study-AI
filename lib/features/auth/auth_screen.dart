@@ -218,6 +218,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                         bottom: 18,
                                       ),
                                       child: Row(
+                                        children: [
     ),
   );
   @override
