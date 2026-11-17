@@ -46,3 +46,4 @@ export async function validateIdentityToken(
           : process.env.APPLE_CLIENT_ID,
       algorithms: ["RS256"],
       requiredClaims: ["exp", "iat", "sub", "nonce", "email", "email_verified"],
+      maxTokenAge: "10m",
