@@ -215,3 +215,4 @@ export function registerOAuthRoutes(
       nonce,
       pkce,
       body.challenge,
+      now() + 600000,
