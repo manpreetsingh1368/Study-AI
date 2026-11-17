@@ -49,6 +49,7 @@ class LocalStore {
       whereArgs: [account, id],
     );
     if (files.isNotEmpty) {
+      final file = File(files.first['path'] as String);
     final rows = await db.query(
       'pdf_cache',
       where: 'account=? AND id=?',
