@@ -239,3 +239,4 @@ export function registerOAuthRoutes(
       (req) => start(req, provider, true),
     );
     app.get(`/auth/oauth/${provider}/begin`, async (req, reply) => {
+      const q = z
