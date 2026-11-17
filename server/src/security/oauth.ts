@@ -331,3 +331,4 @@ export function registerOAuthRoutes(
           if (active?.status !== "verifying")
             throw new Error("Sign-in was cancelled or expired.");
           let accountId: string;
+          const existing = get(
