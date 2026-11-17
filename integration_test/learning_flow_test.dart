@@ -247,6 +247,7 @@ void main() {
           key: 'share:${c.account}:$shareId',
         );
         // The fixture origin differs from the production public origin.
+        final sharedUri = Uri.parse(shareUrl!)
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
