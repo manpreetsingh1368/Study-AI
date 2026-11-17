@@ -199,3 +199,4 @@ export function registerOAuthRoutes(
           !(await verify(owner.password_hash, body.password))
         )
           fail(401, "Enter your current password to connect an identity.");
+      } else if (!current || current.created_at < now() - 300000)
