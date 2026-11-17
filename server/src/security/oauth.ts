@@ -443,3 +443,4 @@ export function registerOAuthRoutes(
         if (!account) fail(400, "Account no longer exists.");
         run("UPDATE oauth_flows SET status='consumed' WHERE id=?", flow.id);
         return { status: "complete", ...session(account) };
+      })();
