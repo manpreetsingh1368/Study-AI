@@ -29,3 +29,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
           noteIds: z.array(z.uuid()).max(50).default([]),
         })
         .parse(req.body);
+    if (!b.includeSourceNotes && !b.entryIds.length && !b.noteIds.length)
