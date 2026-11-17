@@ -42,3 +42,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       final controller = TextEditingController();
       password = await showDialog<String>(
         context: context,
+        builder: (ctx) => AlertDialog(
