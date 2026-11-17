@@ -198,6 +198,7 @@ class StudyController extends ChangeNotifier {
         }
         if (status['status'] == 'complete') {
           completed = true;
+          await acceptSession(Map<String, dynamic>.from(status));
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
