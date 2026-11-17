@@ -66,3 +66,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
     final book = widget.notebook['notebook'] as Map? ?? {};
     return SafeArea(
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
