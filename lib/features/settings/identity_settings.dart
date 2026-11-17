@@ -115,3 +115,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
                 ? const Icon(Icons.check_circle_outline, color: accent)
                 : OutlinedButton(
                     onPressed: busy || options[provider] != true
+                        ? null
