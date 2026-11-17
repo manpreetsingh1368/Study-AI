@@ -102,3 +102,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
+                        'Anyone with the link · read-only',
