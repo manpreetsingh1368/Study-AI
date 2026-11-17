@@ -204,3 +204,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     { includeSourceNotes: true, expiresInDays: 1 },
   );
   advance(86400001);
+  assert.equal(
