@@ -257,6 +257,7 @@ void main() {
             await utf8.decoder.bind(publicResponse).join(),
             contains('ATP transfers chemical energy.'),
           );
+          await c.request('DELETE', '/notebooks/${set['id']}/shares/$shareId');
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
