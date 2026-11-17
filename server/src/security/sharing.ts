@@ -38,3 +38,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         now(),
       ).n >= 20
     )
+      fail(403, "Revoke an existing link before creating more.");
