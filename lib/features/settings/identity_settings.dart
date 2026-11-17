@@ -62,3 +62,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
               child: const Text('Continue'),
             ),
           ],
+        ),
