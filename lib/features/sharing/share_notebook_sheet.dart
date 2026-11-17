@@ -18,3 +18,4 @@ class ShareNotebookSheet extends StatefulWidget {
 }
 
 class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
+  final entries = <String>{}, notes = <String>{};
