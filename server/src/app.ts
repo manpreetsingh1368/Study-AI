@@ -609,7 +609,6 @@ export function createApp(
       );
     })();
     try {
-        notes: s.notes,
         pdf: doc ? readFileSync(join(uploads, doc.id)) : undefined,
       });
       db.transaction(() => {
