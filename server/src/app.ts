@@ -179,6 +179,7 @@ export function createApp(
         fail(400, "Sources must belong to a notebook, not another source.");
       if (
         get(
+          "SELECT count(*) n FROM study_sets WHERE parent_notebook_id=? AND deleted=0",
       get(
         "SELECT count(*) n FROM study_sets WHERE user_id=? AND deleted=0 AND parent_notebook_id IS NULL",
         uid,
