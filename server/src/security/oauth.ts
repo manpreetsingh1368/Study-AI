@@ -256,3 +256,4 @@ export function registerOAuthRoutes(
         !flow ||
         flow.launch_hash !== digest(q.key) ||
         flow.state_hash !== digest(q.state)
+      )
