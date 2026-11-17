@@ -282,3 +282,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
     await call("POST", "/sets", a.token, { title: "Notebook", notes: "" })
   ).body.set;
   const first = (
+      await call("POST", "/sets", a.token, {
