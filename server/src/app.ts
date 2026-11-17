@@ -490,6 +490,7 @@ export function createApp(
           currentCapacity.pdfBytes -
             (previousDocument?.bytes || 0) +
             byteCount >
+          NOTEBOOK_PDF_BYTES
         run(
           "INSERT INTO documents VALUES(?,?,?,?) ON CONFLICT(set_id) DO UPDATE SET id=excluded.id,filename=excluded.filename,bytes=excluded.bytes",
           did,
