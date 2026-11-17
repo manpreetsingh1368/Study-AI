@@ -390,3 +390,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   const callback = await app.inject({
     method: "GET",
     url: `/auth/oauth/google/callback?state=${flow.state}&code=new`,
+    headers: { cookie: flow.cookie },
