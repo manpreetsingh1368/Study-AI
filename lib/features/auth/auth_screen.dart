@@ -158,6 +158,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                 double.infinity,
               ),
             ),
+            child: Center(
     ),
   );
   @override
