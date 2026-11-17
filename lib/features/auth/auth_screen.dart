@@ -99,6 +99,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           icon: const Icon(Icons.apple, size: 21),
                           label: const Text('Apple'),
                         ),
+                      ),
                   if (register) ...[
                     TextFormField(
                       controller: name,
