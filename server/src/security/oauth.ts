@@ -283,3 +283,4 @@ export function registerOAuthRoutes(
         })
         .parse(req.method === "POST" ? req.body : req.query);
       const flow = get(
+        "SELECT * FROM oauth_flows WHERE state_hash=? AND provider=? AND expires_at>? AND status='pending' AND launched=1",
