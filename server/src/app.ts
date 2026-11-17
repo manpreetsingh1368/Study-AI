@@ -193,6 +193,7 @@ export function createApp(
     change(sid, uid);
     if (parentNotebookId) {
       const saved = get(
+          "SELECT source_ids FROM notebook_preferences WHERE notebook_id=?",
     return sid;
   }
   const session = (u: any) => {
