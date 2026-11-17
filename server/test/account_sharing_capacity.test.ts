@@ -55,3 +55,4 @@ async function setup(
 test("forgot password: non-enumerating response, real delivery adapter, one-use expiry and revocation", async (t) => {
   const mail: { email: string; url: string }[] = [];
   const { call, register, advance } = await setup(t, {
+    resetDelivery: async (email, url) => {
