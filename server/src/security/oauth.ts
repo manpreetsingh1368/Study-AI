@@ -462,3 +462,4 @@ export function registerOAuthRoutes(
     return {
       identities: db
         .prepare(
+          "SELECT provider,created_at FROM oauth_identities WHERE user_id=?",
