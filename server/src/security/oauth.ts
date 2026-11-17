@@ -193,3 +193,4 @@ export function registerOAuthRoutes(
         "SELECT created_at FROM sessions WHERE token_hash=?",
         sessionHash,
       );
+      if (owner.password_enabled) {
