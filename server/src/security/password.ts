@@ -49,3 +49,4 @@ export function registerPasswordRoutes(
             .max(254)
             .transform((s) => s.toLowerCase()),
         })
+        .parse(req.body);
