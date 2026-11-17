@@ -386,7 +386,6 @@ export function createApp(
     const u = user(req);
     return {
       sets: all(
-        "SELECT * FROM study_sets WHERE user_id=? AND deleted=0 ORDER BY updated_at DESC",
         u.id,
       ).map(full),
     };
