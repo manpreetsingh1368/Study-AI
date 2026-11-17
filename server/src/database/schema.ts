@@ -233,3 +233,4 @@ export const passwordResets = sqliteTable("password_resets", {
   tokenHash: text("token_hash").primaryKey(),
   userId: text("user_id")
     .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
