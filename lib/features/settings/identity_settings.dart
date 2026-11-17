@@ -8,3 +8,4 @@ class IdentitySettings extends StatefulWidget {
   const IdentitySettings({super.key, required this.controller});
   @override
   State<IdentitySettings> createState() => _IdentitySettingsState();
+}
