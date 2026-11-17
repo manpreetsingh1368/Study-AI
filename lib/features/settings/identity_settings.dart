@@ -45,3 +45,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         builder: (ctx) => AlertDialog(
           title: Text('Connect ${provider == 'google' ? 'Google' : 'Apple'}'),
           content: TextField(
+            controller: controller,
