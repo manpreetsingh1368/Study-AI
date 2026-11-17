@@ -105,3 +105,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
   await call("POST", "/auth/forgot-password", undefined, {
     email: "owner@example.com",
   });
+  await new Promise((resolve) => setTimeout(resolve, 15));
