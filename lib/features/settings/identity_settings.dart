@@ -69,3 +69,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
     }
     setState(() => busy = true);
     try {
+      await widget.controller.socialSignIn(
