@@ -61,3 +61,4 @@ export async function validateIdentityToken(
     typeof payload.sub !== "string" ||
     !payload.sub ||
     payload.sub.length > 255
+  )
