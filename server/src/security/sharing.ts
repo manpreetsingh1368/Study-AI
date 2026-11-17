@@ -86,3 +86,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       fail(413, "Select fewer items for this share link.");
     const token = randomBytes(32).toString("base64url"),
       id = randomUUID(),
+      expiresAt = now() + b.expiresInDays * 86400000;
