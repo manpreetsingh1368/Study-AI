@@ -49,3 +49,4 @@ export async function validateIdentityToken(
       maxTokenAge: "10m",
       clockTolerance: 5,
     },
+  );
