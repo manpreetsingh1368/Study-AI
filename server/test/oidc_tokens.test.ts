@@ -110,3 +110,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
     if (originalGoogle === undefined) delete process.env.GOOGLE_CLIENT_ID;
     else process.env.GOOGLE_CLIENT_ID = originalGoogle;
     if (originalApple === undefined) delete process.env.APPLE_CLIENT_ID;
+    else process.env.APPLE_CLIENT_ID = originalApple;
