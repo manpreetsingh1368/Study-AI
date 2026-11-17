@@ -354,3 +354,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
       "POST",
       linkToken
         ? `/me/identities/${provider}/start`
+        : `/auth/oauth/${provider}/start`,
