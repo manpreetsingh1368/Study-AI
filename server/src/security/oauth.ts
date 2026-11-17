@@ -70,3 +70,4 @@ export async function validateIdentityToken(
     subject: payload.sub,
     email,
     name:
+      typeof payload.name === "string"
