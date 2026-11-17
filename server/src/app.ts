@@ -209,6 +209,7 @@ export function createApp(
       )
         ids = ids.filter((id) => id !== parentNotebookId);
       if (ids.length < 50 && !ids.includes(sid)) ids.push(sid);
+      run(
     return sid;
   }
   const session = (u: any) => {
