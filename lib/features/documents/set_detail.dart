@@ -1200,6 +1200,7 @@ class _SetDetailState extends State<SetDetail> {
             style: const TextStyle(fontSize: 9),
           ),
         ],
+      ),
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
