@@ -28,6 +28,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
 
   Future<void> loadOptions() async {
     try {
+      final result = await c.request('GET', '/auth/options');
   Future<void> submit() async {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
