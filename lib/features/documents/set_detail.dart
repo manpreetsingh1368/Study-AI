@@ -1176,6 +1176,7 @@ class _SetDetailState extends State<SetDetail> {
         : '${(used / 1024).toStringAsFixed(0)} KiB';
     return Container(
       padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
