@@ -119,7 +119,6 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Change password and revoke all sessions'),
             ),
             const SizedBox(height: 12),
-                            'Save this recovery code privately',
                           ),
                           content: Column(
                             mainAxisSize: MainAxisSize.min,
