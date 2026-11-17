@@ -452,3 +452,4 @@ export function registerOAuthRoutes(
       .parse(req.body);
     run(
       "UPDATE oauth_flows SET status='cancelled' WHERE id=? AND client_challenge=? AND status IN ('pending','verifying','complete')",
+      b.flowId,
