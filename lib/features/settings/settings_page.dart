@@ -107,6 +107,7 @@ class _SettingsPageState extends State<SettingsPage> {
             ),
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
+              OutlinedButton(
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
               OutlinedButton.icon(
