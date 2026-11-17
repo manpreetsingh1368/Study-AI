@@ -109,3 +109,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
                   ? 'Connected to this account'
                   : options[provider] == true
                   ? 'Available to connect'
+                  : 'Not configured by the server owner',
