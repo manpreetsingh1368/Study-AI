@@ -295,3 +295,4 @@ export function registerOAuthRoutes(
           s.startsWith(`study_oauth_${flow?.id?.replaceAll("-", "")}=`),
         )
         ?.split("=")[1];
+      if (!flow || !cookie || digest(cookie) !== flow.launch_hash)
