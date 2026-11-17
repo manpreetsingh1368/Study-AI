@@ -630,6 +630,7 @@ class StudyController extends ChangeNotifier {
       'x-document-id': upload['id'] as String,
       'x-set-version': '${upload['version']}',
     });
+    if (upload['path'] != null) {
     final response = await req
         .send()
         .then(http.Response.fromStream)
