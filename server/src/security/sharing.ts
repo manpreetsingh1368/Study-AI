@@ -74,3 +74,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         sid,
       );
       if (!note) fail(404, "A selected note is unavailable.");
+      sections.push({
