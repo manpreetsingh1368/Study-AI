@@ -12,6 +12,7 @@
     "maintenance": "tsx src/maintenance.ts"
   },
   "dependencies": {
+    "@fastify/formbody": "^9.0.2",
     "@fastify/helmet": "^13.0.0",
     "@fastify/multipart": "^9.0.0",
     "@fastify/rate-limit": "^10.0.0",
