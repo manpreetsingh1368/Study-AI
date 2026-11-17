@@ -113,6 +113,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                             ? null
                             : () => context.go('/forgot-password'),
                         child: const Text('Forgot password?'),
+                      ),
                   if (error != null) ...[
                     ErrorState(message: error!),
                     const SizedBox(height: 16),
