@@ -139,3 +139,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
   ).body.set;
   const secret = (
     await call("POST", "/sets", a.token, {
+      title: "UNSELECTED",
