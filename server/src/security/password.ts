@@ -66,3 +66,4 @@ export function registerPasswordRoutes(
           now() - 60000,
         )
       )
+        return response;
