@@ -478,6 +478,7 @@ export function createApp(
             callback(null, chunk);
           },
         }),
+        createWriteStream(temporary, { mode: 0o600, flags: "wx" }),
       await validatePdf(temporary);
       db.transaction(() => {
         const current = owned(u.id, s.id);
