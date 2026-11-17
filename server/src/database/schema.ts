@@ -279,3 +279,4 @@ export const notebookShares = sqliteTable("notebook_shares", {
   createdAt: integer("created_at").notNull(),
   expiresAt: integer("expires_at").notNull(),
   revokedAt: integer("revoked_at"),
+});
