@@ -243,6 +243,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           card,
                         ],
                       ),
+                    )
     ),
   );
   @override
