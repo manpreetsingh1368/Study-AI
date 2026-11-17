@@ -73,3 +73,4 @@ export async function validateIdentityToken(
       typeof payload.name === "string"
         ? payload.name.slice(0, 100)
         : provider === "apple"
+          ? "Student"
