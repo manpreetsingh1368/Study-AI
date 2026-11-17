@@ -119,7 +119,6 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Change password and revoke all sessions'),
             ),
             const SizedBox(height: 12),
-                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text(
                                 'This code replaces any older recovery code. It can reset your password once and expires in one year. It will not be shown again.',
