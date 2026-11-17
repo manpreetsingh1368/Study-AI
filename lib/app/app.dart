@@ -44,6 +44,7 @@ class _StudyAIAppState extends ConsumerState<StudyAIApp> {
       },
       routes: [
         GoRoute(
+        GoRoute(
           path: '/recovery',
           builder: (_, _) => RecoveryScreen(controller: c),
         ),
