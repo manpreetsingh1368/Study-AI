@@ -259,3 +259,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
   clientChallenge: text("client_challenge").notNull(),
   expiresAt: integer("expires_at").notNull(),
   status: text("status").notNull().default("pending"),
+  userId: text("user_id").references(() => users.id, { onDelete: "cascade" }),
