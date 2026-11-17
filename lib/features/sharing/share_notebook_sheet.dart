@@ -124,3 +124,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     title: const Text('Include notebook source notes'),
                     subtitle: Text(
                       widget.notebook['notes'],
+                      maxLines: 2,
