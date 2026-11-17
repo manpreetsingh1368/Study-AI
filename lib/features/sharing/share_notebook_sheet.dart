@@ -247,3 +247,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 ),
                 const SizedBox(height: 10),
                 if (links.isEmpty)
+                  const Text(
