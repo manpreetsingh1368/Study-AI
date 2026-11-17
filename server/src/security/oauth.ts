@@ -177,3 +177,4 @@ export function registerOAuthRoutes(
       fail(
         503,
         `${provider === "google" ? "Google" : "Apple"} sign-in is not configured on this server.`,
+      );
