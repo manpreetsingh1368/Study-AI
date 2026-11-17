@@ -320,3 +320,4 @@ export function registerOAuthRoutes(
         const email = z.email().parse(identity.email).toLowerCase();
         const randomPassword = await hash(
           randomBytes(48).toString("base64url"),
+          { type: argon2id },
