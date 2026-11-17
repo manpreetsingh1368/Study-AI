@@ -26,3 +26,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
           : "https://appleid.apple.com",
       )
       .setAudience(
+        provider === "google" ? "google-test-client" : "apple-test-client",
