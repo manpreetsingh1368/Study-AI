@@ -109,3 +109,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                         ? 'Request another link'
                         : 'Email reset link',
                     icon: Icons.mail_outline_rounded,
+                    onPressed: busy ? null : submit,
