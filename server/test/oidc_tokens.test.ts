@@ -43,3 +43,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
           "expected-nonce",
           pair.publicKey,
         )
+      ).email,
