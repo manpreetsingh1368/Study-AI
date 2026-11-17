@@ -412,3 +412,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   const existing = await begin();
   await app.inject({
     method: "GET",
+    url: `/auth/oauth/google/callback?state=${existing.state}&code=local`,
