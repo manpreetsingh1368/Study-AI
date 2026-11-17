@@ -106,6 +106,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         onPressed: () => setState(() => obscure = !obscure),
                         icon: Icon(
                           obscure
+                              ? Icons.visibility_outlined
                     ),
                     validator: (v) =>
                         v!.length < 12 ? 'Use at least 12 characters' : null,
