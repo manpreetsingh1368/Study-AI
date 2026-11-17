@@ -7,3 +7,4 @@ class IdentitySettings extends StatefulWidget {
   final StudyController controller;
   const IdentitySettings({super.key, required this.controller});
   @override
+  State<IdentitySettings> createState() => _IdentitySettingsState();
