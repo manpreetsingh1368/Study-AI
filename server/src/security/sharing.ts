@@ -67,3 +67,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
         citations: content.blocks.flatMap((block: any) => block.citations),
       });
     }
+    for (const id of [...new Set(b.noteIds)]) {
