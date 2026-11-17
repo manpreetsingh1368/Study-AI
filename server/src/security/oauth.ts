@@ -18,3 +18,4 @@ export type OAuthAdapter = {
   authorization: (provider: Provider, flow: any) => string;
   exchange: (provider: Provider, code: string, flow: any) => Promise<Identity>;
 };
+const digest = (value: string) =>
