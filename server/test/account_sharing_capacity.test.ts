@@ -217,3 +217,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
 test("50 notebook sources bypass notebook-count quotas, but not source/owner/deletion checks", async (t) => {
   const { call, register } = await setup(t);
   const a = await register(),
+    b = await register("other@example.com");
