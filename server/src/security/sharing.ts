@@ -91,3 +91,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       "INSERT INTO notebook_shares VALUES(?,?,?,?,?,?,?,NULL)",
       id,
       sid,
+      digest(token),
