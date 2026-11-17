@@ -55,6 +55,7 @@ class LocalStore {
     final directory = Directory(p.join(support.path, 'private-pdfs', account));
     await directory.create(recursive: true);
     final file = File(p.join(directory.path, '$id.pdf'));
+    final sink = file.openWrite();
   Future<Uint8List?> pdf(String account, String id) async {
     final files = await db.query(
       'pdf_files',
