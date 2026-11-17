@@ -47,6 +47,7 @@ class LocalStore {
       'pdf_files',
       where: 'account=? AND id=?',
       whereArgs: [account, id],
+    );
     final rows = await db.query(
       'pdf_cache',
       where: 'account=? AND id=?',
