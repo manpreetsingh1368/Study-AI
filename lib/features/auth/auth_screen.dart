@@ -93,6 +93,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       SizedBox(
                         width: desktop ? 188 : 188,
                         child: OutlinedButton.icon(
+                          onPressed: !busy && providers['apple'] == true
                   if (register) ...[
                     TextFormField(
                       controller: name,
