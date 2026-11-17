@@ -176,6 +176,7 @@ class _SettingsPageState extends State<SettingsPage> {
             const SizedBox(height: 24),
             Text(
               widget.controller.user?['hasPassword'] == false
+                  ? 'Account deletion permanently removes your server data and private documents. Sign in again with your provider before confirming deletion.'
             ),
             TextButton(
               onPressed: busy
