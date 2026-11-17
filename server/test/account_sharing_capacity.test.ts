@@ -102,3 +102,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     200,
   );
   advance(61000);
+  await call("POST", "/auth/forgot-password", undefined, {
