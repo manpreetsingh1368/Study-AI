@@ -22,6 +22,7 @@ Updated 2026-11-16. Application flows are implemented; public production deploym
 ## Identity, sharing and capacity refinement
 
 - Responsive sign-in design, password visibility, forgot-password form and browser sign-in progress/cancellation. Google and Apple buttons reflect server configuration; Settings supports explicit password-confirmed provider linking. Provider-only accounts can set a password by email.
+- SMTP reset links use hashed, single-use 20-minute tokens; generic responses avoid account enumeration. Password changes/recovery invalidate outstanding resets and sessions. Missing SMTP is explicitly shown; delivery failures are sanitized. Delivery jobs are in memory with graceful shutdown draining.
 ## Verification
 
 - `flutter analyze`: clean.
