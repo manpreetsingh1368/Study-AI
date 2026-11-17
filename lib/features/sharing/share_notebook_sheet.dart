@@ -226,3 +226,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                               icon: const Icon(Icons.copy, size: 17),
                               label: const Text('Copy link'),
                             ),
+                            TextButton.icon(
