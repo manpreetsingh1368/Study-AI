@@ -330,3 +330,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
   );
   assert.equal((await upload()).statusCode, 200);
   assert.equal(
+    (db.prepare("SELECT count(*) n FROM documents").get() as any).n,
