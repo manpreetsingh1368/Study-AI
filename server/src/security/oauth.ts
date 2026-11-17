@@ -317,3 +317,4 @@ export function registerOAuthRoutes(
       run("UPDATE oauth_flows SET status='verifying' WHERE id=?", flow.id);
       try {
         const identity = await adapter.exchange(provider, b.code, flow);
+        const email = z.email().parse(identity.email).toLowerCase();
