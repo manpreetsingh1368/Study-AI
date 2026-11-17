@@ -57,3 +57,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
   const { call, register, advance } = await setup(t, {
     resetDelivery: async (email, url) => {
       mail.push({ email, url });
+    },
