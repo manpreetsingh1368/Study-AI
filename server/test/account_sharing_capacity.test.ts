@@ -142,3 +142,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
       title: "UNSELECTED",
       notes: "NEVER_PUBLISH_THIS",
     })
+  ).body.set;
