@@ -304,3 +304,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
   );
   const doc = await PDFDocument.create();
   doc.addPage();
+  const bytes = Buffer.from(await doc.save());
