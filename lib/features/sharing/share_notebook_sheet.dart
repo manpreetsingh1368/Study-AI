@@ -167,3 +167,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                 ? entries.add(item['id'])
                                 : entries.remove(item['id']);
                           }),
+                  ),
