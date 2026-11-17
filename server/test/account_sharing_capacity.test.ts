@@ -42,3 +42,4 @@ async function setup(
         email,
         password: "owner-secure-password",
       })
+    ).body;
