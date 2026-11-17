@@ -177,3 +177,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     for (final n in [1, 7, 30, 90])
                       DropdownMenuEntry(
                         value: n,
+                        label: '$n ${n == 1 ? 'day' : 'days'}',
