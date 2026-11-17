@@ -463,6 +463,7 @@ export function createApp(
       fail(409, "Document identifier already used.");
     const temporary = join(uploads, `${id()}.pending`);
     let promoted = false,
+      byteCount = 0,
     try {
       await pipeline(
         part!.file,
