@@ -201,3 +201,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     "POST",
     `/notebooks/${secret.id}/shares`,
     a.token,
+    { includeSourceNotes: true, expiresInDays: 1 },
