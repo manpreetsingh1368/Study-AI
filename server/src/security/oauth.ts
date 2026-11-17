@@ -413,3 +413,4 @@ export function registerOAuthRoutes(
     app.post(`/auth/oauth/${provider}/callback`, callback);
   }
   app.post(
+    "/auth/oauth/complete",
