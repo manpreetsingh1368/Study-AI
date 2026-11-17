@@ -144,3 +144,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                 : notes.remove(item['id']);
                           }),
                   ),
+                for (final item in book['entries'] ?? [])
