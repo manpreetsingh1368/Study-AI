@@ -95,3 +95,4 @@ export const productionOAuth: OAuthAdapter = {
         ),
   authorization(provider, flow) {
     const parameters = new URLSearchParams({
+      client_id:
