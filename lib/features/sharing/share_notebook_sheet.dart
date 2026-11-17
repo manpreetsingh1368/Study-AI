@@ -171,3 +171,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 const SizedBox(height: 16),
                 DropdownMenu<int>(
                   initialSelection: days,
+                  label: const Text('Link expires after'),
