@@ -89,3 +89,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
             ),
           ),
           Expanded(
+            child: ListView(
