@@ -372,3 +372,4 @@ export function registerOAuthRoutes(
             );
           }
           if (!existing)
+            run(
