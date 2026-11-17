@@ -26,3 +26,4 @@ export const sendReset: ResetDelivery = async (email, url) => {
       subject: "Reset your Study AI password",
       text: `A password reset was requested for your Study AI account.\n\nOpen this link within 20 minutes:\n${url}\n\nIf you did not request this, ignore this message. The link can be used only once.\nStudy AI`,
     });
+  } finally {
