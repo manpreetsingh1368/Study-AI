@@ -80,3 +80,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   const SizedBox(height: 12),
                   const Text(
                     'Enter the email used for your account. Reset links expire in 20 minutes and work only once.',
+                  ),
