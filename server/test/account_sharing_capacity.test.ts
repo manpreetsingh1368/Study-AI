@@ -83,3 +83,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
     200,
   );
   assert.equal((await call("GET", "/me", a.token)).status, 401);
+  assert.equal(
