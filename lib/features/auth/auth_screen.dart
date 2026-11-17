@@ -39,6 +39,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
     setState(() {
       busy = true;
       error = null;
+    });
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
     } finally {
