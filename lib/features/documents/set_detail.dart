@@ -507,6 +507,7 @@ class _SetDetailState extends State<SetDetail> {
                               ),
                             ),
                       icon: const Icon(Icons.ios_share_rounded, size: 19),
+                    ),
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
