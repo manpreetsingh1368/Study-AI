@@ -61,3 +61,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
                 : "Source overview",
         text: content.insufficientEvidence
           ? "The selected sources did not contain enough evidence."
+          : content.blocks
