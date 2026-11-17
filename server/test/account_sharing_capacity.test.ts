@@ -35,3 +35,4 @@ async function setup(
     });
     return { status: result.statusCode, body: result.json() };
   }
+  async function register(email = "owner@example.com") {
