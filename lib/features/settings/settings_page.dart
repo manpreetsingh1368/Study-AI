@@ -119,6 +119,7 @@ class _SettingsPageState extends State<SettingsPage> {
               child: const Text('Change password and revoke all sessions'),
             ),
             const SizedBox(height: 12),
+            if (widget.controller.user?['hasPassword'] != false)
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
