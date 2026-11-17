@@ -122,3 +122,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   CheckboxListTile(
                     contentPadding: EdgeInsets.zero,
                     title: const Text('Include notebook source notes'),
+                    subtitle: Text(
