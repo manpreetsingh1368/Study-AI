@@ -17,3 +17,4 @@ async function setup(
   let clock = Date.now();
   const app = createApp({
     dataDir: directory,
+    uploadDir: join(directory, "uploads"),
