@@ -96,6 +96,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           onPressed: !busy && providers['apple'] == true
                               ? () => social('apple')
                               : null,
+                          icon: const Icon(Icons.apple, size: 21),
                   if (register) ...[
                     TextFormField(
                       controller: name,
