@@ -1165,6 +1165,7 @@ class _SetDetailState extends State<SetDetail> {
     );
   }
 
+  Widget storageMeter() {
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
