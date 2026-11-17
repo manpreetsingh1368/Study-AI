@@ -206,3 +206,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         SelectableText(
                           url!,
                           style: const TextStyle(fontSize: 12),
+                        ),
