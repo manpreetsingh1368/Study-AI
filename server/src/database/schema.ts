@@ -244,3 +244,4 @@ export const oauthIdentities = sqliteTable(
     provider: text("provider").notNull(),
     subject: text("subject").notNull(),
     userId: text("user_id")
+      .notNull()
