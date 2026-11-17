@@ -203,6 +203,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                     (
                                       Icons.source_outlined,
                                       'Everything you’re learning, together',
+                                    ),
     ),
   );
   @override
