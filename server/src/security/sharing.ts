@@ -17,3 +17,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       ),
     };
   });
+  app.post("/notebooks/:id/shares", async (req, reply) => {
