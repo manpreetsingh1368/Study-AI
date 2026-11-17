@@ -149,6 +149,7 @@ class _NotesEditorState extends State<NotesEditor> {
                               pdf = result.single;
                               droppedName = null;
                               droppedStream = null;
+                              droppedLength = null;
                             });
                           }
                         }
