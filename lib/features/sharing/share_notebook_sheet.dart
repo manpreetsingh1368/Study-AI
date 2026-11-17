@@ -123,3 +123,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     contentPadding: EdgeInsets.zero,
                     title: const Text('Include notebook source notes'),
                     subtitle: Text(
+                      widget.notebook['notes'],
