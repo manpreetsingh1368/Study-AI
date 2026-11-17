@@ -66,6 +66,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         ),
                       ),
                       const SizedBox(width: 12),
+                      const Expanded(
                   ),
                   const SizedBox(height: 26),
                   Text(
