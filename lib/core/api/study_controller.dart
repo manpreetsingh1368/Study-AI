@@ -634,6 +634,7 @@ class StudyController extends ChangeNotifier {
       final file = File(upload['path'] as String);
       req.files.add(
         http.MultipartFile(
+          'file',
     final response = await req
         .send()
         .then(http.Response.fromStream)
