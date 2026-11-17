@@ -64,3 +64,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           ],
         ),
       );
+      controller.dispose();
