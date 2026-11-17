@@ -441,3 +441,4 @@ export function registerOAuthRoutes(
         if (flow.status !== "complete") return { status: "pending" };
         const account = get("SELECT * FROM users WHERE id=?", flow.user_id);
         if (!account) fail(400, "Account no longer exists.");
+        run("UPDATE oauth_flows SET status='consumed' WHERE id=?", flow.id);
