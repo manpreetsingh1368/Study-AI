@@ -70,6 +70,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 24),
+                  Wrap(
                   if (register) ...[
                     TextFormField(
                       controller: name,
