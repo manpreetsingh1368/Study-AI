@@ -233,6 +233,7 @@ class LocalStore {
     );
     for (final row in files) {
       final file = File(row['path'] as String);
+      if (await file.exists()) await file.delete();
     await db.delete('pdf_cache', where: 'account=?', whereArgs: [account]);
     await db.delete('uploads', where: 'account=?', whereArgs: [account]);
     await db.delete('cache', where: 'account=?', whereArgs: [account]);
