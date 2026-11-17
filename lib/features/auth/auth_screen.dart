@@ -163,6 +163,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   ? ConstrainedBox(
                       constraints: const BoxConstraints(maxWidth: 1120),
                       child: Row(
+                        children: [
     ),
   );
   @override
