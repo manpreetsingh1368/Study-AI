@@ -154,3 +154,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           ? 'Study guide'
                           : item['kind'] == 'faq'
                           ? 'FAQ'
+                          : 'Source overview',
