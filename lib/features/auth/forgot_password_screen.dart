@@ -39,3 +39,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       if (mounted) setState(() => message = e.toString());
     } finally {
       if (mounted) setState(() => busy = false);
+    }
