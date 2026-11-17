@@ -365,3 +365,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
       method: "GET",
       url: url.pathname + url.search,
     });
+    const cookie = String(browser.headers["set-cookie"]).split(";")[0];
