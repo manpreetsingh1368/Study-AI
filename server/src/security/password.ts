@@ -87,3 +87,4 @@ export function registerPasswordRoutes(
         .then(() =>
           (delivery || sendReset)(
             b.email,
+            `${publicBase()}/reset-password#token=${token}`,
