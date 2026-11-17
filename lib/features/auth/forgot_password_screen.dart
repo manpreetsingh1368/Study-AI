@@ -73,3 +73,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   const SizedBox(height: 24),
                   Text(
                     sent && delivery
+                        ? 'Check your inbox.'
