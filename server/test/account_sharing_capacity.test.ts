@@ -319,3 +319,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
       url: `/sets/${second.id}/pdf`,
       headers: {
         authorization: `Bearer ${a.token}`,
+        "content-type": `multipart/form-data; boundary=${boundary}`,
