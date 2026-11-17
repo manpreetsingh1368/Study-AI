@@ -129,6 +129,7 @@ class _SettingsPageState extends State<SettingsPage> {
                           '/me/recovery',
                           {'password': current.text},
                         );
+                        if (!context.mounted) return;
                                 ),
                                 const SizedBox(height: 20),
                                 SelectableText(result['code']),
