@@ -104,6 +104,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                   ),
                   if (providers['google'] != true || providers['apple'] != true)
                     Padding(
+                      padding: const EdgeInsets.only(top: 10),
                   if (register) ...[
                     TextFormField(
                       controller: name,
