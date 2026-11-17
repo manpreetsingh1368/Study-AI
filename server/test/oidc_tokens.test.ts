@@ -15,3 +15,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
   ) {
     return new SignJWT({
       nonce: "expected-nonce",
+      email: "student@example.com",
