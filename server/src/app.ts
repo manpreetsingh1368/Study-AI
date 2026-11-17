@@ -976,6 +976,7 @@ export function createApp(
       !!options.resetDelivery ||
       !!(process.env.SMTP_HOST && process.env.SMTP_FROM),
   );
+  registerSharingRoutes(app, { user, owned, get, all, run, now, fail });
   registerNotebookRoutes(
     app,
     { db, user, owned, get, all, run, plan, change, now, fail, uploads },
