@@ -16,3 +16,4 @@ async function setup(
   const directory = mkdtempSync(join(tmpdir(), "study-account-"));
   let clock = Date.now();
   const app = createApp({
+    dataDir: directory,
