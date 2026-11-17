@@ -83,3 +83,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                 IconButton(
                   tooltip: 'Close sharing',
                   onPressed: () => Navigator.pop(context),
+                  icon: const Icon(Icons.close),
