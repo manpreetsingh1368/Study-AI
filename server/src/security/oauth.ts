@@ -179,3 +179,4 @@ export function registerOAuthRoutes(
         `${provider === "google" ? "Google" : "Apple"} sign-in is not configured on this server.`,
       );
     const body = z
+      .object({
