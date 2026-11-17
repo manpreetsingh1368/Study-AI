@@ -39,6 +39,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
 
   @override
   Widget build(BuildContext context) => Scaffold(
+    body: LayoutBuilder(
           child: StudyCard(
             padding: EdgeInsets.all(desktop ? 36 : 26),
             child: Form(
