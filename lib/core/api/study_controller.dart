@@ -645,6 +645,7 @@ class StudyController extends ChangeNotifier {
       req.files.add(
         http.MultipartFile.fromBytes(
           'file',
+          upload['bytes'] as Uint8List,
     final response = await req
         .send()
         .then(http.Response.fromStream)
