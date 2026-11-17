@@ -200,6 +200,7 @@ export function createApp(
       digest(token),
       u.id,
       now() + Number(process.env.SESSION_DAYS || 30) * 86400000,
+      now(),
     );
     return { token, user: publicUser(u) };
   };
