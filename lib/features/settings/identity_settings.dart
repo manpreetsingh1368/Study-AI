@@ -54,3 +54,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
           ),
           actions: [
             TextButton(
+              onPressed: () => Navigator.pop(ctx),
