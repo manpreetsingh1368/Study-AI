@@ -5,3 +5,4 @@ import { validateIdentityToken } from "../src/security/oauth.js";
 test("OIDC signatures, issuer, audience, nonce, email verification and mandatory expiry are enforced", async () => {
   const originalGoogle = process.env.GOOGLE_CLIENT_ID,
     originalApple = process.env.APPLE_CLIENT_ID;
+  process.env.GOOGLE_CLIENT_ID = "google-test-client";
