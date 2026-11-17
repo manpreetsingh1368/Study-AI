@@ -22,3 +22,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       sid = (req.params as any).id,
       s = owned(u.id, sid),
       b = z
+        .object({
