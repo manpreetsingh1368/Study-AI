@@ -160,6 +160,7 @@ class _SettingsPageState extends State<SettingsPage> {
                                   label: const Text('Copy code'),
                                 ),
                               ],
+                            ),
                               ),
                             ],
                           ),
