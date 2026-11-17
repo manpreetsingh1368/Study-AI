@@ -1194,6 +1194,7 @@ class _SetDetailState extends State<SetDetail> {
             value: (used / limit).clamp(0, 1),
             borderRadius: BorderRadius.circular(4),
           ),
+          const SizedBox(height: 8),
   Widget studio() => Column(
     crossAxisAlignment: CrossAxisAlignment.stretch,
     children: [
