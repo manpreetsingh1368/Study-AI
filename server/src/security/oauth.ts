@@ -141,3 +141,4 @@ export const productionOAuth: OAuthAdapter = {
       client_secret: secret,
       code,
       grant_type: "authorization_code",
+      redirect_uri: `${publicBase()}/auth/oauth/${provider}/callback`,
