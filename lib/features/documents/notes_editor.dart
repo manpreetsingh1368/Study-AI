@@ -40,7 +40,6 @@ class _NotesEditorState extends State<NotesEditor> {
         folder: folder.text.trim(),
       );
       savedSet = s;
-        await widget.controller.upload(
           s['id'],
           droppedName ?? pdf!.name,
           droppedStream != null ? droppedStream!() : pdf!.readAsByteStream(),
