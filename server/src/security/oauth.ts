@@ -40,3 +40,4 @@ export async function validateIdentityToken(
         provider === "google"
           ? ["https://accounts.google.com", "accounts.google.com"]
           : "https://appleid.apple.com",
+      audience:
