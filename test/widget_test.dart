@@ -19,6 +19,7 @@ void main() {
           overrides: [studyProvider.overrideWithValue(controller)],
           child: const StudyAIApp(),
         ),
+      );
   testWidgets('Registration switch and password validation', (tester) async {
     final controller = StudyController(LocalStore())..loading = false;
     await tester.pumpWidget(
