@@ -106,6 +106,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     Padding(
                       padding: const EdgeInsets.only(top: 10),
                       child: Text(
+                        'Social sign-in is available when enabled by your server owner.',
                   if (register) ...[
                     TextFormField(
                       controller: name,
