@@ -172,6 +172,7 @@ export function createApp(
     notes: string,
     sid = id(),
     folder = "",
+    parentNotebookId: string | null = null,
   ) {
     if (parentNotebookId) {
       const parent = owned(uid, parentNotebookId);
