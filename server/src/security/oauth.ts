@@ -258,3 +258,4 @@ export function registerOAuthRoutes(
         flow.state_hash !== digest(q.state)
       )
         fail(
+          400,
