@@ -272,3 +272,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         ? null
                         : Wrap(
                             children: [
+                              IconButton(
