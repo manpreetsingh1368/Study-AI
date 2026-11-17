@@ -99,3 +99,4 @@ export function registerPasswordRoutes(
             now(),
           );
         });
+      pending.add(job);
