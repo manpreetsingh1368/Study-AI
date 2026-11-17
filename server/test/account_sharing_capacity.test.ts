@@ -433,3 +433,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
   const link = await begin("apple", local.token);
   await app.inject({
     method: "POST",
+    url: "/auth/oauth/apple/callback",
