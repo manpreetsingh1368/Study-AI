@@ -163,6 +163,7 @@ export function registerNotebookRoutes(
     const sources = sourceIds.map((sourceId) => owned(u.id, sourceId));
     const selectedBytes = sourceIds.reduce(
       (total: number, id: string) =>
+        total +
     const chunks: SourceChunk[] = [];
     let total = 0;
     for (const source of sources) {
