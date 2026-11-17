@@ -187,3 +187,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   icon: Icons.link_rounded,
                   onPressed:
                       busy ||
+                          c.offline ||
