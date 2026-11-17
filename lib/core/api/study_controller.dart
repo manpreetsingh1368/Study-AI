@@ -643,6 +643,7 @@ class StudyController extends ChangeNotifier {
       );
     } else {
       req.files.add(
+        http.MultipartFile.fromBytes(
     final response = await req
         .send()
         .then(http.Response.fromStream)
