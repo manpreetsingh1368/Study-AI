@@ -29,3 +29,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
         {'email': email.text.trim()},
       );
       if (mounted) {
+        setState(() {
