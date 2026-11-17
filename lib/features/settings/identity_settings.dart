@@ -128,3 +128,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         if (error != null) ErrorState(message: error!),
       ],
     ),
+  );
