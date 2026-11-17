@@ -77,3 +77,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       await load();
     } catch (e) {
       if (mounted) setState(() => error = e.toString());
+    } finally {
