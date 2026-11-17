@@ -98,6 +98,7 @@ class _SettingsPageState extends State<SettingsPage> {
               decoration: const InputDecoration(labelText: 'Current password'),
             ),
             const SizedBox(height: 12),
+            if (widget.controller.user?['hasPassword'] != false)
               ),
             const SizedBox(height: 12),
             if (widget.controller.user?['hasPassword'] != false)
