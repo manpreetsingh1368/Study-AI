@@ -205,3 +205,4 @@ export function registerOAuthRoutes(
     const flowId = randomUUID(),
       state = randomBytes(32).toString("base64url"),
       nonce = randomBytes(32).toString("base64url"),
+      pkce = randomBytes(32).toString("base64url"),
