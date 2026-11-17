@@ -162,3 +162,4 @@ export const productionOAuth: OAuthAdapter = {
 };
 export function registerOAuthRoutes(
   app: FastifyInstance,
+  c: any,
