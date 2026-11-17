@@ -393,3 +393,4 @@ export function registerOAuthRoutes(
       } catch (e: any) {
         const safe =
           e.message?.startsWith("An account") ||
+          e.message?.startsWith("This identity") ||
