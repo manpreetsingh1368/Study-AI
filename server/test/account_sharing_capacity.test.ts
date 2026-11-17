@@ -132,3 +132,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
   const a = await register(),
     b = await register("other@example.com");
   const set = (
+    await call("POST", "/sets", a.token, {
