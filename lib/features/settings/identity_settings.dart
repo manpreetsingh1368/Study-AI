@@ -23,3 +23,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
 
   Future<void> load() async {
     try {
+      final data = await widget.controller.request('GET', '/me/identities'),
