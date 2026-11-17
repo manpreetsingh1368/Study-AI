@@ -455,3 +455,4 @@ export function registerOAuthRoutes(
       b.flowId,
       digest(b.verifier),
     );
+    return { ok: true };
