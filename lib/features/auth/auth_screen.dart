@@ -232,6 +232,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                                 fontSize: 13,
                                               ),
                                             ),
+                                          ),
     ),
   );
   @override
