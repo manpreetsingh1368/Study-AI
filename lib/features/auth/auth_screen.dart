@@ -60,6 +60,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                           borderRadius: BorderRadius.circular(14),
                         ),
                         child: const Icon(
+                          Icons.auto_awesome_rounded,
                   ),
                   const SizedBox(height: 26),
                   Text(
