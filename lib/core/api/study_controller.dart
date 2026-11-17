@@ -214,6 +214,7 @@ class StudyController extends ChangeNotifier {
           });
         } catch (_) {}
       }
+      if (_socialProof == proof) {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
