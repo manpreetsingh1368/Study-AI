@@ -175,6 +175,7 @@ export function createApp(
   ) {
     if (
       get(
+        "SELECT count(*) n FROM study_sets WHERE user_id=? AND deleted=0 AND parent_notebook_id IS NULL",
         uid,
       ).n >= plan(uid).sets
     )
