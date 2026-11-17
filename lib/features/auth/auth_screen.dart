@@ -119,6 +119,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                     icon: Icons.arrow_forward_rounded,
                     onPressed: busy ? null : submit,
                   ),
+                  const SizedBox(height: 14),
                   TextButton(
                     onPressed: busy
                         ? null
