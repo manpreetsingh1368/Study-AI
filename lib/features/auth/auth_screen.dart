@@ -51,7 +51,6 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                    Icons.auto_awesome_rounded,
                     color: accent,
                     size: 42,
                   ),
