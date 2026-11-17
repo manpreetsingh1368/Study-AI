@@ -67,6 +67,7 @@ export function createApp(
     trustProxy: ["127.0.0.1", "::1"],
   });
   app.register(helmet);
+  app.register(formbody);
   app.register(rateLimit, { max: 120, timeWindow: 60000 });
   app.register(multipart, {
     limits: {
