@@ -208,6 +208,7 @@ export function createApp(
         !get("SELECT id FROM documents WHERE set_id=?", parentNotebookId)
       )
         ids = ids.filter((id) => id !== parentNotebookId);
+      if (ids.length < 50 && !ids.includes(sid)) ids.push(sid);
     return sid;
   }
   const session = (u: any) => {
