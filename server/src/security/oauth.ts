@@ -327,3 +327,4 @@ export function registerOAuthRoutes(
             "SELECT status FROM oauth_flows WHERE id=? AND expires_at>?",
             flow.id,
             now(),
+          );
