@@ -95,3 +95,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         const Text(
           'Connect a provider while signed in. Accounts are never merged automatically just because email addresses match.',
           style: TextStyle(fontSize: 12),
+        ),
