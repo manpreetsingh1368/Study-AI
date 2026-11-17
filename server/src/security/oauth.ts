@@ -180,3 +180,4 @@ export function registerOAuthRoutes(
       );
     const body = z
       .object({
+        challenge: z.string().regex(/^[a-f0-9]{64}$/),
