@@ -221,6 +221,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                         children: [
                                           Icon(
                                             item.$1,
+                                            color: accent,
     ),
   );
   @override
