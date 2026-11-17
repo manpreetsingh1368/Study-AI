@@ -314,3 +314,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
     Buffer.from(`\r\n--${boundary}--\r\n`),
   ]);
   const upload = () =>
+    app.inject({
