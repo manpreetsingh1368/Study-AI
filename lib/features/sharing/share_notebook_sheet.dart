@@ -275,3 +275,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                               IconButton(
                                 tooltip: 'Copy saved link',
                                 onPressed: () async {
+                                  final saved = await c.secure.read(
