@@ -10,3 +10,4 @@ class ForgotPasswordScreen extends StatefulWidget {
   @override
   State<ForgotPasswordScreen> createState() => _ForgotPasswordScreenState();
 }
+
