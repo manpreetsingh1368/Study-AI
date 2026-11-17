@@ -109,6 +109,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         'Social sign-in is available when enabled by your server owner.',
                         style: TextStyle(
                           fontSize: 10,
+                          color: Theme.of(context).colorScheme.onSurfaceVariant,
                   if (register) ...[
                     TextFormField(
                       controller: name,
