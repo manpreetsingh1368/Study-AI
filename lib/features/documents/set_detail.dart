@@ -504,6 +504,7 @@ class _SetDetailState extends State<SetDetail> {
                                   controller: c,
                                   notebook: widget.set,
                                 ),
+                              ),
                     Tooltip(
                       message: 'Edit notebook source',
                       child: IconButton(
