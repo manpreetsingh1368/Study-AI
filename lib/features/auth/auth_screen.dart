@@ -205,6 +205,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                       'Everything you’re learning, together',
                                     ),
                                     (
+                                      Icons.format_quote_rounded,
     ),
   );
   @override
