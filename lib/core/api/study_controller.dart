@@ -247,6 +247,7 @@ class StudyController extends ChangeNotifier {
     int days = 7,
   }) async {
     final result = Map<String, dynamic>.from(
+      await request('POST', '/notebooks/$notebookId/shares', {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
