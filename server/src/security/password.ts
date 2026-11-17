@@ -106,3 +106,4 @@ export function registerPasswordRoutes(
   );
   app.post(
     "/auth/reset-password",
+    { config: { rateLimit: { max: 8, timeWindow: 60000 } } },
