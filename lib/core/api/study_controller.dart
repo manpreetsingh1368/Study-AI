@@ -227,6 +227,7 @@ class StudyController extends ChangeNotifier {
     socialSignInActive = false;
     notifyListeners();
     final id = _socialFlow, proof = _socialProof;
+    _socialFlow = null;
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
