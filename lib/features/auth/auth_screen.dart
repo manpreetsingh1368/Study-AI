@@ -197,6 +197,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                                           .colorScheme
                                           .onSurfaceVariant,
                                     ),
+                                  ),
     ),
   );
   @override
