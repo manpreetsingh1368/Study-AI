@@ -46,6 +46,7 @@ class _SettingsPageState extends State<SettingsPage> {
         style: Theme.of(context).textTheme.headlineLarge,
       ),
       const SizedBox(height: 24),
+      const SizedBox(height: 24),
       StudyCard(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
