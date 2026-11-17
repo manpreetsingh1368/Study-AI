@@ -302,3 +302,4 @@ export function registerOAuthRoutes(
           "<h1>Start again in Study AI.</h1><p>This browser sign-in request is invalid or expired.</p>",
         );
       if (b.error || !b.code) {
+        run(
