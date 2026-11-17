@@ -82,3 +82,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
     }
     if (!sections.length) fail(400, "The selected content is empty.");
     const snapshot = JSON.stringify({ title: s.title, sections });
+    if (Buffer.byteLength(snapshot) > 1500000)
