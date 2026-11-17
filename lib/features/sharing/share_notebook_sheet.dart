@@ -31,3 +31,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
   }
 
   Future<void> load() async {
+    try {
