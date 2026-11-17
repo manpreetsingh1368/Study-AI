@@ -14,6 +14,7 @@ export function openDatabase(directory: string) {
     "002_learning_sync.sql",
     "003_recovery_and_generation.sql",
     "004_notebook_studio.sql",
+    "005_identity_sharing_capacity.sql",
   ];
   const version = sqlite.pragma("user_version", { simple: true }) as number;
   if (version > migrations.length) {
