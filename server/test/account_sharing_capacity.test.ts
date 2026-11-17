@@ -90,3 +90,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
         password: "reused-password",
       })
     ).status,
+    400,
