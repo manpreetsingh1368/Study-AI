@@ -19,3 +19,4 @@ export function page(reply: any, title: string, body: string, script = "") {
     );
   return reply
     .type("text/html; charset=utf-8")
+    .send(
