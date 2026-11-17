@@ -209,3 +209,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         ),
                         Wrap(
                           spacing: 12,
+                          children: [
