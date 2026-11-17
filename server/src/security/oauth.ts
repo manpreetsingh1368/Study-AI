@@ -366,3 +366,4 @@ export function registerOAuthRoutes(
               accountId,
               email,
               identity.name.trim().slice(0, 100) || "Student",
+              randomPassword,
