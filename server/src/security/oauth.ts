@@ -71,3 +71,4 @@ export async function validateIdentityToken(
     email,
     name:
       typeof payload.name === "string"
+        ? payload.name.slice(0, 100)
