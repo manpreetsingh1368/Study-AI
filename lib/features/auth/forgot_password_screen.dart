@@ -107,3 +107,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                         ? 'Requesting…'
                         : sent
                         ? 'Request another link'
+                        : 'Email reset link',
