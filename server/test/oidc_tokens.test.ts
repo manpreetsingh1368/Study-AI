@@ -12,3 +12,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
   async function token(
     claims: Record<string, unknown> = {},
     provider: "google" | "apple" = "google",
+  ) {
