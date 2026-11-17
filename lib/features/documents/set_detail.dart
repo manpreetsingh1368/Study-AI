@@ -165,7 +165,6 @@ class _SetDetailState extends State<SetDetail> {
           '',
           folder: widget.set['folder'] ?? '',
         );
-        await c.upload(source['id'], file.name, await file.readAsBytes());
         if (mounted) setState(() => selected.add(source['id']));
       });
       return;
