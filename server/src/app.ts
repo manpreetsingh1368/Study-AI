@@ -393,6 +393,7 @@ export function createApp(
           401,
           "Sign in again and confirm deletion before deleting this account.",
         );
+    }
     const docs = all(
       "SELECT d.id FROM documents d JOIN study_sets s ON s.id=d.set_id WHERE s.user_id=?",
       u.id,
