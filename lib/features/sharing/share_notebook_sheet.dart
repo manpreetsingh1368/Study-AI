@@ -97,3 +97,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   decoration: BoxDecoration(
                     color: accent.withValues(alpha: .07),
                     borderRadius: BorderRadius.circular(16),
+                  ),
