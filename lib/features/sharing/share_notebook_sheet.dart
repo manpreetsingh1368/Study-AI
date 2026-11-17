@@ -44,3 +44,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
 
   Future<void> create() async {
     setState(() => busy = true);
+    try {
