@@ -64,3 +64,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
           : content.blocks
               .map((block: any) => `${block.heading}\n${block.text}`)
               .join("\n\n"),
+        citations: content.blocks.flatMap((block: any) => block.citations),
