@@ -163,6 +163,7 @@ class StudyController extends ChangeNotifier {
         .encode(List<int>.generate(32, (_) => Random.secure().nextInt(256)))
         .replaceAll('=', '');
     socialSignInActive = true;
+    _socialProof = proof;
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
