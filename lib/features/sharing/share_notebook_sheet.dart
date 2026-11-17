@@ -62,3 +62,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
   }
 
   @override
+  Widget build(BuildContext context) {
