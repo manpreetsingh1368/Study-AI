@@ -255,3 +255,4 @@ export const oauthFlows = sqliteTable("oauth_flows", {
   provider: text("provider").notNull(),
   stateHash: text("state_hash").notNull().unique(),
   nonce: text("nonce").notNull(),
+  pkceVerifier: text("pkce_verifier").notNull(),
