@@ -70,3 +70,4 @@ export function registerPasswordRoutes(
       const token = randomBytes(32).toString("base64url"),
         tokenHash = digest(token);
       db.transaction(() => {
+        run(
