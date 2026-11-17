@@ -354,3 +354,4 @@ export function registerOAuthRoutes(
               );
             accountId = flow.link_user_id;
           } else if (existing) {
+            accountId = existing.user_id;
