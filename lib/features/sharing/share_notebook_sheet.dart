@@ -280,3 +280,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                   );
                                   if (saved != null) {
                                     await Clipboard.setData(
+                                      ClipboardData(text: saved),
