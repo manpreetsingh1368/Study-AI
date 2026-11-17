@@ -162,3 +162,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                     value: entries.contains(item['id']),
                     onChanged: busy
                         ? null
+                        : (v) => setState(() {
