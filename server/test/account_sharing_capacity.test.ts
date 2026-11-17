@@ -20,3 +20,4 @@ async function setup(
     uploadDir: join(directory, "uploads"),
     now: () => clock,
     ...extra,
+  });
