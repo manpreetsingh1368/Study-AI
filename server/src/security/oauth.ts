@@ -19,3 +19,4 @@ export type OAuthAdapter = {
   exchange: (provider: Provider, code: string, flow: any) => Promise<Identity>;
 };
 const digest = (value: string) =>
+  createHash("sha256").update(value).digest("hex");
