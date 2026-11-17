@@ -181,3 +181,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
   assert.equal(
     (
       await call(
+        "DELETE",
