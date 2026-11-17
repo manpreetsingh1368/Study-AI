@@ -10,6 +10,7 @@ import '../../shared/components.dart';
 import 'notes_editor.dart';
 import 'pdf_screen.dart';
 import 'study_tools.dart';
+import '../sharing/share_notebook_sheet.dart';
 
 class SetDetail extends StatefulWidget {
   final Map<String, dynamic> set;
