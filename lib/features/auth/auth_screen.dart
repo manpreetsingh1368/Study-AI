@@ -110,6 +110,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                         style: TextStyle(
                           fontSize: 10,
                           color: Theme.of(context).colorScheme.onSurfaceVariant,
+                        ),
                   if (register) ...[
                     TextFormField(
                       controller: name,
