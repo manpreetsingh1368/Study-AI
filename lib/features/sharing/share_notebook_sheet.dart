@@ -317,3 +317,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                                           }
                                         } finally {
                                           if (mounted) {
+                                            setState(() => busy = false);
