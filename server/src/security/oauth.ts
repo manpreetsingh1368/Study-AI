@@ -336,3 +336,4 @@ export function registerOAuthRoutes(
             provider,
             identity.subject,
           );
+          if (flow.link_user_id) {
