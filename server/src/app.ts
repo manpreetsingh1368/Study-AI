@@ -213,6 +213,7 @@ export function createApp(
         "INSERT INTO notebook_preferences VALUES(?,?) ON CONFLICT(notebook_id) DO UPDATE SET source_ids=excluded.source_ids",
         parentNotebookId,
         JSON.stringify(ids),
+      );
     return sid;
   }
   const session = (u: any) => {
