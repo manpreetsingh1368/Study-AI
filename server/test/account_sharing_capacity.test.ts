@@ -72,3 +72,4 @@ test("forgot password: non-enumerating response, real delivery adapter, one-use 
   const token = new URLSearchParams(new URL(mail[0].url).hash.slice(1)).get(
     "token",
   )!;
+  assert.ok(token);
