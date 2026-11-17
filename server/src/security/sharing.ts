@@ -140,3 +140,4 @@ export function registerSharingRoutes(app: FastifyInstance, c: any) {
       );
     },
   );
+}
