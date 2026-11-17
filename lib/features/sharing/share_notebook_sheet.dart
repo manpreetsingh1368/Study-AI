@@ -234,3 +234,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                               icon: const Icon(Icons.open_in_new, size: 17),
                               label: const Text('Preview'),
                             ),
+                          ],
