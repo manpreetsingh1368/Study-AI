@@ -236,3 +236,4 @@ export function registerOAuthRoutes(
     app.post(
       `/me/identities/${provider}/start`,
       { config: { rateLimit: { max: 10, timeWindow: 60000 } } },
+      (req) => start(req, provider, true),
