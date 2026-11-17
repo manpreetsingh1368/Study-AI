@@ -299,3 +299,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
   db.prepare("INSERT INTO documents VALUES(?,?,?,?)").run(
     randomUUID(),
     first.id,
+    "accounting-fixture.pdf",
