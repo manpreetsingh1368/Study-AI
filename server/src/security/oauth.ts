@@ -109,3 +109,4 @@ export const productionOAuth: OAuthAdapter = {
       parameters.set(
         "code_challenge",
         createHash("sha256").update(flow.pkce_verifier).digest("base64url"),
+      );
