@@ -359,3 +359,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
       { challenge: digest(verifier), password: "owner-secure-password" },
     );
     assert.equal(start.status, 200);
+    const url = new URL(start.body.url),
