@@ -110,3 +110,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                         'Choose exactly what to share. A link publishes a snapshot, not your account or original PDFs. Later edits aren’t published. You can revoke the link anytime.',
                         style: TextStyle(fontSize: 12, height: 1.7),
                       ),
+                    ],
