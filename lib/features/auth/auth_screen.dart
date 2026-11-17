@@ -155,6 +155,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
             constraints: BoxConstraints(
               minHeight: (size.maxHeight - (desktop ? 96 : 40)).clamp(
                 0,
+                double.infinity,
     ),
   );
   @override
