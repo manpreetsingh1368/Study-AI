@@ -244,3 +244,4 @@ export function registerOAuthRoutes(
           flow: z.uuid(),
           key: z.string().min(30).max(100),
           state: z.string().min(30).max(100),
+        })
