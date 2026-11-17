@@ -219,3 +219,4 @@ test("50 notebook sources bypass notebook-count quotas, but not source/owner/del
   const a = await register(),
     b = await register("other@example.com");
   let root: any;
+  for (let i = 0; i < 5; i++)
