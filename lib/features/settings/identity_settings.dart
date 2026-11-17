@@ -88,3 +88,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
+          'Connected sign-in methods',
