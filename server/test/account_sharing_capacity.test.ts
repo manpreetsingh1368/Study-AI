@@ -436,3 +436,4 @@ test("OIDC flow proof, browser state, provider identity isolation, cancellation 
     url: "/auth/oauth/apple/callback",
     headers: {
       cookie: link.cookie,
+      "content-type": "application/x-www-form-urlencoded",
