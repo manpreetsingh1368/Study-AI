@@ -18,3 +18,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
   @override
   void initState() {
     super.initState();
+    load();
