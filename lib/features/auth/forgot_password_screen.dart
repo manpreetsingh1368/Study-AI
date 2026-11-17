@@ -22,3 +22,4 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   Future<void> submit() async {
     if (!form.currentState!.validate()) return;
     setState(() => busy = true);
+    try {
