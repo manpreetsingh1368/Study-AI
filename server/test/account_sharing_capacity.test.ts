@@ -135,3 +135,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
     await call("POST", "/sets", a.token, {
       title: "Private notebook",
       notes: "Selected text <script>steal()</script>",
+    })
