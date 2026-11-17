@@ -440,3 +440,4 @@ export function registerOAuthRoutes(
           fail(400, "This sign-in request was already used or cancelled.");
         if (flow.status !== "complete") return { status: "pending" };
         const account = get("SELECT * FROM users WHERE id=?", flow.user_id);
+        if (!account) fail(400, "Account no longer exists.");
