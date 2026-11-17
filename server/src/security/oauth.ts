@@ -460,3 +460,4 @@ export function registerOAuthRoutes(
   app.get("/me/identities", async (req) => {
     const u = user(req);
     return {
+      identities: db
