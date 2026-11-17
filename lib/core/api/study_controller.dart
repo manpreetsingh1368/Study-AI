@@ -243,6 +243,7 @@ class StudyController extends ChangeNotifier {
     String notebookId, {
     required bool includeSourceNotes,
     required List<String> entryIds,
+    required List<String> noteIds,
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
