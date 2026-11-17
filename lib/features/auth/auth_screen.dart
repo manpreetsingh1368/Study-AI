@@ -82,6 +82,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                               : null,
                           icon: const Text(
                             'G',
+                            style: TextStyle(
                   if (register) ...[
                     TextFormField(
                       controller: name,
