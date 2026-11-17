@@ -89,3 +89,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
       children: [
         Text(
           'Connected sign-in methods',
+          style: Theme.of(context).textTheme.titleLarge,
