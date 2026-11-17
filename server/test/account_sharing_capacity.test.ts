@@ -329,3 +329,4 @@ test("2 GiB aggregate PDF budget is enforced atomically without allocating gigab
     first.id,
   );
   assert.equal((await upload()).statusCode, 200);
+  assert.equal(
