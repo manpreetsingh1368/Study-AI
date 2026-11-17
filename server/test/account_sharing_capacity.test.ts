@@ -149,3 +149,4 @@ test("public sharing is an explicit escaped snapshot, isolated, expiring and rev
         includeSourceNotes: true,
       })
     ).status,
+    404,
