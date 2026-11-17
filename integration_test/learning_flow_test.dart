@@ -244,6 +244,7 @@ void main() {
         expect(shares['shares'].length, 1);
         final shareId = shares['shares'][0]['id'];
         final shareUrl = await c.secure.read(
+          key: 'share:${c.account}:$shareId',
         await other.initialize();
         expect(other.sets.single['title'], 'Cell biology');
         expect(other.attempts.single['score'], 1);
