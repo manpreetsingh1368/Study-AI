@@ -17,6 +17,7 @@ export const studySets = sqliteTable("study_sets", {
   userId: text("user_id")
     .notNull()
     .references(() => users.id, { onDelete: "cascade" }),
+  parentNotebookId: text("parent_notebook_id").references(
   title: text("title").notNull(),
   notes: text("notes").notNull(),
   folder: text("folder").notNull().default(""),
