@@ -176,3 +176,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                   dropdownMenuEntries: [
                     for (final n in [1, 7, 30, 90])
                       DropdownMenuEntry(
+                        value: n,
