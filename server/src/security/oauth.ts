@@ -402,3 +402,4 @@ export function registerOAuthRoutes(
           safe,
           flow.id,
         );
+        return page(
