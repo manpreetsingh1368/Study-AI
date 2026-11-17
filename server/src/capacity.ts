@@ -6,3 +6,4 @@ export const FILE_PDF_BYTES = () =>
 export function capacity(s: any, get: any) {
   const root = s.parent_notebook_id || s.id;
   return {
+    sourceLimit: 50,
