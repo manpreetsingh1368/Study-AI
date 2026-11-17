@@ -23,3 +23,4 @@ async function setup(
   });
   await app.ready();
   t.after(async () => {
+    await app.close();
