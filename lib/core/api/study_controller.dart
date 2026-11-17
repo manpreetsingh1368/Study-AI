@@ -135,6 +135,7 @@ class StudyController extends ChangeNotifier {
       register ? '/auth/register' : '/auth/login',
       {'email': email, 'password': password, if (register) 'name': name},
     );
+    await acceptSession(Map<String, dynamic>.from(data));
     await secure.write(key: 'session', value: data['token']);
     await secure.write(key: 'profile', value: jsonEncode(data['user']));
     token = data['token'];
