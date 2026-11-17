@@ -245,6 +245,7 @@ class StudyController extends ChangeNotifier {
     required List<String> entryIds,
     required List<String> noteIds,
     int days = 7,
+  }) async {
   }
 
   Future<List<Map<String, dynamic>>> _readList(String key) async =>
