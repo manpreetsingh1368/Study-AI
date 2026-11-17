@@ -6,3 +6,4 @@ export const escape = (value: unknown) =>
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
         c
       ]!,
+  );
