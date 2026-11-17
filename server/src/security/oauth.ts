@@ -104,3 +104,4 @@ export const productionOAuth: OAuthAdapter = {
       scope: provider === "google" ? "openid email profile" : "name email",
       state: flow.state,
       nonce: flow.nonce,
+    });
