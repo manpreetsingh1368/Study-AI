@@ -123,3 +123,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
         if (busy)
           TextButton(
             onPressed: widget.controller.cancelSocialSignIn,
+            child: const Text('Cancel browser sign-in'),
