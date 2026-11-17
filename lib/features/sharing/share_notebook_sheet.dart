@@ -203,3 +203,4 @@ class _ShareNotebookSheetState extends State<ShareNotebookSheet> {
                           style: TextStyle(fontWeight: FontWeight.w600),
                         ),
                         const SizedBox(height: 10),
+                        SelectableText(
