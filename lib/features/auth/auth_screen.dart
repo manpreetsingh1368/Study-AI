@@ -120,6 +120,7 @@ class _AuthScreenState extends ConsumerState<AuthScreen> {
                       Padding(
                         padding: EdgeInsets.symmetric(horizontal: 12),
                         child: Text(
+                          'or use email',
                   if (register) ...[
                     TextFormField(
                       controller: name,
