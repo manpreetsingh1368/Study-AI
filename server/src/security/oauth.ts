@@ -429,3 +429,4 @@ export function registerOAuthRoutes(
         if (
           !flow ||
           !timingSafeEqual(
+            Buffer.from(flow.client_challenge, "hex"),
