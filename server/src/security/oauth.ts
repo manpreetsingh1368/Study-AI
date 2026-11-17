@@ -288,3 +288,4 @@ export function registerOAuthRoutes(
         provider,
         now(),
       );
+      const cookie = req.headers.cookie
