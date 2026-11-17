@@ -84,7 +84,6 @@ export function registerLearningRoutes(app: FastifyInstance, ctx: any) {
             409,
             "This study set changed on another device. Both versions have been preserved.",
           );
-            now(),
             b.setId,
           );
         else {
