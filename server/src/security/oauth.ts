@@ -275,3 +275,4 @@ export function registerOAuthRoutes(
       );
     });
     const callback = async (req: any, reply: any) => {
+      const b = z
