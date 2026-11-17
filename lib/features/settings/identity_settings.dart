@@ -40,3 +40,4 @@ class _IdentitySettingsState extends State<IdentitySettings> {
     String? password;
     if (widget.controller.user?['hasPassword'] != false) {
       final controller = TextEditingController();
+      password = await showDialog<String>(
