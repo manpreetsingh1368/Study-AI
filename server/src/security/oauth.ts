@@ -213,3 +213,4 @@ export function registerOAuthRoutes(
       provider,
       digest(state),
       nonce,
+      pkce,
