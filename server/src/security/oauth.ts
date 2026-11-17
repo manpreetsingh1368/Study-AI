@@ -11,3 +11,4 @@ import { createRemoteJWKSet, jwtVerify, SignJWT, importPKCS8 } from "jose";
 import { z } from "zod";
 import { page, publicBase } from "./pages.js";
 import { smtpConfigured } from "./password.js";
+type Provider = "google" | "apple";
