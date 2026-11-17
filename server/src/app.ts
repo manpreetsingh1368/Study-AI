@@ -386,6 +386,7 @@ export function createApp(
     const u = user(req);
     return {
       sets: all(
+        "SELECT * FROM study_sets WHERE user_id=? AND deleted=0 AND (parent_notebook_id IS NULL OR EXISTS(SELECT 1 FROM study_sets p WHERE p.id=study_sets.parent_notebook_id AND p.deleted=0)) ORDER BY updated_at DESC",
         u.id,
       ).map(full),
     };
