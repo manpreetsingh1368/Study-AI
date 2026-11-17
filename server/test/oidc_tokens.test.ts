@@ -41,3 +41,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
           "google",
           valid,
           "expected-nonce",
+          pair.publicKey,
