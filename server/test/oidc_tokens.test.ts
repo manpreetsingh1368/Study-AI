@@ -112,3 +112,4 @@ test("OIDC signatures, issuer, audience, nonce, email verification and mandatory
     if (originalApple === undefined) delete process.env.APPLE_CLIENT_ID;
     else process.env.APPLE_CLIENT_ID = originalApple;
   }
+});
